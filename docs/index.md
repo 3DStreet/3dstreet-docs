@@ -1,8 +1,12 @@
 ---
 sidebar_position: 1
+id: index
+title: Overview
 ---
 
-# Tutorial Intro
+# 3DStreet Overview
+
+Welcome to the 3DStreet documentation. Pick a Getting started guide or check out the Documentation pages for more in-depth knowledge. Want to get in touch? See all the ways you can do it here.
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
