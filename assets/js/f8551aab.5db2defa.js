@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[743],{7574:(e,t,a)=>{a.r(t),a.d(t,{default:()=>n});var l=a(7294),c=a(3285);function n(){return l.createElement(c.Z,null,l.createElement("h1",null,"My React page"),l.createElement("p",null,"This is a React page"))}}}]);
