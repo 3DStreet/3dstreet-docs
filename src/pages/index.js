@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
+import { Timeline } from 'react-twitter-widgets';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -370,14 +371,15 @@ export default function Home() {
           </h1>
           <div className="st_connect_wrapper">
             <div className="st_connect_twitter">
-              <a
-                className="twitter-timeline"
-                data-height={800}
-                data-dnt="true"
-                href="https://twitter.com/3dstreetapp?ref_src=twsrc%5Etfw"
-              >
-                Tweets by 3dstreetapp
-              </a>
+            <Timeline
+              dataSource={{
+                sourceType: 'profile',
+                screenName: '3dstreetapp'
+              }}
+              options={{
+                height: '800'
+              }}
+            />
             </div>
             <div className="st_connect_discordGithub">
               <h3 className="title-1 color-white">Join our Discord server</h3>
