@@ -483,8 +483,8 @@ export default function Home() {
       {/* Get in touch end */}
       {/* footer start */}
       <div className="st_footer color-white text-center">
-        3DStreet is a registered trademark. ©2022 3DStreet LLC. <br /> Contact us
-        via email at kieran (at) 3dstreet.org
+        ©2023 3DStreet LLC. 3DStreet is trademark of 3DStreet LLC. <br />
+        Contact us via email at kieran (at) 3dstreet.org
       </div>
       {/* footer end */}
     </>
