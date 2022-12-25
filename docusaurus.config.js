@@ -50,11 +50,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'Home',
         logo: {
           alt: '3DStreet Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-black.svg',
+          srcDark: "img/logo.svg"
         },
         items: [
           {
