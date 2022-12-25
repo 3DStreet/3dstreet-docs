@@ -64,6 +64,16 @@ const config = {
             label: 'Documentation',
           },
           {
+            href: '/#scenes',
+            label: 'Gallery',
+            position: 'left',
+          },
+          {
+            href: 'https://3dstreet.app',
+            label: 'Launch App',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/3dstreet/3dstreet',
             label: 'GitHub',
             position: 'right',
