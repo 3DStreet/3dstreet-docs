@@ -64,6 +64,9 @@ export default function Home() {
             </div>
             <div className="st_header_nav">
               <ul>
+              <li>
+                  <a href="/docs/">Documentation</a>
+                </li>
                 <li>
                   <a href="#scenes">Scene Gallery</a>
                 </li>
