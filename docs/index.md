@@ -10,19 +10,9 @@ Welcome to the 3DStreet documentation.
 
 **The 3DStreet app is an open-source 3D platform to create and share highly detailed street scenes.** The 3DStreet organization is a mission-based project to provide more accessible street planning tools for users of diverse ages and abilities. [Learn more about the 3DStreet organization's mission here.](./why-3dstreet)
 
-**You can explore new scenes with the 3DStreet viewer or design new scenes with the Editor.**
+**You can explore new scenes with the 3DStreet viewer or design new scenes with the Editor.** A quick way to get started is to import a street from Streetmix and instantly generate a 3DStreet scene that you can modify and build from. [We are working on a tutorial to guide you through this.](./tutorial-streetmix-to-3dstreet/tutorial-welcome-streetmix-3dstreet)
 
 
-## Loading From Streetmix
-
-**You can load a previously created file from StreetMix to turn into a 3D Street file that can be captured view screenshot function or saved to a glTF file for later use.** 
-
-- **What is a glTF file?**
-    - glTF stands for GL Transmission Format, and is a standard file format for three dimensional scenes and models
-- **Loading a URL from StreetMix**
-    - Prepare a saved URL from streetmix
-    - Copy that URL to your computer’s clipboard
-    - Paste it into the browser behind the …
 
 ## Select and Move Objects
 
