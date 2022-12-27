@@ -8,69 +8,10 @@ title: Overview
 
 Welcome to the 3DStreet documentation.
 
-## Organization Purpose
+**The 3DStreet app is an open-source 3D platform to create and share highly detailed street scenes.** The 3DStreet organization is a mission-based project to provide more accessible street planning tools for users of diverse ages and abilities. [Learn more about the 3DStreet organization's mission here.](./why-3dstreet)
 
-**3D Street is an open source virtual simulation platform for realistic map and satellite imagery of editable street map environments to visualize and share renderings at no cost to the user.** 
+**You can explore new scenes with the 3DStreet viewer or design new scenes with the Editor.**
 
-This platform has the capability to layer interfaces to be applied for various purposes and in its current state is an accessible tool used for city planning. This tool empowers municipalities and advocates to create a more democratized way to plan urban environments that are safe, equitable, and focused on healthier communities.
-
-3D Street was developed by a group of technologists concerned with the impact environmental planning, layout, and design can have on public health. It was designed to circumvent the reliance on cumbersome urban planning tools that involved extensive training and expensive licenses which prevented more people engaging in how their own cities and urban environments are designed.
-
-3D Street is quickly expanding and applying uses. As we update we will allow users to load previously created files from StreetMix into a 3D rendering, as well as save, share and edit those renderings to be used during planning meetings, community proposals, urban planning sessions, and design mock ups for municipal use in order to plan streets and transportation uses.
-
-## Viewer and Editor
-
-**There are currently two functions in 3D Street and it is important to distinguish between them as they serve two distinct purposes.** 
-
-### **Viewer**
-
-3D Street Viewer is a virtual representation of a previously created street environment produced with the Editor tool. 
-
-- Enables you to view and navigates through a 360 degree horizontal and a 290 degree vertical panoramic street level viewpoint of three dimensional street imagery
-- Allows you to move throughout the street environment
-- Removes editing tool information to focus on visualization and limits distractions
-- Removes satellite imagery to create a cohesive augmented visualization
-
-### Editor
-
-**3D Street Editor is a tool that allows you to edit and adjust components of augmented street environments. With the Editor tool you can load premade designs from StreetMix or create a new original designs.** 
-
-- Allows users to view street scene from multiple perspectives
-- Loads scenes made previously in StreetMix
-- Toggle between various perspectives of street scenes
-- Select and unselect layers to inspect or edit size and position
-- Drag and drop street components to different locations and arrangements to edit and improve street architecture
-- Inspect and alter components with precise numerical values within the toolbar’s parameters
-- Save a glTF file
-- Capture PNG screenshot of a selected area
-
-## Moving around within a scene
-
-**There are several ways to move within a scene in *Editor*** 
-
-- **Rotate Camera**
-    - Right click and drag to rotate while staying in place
-    - Ctrl …for users with trackpads
-- **Zoom**
-    - With scroll wheel on your mouse move the wheel up and down. Or with trackpad use two fingers and move towards each other for a zoom in and move away from each other for zoom out.
-    - Press **+** buttons to zoom in, **-** button to zoom out for manual zoom
-- **Reset camera**
-    - Press compass icon or the line in between the + and - of the zoom controls
-- **Change view or perspective**
-
-*Editor* has three perspectives: 3D View, Plan View, Cross Section, you can change them by selecting their respective tabs at the top of the editor screen. The darkened tab is the one that is your current selection. These views are not available in *Viewer*. 
-
-- 3D Plan View- shows 3D perspective camera with click and rotation
-- Plan View- shows a downfacing orthographic camera
-- Cross Section- front facing orthographic camera
-
-**Use the purple cursor to help you move through *Viewer***
-
-- **Traverse down street**
-    - Only available in *Viewer*
-    - Use purple circle as cursor to locate your view and click on it to move down the street or another direction
-- **Rotate Camera**
-    - Use hand cursor to click desired point, when hand is closed “grab” and move mouse to rotate camera view
 
 ## Loading From Streetmix
 
