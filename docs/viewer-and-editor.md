@@ -7,7 +7,7 @@ sidebar_position: 3
 
 **3DStreet has two primary interface modes, and it is important to distinguish between them as they serve two distinct purposes.** 
 
-### Viewer
+### 3DStreet Viewer
 
 The **3DStreet Viewer** is a read-only 3D view of a previously created street environment made with the 3DStreet Editor tool. 
 
@@ -17,7 +17,7 @@ The **3DStreet Viewer** is a read-only 3D view of a previously created street en
 - Supports immersive VR mode on WebXR compatible devices such as the Oculus Quest
 - Allows loading of existing scenes and creating screen captures
 
-### Editor
+### 3DStreet Editor
 
 The **3DStreet Editor** is a tool that allows you to edit and modify components of a 3DStreet scene. With the Editor tool you can import designs from tools like Streetmix or create new original designs.
 
@@ -28,30 +28,33 @@ The **3DStreet Editor** is a tool that allows you to edit and modify components 
 - Export a glTF file for further editing and rendering in professional 3D applications
 - Capture PNG screenshot of a the current viewport
 
-## Moving around within a scene
+## Moving around within the 3DStreet Editor
 
-**There are several ways to move within a scene in *Editor*** 
+### Adjusting current Editor view
 
-- **Rotate Camera**
+There are several ways to modify the current viewer perspective within a scene in **Editor**.
+
+- **Pan**
+    - click and drag to move around the scene
+- **Rotate**
     - Right click and drag to rotate while staying in place
-    - Ctrl …for users with trackpads
+    - (`Ctrl` click and drag for users with trackpads)
 - **Zoom**
     - With scroll wheel on your mouse move the wheel up and down. Or with trackpad use two fingers and move towards each other for a zoom in and move away from each other for zoom out.
-    - Press **+** buttons to zoom in, **-** button to zoom out for manual zoom
-- **Reset camera**
-    - Press compass icon or the line in between the + and - of the zoom controls
-- **Change view or perspective**
 
-*Editor* has three perspectives: 3D View, Plan View, Cross Section, you can change them by selecting their respective tabs at the top of the editor screen. The darkened tab is the one that is your current selection. These views are not available in *Viewer*. 
+### Switching Editor camera views
 
-- 3D Plan View- shows 3D perspective camera with click and rotation
-- Plan View- shows a downfacing orthographic camera
-- Cross Section- front facing orthographic camera
+**Editor** has three camera perspectives to switch between: 3D View, Plan View, and Cross Section. You can change them by selecting their respective tabs at the top of the Editor screen. The darkened tab is the one that is your current selection. These views are not available in **Viewer**. 
 
-**Use the purple cursor to help you move through *Viewer***
+- **3D Plan View** shows a 3D perspective camera with adjustable rotation and position
+- **Plan View** shows a downfacing orthographic camera that can be panned, similar to a traditional map view
+- **Cross Section** shows a front facing orthographic camera view, similar to Streetmix
 
-- **Traverse down street**
-    - Only available in *Viewer*
-    - Use purple circle as cursor to locate your view and click on it to move down the street or another direction
+## Moving around in the 3DStreet Viewer
+
+Use the purple cursor to help you move through **Viewer** similar to Google Street View or other first-person click and teleport movement schemes.
+
+- **Traverse down the street**
+    - The purple circle is a cursor that indicates a location to jump to when clicked. Click on it to move down the street to the cursor point. (Only available in **Viewer**)
 - **Rotate Camera**
     - Use hand cursor to click desired point, when hand is closed “grab” and move mouse to rotate camera view
