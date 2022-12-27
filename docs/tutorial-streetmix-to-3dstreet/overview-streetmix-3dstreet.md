@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Overview
 
-## Tutorial: Using Streetmix to create a new 3DStreet scene
+## Tutorial: Use Streetmix to create a 3DStreet scene
 
-Welcome to the tutorial "Using Streetmix to create a new 3DStreet scene." This tutorial will guide you through the process of creating a street scene in Streetmix, importing it into 3DStreet, and then creating a 3D perspective image of your street that you can share with others.
+Welcome to the tutorial "Use Streetmix to create a 3DStreet scene." This tutorial will guide you through the process of creating a street in Streetmix, importing it into 3DStreet, and then creating a 3D perspective image of your street that you can share with others.
 
 This tutorial takes most people at least 15 minutes to complete if you are getting started for the first time and do not already have a Streetmix account or experience using 3DStreet.
 
