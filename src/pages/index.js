@@ -486,7 +486,7 @@ export default function Home() {
       {/* Get in touch end */}
       {/* footer start */}
       <div className="st_footer color-white text-center">
-        Copyright © 2023 3DStreet LLC. 3DStreet is trademark of 3DStreet LLC.
+        Copyright © {new Date().getFullYear()} 3DStreet LLC. 3DStreet is trademark of 3DStreet LLC.
       </div>
       {/* footer end */}
     </>
