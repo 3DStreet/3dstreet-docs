@@ -17,32 +17,6 @@ Welcome to the 3DStreet documentation.
 **You can share your creation with others, or spice it up by importing into other apps.** Take instant snapshots to share on social media, or export your entire detailed scene to use in other 3D rendering apps. Learn how to save,  
 Using the Editor (overview)
 
-## Layers
-
-**In *Editor* the Layers panel is the hub for all the tools that enable editing objects in the scene. It has several functions that allows you change the configurations including position, scale, and rotation of objects. In addition it provides labels and options for selected components.** 
-
-- (Need a better explanation here)
-
-How to explain 
--postion
-
--scale
-
--rotation (is this a property each selection has?)
-
-Each component has it’s own set of properties what are they? 
-How does this relate to each way you can edit them? 
-Some I observe so far: 
-
--geometry: buffer, depth, height, primitive, seg height, seg depth, seg width, skip cache, width, 
-
--material: alpha test, ambient occulsion map, map intensity, ambient occulsion texture offset, ambient occulsion texture repeat, blending, color, depth test, depth write, displacement bias, displacement map, displacement scale, displacement texture offset, displacement texture repeat, dithering, emissive, emissive intensity, env map, flat shading, fog, height, metalness, metalness map, metalness texture offset, metalness texture repeat, normal map, normal scale, normal texture offset, normal texture repeat, npot, opacity, repeat, roughness, roughness texture offset, roughness texture repeat, shader, side, scpherical env map, src, transparent, vertex colors, visible, width, wireframe, wireframe linewidth
-
--gltf part plus: buffer, part, reset postion, src
--gltf model: gltf model
-
-- How to view my scene in VR?
-    - (Only in viewer?)
 - Contributing for Developers (for Kieran)
     - Architecture
     - Repositories
