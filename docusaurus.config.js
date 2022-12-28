@@ -121,7 +121,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 3DStreet LLC. Docs built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 3DStreet LLC. 3DStreet is a trademark of 3DStreet LLC.`,
       },
       prism: {
         theme: lightCodeTheme,
