@@ -17,3 +17,10 @@ This is documentation for developers and contributors to 3DStreet. It includes l
 | Assets | GitHub: [3DStreet/3dstreet-assets-source](https://github.com/3DStreet/3dstreet-assets-source) <br /> GitHub: [3DStreet/3dstreet-assets-dist](https://github.com/3DStreet/3dstreet-assets-dist) <br /> Endpoint: https://assets.3dstreet.app | All original source files for 3DStreet 3D models including Blender source code as well as converted output for distribution. | 
 | Docs & Website | GitHub: [3DStreet/3dstreet-docs](https://github.com/3DStreet/3dstreet-docs) <br /> Endpoint: https://3dstreet.org | This documentation site as well as 3dstreet.org index page. | 
 
+
+### Future docs topics
+
+- Contributing for Developers (for Kieran)
+    - Architecture
+    - Repositories
+    - Contributing Instructions (issue, PR, testing, etc.)

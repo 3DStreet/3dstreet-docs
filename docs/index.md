@@ -14,10 +14,5 @@ Welcome to the 3DStreet documentation.
 
 **You can customize your street scene to match any configuration.** Use **3DStreet Editor** tools to modify, add, or clone objects to match an exisiting or future street configuration.
 
-**You can share your creation with others, or spice it up by importing into other apps.** Take instant snapshots to share on social media, or export your entire detailed scene to use in other 3D rendering apps. Learn how to save,  
-Using the Editor (overview)
+**You can share your creation with others, or spice it up by importing into other apps.** Take instant snapshots to share on social media, or export your entire detailed scene to use in other 3D rendering apps.
 
-- Contributing for Developers (for Kieran)
-    - Architecture
-    - Repositories
-    - Contributing Instructions (issue, PR, testing, etc.)
