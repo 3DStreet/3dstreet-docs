@@ -5,9 +5,11 @@ sidebar_position: 3
 
 # Viewer and Editor
 
-**3DStreet has two primary interface modes, and it is important to distinguish between them as they serve two distinct purposes.** 
+**3DStreet has two primary interface modes. Each serves a distinct purpose.** 
 
 ### 3DStreet Viewer
+
+![Screenshot of the 3DStreet Viewer application displaying a street scene with multi-modal transit vehicles, cycle tracks, and pedestrians on sidewalks in urban setting.](/img/docs/3dstreet-viewer-screenshot.jpg)
 
 The **3DStreet Viewer** is a read-only 3D view of a previously created street environment made with the 3DStreet Editor tool. 
 
@@ -18,6 +20,8 @@ The **3DStreet Viewer** is a read-only 3D view of a previously created street en
 - Allows loading of existing scenes and creating screen captures
 
 ### 3DStreet Editor
+
+![Screenshot of the 3DStreet Editor application with user interface elements for modifying a street scene.](/img/docs/3dstreet-editor-screenshot.jpg)
 
 The **3DStreet Editor** is a tool that allows you to edit and modify components of a 3DStreet scene. With the Editor tool you can import designs from tools like Streetmix or create new original designs.
 
@@ -34,13 +38,24 @@ The **3DStreet Editor** is a tool that allows you to edit and modify components 
 
 There are several ways to modify the current viewer perspective within a scene in **Editor**.
 
-- **Pan**
-    - click and drag to move around the scene
-- **Rotate**
-    - Right click and drag to rotate while staying in place
-    - (`Ctrl` click and drag for users with trackpads)
-- **Zoom**
-    - With scroll wheel on your mouse move the wheel up and down. Or with trackpad use two fingers and move towards each other for a zoom in and move away from each other for zoom out.
+#### Pan
+
+Click and drag to move around the scene.
+
+![Animated gif of a user panning a street scene using the 3DStreet Editor.](/img/docs/3dstreet-editor-pan.gif)
+
+#### Rotate
+
+Right click and drag to rotate while staying in place. (`Ctrl` click and drag for users with trackpads.)
+
+![Animated gif of a user rotating a street scene using the 3DStreet Editor.](/img/docs/3dstreet-editor-rotate.gif)
+
+#### Zoom
+
+With scroll wheel on your mouse move the wheel up and down. Or with trackpad use two fingers and move towards each other for a zoom in and move away from each other for zoom out.
+
+![Animated gif of a user zooming in and out of a street scene using the 3DStreet Editor.](/img/docs/3dstreet-editor-zoom.gif)
+
 
 ### Switching Editor camera views
 
