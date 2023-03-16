@@ -61,15 +61,15 @@ With scroll wheel on your mouse move the wheel up and down. Or with trackpad use
 
 **Editor** has three camera perspectives to switch between: 3D View, Plan View, and Cross Section. You can change them by selecting their respective tabs at the top of the Editor screen. The darkened tab is the one that is your current selection. These views are not available in **Viewer**. 
 
-- **3D Plan View** shows a 3D perspective camera with adjustable rotation and position
-- **Plan View** shows a downfacing orthographic camera that can be panned, similar to a traditional map view
-- **Cross Section** shows a front facing orthographic camera view, similar to Streetmix
+- **3D Plan View** shows a 3D perspective camera with adjustable rotation and position <br/> ![Screenshot of 3DStreet editor with 3D perspective camera view selected.](/img/docs/3dstreet-editor-camera-3dview.jpg)
+- **Plan View** shows a downfacing orthographic camera that can be panned, similar to a traditional map view <br/> ![Screenshot of 3DStreet Editor with plan view (top-down) camera view selected.](/img/docs/3dstreet-editor-camera-planview.jpg)
+- **Cross Section** shows a front facing orthographic camera view, similar to Streetmix <br/> ![Screenshot of 3DStreet Editor with 3D cross section camera view selected.](/img/docs/3dstreet-editor-camera-crosssection.jpg)
 
 ## Moving around in the 3DStreet Viewer
 
 Use the purple cursor to help you move through **Viewer** similar to Google Street View or other first-person click and teleport movement schemes.
 
 - **Traverse down the street**
-    - The purple circle is a cursor that indicates a location to jump to when clicked. Click on it to move down the street to the cursor point. (Only available in **Viewer**)
+    - The purple circle is a cursor that indicates a location to jump to when clicked. Click on it to move down the street to the cursor point. (Only available in **Viewer**) <br/> ![Animated gif of using cursor teleport to traverse a scene in 3DStreet Viewer](/img/docs/3dstreet-viewer-traverse-via-cursor-teleport.gif)
 - **Rotate Camera**
-    - Use hand cursor to click desired point, when hand is closed “grab” and move mouse to rotate camera view
+    - Use hand cursor to click desired point, when hand is closed “grab” and move mouse to rotate camera view  <br/> ![Animated gif of rotating first-person camera perspective in 3DStreet Viewer](/img/docs/3dstreet-viewer-rotate-view.gif)
