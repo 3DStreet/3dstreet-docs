@@ -9,6 +9,8 @@ In **3DStreet Editor** the Layers and Properties panels enable browsing, selecti
 ## Layers Panel
 The left-hand Layer Panel provides an outline (also known as a "scene graph") of all the objects in your 3DStreet scene.
 
+![Screenshot of the layers panel in 3DStreet Editor.](/img/docs/3dstreet-editor-layers-panel.jpg)
+
 There are 4 primary Layers in 3DStreet: Viewer, Environment, 3D Street Layers, and 2D Street Layers. 
 * Viewer - This layer controls viewer and camera controls when in 3DStreet Viewer mode. This is used for customizing the viewer experience.
 * Environment - This layer controls the sky map and lighting of your scene.
@@ -21,6 +23,8 @@ You can collapse and expand layers using the right-hand toggle arrow. This will 
 
 ## Properties Panel
 When a Layer or an object is selected, the right-hand properties panel allows you to modify properties of that object.
+
+![Screenshot of the layers panel in 3DStreet Editor.](/img/docs/3dstreet-editor-properties-panel.jpg)
 
 All objects have position, rotation and scale properties. Depending on the object's function, it will have one or more components that with properties to control their behavior.
 

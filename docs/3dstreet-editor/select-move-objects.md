@@ -8,10 +8,11 @@ In **Editor** you can select and move objects.
 
 - **Select an object**
   - Click on the object
-  - When you see that it has a blue outline around it, it is selected
+  - When you see that it has a blue outline around it, it is selected <br/> ![Animated gif of a user selecting an object in 3DStreet Editor.](/img/docs/3dstreet-editor-select-object.gif)
 
 - **Move an object**
-  - Once an object is selected you will see a set of colorful arrows that will indicate directions to slide the selection
+  - Once an object is selected you will see a set of colorful arrows that will indicate directions to slide the selection <br/> ![Animated gif of a user moving an object using 3DStreet Editor.](/img/docs/3dstreet-editor-move-object-translation.gif)
+
   - Objects are on an x,y,z axis
     - Click on blue arrow to slide selection on the z axis (towards yourself)
     - Click on red arrow to slide selection on the x axis (left/right)
