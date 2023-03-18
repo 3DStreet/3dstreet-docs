@@ -4,12 +4,13 @@ sidebar_position: 5
 
 # Congratulations!
 
-What’s Next?
--Update your street by saving and creating your next draft. 
--Share with friends
--Import 
--Share on social media like Twitter, Instagram, Facebook, and Mastadon
+Now that you have a 3DStreet scene, the possibilities are endless. You can:
+* Update your street using 3DStreet Editor
+* Save and share the 3DStreet JSON file with your friends 
+* Export to a glTF model to render scene in other editors
+* Capture screenshots and share with friends
+* Share on social media like Twitter, Instagram, Facebook, and Mastadon
 
-![ezgif-1-9c2dc5d62d.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ac676e3c-6fad-4f6c-9490-c97dcdc19702/ezgif-1-9c2dc5d62d.gif)
+![Animated gif screenshot of a user loading a Streetmix street from 3DStreet Editor](/img/docs/tutorials/3dstreet-screen-capture-social-share.gif)
 
-Find us on [Twitter](https://twitter.com/3dstreetapp) and share your 3D Street files.
+Find us on [Twitter](https://twitter.com/3dstreetapp) and share your best 3DStreet scenes.

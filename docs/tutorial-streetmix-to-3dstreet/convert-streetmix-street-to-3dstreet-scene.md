@@ -4,28 +4,27 @@ sidebar_position: 4
 
 # Convert Streetmix street to 3DStreet scene
 
-![loadmanual.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8790a090-1820-4479-bd8a-bb5955d8b8b7/loadmanual.gif)
+Now that you have a beautiful Streetmix scene, it's time to convert it into a 3D masterpiece. There are 
 
-### Manual Import
 
-1. Copy and paste your StreetMix URL
-2.Load a 3D Street App
-3.Behind # copy and paste your StreetMix URL
-4. Press enter
-5. Your StreetMix will import into 3D Street!
+### URL shortcut to instantly convert Streetmix to 3DStreet
 
-![loadimport.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76563155-f4c3-4742-8d09-76945102312a/loadimport.gif)
+The fastest way to convert a Streetmix scene open in your browser is to insert "3D" in the URL as follows:
+* Make sure you are logged into Streetmix and have saved your street
+* Click on the URL bar of your browser and insert "3d" after "streetmix" but before ".net" ![Animated gif screenshot of a user modifying streetmix.net url to streetmix3d.net in a browser URL bar](/img/docs/tutorials/streetmix-net-to-streetmix3d-net-to-3dstreet-url-edit.gif)
 
-### Load a StreetMix with Editor
+* Press `enter`
+* 3DStreet will automatically import this Streetmix street into a new 3D scene
 
-1. Copy and paste your StreetMix URL
-2. Go to Editor
+### Load Streetmix from 3DStreet Editor
+
+You can also load a Streetmix street from inside 3DStreet Editor as follows:
+1. Copy and paste your Streetmix URL
+2. Go to [3DStreet Editor](https://3dstreet.app)
 3. In right top corner click Load 
-4. Click Import StreetMix
-5. Enter URL into the popup box
-6. Press enter
-7. Your StreetMix will import into 3D Street!
+4. Click Import Streetmix
+5. Paste your Streetmix URL in the popup box
+6. Press `enter`
+7. Your Streetmix street will now import into 3D Street!
 
-### A-Frame code option:
-
-Kieran will complete this
+![Animated gif screenshot of a user loading a Streetmix street from 3DStreet Editor](/img/docs/tutorials/load-streetmix-in-3dstreet-editor.gif)
