@@ -76,12 +76,7 @@ const config = {
           },
           {
             href: 'https://3dstreet.app',
-            label: 'Launch App',
-            position: 'left',
-          },
-          {
-            href: 'https://github.com/3dstreet/3dstreet',
-            label: 'GitHub',
+            label: 'Launch 3DStreet App',
             position: 'right',
           },
         ],
@@ -112,11 +107,19 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'GitHub Repositories',
             items: [
               {
-                label: 'GitHub',
+                label: '3DStreet Core (Parser and Viewer)',
                 href: 'https://github.com/3dstreet/3dstreet',
+              },
+              {
+                label: '3DStreet Editor',
+                href: 'https://github.com/3dstreet/3dstreet-editor',
+              },
+              {
+                label: '3DStreet Assets',
+                href: 'https://github.com/3dstreet/3dstreet-assets-source',
               },
             ],
           },
