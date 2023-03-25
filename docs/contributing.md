@@ -4,7 +4,7 @@ sidebar_position: 10
 
 ---
 
-Contributors to 3DStreet can come from various backgrounds, such as 3D artists, programmers, GIS experts, urban planners, and enthusiasts.
+Contributors to 3DStreet can come from various backgrounds, such as 3D artists, programmers, GIS experts, urban planners, educators, and enthusiasts.
 
 Some possible ways to become a contributor are:
 
@@ -14,5 +14,3 @@ Some possible ways to become a contributor are:
 * Documentation and tutorials: Writing documentation, creating tutorials, or making video guides can help newcomers learn how to contribute to the project and use the tools more effectively. You're reading the docs now. Peek behind the scenes with our open-source [docusaurus-based](https://docusaurus.io/) docs repo here: https://github.com/3DStreet/3dstreet-docs
 * Testing and feedback: Test the existing models, tools, and workflows, and provide feedback to improve the project. [There are some tests](https://github.com/3DStreet/3dstreet/tree/main/test) but not so great coverage. Please feel free to file an issue, [the 3DStreet repo is the best to file new issues](https://github.com/3DStreet/3dstreet/issues/new).
 * Community building: Engage with other contributors, help moderate forums, or organize events to promote the project and bring together people with shared interests. [Join our discord](https://discord.com/invite/VN242sx9qu), [follow us on Twitter](https://twitter.com/3dstreetapp).
-
-By contributing to projects like 3DStreet, you can help create realistic, open-source 3D environments that can be used in various applications, such as urban planning, architecture, simulations, or virtual reality experiences.
