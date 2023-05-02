@@ -29,3 +29,9 @@ This command generates static content into the `build` directory and can be serv
 ### Deployment
 
 Updates to main github branch will automatically build and push into a static `gh-pages` branch that is served at https://3dstreet.org using GitHub pages.
+
+### 3DStreet model directory json / schema workflow:
+* google sheet export csv https://docs.google.com/spreadsheets/d/1mZgccnGkEagTjLBs-0z6cDUDkPhKWNwA27HOGBlwjbk/edit#gid=0
+* csv to json via https://csvjson.com/csv2json
+* helpful editor https://jsoneditoronline.org/
+* validate against schema here: https://github.com/3DStreet/3dstreet-docs/blob/main/static/schema/3dstreet-model-schema-0.0.1.json
