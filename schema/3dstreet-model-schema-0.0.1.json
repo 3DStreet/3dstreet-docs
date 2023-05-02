@@ -1,137 +1,149 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "id": "https://3dstreet.io/schema/model/1.0.0.json",
-  "title": "3DStreet Model",
-  "description": "3DStreet Model Schema for the 3DStreet Model Directory",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier of the model, format is 'author.model-name'.",
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9-]+$",
-      "examples": [
-        "johnsmith.house-1",
-        "doe.tree-3"
-      ]
+  "id": "https://3dstreet.org/schema/3dstreet-model-schema-0.0.1.json",
+  "title": "3DStreet Model Directory Schema",
+  "description": "JSON Schema for the 3DStreet Model Directory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The unique identifier of the model, format is 'author.model-name'.",
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9-_]+$",
+        "examples": [
+          "outdoor_dining",
+          "lamp-modern"
+        ]
+      },
+      "name": {
+        "description": "The display name of the model.",
+        "type": "string",
+        "examples": [
+          "House 1",
+          "Tree 3"
+        ]
+      },
+      "description": {
+        "description": "The description of the model.",
+        "type": "string",
+        "maxLength": 280,
+        "examples": [
+          "A beautiful suburban house.",
+          "A tall oak tree."
+        ]
+      },
+      "preview": {
+        "description": "The preview image of the model.",
+        "type": "string",
+        "examples": [
+          "https://3dstreet.io/img/house-1.png",
+          "https://3dstreet.io/img/tree-3.png"
+        ]
+      },
+      "modelURL": {
+        "description": "The URL of the 3D model asset.",
+        "type": "string",
+        "examples": [
+          "https://3dstreet.io/models/house-1.glb",
+          "https://3dstreet.io/models/tree-3.glb"
+        ]
+      },
+      "partName": {
+        "description": "The named node within the glTF model asset that represents this model.",
+        "type": "string",
+        "examples": [
+          "https://3dstreet.io/models/house-1.glb",
+          "https://3dstreet.io/models/tree-3.glb"
+        ]
+      },
+      "category": {
+        "description": "The category of the model.",
+        "type": "string",
+        "enum": [
+          "vehicles",
+          "human-characters",
+          "building",
+          "sidewalk-props",
+          "vehicles-rigged",
+          "people-rigged",
+          "loud-bicycle"
+        ]
+      },
+      "format": {
+        "description": "The format type of the model.",
+        "type": "string",
+        "enum": [
+          "model-part",
+          "model",
+          "image"
+        ]
+      },
+      "longDescription": {
+        "description": "The long description of the model with basic markdown support.",
+        "type": "string"
+      },
+      "modelDimensions": {
+        "description": "The dimensions of the model in meters (height, width, depth).",
+        "type": "string"
+      },
+      "licenseName": {
+        "description": "The short name of the model's license.",
+        "type": "string",
+        "maxLength": 255
+      },
+      "licenseDetails": {
+        "description": "The long description of the model's license.",
+        "type": "string"
+      },
+      "licenseLink": {
+        "description": "The URL of the model's license.",
+        "type": "string"
+      },
+      "licenseCategory": {
+        "description": "The category of the license.",
+        "type": "string",
+        "enum": [
+          "permissive",
+          "restrictive",
+          ""
+        ]
+      },
+      "copyrightEntity": {
+        "description": "The entity that owns primary copyright of the model.",
+        "type": "string"
+      },
+      "copyrightDetails": {
+        "description": "The copyright details of the model.",
+        "type": "string"
+      },
+      "authorName": {
+        "description": "The name of the model's author.",
+        "type": "string"
+      },
+      "authorLink": {
+        "description": "The URL of the model's author.",
+        "type": "string"
+      },
+      "streetmixSegmentName": {
+        "description": "The Streetmix segment name for the model.",
+        "type": "string"
+      },
+      "streetmixSegmentVariant": {
+        "description": "The Streetmix segment variant for the model.",
+        "type": "string"
+      },
+      "sourceURL": {
+        "description": "The URL of the model's source file.",
+        "type": "string"
+      }
     },
-    "name": {
-      "description": "The display name of the model.",
-      "type": "string",
-      "examples": [
-        "House 1",
-        "Tree 3"
-      ]
-    },
-    "description": {
-      "description": "The description of the model.",
-      "type": "string",
-      "maxLength": 280,
-      "examples": [
-        "A beautiful suburban house.",
-        "A tall oak tree."
-      ]
-    },
-    "preview": {
-      "description": "The preview image of the model.",
-      "type": "string",
-      "examples": [
-        "https://3dstreet.io/img/house-1.png",
-        "https://3dstreet.io/img/tree-3.png"
-      ]
-    },
-    "modelURL": {
-      "description": "The URL of the 3D model asset.",
-      "type": "string",
-      "examples": [
-        "https://3dstreet.io/models/house-1.glb",
-        "https://3dstreet.io/models/tree-3.glb"
-      ]
-    },
-    "partName": {
-      "description": "The named node within the glTF model asset that represents this model.",
-      "type": "string",
-      "examples": [
-        "https://3dstreet.io/models/house-1.glb",
-        "https://3dstreet.io/models/tree-3.glb"
-      ]
-    },
-    "category": {
-      "description": "The category of the model.",
-      "type": "string",
-      "enum": [
-        "vehicle",
-        "character",
-        "building",
-        "mobility",
-        "landscape",
-        "miscellaneous"
-      ]
-    },
-    "longDescription": {
-      "description": "The long description of the model with basic markdown support.",
-      "type": "string"
-    },
-    "modelDimensions": {
-      "description": "The dimensions of the model in meters (height, width, depth).",
-      "type": "string"
-    },
-    "licenseName": {
-      "description": "The short name of the model's license.",
-      "type": "string",
-      "maxLength": 255
-    },
-    "licenseDetails": {
-      "description": "The long description of the model's license.",
-      "type": "string"
-    },
-    "licenseLink": {
-      "description": "The URL of the model's license.",
-      "type": "string"
-    },
-    "licenseCategory": {
-      "description": "The category of the license.",
-      "type": "string",
-      "enum": [
-        "permissive",
-        "restrictive",
-        "unknown"
-      ]
-    },
-    "copyrightEntity": {
-      "description": "The entity that owns primary copyright of the model.",
-      "type": "string"
-    },
-    "copyrightDetails": {
-      "description": "The copyright details of the model.",
-      "type": "string"
-    },
-    "authorName": {
-      "description": "The name of the model's author.",
-      "type": "string"
-    },
-    "authorLink": {
-      "description": "The URL of the model's author.",
-      "type": "string"
-    },
-    "streetmixSegmentName": {
-      "description": "The Streetmix segment name for the model.",
-      "type": "string"
-    },
-    "streetmixSegmentVariant": {
-      "description": "The Streetmix segment variant for the model.",
-      "type": "string"
-    },
-    "sourceURL": {
-      "description": "The URL of the model's source file.",
-      "type": "string"
-    }
-  },
-  "required": [
-    "id",
-    "name",
-    "description",
-    "preview",
-    "asset",
-    "category"
-  ]
+    "required": [
+      "id",
+      "name",
+      "preview",
+      "modelURL",
+      "category"
+    ]
+  }
 }
