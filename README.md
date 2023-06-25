@@ -4,6 +4,10 @@ This is the repo for https://3dstreet.org website and https://3dstreet.org/docs 
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+## Contributing
+
+Want to contribute changes to these docs? The simplest way to is to visit an actual doc page such as https://www.3dstreet.org/docs/ and click on "✎ Edit this page" to see the markdown source file on GitHub. Click the pencil icon ✎ again in GitHub to make your suggested changes.
+
 ### Installation
 
 ```
