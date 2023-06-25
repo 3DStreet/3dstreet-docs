@@ -10,6 +10,8 @@ Want to contribute changes to these docs? The simplest way to is to visit an act
 
 ## Developer Instructions
 
+If you want to develop locally, clone this repo and use npm build tools.
+
 ### Installation
 
 ```
