@@ -20,4 +20,4 @@ In using these features, you understand that you use this application at your ow
 
 ## Feedback on saving and loading scenes
 
-We're open to suggestions on alternate account creation and access methods for 3DStreet scenes. Join our Discord server or suggest an issue on our GitHub repos accessed via the links in the footer below.
+We're open to suggestions on alternate account creation and access methods for 3DStreet scenes. [Join our Discord server](https://discord.com/invite/VN242sx9qu) or [suggest an issue](https://github.com/3dstreet/3dstreet/issues/new) on our GitHub repos accessed via the links in the footer below.
