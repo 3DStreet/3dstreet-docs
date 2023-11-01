@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 3DStreet's vision is to reimagine a new world through safer, greener streets. Our vision and mission are informed by the organization's problem and solution statements.
 ---
 
 # Why 3DStreet? Vision & Mission
@@ -18,7 +19,7 @@ However, access to software and engineering skills required to implement these p
 
 These accessibility barriers prevent community members and advocates from fixing deadly streets in their own neighborhoods.
 
-## Solution Proposal
+## Solution Statement
 
 3DStreet is an attempt to provide accessible software to conceptualize and share safer street designs from multiple 3D perspectives, usually in the context of a specific geographic location. 3DStreet is a web-based, open-source[^3] application.
 
