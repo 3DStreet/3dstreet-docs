@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Primary Metrics
+# Primary Short-Term Metrics
 
 In our journey to make street planning fun and accessible, we believe in the power of using data to inform and drive our decisions. We closely observe certain key metrics to gauge our performance and improve your experience.
 
@@ -14,9 +14,6 @@ In our journey to make street planning fun and accessible, we believe in the pow
 
 4) Total Number of Scenes Shared Over Time: Sharing scenes signifies not just personal satisfaction but also an intent to inspire others or solicit feedback. It hints at the sense of community we strive for at 3DStreet.
 
-### References
-[^1] https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
+## Long-Term Metrics
 
-[^2] https://nacto.org/publication/urban-street-design-guide/
-
-[^3] [3DStreet is made available with an AGPL 3.0 license](https://github.com/3DStreet/3dstreet/blob/main/LICENSE)
+Our very long-term goal is to reduce deaths from traffic violence and reduce negative externalities of motor vehicles on humans and the environment. It's unlikely for us to be able to make a direct impact on these important goals in the short-term, so we focus on earlier indicators such as improve street design and sharing.
