@@ -2,7 +2,7 @@
 
 This is the repo for https://3dstreet.org website and https://3dstreet.org/docs Documentation site.
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Contributing
 
