@@ -24,3 +24,4 @@ This is documentation for developers and contributors to 3DStreet. It includes l
     - Architecture
     - Repositories
     - Contributing Instructions (issue, PR, testing, etc.)
+- Anatomy of `3DStreet` core repo index.html (script imports a-frame and components, viewer UI, street parser ...)
