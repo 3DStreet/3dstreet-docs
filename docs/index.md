@@ -8,7 +8,7 @@ title: Overview
 
 Welcome to the 3DStreet documentation.
 
-**3DStreet is an open-source web-based 3D platform to create and share highly detailed street scenes.** The 3DStreet organization is a mission-based project to provide more accessible street planning tools for users of diverse ages and abilities. [Learn more about the 3DStreet organization's mission here.](./why-3dstreet)
+**3DStreet is an open-source web-based 3D platform to create and share highly detailed street scenes.** The 3DStreet organization is a mission-based project to provide more accessible street planning tools for users of diverse ages and abilities. [Learn more about the 3DStreet organization's mission here.](./3dstreet-organization/overview-vision-mission.md)
 
 **You can explore new scenes with 3DStreet Viewer or design new scenes with 3DStreet Editor.** A quick way to get started is to import a street from Streetmix and instantly generate a 3DStreet scene that you can modify and build from. [This step-by-step tutorial guides you through this process in 15 minutes or less.](./tutorial-streetmix-to-3dstreet/overview-streetmix-3dstreet)
 
