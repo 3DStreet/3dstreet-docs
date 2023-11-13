@@ -1,13 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Overview
-
-## For Developers
-This is documentation for developers and contributors to 3DStreet. It includes links to all of the source code of 3DStreet as well as instructions on how to leverage 3DStreet components in your own applications.
-
-### 3DStreet Repositories
+# Git Repositories
 3DStreet is made up of 4 key repositories:
 
 | Name | Repository & Endpoint | Description | 
