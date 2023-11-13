@@ -30,3 +30,9 @@ Said another way, 3DStreet is an ever-evolving answer to the question, "what if 
 We created 3DStreet to be part of a wider ecosystem of open-source applications making street planning and design and accessible to users of diverse abilities, empowering them to design safer streets and transportation infrastructure. These tools are (or should be) interoperable, and need not be all made by one organization. Other tools include [Streetmix](https://streetmix.net) and [A/B Street](https://a-b-street.github.io/docs/index.html).
 
 For example, 3DStreet and Streetmix are already compatible: [you can create a new 3DStreet scene by importing a Streetmix street.](/docs/tutorial-streetmix-to-3dstreet/overview-streetmix-3dstreet)
+
+
+### References
+[^1] https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
+
+[^2] https://nacto.org/publication/urban-street-design-guide/
