@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 3DStreet Legal Entity
+# Legal Entity
 
 3DStreet's legal entity is structured as a single-member limited liability company registered in the great State of California created and owned by [Kieran Farr](https://www.linkedin.com/in/kfarr/). 3DStreet has been self-funded to date with no outside investors.
 

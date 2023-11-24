@@ -3,7 +3,7 @@ sidebar_position: 3
 description: The 3DStreet brand persona is "Explorer" -- dedicated to inspiring change, aspiring to be a beacon of authenticity, curiosity, adventure and independence as it collectively works to reimagine a safer, greener world for all.
 ---
 
-# 3DStreet Brand Voice 
+# Brand Voice 
 
 ### Explorer brand persona
 
