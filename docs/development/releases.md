@@ -3,7 +3,6 @@ sidebar_position: 1
 ---
 
 # Product Releases
-Recent releases:
 
 ## [3DStreet Core 0.4.2](https://github.com/3DStreet/3dstreet/releases/tag/0.4.2)
 * Internal release and bugfixes prior to 0.5.0 release (no new user-facing features)
@@ -23,3 +22,14 @@ Recent releases:
 * v1 local save / load & right-hand "viewer" menu to load scenes
 * asset updates and updates to `street` and `intersection` components preparing for [Loud Bicycle Game](https://loudbicycle.com/game)
 * v1 animation of some objects like cars or people (with flag)
+
+## Developer notes for maintainers
+### Release checklist
+Combined 3DStreet core + Editor release checklist. (Copy paste this markdown for a new release issue.)
+
+ - [ ] [Complete the release checklist for core](https://github.com/3DStreet/3dstreet/blob/main/CONTRIBUTING.md#release-checklist-for-this-repo)
+ - [ ] [Complete release checklist for editor](https://github.com/3DStreet/3dstreet-editor/blob/master/README.md#deployment-instructions)
+ - [ ] Complete editor deploy
+ - [ ] Smoke test on production 😬
+ - [ ] Then share release notes on this doc above
+ - [ ] Share announcement on social media, email newsletter, etc
