@@ -4,8 +4,17 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Editor 0.4.3](https://github.com/3DStreet/3dstreet-editor/releases/tag/0.4.3)
+* Completion of big [save / load v2 epic](https://github.com/3DStreet/3dstreet-editor/issues/259)
+* Huge speed improvement in open dialog, especially browsing community scenes
+* Scene titles are now editable in scene and open modal
+* New scene thumbnails
+* New capture and share modal
+* Fixing [save as instead of save bug](https://github.com/3DStreet/3dstreet-editor/issues/307)
+* Updated styles and new default scene card, and more!
+
 ## [3DStreet Core 0.4.2](https://github.com/3DStreet/3dstreet/releases/tag/0.4.2)
-* Internal release and bugfixes prior to 0.5.0 release (no new user-facing features)
+* Internal release and bugfixes prior to 0.4.3 release (no new user-facing features)
 * metadata component for title and sceneId v1
 * notification framework v1
 * STREET global v1
