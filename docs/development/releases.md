@@ -4,6 +4,16 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.4](https://github.com/3DStreet/3dstreet/releases/tag/0.4.4)
+* Completion of big [creator usability epic](https://github.com/3DStreet/3dstreet/issues/358)
+* Significant visual improvements to environment (sky and lighting)
+* Now choose from 8 different environment presets, each with a unique sky with matching lighting conditions impacting shadows, reflections and color tone: 'day', 'night', 'color', 'sunny-morning', 'cloudy-afternoon', 'sunny-afternoon', 'sunny-noon', 'foggy', 'cloudy'. Choose 'color' to specify your own background color.
+* Upgrade A-Frame 1.5 to take advantage of new reflection component, global anisotropy setting for crisper paint striping and finer ground details, and help prepare for upcoming AR and hand tracking features
+* new ocean
+* shorter default street length 60m instead of 150m
+* major refactor of creating 3d segments from json source: grounds underneath street segments and underneath buildings or lots, accurate x position and box widths instead of arcane x scale, using nicer display names for segments to make browsing in scene graph easier, fix elevation support
+* randomize item placement, more, accurate rail widths (standard gauge and sf cablecar gauge)
+
 ## [3DStreet Editor 0.4.3](https://github.com/3DStreet/3dstreet-editor/releases/tag/0.4.3)
 * Completion of big [save / load v2 epic](https://github.com/3DStreet/3dstreet-editor/issues/259)
 * Huge speed improvement in open dialog, especially browsing community scenes
