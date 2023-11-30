@@ -105,15 +105,16 @@ export default function Home() {
             3DStreet Scene Gallery
           </h1>
           <div className="st_scene_list">
+          <a
+                    href="https://3dstreet.app/#https://streetmix.net/kfarr/3/example-street"
+                    className="st_scene_launch"
+                    target='blank'
+                  >
             <div className="st_scene_item">
               <div className="st_scene_image">
                 <img src="/img/scenes/scene1.jpg" alt="" />
                 <div className="st_scene_overlay">
-                  <a
-                    href="https://github.3dstreet.org/3dtiles.html"
-                    className="st_scene_launch"
-                  >
-                    <span className="st_scene_launch_text">Launch</span>
+
                     <span className="st_scene_launch_icon">
                       <svg
                         width={18}
@@ -131,27 +132,25 @@ export default function Home() {
                         />
                       </svg>
                     </span>
-                  </a>
                 </div>
               </div>
               <div className="st_scene_details">
-                <h3 className="title-2 color-white">3D Tiles Demo Scene</h3>
+                <h3 className="title-2 color-white">Basic Demo Scene</h3>
                 <p className="title-3">
-                  16th St &amp; South Van Ness Ave, San Francisco, CA - 3DStreet
-                  layers mixed with 3d tiles drone photogrammetry to visualize
-                  community-proposed alternatives.
+                  A 3DStreet scene showing a basic street imported from Streetmix with no customization.
                 </p>
               </div>
             </div>
-            <div className="st_scene_item">
+            </a>
+            <a
+                    href="https://3dstreet.app/#/scenes/943f35e8-8064-4fb8-9588-80fe44cb76e2.json"
+                    className="st_scene_launch"
+                    target='blank'
+                  >            <div className="st_scene_item">
               <div className="st_scene_image">
                 <img src="/img/scenes/scene2.jpg" alt="" />
                 <div className="st_scene_overlay">
-                  <a
-                    href="https://github.3dstreet.org/animated.html"
-                    className="st_scene_launch"
-                  >
-                    <span className="st_scene_launch_text">Launch</span>
+                  
                     <span className="st_scene_launch_icon">
                       <svg
                         width={18}
@@ -169,25 +168,25 @@ export default function Home() {
                         />
                       </svg>
                     </span>
-                  </a>
                 </div>
               </div>
               <div className="st_scene_details">
-                <h3 className="title-2 color-white">Animated Example</h3>
+                <h3 className="title-2 color-white">Staff Pick: Custom Placements</h3>
                 <p className="title-3">
-                  A basic demonstration of animated people and vehicles.
+                  Eli's street scene shows advanced use of duplicating and modifying vehicles, mobility users, and other props to create multi-use segments that change mid-block.
                 </p>
               </div>
             </div>
+            </a>
+            <a
+                    href="https://3dstreet.app/#/scenes/224d2558-1b35-4a7a-bd37-8bc1c2c4dfe9.json"
+                    className="st_scene_launch"
+                    target='blank'
+                  >
             <div className="st_scene_item">
               <div className="st_scene_image">
                 <img src="/img/scenes/scene3.jpg" alt="" />
                 <div className="st_scene_overlay">
-                  <a
-                    href="https://github.3dstreet.org/#https://streetmix.net/kfarr/3/example-street"
-                    className="st_scene_launch"
-                  >
-                    <span className="st_scene_launch_text">Launch</span>
                     <span className="st_scene_launch_icon">
                       <svg
                         width={18}
@@ -205,17 +204,17 @@ export default function Home() {
                         />
                       </svg>
                     </span>
-                  </a>
                 </div>
               </div>
               <div className="st_scene_details">
-                <h3 className="title-2 color-white">Streetmix Demo Scene</h3>
+                <h3 className="title-2 color-white">Staff Pick: Custom Geometry</h3>
                 <p className="title-3">
-                  This starter scene allows you to import any Streetmix scene by
-                  pasting its URL.
+                  Sharon's scene features custom safe street details like a midblock crosswalk with students crossing to get to school and clever use of building models. 
                 </p>
               </div>
             </div>
+            </a>
+
             {/* 
               <div class="st_scene_item">
                   <div class="st_scene_image">
