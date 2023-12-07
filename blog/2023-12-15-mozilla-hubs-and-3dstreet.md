@@ -60,16 +60,13 @@ Then run the script to setup certificates for the domains after placing appropri
 
 You should be able to access your Hubs server on a web browser and see no certificate warnings at this stage. Now you can begin customizing your admin settings, the Hubs client, and other exciting ideas that come to mind.
 
-#### "pausing"
+#### "Pausing" the cluster
 Evidently K8S doesn't have the concept of "pausing" a cluster, but instead you can scale it down with this command:
 kubectl scale --replicas=0 -f hcce.yaml
 kubectl scale --replicas=1 -f hcce.yaml
 
-#### destroy
+#### Deleting the cluster
 `gcloud container clusters delete hubs-test-cluster --region=us-central1`
-
-
-
 
 ### Quota Limits
 You will hit quota limits -- the defaults in GCP are too low for IP address limits and Persistent Disk SSD total storage capacity (GB). You will need to go into the [GCP Console > IAM & Admin > Quotas](https://console.cloud.google.com/apis/api/compute.googleapis.com/quotas) to make a quota request to increase these. Persistent disk storage upgrade from 500gb to 1000gb. IP addresses raise limit to 16.
@@ -78,7 +75,7 @@ You will hit quota limits -- the defaults in GCP are too low for IP address limi
 Automated server deployment with Kubernetes engine on GCP magically works -- until it doesn't. Unfortunately, when it doesn't work you will need to dig through a lot of layers of clusters, nodes, and pods (oh my!) to see what's going wrong. In addition to using [Mirantis Lens](https://k8slens.dev/) to poke around at your cluster, I found the #community-edition channel on the Hubs discord to be super helpful.
 
 ## Billing and cost considerations
-For a given GCP Project we can check out billing history. I've seen about $10 per day cost for compute and Kubernetes engine which was a bit more than I expected, and considerably more expensive (approx $300/mo) compared to the $90 per month
+For a given GCP Project we can check out billing history. I've seen about $10 per day cost for compute and Kubernetes engine which was a bit more than I expected, and considerably more expensive (forecasted at $300/mo) compared to the $79 per month plan with the fully managed Hubs Professional plan.
 
 ## Hubs Client Customization
 Using glTF as an intermediary format
