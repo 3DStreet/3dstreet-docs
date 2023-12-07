@@ -10,7 +10,7 @@ hide_table_of_contents: false
 
 Our WebXR app 3DStreet launched this year to empower anyone to visualize a safer, greener world, one street at a time. 3DStreet users have asked for collaboration features, but our team is small and integrating multi-user presence and conferencing into 3DStreet would be difficult and time consuming. How can we offer remote, virtual collaboration tools without major rewrites of our 3DStreet application?
 
-Answer: use the power of glTF as an intermediary format combined with the power Mozilla Hubs self-hosted on Community Edition! In this post we'll outline the strategy we used to implement a proof of concept for "3DStreet Club" -- our branded experiment for a hosted collaboration experience using 3DStreet designs as the foundation of the virtual space.
+Answer: use the power of glTF as an intermediary format combined with the power of Mozilla Hubs self-hosted on Community Edition! In this post we'll outline the strategy we used to implement a proof of concept for "3DStreet Club" -- our branded experiment for a hosted collaboration experience using 3DStreet designs as the foundation of the virtual space.
 
 <!-- truncate -->
 
