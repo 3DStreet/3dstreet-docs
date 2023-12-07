@@ -33,6 +33,10 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        blog: {
+          path: 'blog',
+          routeBasePath: 'blog',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -40,7 +44,6 @@ const config = {
           editUrl:
             'https://github.com/3dstreet/3dstreet-docs/tree/main/',
         },
-        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -75,6 +78,7 @@ const config = {
             label: 'Gallery',
             position: 'left',
           },
+          {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
           {
             href: 'https://3dstreet.app',
             label: 'Launch 3DStreet App',
