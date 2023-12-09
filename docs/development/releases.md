@@ -4,6 +4,15 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.5](https://github.com/3DStreet/3dstreet/releases/tag/0.4.5)
+* Mostly hotfixes and bugfixes to [0.4.4](#3dstreet-core-044) such as fixing error saving scenes caused by default value of component properties not found; fixing display name of streets and segments by changing colon to bullet, therefore preventing interpretation of strings intended for display to user as being interpreted as attribute:value pairs. 
+* Add animations for people on bicycles and some scooters
+* Fix logo size for on overlay
+* Fix disappearing helpers in "Share scene" window
+* Fix bug of not-animated characters grouped at Z center
+* Notify methods in global STREET object
+* save grouped assets in the attribute of street-assets element
+
 ## [3DStreet Core 0.4.4](https://github.com/3DStreet/3dstreet/releases/tag/0.4.4)
 * Completion of big [creator usability epic](https://github.com/3DStreet/3dstreet/issues/358)
 * Significant visual improvements to environment (sky and lighting)
