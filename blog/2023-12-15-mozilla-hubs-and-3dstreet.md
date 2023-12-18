@@ -88,7 +88,7 @@ Automated server deployment with Kubernetes engine on GCP magically works -- unt
 ### Billing and cost considerations
 For a given GCP Project we can check out billing history. I've seen about $10 per day cost for compute and Kubernetes engine which was a bit more than I expected, and considerably more expensive (forecasted at $300/mo) compared to the $79 per month plan with the fully managed Hubs Professional plan.
 
-## Hubs Client Customization
+## Modifying Hubs for 3DStreet Scene Collaboration
 
 Our project goal is to allow a user to click a button inside of a 3DStreet.app scene and launch a Hubs room using that scene.
 
@@ -108,6 +108,51 @@ flowchart TD
     I(User Creates Room) --> J
     J(Custom Hubs Client adds 3DStreet GLB to Scene from Local Storage Path)
 ```
+
+### Hubs Client Customization
+
+To support the above workflow, we need to modify the Hubs client in 2 places:
+* First, we need to capture the path of the 3DStreet Scene GLB when the user clicks on the link to leave 3DStreet.app and load the custom CE Hubs instance at 3DStreet.club. 
+* Then, after the user creates a new Hubs Room on the server, we need to add that GLB to the scene that we saved when the user first loaded the custom CE Hubs instance.
+
+#### Modifying Hubs index.html
+The first file we'll modify is `index.html` -- displayed to a user when they first land on our custom Hubs CE homepage. I'm going to cheat and insert a script at the bottom of the page, after all the important stuff is done, to save to local storage the GLB path passed from 3DStreet application.
+
+```index.html
+<script>
+    // This takes a page location such as "https://myhubs.club/index.html#https://3dstreet.app/file.glb" 
+    // and saves to local storage just the part after the # symbol such as "https://3dstreet.app/file.glb"
+    const gltfPath = window.location.hash.substring(1);
+    console.log('[3DStreet Loader] window.location.hash', gltfPath);
+    localStorage.setItem('gltf-path', gltfPath);
+    console.log('[3DStreet Loader] Set as gltf-path in localStorage');
+</script>
+```
+
+#### Modifying Hubs hub.js
+
+The second file we'll modify is `hub.js`. This is a critical file used in the core instantiation of Hubs logic such as voice communication, user interface, physics, etc. We are doing our best to "tread lightly" and only run our code after the entire scene is instantiated. To do this, we piggy back off of an existing `onSceneLoaded` function [in line 780](https://github.com/mozilla/hubs/blob/master/src/hub.js#L780).
+
+Here is how we modified `hub.js` to add the 3DStreet glb from the path saved in local storage:
+```hub.js
+  const onSceneLoaded = () => {
+    // existing physics setup here
+    
+    // Load 3DStreet glb path from local storage
+    var streetEl = document.createElement('a-entity');
+    const gltfPath = localStorage.getItem('gltf-path');
+    streetEl.setAttribute("media-loader", { src: gltfPath, fitToBox: true, resolve: true })
+    streetEl.setAttribute("networked", { template: "#interactable-media" } );
+    streetEl.id = 'streetEl';
+    streetEl.setAttribute('scale', '100 100 100');
+    streetEl.setAttribute('position', '0 1 0');
+    document.getElementById('objects-scene').append(streetEl);
+};
+```
+
+### Deploying Hubs Custom Client to Community Edition
+(...)
+
 
 ## User testing and prep for launch
 Initial user feedback
