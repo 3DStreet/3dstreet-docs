@@ -53,13 +53,13 @@ After editing render_hcce.sh to place appropriate environment variables like you
 
 `bash render_hcce.sh && kubectl apply -f hcce.yaml`
 
-Then wait until you get an "External IP" from this command:
-
-`kubectl -n hubs-test-cluster get svc lb`
-
 And wait until all 11 pods are ready from this command:
 
 `kubectl get deployment -n hubs-test-cluster`
+
+Then wait until you get an "External IP" from this command:
+
+`kubectl -n hubs-test-cluster get svc lb`
 
 Use the External IP to set as A record for all 4 domains in DNS Zone: domain, assets.domain, stream.domain, cors.domain.
 
