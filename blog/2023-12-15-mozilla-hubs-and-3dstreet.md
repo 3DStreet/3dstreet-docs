@@ -20,7 +20,7 @@ Hubs is an [open-source 3D conferencing cloud software](https://labs.mozilla.org
 I’ve been a long time user of Hubs, but never customized it. During the pandemic our small but mighty marketing team at Bitmovin got Oculus Quest headsets and used Hubs for internal meetings. We had the most fun when interacting in a custom virtual space that a 3D artist helped us create, bespoke for a virtual conference that we eventually hosted open to the public.
 
 ## Project Strategy
-During user testing we hear that a primary value of VR or AR headset visualization is gaining an instant spatial understanding of a scene and proposed civil infrastructure projects. When collaborating remotely on project designs, it can be time consuming for engineers and planning professionals to take 2D screen grabs, make markups, send back via email, and then still expect users to maintain that spatial reference to make use of the feedback. What if both users could be in the same 3D reference space and communicate with each other in realtime?
+During user testing we hear that a primary value of VR or AR headset visualization is gaining an instant spatial understanding of a scene and proposed civil infrastructure projects. When collaborating remotely on project designs, it can be time consuming for engineers and planning professionals to take 2D screen grabs, make markups, send back via email, and then still expect users to maintain that spatial reference to make use of the feedback. What if both users could be in the same 3D reference space and communicate with each other in real-time?
 
 We’d like to provide the users an option of exporting their 3DStreet scene to have a live conversation with other users they invite. They may not have VR headsets, so supporting a wide range of devices is key.
 
@@ -30,7 +30,7 @@ We considered a few options for this. One option is to pay for a hosted pro plan
 My favorite reference document for setup was [the CE Quick Start on GCP](https://hubs.mozilla.com/labs/community-edition-case-study-quick-start-on-gcp-w-aws-services/), and there's no sense in copying all the setup steps here, so instead in this post I'll share a condensed set of instructions on just what you need to get started and what I learned deploying these things myself, but check out that link for more background on the Hubs architecture, Kubernetes and configuration options.
 
 ### Project Structure in Google Cloud Platform
-GCP use of Projects is a very hand way to structure cloud services, I strongly recommend to create a dedicated project for your Hubs CE deployment. In our case we already have a project for 3DStreet Cloud production, and another project for 3DStreet Dev Server which is a copy of production for testing against, so adding another for Hubs is simple and fits in this existing structure. You can get other features by "leaning in" to this structure such as distinct user rights management and billing settings for each project.
+GCP use of Projects is a very handy way to structure cloud services, I strongly recommend creating a dedicated project for your Hubs CE deployment. In our case we already have a project for 3DStreet Cloud production, and another project for 3DStreet Dev Server which is a copy of production for testing against, so adding another for Hubs is simple and fits in this existing structure. You can get other features by "leaning in" to this structure such as distinct user rights management and billing settings for each project.
 
 ### Domain and DNS Setup
 I used an old domain lying around `3dstreet.club` which was registered with GoDaddy, and used [GCP for DNS hosting](https://cloud.google.com/dns) for the project. Using GCP to [setup Cloud DNS hosting zones was straightforward](https://cloud.google.com/dns/docs/set-up-dns-records-domain-name), once I [updated the GoDaddy domain to use custom nameservers](https://www.godaddy.com/help/edit-my-domain-nameservers-664) pointing to the new GCP Cloud DNS zone.
@@ -43,27 +43,38 @@ Here are the most critical command lines for deploying your Hubs scene -- you'll
 
 #### Create cluster in GCP
 `gcloud container clusters create <YOUR_DESIRED_NAMESPACE> --zone=<YOUR_DESIRED_ZONE>`
-zone: us-central-1
-namespace: hubs-test-cluser
+
+For this example project I'm using zone: "us-central1" and namespace: "hubs-test-cluster"
 
 `gcloud container clusters create hubs-test-cluster --zone us-central1`
 
 #### Deploy to newly created cluster with custom settings
 After editing render_hcce.sh to place appropriate environment variables like your Hub domain, email and Namespace:
+
 `bash render_hcce.sh && kubectl apply -f hcce.yaml`
-Then wait until you get an "External IP" from this command.
+
+Then wait until you get an "External IP" from this command:
+
 `kubectl -n hubs-test-cluster get svc lb`
+
+And wait until all 11 pods are ready from this command:
+
+`kubectl get deployment -n hubs-test-cluster`
+
 Use the External IP to set as A record for all 4 domains in DNS Zone: domain, assets.domain, stream.domain, cors.domain.
 
 Then run the script to setup certificates for the domains after placing appropriate environment variables:
+
 `bash cbb.sh`
 
 You should be able to access your Hubs server on a web browser and see no certificate warnings at this stage. Now you can begin customizing your admin settings, the Hubs client, and other exciting ideas that come to mind.
 
 #### "Pausing" the cluster
 Evidently K8S doesn't have the concept of "pausing" a cluster, but instead you can scale it down with this command:
-kubectl scale --replicas=0 -f hcce.yaml
-kubectl scale --replicas=1 -f hcce.yaml
+
+`kubectl scale --replicas=0 -f hcce.yaml`
+
+`kubectl scale --replicas=1 -f hcce.yaml`
 
 #### Deleting the cluster
 `gcloud container clusters delete hubs-test-cluster --region=us-central1`
@@ -74,15 +85,29 @@ You will hit quota limits -- the defaults in GCP are too low for IP address limi
 ### When things go wrong
 Automated server deployment with Kubernetes engine on GCP magically works -- until it doesn't. Unfortunately, when it doesn't work you will need to dig through a lot of layers of clusters, nodes, and pods (oh my!) to see what's going wrong. In addition to using [Mirantis Lens](https://k8slens.dev/) to poke around at your cluster, I found the #community-edition channel on the Hubs discord to be super helpful.
 
-## Billing and cost considerations
+### Billing and cost considerations
 For a given GCP Project we can check out billing history. I've seen about $10 per day cost for compute and Kubernetes engine which was a bit more than I expected, and considerably more expensive (forecasted at $300/mo) compared to the $79 per month plan with the fully managed Hubs Professional plan.
 
 ## Hubs Client Customization
-Using glTF as an intermediary format
-Where to host? How to get it into the client?
-Hosted or localstorage? Experiments with localstorage and large files, likely need to use hosted for highest reliability
-User experience expectations and UI design
-Testing the end-to-end flow
+
+Our project goal is to allow a user to click a button inside of a 3DStreet.app scene and launch a Hubs room using that scene.
+
+We do this by using a glTF file as an intermediary -- the 3DStreet.app will create a glb (all-in-one compressed binary glTF file representing the 3DStreet scene) and then storing it on the 3DStreet server. Our custom Hubs client will then reference this glb file to present in the user's scene when they create a new Hubs Room.
+
+Here is an architecture diagram / flow chart of how this sequence might work:
+
+```mermaid
+flowchart TD
+    A(User Loads or Creates 3DStreet.app Scene) --> B
+    B(User Clicks 'Collaborate Live with Hubs') --> D
+    D{Is user logged in to \n3DStreet Cloud to save GLB?} --> |Yes| E
+    D --> |No|F(3DStreet Cloud Sign In) --> E
+    E(3DStreet creates GLB file and saves to Firebase Cloud Storage) --> G
+    G(Send to CE Hubs Server: 3DStreet.Club\nPass 3DStreet GLB URL as Hash, such as:\nhttps://3dstreet.club/#https://URL-for-3DStreet-GLB-file) --> H
+    H(Custom Hubs Client Stores this GLB URL path to Local Storage) --> I
+    I(User Creates Room) --> J
+    J(Custom Hubs Client adds 3DStreet GLB to Scene from Local Storage Path)
+```
 
 ## User testing and prep for launch
 Initial user feedback
