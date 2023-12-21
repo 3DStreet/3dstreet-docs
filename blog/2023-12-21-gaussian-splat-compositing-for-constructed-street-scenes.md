@@ -1,6 +1,6 @@
 ---
-title: Creating New Street Scenes using Multi-Splat Compositing 
-description: We share research and progress on improving the visual appearance of compositing novel scenes from multiple splats using depth buffer and selective splat discarding. 
+title: "Creating novel 3D scenes by compositing gaussian splats with A-Frame and three.js"
+description: We share research and progress on improving the visual appearance of compositing new scenes from multiple splats using depth buffer and selective splat discarding. 
 authors: [kfarr, amougin]
 tags: [gaussian splats, splats, photogrammetry]
 image: https://i.imgur.com/mErPwqL.png
@@ -11,62 +11,99 @@ hide_table_of_contents: false
 
 3DStreet's mission is to empower anyone to visualize safer streets. A common request to support this mission is to bring in local real-life elements from your actual streets by scanning them into 3D objects. Until now, the best technology for doing this (photogrammetry to textured 3D polygons) resulted in huge file sizes, difficult to edit output files, and gooey visuals on visible as melting trees or cars that you may see on Google Maps in 3D mode.
 
-Enter Gaussian Splatting -- earlier this year a groundbreaking photogrammetry and visualization technique that uses a technique called gaussian splatting was released as part of a [research paper published at SIGGRAPH 2023](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/). It's *[the best modern method](https://www.youtube.com/watch?v=HVv_IQKlafQ)* to allow everyday users like you and me to scan 3D objects with our phones and retain the fine detail of organic material especially [plants](https://www.youtube.com/watch?v=lowscL9YIjM), [trees](https://www.youtube.com/watch?v=hr7P8_z0PSk), flowers and other natural elements -- all things we'd like to see more of in our streets! 
+Enter Gaussian Splatting -- earlier this year a groundbreaking photogrammetry and visualization technique that uses a technique called gaussian splatting was released as part of a [research paper published at SIGGRAPH 2023](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/). I believe splatting to be *[the best modern method](https://www.youtube.com/watch?v=HVv_IQKlafQ)* to allow everyday users like you and me to scan 3D objects with our phones and retain the fine detail of organic material especially [plants](https://www.youtube.com/watch?v=lowscL9YIjM), [trees](https://www.youtube.com/watch?v=hr7P8_z0PSk), flowers and other natural elements -- all things we'd like to see more of in our streets! 
 
-IMAGE: google maps blobs > self-scanned trees
+![Side by side picture of the same apple tree showing 3d mesh vs. gaussian splat photogrammetry techniques](./splat-blog/3d-mesh-vs-splat.jpg)
 
-This is still an R&D project, not yet a supported built-in feature of 3DStreet. In this post we share research and progress on how we are improving the visual appearance of compositing novel scenes from multiple splats using depth buffer and selective splat discarding in three.js and A-Frame, underlying 3D frameworks supporting 3DStreet. 
+This is still an R&D project, not yet a supported built-in feature of 3DStreet. In this post we share research and progress on how we are improving the visual appearance of compositing new scenes from multiple splats using depth buffer and selective splat discarding in three.js and A-Frame, underlying 3D frameworks supporting 3DStreet.
 
 <!-- truncate -->
 
 # A splatting explosion!
-A slew of gaussian splat tools have come to market -- creation apps for 3D scanning with your phone ([Polycam](https://poly.cam/) and [Luma](https://lumalabs.ai/)) and viewers for every platform and device imaginable ([too many to list](https://github.com/tomiwaAdey/awesome-gaussian-splatting?tab=readme-ov-file#rendering-and-visualisation-tools)). Kieran from the 3DStreet team has been helping maintain a splat viewer for A-Frame along with other community members.
+A slew of gaussian splat tools have come to market -- creation apps for 3D scanning with your phone ([Polycam](https://poly.cam/) and [Luma](https://lumalabs.ai/)) and viewers for every platform and device imaginable ([too many to list](https://github.com/tomiwaAdey/awesome-gaussian-splatting?tab=readme-ov-file#rendering-and-visualisation-tools)) and even [browser-based cropping and editing tools](https://playcanvas.com/super-splat).
 
-However, most gaussian splat research and development is focuses only on capture and viewing of a single scanned scene at a time.
+However, much gaussian splat research and development focuses only one single large scene splat at a time.
 
 With 3DStreet we're exploring something new -- constructing brand new street scenes from bits and pieces of existing 3D splats.
 
-# The Problem: Multiple Splats are Hard
-If we can draw one gaussian splat in our scene, why not more? Well it turns out it's Hard. Compositing wasn’t supported yet by the libraries so it resulted in things just not good enough for people to use as a product. (show error of transparency sorting)
+# The problem: multiple splats in three.js are Hard
+If we can draw one gaussian splat in our scene, why not more? Well it turns out it's Hard. Compositing wasn’t supported yet by the existing three.js / A-Frame splat viewing libraries so it resulted in things just not good enough for people to use as a product, like this fire hydrant and tree being occluded by a flower box further away.
 
-IMAGE: Transparency rendering error
+![Picture of error in splat ordering resulting in distant objects incorrectly occluding closer objects](./splat-blog/splat-render-order-error.jpg)
 
-To solve this problem, we collaborated with Arthur Mougin, a WebXR and full stack developer who was excited to tackle a new challenge. Here is his writeup on how we enabled sorting concluded by some discussion on what is coming next.
-
-:::info
-
-Some of the content in this section is written for developers with 3D experience.
-
-:::
+To solve this problem, we collaborated with [Arthur Mougin, a WebXR and full stack developer](https://arthurmoug.in/) who was excited to tackle a new challenge. Here is his writeup on how we enabled proper splat sorting, concluded by some discussion on what is coming next.
 
 # Use depth buffer with `depthWrite:true`
-After analyzing the shader and rendering pipeline of threejs, we identified first that we needed to have proper scene-level Occlusion.
+After analyzing the shader and rendering pipeline of threejs, we identified first that we needed to have proper scene-level occlusion.
 
 At the scene level, Splats are just classic opaque objects with a unique drawing method. That’s great because we can take advantage of the depth buffer. It’s a grayscale image that shaders use to know if their pixel below or above something that was already painted. By default, splats did not write into it, causing strange artifacts when the draw order does not match the depth order. Same thing for recursive occlusion. 
 
-So, we added the possibility to choose to write to the depth buffer with `depthWrite:true`. Turning it on improved our occlusion issues drastically. 
+So, we [added the ability to write the rendered splats to the depth buffer](https://github.com/3DStreet/aframe-gaussian-splatting/pull/1/commits/dfa56ea471749e4864bfdedfcdd9c7c4aac9a656) with `depthWrite:true`. Turning it on improved our occlusion issues drastically. 
 
-IMAGE: making progress with transparency with artifact
+![partial-splat-compositing-progress-occlusion-with-artifacts](./splat-blog/partial-splat-compositing-progress-occlusion-with-artifacts.jpg)
 
-# Border and edge blending issues with semi-transparent splats
+# Fixing border and edge blending issues
 Sometimes the border is not completely clean, we also wanted a way to improve it. 
 
-It was done this time in the fragment shader, where discarding cause the pixel not to be drawn. We compare there for each blob’s pixel their opacity, and if it’s lower than our limit, it’s not rendered.
+It was done this time in the fragment shader, where discarding cause the pixel not to be drawn. [We compare there for each blob’s pixel their opacity, and if it’s lower than our limit, it’s not rendered.](https://github.com/3DStreet/aframe-gaussian-splatting/pull/1/commits/00d11e42f41a2adea824008ad81283001192176a)
 
 This limit, the discard filter, has no effect when set to 0, but help cleanup unnecessary blobs that could ruin a proper transition between two splats. As it applies to all splat’s blobs, turning it on will impact the splats quality.
 
-IMAGE: looking good with the adjustment
+![gaussian-splat-depth-write-true-false-comparison](./splat-blog/gaussian-splat-depth-write-true-false-comparison.jpg)
 
-One gotcha -- this worked on iOS locally while developing but not when deployed. It turned out uglify.js did change something to the code that broke the code on iOS. Looking at Uglified documentation, there was a simple line, a single flag you could add to the command, identified as this `--webkit`. Now it was just a question of rebuilding, and the splats started working again on iOS, while preserving functionality on other platforms.
+Unfortunately there is a trade off between different methods. As you can see in this next example below. On the right is the test scene with the original A-Frame splatting component that does not respect occlusion. On the left uses depthWrite which properly sorts the occlusion of the tree, fire hydrant, and flower box, but also results in artifacts especially visible on the bottom of the flower box where it meets the sidewalk.
 
-TODO: Building the library, where does it live?
+![splat-compare-discard-filter-0-and-0.2](./splat-blog/splat-compare-discard-filter-0-and-0.2.jpg)
 
-# Demo scene with splat layers in 3DStreet Editor
-Example scene: https://github.com/3DStreet/splat-playground/ 
+Adjusting `discardFilter` gives you control to find the right value, however as you continue to increase the `discardFilter` value approaching 1 the splats start to develop holes in the substrate and appear to be further apart.  
 
-Picture of the scene
+![splat-compare-discard-filter-0.1-and-0.3](./splat-blog/splat-compare-discard-filter-0.1-and-0.3.jpg)
+
+A partially effective mitigation for the artifacts is to tightly crop your splats using a tool like [SuperSplat from PlayCanvas](https://playcanvas.com/super-splat).
+
+# Updating the `aframe-gaussian-splatting` repository
+In the past we have been contributing changes directly to the [original A-Frame Gaussian Splat library by quadjr](https://github.com/quadjr/aframe-gaussian-splatting), and [Arthur has suggested a PR with these changes](https://github.com/quadjr/aframe-gaussian-splatting/pull/25), but we wanted to publish this piece before those are able to merged so we have forked this repo in the 3DStreet GitHub organization for now.
+
+#### GitHub: https://github.com/3dstreet/aframe-gaussian-splatting
+
+#### Demo scene (move around with `WASD` keys): https://3dstreet.github.io/splat-playground/basic/compositing-demo.html
+
+#### Demo scene source (also uses cutout entity): https://github.com/3DStreet/splat-playground/blob/main/basic/compositing-demo.html 
+
+# Combining rasterization methods to add splats to 3DStreet scenes
+Now that we have support in the library for splat compositing, it's time to test what these look like in 3DStreet scenes.
+
+We created a sample scene that loads a 3DStreet street scene with manually placed splat entities placed around the scene in appropriate locations. This was a first attempt to see how well the splats might fit in to a scene and what changes we need to make to 3DStreet Editor to support managing these with a user interface.
+
+This picture shows a side-by-side view of the splat and low-poly mesh counterparts for the hybrid sedan and bus stop.
+![3dstreet-splat-compositing-demo](./splat-blog/3dstreet-splat-compositing-demo.jpg)
+
+Since each of these splats are A-Frame entities, the 3DStreet Editor can provide a quick way to move them around and arrange a custom scene.
+![3dstreet-editor-changing-scene-compositing-gaussian-splat](./splat-blog/3dstreet-editor-changing-scene-compositing-gaussian-splat.jpg)
+
+# Try it for yourself
+
+Demo scene with splats in 3DStreet
+
+__Example scene (move around with `WASD` keys): https://github.com/3DStreet/splat-playground/__
+
+:::warning
+
+Gaussian Splats in 3DStreet is a research project. Sometimes you need to reload once or twice for the splats to look better. If you're really adventurous press ctl + alt + i to access Editor but saving these scenes won't work and it will probably break. Be careful using this for real projects.
+
+:::
+
+Does it work in WebXR? Yes, barely -- it requires a powerful device to maintain frame rate. Quest headsets and older phones have a hard time rendering this at full framerate.
+
 YouTube video of the scene
 
 # What's next
-* Still in research phase at the moment. New libraries in three.js from Luma. We will continue to focus on creating scenes composed of multiple splats and traditional 3d meshes. 
+This is still a research technology. Even just in the past week there was a whole new three.js library released by Luma AI. More research on this topic seems to drop every week. Likely the method that we've come up with will be replaced with a fancy new algorithm soon.
 
+3DStreet will continue to focus on how to make it accessible to use splats as an option for representing models in your scenes.
+
+We will continue to focus on creating scenes composed of multiple splats and traditional 3d meshes. 
+
+Later topics:
+* Scanning tips and tricks
+* More info about tools especially cropping large splats
