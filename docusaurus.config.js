@@ -119,6 +119,9 @@ const config = {
                 label: 'Mastadon',
                 href: 'https://urbanists.social/@3dstreet',
               },
+                label: 'Contact Sales',
+                href: 'https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc'
+              },
             ],
           },
           {
