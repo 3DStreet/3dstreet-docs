@@ -27,12 +27,18 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  markdown: {
+    mermaid: true,
+  },
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        blog: {
+          path: 'blog',
+          routeBasePath: 'blog',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -40,7 +46,6 @@ const config = {
           editUrl:
             'https://github.com/3dstreet/3dstreet-docs/tree/main/',
         },
-        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -75,6 +80,7 @@ const config = {
             label: 'Gallery',
             position: 'left',
           },
+          {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
           {
             href: 'https://3dstreet.app',
             label: 'Launch 3DStreet App',
@@ -86,11 +92,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Documentation',
+            title: '3DStreet',
             items: [
               {
-                label: 'Overview',
-                to: '/docs/',
+                label: 'About 3DStreet',
+                to: '/docs/category/about-3dstreet/',
+              },              
+              {
+                label: 'Contact Sales',
+                href: 'https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc',
               },
             ],
           },
@@ -106,9 +116,13 @@ const config = {
                 href: 'https://twitter.com/3dstreetapp',
               },
               {
-                label: 'Contact Sales',
-                href: 'https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc'
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/3dstreet/',
               },
+              {
+                label: 'Mastadon',
+                href: 'https://urbanists.social/@3dstreet',
+              }
             ],
           },
           {
