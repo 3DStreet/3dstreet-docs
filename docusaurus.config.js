@@ -111,6 +111,14 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/3dstreetapp',
               },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/3dstreet/',
+              },
+              {
+                label: 'Mastadon',
+                href: 'https://urbanists.social/@3dstreet',
+              },
             ],
           },
           {
