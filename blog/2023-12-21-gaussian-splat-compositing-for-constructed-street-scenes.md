@@ -103,4 +103,4 @@ We'll keep iterating on the applications of this technology for street safety an
 [Join our community to continue the conversation!](https://discord.gg/VN242sx9qu)
 
 # Video version of this post
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WzvACS_yEwk?si=VMgL7NDFOdDT1sMJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="580" height="420" src="https://www.youtube.com/embed/Fy8PefDy5VY?si=pJ7F6j_mmmA2yo31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
