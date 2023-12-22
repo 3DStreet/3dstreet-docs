@@ -3,7 +3,7 @@ title: "Creating novel 3D scenes by compositing gaussian splats with A-Frame and
 description: We share research and progress on improving the visual appearance of compositing new scenes from multiple splats using depth buffer and selective splat discarding. 
 authors: [kfarr, amougin]
 tags: [gaussian splats, splats, photogrammetry]
-image: https://i.imgur.com/mErPwqL.png
+image: ./splat-blog/3dstreet-splat-compositing-demo.jpg
 hide_table_of_contents: false
 ---
 
@@ -83,7 +83,7 @@ Since each of these splats are A-Frame entities, the 3DStreet Editor can provide
 
 # Try it for yourself
 
-Demo scene with splats in 3DStreet
+We've created a proof of concept demo showing splats that I have scanned around San Francisco, combined with polygon mesh models automatically created from 3DStreet.
 
 __Example scene (move around with `WASD` keys): https://github.com/3DStreet/splat-playground/__
 
@@ -95,15 +95,12 @@ Gaussian Splats in 3DStreet is a research project. Sometimes you need to reload 
 
 Does it work in WebXR? Yes, barely -- it requires a powerful device to maintain frame rate. Quest headsets and older phones have a hard time rendering this at full framerate.
 
-YouTube video of the scene
-
 # What's next
-This is still a research technology. Even just in the past week there was a whole new three.js library released by Luma AI. More research on this topic seems to drop every week. Likely the method that we've come up with will be replaced with a fancy new algorithm soon.
+This is still a research technology. Even just in the past week there was a [whole new WegGL splat viewing library released by Luma AI](https://lumalabs.ai/luma-web-library) and more research on this topic seems to drop every week. Likely the method that we've come up with will be replaced with a fancy new algorithm soon.
 
-3DStreet will continue to focus on how to make it accessible to use splats as an option for representing models in your scenes.
+We'll keep iterating on the applications of this technology for street safety and more general urban design use cases. If this resonate with users we can explore how to make this accessible so that all users can create custom splat scenes with models they scan from their own streets.
 
-We will continue to focus on creating scenes composed of multiple splats and traditional 3d meshes. 
+[Join our community to continue the conversation!](https://discord.gg/VN242sx9qu)
 
-Later topics:
-* Scanning tips and tricks
-* More info about tools especially cropping large splats
+# Video version of this post
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WzvACS_yEwk?si=VMgL7NDFOdDT1sMJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
