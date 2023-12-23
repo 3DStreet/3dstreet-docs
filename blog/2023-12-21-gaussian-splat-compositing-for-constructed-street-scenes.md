@@ -22,7 +22,7 @@ This is still an R&D project, not yet a supported built-in feature of 3DStreet. 
 # A splatting explosion!
 A slew of gaussian splat tools have come to market -- creation apps for 3D scanning with your phone ([Polycam](https://poly.cam/) and [Luma](https://lumalabs.ai/)) and viewers for every platform and device imaginable ([too many to list](https://github.com/tomiwaAdey/awesome-gaussian-splatting?tab=readme-ov-file#rendering-and-visualisation-tools)) and even [browser-based cropping and editing tools](https://playcanvas.com/super-splat).
 
-However, much gaussian splat research and development focuses only one single large scene splat at a time.
+However, much of the existing gaussian splat research and development focuses on scenes with just one single large splat.
 
 With 3DStreet we're exploring something new -- constructing brand new street scenes from bits and pieces of existing 3D splats.
 
