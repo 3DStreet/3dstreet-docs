@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Creating novel 3D scenes by compositing gaussian splats with A-Frame and three.js]]></title>
+            <title><![CDATA[Creating novel 3D scenes by compositing Gaussian splats with A-Frame and three.js]]></title>
             <link>https://3dstreet.org/blog/2023/12/21/gaussian-splat-compositing-for-constructed-street-scenes</link>
             <guid>https://3dstreet.org/blog/2023/12/21/gaussian-splat-compositing-for-constructed-street-scenes</guid>
             <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>

@@ -8,7 +8,7 @@
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Creating novel 3D scenes by compositing gaussian splats with A-Frame and three.js]]></title>
+        <title type="html"><![CDATA[Creating novel 3D scenes by compositing Gaussian splats with A-Frame and three.js]]></title>
         <id>https://3dstreet.org/blog/2023/12/21/gaussian-splat-compositing-for-constructed-street-scenes</id>
         <link href="https://3dstreet.org/blog/2023/12/21/gaussian-splat-compositing-for-constructed-street-scenes"/>
         <updated>2023-12-21T00:00:00.000Z</updated>

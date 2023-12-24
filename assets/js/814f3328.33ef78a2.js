@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[2535],{5641:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Creating novel 3D scenes by compositing gaussian splats with A-Frame and three.js","permalink":"/blog/2023/12/21/gaussian-splat-compositing-for-constructed-street-scenes","unlisted":false}]}')}}]);
