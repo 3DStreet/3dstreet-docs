@@ -1,5 +1,5 @@
 ---
-title: "Creating novel 3D scenes by compositing gaussian splats with A-Frame and three.js"
+title: "Creating novel 3D scenes by compositing Gaussian splats with A-Frame and three.js"
 description: We share research and progress on improving the visual appearance of compositing new scenes from multiple splats using depth buffer and selective splat discarding. 
 authors: [kfarr, amougin]
 tags: [gaussian splats, splats, photogrammetry]
