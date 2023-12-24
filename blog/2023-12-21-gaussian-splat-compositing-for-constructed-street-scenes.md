@@ -1,5 +1,5 @@
 ---
-title: "Creating novel 3D scenes by compositing gaussian splats with A-Frame and three.js"
+title: "Creating novel 3D scenes by compositing Gaussian splats with A-Frame and three.js"
 description: We share research and progress on improving the visual appearance of compositing new scenes from multiple splats using depth buffer and selective splat discarding. 
 authors: [kfarr, amougin]
 tags: [gaussian splats, splats, photogrammetry]
@@ -9,7 +9,7 @@ hide_table_of_contents: false
 
 # Gaussian splats are ground-breaking visualization technology
 
-3DStreet's mission is to empower anyone to visualize safer streets. A common request to support this mission is to bring in local real-life elements from your actual streets by scanning them into 3D objects. Until now, the best technology for doing this (photogrammetry to textured 3D polygons) resulted in huge file sizes, difficult to edit output files, and gooey visuals on visible as melting trees or cars that you may see on Google Maps in 3D mode.
+3DStreet's mission is to empower anyone to visualize safer streets. A common request to support this mission is to bring in local real-life elements from your actual streets by scanning them into 3D objects. Until now, the best technology for doing this (photogrammetry to textured 3D polygons) resulted in huge file sizes, difficult to edit output files, and gooey visuals like melting trees or cars that you may see on Google Maps in 3D mode.
 
 Enter Gaussian Splatting -- earlier this year a groundbreaking photogrammetry and visualization technique called gaussian splatting was released as part of a [research paper published at SIGGRAPH 2023](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/). I believe splatting to be *[the best modern method](https://www.youtube.com/watch?v=HVv_IQKlafQ)* to allow everyday users like you and me to scan 3D objects with our phones and retain the fine detail of organic material especially [plants](https://www.youtube.com/watch?v=lowscL9YIjM), [trees](https://www.youtube.com/watch?v=hr7P8_z0PSk), flowers and other natural elements -- all things we'd like to see more of in our streets! 
 
