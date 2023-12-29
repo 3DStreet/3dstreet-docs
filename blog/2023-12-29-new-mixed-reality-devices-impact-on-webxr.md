@@ -19,7 +19,7 @@ Gaze interaction *"just works"* for native applications in this headset, however
 
 To enable gaze user interface while not exposing gaze to the application, apps need to provide "hot spots" or hints as to areas that can be hovered. [There is a great video guide on how to adapt 2D DOM CSS website for gaze highlight interaction](https://developer.apple.com/videos/play/wwdc2023/10279/), but there's no clear equivalent to this CSS hinting that can be done in the WebXR "3D DOM" or 3D space. The need has been recognized however, [there is a new ticket opened in the WebXR `immersive-web` GitHub repository that I recently added to.](https://github.com/immersive-web/proposals/issues/86)
 
-## Hand tracking is most accessible input, not controllers
+## Hand tracking is the most accessible input, not controllers
 Imagine a world where WebXR experiences are 100% hands-free, where a simple ray from the wrist and a pitch of the hand can activate functions. This is not just a possibility but now a necessity -- going forward, all WebXR experiences must be accessible via hands first.
 
 We should now regard hand tracking as the "lowest common denominator" of user input for headset experiences. Controllers will still offer higher precision, off-camera movement tracking, more button trigger inputs, etc. but they are no longer the most accessible "default" option.
