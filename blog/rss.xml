@@ -4,10 +4,52 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Thu, 21 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Impact on WebXR Application Design from New Mixed Reality Headsets]]></title>
+            <link>https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr</link>
+            <guid>https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr</guid>
+            <pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[What changes should WebXR developers consider to their application given new devices coming to market?]]></description>
+            <content:encoded><![CDATA[<p>A few weeks ago I attended a "developer day" at a local electronics company down the road featuring their new mixed reality VR headset. I spent the entire day testing many different WebXR applications with a heavy focus on evaluating which user interaction elements will be relevant for developers.</p>
+<p>Below are some notes intended for other 3DStreet code contributors to reference as we work on supporting new WebXR compatible devices.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="gaze-works-very-well-as-a-primary-user-input-mechanism">Gaze works very well as a primary user input mechanism<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#gaze-works-very-well-as-a-primary-user-input-mechanism" class="hash-link" aria-label="Direct link to Gaze works very well as a primary user input mechanism" title="Direct link to Gaze works very well as a primary user input mechanism">​</a></h2>
+<p>Gaze interaction <em>"just works"</em> for native applications in this headset, however it's a privacy nightmare as gaze movement can be use to fingerprint (identify) individuals for tracking purposes, so that information isn't even given to native application.</p>
+<p>To enable gaze user interface while not exposing gaze to the application, apps need to provide "hot spots" or hints as to areas that can be hovered. <a href="https://developer.apple.com/videos/play/wwdc2023/10279/" target="_blank" rel="noopener noreferrer">There is a great video guide on how to adapt 2D DOM CSS website for gaze highlight interaction</a>, but there's no clear equivalent to this CSS hinting that can be done in the WebXR "3D DOM" or 3D space. The need has been recognized however, <a href="https://github.com/immersive-web/proposals/issues/86" target="_blank" rel="noopener noreferrer">there is a new ticket opened in the WebXR <code>immersive-web</code> GitHub repository that I recently added to.</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hand-tracking-is-the-most-accessible-input-not-controllers">Hand tracking is the most accessible input, not controllers<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#hand-tracking-is-the-most-accessible-input-not-controllers" class="hash-link" aria-label="Direct link to Hand tracking is the most accessible input, not controllers" title="Direct link to Hand tracking is the most accessible input, not controllers">​</a></h2>
+<p>Imagine a world where WebXR experiences are 100% hands-free, where a simple ray from the wrist and a pitch of the hand can activate functions. This is not just a possibility but now a necessity -- going forward, all WebXR experiences must be accessible via hands first.</p>
+<p>We should now regard hand tracking as the "lowest common denominator" of user input for headset experiences. Controllers will still offer higher precision, off-camera movement tracking, more button trigger inputs, etc. but they are no longer the most accessible "default" option.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="launching-webxr-applications">Launching WebXR applications<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#launching-webxr-applications" class="hash-link" aria-label="Direct link to Launching WebXR applications" title="Direct link to Launching WebXR applications">​</a></h2>
+<p>Getting WebXR working on this device is cumbersome. WebXR must be activated by searching through multiple Safari flags (System Settings &gt; Apps &gt; Safari &gt; Blah blah blah). Then, on the web page itself a user must accept 2 separate approval popups when entering WebXR mode -- one for enabling immersive mode, the other for enabling hand tracking.</p>
+<p>It may be possible to "pull" some advanced users into using WebXR on these devices with instruction on feature flag setting, but it will be impossible to use WebXR on this platform to "push" more people to your WebXR experience in its present form.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="space-immersion-and-passthrough-with-webxr">Space, Immersion and Passthrough with WebXR<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#space-immersion-and-passthrough-with-webxr" class="hash-link" aria-label="Direct link to Space, Immersion and Passthrough with WebXR" title="Direct link to Space, Immersion and Passthrough with WebXR">​</a></h2>
+<p>In WebXR mode on the device, a scene is rendered in <em>Full Space</em> meaning no other application windows are present, unlike native apps that can choose to run in <em>Shared Space</em> amongst other applications. An additional limitation is that the device does not currently support WebXR with <em>Passthrough</em> mode, therefore you cannot run WebAR apps that make use of external cameras.</p>
+<p><em>Therefore only your WebXR scene will appear in <em>Full Space</em> immersion mode with no <em>Passthrough</em>.</em> This may be desirable for traditional VR applications but not as useful for next generation mixed reality applications.</p>
+<p>An additional limitation is that WebXR Immersive mode is limited to a 1.5m radius from the user-specified origin, usually where the user was located when entering XR mode. Beyond this radius the immersive scene <em>Full Space</em> begins fading into <em>Passthrough</em> without the scene persisting. If a user continues moving away from the origin the will see a round Safari icon at the origin point, presumably indicating that the user has an open WebXR Safari session with an origin at that point.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="diorama-vs-full-room-scale">Diorama vs. Full Room Scale<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#diorama-vs-full-room-scale" class="hash-link" aria-label="Direct link to Diorama vs. Full Room Scale" title="Direct link to Diorama vs. Full Room Scale">​</a></h2>
+<p>The <a href="https://developer.apple.com/documentation/visionos/" target="_blank" rel="noopener noreferrer">visionOS developer documentation</a> is excellent and signals clear directions for the market.</p>
+<p>The Diorama appears to be major application interface concept, <a href="https://developer.apple.com/documentation/visionos/diorama" target="_blank" rel="noopener noreferrer">featured as a sample application</a> and a prime example of output from the new Reality Composer Pro authoring tool.</p>
+<p>This is a useful concept to adopt with 3DStreet. With 3DStreet there are cases for both Diorama and Full Scale modes: some users may wish to view a scene in Full Scale life-size to get an accurate viewpoint of dimension, while other users may wish to shrink a scene down to a Diorama view to easily manipulate a large scene from a smaller workspace.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="combining-webxr-with-native-applications">Combining WebXR with native applications<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#combining-webxr-with-native-applications" class="hash-link" aria-label="Direct link to Combining WebXR with native applications" title="Direct link to Combining WebXR with native applications">​</a></h2>
+<ul>
+<li>Native applications can ask for rights such as <em>Passthrough</em> or <em>Shared Space</em> that are not currently accessible via Safari WebXR. It is definitely worth exploring the use of an embedded webkit-based webview in a visionOS application which may expand the ability for WebXR application to offer augmented reality experiences with a native-like experience.</li>
+<li>Reality Composer Pro looks like a powerful tool for non-developers. It is worth exploring a pipeline of 3DStreet &gt; Reality Composer Pro &gt; App Publishing. Therefore it is likely worth exploring tools to convert glTF exporting to USDZ format, or directly exporting the three.js / A-Frame scene into USDZ format.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<ul>
+<li>WebXR appears to be purposefully limited on this device with a degraded user experience. Consider webview or another mechanism to adapt WebXR application into a native app.</li>
+<li>Hand tracking is now a minimum requirement for WebXR apps, controllers are optional.</li>
+<li>Gaze interface is very effective but needs standardization work to enable in WebXR mode.</li>
+</ul>]]></content:encoded>
+            <category>webxr</category>
+            <category>headset</category>
+            <category>mixed-reality</category>
+            <category>ar</category>
+            <category>vr</category>
+        </item>
         <item>
             <title><![CDATA[Creating novel 3D scenes by compositing Gaussian splats with A-Frame and three.js]]></title>
             <link>https://3dstreet.org/blog/2023/12/21/gaussian-splat-compositing-for-constructed-street-scenes</link>
