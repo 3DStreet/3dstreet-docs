@@ -3,7 +3,7 @@ title: "Partner Spotlight: Zade's Contributions to 3DStreet in 2023"
 description: A spotlight on the contributions to 3DStreet from the software development team at Zade.
 authors: [kfarr, idenysyuk]
 tags: [react, development, partner, devshop, web, developer]
-image: https://i.imgur.com/mErPwqL.png
+image: https://i.imgur.com/YyKGZA7.jpeg
 hide_table_of_contents: false
 ---
 
