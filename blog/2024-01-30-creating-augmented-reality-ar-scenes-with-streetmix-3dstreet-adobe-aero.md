@@ -2,10 +2,12 @@
 title: Creating Augmented Reality Street Scenes with Streetmix, 3DStreet and Adobe Aero
 description: End-to-end street design to augmented reality (AR) visualization workflow.
 authors: mschlossberg
-tags: [webxr, gltf, citybuilderjr]
+tags: [webxr, gltf, adobe aero, streetmix, ar, vps, localization]
 image: ./images/2024-01-30/sZPPzIEDdoKCLolneDd8-145.05.png
 hide_table_of_contents: false
 ---
+
+![](./images/2024-01-30/sZPPzIEDdoKCLolneDd8-145.05.png)
 
 Greetings! I'm Marc Schlossberg, and I've been working alongside Danny Pimentel at the University of Oregon on an exciting project: crafting augmented reality (AR) landscapes for our streets. What I have here is a practical, step-by-step guide designed to walk you through how to bring this innovative vision to your own neighborhood. So, let's roll up our sleeves and get our hands digitally dirty!
 
@@ -16,19 +18,25 @@ Greetings! I'm Marc Schlossberg, and I've been working alongside Danny Pimentel 
 
 To kick things off, you need to know how wide your street is. This is more straightforward than it sounds: just pop over to Google Street View or use an aerial photo, and get an approximate measurement. It's okay if it's not pinpoint accurate — we just need a ballpark figure.
 
-**Crafting Your Street: Easy as Pie with StreetMix**
+**Crafting Your Street: Easy as Pie with Streetmix**
 
-Once you've got your measurements, it's time to jump onto StreetMix—a free, user-friendly online tool that lets you reimagine that street space to your heart's content. Want to add bike lanes, benches, or green spaces? Simply drag and drop the elements you want to include, adjusting the widths to fit your street’s dimensions. Here’s where your creativity shines!
+Once you've got your measurements, it's time to jump onto Streetmix—a free, user-friendly online tool that lets you reimagine that street space to your heart's content. Want to add bike lanes, benches, or green spaces? Simply drag and drop the elements you want to include, adjusting the widths to fit your street’s dimensions. Here’s where your creativity shines!
 
 ![](./images/2024-01-30/J7eHGPI8MA57Pyzgsd8i-41.61.png)For my project, I took a standard residential street and turned it into a car-free park, a delightful haven for community gatherings. Imagine that — but on your block! Feel free to start with the street I made - Demo St.: https://streetmix.net/schlossb/20/demo-st 
 
-## Viewing Your Creation: 3D Street's Magic
+## Viewing Your Creation: 3DStreet's Magic
 
-![](./images/2024-01-30/29P0QTWEp8JbvCQ8PeH3-63.32.png)With your design all set in StreetMix, it's time to give it a touch of 3D flair. 3D Street is a fantastic plugin that lets you visualize your newly designed street in all its three-dimensional glory. Explore your virtual environment, tweak and tune each element until you’re satisfied. It's a mini-adventure in urban planning from the comfort of your screen! You can go straight to my Demo St. in 3DStreet as well: https://3dstreet.app/#https://streetmix.net/schlossb/20/demo-st 
+![](./images/2024-01-30/29P0QTWEp8JbvCQ8PeH3-63.32.png)
+
+With your design all set in Streetmix, it's time to give it a touch of 3D flair. 3DStreet is a fantastic plugin that lets you visualize your newly designed street in all its three-dimensional glory. Explore your virtual environment, tweak and tune each element until you’re satisfied. It's a mini-adventure in urban planning from the comfort of your screen! You can go straight to my Demo St. in 3DStreet as well: https://3dstreet.app/#https://streetmix.net/schlossb/20/demo-st 
 
 **Trimming the Excess for AR**
 
-![](./images/2024-01-30/IkXMBseXhrpqImEJSANN-73.23.png)To prep for AR, you'll want to peel away the layers that aren’t needed—like buildings, to keep things neat. After simplifying, you can then export your model directly into a format that's ready for the world of augmented reality.
+![](./images/2024-01-30/IkXMBseXhrpqImEJSANN-73.23.png)
+
+To prep for AR, you'll want to peel away the layers that aren’t needed—like buildings, to keep things neat. After simplifying, you can then export your model directly into a format that's ready for the world of augmented reality.
+
+To delete a layer, select the layer in the left-hand panel -- such as "Buildings & Blocks Container" in the screenshot above -- then press the `delete` key and click `ok`. This will remove buildings and grounds from lots that are not needed for our AR project.
 
 ## Optional Tweaks: A Blender Bonus
 
@@ -36,7 +44,7 @@ Once you've got your measurements, it's time to jump onto StreetMix—a free, us
 
 ## Bringing It to Life: Augmented Reality Integration
 
-Alright, now to the magical part—transferring your 3D model to an augmented reality software. I personally use Adobe Aero, thanks to the site license at the university, but there are other AR apps you can explore. This step allows you to add animations and make your scene come alive, although again, this step is not necessary for the "quick and dirty" path.
+Alright, now to the magical part—transferring your 3D model to an augmented reality software. I personally use [Adobe Aero](https://www.adobe.com/products/aero.html), thanks to the site license at the university, but there are other AR apps you can explore. This step allows you to add animations and make your scene come alive, although again, this step is not necessary for the "quick and dirty" path.
 
 ![](./images/2024-01-30/tSVcvVL1kH92J4F4ALF8-112.94.png)
 
@@ -69,3 +77,6 @@ To illustrate, envision wandering through the park that was once just a plain st
 And there you have it—a dynamic overview of transforming streets with AR using some clever tools and a pinch of imagination. Not so intimidating now, right? With mostly free resources and a little bit of time, you can be on your way to designing, exploring, and sharing augmented realities that could pave the way for how we perceive and utilize our shared spaces.
 
 Until next time, happy designing and thanks for joining me on this digital adventure. Bye for now!
+
+# Video version of this post
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AP1CwWuD7uA?si=y2_qAYNtR9HpATAl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
