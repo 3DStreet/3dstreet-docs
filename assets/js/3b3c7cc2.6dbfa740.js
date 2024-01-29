@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[4990],{4859:e=>{e.exports=JSON.parse('{"label":"webxr","permalink":"/blog/tags/webxr","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
