@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.6](https://github.com/3DStreet/3dstreet/releases/tag/0.4.6)
+* This is a bug fix and maintenance release.
+* Fix issues with scene loading and changing component attributes dynamically
+* Fix issue with selecting tram and foodtruck elements
+* Fix hash marks texture in divider segment
+* support for new fire ladder truck model
+* various mapbox demo updates (but not ready for production use yet)
+
 ## [3DStreet Core 0.4.5](https://github.com/3DStreet/3dstreet/releases/tag/0.4.5)
 * Mostly hotfixes and bugfixes to [0.4.4](#3dstreet-core-044) such as fixing error saving scenes caused by default value of component properties not found; fixing display name of streets and segments by changing colon to bullet, therefore preventing interpretation of strings intended for display to user as being interpreted as attribute:value pairs. 
 * Add animations for people on bicycles and some scooters
