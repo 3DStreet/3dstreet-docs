@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 100%;
+}
+
+.wrapper .label {
+  color: #e4e4e4;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.formWrapper {
+  display: flex;
+  column-gap: 22px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.inputWrapper {
+  padding: 16px 24px;
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+
+  @media (max-width: 768px) {
+    padding: 12px 20px;
+  }
+}
+
+.notValid {
+  outline: 2px solid #ff0b0b;
+  position: relative;
+}
+
+.notValid::after {
+  content: "Wrong email format";
+  position: absolute;
+  right: 0;
+  bottom: -50%;
+
+  color: #ff0b0b;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.input {
+  width: 444px;
+  outline: none;
+  border: none;
+  background: transparent;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,44 +1,21 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import React from "react";
 
-import styles from './index.module.css';
-import { Timeline } from 'react-twitter-widgets';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import { Button, Input } from "../components";
+import {
+  ArrowIcon,
+  DiscordIcon,
+  DiscordIcon2,
+  GithubIcon,
+  LinkedInIcon,
+  MastodonIcon,
+  PiechartIcon,
+  XIcon,
+  XIcon2,
+} from "../icons";
+import { useIsMobile } from "../hooks/isMobile.hook";
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  // return (
-  //   <Layout
-  //     title={`Hello from ${siteConfig.title}`}
-  //     description="Description will go into a meta tag in <head />">
-  //     <HomepageHeader />
-  //     <main>
-  //       <HomepageFeatures />
-  //     </main>
-  //   </Layout>
-  // );
+  const { isMobile } = useIsMobile();
 
   return (
     <>
@@ -46,450 +23,664 @@ export default function Home() {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>3DStreet - open-source 3d street editor for safer streets</title>
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+      {/* SITEMAP */}
+      <link
+        rel="sitemap"
+        type="application/xml"
+        title="Sitemap"
+        href="/sitemap.xml"
+      />
+
+      {/* FONTS */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&display=swap"
         rel="stylesheet"
       />
-      <link rel="stylesheet" href="/css/legacy-styles.css" />
-      {/* header start */}
-      <div className="st_header_wrapper">
-        <div className="st_container">
-          <div className="st_header_inner">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Kanit:wght@600;700&display=swap"
+        rel="stylesheet"
+      />
+
+      {/* HTML */}
+      <div className="wrapper">
+        <img
+          className="st_header_ellipse"
+          src="/img/website/header_ellipse.png"
+        />
+        <div className="st_main_grid_bg" />
+
+        {/* HEADER SECTION */}
+        <header className="st_header_container">
+          <div className="st_header_left">
             <div className="st_header_logo">
-              <a href="">
-                <img src="/img/logo.svg" alt="" />
+              <a href="/">
+                <img src="/img/logo.svg" alt="logo" />
               </a>
             </div>
+            {!isMobile && (
+              <div className="st_header_nav">
+                <ul>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      label="Home"
+                      isActive
+                      onClick={() => {
+                        location.href = "";
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      label="Blog"
+                      onClick={() => {
+                        location.href = "/docs/";
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      label="Documentation"
+                      onClick={() => {
+                        location.href = "/docs/";
+                      }}
+                    />
+                  </li>
+                </ul>
+              </div>
+            )}
+            {isMobile && (
+              <Button
+                variant="blue"
+                label="Launch app"
+                onClick={() => {
+                  location.href = "https://3dstreet.app";
+                }}
+              />
+            )}
+          </div>
+          {!isMobile && (
+            <Button
+              variant="blue"
+              label="Launch app"
+              onClick={() => {
+                location.href = "https://3dstreet.app";
+              }}
+            />
+          )}
+
+          {isMobile && (
             <div className="st_header_nav">
               <ul>
-              <li>
-                  <a href="/docs/">Documentation</a>
+                <li>
+                  <Button
+                    variant="ghost"
+                    label="Home"
+                    isActive
+                    onClick={() => {
+                      location.href = "";
+                    }}
+                  />
                 </li>
                 <li>
-                  <a href="#scenes">Scene Gallery</a>
+                  <Button
+                    variant="ghost"
+                    label="Blog"
+                    onClick={() => {
+                      location.href = "/docs/";
+                    }}
+                  />
                 </li>
                 <li>
-                  <a href="#news">In the News</a>
-                </li>
-                <li>
-                  <a href="#connect">Connect with Us</a>
+                  <Button
+                    variant="ghost"
+                    label="Documentation"
+                    onClick={() => {
+                      location.href = "/docs/";
+                    }}
+                  />
                 </li>
               </ul>
             </div>
-            <div className="st_header_button">
-              <a href="https://3dstreet.app" className="button button-b3">
-                Launch App
+          )}
+
+          <div className="relative_wrapper">
+            <aside className="socials">
+              <a href="https://discord.com/invite/9DgKkFCetC">
+                <DiscordIcon />
               </a>
+              <a href="https://twitter.com/3dstreetapp">
+                <XIcon />
+              </a>
+              <a href="https://www.linkedin.com/company/3dstreet/">
+                <LinkedInIcon />
+              </a>
+              <a href="">
+                <MastodonIcon />
+              </a>
+            </aside>
+
+            <div className="down_icon">
+              <ArrowIcon />
             </div>
           </div>
-        </div>
-      </div>
-      {/* header end */}
-      {/* banner start */}
-      <div className="st_banner_wrapper text-center">
-        <div className="st_container">
-          <h1 className="h-1 color-white">Visualize safer streets.</h1>
-          <a href="#scenes" className="button button-b1">
-            See Example Scenes
-          </a>
-        </div>
-      </div>
-      {/* banner end */}
-      {/* scenes start */}
-      <div id="scenes" className="st_section">
-        <div className="st_container">
-          <h1 className="st_section_heading h-2 color-white text-center">
-            3DStreet Scene Gallery
-          </h1>
-          <div className="st_scene_list">
-          <a
-                    href="https://3dstreet.app/#https://streetmix.net/kfarr/3/example-street"
-                    className="st_scene_launch"
-                    target='blank'
-                  >
-            <div className="st_scene_item">
-              <div className="st_scene_image">
-                <img src="/img/scenes/scene1.jpg" alt="" />
-                <div className="st_scene_overlay">
+        </header>
 
-                    <span className="st_scene_launch_icon">
-                      <svg
-                        width={18}
-                        height={14}
-                        viewBox="0 0 18 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.00012 6.99999L17 6.99976M17 6.99976L11.5566 1.49976M17 6.99976L11.5566 12.4998"
-                          stroke="white"
-                          strokeWidth={2}
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                </div>
-              </div>
-              <div className="st_scene_details">
-                <h3 className="title-2 color-white">Basic Demo Scene</h3>
-                <p className="title-3">
-                  A 3DStreet scene showing a basic street imported from Streetmix with no customization.
-                </p>
-              </div>
+        {/* MAIN SECTION */}
+        <main className="st_main">
+          <div className="st_main_wrapper">
+            <div className="st_main_container">
+              <h1 className="h1">
+                Design and envision safer, greener streets, together.
+              </h1>
+              <p className="description">
+                3DStreet is a revolutionary tool that enables you to unleash
+                your creativity and design unique streets that not only stand
+                out visually but also make a tangible impact on creating a safer
+                and greener world.
+              </p>
+              <Input />
             </div>
-            </a>
-            <a
-                    href="https://3dstreet.app/#/scenes/943f35e8-8064-4fb8-9588-80fe44cb76e2.json"
-                    className="st_scene_launch"
-                    target='blank'
-                  >            <div className="st_scene_item">
-              <div className="st_scene_image">
-                <img src="/img/scenes/scene2.jpg" alt="" />
-                <div className="st_scene_overlay">
-                  
-                    <span className="st_scene_launch_icon">
-                      <svg
-                        width={18}
-                        height={14}
-                        viewBox="0 0 18 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.00012 6.99999L17 6.99976M17 6.99976L11.5566 1.49976M17 6.99976L11.5566 12.4998"
-                          stroke="white"
-                          strokeWidth={2}
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                </div>
-              </div>
-              <div className="st_scene_details">
-                <h3 className="title-2 color-white">Staff Pick: Custom Placements</h3>
-                <p className="title-3">
-                  Eli's street scene shows advanced use of duplicating and modifying vehicles, mobility users, and other props to create multi-use segments that change mid-block.
-                </p>
-              </div>
-            </div>
-            </a>
-            <a
-                    href="https://3dstreet.app/#/scenes/224d2558-1b35-4a7a-bd37-8bc1c2c4dfe9.json"
-                    className="st_scene_launch"
-                    target='blank'
-                  >
-            <div className="st_scene_item">
-              <div className="st_scene_image">
-                <img src="/img/scenes/scene3.jpg" alt="" />
-                <div className="st_scene_overlay">
-                    <span className="st_scene_launch_icon">
-                      <svg
-                        width={18}
-                        height={14}
-                        viewBox="0 0 18 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.00012 6.99999L17 6.99976M17 6.99976L11.5566 1.49976M17 6.99976L11.5566 12.4998"
-                          stroke="white"
-                          strokeWidth={2}
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                </div>
-              </div>
-              <div className="st_scene_details">
-                <h3 className="title-2 color-white">Staff Pick: Custom Geometry</h3>
-                <p className="title-3">
-                  Sharon's scene features custom safe street details like a midblock crosswalk with students crossing to get to school and clever use of building models. 
-                </p>
-              </div>
-            </div>
-            </a>
-
-            {/* 
-              <div class="st_scene_item">
-                  <div class="st_scene_image">
-                      <img src="/img/scenes/scene1.jpg" alt="">
-                      <div class="st_scene_overlay">
-                          <a href="https://github.3dstreet.org/intersection.html" class="st_scene_launch">
-                              <span class="st_scene_launch_text">Launch</span>
-                              <span class="st_scene_launch_icon">
-                                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.00012 6.99999L17 6.99976M17 6.99976L11.5566 1.49976M17 6.99976L11.5566 12.4998" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                              </span>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="st_scene_details">
-                      <h3 class="title-2 color-white">Intersection Simple Demo</h3>
-                      <p class="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus ultrices cum lorem sapien in elementum, pharetra. Tortor malesuada ornare et ipsum.</p>
-                  </div>
-              </div>
-
-              <div class="st_scene_item">
-                  <div class="st_scene_image">
-                      <img src="/img/scenes/scene2.jpg" alt="">
-                      <div class="st_scene_overlay">
-                          <a href="https://github.3dstreet.org/intersection.html" class="st_scene_launch">
-                              <span class="st_scene_launch_text">Launch</span>
-                              <span class="st_scene_launch_icon">
-                                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.00012 6.99999L17 6.99976M17 6.99976L11.5566 1.49976M17 6.99976L11.5566 12.4998" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                              </span>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="st_scene_details">
-                      <h3 class="title-2 color-white">Intersection Simple Demo</h3>
-                      <p class="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus ultrices cum lorem sapien in elementum, pharetra. Tortor malesuada ornare et ipsum.</p>
-                  </div>
-              </div>
-
-              <div class="st_scene_item">
-                  <div class="st_scene_image">
-                      <img src="/img/scenes/scene3.jpg" alt="">
-                      <div class="st_scene_overlay">
-                          <a href="" class="st_scene_launch">
-                              <span class="st_scene_launch_text">Launch</span>
-                              <span class="st_scene_launch_icon">
-                                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.00012 6.99999L17 6.99976M17 6.99976L11.5566 1.49976M17 6.99976L11.5566 12.4998" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                              </span>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="st_scene_details">
-                      <h3 class="title-2 color-white">Title</h3>
-                      <p class="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus ultrices cum lorem sapien in elementum, pharetra. Tortor malesuada ornare et ipsum.</p>
-                  </div>
-              </div> */}
           </div>
-          <div className="text-center">
-            <div className="st_scene_show_more">
-              <span>Show more</span>
-              <svg
-                width={14}
-                height={8}
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 1L7 7L13 1"
-                  stroke="#EEEEEE"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+          <div className="st_main_grid" />
+        </main>
+
+        {/* OVERVIEW SECTION */}
+        <section className="st_overview">
+          <h2>3D STREET OVERVIEW</h2>
+          <video className="st_overview_video" controls preload="metadata">
+            <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
+          </video>
+        </section>
+
+        <div className="st_grid_3_wrapper">
+          {/* VISION SECTION */}
+          <section className="st_vision">
+            <h2>VISION</h2>
+            <p>
+              We can change our world for the better through safer, greener
+              streets.
+            </p>
+          </section>
+
+          {/* STATISTICS SECTION */}
+          <section className="st_statistics">
+            <h2>STATISTICS</h2>
+            <div className="st_statistics_posts">
+              <div className="st_statistics_item">
+                <PiechartIcon className="st_statistics_icon" />
+                <div className="st_statistics_post_description">
+                  <p>52%</p>
+                  <p>
+                    Over half of all car trips in the US are less than 3 miles -
+                    an ideal distance for green alternatives such as walking,
+                    biking, and transit.
+                  </p>
+                  <a href="" target="_blank">
+                    US Bureau of Transportation Statistics, 2022 Report
+                  </a>
+                </div>
+              </div>
+              <div className="st_statistics_item">
+                <PiechartIcon className="st_statistics_icon" />
+                <div className="st_statistics_post_description">
+                  <p>32%</p>
+                  <p>
+                    From the number of people interested in, but not using,
+                    active mobility, 80% would be willing to bike on streets
+                    with a protected or completely separated bike lane.
+                  </p>
+                  <a href="" target="_blank">
+                    NACTO Report, 2016
+                  </a>
+                </div>
+              </div>
+              <div className="st_statistics_item">
+                <PiechartIcon className="st_statistics_icon" />
+                <div className="st_statistics_post_description">
+                  <p>60%</p>
+                  <p>
+                    Nearly one-third of the population (32%) is dissatisfied
+                    with their community designs for making biking safe.
+                  </p>
+                  <a href="" target="_blank">
+                    US Bureau of Transportation Statistics, 2012 Report
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* MISSION SECTION */}
+          <section className="st_mission">
+            <h2>mission</h2>
+            <p>
+              Our goal is to empower the world with simple tools that enable
+              anyone to create a safer and greener future, one street at a time.
+            </p>
+          </section>
+        </div>
+
+        {/* FEATURES SECTION */}
+        <section className="st_features">
+          <div className="st_features_inner">
+            <h2>How are we different?</h2>
+
+            <div className="st_features_posts">
+              <div className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>One unique simple tool</p>
+                    <p>
+                      Our powerful yet user-friendly 3DStreet tool allows you to
+                      effortlessly bring your street design ideas to life. With
+                      intuitive features and a straightforward interface, you
+                      can easily create stunning and impactful street designs
+                      that contribute to a safer and greener world.
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-preview.png"
+                  alt="feature-preview"
                 />
-              </svg>
+              </div>
+
+              <div className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Infinitely collaborative software</p>
+                    <p>
+                      Collaboration is at the heart of our 3D Street tool.
+                      Connect and work with others, whether it's fellow
+                      designers, community members, or city planners. Share
+                      ideas, gather feedback, and collectively create street
+                      designs that truly reflect the needs and aspirations of
+                      your community.
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-preview.png"
+                  alt="feature-preview"
+                />
+              </div>
+
+              <div className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Endlessly inspiring</p>
+                    <p>
+                      With the 3D Street tool, you have the opportunity to lead
+                      the way in creating innovative and sustainable street
+                      designs. Inspire others and showcase your creativity by
+                      designing streets that prioritize safety, accessibility,
+                      and environmental consciousness. Be a catalyst for
+                      positive change in your community.
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-preview.png"
+                  alt="feature-preview"
+                />
+              </div>
+
+              <div className="st_features_item">
+                <div className="st_feature_description b-gap">
+                  <div className="st_feature_description_top">
+                    <p>Open source</p>
+                    <p>
+                      Cred by the users and the community of users that
+                      contribute to the code base. Github
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-preview.png"
+                  alt="feature-preview"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      {/* scenes end */}
-      {/* news start */}
-      <div id="news" className="st_section st_section_white">
-        <div className="st_container">
-          <h1 className="st_section_heading h-2 color-dark text-center">
-            3DStreet in the News
-          </h1>
-          <div className="st_news_list">
-            <div className="st_news_item">
-              <div className="st_news_head">
-                <div className="st_news_head_avatar">
-                  <img src="/img/news/news1_avatar.jpg" alt="" />
+        </section>
+
+        {/* BLOG SECTION */}
+        <section className="st_blog">
+          <div className="st_blog_left_dot" />
+          <div className="st_blog_right_dot" />
+          <div className="st_blog_inner">
+            <h2>Featured blogs</h2>
+            <p className="st_blog_title_description">
+              Latest blog posts associated with 3DStreet
+            </p>
+
+            <div className="st_blog_cards">
+              <div className="st_blog_item">
+                <img src="/img/website/blog-preview.png" alt="blog-preview" />
+                <div className="st_blog_item_description">
+                  <div className="st_blog_item_header">
+                    <p>
+                      <img
+                        src="/img/website/blog-avatar.png"
+                        alt="user-avatar"
+                      />
+                      Name
+                    </p>
+                    <p>Article title</p>
+                  </div>
+                  <hr className="divider" />
+                  <p className="st_blog_item_footer">
+                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
+                    non eget velit libero egestas at. Lobortis in scelerisque
+                    sollicitudin quam eget consequat nulla dictum tincidunt.
+                    Enim dolor et cursus sit. Malesuada a turpis eu ...
+                  </p>
                 </div>
-                <div className="st_news_head_name title-2">
-                  The San Francisco <span>Standard</span>
+              </div>
+
+              <div className="st_blog_item">
+                <img src="/img/website/blog-preview.png" alt="blog-preview" />
+                <div className="st_blog_item_description">
+                  <div className="st_blog_item_header">
+                    <p>
+                      <img
+                        src="/img/website/blog-avatar.png"
+                        alt="user-avatar"
+                      />
+                      Name
+                    </p>
+                    <p>Article title</p>
+                  </div>
+                  <hr className="divider" />
+                  <p className="st_blog_item_footer">
+                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
+                    non eget velit libero egestas at. Lobortis in scelerisque
+                    sollicitudin quam eget consequat nulla dictum tincidunt.
+                    Enim dolor et cursus sit. Malesuada a turpis eu ...
+                  </p>
                 </div>
               </div>
-              <h3 className="title-1">
-                Introducing the ‘Burrito Plan,’ One Way to Safety on Valencia Street
-              </h3>
-              <div className="st_news_image">
-                <img src="/img/news/news1.jpg" alt="" />
+
+              <div className="st_blog_item">
+                <img src="/img/website/blog-preview.png" alt="blog-preview" />
+                <div className="st_blog_item_description">
+                  <div className="st_blog_item_header">
+                    <p>
+                      <img
+                        src="/img/website/blog-avatar.png"
+                        alt="user-avatar"
+                      />
+                      Name
+                    </p>
+                    <p>Article title</p>
+                  </div>
+                  <hr className="divider" />
+                  <p className="st_blog_item_footer">
+                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
+                    non eget velit libero egestas at. Lobortis in scelerisque
+                    sollicitudin quam eget consequat nulla dictum tincidunt.
+                    Enim dolor et cursus sit. Malesuada a turpis eu ...
+                  </p>
+                </div>
               </div>
-              <div className="st_news_content">
-                <p>
-                  There is no enforcement against vehicles blocking bike lanes, even
-                  across the street from the Mission police station.
-                </p>
-                <p className="text-italic">
-                  What if I told you I have come up with a solution that is better
-                  for bikes and businesses?
-                </p>
+
+              <div className="st_blog_item">
+                <img src="/img/website/blog-preview.png" alt="blog-preview" />
+                <div className="st_blog_item_description">
+                  <div className="st_blog_item_header">
+                    <p>
+                      <img
+                        src="/img/website/blog-avatar.png"
+                        alt="user-avatar"
+                      />
+                      Name
+                    </p>
+                    <p>Article title</p>
+                  </div>
+                  <hr className="divider" />
+                  <p className="st_blog_item_footer">
+                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
+                    non eget velit libero egestas at. Lobortis in scelerisque
+                    sollicitudin quam eget consequat nulla dictum tincidunt.
+                    Enim dolor et cursus sit. Malesuada a turpis eu ...
+                  </p>
+                </div>
               </div>
-              <a
-                href="https://sfstandard.com/perspectives/perspective-introducing-the-burrito-plan-one-way-to-safety-on-valencia-street/"
-                className="button button-b3"
-              >
-                Read the full article
-              </a>
             </div>
-            <div className="st_news_item">
-              <div className="st_news_head">
-                <div className="st_news_head_avatar">
-                  <img src="/img/news/news2_avatar.jpg" alt="" />
-                </div>
-                <div className="st_news_head_name title-2">
-                  The Philadelphia <span>Inquirer</span>
-                </div>
-              </div>
-              <h3 className="title-1">
-                Philadelphia needs to manage the return of the car as the pandemic
-                subsides
-              </h3>
-              <div className="st_news_image">
-                <img src="/img/news/news2.jpg" alt="" />
-              </div>
-              <div className="st_news_content">
-                <p>
-                  So far, the message to motorists seems to be: C’mon back. But
-                  Philadelphia needs to retain the public space clawed back from the
-                  automobile during the pandemic.
-                </p>
-              </div>
-              <a
-                href="https://www.inquirer.com/real-estate/inga-saffron/philadelphia-parking-cycling-driving-mlk-drive-20210524.html"
-                className="button button-b3"
-              >
-                Original article (paywall)
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* news end */}
-      {/* Get in touch start */}
-      <div id="connect" className="st_section st_section_connect">
-        <div className="st_container">
-          <h1 className="st_section_heading h-2 color-white text-center">
-            Connect with Us
-          </h1>
-          <div className="st_connect_wrapper">
-            <div className="st_connect_twitter">
-            <Timeline
-              dataSource={{
-                sourceType: 'profile',
-                screenName: '3dstreetapp'
-              }}
-              options={{
-                height: '800'
+            <Button
+              variant={"blue"}
+              label={"View more blogs"}
+              onClick={() => {
+                location.href = "";
               }}
             />
-            </div>
-            <div className="st_connect_discordGithub">
-              <h3 className="title-1 color-white">Join our Discord server</h3>
-              <p className="color-white">
-                Be part of the community. Take a look at how we work on projects. We
-                share ideas and would love to hear yours.
-              </p>
-              <a
-                className="button button-white button-icon"
-                href="https://discord.gg/9DgKkFCetC"
-              >
-                Join 3DStreet Discord
-                <span>
-                  <svg
-                    width={24}
-                    height={25}
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 13.5C9.55228 13.5 10 13.0523 10 12.5C10 11.9477 9.55228 11.5 9 11.5C8.44772 11.5 8 11.9477 8 12.5C8 13.0523 8.44772 13.5 9 13.5Z"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M15 13.5C15.5523 13.5 16 13.0523 16 12.5C16 11.9477 15.5523 11.5 15 11.5C14.4477 11.5 14 11.9477 14 12.5C14 13.0523 14.4477 13.5 15 13.5Z"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M7.5 8C11 7 13 7 16.5 8"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M7 17C10.5 18 13.5 18 17 17"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M15.5 17.5C15.5 18.5 17 20.5 17.5 20.5C19 20.5 20.333 18.833 21 17.5C21.667 15.833 21.5 11.667 19.5 6C18.043 4.985 16.5 4.66 15 4.5L14 7"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M8.49999 17.5C8.49999 18.5 7.14399 20.5 6.66799 20.5C5.23899 20.5 3.96999 18.833 3.33499 17.5C2.69999 15.833 2.85899 11.667 4.76299 6C6.15099 4.985 7.54499 4.66 8.99999 4.5L9.99999 7"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-              </a>
-              <div className="color-white">
-                (If invite expired, email us below.)
+          </div>
+        </section>
+
+        {/* SOCIALS SECTION */}
+        <section className="st_socials">
+          {/* bg items */}
+          <div className="st_socials_icon2" />
+          {!isMobile && (
+            <>
+              <div className="st_socials_icon3" />
+              <div className="st_socials_icon4" />
+              <div className="st_socials_icon5" />
+              <div className="st_socials_icon6" />
+              <div className="st_socials_icon7" />
+              <div className="st_socials_icon8" />
+              <div className="st_socials_icon9" />
+            </>
+          )}
+          <div className="st_socials_icon10" />
+          {/* bg items */}
+
+          <div className="st_socials_title">
+            <h2>How to get involved</h2>
+            <p>
+              <b>A safer greener world begins with you.</b> Join our thriving,
+              growing community to get involved. Partner with other like minded
+              individuals or blaze your own trail. The only limit is your
+              imagination.
+            </p>
+          </div>
+
+          <div className="st_socials_cards">
+            <div className="st_socials_item">
+              <div className="st_socials_inner">
+                <div className="st_socials_header">
+                  <p className="st_socials_type">COMMUNITY</p>
+                  <div className="st_socials_icon">
+                    <DiscordIcon2 />
+                  </div>
+                </div>
+                <div className="st_socials_item_footer">
+                  <div className="st_socials_item_description">
+                    <p>Connect with our community on Discord</p>
+                    <p>
+                      Be part of the community. Take a look at how we work on
+                      projects. We share ideas and would love to hear yours.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="st_divider">/</div>
-              <h3 className="title-1 color-white">Contribute on GitHub</h3>
-              <p className="color-white">
-                See the 3DStreet core viewer source code and help make it better.
-              </p>
-              <a
-                className="button button-white button-icon"
-                href="https://github.com/3dstreet/3dstreet"
-              >
+              <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
+                Join 3DStreet Discord
+              </a>
+            </div>
+            <div className="st_socials_item">
+              <div className="st_socials_inner">
+                <div className="st_socials_header">
+                  <p className="st_socials_type">collab</p>
+                  <div className="st_socials_icon">
+                    <GithubIcon />
+                  </div>
+                </div>
+                <div className="st_socials_item_footer">
+                  <div className="st_socials_item_description">
+                    <p>Contribute together on GitHub</p>
+                    <p>
+                      See the 3D Street core viewer source code and help make it
+                      better.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="https://github.com/3dstreet/3dstreet" target="_blank">
                 3DStreet GitHub Repo
-                <span>
-                  <svg
-                    width={20}
-                    height={21}
-                    viewBox="0 0 20 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.5 17.5C3.2 18.9 3.2 15 1.5 14.5M13.5 19.5V16C13.5 15 13.6 14.6 13 14C15.8 13.7 18.5 12.6 18.5 8.00001C18.4988 6.80498 18.0325 5.65732 17.2 4.80001C17.5905 3.76198 17.5545 2.61164 17.1 1.60001C17.1 1.60001 16 1.30001 13.6 2.90001C11.5672 2.3706 9.43276 2.3706 7.4 2.90001C5 1.30001 3.9 1.60001 3.9 1.60001C3.44548 2.61164 3.40953 3.76198 3.8 4.80001C2.96745 5.65732 2.50122 6.80498 2.5 8.00001C2.5 12.6 5.2 13.7 8 14C7.4 14.6 7.4 15.2 7.5 16V19.5"
-                      stroke="#4818D1"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
+              </a>
+            </div>
+            <div className="st_socials_item">
+              <div className="st_socials_inner">
+                <div className="st_socials_header">
+                  <p className="st_socials_type">conversation</p>
+                  <div className="st_socials_icon">
+                    <XIcon2 />
+                  </div>
+                </div>
+                <div className="st_socials_item_footer">
+                  <div className="st_socials_item_description">
+                    <p>Follow us on X and stay up to date</p>
+                    <p>
+                      Follow us on twitter and stay in the know on all things 3D
+                      Street.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="https://twitter.com/3dstreetapp" target="_blank">
+                Connect on X
               </a>
             </div>
           </div>
-        </div>
-      </div>
-      {/* Get in touch end */}
-      {/* footer start */}
-      <div className="st_footer color-white text-center">
-        Copyright © {new Date().getFullYear()} 3DStreet LLC. 3DStreet is trademark of 3DStreet LLC.
-      </div>
-      {/* footer end */}
-    </>
+        </section>
 
+        {/* TRUSTED BY SECTION */}
+        <section className="st_trusted_by">
+          <h2>TRUSTED BY</h2>
+          <div className="st_trusted_by_companies">
+            <div className="st_trusted_by_company">
+              <img
+                src="/img/website/trusted-comp1.png"
+                alt="University of Oregon"
+              />
+            </div>
+            <div className="st_trusted_by_company">
+              <img
+                src="/img/website/trusted-comp2.png"
+                alt="Town of Manchester"
+              />
+            </div>
+            <div className="st_trusted_by_company">
+              <img
+                src="/img/website/trusted-comp3.png"
+                alt="Bicycle coalition"
+              />
+            </div>
+            <div className="st_trusted_by_company">
+              <img src="/img/website/trusted-comp4.png" alt="Streetmix" />
+            </div>
+          </div>
+        </section>
+
+        {/* START SECTION */}
+        <section className="st_start">
+          <h2>Ready to reimagine a safer greener world?</h2>
+          <Button variant={"white"} label={"Let's do this"} />
+        </section>
+
+        {/* FOOTER SECTION */}
+        <footer className="st_footer">
+          <div className="st_footer_links">
+            <div className="st_footer_col">
+              <p>3DStreet</p>
+              <ul>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">Contact Sales</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="st_footer_col">
+              <p>Community</p>
+              <ul>
+                <li>
+                  <a href="https://discord.com/invite/9DgKkFCetC">Discord</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/3dstreetapp">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/3dstreet/">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="">Mastadon</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="st_footer_col">
+              <p>GitHub</p>
+              <ul>
+                <li>
+                  <a href="">3DStreet Core (Parser and Viewer)</a>
+                </li>
+                <li>
+                  <a href="">3DStreet Editor</a>
+                </li>
+                <li>
+                  <a href="">3DStreet Assets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="st_footer_copyright">
+            <span />
+            ©2024 3DStreet LLC. 3DStreet is a registered trademark of 3DStreet
+            LLC.
+          </p>
+        </footer>
+      </div>
+    </>
   );
 }
