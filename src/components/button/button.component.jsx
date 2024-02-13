@@ -11,6 +11,7 @@ const Button = ({
   disabled,
   type,
   onClick,
+  className,
 }) => {
   return (
     <button
@@ -23,7 +24,8 @@ const Button = ({
         styles.wrapper,
         styles[`variant-${variant}`],
         isActive && styles.active,
-        disabled && styles.disabled
+        disabled && styles.disabled,
+        className
       )}
     >
       {icon && <div className={styles.icon}>{icon}</div>}

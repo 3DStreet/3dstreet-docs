@@ -46,6 +46,24 @@ footer {
   width: 750px;
 }
 
+.--mobile {
+  display: none;
+}
+
+.--noMobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .--mobile {
+    display: block;
+  }
+
+  .--noMobile {
+    display: none;
+  }
+}
+
 /*---------------------------------------------------------------- 
   Header styles
 ----------------------------------------------------------------*/
@@ -1001,5 +1019,13 @@ section h2 {
 
   .st_socials_item a {
     margin-top: 24px;
+  }
+
+  .st_blog_inner {
+    width: auto;
+  }
+
+  .st_main_grid {
+    background-size: auto;
   }
 }

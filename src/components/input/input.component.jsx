@@ -3,7 +3,6 @@ import styles from "./input.module.css";
 import { CheckIcon, MailIcon } from "../../icons";
 import { Button } from "../button";
 import clsx from "clsx";
-import { useIsMobile } from "../../hooks/isMobile.hook";
 
 const EMAIL_REGEXP =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -12,8 +11,6 @@ const Input = () => {
   const [value, setValue] = useState("");
   const [isEmail, setIsEmail] = useState(true);
   const [isSent, setIsSent] = useState(false);
-
-  const { isMobile } = useIsMobile();
 
   const onChangeHandler = (value) => {
     setValue(value);
@@ -47,10 +44,15 @@ const Input = () => {
         <div className={clsx(styles.inputWrapper, !isEmail && styles.notValid)}>
           <MailIcon />
           <input
-            placeholder={`Enter your email ${
-              !isMobile ? "address to register for updates" : ""
-            }`}
-            className={styles.input}
+            placeholder={"Enter your email address to register for updates"}
+            className={clsx(styles.input, "--noMobile")}
+            type="email"
+            value={value}
+            onChange={({ currentTarget: { value } }) => onChangeHandler(value)}
+          />
+          <input
+            placeholder={"Enter your email"}
+            className={clsx(styles.input, "--mobile")}
             type="email"
             value={value}
             onChange={({ currentTarget: { value } }) => onChangeHandler(value)}
@@ -65,6 +67,7 @@ const Input = () => {
           icon={isSent ? <CheckIcon /> : undefined}
           isActive={undefined}
           link={undefined}
+          className={""}
         />
       </div>
     </form>

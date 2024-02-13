@@ -12,11 +12,8 @@ import {
   XIcon,
   XIcon2,
 } from "../icons";
-import { useIsMobile } from "../hooks/isMobile.hook";
 
 export default function Home() {
-  const { isMobile } = useIsMobile();
-
   return (
     <>
       <meta charSet="UTF-8" />
@@ -60,62 +57,7 @@ export default function Home() {
                 <img src="/img/logo.svg" alt="logo" />
               </a>
             </div>
-            {!isMobile && (
-              <div className="st_header_nav">
-                <ul>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Home"
-                      isActive
-                      onClick={() => {
-                        location.href = "";
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Blog"
-                      onClick={() => {
-                        location.href = "/docs/";
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Documentation"
-                      onClick={() => {
-                        location.href = "/docs/";
-                      }}
-                    />
-                  </li>
-                </ul>
-              </div>
-            )}
-            {isMobile && (
-              <Button
-                variant="blue"
-                label="Launch app"
-                onClick={() => {
-                  location.href = "https://3dstreet.app";
-                }}
-              />
-            )}
-          </div>
-          {!isMobile && (
-            <Button
-              variant="blue"
-              label="Launch app"
-              onClick={() => {
-                location.href = "https://3dstreet.app";
-              }}
-            />
-          )}
-
-          {isMobile && (
-            <div className="st_header_nav">
+            <div className="st_header_nav --noMobile">
               <ul>
                 <li>
                   <Button
@@ -147,7 +89,57 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          )}
+
+            <Button
+              className="--mobile"
+              variant="blue"
+              label="Launch app"
+              onClick={() => {
+                location.href = "https://3dstreet.app";
+              }}
+            />
+          </div>
+          <Button
+            className="--noMobile"
+            variant="blue"
+            label="Launch app"
+            onClick={() => {
+              location.href = "https://3dstreet.app";
+            }}
+          />
+
+          <div className="st_header_nav --mobile">
+            <ul>
+              <li>
+                <Button
+                  variant="ghost"
+                  label="Home"
+                  isActive
+                  onClick={() => {
+                    location.href = "";
+                  }}
+                />
+              </li>
+              <li>
+                <Button
+                  variant="ghost"
+                  label="Blog"
+                  onClick={() => {
+                    location.href = "/docs/";
+                  }}
+                />
+              </li>
+              <li>
+                <Button
+                  variant="ghost"
+                  label="Documentation"
+                  onClick={() => {
+                    location.href = "/docs/";
+                  }}
+                />
+              </li>
+            </ul>
+          </div>
 
           <div className="relative_wrapper">
             <aside className="socials">
@@ -495,17 +487,14 @@ export default function Home() {
         <section className="st_socials">
           {/* bg items */}
           <div className="st_socials_icon2" />
-          {!isMobile && (
-            <>
-              <div className="st_socials_icon3" />
-              <div className="st_socials_icon4" />
-              <div className="st_socials_icon5" />
-              <div className="st_socials_icon6" />
-              <div className="st_socials_icon7" />
-              <div className="st_socials_icon8" />
-              <div className="st_socials_icon9" />
-            </>
-          )}
+          <div className="st_socials_icon3 --noMobile" />
+          <div className="st_socials_icon4 --noMobile" />
+          <div className="st_socials_icon5 --noMobile" />
+          <div className="st_socials_icon6 --noMobile" />
+          <div className="st_socials_icon7 --noMobile" />
+          <div className="st_socials_icon8 --noMobile" />
+          <div className="st_socials_icon9 --noMobile" />
+
           <div className="st_socials_icon10" />
           {/* bg items */}
 
