@@ -8,7 +8,7 @@ Check out some of our Alpha Labs features below -- these are features that are r
 
 :::warning
 
-3DStreet is still a [Beta product](https://www.3dstreet.org/docs/3dstreet-editor/saving-and-loading-scenes#beta-software) that may have bugs -- and on this page you'll find Alpha concepts that are almost guaranteed to have bugs! Some of these bugs may break your scene and render it uneditable. You may want to save a backup of your scene before trying these features by clicking "Remix" or "Save As..."
+Save a backup of your scene before trying these "Alpha Labs" experiments. 3DStreet is a [Beta product](https://www.3dstreet.org/docs/3dstreet-editor/saving-and-loading-scenes#beta-software) that may have bugs, and these Alpha Labs components are more likely to have bugs that could break your 3DStreet scene or prevent it from saving or loading.
 
 :::
 
@@ -25,8 +25,8 @@ newEl.setAttribute('svg-extruder', `svgString: <svg id="traffic-circle-svg" widt
             <path d="M1562 797C1475.23 805.17 1419.94 800.652 1310 777C1322.14 822.934 1324.73 853.264 1326 911C1426.16 863.684 1479.82 844.12 1562 847V797Z" fill="white"/>
             <path d="M832 1467C782.879 1472.52 753.742 1472.69 697 1467C729.414 1550.35 751.819 1619.31 761 1722H803.5C806.545 1646.07 790.668 1543.99 832 1467Z" fill="white"/>
         </svg>`)
-newEl.setAttribute('data-layer-name', 'Segment • SVG-Extrude')
-parentEl = document.querySelector('.street-parent')
+newEl.setAttribute('data-layer-name', 'SVG Path • My Custom Path')
+parentEl = document.querySelector('#street-container')
 parentEl.appendChild(newEl)
 ```
 
@@ -37,9 +37,21 @@ This component accepts a long / lat and renders a plane with dimensions that (sh
 ```
 newEl = document.createElement('a-entity')
 newEl.setAttribute('geometry', 'primitive: plane; width: 512; height: 512;')
-newEl.setAttribute('rotation', '-90 -4.25 0')
+newEl.setAttribute('rotation', '-90 0 0')
 newEl.setAttribute('mapbox', 'center: -122.417490, 37.765190; zoom: 18; accessToken: pk.eyJ1Ijoia2llcmFuZmFyciIsImEiOiJjazB0NWh2YncwOW9rM25sd2p0YTlxemk2In0.mLl4sNGDFbz_QXk0GIK02Q; style: mapbox://styles/mapbox/satellite-streets-v11; pxToWorldRatio: 4;')
 newEl.setAttribute('data-layer-name', 'Aerial Imagery • Mapbox Satellite')
 parentEl = document.querySelector('#reference-layers')
+parentEl.appendChild(newEl)
+```
+
+## Custom glTF Model
+
+This component accepts a path for a glTF (or glb) file hosted on any publicly accessible HTTP server.
+
+```
+newEl = document.createElement('a-entity')
+newEl.setAttribute('gltf-model', 'url(https://cdn.glitch.global/690c7ea3-3f1c-434b-8b8d-3907b16de83c/Mission_Bay_school_low_poly_model_v01.glb?v=1708752988663)')
+newEl.setAttribute('data-layer-name', 'glTF Model • My Custom Object')
+parentEl = document.querySelector('#street-container')
 parentEl.appendChild(newEl)
 ```
