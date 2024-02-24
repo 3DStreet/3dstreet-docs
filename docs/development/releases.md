@@ -4,12 +4,19 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.8](https://github.com/3DStreet/3dstreet/releases/tag/0.4.8) - 23 Feb 2024
+* [Some cool new Alpha Labs features](https://www.3dstreet.org/docs/development/alpha-labs)! But not released in Editor yet.
+* Aerial imagery from Mapbox
+* Import custom svg paths
+* Allow saving user-specified textures
+* Continue to refactor for STREET global
+
 ## [3DStreet Editor 0.4.7](https://github.com/3DStreet/3dstreet-editor/releases/tag/0.4.7) - 21 Feb 2024
 * New feature: Open community scene browser when loading blank scene. The rest are bug fixes and refactoring.
 * CSS refactoring and storybook init, [first half of CSS improvement epic](https://github.com/3DStreet/3dstreet-editor/issues/314)
 * Usability improvements: fix incorrect bounding box for some objects, fix critical boolean widget bug, remove various console errors, fix NaN in number widget error
 * [Save / load usability improvements](https://github.com/3DStreet/3dstreet-editor/issues/364): fix various bugs relating to thumbnail, title and scene graph saving resulting in unexpected behavior in open modal
-* Start refactoring to for Editor to call 3DStreet core methods from STREET global
+* Start refactoring for Editor to call 3DStreet core methods from STREET global
 * Pin 3DStreet core library to specific version (starting with 0.4.6) to prevent breaking changes on production while introducing new core features
 
 ## [3DStreet Core 0.4.6](https://github.com/3DStreet/3dstreet/releases/tag/0.4.6) - 5 Feb 2024
