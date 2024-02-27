@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Editor 0.4.10](https://github.com/3DStreet/3dstreet-editor/releases/tag/0.4.10) - 26 Feb 2024
+* Use json-utils functions from global STREET.utils
+* Update to 3dstreet latest 0.4.9 to support some of the new alpha labs features like svg import, new cable car vehicle, updated mapbox support, user-specified textures
+
 ## [3DStreet Core 0.4.9](https://github.com/3DStreet/3dstreet/releases/tag/0.4.9) - 26 Feb 2024
 * Bug fixes for custom svg features encountered with saving and loading scenes
 * New cable car for trolley segment type
