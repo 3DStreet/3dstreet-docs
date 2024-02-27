@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.9](https://github.com/3DStreet/3dstreet/releases/tag/0.4.9) - 26 Feb 2024
+* Bug fixes for custom svg features encountered with saving and loading scenes
+* New cable car for trolley segment type
+* Lazy load transit vehicles (approx 300KB reduction in scene load if no transit vehicles used in scene)
+
 ## [3DStreet Core 0.4.8](https://github.com/3DStreet/3dstreet/releases/tag/0.4.8) - 23 Feb 2024
 * [Some cool new Alpha Labs features](https://www.3dstreet.org/docs/development/alpha-labs)! But not released in Editor yet.
 * Aerial imagery from Mapbox
