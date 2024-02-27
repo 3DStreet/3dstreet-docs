@@ -50,7 +50,7 @@ This component accepts a path for a glTF (or glb) file hosted on any publicly ac
 
 ```
 newEl = document.createElement('a-entity')
-newEl.setAttribute('gltf-model', 'url(https://cdn.glitch.global/690c7ea3-3f1c-434b-8b8d-3907b16de83c/Mission_Bay_school_low_poly_model_v01.glb?v=1708752988663)')
+newEl.setAttribute('gltf-model', 'url(https://cdn.glitch.global/690c7ea3-3f1c-434b-8b8d-3907b16de83c/Mission_Bay_school_low_poly_model_v02_draco.glb?v=1708795685005)')
 newEl.setAttribute('data-layer-name', 'glTF Model • My Custom Object')
 parentEl = document.querySelector('#street-container')
 parentEl.appendChild(newEl)
