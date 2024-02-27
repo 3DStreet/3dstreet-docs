@@ -50,8 +50,19 @@ This component accepts a path for a glTF (or glb) file hosted on any publicly ac
 
 ```
 newEl = document.createElement('a-entity')
-newEl.setAttribute('gltf-model', 'url(https://cdn.glitch.global/690c7ea3-3f1c-434b-8b8d-3907b16de83c/Mission_Bay_school_low_poly_model_v02_draco.glb?v=1708795685005)')
+newEl.setAttribute('gltf-model', 'url(https://cdn.glitch.global/690c7ea3-3f1c-434b-8b8d-3907b16de83c/Mission_Bay_school_low_poly_model_v03_draco.glb?v=1709051557725)')
 newEl.setAttribute('data-layer-name', 'glTF Model • My Custom Object')
+parentEl = document.querySelector('#street-container')
+parentEl.appendChild(newEl)
+```
+
+## Add Streetmix Street Non-Destructively
+
+This code snippet allows the creation of an additional Streetmix street in your 3DStreet scene without replacing any existing streets.
+
+```
+newEl = document.createElement('a-entity')
+newEl.setAttribute('streetmix-loader', 'streetmixStreetURL: https://streetmix.net/kfarr/128/owens-st')
 parentEl = document.querySelector('#street-container')
 parentEl.appendChild(newEl)
 ```
