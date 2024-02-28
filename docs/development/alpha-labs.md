@@ -66,3 +66,17 @@ newEl.setAttribute('streetmix-loader', 'streetmixStreetURL: https://streetmix.ne
 parentEl = document.querySelector('#street-container')
 parentEl.appendChild(newEl)
 ```
+
+## Add a Primitive Geometry from A-Frame
+
+This code snippet allows the creation of an [arbitrary geometry shapes from this list](https://aframe.io/docs/1.5.0/components/geometry.html).
+
+```
+newEl = document.createElement('a-entity')
+newEl.setAttribute('geometry', 'primitive: circle; radius: 50;')
+newEl.setAttribute('rotation', '-90 0 0')
+newEl.setAttribute('data-layer-name', 'Plane Geometry • Traffic Circle Asphalt')
+newEl.setAttribute('material', 'src: #asphalt-texture; repeat: 5 5;')
+parentEl = document.querySelector('#street-container')
+parentEl.appendChild(newEl)
+```
