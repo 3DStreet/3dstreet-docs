@@ -195,12 +195,12 @@ export default function Home({ recentPosts }) {
         </main>
 
         {/* OVERVIEW SECTION */}
-        <section className="st_overview">
+        {/* <section className="st_overview">
           <h2>3DSTREET OVERVIEW</h2>
           <video className="st_overview_video" controls preload="metadata">
             <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
           </video>
-        </section>
+        </section> */}
 
         <div className="st_grid_3_wrapper">
           {/* VISION SECTION */}
