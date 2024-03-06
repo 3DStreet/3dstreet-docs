@@ -138,8 +138,17 @@
 }
 .variant-ghost:hover,
 .variant-ghost.active {
-  border-bottom: 2px solid #fff;
-  font-weight: 600;
+  position: relative;
+}
+.variant-ghost:hover::after,
+.variant-ghost.active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background-color: #fff;
 }
 .variant-ghost:focus-visible {
   border: 2px solid #fff;

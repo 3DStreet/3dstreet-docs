@@ -5,6 +5,8 @@ const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 
+require("dotenv").config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "3DStreet",
@@ -27,6 +29,9 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+  customFields: {
+    mailchimpUrl: process.env.MAILCHIMP_URL,
+  },
   markdown: {
     mermaid: true,
   },
@@ -35,10 +40,11 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        blog: {
-          path: "blog",
-          routeBasePath: "blog",
-        },
+        // blog: {
+        //   path: "blog",
+        //   routeBasePath: "blog",
+        // },
+        blog: false,
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
@@ -49,6 +55,17 @@ const config = {
           customCss: require.resolve("./src/css/styles.css"),
         },
       }),
+    ],
+  ],
+  plugins: [
+    // Use custom blog plugin
+    [
+      "./src/plugins/blog-plugin.js",
+      {
+        id: "blog",
+        routeBasePath: "blog",
+        path: "./blog",
+      },
     ],
   ],
 

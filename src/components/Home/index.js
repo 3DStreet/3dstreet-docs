@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, Input } from "../components";
+import { Button, Input } from "..";
 import {
   ArrowIcon,
   DiscordIcon,
@@ -11,9 +11,18 @@ import {
   PiechartIcon,
   XIcon,
   XIcon2,
-} from "../icons";
+} from "../../icons";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-export default function Home() {
+export default function Home({ recentPosts }) {
+  const {
+    siteConfig: {
+      themeConfig: {
+        footer: { links: footerLinks },
+      },
+    },
+  } = useDocusaurusContext();
+
   return (
     <>
       <meta charSet="UTF-8" />
@@ -74,7 +83,7 @@ export default function Home() {
                     variant="ghost"
                     label="Blog"
                     onClick={() => {
-                      location.href = "/docs/";
+                      location.href = "/blog/";
                     }}
                   />
                 </li>
@@ -143,16 +152,19 @@ export default function Home() {
 
           <div className="relative_wrapper">
             <aside className="socials">
-              <a href="https://discord.com/invite/9DgKkFCetC">
+              <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
                 <DiscordIcon />
               </a>
-              <a href="https://twitter.com/3dstreetapp">
+              <a href="https://twitter.com/3dstreetapp" target="_blank">
                 <XIcon />
               </a>
-              <a href="https://www.linkedin.com/company/3dstreet/">
+              <a
+                href="https://www.linkedin.com/company/3dstreet/"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </a>
-              <a href="">
+              <a href="https://urbanists.social/@3dstreet" target="_blank">
                 <MastodonIcon />
               </a>
             </aside>
@@ -184,7 +196,7 @@ export default function Home() {
 
         {/* OVERVIEW SECTION */}
         <section className="st_overview">
-          <h2>3D STREET OVERVIEW</h2>
+          <h2>3DSTREET OVERVIEW</h2>
           <video className="st_overview_video" controls preload="metadata">
             <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
           </video>
@@ -213,8 +225,28 @@ export default function Home() {
                     an ideal distance for green alternatives such as walking,
                     biking, and transit.
                   </p>
-                  <a href="" target="_blank">
+                  <a
+                    href="https://www.energy.gov/eere/vehicles/articles/fotw-1230-march-21-2022-more-half-all-daily-trips-were-less-three-miles-2021"
+                    target="_blank"
+                  >
                     US Bureau of Transportation Statistics, 2022 Report
+                  </a>
+                </div>
+              </div>
+              <div className="st_statistics_item">
+                <PiechartIcon className="st_statistics_icon" />
+                <div className="st_statistics_post_description">
+                  <p>80%</p>
+                  <p>
+                    From the number of people interested in, but not using,
+                    active mobility, 80% would be willing to bike on streets
+                    with a protected or completely separated bike lane.
+                  </p>
+                  <a
+                    href="https://nacto.org/2016/07/20/high-quality-bike-facilities-increase-ridership-make-biking-safer"
+                    target="_blank"
+                  >
+                    NACTO Report, 2016
                   </a>
                 </div>
               </div>
@@ -223,24 +255,13 @@ export default function Home() {
                 <div className="st_statistics_post_description">
                   <p>32%</p>
                   <p>
-                    From the number of people interested in, but not using,
-                    active mobility, 80% would be willing to bike on streets
-                    with a protected or completely separated bike lane.
-                  </p>
-                  <a href="" target="_blank">
-                    NACTO Report, 2016
-                  </a>
-                </div>
-              </div>
-              <div className="st_statistics_item">
-                <PiechartIcon className="st_statistics_icon" />
-                <div className="st_statistics_post_description">
-                  <p>60%</p>
-                  <p>
                     Nearly one-third of the population (32%) is dissatisfied
                     with their community designs for making biking safe.
                   </p>
-                  <a href="" target="_blank">
+                  <a
+                    href="https://www.bts.gov/archive/publications/special_reports_and_issue_briefs/issue_briefs/number_11/entire"
+                    target="_blank"
+                  >
                     US Bureau of Transportation Statistics, 2012 Report
                   </a>
                 </div>
@@ -381,97 +402,36 @@ export default function Home() {
             </p>
 
             <div className="st_blog_cards">
-              <div className="st_blog_item">
-                <img src="/img/website/blog-preview.png" alt="blog-preview" />
-                <div className="st_blog_item_description">
-                  <div className="st_blog_item_header">
-                    <p>
-                      <img
-                        src="/img/website/blog-avatar.png"
-                        alt="user-avatar"
-                      />
-                      Name
-                    </p>
-                    <p>Article title</p>
+              {recentPosts.length &&
+                recentPosts.map(({ title, description, authors }, idx) => (
+                  <div key={idx} className="st_blog_item">
+                    <img
+                      src="/img/website/blog-preview.png"
+                      alt="blog-preview"
+                    />
+                    <div className="st_blog_item_description">
+                      <div className="st_blog_item_header">
+                        <div className="st_blog_item_authors">
+                          <p
+                            className="st_blog_item_authors_p"
+                            title={`${authors[0].name}, ${authors[0].title}`}
+                          >
+                            <img
+                              src={authors[0].imageURL}
+                              alt="author-avatar"
+                            />
+                            {`${authors[0].name} ${
+                              authors.length > 1 ? "and others" : ""
+                            }`}
+                          </p>
+                        </div>
+                        <p className="st_blog_item_header_title">{title}</p>
+                      </div>
+                      <hr className="divider" />
+                      <p className="st_blog_item_footer">{description}</p>
+                    </div>
                   </div>
-                  <hr className="divider" />
-                  <p className="st_blog_item_footer">
-                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
-                    non eget velit libero egestas at. Lobortis in scelerisque
-                    sollicitudin quam eget consequat nulla dictum tincidunt.
-                    Enim dolor et cursus sit. Malesuada a turpis eu ...
-                  </p>
-                </div>
-              </div>
-
-              <div className="st_blog_item">
-                <img src="/img/website/blog-preview.png" alt="blog-preview" />
-                <div className="st_blog_item_description">
-                  <div className="st_blog_item_header">
-                    <p>
-                      <img
-                        src="/img/website/blog-avatar.png"
-                        alt="user-avatar"
-                      />
-                      Name
-                    </p>
-                    <p>Article title</p>
-                  </div>
-                  <hr className="divider" />
-                  <p className="st_blog_item_footer">
-                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
-                    non eget velit libero egestas at. Lobortis in scelerisque
-                    sollicitudin quam eget consequat nulla dictum tincidunt.
-                    Enim dolor et cursus sit. Malesuada a turpis eu ...
-                  </p>
-                </div>
-              </div>
-
-              <div className="st_blog_item">
-                <img src="/img/website/blog-preview.png" alt="blog-preview" />
-                <div className="st_blog_item_description">
-                  <div className="st_blog_item_header">
-                    <p>
-                      <img
-                        src="/img/website/blog-avatar.png"
-                        alt="user-avatar"
-                      />
-                      Name
-                    </p>
-                    <p>Article title</p>
-                  </div>
-                  <hr className="divider" />
-                  <p className="st_blog_item_footer">
-                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
-                    non eget velit libero egestas at. Lobortis in scelerisque
-                    sollicitudin quam eget consequat nulla dictum tincidunt.
-                    Enim dolor et cursus sit. Malesuada a turpis eu ...
-                  </p>
-                </div>
-              </div>
-
-              <div className="st_blog_item">
-                <img src="/img/website/blog-preview.png" alt="blog-preview" />
-                <div className="st_blog_item_description">
-                  <div className="st_blog_item_header">
-                    <p>
-                      <img
-                        src="/img/website/blog-avatar.png"
-                        alt="user-avatar"
-                      />
-                      Name
-                    </p>
-                    <p>Article title</p>
-                  </div>
-                  <hr className="divider" />
-                  <p className="st_blog_item_footer">
-                    Lorem ipsum dolor sit amet consectetur. Lorem duis id massa
-                    non eget velit libero egestas at. Lobortis in scelerisque
-                    sollicitudin quam eget consequat nulla dictum tincidunt.
-                    Enim dolor et cursus sit. Malesuada a turpis eu ...
-                  </p>
-                </div>
-              </div>
+                ))}
             </div>
             <Button
               variant={"blue"}
@@ -527,7 +487,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
+              <a
+                href="https://discord.com/invite/9DgKkFCetC"
+                target="_blank"
+                className="st_socials_item_link"
+              >
                 Join 3DStreet Discord
               </a>
             </div>
@@ -615,52 +579,20 @@ export default function Home() {
         {/* FOOTER SECTION */}
         <footer className="st_footer">
           <div className="st_footer_links">
-            <div className="st_footer_col">
-              <p>3DStreet</p>
-              <ul>
-                <li>
-                  <a href="">About Us</a>
-                </li>
-                <li>
-                  <a href="">Contact Sales</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="st_footer_col">
-              <p>Community</p>
-              <ul>
-                <li>
-                  <a href="https://discord.com/invite/9DgKkFCetC">Discord</a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/3dstreetapp">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/3dstreet/">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="">Mastadon</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="st_footer_col">
-              <p>GitHub</p>
-              <ul>
-                <li>
-                  <a href="">3DStreet Core (Parser and Viewer)</a>
-                </li>
-                <li>
-                  <a href="">3DStreet Editor</a>
-                </li>
-                <li>
-                  <a href="">3DStreet Assets</a>
-                </li>
-              </ul>
-            </div>
+            {footerLinks.map(({ title, items }, idx) => (
+              <div key={idx} className="st_footer_col">
+                <p>{title}</p>
+                <ul>
+                  {items.map(({ label, to, href }, idx) => (
+                    <li key={idx}>
+                      <a href={to ?? href} target="_blank">
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
 
           <p className="st_footer_copyright">
