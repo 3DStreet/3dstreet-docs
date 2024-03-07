@@ -28,7 +28,7 @@ export default function Home({ recentPosts }) {
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>3DStreet - open-source 3d street editor for safer streets</title>
+      <title>3DStreet - Open-source 3D street editor</title>
 
       {/* SITEMAP */}
       <link
@@ -290,7 +290,7 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>One unique simple tool</p>
                     <p>
-                      Our powerful yet user-friendly 3DStreet tool allows you to
+                      Our powerful yet user-friendly 3DStreet Editor tool allows you to
                       effortlessly bring your street design ideas to life. With
                       intuitive features and a straightforward interface, you
                       can easily create stunning and impactful street designs
@@ -306,8 +306,9 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-preview.png"
+                  src="/img/website/feature-simple-tool.jpg"
                   alt="feature-preview"
+                  width="386"
                 />
               </div>
 
@@ -316,12 +317,12 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>Infinitely collaborative software</p>
                     <p>
-                      Collaboration is at the heart of our 3D Street tool.
+                      Collaboration is at the heart of our 3DStreet tool.
                       Connect and work with others, whether it's fellow
                       designers, community members, or city planners. Share
-                      ideas, gather feedback, and collectively create street
+                      ideas, gather feedback, find inspiration, and collectively create street
                       designs that truly reflect the needs and aspirations of
-                      your community.
+                      your community. 
                     </p>
                   </div>
                   <Button
@@ -333,22 +334,24 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-preview.png"
+                  src="/img/website/feature-collab.jpg"
                   alt="feature-preview"
+                  width="386"
                 />
               </div>
 
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Endlessly inspiring</p>
+                    <p>Batteries included</p>
                     <p>
-                      With the 3D Street tool, you have the opportunity to lead
-                      the way in creating innovative and sustainable street
-                      designs. Inspire others and showcase your creativity by
-                      designing streets that prioritize safety, accessibility,
-                      and environmental consciousness. Be a catalyst for
-                      positive change in your community.
+                      Kickstart your original designs with 3DStreet's built-in
+                      library of over 200 unique and accurately scaled urban 3D
+                      models such as pedestrians, vehicles, buildings, street
+                      objects, and more. Automated smart Layers accelerate the
+                      creation of street elements by combining pre-made segments
+                      for sidewalks, parking stalls, bike lanes, railways,
+                      BRT corridors, and more.
                     </p>
                   </div>
                   <Button
@@ -360,18 +363,23 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-preview.png"
+                  src="/img/website/feature-model-library.jpg"
                   alt="feature-preview"
+                  width="386"
                 />
               </div>
 
               <div className="st_features_item">
                 <div className="st_feature_description b-gap">
                   <div className="st_feature_description_top">
-                    <p>Open source</p>
+                    <p>Open and transparent</p>
                     <p>
-                      Cred by the users and the community of users that
-                      contribute to the code base. Github
+                      Unlike most geospatial and civil engineering design software,
+                      3DStreet is open-source and user-created.
+                      Instead of locking you into proprietary formats, 3DStreet
+                      plays nicely with others to allow importing and exporting
+                      standards-compliant formats such as glTF, SVG, JSON, JPEG,
+                      PNG, Streetmix, and more.
                     </p>
                   </div>
                   <Button
@@ -383,8 +391,9 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-preview.png"
+                  src="/img/website/feature-open.jpg"
                   alt="feature-preview"
+                  width="386"
                 />
               </div>
             </div>
@@ -396,9 +405,9 @@ export default function Home({ recentPosts }) {
           <div className="st_blog_left_dot" />
           <div className="st_blog_right_dot" />
           <div className="st_blog_inner">
-            <h2>Featured blog posts</h2>
+            <h2>Latest blog posts</h2>
             <p className="st_blog_title_description">
-              Latest blog posts associated with 3DStreet
+              {/* Latest blog posts associated with 3DStreet */}
             </p>
 
             <div className="st_blog_cards">
@@ -510,7 +519,7 @@ export default function Home({ recentPosts }) {
                   <div className="st_socials_item_description">
                     <p>Contribute together on GitHub</p>
                     <p>
-                      See the 3D Street core viewer source code and help make it
+                      See 3DStreet Core and Editor source code and help make it
                       better.
                     </p>
                   </div>
