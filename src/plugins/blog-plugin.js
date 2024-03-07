@@ -21,7 +21,9 @@ async function blogPluginExtended(...pluginArgs) {
           JSON.stringify({
             title: blogPost.metadata.title,
             description: blogPost.metadata.description,
-            authors: blogPost.metadata.authors,
+            authors: blogPost.metadata.authors.reverse(),
+            imageURL: blogPost.metadata.frontMatter.image,
+            blogURL: blogPost.metadata.permalink
           })
         );
       }

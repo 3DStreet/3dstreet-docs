@@ -396,17 +396,19 @@ export default function Home({ recentPosts }) {
           <div className="st_blog_left_dot" />
           <div className="st_blog_right_dot" />
           <div className="st_blog_inner">
-            <h2>Featured blogs</h2>
+            <h2>Featured blog posts</h2>
             <p className="st_blog_title_description">
               Latest blog posts associated with 3DStreet
             </p>
 
             <div className="st_blog_cards">
               {recentPosts.length &&
-                recentPosts.map(({ title, description, authors }, idx) => (
+                recentPosts.map(({ title, description, authors, imageURL, blogURL }, idx) => (
                   <div key={idx} className="st_blog_item">
+                   <a href={blogURL}>
                     <img
                       src="/img/website/blog-preview.png"
+                      // src={imageURL} // future use
                       alt="blog-preview"
                     />
                     <div className="st_blog_item_description">
@@ -430,14 +432,15 @@ export default function Home({ recentPosts }) {
                       <hr className="divider" />
                       <p className="st_blog_item_footer">{description}</p>
                     </div>
+                   </a>
                   </div>
                 ))}
             </div>
             <Button
               variant={"blue"}
-              label={"View more blogs"}
+              label={"View more posts"}
               onClick={() => {
-                location.href = "";
+                location.href = "/blog/";
               }}
             />
           </div>
