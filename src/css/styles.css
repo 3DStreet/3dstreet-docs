@@ -307,8 +307,8 @@ section h2 {
 ----------------------------------------------------------------*/
 
 .st_mission {
-  margin-top: 492px;
-  margin-bottom: 400px;
+  margin-top: 248px;
+  margin-bottom: 200px;
 
   display: flex;
   flex-direction: column;
@@ -926,11 +926,18 @@ section h2 {
 /* TABLET */
 @media (max-width: 1200px) {
   section,
-  main,
-  footer {
+  main {
     width: 750px;
     padding-left: 40px !important;
     padding-right: 40px !important;
+  }
+
+  .st_footer {
+    width: 750px;
+  }
+
+  .st_footer_links {
+    width: 100%;
   }
 
   .st_header_container {
@@ -960,8 +967,12 @@ section h2 {
     padding-right: 10px !important;
   }
 
-  footer {
-    width: 100% !important;
+  .st_footer {
+    width: 100%;
+  }
+
+  .st_footer_links {
+    width: 100%;
   }
 
   .st_header_container {

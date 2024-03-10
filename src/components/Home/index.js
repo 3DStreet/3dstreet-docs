@@ -217,7 +217,7 @@ export default function Home({ recentPosts }) {
             <h2>STATISTICS</h2>
             <div className="st_statistics_posts">
               <div className="st_statistics_item">
-                <PiechartIcon className="st_statistics_icon" />
+                <PiechartIcon percent={52} className="st_statistics_icon" />
                 <div className="st_statistics_post_description">
                   <p>52%</p>
                   <p>
@@ -234,7 +234,7 @@ export default function Home({ recentPosts }) {
                 </div>
               </div>
               <div className="st_statistics_item">
-                <PiechartIcon className="st_statistics_icon" />
+                <PiechartIcon percent={80} className="st_statistics_icon" />
                 <div className="st_statistics_post_description">
                   <p>80%</p>
                   <p>
@@ -251,7 +251,7 @@ export default function Home({ recentPosts }) {
                 </div>
               </div>
               <div className="st_statistics_item">
-                <PiechartIcon className="st_statistics_icon" />
+                <PiechartIcon percent={32} className="st_statistics_icon" />
                 <div className="st_statistics_post_description">
                   <p>32%</p>
                   <p>
@@ -290,11 +290,12 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>One unique simple tool</p>
                     <p>
-                      Our powerful yet user-friendly 3DStreet Editor tool allows you to
-                      effortlessly bring your street design ideas to life. With
-                      intuitive features and a straightforward interface, you
-                      can easily create stunning and impactful street designs
-                      that contribute to a safer and greener world.
+                      Our powerful yet user-friendly 3DStreet Editor tool allows
+                      you to effortlessly bring your street design ideas to
+                      life. With intuitive features and a straightforward
+                      interface, you can easily create stunning and impactful
+                      street designs that contribute to a safer and greener
+                      world.
                     </p>
                   </div>
                   <Button
@@ -320,9 +321,9 @@ export default function Home({ recentPosts }) {
                       Collaboration is at the heart of our 3DStreet tool.
                       Connect and work with others, whether it's fellow
                       designers, community members, or city planners. Share
-                      ideas, gather feedback, find inspiration, and collectively create street
-                      designs that truly reflect the needs and aspirations of
-                      your community. 
+                      ideas, gather feedback, find inspiration, and collectively
+                      create street designs that truly reflect the needs and
+                      aspirations of your community.
                     </p>
                   </div>
                   <Button
@@ -350,8 +351,8 @@ export default function Home({ recentPosts }) {
                       models such as pedestrians, vehicles, buildings, street
                       objects, and more. Automated smart Layers accelerate the
                       creation of street elements by combining pre-made segments
-                      for sidewalks, parking stalls, bike lanes, railways,
-                      BRT corridors, and more.
+                      for sidewalks, parking stalls, bike lanes, railways, BRT
+                      corridors, and more.
                     </p>
                   </div>
                   <Button
@@ -374,8 +375,8 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>Open and transparent</p>
                     <p>
-                      Unlike most geospatial and civil engineering design software,
-                      3DStreet is open-source and user-created.
+                      Unlike most geospatial and civil engineering design
+                      software, 3DStreet is open-source and user-created.
                       Instead of locking you into proprietary formats, 3DStreet
                       plays nicely with others to allow importing and exporting
                       standards-compliant formats such as glTF, SVG, JSON, JPEG,
@@ -412,38 +413,43 @@ export default function Home({ recentPosts }) {
 
             <div className="st_blog_cards">
               {recentPosts.length &&
-                recentPosts.map(({ title, description, authors, imageURL, blogURL }, idx) => (
-                  <div key={idx} className="st_blog_item">
-                   <a href={blogURL}>
-                    <img
-                      src="/img/website/blog-preview.png"
-                      // src={imageURL} // future use
-                      alt="blog-preview"
-                    />
-                    <div className="st_blog_item_description">
-                      <div className="st_blog_item_header">
-                        <div className="st_blog_item_authors">
-                          <p
-                            className="st_blog_item_authors_p"
-                            title={`${authors[0].name}, ${authors[0].title}`}
-                          >
-                            <img
-                              src={authors[0].imageURL}
-                              alt="author-avatar"
-                            />
-                            {`${authors[0].name} ${
-                              authors.length > 1 ? "and others" : ""
-                            }`}
-                          </p>
+                recentPosts.map(
+                  ({ title, description, authors, imageURL, blogURL }, idx) => (
+                    <a
+                      key={idx}
+                      className="st_blog_item"
+                      href={blogURL}
+                      target="_blank"
+                    >
+                      <img
+                        src="/img/website/blog-preview.png"
+                        // src={imageURL} // future use
+                        alt="blog-preview"
+                      />
+                      <div className="st_blog_item_description">
+                        <div className="st_blog_item_header">
+                          <div className="st_blog_item_authors">
+                            <p
+                              className="st_blog_item_authors_p"
+                              title={`${authors[0].name}, ${authors[0].title}`}
+                            >
+                              <img
+                                src={authors[0].imageURL}
+                                alt="author-avatar"
+                              />
+                              {`${authors[0].name} ${
+                                authors.length > 1 ? "and others" : ""
+                              }`}
+                            </p>
+                          </div>
+                          <p className="st_blog_item_header_title">{title}</p>
                         </div>
-                        <p className="st_blog_item_header_title">{title}</p>
+                        <hr className="divider" />
+                        <p className="st_blog_item_footer">{description}</p>
                       </div>
-                      <hr className="divider" />
-                      <p className="st_blog_item_footer">{description}</p>
-                    </div>
-                   </a>
-                  </div>
-                ))}
+                    </a>
+                  )
+                )}
             </div>
             <Button
               variant={"blue"}
@@ -585,7 +591,13 @@ export default function Home({ recentPosts }) {
         {/* START SECTION */}
         <section className="st_start">
           <h2>Ready to reimagine a safer greener world?</h2>
-          <Button variant={"white"} label={"Let's do this"} />
+          <Button
+            variant={"white"}
+            label={"Let's do this"}
+            onClick={() => {
+              location.href = "https://3dstreet.app";
+            }}
+          />
         </section>
 
         {/* FOOTER SECTION */}
