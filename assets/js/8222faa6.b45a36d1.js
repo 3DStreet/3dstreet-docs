@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[3689],{9215:s=>{s.exports=JSON.parse('{"label":"gaussian splats","permalink":"/blog/tags/gaussian-splats","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

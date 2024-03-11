@@ -94,12 +94,12 @@ While there's no such thing as a free lunch in contract development, Zade extend
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="connect-with-zade">Connect with Zade<a href="https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade#connect-with-zade" class="hash-link" aria-label="Direct link to Connect with Zade" title="Direct link to Connect with Zade">​</a></h3>
 <p>Interested in learning more? Reach out to Zade at <a href="mailto:ivan@zade.agency" target="_blank" rel="noopener noreferrer">ivan@zade.agency</a>, or contact me directly for an introduction. Let's embark on a journey of innovation and growth together with Zade's expert team!</p>]]></content>
         <author>
-            <name>Kieran Farr</name>
-            <uri>https://github.com/kfarr</uri>
-        </author>
-        <author>
             <name>Ivan Denysyuk</name>
             <uri>https://www.linkedin.com/in/ivan-denysyuk-171585148/</uri>
+        </author>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
         </author>
         <category label="react" term="react"/>
         <category label="development" term="development"/>
@@ -211,12 +211,12 @@ While there's no such thing as a free lunch in contract development, Zade extend
 <h1>Video version of this post</h1>
 <iframe width="580" height="420" src="https://www.youtube.com/embed/Fy8PefDy5VY?si=pJ7F6j_mmmA2yo31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content>
         <author>
-            <name>Kieran Farr</name>
-            <uri>https://github.com/kfarr</uri>
-        </author>
-        <author>
             <name>Arthur Mougin</name>
             <uri>https://github.com/arthurmougin</uri>
+        </author>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
         </author>
         <category label="gaussian splats" term="gaussian splats"/>
         <category label="splats" term="splats"/>

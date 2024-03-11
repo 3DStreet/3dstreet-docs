@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[877],{7255:s=>{s.exports=JSON.parse('{"label":"vps","permalink":"/blog/tags/vps","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
