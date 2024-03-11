@@ -116,7 +116,7 @@ export default function Home({ recentPosts }) {
             <Button
               className="--mobile"
               variant="blue"
-              label="Launch app"
+              label="Launch app (Desktop only)"
               onClick={() => {
                 location.href = "https://3dstreet.app";
               }}
