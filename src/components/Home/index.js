@@ -39,16 +39,17 @@ export default function Home({ recentPosts }) {
       />
 
       {/* FONTS */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&display=swap"
+
+      {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
+      {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /> */}
+      {/* <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700"
         rel="stylesheet"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Kanit:wght@600;700&display=swap"
         rel="stylesheet"
-      />
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Kanit:wght@600;700"
+      /> */}
 
       {/* HTML */}
       <div className="wrapper">
@@ -421,11 +422,7 @@ export default function Home({ recentPosts }) {
                       href={blogURL}
                       target="_blank"
                     >
-                      <img
-                        src="/img/website/blog-preview.png"
-                        // src={imageURL} // future use
-                        alt="blog-preview"
-                      />
+                      <img src={imageURL} alt="blog-preview" />
                       <div className="st_blog_item_description">
                         <div className="st_blog_item_header">
                           <div className="st_blog_item_authors">

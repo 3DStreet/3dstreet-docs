@@ -350,7 +350,7 @@ section h2 {
   text-align: left;
   font-family: "Kanit";
   color: #5200d9;
-  font-size: 92px;
+  font-size: 58px;
   font-weight: 600;
   line-height: 110%;
   text-transform: none;
@@ -947,10 +947,6 @@ section h2 {
 
   .relative_wrapper {
     display: none;
-  }
-
-  .st_blog_item_description {
-    width: 200px;
   }
 
   .st_socials_item {
