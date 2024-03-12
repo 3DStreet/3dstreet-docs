@@ -501,6 +501,7 @@ section h2 {
 .st_blog_item img {
   width: 124px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .st_blog_item_description {
@@ -995,6 +996,7 @@ section h2 {
 
   .st_features_item img {
     width: 165px;
+    object-fit: cover;
   }
 
   .st_blog_cards {
