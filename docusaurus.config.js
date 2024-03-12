@@ -10,6 +10,7 @@ require("dotenv").config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "3DStreet",
+  staticDirectories: ["static", "blog"],
   tagline: "Safer street visualization tools",
   url: "https://3dstreet.org",
   baseUrl: "/",
@@ -52,7 +53,10 @@ const config = {
           editUrl: "https://github.com/3dstreet/3dstreet-docs/tree/main/",
         },
         theme: {
-          customCss: require.resolve("./src/css/styles.css"),
+          customCss: [
+            require.resolve("./static/fonts/fonts.css"),
+            require.resolve("./src/css/styles.css"),
+          ],
         },
       }),
     ],

@@ -12,6 +12,7 @@ hide_table_of_contents: false
 Greetings! I'm Marc Schlossberg, and I've been working alongside [Danny Pimentel](https://journalism.uoregon.edu/directory/faculty-and-staff/all/pimend) and graduate student [Luke Walker](https://www.linkedin.com/in/luke-walker-439b78119/) at the University of Oregon on an exciting project: crafting augmented reality (AR) landscapes for our streets. What I have here is a practical, step-by-step guide designed to walk you through how to bring this innovative vision to your own neighborhood. So, let's roll up our sleeves and get our hands digitally dirty!
 
 <!-- truncate -->
+
 ## Getting Started: Measuring and Designing
 
 ![](./images/2024-01-30/lVthCNUM7YLUyBGXixqk-10.87.png)**First things first—measure up!**
@@ -22,13 +23,13 @@ To kick things off, you need to know how wide your street is. This is more strai
 
 Once you've got your measurements, it's time to jump onto Streetmix—a free, user-friendly online tool that lets you reimagine that street space to your heart's content. Want to add bike lanes, benches, or green spaces? Simply drag and drop the elements you want to include, adjusting the widths to fit your street’s dimensions. Here’s where your creativity shines!
 
-![](./images/2024-01-30/J7eHGPI8MA57Pyzgsd8i-41.61.png)For my project, I took a standard residential street and turned it into a car-free park, a delightful haven for community gatherings. Imagine that — but on your block! Feel free to start with the street I made - Demo St.: https://streetmix.net/schlossb/20/demo-st 
+![](./images/2024-01-30/J7eHGPI8MA57Pyzgsd8i-41.61.png)For my project, I took a standard residential street and turned it into a car-free park, a delightful haven for community gatherings. Imagine that — but on your block! Feel free to start with the street I made - Demo St.: https://streetmix.net/schlossb/20/demo-st
 
 ## Viewing Your Creation: 3DStreet's Magic
 
 ![](./images/2024-01-30/29P0QTWEp8JbvCQ8PeH3-63.32.png)
 
-With your design all set in Streetmix, it's time to give it a touch of 3D flair. 3DStreet is a fantastic plugin that lets you visualize your newly designed street in all its three-dimensional glory. Explore your virtual environment, tweak and tune each element until you’re satisfied. It's a mini-adventure in urban planning from the comfort of your screen! You can go straight to my Demo St. in 3DStreet as well: https://3dstreet.app/#https://streetmix.net/schlossb/20/demo-st 
+With your design all set in Streetmix, it's time to give it a touch of 3D flair. 3DStreet is a fantastic plugin that lets you visualize your newly designed street in all its three-dimensional glory. Explore your virtual environment, tweak and tune each element until you’re satisfied. It's a mini-adventure in urban planning from the comfort of your screen! You can go straight to my Demo St. in 3DStreet as well: https://3dstreet.app/#https://streetmix.net/schlossb/20/demo-st
 
 **Trimming the Excess for AR**
 
@@ -79,4 +80,5 @@ And there you have it—a dynamic overview of transforming streets with AR using
 Until next time, happy designing and thanks for joining me on this digital adventure. Bye for now!
 
 # Video version of this post
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AP1CwWuD7uA?si=y2_qAYNtR9HpATAl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
