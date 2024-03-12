@@ -30,6 +30,20 @@ export default function Home({ recentPosts }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>3DStreet - Open-source 3D street editor</title>
 
+      <meta name="description" content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world." />
+
+      <meta property="og:url" content="https://3dstreet.org" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="3DStreet - Open-source 3D street editor" />
+      <meta property="og:description" content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world." />
+      <meta property="og:image" content="/img/website/social-website-preview.jpg" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="3dstreet.org" />
+      <meta property="twitter:url" content="https://3dstreet.org" />
+      <meta name="twitter:title" content="3DStreet - Open-source 3D street editor" />
+      <meta name="twitter:description" content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world." />
+      <meta name="twitter:image" content="/img/website/social-website-preview.jpg" />
       {/* SITEMAP */}
       <link
         rel="sitemap"
@@ -103,7 +117,7 @@ export default function Home({ recentPosts }) {
             <Button
               className="--mobile"
               variant="blue"
-              label="Launch app"
+              label="Launch app (Desktop only)"
               onClick={() => {
                 location.href = "https://3dstreet.app";
               }}
