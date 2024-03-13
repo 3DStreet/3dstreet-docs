@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[6346],{4913:s=>{s.exports=JSON.parse('{"label":"localization","permalink":"/blog/tags/localization","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
