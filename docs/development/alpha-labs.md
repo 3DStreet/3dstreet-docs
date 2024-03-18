@@ -12,6 +12,7 @@ Save a backup of your scene before trying these "Alpha Labs" experiments. 3DStre
 
 :::
 
+
 ## SVG Extruder Component
 
 This component accepts a `svgString` and creates a new entity with geometry extruded from the svg and applies the default mixin material grass.
@@ -69,7 +70,7 @@ parentEl.appendChild(newEl)
 
 ## Add a Primitive Geometry from A-Frame
 
-This code snippet allows the creation of an [arbitrary geometry shapes from this list](https://aframe.io/docs/1.5.0/components/geometry.html).
+This code snippet allows the creation of an [arbitrary geometry shape from this list](https://aframe.io/docs/1.5.0/components/geometry.html).
 
 ```
 newEl = document.createElement('a-entity')

@@ -358,7 +358,7 @@ section h2 {
 ----------------------------------------------------------------*/
 
 .st_features {
-  padding: 124px 0;
+  padding: 124px 16px;
   background-color: #e7e3ee;
   width: 100vw;
 
@@ -443,7 +443,7 @@ section h2 {
 
 .st_blog {
   width: 100%;
-  padding: 110px 0;
+  padding: 110px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -597,7 +597,7 @@ section h2 {
 ----------------------------------------------------------------*/
 
 .st_socials {
-  padding: 110px 0 90px;
+  padding: 110px 16px 90px;
 
   display: flex;
   flex-direction: column;

@@ -58,6 +58,9 @@ const config = {
             require.resolve("./src/css/styles.css"),
           ],
         },
+        gtag: {
+          trackingID: 'G-T65XPDLZ3F',
+        },
       }),
     ],
   ],
@@ -89,6 +92,7 @@ const config = {
           srcDark: "img/logo.svg",
         },
         items: [
+          { to: "blog", label: "Blog", position: "left" },
           {
             type: "doc",
             docId: "index",
@@ -96,14 +100,8 @@ const config = {
             label: "Documentation",
           },
           {
-            href: "/#scenes",
-            label: "Gallery",
-            position: "left",
-          },
-          { to: "blog", label: "Blog", position: "left" }, // or position: 'right'
-          {
             href: "https://3dstreet.app",
-            label: "Launch 3DStreet App",
+            label: "Launch App",
             position: "right",
           },
         ],

@@ -65,6 +65,7 @@ export default function Home({ recentPosts }) {
         name="twitter:image"
         content="/img/website/social-website-preview.jpg"
       />
+
       {/* SITEMAP */}
       <link
         rel="sitemap"
