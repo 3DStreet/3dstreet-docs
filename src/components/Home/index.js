@@ -30,20 +30,42 @@ export default function Home({ recentPosts }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>3DStreet - Open-source 3D street editor</title>
 
-      <meta name="description" content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world." />
+      <meta
+        name="description"
+        content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world."
+      />
 
       <meta property="og:url" content="https://3dstreet.org" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="3DStreet - Open-source 3D street editor" />
-      <meta property="og:description" content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world." />
-      <meta property="og:image" content="/img/website/social-website-preview.jpg" />
+      <meta
+        property="og:title"
+        content="3DStreet - Open-source 3D street editor"
+      />
+      <meta
+        property="og:description"
+        content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world."
+      />
+      <meta
+        property="og:image"
+        content="/img/website/social-website-preview.jpg"
+      />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="3dstreet.org" />
       <meta property="twitter:url" content="https://3dstreet.org" />
-      <meta name="twitter:title" content="3DStreet - Open-source 3D street editor" />
-      <meta name="twitter:description" content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world." />
-      <meta name="twitter:image" content="/img/website/social-website-preview.jpg" />
+      <meta
+        name="twitter:title"
+        content="3DStreet - Open-source 3D street editor"
+      />
+      <meta
+        name="twitter:description"
+        content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world."
+      />
+      <meta
+        name="twitter:image"
+        content="/img/website/social-website-preview.jpg"
+      />
+
       {/* SITEMAP */}
       <link
         rel="sitemap"
@@ -51,19 +73,6 @@ export default function Home({ recentPosts }) {
         title="Sitemap"
         href="/sitemap.xml"
       />
-
-      {/* FONTS */}
-
-      {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
-      {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /> */}
-      {/* <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Kanit:wght@600;700"
-      /> */}
 
       {/* HTML */}
       <div className="wrapper">
@@ -75,94 +84,106 @@ export default function Home({ recentPosts }) {
 
         {/* HEADER SECTION */}
         <header className="st_header_container">
-          <div className="st_header_left">
-            <div className="st_header_logo">
-              <a href="/">
-                <img src="/img/logo.svg" alt="logo" />
-              </a>
+          <div className="st_header --noTablet">
+            <div className="st_header_left">
+              <div className="st_header_logo">
+                <a href="/">
+                  <img src="/img/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <div className="st_header_right ">
+                <div className="st_header_nav ">
+                  <ul>
+                    <li>
+                      <Button
+                        variant="ghost"
+                        label="Home"
+                        isActive
+                        onClick={() => {
+                          location.href = "";
+                        }}
+                      />
+                    </li>
+                    <li>
+                      <Button
+                        variant="ghost"
+                        label="Blog"
+                        onClick={() => {
+                          location.href = "/blog/";
+                        }}
+                      />
+                    </li>
+                    <li>
+                      <Button
+                        variant="ghost"
+                        label="Documentation"
+                        onClick={() => {
+                          location.href = "/docs/";
+                        }}
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <Button
+                  variant="blue"
+                  label="Launch app"
+                  onClick={() => {
+                    location.href = "https://3dstreet.app";
+                  }}
+                />
+              </div>
             </div>
-            <div className="st_header_nav --noMobile">
-              <ul>
-                <li>
-                  <Button
-                    variant="ghost"
-                    label="Home"
-                    isActive
-                    onClick={() => {
-                      location.href = "";
-                    }}
-                  />
-                </li>
-                <li>
-                  <Button
-                    variant="ghost"
-                    label="Blog"
-                    onClick={() => {
-                      location.href = "/blog/";
-                    }}
-                  />
-                </li>
-                <li>
-                  <Button
-                    variant="ghost"
-                    label="Documentation"
-                    onClick={() => {
-                      location.href = "/docs/";
-                    }}
-                  />
-                </li>
-              </ul>
-            </div>
-
-            <Button
-              className="--mobile"
-              variant="blue"
-              label="Launch app (Desktop only)"
-              onClick={() => {
-                location.href = "https://3dstreet.app";
-              }}
-            />
           </div>
-          <Button
-            className="--noMobile"
-            variant="blue"
-            label="Launch app"
-            onClick={() => {
-              location.href = "https://3dstreet.app";
-            }}
-          />
 
-          <div className="st_header_nav --mobile">
-            <ul>
-              <li>
-                <Button
-                  variant="ghost"
-                  label="Home"
-                  isActive
-                  onClick={() => {
-                    location.href = "";
-                  }}
-                />
-              </li>
-              <li>
-                <Button
-                  variant="ghost"
-                  label="Blog"
-                  onClick={() => {
-                    location.href = "/docs/";
-                  }}
-                />
-              </li>
-              <li>
-                <Button
-                  variant="ghost"
-                  label="Documentation"
-                  onClick={() => {
-                    location.href = "/docs/";
-                  }}
-                />
-              </li>
-            </ul>
+          <div className="st_header --tablet">
+            <div className="st_header_left">
+              <div className="st_header_logo">
+                <a href="/">
+                  <img src="/img/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <Button
+                variant="blue"
+                label="Launch app"
+                onClick={() => {
+                  location.href = "https://3dstreet.app";
+                }}
+              />
+            </div>
+            <div className="st_header_right ">
+              <div className="st_header_nav ">
+                <ul>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      label="Home"
+                      isActive
+                      onClick={() => {
+                        location.href = "";
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      label="Blog"
+                      onClick={() => {
+                        location.href = "/blog/";
+                      }}
+                    />
+                  </li>
+                  <li>
+                    <Button
+                      variant="ghost"
+                      label="Documentation"
+                      onClick={() => {
+                        location.href = "/docs/";
+                      }}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="relative_wrapper">

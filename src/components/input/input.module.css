@@ -15,11 +15,6 @@
 .formWrapper {
   display: flex;
   column-gap: 22px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    row-gap: 20px;
-  }
 }
 
 .inputWrapper {
@@ -30,10 +25,7 @@
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(6px);
-
-  @media (max-width: 768px) {
-    padding: 12px 20px;
-  }
+  width: 100%;
 }
 
 .notValid {
@@ -62,14 +54,27 @@
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-
-  @media (max-width: 768px) {
-    width: auto;
-  }
 }
 
 .input::placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
   font-weight: 400;
+}
+
+@media (max-width: 690px) {
+  .formWrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .input {
+    width: 288px;
+  }
+}
+
+@media (max-width: 475px) {
+  .input {
+    width: 180px;
+  }
 }
