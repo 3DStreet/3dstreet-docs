@@ -42,7 +42,7 @@ const Input = () => {
   return (
     <Mailchimp
       url={siteConfig.customFields?.mailchimpUrl}
-      render={({ subscribe, status, message }) => (
+      render={({ subscribe, status }) => (
         <form className={styles.wrapper}>
           <p className={styles.label}>
             Get the latest staff picks and insider updates monthly.
@@ -55,17 +55,7 @@ const Input = () => {
               <input
                 disabled={status === "success"}
                 placeholder={"Enter your email address to register for updates"}
-                className={clsx(styles.input, "--noMobile")}
-                type="email"
-                value={value}
-                onChange={({ currentTarget: { value } }) =>
-                  onChangeHandler(value)
-                }
-              />
-              <input
-                disabled={status === "success"}
-                placeholder={"Enter your email"}
-                className={clsx(styles.input, "--mobile")}
+                className={clsx(styles.input)}
                 type="email"
                 value={value}
                 onChange={({ currentTarget: { value } }) =>
