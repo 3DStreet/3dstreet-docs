@@ -10,13 +10,13 @@ image: ./images/2024-03-25/3d-tiles-3dstreet.jpeg
 
 To kick off 2024 we've been doing some experiments to see how these technologies could be applied to public streets and spatial design.
 
+![](./images/2024-03-25/3d-tiles-3dstreet.jpeg)
+**Proof of concept 3D Tiles and 3DStreet scene combined.**
+
 <!-- truncate -->
 ## Google Maps 3D Tiles
 
 We updated the New York Times R&D team's [GitHub repository for the OGC 3D Tiles A-Frame VR Component](https://github.com/nytimes/aframe-loader-3dtiles-component?tab=readme-ov-file#using-google-3d-tiles-api) to support loading 3D maps from Google Maps 3D Tiles. (Thanks Avner for doing the hard three.js work to make this happen.)
-
-![](./images/2024-03-25/3d-tiles-3dstreet.jpeg)
-**Proof of concept 3D Tiles and 3DStreet scene combined.**
 
 ### Why is this important?
 
