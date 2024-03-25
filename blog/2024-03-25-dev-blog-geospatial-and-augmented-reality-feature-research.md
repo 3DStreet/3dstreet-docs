@@ -6,7 +6,7 @@ tags: [webxr, 3dtiles, google maps, geospatial, ar]
 image: ./images/2024-03-25/3d-tiles-3dstreet.jpeg
 ---
 
-"Geospatial" is the uniting theme for the many feature requests we get from 3DStreet's growing user base. Users can already place custom street scenes, so it's natural to understand why geospatial features like 3D Google Map Tiles or Augmented Reality visualization keep coming up in conversations with users when we [explore common repeatable workflows for visualizing safer infrastructure](/blog/2024-01-30-creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero).
+"Geospatial" is the uniting theme for the many feature requests we get from 3DStreet's growing user base. Users can already place custom street scenes, so it's natural to understand why geospatial features like 3D Google Map Tiles or Augmented Reality visualization keep coming up in conversations with users when we [explore common repeatable workflows for visualizing safer infrastructure](/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero).
 
 To kick off 2024 we've been doing some experiments to see how these technologies could be applied to public streets and spatial design.
 
