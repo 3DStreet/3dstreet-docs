@@ -5,8 +5,8 @@ sidebar_position: 1
 # Product Releases
 
 ## [3DStreet Core 0.4.12](https://github.com/3DStreet/3dstreet/releases/tag/0.4.12) - 28 Mar 2024
-* add bevel and second material support for custom paths
-* 3dtiles v1 for testing
+* Update svg component with second material support for custom path bevels
+* Support for Google Maps 3D Tiles component (v1 for testing only)
 
 ## [3DStreet Core 0.4.11](https://github.com/3DStreet/3dstreet/releases/tag/0.4.11) - 6 Mar 2024
 * Support new Streetmix metric API responses (schema 30+)
