@@ -4,6 +4,13 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Editor 0.4.13](https://github.com/3DStreet/3dstreet-editor/releases/tag/0.4.13) - 29 Mar 2024
+* Add categories for mixin list in right panel
+* Fix button label styling for smaller width devices
+* feat(ga): added save scene actions and new account creation
+* add no pause attribute support and camera fix for 3d tiles
+* use logarithmicDepthBuffer to reduce z-fighting
+
 ## [3DStreet Core 0.4.12](https://github.com/3DStreet/3dstreet/releases/tag/0.4.12) - 28 Mar 2024
 * Update svg component with second material support for custom path bevels
 * Support for Google Maps 3D Tiles component (v1 for testing only)

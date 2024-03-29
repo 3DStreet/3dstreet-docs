@@ -81,3 +81,21 @@ newEl.setAttribute('material', 'src: #asphalt-texture; repeat: 5 5;')
 parentEl = document.querySelector('#street-container')
 parentEl.appendChild(newEl)
 ```
+
+## Google 3D Map Tiles
+
+This code snippet adds an entity to load and display 3d tiles from Google Maps Tiles API 3D Tiles endpoint. This will break your scene and you cannot save it yet, so beware before testing.
+
+```
+document.body.appendChild(document.createElement('script')).src = 'https://cdn.jsdelivr.net/npm/3dstreet@0.4.12/src/lib/aframe-loader-3dtiles-component.min.js';
+document.querySelector('#reference-layers').innerHTML = `
+<a-entity id="tileset" data-no-pause 
+    data-layer-name="Aerial Imagery • Google 3D Tiles"
+    loader-3dtiles="
+        lat: 37.77522354250163;
+        long: -122.41931773049723;
+        height: -16.5;
+        url: https://tile.googleapis.com/v1/3dtiles/root.json; googleApiKey: AIzaSyAQshwLVKTpwTfPJxFEkEzOdP_cgmixTCQ; geoTransform: WGS84Cartesian; maximumSSE: 48; maximumMem: 400; cameraEl: #camera">
+      </a-entity>`
+document.querySelector('#tileset').play()
+```
