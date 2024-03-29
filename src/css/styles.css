@@ -85,6 +85,10 @@ main {
   Header styles
 ----------------------------------------------------------------*/
 
+.navbar__logo {
+  padding-right: 3.5rem;
+}
+
 .st_header {
   align-items: center;
   justify-content: space-between;

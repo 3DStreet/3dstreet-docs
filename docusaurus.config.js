@@ -90,6 +90,7 @@ const config = {
           alt: "3DStreet Logo",
           src: "img/logo-black.svg",
           srcDark: "img/logo.svg",
+          width: 140,
         },
         items: [
           { to: "blog", label: "Blog", position: "left" },
