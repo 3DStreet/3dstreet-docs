@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.14](https://github.com/3DStreet/3dstreet/releases/tag/0.4.14) - 11 Apr 2024
+* Update svg component to fix unexpected material color behavior
+* Initial support for importing streetplan.net streets
+
 ## [3DStreet Editor 0.4.13](https://github.com/3DStreet/3dstreet-editor/releases/tag/0.4.13) - 29 Mar 2024
 * Add categories for mixin list in right panel
 * Fix button label styling for smaller width devices
