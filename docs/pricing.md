@@ -1,14 +1,22 @@
 ---
-title: 'Pricing for Commercial Use'
+title: '3DStreet Pricing Plans'
 sidebar_position: 10
 
 ---
 
-## Free for Non-Commercial Use
-3DStreet is made available at no cost for personal, non-commercial use. We encourage you to use this software to advocate for street safety improvements in your community.
+## Core Features Free for Non-Commercial Work
+3DStreet.app software and 3DStreet Cloud service are free if you are manually positioning objects and/or streets imported from Streetmix.net or Streetplan.net and are using 3DStreet for personal, non-commercial use.
 
-## Software Licenses for Commercial Use
-If you are using 3DStreet and/or its creative assets for commercial purposes such as paid consulting, revenue generating video games, or other paid work for a client or official government use, please consider [contacting us about purchasing a commercial license for 3DStreet](https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc).
+We encourage you to use this software to advocate for street safety improvements in your community.
+
+## Geospatial & AR Features and Commercial Use
+For geospatial features such as Google Maps 3D Tiles integration and Augmented Reality the flat price plan is $99/month per user.
+
+If you are using 3DStreet and/or its creative assets for commercial purposes such as paid consulting, revenue generating video games, or other paid work for a client or official government use, we ask that you consider a commercial use license which is the same $99/month per user flat fee.
+
+There is no annual commitment required -- a month is the minimum plan length. Feel free to activate and de-activate your plan as projects come and go. We accept credit cards, ACH, and check payments.
+
+[Please contact us to purchase a commercial license for 3DStreet](https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc).
 
 ## Rapid Prototyping Service
 We've heard from users that despite the amazing automation features provided by 3DStreet, sometimes they don't have the time to create and modify intricate scene details to meet upcoming deadlines. [3DStreet offers a Rapid Prototyping Service to help you and your organization get started with scene creation services.](./services.md)
