@@ -6,9 +6,7 @@ tags: [policy, urban planning, community-led planning, community]
 image: ./images/2024-04-22/slide-community-led-planning.jpg
 ---
 
-3DStreet’s creator Kieran Farr was invited to present at the California State Transportation Interagency Equity Advisory Committee (EAC) meeting April 5.
-
-At the recent Caltrans EAC meeting a host of agency professionals, community leaders and technology experts like 3DStreet’s own Kieran Farr shared expertise on the global trend of community-led planning and the current blockers preventing local stakeholders from engaging with local transportation agencies. Below is a summarization of the presentation to share our learnings from practitioners around the world experimenting with community-led design
+At the recent Caltrans EAC meeting a host of agency professionals, community leaders and technology experts like 3DStreet’s own Kieran Farr shared expertise on the global trend of community-led planning and the current blockers preventing local stakeholders from engaging with local transportation agencies. Below is a summarization of the presentation to share our learnings from practitioners around the world experimenting with community-led design.
 
 <!-- truncate -->
 ## Community-Led Planning as Global Trend 
