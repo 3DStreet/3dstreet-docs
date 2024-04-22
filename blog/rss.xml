@@ -4,10 +4,47 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Mon, 25 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Apr 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Community-led planning trends presented at the Caltrans Equity Advisory Committee]]></title>
+            <link>https://3dstreet.org/blog/2024/04/22/community-led-planning-trends-at-caltrans-equity-advisory-committee</link>
+            <guid>https://3dstreet.org/blog/2024/04/22/community-led-planning-trends-at-caltrans-equity-advisory-committee</guid>
+            <pubDate>Mon, 22 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[At the recent Caltrans EAC meeting a host of agency professionals, community leaders and technology experts like 3DStreet’s own Kieran Farr shared expertise on the global trend of community-led planning.]]></description>
+            <content:encoded><![CDATA[<p>3DStreet’s creator Kieran Farr was invited to present at the California State Transportation Interagency Equity Advisory Committee (EAC) meeting April 5.</p>
+<p>At the recent Caltrans EAC meeting a host of agency professionals, community leaders and technology experts like 3DStreet’s own Kieran Farr shared expertise on the global trend of community-led planning and the current blockers preventing local stakeholders from engaging with local transportation agencies. Below is a summarization of the presentation to share our learnings from practitioners around the world experimenting with community-led design</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community-led-planning-as-global-trend">Community-Led Planning as Global Trend<a href="https://3dstreet.org/blog/2024/04/22/community-led-planning-trends-at-caltrans-equity-advisory-committee#community-led-planning-as-global-trend" class="hash-link" aria-label="Direct link to Community-Led Planning as Global Trend" title="Direct link to Community-Led Planning as Global Trend">​</a></h2>
+<p>Over the past 6 months I've met hundreds of folks across the transportation and planning industry – from city planners and city and state transportation officials to local community activists, NGOs, private engineering consultants and many more.</p>
+<p>Hundreds of meetings later, a clear trend has emerged from these conversations: The rising force of "Community-led Planning" – empowering local community members to envision and advocate for changes to their streets and public spaces. However, there are significant challenges preventing this from becoming mainstream practice.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-challenge---negative-trust-spiral">The Challenge - Negative Trust Spiral<a href="https://3dstreet.org/blog/2024/04/22/community-led-planning-trends-at-caltrans-equity-advisory-committee#the-challenge---negative-trust-spiral" class="hash-link" aria-label="Direct link to The Challenge - Negative Trust Spiral" title="Direct link to The Challenge - Negative Trust Spiral">​</a></h2>
+<p>The core issue, as articulated by practitioners worldwide, is that it's very difficult for most people to imagine changes to their streets. This leads to a negative feedback loop:</p>
+<ul>
+<li>Projects face pushback from the community because they don't understand the proposed changes</li>
+<li>This results in delays, watered-down designs, or even outright cancellations</li>
+<li>Trust erodes between the agency and community</li>
+</ul>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/slide-challenge-negative-trust-spiral-current-conditions-street-planning-projects-1dc5cebcd64eca88e345c10e93a7a890.jpg" width="960" height="540" class="img_ev3q">
+<strong>Community engagement is often treated as a point-in-time exercise rather than a continuous process.</strong></p>
+<p>Forward-thinking communities are trying to change this by making community feedback an integral, ongoing part of the planning process. Crucially, project ideas originate from the community itself, which then collaborates with the appropriate agency to refine the design to serve local needs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="addressing-agencycommunity-asymmetry">Addressing Agency/Community Asymmetry<a href="https://3dstreet.org/blog/2024/04/22/community-led-planning-trends-at-caltrans-equity-advisory-committee#addressing-agencycommunity-asymmetry" class="hash-link" aria-label="Direct link to Addressing Agency/Community Asymmetry" title="Direct link to Addressing Agency/Community Asymmetry">​</a></h2>
+<p>Underlying this dynamic is a major knowledge asymmetry between transportation professionals and the general public when it comes to street design.</p>
+<p>To enable meaningful community participation we need to level the playing field – to lift up community members from out of the informational asymmetry crevasse. One way to do this is through a simple, shared visual language to understand the geospatial relationships and design constraints of their streets. This is the key problem we're working to solve at 3DStreet, along with other industry partners <a href="https://about.streetmix.net/" target="_blank" rel="noopener noreferrer">Streetmix.net</a>, <a href="https://www.incitu.us/" target="_blank" rel="noopener noreferrer">inCitu</a>, <a href="https://streetplan.net/" target="_blank" rel="noopener noreferrer">StreetPlan.net</a>, and the <a href="https://hackmd.io/legG6QzVREKTsiTSxUS2zA?view" target="_blank" rel="noopener noreferrer">OSM Pedestrian Working Group</a>.</p>
+<p>This emerging ecosystem of no/low cost tools allow anyone to quickly prototype street designs, transforming 2D diagrams into interactive 3D models. Early case studies show the power of this approach:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ycNIaqczyv0" target="_blank" rel="noopener noreferrer">In Manchester, CA, the city engineer used 3DStreet to clearly communicate parking tradeoffs for a Main Street redesign, a top concern for local businesses</a></li>
+<li><a href="https://studio.youtube.com/video/m393-ZNeU68/edit" target="_blank" rel="noopener noreferrer">NGOs like Transport Oakland are training their members to create compelling visuals for advocacy using these tools on group workshop calls</a></li>
+<li><a href="https://blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#reaction-and-productization-1" target="_blank" rel="noopener noreferrer">At a street fair in San Francisco, we enabled attendees to interactively place street furniture, plantings and amenities using just their smartphones to imagine a green "streets to parks" conversion</a></li>
+</ul>
+<p>Historically, 3D modeling, urban planning and civil engineering required expensive proprietary software. But with the consumerization of augmented reality and open-source tools like 3DStreet combined with widely-deployed WebXR and geospatial standards, these capabilities are now accessible to all. While much work remains to make them truly user-friendly, the potential to revolutionize community engagement is tremendous.</p>
+<p>By equipping residents with the tools to express their vision, while educating them about real-world constraints, we can build trust, understanding and consensus between communities and transportation agencies. This is the promise of community-led planning – and it's a future we're excited to build together.</p>]]></content:encoded>
+            <category>policy</category>
+            <category>urban planning</category>
+            <category>community-led planning</category>
+            <category>community</category>
+        </item>
         <item>
             <title><![CDATA[Exploring New Geospatial and Augmented Reality Features for 3DStreet]]></title>
             <link>https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research</link>
