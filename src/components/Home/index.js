@@ -13,6 +13,7 @@ import {
   XIcon2,
 } from "../../icons";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import MuxPlayer from '@mux/mux-player-react';
 
 export default function Home({ recentPosts }) {
   const {
@@ -231,12 +232,21 @@ export default function Home({ recentPosts }) {
         </main>
 
         {/* OVERVIEW SECTION */}
-        {/* <section className="st_overview">
-          <h2>3DSTREET OVERVIEW</h2>
-          <video className="st_overview_video" controls preload="metadata">
+        <section className="st_overview">
+          <h2>3DSTREET IN 2 MINUTES</h2>
+          <MuxPlayer
+            streamType="on-demand"
+            playbackId="lXImH9p0000L4fsSSEHgz6RudBQv02CgqQh"
+            metadataVideoTitle="Placeholder (optional)"
+            metadataViewerUserId="Placeholder (optional)"
+            primaryColor="#FFFFFF"
+            secondaryColor="#000000"
+            accentColor="#653CB0"
+          />
+          {/* <video className="st_overview_video" controls preload="metadata">
             <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
-          </video>
-        </section> */}
+          </video> */}
+        </section>
 
         <div className="st_grid_3_wrapper">
           {/* VISION SECTION */}
