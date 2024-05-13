@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # Product Releases
 
+## [3DStreet Core 0.4.15](https://github.com/3DStreet/3dstreet/releases/tag/0.4.15) - 13 May 2024
+* Add segment layer elevation data for use in add entity panel in editor
+
 ## [3DStreet Core 0.4.14](https://github.com/3DStreet/3dstreet/releases/tag/0.4.14) - 11 Apr 2024
 * Update svg component to fix unexpected material color behavior
 * Initial support for importing streetplan.net streets
