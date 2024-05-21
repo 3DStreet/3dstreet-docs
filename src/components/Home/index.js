@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Button, Input } from "..";
+import { Button, Input } from '..';
 import {
   ArrowIcon,
   DiscordIcon,
@@ -11,8 +11,8 @@ import {
   PiechartIcon,
   XIcon,
   XIcon2,
-} from "../../icons";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+} from '../../icons';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import MuxPlayer from '@mux/mux-player-react';
 
 export default function Home({ recentPosts }) {
@@ -101,7 +101,7 @@ export default function Home({ recentPosts }) {
                         label="Home"
                         isActive
                         onClick={() => {
-                          location.href = "";
+                          location.href = '';
                         }}
                       />
                     </li>
@@ -110,7 +110,7 @@ export default function Home({ recentPosts }) {
                         variant="ghost"
                         label="Blog"
                         onClick={() => {
-                          location.href = "/blog/";
+                          location.href = '/blog/';
                         }}
                       />
                     </li>
@@ -119,7 +119,7 @@ export default function Home({ recentPosts }) {
                         variant="ghost"
                         label="Documentation"
                         onClick={() => {
-                          location.href = "/docs/";
+                          location.href = '/docs/';
                         }}
                       />
                     </li>
@@ -129,7 +129,7 @@ export default function Home({ recentPosts }) {
                   variant="blue"
                   label="Launch app"
                   onClick={() => {
-                    location.href = "https://3dstreet.app";
+                    location.href = 'https://3dstreet.app';
                   }}
                 />
               </div>
@@ -147,7 +147,7 @@ export default function Home({ recentPosts }) {
                 variant="blue"
                 label="Launch app"
                 onClick={() => {
-                  location.href = "https://3dstreet.app";
+                  location.href = 'https://3dstreet.app';
                 }}
               />
             </div>
@@ -160,7 +160,7 @@ export default function Home({ recentPosts }) {
                       label="Home"
                       isActive
                       onClick={() => {
-                        location.href = "";
+                        location.href = '';
                       }}
                     />
                   </li>
@@ -169,7 +169,7 @@ export default function Home({ recentPosts }) {
                       variant="ghost"
                       label="Blog"
                       onClick={() => {
-                        location.href = "/blog/";
+                        location.href = '/blog/';
                       }}
                     />
                   </li>
@@ -178,7 +178,7 @@ export default function Home({ recentPosts }) {
                       variant="ghost"
                       label="Documentation"
                       onClick={() => {
-                        location.href = "/docs/";
+                        location.href = '/docs/';
                       }}
                     />
                   </li>
@@ -216,14 +216,11 @@ export default function Home({ recentPosts }) {
         <main className="st_main">
           <div className="st_main_wrapper">
             <div className="st_main_container">
-              <h1 className="h1">
-                Design and envision safer, greener streets, together.
-              </h1>
+              <h1 className="h1">Bring your street redesign to life.</h1>
               <p className="description">
-                3DStreet is a revolutionary tool that enables you to unleash
-                your creativity and design unique streets that not only stand
-                out visually but also make a tangible impact on creating a safer
-                and greener world.
+                3DStreet alleviates the pain of street projects by helping
+                stakeholders better understand changes and by reducing the risk
+                of cancellation and delays
               </p>
               <Input />
             </div>
@@ -248,83 +245,6 @@ export default function Home({ recentPosts }) {
           </video> */}
         </section>
 
-        <div className="st_grid_3_wrapper">
-          {/* VISION SECTION */}
-          <section className="st_vision">
-            <h2>VISION</h2>
-            <p>
-              We can change our world for the better through safer, greener
-              streets.
-            </p>
-          </section>
-
-          {/* STATISTICS SECTION */}
-          <section className="st_statistics">
-            <h2>STATISTICS</h2>
-            <div className="st_statistics_posts">
-              <div className="st_statistics_item">
-                <PiechartIcon percent={52} className="st_statistics_icon" />
-                <div className="st_statistics_post_description">
-                  <p>52%</p>
-                  <p>
-                    Over half of all car trips in the US are less than 3 miles -
-                    an ideal distance for green alternatives such as walking,
-                    biking, and transit.
-                  </p>
-                  <a
-                    href="https://www.energy.gov/eere/vehicles/articles/fotw-1230-march-21-2022-more-half-all-daily-trips-were-less-three-miles-2021"
-                    target="_blank"
-                  >
-                    US Bureau of Transportation Statistics, 2022 Report
-                  </a>
-                </div>
-              </div>
-              <div className="st_statistics_item">
-                <PiechartIcon percent={80} className="st_statistics_icon" />
-                <div className="st_statistics_post_description">
-                  <p>80%</p>
-                  <p>
-                    From the number of people interested in, but not using,
-                    active mobility, 80% would be willing to bike on streets
-                    with a protected or completely separated bike lane.
-                  </p>
-                  <a
-                    href="https://nacto.org/2016/07/20/high-quality-bike-facilities-increase-ridership-make-biking-safer"
-                    target="_blank"
-                  >
-                    NACTO Report, 2016
-                  </a>
-                </div>
-              </div>
-              <div className="st_statistics_item">
-                <PiechartIcon percent={32} className="st_statistics_icon" />
-                <div className="st_statistics_post_description">
-                  <p>32%</p>
-                  <p>
-                    Nearly one-third of the population (32%) is dissatisfied
-                    with their community designs for making biking safe.
-                  </p>
-                  <a
-                    href="https://www.bts.gov/archive/publications/special_reports_and_issue_briefs/issue_briefs/number_11/entire"
-                    target="_blank"
-                  >
-                    US Bureau of Transportation Statistics, 2012 Report
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* MISSION SECTION */}
-          <section className="st_mission">
-            <h2>mission</h2>
-            <p>
-              Our goal is to empower the world with simple tools that enable
-              anyone to create a safer and greener future, one street at a time.
-            </p>
-          </section>
-        </div>
-
         {/* FEATURES SECTION */}
         <section className="st_features">
           <div className="st_features_inner">
@@ -345,10 +265,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
+                    variant={'blue'}
+                    label={'Get started'}
                     onClick={() => {
-                      location.href = "https://3dstreet.app";
+                      location.href = 'https://3dstreet.app';
                     }}
                   />
                 </div>
@@ -373,10 +293,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
+                    variant={'blue'}
+                    label={'Get started'}
                     onClick={() => {
-                      location.href = "https://3dstreet.app";
+                      location.href = 'https://3dstreet.app';
                     }}
                   />
                 </div>
@@ -402,10 +322,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
+                    variant={'blue'}
+                    label={'Get started'}
                     onClick={() => {
-                      location.href = "https://3dstreet.app";
+                      location.href = 'https://3dstreet.app';
                     }}
                   />
                 </div>
@@ -430,10 +350,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
+                    variant={'blue'}
+                    label={'Get started'}
                     onClick={() => {
-                      location.href = "https://3dstreet.app";
+                      location.href = 'https://3dstreet.app';
                     }}
                   />
                 </div>
@@ -480,7 +400,7 @@ export default function Home({ recentPosts }) {
                                 alt="author-avatar"
                               />
                               {`${authors[0].name} ${
-                                authors.length > 1 ? "and others" : ""
+                                authors.length > 1 ? 'and others' : ''
                               }`}
                             </p>
                           </div>
@@ -494,10 +414,10 @@ export default function Home({ recentPosts }) {
                 )}
             </div>
             <Button
-              variant={"blue"}
-              label={"View more posts"}
+              variant={'blue'}
+              label={'View more posts'}
               onClick={() => {
-                location.href = "/blog/";
+                location.href = '/blog/';
               }}
             />
           </div>
@@ -628,18 +548,6 @@ export default function Home({ recentPosts }) {
               <img src="/img/website/trusted-comp4.png" alt="Streetmix" />
             </div>
           </div>
-        </section>
-
-        {/* START SECTION */}
-        <section className="st_start">
-          <h2>Ready to reimagine a safer greener world?</h2>
-          <Button
-            variant={"white"}
-            label={"Let's do this"}
-            onClick={() => {
-              location.href = "https://3dstreet.app";
-            }}
-          />
         </section>
 
         {/* FOOTER SECTION */}
