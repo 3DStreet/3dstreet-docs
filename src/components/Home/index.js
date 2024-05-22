@@ -216,11 +216,9 @@ export default function Home({ recentPosts }) {
         <main className="st_main">
           <div className="st_main_wrapper">
             <div className="st_main_container">
-              <h1 className="h1">Bring your street redesign to life.</h1>
+              <h1 className="h1">Bring your street design ideas to life.</h1>
               <p className="description">
-                3DStreet alleviates the pain of street projects by helping
-                stakeholders better understand changes and by reducing the risk
-                of cancellation and delays
+                Bring stakeholders to "Yes!" and reduce risk of cancellation and delays with community-led, rapid prototyping from 3DStreet.
               </p>
               <Input />
             </div>
