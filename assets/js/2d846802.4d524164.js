@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[8389],{9594:s=>{s.exports=JSON.parse('{"label":"school streets","permalink":"/blog/tags/school-streets","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
