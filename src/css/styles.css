@@ -879,12 +879,6 @@ section h2 {
 
 /* // */
 
-.st_start {
-  display: flex;
-  flex-direction: column;
-  row-gap: 82px;
-  margin: 180px 0 140px;
-}
 
 .st_start h2 {
   font-family: "Kanit";
@@ -898,7 +892,7 @@ section h2 {
 .st_footer {
   display: flex;
   flex-direction: column;
-  padding: 0 0 72px;
+  padding: 72px 0 72px;
   row-gap: 56px;
   width: 750px;
 }
