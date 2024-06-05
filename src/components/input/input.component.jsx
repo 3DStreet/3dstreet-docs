@@ -45,7 +45,7 @@ const Input = () => {
       render={({ subscribe, status }) => (
         <form className={styles.wrapper}>
           <p className={styles.label}>
-            Get the latest staff picks and insider updates monthly.
+            Want to learn more?
           </p>
           <div className={styles.formWrapper}>
             <div
