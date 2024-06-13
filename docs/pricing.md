@@ -10,9 +10,9 @@ sidebar_position: 10
 We encourage you to use this software to advocate for street safety improvements in your community.
 
 ## Geospatial & AR Features and Commercial Use
-For geospatial features such as Premium 3D Map Tiles integration and Augmented Reality the price is $99/month per user.
+For geospatial features such as Premium 3D Map Tiles integration and Augmented Reality the price is $49/month per user.
 
-If you are using 3DStreet and/or its creative assets for commercial purposes such as paid consulting, revenue generating video games, or other paid work for a client or official government use, we ask that you consider a commercial use license which is the same $99/month per user flat fee.
+If you are using 3DStreet and/or its creative assets for commercial purposes such as paid consulting, revenue generating video games, or other paid work for a client or official government use, we ask that you consider a commercial use license which is the same $49/month per user flat fee.
 
 There is no annual commitment required -- a month is the minimum plan length. Feel free to activate and de-activate your plan as projects come and go. We accept credit cards, ACH, and check payments.
 
