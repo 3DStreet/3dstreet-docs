@@ -2,11 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2024-06-14T00:00:00.000Z</updated>
+    <updated>2024-06-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New 3DStreet features funded by Early Access customers]]></title>
+        <id>https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access</id>
+        <link href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access"/>
+        <updated>2024-06-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We're excited to share new 3DStreet features funded by our first cohort of paid users.]]></summary>
+        <content type="html"><![CDATA[<p>A heartfelt thanks to our intrepid group of first customers of 3DStreet Geospatial Pro since our launch 3 weeks ago. We’re honored by your support of a product still in the making, and to give thanks back we’d like to share these newly released features that you have directly funded and requested.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/visitacion-3dtiles-street-slope-36ddd159bf45f0e357bef2781c549065.jpg" width="1470" height="1041" class="img_ev3q"></p>
+<p>A shared theme of your feedback is that 3DStreet has been a big help for your projects – from feasibility to visualization for stakeholders and creating new designs – however we need to improve its usability, especially for new users.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-baby-toolbar">New Baby Toolbar<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#new-baby-toolbar" class="hash-link" aria-label="Direct link to New Baby Toolbar" title="Direct link to New Baby Toolbar">​</a></h2>
+<p>We’re proud to share our new baby toolbar: clocking in at 3 options, it’s a small but mighty one that we expect to grow quickly with your feedback and support. The toolbar is intended to help prevent “accidental selection and moves” where – during an attempt to move the camera view – a user unintentionally selects and moves an object. With no undo, this is a pain.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/baby-toolbar-d3c0fa0bb845e640ee1e51a15704be20.jpg" width="363" height="195" class="img_ev3q"></p>
+<p>There are 3 toolbar options:</p>
+<ul>
+<li>Pointer - click to select and move an object</li>
+<li>Hand - a mode that prevents selection or moving objects, you can only click to move the view (press <code>shift</code> while clicking to rotate the view)</li>
+<li>New Object - clicking + will show the Add New Entity panel to add objects, smart layers, and more</li>
+</ul>
+<p>While we work on undo, using the Hand mode is the safest way to browse a scene without making unintended changes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="many-more-improvements-based-on-your-project-requirements-and-direct-feedback">Many more improvements based on your project requirements and direct feedback:<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#many-more-improvements-based-on-your-project-requirements-and-direct-feedback" class="hash-link" aria-label="Direct link to Many more improvements based on your project requirements and direct feedback:" title="Direct link to Many more improvements based on your project requirements and direct feedback:">​</a></h2>
+<ul>
+<li>No more remix - the concept of remix was confusing so we have removed it. Now you can simply “Save” or “Save as…”</li>
+<li>Bigger scenes – we now support scene sizes up to about 3 miles / 5km. (Previously the skybox was too small, so we made it bigger.)</li>
+<li>Fixing bugs – sometimes 3d tiles wouldn’t load so we fixed one of those cases, and sometimes the red and blue bounding box of your selected object was too large and didn't take into account rotation, so we fixed that too.</li>
+<li>New scene – Pro users now have “New Scene” which allows you to start from scratch and create a new geolocated scene</li>
+<li>Simplification of rotation controls – when placing streets and objects most users appear to be rotating around the vertical ‘y’ axis. Therefore we updated the default rotation transform controls (accessed by pressing ‘e’ keyboard shortcut) to only allow rotation on that axis:
+<img loading="lazy" src="https://3dstreet.org/assets/images/rotation-y-widget-trash-truck-81f6ac8a4629394528da041fffe5efca.jpg" width="502" height="346" class="img_ev3q"></li>
+<li>If you get really excited about product release notes you can check out the full release notes here: <a href="https://github.com/3dstreet/3dstreet/releases/tag/0.5.1" target="_blank" rel="noopener noreferrer">https://github.com/3dstreet/3dstreet/releases/tag/0.5.1</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-objects">New objects<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#new-objects" class="hash-link" aria-label="Direct link to New objects" title="Direct link to New objects">​</a></h2>
+<p>You’ve also suggested new 3D models as options to include in your projects. Stay tuned to see what new models we’re launching thanks to the support of our Pro users! (That beautiful side loading garbage truck is a good preview!)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="make-it-happen">Make it happen<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#make-it-happen" class="hash-link" aria-label="Direct link to Make it happen" title="Direct link to Make it happen">​</a></h2>
+<p>If you're not one of our Early Access users, become one.
+Join our Geospatial Pro Early Access program now to help guide our next priorities to shape the future of our streets.</p>
+<p><a href="https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&amp;form_id=3f024b297f2177befa87b5ca5e9d45cc" target="_blank" rel="noopener noreferrer">Contact us to get Early Access to 3DStreet Geospatial Pro</a></p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="toolbar" term="toolbar"/>
+        <category label="user funded features" term="user funded features"/>
+        <category label="controls" term="controls"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing 3DStreet Geospatial Pro Early Access]]></title>
         <id>https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro</id>
