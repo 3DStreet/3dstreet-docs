@@ -6,7 +6,7 @@ tags: [product update, toolbar, user funded features, controls]
 image: ./images/2024-06-25/visitacion-3dtiles-street-slope.jpg
 ---
 
-A heartfelt thanks to our intrepid group of first customers of 3DStreet Geospatial Pro since our launch 3 weeks ago. We’re honored by your support of a product still in the making, and to give thanks back we’d like to share these newly released features that you have directly funded and requested.
+A heartfelt thanks to our intrepid group of first customers of 3DStreet Geospatial Pro since our [launch 11 days ago](/blog/2024/06/14/announcing-3dstreet-geospatial-pro). We’re honored by your support of a product still in the making, and to give thanks back we’d like to share these newly released features that you have directly funded and requested.
 
 ![](./images/2024-06-25/visitacion-3dtiles-street-slope.jpg)
 
@@ -39,7 +39,7 @@ While we work on undo, using the Hand mode is the safest way to browse a scene w
 
 ## New objects
 
-You’ve also suggested new 3D models as options to include in your projects. Stay tuned to see what new models we’re launching thanks to the support of our Pro users! (That beautiful side loading garbage truck is a good preview!)
+You’ve also suggested new 3D models as options to include in your projects. Stay tuned to see what new models we’re launching thanks to the support of our Pro users! (That beautiful side-loading garbage truck is a good preview!)
 
 ## Make it happen
 
