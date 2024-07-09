@@ -18,6 +18,8 @@ There is no annual commitment required -- a month is the minimum plan length. Fe
 
 [Please contact us to purchase a commercial license for 3DStreet](https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc).
 
+You can also purchase a license through the [3DStreet app](https://3dstreet.app): login, click your profile icon in the top right corner, and click "Subscribe"
+
 ## Geospatial & commercial plan usage limits
 * Up to 10,000 Premium 3D Map Tiles sessions per user per month. (These are cumulative, so 2 users = 20k sessions/mo, etc. Most users will not hit these limits unless projects are featured in widespread social media.)
 * Unlimited QR Manual Anchor Codes for Augmented Reality features (iOS and Android web app)
