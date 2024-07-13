@@ -2,11 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2024-06-25T00:00:00.000Z</updated>
+    <updated>2024-07-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Open-sourcing 3D traffic safety objects with University of Oregon I3 Program]]></title>
+        <id>https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program</id>
+        <link href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program"/>
+        <updated>2024-07-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Open-source 3D traffic safety device models as a result of a collaboration with the [University of Oregon’s Incubating Interdisciplinary Initiatives (I3) 2023 award program]]></summary>
+        <content type="html"><![CDATA[<p>I'm Luke Walker, a recent graduate of the Immersive Media Communications Master's program from the University of Oregon and I'm proud to share the open-source release of 3D traffic safety device models as a result of a collaboration with the <a href="https://environment.uoregon.edu/latest-i3-seed-funding-cycle-supports-new-projects-city-planning-and-immersive-science" target="_blank" rel="noopener noreferrer">University of Oregon’s Incubating Interdisciplinary Initiatives (I3) 2023 award program for "Developing Augmented Reality (AR) Visualization Tools to Increase Sustainable Transportation."</a></p>
+<p>The I3 program fosters new research projects across disciplines, in this case communications &amp; planning -- advised by Dr. Danny Pimentel in UO's School of Journalism and Communication, Dr. Marc Schlossberg in UO's School of Planning, Public Policy and Management with 3DStreet serving as an outside technical partner.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/uo-ped-safety-part1-439a0acb90ff68c04bcaa1695c47f50f.jpg" width="1785" height="854" class="img_ev3q"></p>
+<p>One of the goals of the collaboration was to use Augmented Reality (AR) communication tools to visualize street redesigns for sustainability. During the prototype process I was tasked with finding ways to visually represent pedestrian and micro-mobility improvements in AR and was pleased to have found 3DStreet and its rich library of urban planning prototype models.</p>
+<p>While 3DStreet's library of open-source urban 3D models was a great starting point, our project needed custom safety 3D models that were not available in 3DStreet to support Dr. Schlossberg's project goals. We partnered with the 3DStreet team on best-practices for low-polygon realtime 3D modeling on mobile devices with limited processing power for mobile Augmented Reality visualization.</p>
+<p>I created these models in Maya and worked with 3DStreet modeling expert <a href="https://www.upwork.com/freelancers/~0121c5733ab653a5c6" target="_blank" rel="noopener noreferrer">GnanaSai Reddy</a> for conversion to glTF (source) and glb (distribution) for use in the 3DStreet app and to empower future open-source community use and remixing.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="raised-crosswalk">Raised Crosswalk<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#raised-crosswalk" class="hash-link" aria-label="Direct link to Raised Crosswalk" title="Direct link to Raised Crosswalk">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/raised-crosswalk-b37bb7c02dc68573db3a69908f1272db.jpg" width="1424" height="736" class="img_ev3q">
+<code>Dividers &amp; Traffic Control: street-element-crosswalk-raised</code></p>
+<p>Raised crosswalks reduce vehicle speeds and provide a safer environment for pedestrian crossing. The height of this 3d model allows users to see the elevated crosswalk clearly in Augmented Reality to understand the effect a raised crosswalk could have on an intersection or street crossing.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="traffic-circle">Traffic Circle<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#traffic-circle" class="hash-link" aria-label="Direct link to Traffic Circle" title="Direct link to Traffic Circle">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/traffic-circle-957d19b592df207803c8c1d3791c55cc.jpg" width="1755" height="960" class="img_ev3q">
+<code>Dividers &amp; Traffic Control: street-element-traffic-island</code></p>
+<p>The traffic island, circle, or roundabout forces the flow of traffic to move in one direction. Focusing traffic to exit the roundabout from just one direction, instead of three, simplifies the pedestrian and driver visual environment and interaction. This object was created to be used for smaller residential or larger multi lane streets and can be scaled depending on the need.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="median-refuge-island">Median Refuge Island<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#median-refuge-island" class="hash-link" aria-label="Direct link to Median Refuge Island" title="Direct link to Median Refuge Island">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/ped-median-refuge-island-a10629e3d5e88268a7e79a3fe29d3b91.jpeg" width="1470" height="832" class="img_ev3q">
+<code>Dividers &amp; Traffic Control: street-element-traffic-island-end-rounded</code></p>
+<p>The traffic islands were created to be used as a refuge island for crossings, providing a safe place for pedestrians to stand on a street while reducing their danger from vehicles. Visualizing a refuge island in AR allows users to see they have the same protection on the island as they would on a sidewalk.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ped-crossing-rectangular-rapid-flashing-beacons-rrfb">Ped Crossing Rectangular Rapid Flashing Beacons (RRFB)<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#ped-crossing-rectangular-rapid-flashing-beacons-rrfb" class="hash-link" aria-label="Direct link to Ped Crossing Rectangular Rapid Flashing Beacons (RRFB)" title="Direct link to Ped Crossing Rectangular Rapid Flashing Beacons (RRFB)">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/rrfb-midblock-raised-a9136c31343366fccdb6e1d844b27a2b.jpg" width="1517" height="643" class="img_ev3q">
+<code>Dividers &amp; Traffic Control: street-element-sign-warning-ped-rrfb</code></p>
+<p>Rectangular Rapid Flashing Beacons (RRFBs) are used as visual cues for drivers that pedestrians are crossing the road at a crosswalk. City planners utilize RRFBs regularly for crosswalks needing multilane crossings. I made this object to replace the standard crosswalk signs with no flashing lights so individuals viewing it in AR could see how the placement of an RRFB would be helpful to promote a safer crossing environment.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="speed-hump">Speed Hump<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#speed-hump" class="hash-link" aria-label="Direct link to Speed Hump" title="Direct link to Speed Hump">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/speed-hump-d47bd675c8dddf7d7ce12556703b41ed.jpeg" width="1686" height="867" class="img_ev3q">
+<code>Dividers &amp; Traffic Control: street-element-speed-hump</code></p>
+<p>The speed hump, or bump, is used to promote slow traffic speeds on low volume, low speed roads.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="k71-flexible-traffic-post">K71 Flexible Traffic Post<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#k71-flexible-traffic-post" class="hash-link" aria-label="Direct link to K71 Flexible Traffic Post" title="Direct link to K71 Flexible Traffic Post">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/k71-9161feab66704e6ff4cb68abf8d8c872.jpg" width="1695" height="706" class="img_ev3q">
+<code>Dividers &amp; Traffic Control: street-element-traffic-post-k71</code></p>
+<p>Beefy and imposing, the US Reflector K71 flexible traffic post has helped <a href="https://www.usreflector.com/product/k71-flexible-traffic-post/" target="_blank" rel="noopener noreferrer">redefine bike lanes across North America</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next-for-luke">What's next for Luke?<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#whats-next-for-luke" class="hash-link" aria-label="Direct link to What's next for Luke?" title="Direct link to What's next for Luke?">​</a></h2>
+<p>I’m honored to have been a contributor of these critical safety models for 3DStreet, and I'm excited to announce my upcoming
+role with NASA as a post-graduate intern at NASA’s <a href="https://www.nasa.gov/nasa-brand-center/strategic-partnerships/" target="_blank" rel="noopener noreferrer">Office of Communications Strategic Partnerships Engagement</a>! I'm extremely grateful for this unique opportunity. <a href="https://www.linkedin.com/in/luke-walker-439b78119/" target="_blank" rel="noopener noreferrer">Follow my journey on LinkedIn here.</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-these-traffic-safety-objects-now">Use these traffic safety objects now!<a href="https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program#use-these-traffic-safety-objects-now" class="hash-link" aria-label="Direct link to Use these traffic safety objects now!" title="Direct link to Use these traffic safety objects now!">​</a></h2>
+<p>Use these models now to create your own 3DStreet scene by launching the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">3DStreet app</a>, then click <code>+</code> to add a new layer, and click the <code>Dividers &amp; Traffic Control</code> category and scroll down to find these models.</p>]]></content>
+        <author>
+            <name>Luke Walker</name>
+            <uri>https://www.linkedin.com/in/luke-walker-439b78119/</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="pedestrian" term="pedestrian"/>
+        <category label="traffic calming" term="traffic calming"/>
+        <category label="open source" term="open source"/>
+        <category label="3d models" term="3d models"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New 3DStreet features funded by Early Access customers]]></title>
         <id>https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access</id>
