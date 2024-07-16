@@ -1,6 +1,6 @@
 ---
 title: Open-sourcing 3D traffic safety objects with University of Oregon I3 Program
-description: Open-source 3D traffic safety device models as a result of a collaboration with the [University of Oregon’s Incubating Interdisciplinary Initiatives (I3) 2023 award program
+description: Open-source 3D traffic safety device models as a result of a collaboration with the University of Oregon’s Incubating Interdisciplinary Initiatives (I3) 2023 award program
 authors: [lwalker]
 tags: [product update, pedestrian, traffic calming, open source, 3d models]
 image: ./images/2024-07-15/uo-ped-safety-part1.jpg
