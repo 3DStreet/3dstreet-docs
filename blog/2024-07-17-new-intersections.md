@@ -1,24 +1,24 @@
 ---
-title: 3DStreet Intersections Early Access 
-description: New intersections!
+title: 3DStreet Intersections Early Access
+description: Sam shares his involvement with 3DStreet, the new features of the Intersection component, and what's coming next! 
 authors: [srothstein]
 tags: [product update, intersection, street, geometry, user-funded features]
 image: ./images/2024-07-17/default-intersection.jpeg
 ---
 
-My name is Sam Rothstein and I’m happy to share my work on a new street intersection component for 3DStreet. This is a first version of a highly requested feature.
+My name is Sam Rothstein and I’m happy to share my work on a new street intersection component for 3DStreet. This is a first version of a highly requested feature and I'm looking forward to seeing what the 3DStreet community can create. 
 
-<i>Editors note: Intersections are now available with the 3DStreet Geospatial Pro Plan. Your support will help us continue to improve this component.</i>
+In this post I'll share how I got involved in 3DStreet, the features of the Intersection component, and what's coming next! 
 
 ![](./images/2024-07-17/default-intersection.jpeg)
 
 <!-- truncate -->
 
-First a bit about how I got roped into this – I started my career working for Cesium on CesiumJS, helping hundreds of developers build bespoke applications around global-scale geospatial data. It was through this open-source 3D work that I met Kieran from 3DStreet and shared his vision of a world where everyone was empowered to reimagine their neighborhood. 
+I started my career working for [Cesium on CesiumJS](https://cesium.com/platform/cesiumjs/), helping hundreds of developers build bespoke applications around global-scale geospatial data. It was through this open-source 3D work that I met Kieran from 3DStreet and shared his vision of a world where everyone was empowered to reimagine their neighborhood. 
 
 I was inspired to help contribute as an open-source developer and use my background in web-based 3D rendering and full stack engineering to bring the project forward.
 
-Many 3DStreet users have been asking for support for visualizing intersections in their neighborhoods. It turns out, intersections are hard! [1] So we decided to start with something simple: the goal for this initial component was to create a simple yet versatile interface for connecting multiple streets. The component includes options for adding curbs, sidewalks, crosswalks, stop signs, and traffic signals. We made this available in the 3DStreet API for other developers in June 2022, but it wasn’t until now – 2 years later – that the user interface and editor capabilities of 3DStreet have finally caught up to make this available for people to use without writing code.
+Many 3DStreet users have been asking for support for visualizing intersections in their neighborhoods. It turns out, [intersections are hard](https://a-b-street.github.io/docs/tech/map/geometry/index.html )! So we decided to start with something simple: the goal for this initial component was to create a simple yet versatile interface for connecting multiple streets. The component includes options for adding curbs, sidewalks, crosswalks, stop signs, and traffic signals. We made this available in the 3DStreet API for other developers in June 2022, but it wasn’t until now – 2 years later – that the user interface and editor capabilities of 3DStreet have finally caught up to make this available for people to use without writing code.
 
 Here’s a quick overview of the capabilities:
 
@@ -34,17 +34,15 @@ Here’s a quick overview of the capabilities:
 ![](./images/2024-07-17/custom-intersection.jpeg)
 <b><i>An intersection example using nearly every feature.</i></b>
 
-Here’s quick instructions on how to get started:
-(Copy these to the alpha labs docs)
+## Getting Started
+![](/img/docs/alpha/add-edit-intersections.jpg)
+
+We have added step-by-step instructions on how to [add and edit an intersection in our documentation](/docs/development/alpha-labs#adding-and-editing-an-intersection).
 
 ## What's next for 3DStreet Intersections?
-
-This is an early version of intersections, next (...)
+We call this release Early Access for a reason -- 3DStreet Intersections need more work and we need your help to prioritize what needs improvement. Do we need better geometry? Curb ramps? Better interface to edit the intersection? We'd appreciate ideas and suggestions on how to help you visualize your perfect intersections.
 
 ## What’s next for Sam?
-I’m honored to be a contributor to the first iteration of a critical component of 3DStreet. Since my 3DStreet contribution, my career has propelled me to new roles including autonomous vehicle data visualization and a new announcement coming soon (follow me on LinkedIn for the latest). I’m excited to see how people use this component to change the world!
+I’m honored to be a contributor to the first iteration of a critical component of 3DStreet. Since my 3DStreet contribution, my career has propelled me to new roles including autonomous vehicle data visualization and a new announcement coming soon -- [follow me on LinkedIn for the latest!](https://www.linkedin.com/in/srothst1/) I’m excited to see how people use this component to change the world!
 
-
-
-
-Editor note: Our new Intersection feature is available for Pro users starting 15 July 2024. 
+<i>Editors note: Intersections are now available with the 3DStreet Geospatial Pro Plan. Your support will help us continue to improve this component.</i>
