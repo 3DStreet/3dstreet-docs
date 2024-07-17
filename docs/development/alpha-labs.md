@@ -47,3 +47,19 @@ Save a backup of your scene before trying these "Alpha Labs" experiments. 3DStre
 ## SVG Extrusion Component
 
 3DStreet SVG import is designed to accept 1 closed path or geometry at a time in a simple SVG format. This component accepts a `svgString` and creates a new entity with geometry extruded from the svg and applies the default mixin material grass. Extrusion can help to emulate the look of curbs and other surfaces. This method requires separates SVG imports for different parts of a scene.
+
+## Add an image
+
+This code snippet creates a plane geometry with a user specified image path. 
+
+Replace the https://... part to a publicly accessible HTTPS URL pointing to your image. We recommend [glitch.com](https://glitch.com/) as a great web host for assets like this but any host that provides a public URL path is fine.
+
+```
+newEl = document.createElement('a-entity')
+newEl.setAttribute('geometry', 'primitive: plane; height: 10; width: 10;')
+newEl.setAttribute('rotation', '-90 0 0')
+newEl.setAttribute('data-layer-name', 'Image • User Specified Path')
+newEl.setAttribute('material', 'src: url(https://cdn.glitch.global/a72f8f09-9d40-4560-8b00-a9481850c5e9/3D.St%20stacked%20icon.png?v=1717710211486);')
+parentEl = document.querySelector('#street-container')
+parentEl.appendChild(newEl)
+```
