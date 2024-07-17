@@ -43,3 +43,7 @@ Save a backup of your scene before trying these "Alpha Labs" experiments. 3DStre
 | stopsign | Sets if each side of the intersection has a stop sign. Values are set in the order of east, west, north, south. 0 is false, 1 is true. | '0 0 0 0' |
 | trafficsignal | Sets if each side of the intersection has a traffic signal. Values are set in the order of east, west, north, south. 0 is false, 1 is true. | '1 1 1 1' |
 | crosswalk | ​​Sets if each side of the intersection has a crosswalk. Values are set in the order of east, west, north, south. 0 is false, 1 is true. | '1 1 1 1' |
+
+## SVG Extrusion Component
+
+3DStreet SVG import is designed to accept 1 closed path or geometry at a time in a simple SVG format. This component accepts a `svgString` and creates a new entity with geometry extruded from the svg and applies the default mixin material grass. Extrusion can help to emulate the look of curbs and other surfaces. This method requires separates SVG imports for different parts of a scene.
