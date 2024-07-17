@@ -2,11 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2024-07-15T00:00:00.000Z</updated>
+    <updated>2024-07-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[3DStreet Intersections Early Access]]></title>
+        <id>https://3dstreet.org/blog/2024/07/17/new-intersections</id>
+        <link href="https://3dstreet.org/blog/2024/07/17/new-intersections"/>
+        <updated>2024-07-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sam shares his involvement with 3DStreet, the new features of the Intersection component, and what's coming next!]]></summary>
+        <content type="html"><![CDATA[<p>My name is Sam Rothstein and I’m happy to share my work on a new street intersection component for 3DStreet. This is a first version of a highly requested feature and I'm looking forward to seeing what the 3DStreet community can create.</p>
+<p>In this post I'll share how I got involved in 3DStreet, the features of the Intersection component, and what's coming next!</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/default-intersection-efd2ce7f27beeb8c1e901ea447d804ab.jpeg" width="1161" height="730" class="img_ev3q"></p>
+<p>I started my career working for <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener noreferrer">Cesium on CesiumJS</a>, helping hundreds of developers build bespoke applications around global-scale geospatial data. It was through this open-source 3D work that I met Kieran from 3DStreet and shared his vision of a world where everyone was empowered to reimagine their neighborhood.</p>
+<p>I was inspired to help contribute as an open-source developer and use my background in web-based 3D rendering and full stack engineering to bring the project forward.</p>
+<p>Many 3DStreet users have been asking for support for visualizing intersections in their neighborhoods. It turns out, <a href="https://a-b-street.github.io/docs/tech/map/geometry/index.html" target="_blank" rel="noopener noreferrer">intersections are hard</a>! So we decided to start with something simple: the goal for this initial component was to create a simple yet versatile interface for connecting multiple streets. The component includes options for adding curbs, sidewalks, crosswalks, stop signs, and traffic signals. We made this available in the 3DStreet API for other developers in June 2022, but it wasn’t until now – 2 years later – that the user interface and editor capabilities of 3DStreet have finally caught up to make this available for people to use without writing code.</p>
+<p>Here’s a quick overview of the capabilities:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="create-4-way-90º-intersections-with-custom-sizing-for-each-direction">Create 4-way 90º intersections with custom sizing for each direction<a href="https://3dstreet.org/blog/2024/07/17/new-intersections#create-4-way-90%C2%BA-intersections-with-custom-sizing-for-each-direction" class="hash-link" aria-label="Direct link to Create 4-way 90º intersections with custom sizing for each direction" title="Direct link to Create 4-way 90º intersections with custom sizing for each direction">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/lopsided-intersection-710c68095130b88ea1edad278cc562e1.jpg" width="2860" height="1122" class="img_ev3q">
+<b><i>A custom intersection example with painted crosswalks along two sides of the long crossing distance, such as a mid-block crosswalk across an arterial where it meets an alleyway.</i></b></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="customization-features">Customization Features<a href="https://3dstreet.org/blog/2024/07/17/new-intersections#customization-features" class="hash-link" aria-label="Direct link to Customization Features" title="Direct link to Customization Features">​</a></h2>
+<ul>
+<li>Supports optional dead-ends and t-intersections</li>
+<li>Supports optional traffic control devices: traffic signals, stop signs, or none</li>
+<li>Supports optional pedestrian features: crosswalks, sidewalks (for t/dead-end), or none</li>
+</ul>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/custom-intersection-bb3163b0d2a8a1c435cc6631aa6cea8a.jpeg" width="2854" height="1471" class="img_ev3q">
+<b><i>An intersection example using nearly every feature.</i></b></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting Started<a href="https://3dstreet.org/blog/2024/07/17/new-intersections#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/add-edit-intersections-f7ea14c69d521bcc66388d5cb1c336c7.jpg" width="2952" height="1658" class="img_ev3q"></p>
+<p>We have added step-by-step instructions on how to <a href="https://3dstreet.org/docs/development/alpha-labs#adding-and-editing-an-intersection">add and edit an intersection in our documentation</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next-for-3dstreet-intersections">What's next for 3DStreet Intersections?<a href="https://3dstreet.org/blog/2024/07/17/new-intersections#whats-next-for-3dstreet-intersections" class="hash-link" aria-label="Direct link to What's next for 3DStreet Intersections?" title="Direct link to What's next for 3DStreet Intersections?">​</a></h2>
+<p>We call this release Early Access for a reason -- 3DStreet Intersections need more work and we need your help to prioritize what needs improvement. Do we need better geometry? Curb ramps? Better interface to edit the intersection? We'd appreciate ideas and suggestions on how to help you visualize your perfect intersections.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next-for-sam">What’s next for Sam?<a href="https://3dstreet.org/blog/2024/07/17/new-intersections#whats-next-for-sam" class="hash-link" aria-label="Direct link to What’s next for Sam?" title="Direct link to What’s next for Sam?">​</a></h2>
+<p>I’m honored to be a contributor to the first iteration of a critical component of 3DStreet. Since my 3DStreet contribution, my career has propelled me to new roles including autonomous vehicle data visualization and a new announcement coming soon -- <a href="https://www.linkedin.com/in/srothst1/" target="_blank" rel="noopener noreferrer">follow me on LinkedIn for the latest!</a> I’m excited to see how people use this component to change the world!</p>
+<i>Editors note: Intersections are now available with the 3DStreet Geospatial Pro Plan. Your support will help us continue to improve this component.</i>]]></content>
+        <author>
+            <name>Sam Rothstein</name>
+            <uri>https://www.linkedin.com/in/srothst1/</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="intersection" term="intersection"/>
+        <category label="street" term="street"/>
+        <category label="geometry" term="geometry"/>
+        <category label="user-funded features" term="user-funded features"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Open-sourcing 3D traffic safety objects with University of Oregon I3 Program]]></title>
         <id>https://3dstreet.org/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program</id>
