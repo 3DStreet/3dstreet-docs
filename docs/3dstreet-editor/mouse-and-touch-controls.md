@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Touch and Mouse Controls
+# Mouse and Touch Controls
 
 ![mouse and touch controls](mouse-touch-controls.png)
 
