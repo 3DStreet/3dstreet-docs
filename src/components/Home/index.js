@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { Button, Input } from '..';
+import { Button, Input } from "..";
 import {
   ArrowIcon,
   DiscordIcon,
@@ -11,9 +11,9 @@ import {
   PiechartIcon,
   XIcon,
   XIcon2,
-} from '../../icons';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import MuxPlayer from '@mux/mux-player-react';
+} from "../../icons";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import MuxPlayer from "@mux/mux-player-react";
 
 export default function Home({ recentPosts }) {
   const {
@@ -101,7 +101,7 @@ export default function Home({ recentPosts }) {
                         label="Home"
                         isActive
                         onClick={() => {
-                          location.href = '';
+                          location.href = "";
                         }}
                       />
                     </li>
@@ -110,7 +110,7 @@ export default function Home({ recentPosts }) {
                         variant="ghost"
                         label="Blog"
                         onClick={() => {
-                          location.href = '/blog/';
+                          location.href = "/blog/";
                         }}
                       />
                     </li>
@@ -119,7 +119,7 @@ export default function Home({ recentPosts }) {
                         variant="ghost"
                         label="Documentation"
                         onClick={() => {
-                          location.href = '/docs/';
+                          location.href = "/docs/";
                         }}
                       />
                     </li>
@@ -129,7 +129,7 @@ export default function Home({ recentPosts }) {
                   variant="blue"
                   label="Launch app"
                   onClick={() => {
-                    location.href = 'https://3dstreet.app';
+                    location.href = "https://3dstreet.app";
                   }}
                 />
               </div>
@@ -147,7 +147,7 @@ export default function Home({ recentPosts }) {
                 variant="blue"
                 label="Launch app"
                 onClick={() => {
-                  location.href = 'https://3dstreet.app';
+                  location.href = "https://3dstreet.app";
                 }}
               />
             </div>
@@ -160,7 +160,7 @@ export default function Home({ recentPosts }) {
                       label="Home"
                       isActive
                       onClick={() => {
-                        location.href = '';
+                        location.href = "";
                       }}
                     />
                   </li>
@@ -169,7 +169,7 @@ export default function Home({ recentPosts }) {
                       variant="ghost"
                       label="Blog"
                       onClick={() => {
-                        location.href = '/blog/';
+                        location.href = "/blog/";
                       }}
                     />
                   </li>
@@ -178,7 +178,7 @@ export default function Home({ recentPosts }) {
                       variant="ghost"
                       label="Documentation"
                       onClick={() => {
-                        location.href = '/docs/';
+                        location.href = "/docs/";
                       }}
                     />
                   </li>
@@ -217,9 +217,21 @@ export default function Home({ recentPosts }) {
           <div className="st_main_wrapper">
             <div className="st_main_container">
               <h1 className="h1">Bring your street design ideas to life.</h1>
-              <p className="description">
-                Bring stakeholders to "Yes!" and reduce risk of cancellation and delays with community-led, rapid prototyping from 3DStreet.
-              </p>
+              <MuxPlayer
+                streamType="on-demand"
+                playbackId="TSxTjFBKoeTnspoQo02BFBPZXel6Pqtoo"
+                metadataVideoTitle="Placeholder (optional)"
+                metadataViewerUserId="Placeholder (optional)"
+                primaryColor="#FFFFFF"
+                secondaryColor="#000000"
+                accentColor="#653CB0"
+              />
+
+              <section className="st_overview">
+                {/* <video className="st_overview_video" controls preload="metadata">
+                  <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
+                </video> */}
+              </section>
               <Input />
             </div>
           </div>
@@ -227,21 +239,6 @@ export default function Home({ recentPosts }) {
         </main>
 
         {/* OVERVIEW SECTION */}
-        <section className="st_overview">
-          <h2>3DSTREET IN 2 MINUTES</h2>
-          <MuxPlayer
-            streamType="on-demand"
-            playbackId="lXImH9p0000L4fsSSEHgz6RudBQv02CgqQh"
-            metadataVideoTitle="Placeholder (optional)"
-            metadataViewerUserId="Placeholder (optional)"
-            primaryColor="#FFFFFF"
-            secondaryColor="#000000"
-            accentColor="#653CB0"
-          />
-          {/* <video className="st_overview_video" controls preload="metadata">
-            <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
-          </video> */}
-        </section>
 
         {/* FEATURES SECTION */}
         <section className="st_features">
@@ -263,10 +260,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={'blue'}
-                    label={'Get started'}
+                    variant={"blue"}
+                    label={"Get started"}
                     onClick={() => {
-                      location.href = 'https://3dstreet.app';
+                      location.href = "https://3dstreet.app";
                     }}
                   />
                 </div>
@@ -291,10 +288,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={'blue'}
-                    label={'Get started'}
+                    variant={"blue"}
+                    label={"Get started"}
                     onClick={() => {
-                      location.href = 'https://3dstreet.app';
+                      location.href = "https://3dstreet.app";
                     }}
                   />
                 </div>
@@ -320,10 +317,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={'blue'}
-                    label={'Get started'}
+                    variant={"blue"}
+                    label={"Get started"}
                     onClick={() => {
-                      location.href = 'https://3dstreet.app';
+                      location.href = "https://3dstreet.app";
                     }}
                   />
                 </div>
@@ -348,10 +345,10 @@ export default function Home({ recentPosts }) {
                     </p>
                   </div>
                   <Button
-                    variant={'blue'}
-                    label={'Get started'}
+                    variant={"blue"}
+                    label={"Get started"}
                     onClick={() => {
-                      location.href = 'https://3dstreet.app';
+                      location.href = "https://3dstreet.app";
                     }}
                   />
                 </div>
@@ -398,7 +395,7 @@ export default function Home({ recentPosts }) {
                                 alt="author-avatar"
                               />
                               {`${authors[0].name} ${
-                                authors.length > 1 ? 'and others' : ''
+                                authors.length > 1 ? "and others" : ""
                               }`}
                             </p>
                           </div>
@@ -408,14 +405,14 @@ export default function Home({ recentPosts }) {
                         <p className="st_blog_item_footer">{description}</p>
                       </div>
                     </a>
-                  )
+                  ),
                 )}
             </div>
             <Button
-              variant={'blue'}
-              label={'View more posts'}
+              variant={"blue"}
+              label={"View more posts"}
               onClick={() => {
-                location.href = '/blog/';
+                location.href = "/blog/";
               }}
             />
           </div>
