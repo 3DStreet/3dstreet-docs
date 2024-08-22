@@ -44,9 +44,6 @@ const Input = () => {
       url={siteConfig.customFields?.mailchimpUrl}
       render={({ subscribe, status }) => (
         <form className={styles.wrapper}>
-          <p className={styles.label}>
-            Want to learn more?
-          </p>
           <div className={styles.formWrapper}>
             <div
               className={clsx(styles.inputWrapper, !isEmail && styles.notValid)}
