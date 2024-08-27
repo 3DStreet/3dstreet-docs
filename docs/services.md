@@ -5,7 +5,7 @@ sidebar_position: 10
 
 ## Need help with your next project?
 
-At 3DStreet, we offer more than just software development. Our team provides consulting services to community organizations, global NGOs, government entities, individuals, and other organizations of all shapes and sizes. Here's how we can assist you:
+At 3DStreet, we do more than just make software. Our team provides consulting services to community organizations, global NGOs, government entities, individuals, and other organizations of all shapes and sizes. Here's how we can assist you:
 
 ### Custom model design
 We advise on creating low-poly assets for use in realtime 3D designs, including:
