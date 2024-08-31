@@ -25,3 +25,5 @@ sidebar_position: 7
 * `ctrl` | `cmd` + `v` - Paste entity
 * `esc` - Unselect entity
 * `ctrl` + `alt` + `i` - Switch Edit and VR Modes
+* `ctrl` | `cmd` + `z` - Undo
+* `ctrl` | `cmd` + `shift` + `z` - Redo
