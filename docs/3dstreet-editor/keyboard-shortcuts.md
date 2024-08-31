@@ -10,7 +10,6 @@ sidebar_position: 7
 * `d` - Duplicate selected entity
 * `f` - Focus on selected entity
 * `g` - Toggle grid visibility
-* `n` - Add new entity
 * `del` | `backspace` - Delete selected entity
 * `o` - Toggle local between global transform
 * `0` - Toggle panels
@@ -21,9 +20,9 @@ sidebar_position: 7
 * `5` - Bottom view
 * `6` - Back view
 * `7` - Front view
-* `ctrl` | `cmd` + `x` - Cut selected entity
 * `ctrl` | `cmd` + `c` - Copy selected entity
 * `ctrl` | `cmd` + `v` - Paste entity
-* `h` - Show this help
 * `esc` - Unselect entity
 * `ctrl` + `alt` + `i` - Switch Edit and VR Modes
+* `ctrl` | `cmd` + `z` - Undo
+* `ctrl` | `cmd` + `shift` + `z` - Redo
