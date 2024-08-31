@@ -20,7 +20,6 @@ sidebar_position: 7
 * `5` - Bottom view
 * `6` - Back view
 * `7` - Front view
-* `ctrl` | `cmd` + `x` - Cut selected entity
 * `ctrl` | `cmd` + `c` - Copy selected entity
 * `ctrl` | `cmd` + `v` - Paste entity
 * `esc` - Unselect entity
