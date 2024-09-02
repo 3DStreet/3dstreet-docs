@@ -8,7 +8,7 @@ image: ./images/2024-09-02/editorial-sign-in-with-microsoft-buffer.png
 
 3DStreet now supports Microsoft login, making it easier for users with Microsoft accounts to access our platform. This update also includes important information for administrators on how to enable 3DStreet for their organization.
 
-![Microsoft Login Button](./images/2024-09-02/editorial-sign-in-with-microsoft-buffer.png)
+![Microsoft Login Button Only](./images/2024-09-02/editorial-sign-in-with-microsoft-buffer.png)
 
 <!-- truncate -->
 
@@ -25,11 +25,11 @@ Users can now sign in to 3DStreet using their Microsoft accounts. This feature i
 This addition makes it easier for users in organizations that primarily use Microsoft services to access 3DStreet seamlessly.
 
 #### Preview of the new Microsoft login flow:
-![Microsoft Login Button](./images/2024-09-02/3dstreet-microsoft-auth-steps.jpg)
+![New 3DStreet Microsoft Login Flow](./images/2024-09-02/3dstreet-microsoft-auth-steps.jpg)
 
 #### Look for Publisher Identity Verified
 3DStreet LLC is a Microsoft Verified Partner. You should see a blue checkmark next to our name and clicking shows the following "App info":
-![Microsoft Login Button](./images/2024-09-02/3dstreet-microsoft-auth-2.jpg)
+![Microsoft Auth Showing Verified Partner Info](./images/2024-09-02/3dstreet-microsoft-auth-2.jpg)
 
 ## Administrator Guide: Enabling 3DStreet for Your Organization
 
