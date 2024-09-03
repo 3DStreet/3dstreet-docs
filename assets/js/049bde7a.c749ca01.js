@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[4e3],{3e3:s=>{s.exports=JSON.parse('{"label":"microsoft","permalink":"/blog/tags/microsoft","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
