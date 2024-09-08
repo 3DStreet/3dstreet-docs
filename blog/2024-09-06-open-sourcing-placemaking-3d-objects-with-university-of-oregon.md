@@ -1,39 +1,45 @@
 ---
 title: Expanding 3DStreet's Urban Furniture Library: New Open-Source 3D Models
-description: Introducing new open-source 3D models for urban furniture and street amenities to enhance 3DStreet's visualization capabilities
+description: Introducing new open-source 3D models for urban furniture, street amenities, and traffic control elements to enhance 3DStreet's visualization capabilities
 authors: [tyler]
 tags: [product update, urban design, open source, 3d models]
 image: ./images/2024-08-01/trash-bin.jpg
 draft: true
 ---
 
-We're excited to announce the addition of several new open-source 3D models to the 3DStreet library, expanding our collection of urban furniture and street amenities. These new models, created by our team member Tyler, complement our existing library and provide even more options for creating detailed, realistic urban scenes.
+We're excited to announce the addition of several new open-source 3D models to the 3DStreet library, expanding our collection of urban furniture, street amenities, and traffic control elements. These new models, created by our team member Tyler, complement our existing library and provide even more options for creating detailed, realistic urban scenes.
 
 ![](./images/2024-08-01/trash-bin.jpg)
 
 <!-- truncate -->
 
-Building on the success of our collaboration with the University of Oregon's I3 program, we've continued to develop our 3D model library to meet the evolving needs of urban planners, designers, and community advocates. These new models focus on the small but crucial elements that make our streets functional and livable.
+Building on the success of our collaboration with the University of Oregon's I3 program, we've continued to develop our 3D model library to meet the evolving needs of urban planners, designers, and community advocates. These new models focus on the small but crucial elements that make our streets functional, safe, and livable.
 
 Let's take a closer look at each of these new additions:
 
-## Trash Bin
-![](./images/2024-08-01/trash-bin.jpg)
-`Street Furniture: trash-bin`
+## Traffic Calming Bumps
+![](./images/2024-08-01/traffic-calming-bumps.jpg)
+`Street Furniture: traffic-calming-bumps`
 
-A staple of urban cleanliness, this trash bin model allows planners to visualize proper placement of waste receptacles in public spaces.
+This versatile and low-profile object is used for traffic control. It's effective at alerting drivers of low-speed areas ahead, enhancing safety in urban environments.
 
-## Little Free Library
-![](./images/2024-08-01/lending-library.jpg)
-`Street Furniture: lending-library`
+## Corner Island
+![](./images/2024-08-01/corner-island.jpg)
+`Street Furniture: corner-island`
 
-Promoting community literacy, this Little Free Library model represents the popular book-sharing boxes found in neighborhoods across the world.
+Created to provide safer turns for cyclists in city intersections, this object also offers a safe place for pedestrians to stand. It gives bikers full protection from cars throughout the entire bike lane, improving urban mobility safety.
 
-## Residential Mailbox
-![](./images/2024-08-01/residential-mailbox.jpg)
-`Street Furniture: residential-mailbox`
+## Parklet
+![](./images/2024-08-01/parklet.jpg)
+`Street Furniture: parklet`
 
-This residential mailbox model adds a touch of suburban realism to street scenes, perfect for visualizing residential areas.
+Parklets are an excellent use of space for extra seating around restaurants, parks, and rest areas in cities. This model allows planners to visualize how these installations can transform urban spaces.
+
+## Picnic Table
+![](./images/2024-08-01/picnic-table.jpg)
+`Street Furniture: picnic-table`
+
+A common sight in parks and public spaces, this picnic table model adds realism to recreational areas within urban scenes.
 
 ## USPS Mailbox
 ![](./images/2024-08-01/USPS-mailbox.jpg)
@@ -41,17 +47,17 @@ This residential mailbox model adds a touch of suburban realism to street scenes
 
 The iconic blue USPS mailbox is a familiar sight on many street corners. This model allows for accurate placement in urban scenes.
 
-## Picnic Bench
-![](./images/2024-08-01/picnic-bench.jpg)
-`Street Furniture: picnic-bench`
+## Trash Bin
+![](./images/2024-08-01/trash-bin.jpg)
+`Street Furniture: trash-bin`
 
-This picnic bench model is ideal for visualizing recreational areas within urban spaces, promoting community gathering and outdoor enjoyment.
+A staple of urban cleanliness, this trash bin model allows planners to visualize proper placement of waste receptacles in public spaces.
 
-## Large Parklet
-![](./images/2024-08-01/large-parklet-seating.jpg)
-`Street Furniture: large-parklet`
+## Residential Mailbox
+![](./images/2024-08-01/residential-mailbox.jpg)
+`Street Furniture: residential-mailbox`
 
-Representing the growing trend of reclaiming street space for public use, this large parklet model showcases how parking spaces can be transformed into vibrant community areas.
+This residential mailbox model adds a touch of suburban realism to street scenes, perfect for visualizing residential areas.
 
 ## Using These New Models
 
