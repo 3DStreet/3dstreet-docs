@@ -1,6 +1,6 @@
 # Terms and Conditions
 
-Last updated: August 23, 2024
+Last updated: October 2nd, 2024
 
 Please read these terms and conditions carefully before using Our Service.
 
