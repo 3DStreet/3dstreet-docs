@@ -22,6 +22,7 @@ For the purposes of these Terms and Conditions:
 - __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to 3DStreet LLC, 320 Alabama St, San Francisco, CA 94110.
 
 - __Device__ means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- __User Content__ refers to any content, including but not limited to text, images, designs, and other media, that is uploaded, posted, or otherwise made available by You on or through the Service.
 
 
 
@@ -99,6 +100,16 @@ The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults an
 Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
 
 Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+
+## User Content
+By using the Service, You may create, submit, or share content, including but not limited to text, images, designs, and other media ("User Content"). You retain ownership of any intellectual property rights that You hold in Your User Content. However, by making Your User Content available on or through the Service, You grant the Company, as well as other users of the Service, a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, modify, adapt, create derivative works from, publicly display, and perform Your User Content.
+
+Public Nature of User Content
+Please note that all User Content uploaded or created on the Service is public by default. Your User Content may be viewed and used by other users, and may be subject to remixing or modification, similar to content shared in open-source platforms like GitHub. All such User Content will be governed by a Creative Commons Attribution License (CC BY), which allows others to remix, tweak, and build upon Your work, provided they give appropriate credit to You.
+
+No Sale of User Content
+We do not sell Your User Content. The rights You grant through this license are provided to support the public sharing and creative collaboration that takes place within the Service. You acknowledge and agree that other users of the Service may use, modify, and distribute Your User Content, as long as they comply with the Creative Commons Attribution License terms.
+
 
 ## Governing Law
 
