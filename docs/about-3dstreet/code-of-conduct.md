@@ -1,5 +1,7 @@
 # Code of Conduct
 
+Last updated: October 2nd, 2024
+
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our
