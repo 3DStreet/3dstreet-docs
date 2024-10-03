@@ -40,6 +40,6 @@ Double click on an entity in the scene graph or in the scene to fly the camera t
 ### Viewer
 Like “Streetview” this is how you can get a real-life perspective of your street scene from the ground level
 
-To move use arrows  / wasd or click once on a point on the ground and you will teleport to that location. Even fly around if you’re feeling adventurous - (requires holding left click as a way to move around. maybe change that to just point in a direction?)
+To move use arrows  / wasd or click once on a point on the ground and you will teleport to that location. Even fly around if you’re feeling adventurous.
 
 ![Animated gif of a user navigating a street scene using the 3DStreet Viewer.](/img/docs/navigation/viewer.gif)
