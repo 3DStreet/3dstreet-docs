@@ -81,8 +81,24 @@ We do not sell Your User Content without your permission. The rights You grant t
 ### User Content Representations and Warranties
 You represent that (i) any materials and content posted or otherwise submitted by you to the Service is original to you and that you have the right to grant us these rights, (ii) the posting and use of your materials and content on or through the Service does not violate, misappropriate or infringe on the rights of any third-party, including, without limitation, privacy rights, rights of publicity, copyrights, trademark and/or other intellectual property rights, and (iii) such posts and the content contained therein abide by these Terms of Use.
 
+### Contribution of Source Code
+We follow the GitHub Terms of Service for assigning your contributed code the same license as its respective repository, which may vary depending upon provenance and other factors. Those terms are pasted here for convenience, [here is a direct link to GitHub's terms](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#6-contributions-under-repository-license
+).
+
+> Whenever you make a contribution to a repository containing notice of a license, you license your contribution under the same terms, and you agree that you have the right to license your contribution under those terms. If you have a separate agreement to license your contributions under different terms, such as a contributor license agreement, that agreement will supersede.
+
+> Isn't this just how it works already? Yep. This is widely accepted as the norm in the open-source community; it's commonly referred to by the shorthand "inbound=outbound". We're just making it explicit.
+
+## Use of Service Source Code
+
+Some Service source code is made available under the AGPLv3 license. The AGPLv3 license is a strong "copyleft" license that requires any modified version of the software to be distributed under the same license terms, including when the software is run as a service over a network. This means that if you modify AGPLv3-licensed code and make it available to users over a network, you must also make your modifications available under the AGPLv3 license.
+
+The full license information for the primary Service repository can be found here: [LICENSE](https://github.com/3DStreet/3dstreet/blob/main/LICENSE).
+
+
+
 ## Governing Law
-The laws of the State of California and the United States, as applicable, will govern these Terms and Your use of the Service, without regard to conflict of law provisions. Any legal disputes relating to these Terms or the Service will be resolved in the state or federal courts located in San Francisco, California. Your use of the Service may also be subject to other local, state, national, or international laws.
+The laws of the great State of California and the United States, as applicable, will govern these Terms and Your use of the Service, without regard to conflict of law provisions. Any legal disputes relating to these Terms or the Service will be resolved in the state or federal courts located in San Francisco, California. Your use of the Service may also be subject to other local, state, national, or international laws.
 
 ## Disputes Resolution
 
