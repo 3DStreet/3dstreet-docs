@@ -17,24 +17,14 @@ For the purposes of these Terms and Conditions:
 - __Application__ means the software program provided by the Company downloaded by You on any electronic device, named 3DStreet App
 - __Application Store__ means the digital distribution service operated and developed by Apple Inc. (Apple App Store) or Google Inc. (Google Play Store) in which the Application has been downloaded.
 - __Affiliate__ means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
-
 - __Country__ refers to: California,  United States
 - __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to 3DStreet LLC, 320 Alabama St, San Francisco, CA 94110.
-
 - __Device__ means any device that can access the Service such as a computer, a cellphone or a digital tablet.
-- __User Content__ refers to any content, including but not limited to text, images, designs, and other media, that is uploaded, posted, or otherwise made available by You on or through the Service.
-
-
-
-
-
-
 
 - __Service__ refers to the Application or the Website or both.
-
-
 - __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the [Terms and Conditions Generator](https://www.termsfeed.com/terms-conditions-generator/).
 - __Third-party Social Media Service__ means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- __User Content__ refers to any content, including but not limited to text, images, designs, and other media, that is uploaded, posted, or otherwise made available by You on or through the Service.
 - __Website__ refers to 3DStreet Website and Docs, accessible from [https://www.3dstreet.org/](https://www.3dstreet.org/)
 - __You__ means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
@@ -46,29 +36,9 @@ Your access to and use of the Service is conditioned on Your acceptance of and c
 
 By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
 
-
 You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
 
-
 Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Links to Other Websites
 
@@ -83,7 +53,6 @@ We strongly advise You to read the terms and conditions and privacy policies of 
 We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
 
 Upon termination, Your right to use the Service will cease immediately.
-
 
 ## Limitation of Liability
 
@@ -110,7 +79,6 @@ Please note that all User Content uploaded or created on the Service is public b
 No Sale of User Content
 We do not sell Your User Content. The rights You grant through this license are provided to support the public sharing and creative collaboration that takes place within the Service. You acknowledge and agree that other users of the Service may use, modify, and distribute Your User Content, as long as they comply with the Creative Commons Attribution License terms.
 
-
 ## Governing Law
 
 The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
@@ -119,19 +87,13 @@ The laws of the Country, excluding its conflicts of law rules, shall govern this
 
 If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
 
-
 ## For European Union (EU) Users
 
 If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which You are resident.
 
-
-
-
-
 ## United States Legal Compliance
 
 You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
-
 
 ## Severability and Waiver
 
