@@ -69,6 +69,12 @@ Without limiting the foregoing, neither the Company nor any of the company's pro
 
 Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
 
+## Use of Service Source Code
+
+Some Service source code is made available under the AGPLv3 license. The AGPLv3 license is a strong "copyleft" license that requires any modified version of the software to be distributed under the same license terms, including when the software is run as a service over a network. This means that if you modify AGPLv3-licensed code and make it available to users over a network, you must also make your modifications publicly available under the AGPLv3 license.
+
+The full license information for the primary Service repository can be found here: [LICENSE](https://github.com/3DStreet/3dstreet/blob/main/LICENSE).
+
 ## User Content
 By using the Service, You may create, submit, or share content, including but not limited to text, images, designs, and other media ("User Content"). You retain ownership of any intellectual property rights that You hold in Your User Content. However, by making Your User Content available on or through the Service, You grant the Company, as well as other users of the Service, a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, modify, adapt, create derivative works from, publicly display, and perform Your User Content.
 
@@ -82,18 +88,13 @@ We do not sell Your User Content without your permission. The rights You grant t
 You represent that (i) any materials and content posted or otherwise submitted by you to the Service is original to you and that you have the right to grant us these rights, (ii) the posting and use of your materials and content on or through the Service does not violate, misappropriate or infringe on the rights of any third-party, including, without limitation, privacy rights, rights of publicity, copyrights, trademark and/or other intellectual property rights, and (iii) such posts and the content contained therein abide by these Terms of Use.
 
 ### Contribution of Source Code
-We follow the GitHub Terms of Service for assigning your contributed code the same license as its respective repository, which may vary depending upon provenance and other factors. Those terms are pasted here for convenience, [here is a direct link to GitHub's terms](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#6-contributions-under-repository-license
+Any source code contribution will be governed by the license terms stated on the Service's source code repository. We follow the GitHub Terms of Service for assigning your contributed code the same license as its respective repository, which may vary depending upon provenance and other factors. Those terms are pasted here for convenience, [here is a direct link to GitHub's terms](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#6-contributions-under-repository-license
 ).
 
 > Whenever you make a contribution to a repository containing notice of a license, you license your contribution under the same terms, and you agree that you have the right to license your contribution under those terms. If you have a separate agreement to license your contributions under different terms, such as a contributor license agreement, that agreement will supersede.
 
 > Isn't this just how it works already? Yep. This is widely accepted as the norm in the open-source community; it's commonly referred to by the shorthand "inbound=outbound". We're just making it explicit.
 
-## Use of Service Source Code
-
-Some Service source code is made available under the AGPLv3 license. The AGPLv3 license is a strong "copyleft" license that requires any modified version of the software to be distributed under the same license terms, including when the software is run as a service over a network. This means that if you modify AGPLv3-licensed code and make it available to users over a network, you must also make your modifications available under the AGPLv3 license.
-
-The full license information for the primary Service repository can be found here: [LICENSE](https://github.com/3DStreet/3dstreet/blob/main/LICENSE).
 
 
 
