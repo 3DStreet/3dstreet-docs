@@ -20,7 +20,6 @@ For the purposes of these Terms and Conditions:
 - __Country__ refers to: California,  United States
 - __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to 3DStreet LLC, 320 Alabama St, San Francisco, CA 94110.
 - __Device__ means any device that can access the Service such as a computer, a cellphone or a digital tablet.
-
 - __Service__ refers to the Application or the Website or both.
 - __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the [Terms and Conditions Generator](https://www.termsfeed.com/terms-conditions-generator/).
 - __Third-party Social Media Service__ means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
@@ -73,15 +72,17 @@ Some jurisdictions do not allow the exclusion of certain types of warranties or 
 ## User Content
 By using the Service, You may create, submit, or share content, including but not limited to text, images, designs, and other media ("User Content"). You retain ownership of any intellectual property rights that You hold in Your User Content. However, by making Your User Content available on or through the Service, You grant the Company, as well as other users of the Service, a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, modify, adapt, create derivative works from, publicly display, and perform Your User Content.
 
-Public Nature of User Content
+### Public Nature of User Content
 Please note that all User Content uploaded or created on the Service is public by default. Your User Content may be viewed and used by other users, and may be subject to remixing or modification, similar to content shared in open-source platforms like GitHub. All such User Content will be governed by a Creative Commons Attribution License (CC BY), which allows others to remix, tweak, and build upon Your work, provided they give appropriate credit to You.
 
-No Sale of User Content
+### No Sale of User Content Without Permission
 We do not sell Your User Content. The rights You grant through this license are provided to support the public sharing and creative collaboration that takes place within the Service. You acknowledge and agree that other users of the Service may use, modify, and distribute Your User Content, as long as they comply with the Creative Commons Attribution License terms.
 
-## Governing Law
+### Allow Us to Use Your User Content
+If you submit or post any materials or content to the Service, you grant us a non-exclusive, royalty free, perpetual, irrevocable, transferrable, assignable, sub-licensable, worldwide license to use such materials and content, including alterations thereof, in any form or media, and via any technology we choose, whether it exists now or is created in the future. You represent that (i) any materials and content posted or otherwise submitted by you to the Service is original to you and that you have the right to grant us these rights, (ii) the posting and use of your materials and content on or through the Service does not violate, misappropriate or infringe on the rights of any third-party, including, without limitation, privacy rights, rights of publicity, copyrights, trademark and/or other intellectual property rights, and (iii) such posts and the content contained therein abide by these Terms of Use.
 
-The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+## Governing Law
+The laws of the State of California and the United States, as applicable, will govern these Terms and Your use of the Service, without regard to conflict of law provisions. Any legal disputes relating to these Terms or the Service will be resolved in the state or federal courts located in San Francisco, California. Your use of the Service may also be subject to other local, state, national, or international laws.
 
 ## Disputes Resolution
 
