@@ -4,9 +4,11 @@ kfarr:
   url: https://github.com/kfarr
   image_url: https://github.com/kfarr.png
 
-trivedell:
+triedell:
   name: Tyler Riedell
-  title: Student, University of Oregon
+  title: Design Student, University of Oregon
+  url: https://www.linkedin.com/in/tylerriedell/
+  image_url: ./images/authors/triedell.jpeg
 
 amougin:
   name: Arthur Mougin
