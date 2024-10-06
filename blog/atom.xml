@@ -2,11 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2024-09-02T00:00:00.000Z</updated>
+    <updated>2024-10-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New placemaking and street safety 3D models]]></title>
+        <id>https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models</id>
+        <link href="https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models"/>
+        <updated>2024-10-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Open-source 3D traffic safety device models as a result of a collaboration with the University of Oregon]]></summary>
+        <content type="html"><![CDATA[<p>Hi, I’m Tyler Riedell, a fourth-year product design student at the University of Oregon. This past summer, I had the privilege of collaborating with the incredibly talented team at 3DStreet to release several open-source street safety and sidewalk prop models.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/corner-island-de23bc117fb19ff9e61f2b20468d9892.jpg" width="1319" height="990" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
+<p>I got involved with this project through my ongoing work with Dr. Marc Schlossberg at the University of Oregon, where I’ve been assisting him in exploring how Augmented Reality can improve street safety in Eugene, Oregon. This experience has given me the opportunity to merge my passion for design with city planning and street safety, topics I never thought I’d be involved in.</p>
+<p>This whole experience has been transformative for me, especially in sharpening my 3D modeling skills. As a product designer, I’m used to working with highly detailed models, often with enormous file sizes. But for the models I created to function on mobile AR platforms, I had to rewire how I approached 3D design. When Dr. Schlossberg initially told me to create models with the smallest polycount possible —- without losing their identity —- I was at a bit of a loss on where to begin.</p>
+<p>Working with Dr. Schlossberg and team of graphics professionals from 3DStreet like Kieran Farr and GnanaSai Reddy pushed me to expand my knowledge of low-poly model design and the associated pipeline for preparing 3D assets for high performance real-time XR applications -- an area I knew little about before this project. I’m incredibly grateful for the opportunity to collaborate with such experienced individuals, and I’m proud of how much I’ve learned throughout the process.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pictures-and-descriptions-of-3d-models">Pictures and descriptions of 3D Models<a href="https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models#pictures-and-descriptions-of-3d-models" class="hash-link" aria-label="Direct link to Pictures and descriptions of 3D Models" title="Direct link to Pictures and descriptions of 3D Models">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/traffic-calming-bumps-d2a6b985d3eb6149034f9ae8a9b0a18f.jpg" width="1273" height="955" class="img_ev3q">
+Traffic calming bumps: This object is versatile and low profile, used traffic control, it is effective at alerting drivers of low speed areas ahead</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/corner-island-de23bc117fb19ff9e61f2b20468d9892.jpg" width="1319" height="990" class="img_ev3q">
+Corner island: This object was created in order to provide safer turns for cyclists in city intersections while still allowing a safe place for pedestrians to stand, it gives bikers full protection from cars throughout the entire bike lane</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/parklet-802ace072fc2e416c7874344883c1482.jpg" width="1336" height="1002" class="img_ev3q">
+Parklet: These objects are a great use of space for extra seating around restaurants, parks, and rest areas in cities</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/picnic-bench-1448a3458e946a27412280f6ce9c642c.jpg" width="1257" height="942" class="img_ev3q">
+<img loading="lazy" src="https://3dstreet.org/assets/images/usps-mailbox-0b8b29bc51a837017e45ea5b9f132573.jpg" width="1244" height="933" class="img_ev3q">
+<img loading="lazy" src="https://3dstreet.org/assets/images/bin-694426cf92d987147a42f0abed3c1497.jpg" width="1261" height="946" class="img_ev3q">
+<img loading="lazy" src="https://3dstreet.org/assets/images/residential-mailbox-33ec480645fdd620520dc97d2c92a77f.jpg" width="1216" height="912" class="img_ev3q">
+Picnic table, USPS Mailbox, Bin, Residential Mailbox: Variations of these objects are common in nearly every city around the world, it seemed necessary to add them to the library of 3D Street for added realism to city scenes</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Working alongside Dr. Schlossberg, Kieran Farr, and the team at 3D Street has been an incredible experience, and I’m truly grateful for the opportunity to learn from such talented professionals. As I look ahead, I’m excited to embark on my next adventure in the design world—ideally with a design consultancy in Portland, Oregon—where I hope to collaborate with another group of creative, driven designers and continue growing both personally and professionally.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-these-traffic-safety-objects-now">Use these traffic safety objects now!<a href="https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models#use-these-traffic-safety-objects-now" class="hash-link" aria-label="Direct link to Use these traffic safety objects now!" title="Direct link to Use these traffic safety objects now!">​</a></h2>
+<p>Use these models now to create your own 3DStreet scene by launching the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">3DStreet app</a>, then click <code>+</code> to add a new layer, and find these new models in both the <code>Sidewalk Props</code> and <code>Dividers &amp; Traffic Control</code> categories.</p>]]></content>
+        <author>
+            <name>Tyler Riedell</name>
+            <uri>https://www.linkedin.com/in/tylerriedell/</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="pedestrian" term="pedestrian"/>
+        <category label="traffic calming" term="traffic calming"/>
+        <category label="open source" term="open source"/>
+        <category label="3d models" term="3d models"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New placemaking and street safety 3D models]]></title>
+        <id>https://3dstreet.org/blog/2024/10/04/</id>
+        <link href="https://3dstreet.org/blog/2024/10/04/"/>
+        <updated>2024-10-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Open-source 3D traffic safety device models as a result of a collaboration with the University of Oregon]]></summary>
+        <content type="html"><![CDATA[<p>Hi, I’m Tyler Riedell, a fourth-year product design student at the University of Oregon. This past summer, I had the privilege of collaborating with the incredibly talented team at 3DStreet to release several open-source street safety and sidewalk prop models.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/corner-island-de23bc117fb19ff9e61f2b20468d9892.jpg" width="1319" height="990" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://3dstreet.org/blog/2024/10/04/#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
+<p>I got involved with this project through my ongoing work with Dr. Marc Schlossberg at the University of Oregon, where I’ve been assisting him in exploring how Augmented Reality can improve street safety in Eugene, Oregon. This experience has given me the opportunity to merge my passion for design with city planning and street safety, topics I never thought I’d be involved in.</p>
+<p>This whole experience has been transformative for me, especially in sharpening my 3D modeling skills. As a product designer, I’m used to working with highly detailed models, often with enormous file sizes. But for the models I created to function on mobile AR platforms, I had to rewire how I approached 3D design. When Dr. Schlossberg initially told me to create models with the smallest polycount possible —- without losing their identity —- I was at a bit of a loss on where to begin.</p>
+<p>Working with Dr. Schlossberg and team of graphics professionals from 3DStreet like Kieran Farr and GnanaSai Reddy pushed me to expand my knowledge of low-poly model design and the associated pipeline for preparing 3D assets for high performance real-time XR applications -- an area I knew little about before this project. I’m incredibly grateful for the opportunity to collaborate with such experienced individuals, and I’m proud of how much I’ve learned throughout the process.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pictures-and-descriptions-of-3d-models">Pictures and descriptions of 3D Models<a href="https://3dstreet.org/blog/2024/10/04/#pictures-and-descriptions-of-3d-models" class="hash-link" aria-label="Direct link to Pictures and descriptions of 3D Models" title="Direct link to Pictures and descriptions of 3D Models">​</a></h2>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/traffic-calming-bumps-d2a6b985d3eb6149034f9ae8a9b0a18f.jpg" width="1273" height="955" class="img_ev3q">
+Traffic calming bumps: This object is versatile and low profile, used traffic control, it is effective at alerting drivers of low speed areas ahead</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/corner-island-de23bc117fb19ff9e61f2b20468d9892.jpg" width="1319" height="990" class="img_ev3q">
+Corner island: This object was created in order to provide safer turns for cyclists in city intersections while still allowing a safe place for pedestrians to stand, it gives bikers full protection from cars throughout the entire bike lane</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/parklet-802ace072fc2e416c7874344883c1482.jpg" width="1336" height="1002" class="img_ev3q">
+Parklet: These objects are a great use of space for extra seating around restaurants, parks, and rest areas in cities</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/picnic-bench-1448a3458e946a27412280f6ce9c642c.jpg" width="1257" height="942" class="img_ev3q">
+<img loading="lazy" src="https://3dstreet.org/assets/images/usps-mailbox-0b8b29bc51a837017e45ea5b9f132573.jpg" width="1244" height="933" class="img_ev3q">
+<img loading="lazy" src="https://3dstreet.org/assets/images/bin-694426cf92d987147a42f0abed3c1497.jpg" width="1261" height="946" class="img_ev3q">
+<img loading="lazy" src="https://3dstreet.org/assets/images/residential-mailbox-33ec480645fdd620520dc97d2c92a77f.jpg" width="1216" height="912" class="img_ev3q">
+Picnic table, USPS Mailbox, Bin, Residential Mailbox: Variations of these objects are common in nearly every city around the world, it seemed necessary to add them to the library of 3DStreet for added realism to city scenes</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://3dstreet.org/blog/2024/10/04/#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Working alongside Dr. Schlossberg, Kieran Farr, and the team at 3DStreet has been an incredible experience, and I’m truly grateful for the opportunity to learn from such talented professionals. As I look ahead, I’m excited to embark on my next adventure in the design world—ideally with a design consultancy in Portland, Oregon—where I hope to collaborate with another group of creative, driven designers and continue growing both personally and professionally.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-these-traffic-safety-objects-now">Use these traffic safety objects now!<a href="https://3dstreet.org/blog/2024/10/04/#use-these-traffic-safety-objects-now" class="hash-link" aria-label="Direct link to Use these traffic safety objects now!" title="Direct link to Use these traffic safety objects now!">​</a></h2>
+<p>Use these models now to create your own 3DStreet scene by launching the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">3DStreet app</a>, then click <code>+</code> to add a new layer, and find these new models in both the <code>Sidewalk Props</code> and <code>Dividers &amp; Traffic Control</code> categories.</p>]]></content>
+        <author>
+            <name>Tyler Riedell</name>
+            <uri>https://www.linkedin.com/in/tylerriedell/</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="pedestrian" term="pedestrian"/>
+        <category label="traffic calming" term="traffic calming"/>
+        <category label="open source" term="open source"/>
+        <category label="3d models" term="3d models"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Feature: Microsoft Login and Admin Setup Guide]]></title>
         <id>https://3dstreet.org/blog/2024/09/02/microsoft-login-and-admin-setup</id>
