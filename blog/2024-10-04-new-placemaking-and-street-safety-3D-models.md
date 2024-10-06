@@ -33,10 +33,10 @@ Parklet: These objects are a great use of space for extra seating around restaur
 ![](./images/2024-10-04/usps-mailbox.jpg)
 ![](./images/2024-10-04/bin.jpg)
 ![](./images/2024-10-04/residential-mailbox.jpg)
-Picnic table, USPS Mailbox, Bin, Residential Mailbox: Variations of these objects are common in nearly every city around the world, it seemed necessary to add them to the library of 3DStreet for added realism to city scenes
+Picnic table, USPS Mailbox, Bin, Residential Mailbox: Variations of these objects are common in nearly every city around the world, it seemed necessary to add them to the library of 3D Street for added realism to city scenes
 
 ## Conclusion
-Working alongside Dr. Schlossberg, Kieran Farr, and the team at 3DStreet has been an incredible experience, and I’m truly grateful for the opportunity to learn from such talented professionals. As I look ahead, I’m excited to embark on my next adventure in the design world—ideally with a design consultancy in Portland, Oregon—where I hope to collaborate with another group of creative, driven designers and continue growing both personally and professionally.
+Working alongside Dr. Schlossberg, Kieran Farr, and the team at 3D Street has been an incredible experience, and I’m truly grateful for the opportunity to learn from such talented professionals. As I look ahead, I’m excited to embark on my next adventure in the design world—ideally with a design consultancy in Portland, Oregon—where I hope to collaborate with another group of creative, driven designers and continue growing both personally and professionally.
 
 ## Use these traffic safety objects now!
 Use these models now to create your own 3DStreet scene by launching the [3DStreet app](https://3dstreet.app/), then click `+` to add a new layer, and find these new models in both the `Sidewalk Props` and `Dividers & Traffic Control` categories.
