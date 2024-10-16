@@ -14,6 +14,7 @@ import {
 } from "../../icons";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import MuxPlayer from "@mux/mux-player-react";
+import { YouTubeIcon } from "../../icons/socials";
 
 export default function Home({ recentPosts }) {
   const {
@@ -189,20 +190,20 @@ export default function Home({ recentPosts }) {
 
           <div className="relative_wrapper">
             <aside className="socials">
-              <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
-                <DiscordIcon />
-              </a>
-              <a href="https://twitter.com/3dstreetapp" target="_blank">
-                <XIcon />
-              </a>
               <a
                 href="https://www.linkedin.com/company/3dstreet/"
                 target="_blank"
               >
                 <LinkedInIcon />
               </a>
-              <a href="https://urbanists.social/@3dstreet" target="_blank">
-                <MastodonIcon />
+              <a href="https://youtube.com/@3dstreetapp" target="_blank">
+                <YouTubeIcon />
+              </a>
+              <a href="https://twitter.com/3dstreetapp" target="_blank">
+                <XIcon />
+              </a>
+              <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
+                <DiscordIcon />
               </a>
             </aside>
 
