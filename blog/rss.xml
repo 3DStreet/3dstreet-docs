@@ -4,10 +4,42 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Fri, 04 Oct 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Oct 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Announcing Open Street Map for 3DStreet Integration]]></title>
+            <link>https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration</link>
+            <guid>https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration</guid>
+            <pubDate>Fri, 25 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover how 3DStreet is expanding its mapping capabilities with Open Street Map and GeoJSON integration, providing new options for areas without 3D tiles.]]></description>
+            <content:encoded><![CDATA[<p>High resolution 3D map tiles have become a popular choice for adding immersive local context to 3DStreet scenes. However, sometimes the most interesting places on Earth have the least availability of detailed 3D map tiles -- such as large parts of Africa and South America. Even for locations with detailed 3D tiles coverage, we've heard from users that sometimes the realism of the 3D tiles can distract from the focus of presenting proposed street projects.</p>
+<p>In these cases, our new integration with Open Street Map (OSM) offers new dimensions to our mapping capabilities.</p>
+<p><img loading="lazy" alt="Open Street Map Integration Screenshot of San Francisco City Hall" src="https://3dstreet.org/assets/images/open-street-map-integration-sf-city-hall-ff93419ac7bfad69485ea73d4bdb640a.jpg" width="1920" height="1086" class="img_ev3q">
+<b><i>A screenshot of the new 3DStreet OSM integration showing San Francisco City Hall.</i></b></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introducing-open-street-map-integration">Introducing Open Street Map Integration<a href="https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration#introducing-open-street-map-integration" class="hash-link" aria-label="Direct link to Introducing Open Street Map Integration" title="Direct link to Introducing Open Street Map Integration">​</a></h2>
+<p>3DStreet now offers integration with Open Street Map (OSM) as a new Geospatial Layer map source. This integration provides 2D political map ground tiles and 2.5D buildings through OSM GeoJSON buildings data. This feature is now available for all Geospatial Pro Plan users in addition to the existing map data providers Google Maps 3D Tiles and Mapbox 2D Satellite Maps.</p>
+<p><img loading="lazy" alt="Open Street Map Integration" src="https://3dstreet.org/assets/images/open-street-map-geospatial-layer-ui-b4c17ae4a0e0a54f0f0db3036b20430e.jpg" width="1700" height="1150" class="img_ev3q">
+<b><i>Click Geospatial Layer &gt; Map Source &gt; osm3d to use the new OSM data source.</i></b></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-advantage-of-open-source-maps">The Advantage of Open Source Maps<a href="https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration#the-advantage-of-open-source-maps" class="hash-link" aria-label="Direct link to The Advantage of Open Source Maps" title="Direct link to The Advantage of Open Source Maps">​</a></h2>
+<p>Integrating OSM with 3DStreet continues our commitment to open-source collaboration. A key advantage of the OSM approach is that it allows you to leverage the existing OSM community and resources, ensuring that the data remains up-to-date and accessible to all. The 3DStreet integration today is "read only" and relies on existing OSM data, but <a href="https://wiki.openstreetmap.org/wiki/Contribute_map_data" target="_blank" rel="noopener noreferrer">users wishing to update map data can do so through a variety of tools from the OSM ecosystem</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="more-than-just-tiles---geojson-buildings">More than just tiles - GeoJSON buildings<a href="https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration#more-than-just-tiles---geojson-buildings" class="hash-link" aria-label="Direct link to More than just tiles - GeoJSON buildings" title="Direct link to More than just tiles - GeoJSON buildings">​</a></h2>
+<p>In addition to Open Street Map 2D ground tiles, the new OSM integration provides basic building geometry through GeoJSON OSM data sources. The basic building footprints provide just enough context in most cases for locals to understand the location of a proposed project, while not distracting from the focus on the proposed project itself.</p>
+<p>This GeoJSON parser also opens the door to future integration of alternative geospatial data sources, although today this only supports closed polygons for buildings.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-frame-component-for-osm-integration">A-Frame Component for OSM Integration<a href="https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration#a-frame-component-for-osm-integration" class="hash-link" aria-label="Direct link to A-Frame Component for OSM Integration" title="Direct link to A-Frame Component for OSM Integration">​</a></h2>
+<p>Similar to our other integrations, we've chosen to "build in the open" by contributing improvements to an existing A-Frame <code>OSM4VR</code> component designed by anonymous community member <code>ctrlw</code>.</p>
+<p>You can view the original A-Frame component by <em>ctrlw</em> here <a href="https://github.com/ctrlw/osm4vr" target="_blank" rel="noopener noreferrer">https://github.com/ctrlw/osm4vr</a> and <a href="https://github.com/3dstreet/osm4vr" target="_blank" rel="noopener noreferrer">check out the 3DStreet version here</a> which adds webpack support to better handle dependencies as well as custom features to allow for integration with the 3DStreet Editor app. Like all parts of 3DStreet, we welcome community contributions to this component and others.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next?<a href="https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
+<p>Looking ahead, we're excited about the potential to support custom tiles. In addition to the political map, we aim to move beyond this basic OSM implementation and support private servers and alternate tile types. Our ultimate goal is to allow users to specify which tile type they prefer, providing even greater flexibility and customization.</p>
+<p>Stay tuned for more updates as we continue to enhance 3DStreet's mapping capabilities and explore new ways to empower our users to reimagine public spaces.</p>
+<p>You can help us shape the future of the 3DStreet OSM integration by providing your feedback through <a href="mailto:team@3dstreet.com" target="_blank" rel="noopener noreferrer">email</a>, <a href="https://github.com/3dstreet/3dstreet/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>, or our public Discord server (link in footer).</p>]]></content:encoded>
+            <category>product update</category>
+            <category>open street map</category>
+            <category>geojson</category>
+            <category>mapping</category>
+            <category>open source</category>
+        </item>
         <item>
             <title><![CDATA[New placemaking and street safety 3D models]]></title>
             <link>https://3dstreet.org/blog/2024/10/04/new-placemaking-and-street-safety-3D-models</link>
