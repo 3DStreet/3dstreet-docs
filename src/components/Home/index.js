@@ -520,13 +520,14 @@ export default function Home({ recentPosts }) {
 
         {/* TRUSTED BY SECTION */}
         <section className="st_trusted_by">
-          <h2>TRUSTED BY</h2>
+          <h2>USED BY</h2>
           <div className="st_trusted_by_companies">
             <div className="st_trusted_by_company">
-              <img
+              {/* <img
                 src="/img/website/trusted-comp1.png"
                 alt="University of Oregon"
-              />
+              /> */}
+              University of Oregon
             </div>
             <div className="st_trusted_by_company">
               <img
@@ -537,11 +538,14 @@ export default function Home({ recentPosts }) {
             <div className="st_trusted_by_company">
               <img
                 src="/img/website/trusted-comp3.png"
-                alt="Bicycle coalition"
+                alt="Bicycle Coalition of Greater Philadelphia"
               />
             </div>
             <div className="st_trusted_by_company">
-              <img src="/img/website/trusted-comp4.png" alt="Streetmix" />
+              World Bank Group
+            </div>
+            <div className="st_trusted_by_company">
+              City of Silverton, Oregon
             </div>
           </div>
         </section>
