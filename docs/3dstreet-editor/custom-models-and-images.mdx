@@ -1,0 +1,93 @@
+---
+sidebar_position: 6
+---
+import MuxPlayer from '@mux/mux-player-react';
+
+# Adding Custom Models and Images to 3DStreet Scenes
+
+## Importing 3D Models
+
+3DStreet supports importing custom 3D models in glTF / GLB format to enhance your street scenes with unique objects and elements.
+
+<MuxPlayer
+    streamType="on-demand"
+    playbackId="xf7ytm7VAP9QTLtyLL3Cs01Jul7rHHM26"
+    primaryColor="#FFFFFF"
+    secondaryColor="#000000"
+    accentColor="#653CB0"
+/>
+
+### Prerequisites
+* GLB format 3D model files
+* Public URL access to your hosted models, usually via web hosting service (e.g., Glitch.com)
+
+### Validation and Hosting
+
+Before importing, double check that your file is compatible with three.js by validating your GLB file at [gltf-viewer.donmccurdy.com](https://gltf-viewer.donmccurdy.com/). If your model is not compatible, you may need to convert it to a compatible format.
+
+To host your file you will need a public URL to access it. You can use a web hosting service like Glitch.com to host your files:
+
+* Create a [Glitch.com](https://glitch.com/) account
+* Create a new project
+* Upload your GLB file to the Assets section
+* Copy the public URL for your model
+
+### Adding Models to Your Scene
+
+* In 3DStreet Editor, open or create a scene
+* Click "Custom Layers"
+* Select "GLTF model from URL"
+* Paste your model's public URL
+* Click OK to add the model
+
+### Adjusting Your Model
+
+Use the Properties panel to modify:
+* Scale (adjust size on different axes)
+* Position (move model within the scene)
+* Rotation (orient model as needed)
+
+
+## Importing Images
+
+3DStreet allows you to import custom images to add signage, existing conditions photos, maps, and other visual elements to your scenes.
+
+<MuxPlayer
+    streamType="on-demand"
+    playbackId="7eUdcuA6vIAJmdooxO02va1lzdd52HqES"
+    primaryColor="#FFFFFF"
+    secondaryColor="#000000"
+    accentColor="#653CB0"
+/>
+
+### Prerequisites
+* Image files in JPG, PNG, or WEBP format
+* Public URL for your images, usually via a web hosting service (e.g., Glitch.com)
+
+
+### Adding Images
+Host your image:
+
+* Upload to [Glitch.com](https://glitch.com) Assets
+* Copy the public URL
+
+In 3DStreet Editor:
+
+* Click "Custom Layers"
+* Select "Place New Image Entity"
+* Paste your image URL
+* Click OK
+
+### Positioning and Adjusting
+
+* Use Transform Controls for position
+* Rotate images to face desired direction
+* Adjust scale in Properties panel
+* Consider mounting images on existing scene elements
+
+### Best Practices
+
+* Validate file formats before importing
+* Scale elements appropriately for scene realism
+* Position near relevant street features
+* Use double-click to zoom for precise placement
