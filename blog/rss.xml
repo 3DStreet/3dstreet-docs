@@ -4,10 +4,64 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Fri, 25 Oct 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Visualizing Climate Resilient Infrastructure: Kiritimati's Sustainable Streets]]></title>
+            <link>https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets</link>
+            <guid>https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets</guid>
+            <pubDate>Sun, 15 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[A World Bank project used 3DStreet visualization tools to re-imagine streets on Kiritimati Island to accommodate both current and future residents in the context of climate change and sea level rise, while improving safety and sustainability.]]></description>
+            <content:encoded><![CDATA[<p>On Kiritimati Island (pronounced kee-ris-muh s) our team partnered with Sam Johnson and the World Bank Transport team to visualize how sustainable transportation infrastructure can support both current and future residents on the world's largest coral atoll.</p>
+<iframe width="100%" style="aspect-ratio:16 / 9" src="https://www.youtube.com/embed/UepgiC2rFF0?si=0NXQTUbkllC4PKup" title="YouTube video player" frameborder="0" allow="autoplay;encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="an-island-at-the-crossroads">An Island at the Crossroads<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#an-island-at-the-crossroads" class="hash-link" aria-label="Direct link to An Island at the Crossroads" title="Direct link to An Island at the Crossroads">​</a></h2>
+<p>Located in the central Pacific Ocean, Kiritimati Island faces unique challenges as climate change reshapes the region. While the island's current population numbers only a few thousand, it may soon need to accommodate more residents from Kiribati’s other island which is increasingly vulnerable to rising sea levels.</p>
+<p><img loading="lazy" alt="Global and local map of Kiritimati Island" src="https://3dstreet.org/assets/images/kiritimati-global-map-d88ef03bc93701e4f6f600e18b075f46.jpg" width="1200" height="685" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="planning-ahead-for-change">Planning Ahead for Change<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#planning-ahead-for-change" class="hash-link" aria-label="Direct link to Planning Ahead for Change" title="Direct link to Planning Ahead for Change">​</a></h2>
+<p>The island's main road network currently reflects its small population and historic development patterns. The existing infrastructure is basic, with limited provisions for pedestrians, cyclists, or public transport. As we look toward a future where Kiritimati could play a crucial role in regional climate migration, these roads will need to evolve to serve a larger, more diverse population.</p>
+<p><img loading="lazy" alt="Current road conditions from Mapillary" src="https://3dstreet.org/assets/images/existing-conditions-kiritimati-london-28def4afcd3379667815e0e80fcc1f02.jpg" width="1200" height="683" class="img_ev3q"></p>
+<p>The current road infrastructure supports:</p>
+<ul>
+<li>Private vehicles, motorcycles, and cargo trucks</li>
+<li>Limited pedestrian movement</li>
+<li>Basic access to key facilities and settlements</li>
+<li>Connection between main population centers like London Town and Banana</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="from-reality-to-digital-twin">From Reality to Digital Twin<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#from-reality-to-digital-twin" class="hash-link" aria-label="Direct link to From Reality to Digital Twin" title="Direct link to From Reality to Digital Twin">​</a></h2>
+<p>Working with key stakeholders including local government authorities and the <a href="https://irap.org/" target="_blank" rel="noopener noreferrer">International Road Assessment Program</a>, the team explored design solutions that would create safer, more inclusive streets while preparing for potential population growth.</p>
+<p>Using 3DStreet's visualization capabilities, we created digital twins of both current conditions and proposed improvements across three critical areas that represent the diverse needs of transportation infrastructure on the island.</p>
+<p><img loading="lazy" alt="Project areas of focus" src="https://3dstreet.org/assets/images/local-aerial-map-kiritimati-a104ed8352e425131a339b7361584413.jpg" width="800" height="455" class="img_ev3q">
+<em>Three areas of focus for the Kiritimati project</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reimagining-street-space">Reimagining Street Space<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#reimagining-street-space" class="hash-link" aria-label="Direct link to Reimagining Street Space" title="Direct link to Reimagining Street Space">​</a></h2>
+<p>Proposed designs incorporate several key features to support sustainable mobility:</p>
+<ul>
+<li>Wider, shaded walkways to protect pedestrians from the tropical sun</li>
+<li>Slow speed zones in urban areas that safely mix vehicles, motorcycles, and bicycles</li>
+<li>Dedicated bus bays to support future public transport services</li>
+<li>Enhanced safety features based on iRAP assessment recommendations</li>
+</ul>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="making-the-case-for-change">Making the Case for Change<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#making-the-case-for-change" class="hash-link" aria-label="Direct link to Making the Case for Change" title="Direct link to Making the Case for Change">​</a></h2>
+<p>By combining Mapillary's street-level imagery with 3DStreet's visualization tools, we were able to create compelling before-and-after comparisons that helped stakeholders understand the tangible benefits of the proposed changes. This approach was particularly valuable given the unique context of planning for both current needs and potential future scenarios.</p>
+<p>The visualization process helped demonstrate how relatively modest infrastructure improvements could significantly enhance safety and accessibility while building climate resilience. These visualizations are proving instrumental in making the case for infrastructure funding that considers not just today's needs, but tomorrow's challenges.</p>
+<p><img loading="lazy" alt="Cross section" src="https://3dstreet.org/assets/images/cross-section-kiritimati-alt-2-b5ac5d507d6284e22b337fe9257fdc63.jpg" width="1200" height="683" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stretching-the-capabilities-of-3dstreet">Stretching the Capabilities of 3DStreet<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#stretching-the-capabilities-of-3dstreet" class="hash-link" aria-label="Direct link to Stretching the Capabilities of 3DStreet" title="Direct link to Stretching the Capabilities of 3DStreet">​</a></h2>
+<p>The Kiritimati project pushed our platform in exciting new directions. While 3DStreet was originally designed for visualizing individual street segments, the World Bank team's requirements encouraged us to significantly expand our capabilities. The project's scope required handling multiple kilometers of roadway across three distinct sections, driving us to optimize our rendering pipeline while maintaining detail.</p>
+<p>Creating locally appropriate assets and smooth fly-through animations that transition between current and proposed conditions required new approaches to both asset development and camera control. These technical challenges led to innovations in scene management and rendering that have since become standard features in our platform, benefiting visualization projects worldwide.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-forward">Looking Forward<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#looking-forward" class="hash-link" aria-label="Direct link to Looking Forward" title="Direct link to Looking Forward">​</a></h2>
+<p>As climate change continues to impact Pacific island nations, the importance of forward-thinking infrastructure planning becomes increasingly critical. Through this project, we're demonstrating how digital twin technology can help communities like Kiritimati prepare for complex demographic and environmental changes while improving quality of life for current residents.</p>
+<p>The visualizations we've created are helping stakeholders understand how streets can be transformed from basic transport corridors into vibrant, safe spaces that support sustainable mobility for all users. As we continue to refine these designs, we're excited to see how this approach could serve as a model for other islands facing similar challenges across the Pacific region.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="read-more">Read More<a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets#read-more" class="hash-link" aria-label="Direct link to Read More" title="Direct link to Read More">​</a></h2>
+<p><a href="https://irap.org/2024/12/kiritimati-island-concept-design-aims-for-4-star-safety/" target="_blank" rel="noopener noreferrer">Read the press release from International Road Assessment Program</a></p>
+<p><em>Disclaimer: The views expressed in this blog post do not necessarily reflect the views of the World Bank Group.</em></p>]]></content:encoded>
+            <category>case study</category>
+            <category>climate change</category>
+            <category>sustainable streets</category>
+            <category>mapillary</category>
+        </item>
         <item>
             <title><![CDATA[Announcing Open Street Map for 3DStreet Integration]]></title>
             <link>https://3dstreet.org/blog/2024/10/25/announcing-open-street-map-and-3dstreet-integration</link>
