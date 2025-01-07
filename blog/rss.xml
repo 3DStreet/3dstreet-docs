@@ -4,10 +4,62 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Sun, 15 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Visualizing Sustainable Transportation: Dodoma's Urban Evolution]]></title>
+            <link>https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution</link>
+            <guid>https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution</guid>
+            <pubDate>Wed, 08 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Transport Analysts from Dodoma, Tanzania used 3DStreet visualization tools for a World Bank project to re-imagine Dodoma Morogoro Road, a major artery in Tanzania's capital city.]]></description>
+            <content:encoded><![CDATA[<p>In Tanzania's rapidly growing capital city of Dodoma, our team used 3DStreet to create digital twins of proposed street safety improvements along critical corridors, helping stakeholders visualize and evaluate sustainable transportation alternatives for this evolving urban center.</p>
+<iframe width="100%" style="aspect-ratio:16 / 9" src="https://www.youtube.com/embed/Zi1mrf2ufzU?si=ty0lTdGAdhixuV8d" title="YouTube video player" frameborder="0" allow="autoplay;encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-capital-city-in-transition">A Capital City in Transition<a href="https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution#a-capital-city-in-transition" class="hash-link" aria-label="Direct link to A Capital City in Transition" title="Direct link to A Capital City in Transition">​</a></h2>
+<p>Dodoma, located about 400 kilometers inland from Tanzania's largest coastal city Dar es Salaam, is experiencing unprecedented growth as it embraces its role as the national capital. Formally declared the capital in 1973 and home to the National Parliament since 1995, the city has seen accelerated development since 2016 when the government began actively relocating institutions from Dar es Salaam.</p>
+<p><img loading="lazy" alt="Area map" src="https://3dstreet.org/assets/images/dodoma-tanzania-google-earth-e224871355cb6e3f8443810807ecf61a.jpg" width="971" height="530" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="growing-pains-on-major-corridors">Growing Pains on Major Corridors<a href="https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution#growing-pains-on-major-corridors" class="hash-link" aria-label="Direct link to Growing Pains on Major Corridors" title="Direct link to Growing Pains on Major Corridors">​</a></h2>
+<p>The city's main arteries, particularly the Dodoma-Morogoro Road, currently reflect the growing pains of this urban transformation. The road serves multiple functions as it traverses urban, rural and regional landscapes, requiring careful design consideration to accommodate various user demands while maintaining principles of sustainability and connectivity.</p>
+<p>Today, this vital corridor operates as a two-lane arterial road accommodating a diverse mix of traffic:</p>
+<ul>
+<li>Motorcycles and tuk-tuks (bajaji)</li>
+<li>Private cars and vans</li>
+<li>Light and heavy commercial vehicles</li>
+<li>Public transportation buses</li>
+</ul>
+<p>While the current infrastructure technically supports both walking and cycling, it predominantly caters to motorized travel - creating challenges for sustainable urban mobility.</p>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="from-concept-to-digital-twin">From Concept to Digital Twin<a href="https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution#from-concept-to-digital-twin" class="hash-link" aria-label="Direct link to From Concept to Digital Twin" title="Direct link to From Concept to Digital Twin">​</a></h2>
+<p>Our team worked with key stakeholders including Tanzania National Roads Agency (TANROADS), Tanzania Rural and Urban Roads Agency (TARURA), Land Transport Regulatory Authority (LATRA) and Dodoma City Council (DCC) to explore treatments that would better support regional infrastructure needs.</p>
+<p>As analysts entering the workforce, our background in civil engineering was very limited compared to some of our tenured colleagues and professional partners, making it challenging to convert traditional engineering drawings into visualizations that we could then leverage for our work with stakeholders. That's when we discovered 3DStreet, which allowed us to rapidly prototype different scenarios from the foundational engineering work of our professional staff and partners.</p>
+<p>Using 3DStreet's prototyping capabilities, we created digital twins of both existing conditions and proposed changes:</p>
+<ul>
+<li>A six-lane dual carriageway with 2 dedicated public transport lanes for busses</li>
+<li>Two-lane service roads on both sides for local access</li>
+<li>Wide, shaded walkways and cycleways for non-motorized transport</li>
+<li>Integration with adjacent land use to support sustainable urban development</li>
+</ul>
+<p><mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player><br><strong>The proposed design creates dedicated space for all modes while improving safety and connectivity.</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bringing-the-vision-to-life">Bringing the Vision to Life<a href="https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution#bringing-the-vision-to-life" class="hash-link" aria-label="Direct link to Bringing the Vision to Life" title="Direct link to Bringing the Vision to Life">​</a></h2>
+<p>We found the ability to instantly transform cross-sections designed in Streetmix to interactive 3D visualizations with satellite map layers in 3DStreet to be transformative to understanding the true impacts and benefits of the proposed project in context with the existing environment.</p>
+<p>Also, using a combination of 3DStreet and Mapillary’s street view imagery to create a before and after first-person perspective was particularly impactful - it helped both our team and our local partners understand how the proposed changes would affect the actual experience of using the street. Being able to visualize the separation between modes and the scale of proposed facilities made the benefits much more tangible.</p>
+<p>By combining all the elements of 3D GIS data and Street elements from 3DStreet combined with the use of real-world ground truth from Mapillary imagery, we were able to create a very effective video visualization of the project background and potential future scenarios.</p>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-ahead">Looking Ahead<a href="https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution#looking-ahead" class="hash-link" aria-label="Direct link to Looking Ahead" title="Direct link to Looking Ahead">​</a></h2>
+<p>As our internship draws to a close, we're excited to see Dodoma continue its trajectory of growth aided by our World Bank colleagues investing in Tanzania’s future. We’re proud of the work we’ve done to create digital twin representations of these projects to better engage local stakeholders, and hope that the team is able to leverage our work to envision the future of our country’s sustainable transportation infrastructure.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="read-more">Read More<a href="https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-urban-evolution#read-more" class="hash-link" aria-label="Direct link to Read More" title="Direct link to Read More">​</a></h2>
+<p><a href="https://projects.worldbank.org/en/projects-operations/project-detail/P176623" target="_blank" rel="noopener noreferrer">Read more information about the project on the World Bank website</a></p>
+<p><em>Disclaimer: The views expressed in this blog post do not necessarily reflect the views of the World Bank Group.</em></p>]]></content:encoded>
+            <category>urban planning</category>
+            <category>complete streets</category>
+            <category>digital twins</category>
+            <category>urban transport</category>
+            <category>rapid visualization</category>
+            <category>case study</category>
+        </item>
         <item>
             <title><![CDATA[Visualizing Climate Resilient Infrastructure: Kiritimati's Sustainable Streets]]></title>
             <link>https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets</link>
