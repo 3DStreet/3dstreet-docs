@@ -2,11 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2025-01-08T00:00:00.000Z</updated>
+    <updated>2025-01-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New Feature Roundup: Map Layer Blending and Environment Settings]]></title>
+        <id>https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings</id>
+        <link href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings"/>
+        <updated>2025-01-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TBD]]></summary>
+        <content type="html"><![CDATA[<p>Introducing Map Blending and Environment Settings in 3DStreet! When combined these can allow for a wide range of creative options to mix street scenes with geospatial layers.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/blending-grid-resized-c8cfe8f7ae4fd9eddc66d051f6214478.webp" width="1200" height="799" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="map-layer-blending">Map Layer Blending<a href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings#map-layer-blending" class="hash-link" aria-label="Direct link to Map Layer Blending" title="Direct link to Map Layer Blending">​</a></h2>
+<p>One of the most exciting new features we've been working on is adding a number of custom blending options for 3D map layers. To enable this, use the new Blending option in the Geospatial Layers panel, then choose your desired Blend Mode.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/ui-geo-blending-c556a0fcb5940b9068185672f9d19f5e.jpg" width="948" height="586" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="environment-settings">Environment Settings<a href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings#environment-settings" class="hash-link" aria-label="Direct link to Environment Settings" title="Direct link to Environment Settings">​</a></h2>
+<p>A common request is changing background and colorization of the environment in 3DStreet scenes. This is now possible with the new Environment Settings panel. Choose from presets including day, night, sunny morning, cloudy afternoon, and more. Or choose the color preset to select a custom background color.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/ui-environment-selector-8d2201dedf2e87009fb8ab11fd6dc35c.jpg" width="942" height="591" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="combining-blending-and-environment-settings">Combining Blending and Environment Settings<a href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings#combining-blending-and-environment-settings" class="hash-link" aria-label="Direct link to Combining Blending and Environment Settings" title="Direct link to Combining Blending and Environment Settings">​</a></h2>
+<p>By combining blending and custom background colors you can create a huge range of creative interpretations for your scenes. Here's an example using the Dark blending mode and adjusting a custom background color:</p>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="focus-animation-adjustment">Focus Animation Adjustment<a href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings#focus-animation-adjustment" class="hash-link" aria-label="Direct link to Focus Animation Adjustment" title="Direct link to Focus Animation Adjustment">​</a></h2>
+<p>When you double-click on an object in the viewport or in the layers panel, you'll notice a brief focus animation as the camera zooms into the focused object. The new Focus Animation Speed selector allows you to adjust the speed of the animation which can make it more suitable for creating quick videos and sharing. The focus animation is a simple way to add fly through effects to your scenes when sharing live or when recording with screen capture software. Click Viewer &gt; Focus animation &gt; Speed &gt; slow to slow down the animation.</p>
+<p><img loading="lazy" src="https://3dstreet.org/assets/images/ui-focus-speed-selector-937662504ecfef420e6ba767e4a65342.jpg" width="933" height="615" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="combining-everything-together">Combining Everything Together<a href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings#combining-everything-together" class="hash-link" aria-label="Direct link to Combining Everything Together" title="Direct link to Combining Everything Together">​</a></h2>
+<p>Combining all of these features together can create a wide range of creative options for your scenes.</p>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try it out!<a href="https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings#try-it-out" class="hash-link" aria-label="Direct link to Try it out!" title="Direct link to Try it out!">​</a></h2>
+<p>Click the "Launch App" button in the upper-right hand corner to play with these features (Pro plan required for Geospatial integrations) or join our discord below to provide more feedback on these features and what else you'd like to see in the future.</p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="product" term="product"/>
+        <category label="new feature" term="new feature"/>
+        <category label="environment" term="environment"/>
+        <category label="geospatial" term="geospatial"/>
+        <category label="google maps" term="google maps"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Visualizing Sustainable Transportation: Dodoma's Urban Evolution]]></title>
         <id>https://3dstreet.org/blog/2025/01/08/visualizing-sustainable-transportation-dodoma-tanzania-urban-evolution</id>
