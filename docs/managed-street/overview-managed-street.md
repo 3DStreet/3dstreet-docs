@@ -13,5 +13,5 @@ Under the hood, this feature is supported by a new "Managed Street JSON" format,
 ## Key elements
 
 - [Managed Street Component](./component-managed-street.md)
-- [Street Align Component](./street-align.md)
-- [Street Ground Component](./street-ground.md)
+- [Street Segment Component](./component-street-segment.md)
+- [Managed Street JSON Format](./managed-street-json-format.md)
