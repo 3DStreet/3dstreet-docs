@@ -1,6 +1,6 @@
 ---
 title: "New Feature Roundup: Map Layer Blending and Environment Settings"
-description: TBD
+description: Introducing blending options for 3D map layers and environment settings for customizing the background and colorization of the environment in 3DStreet scenes.
 authors: [kfarr]
 tags: [product, new feature, environment, geospatial, google maps]
 image: ./images/2025-01-31/blending-grid-resized.webp
