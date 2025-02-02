@@ -182,29 +182,6 @@ Striping Types:
 }
 ```
 
-### Center Turn Lane
-```javascript
-{
-  name: "Center Turn Lane",
-  type: "drive-lane",
-  surface: "asphalt",
-  color: "#ffffff",
-  level: 0,
-  width: 3.048,
-  generated: {
-    stencil: [{
-      modelsArray: "left",
-      cycleOffset: 0.6,
-      spacing: 20,
-      direction: "outbound"
-    }],
-    striping: [{
-      striping: "solid-dashed-yellow"
-    }]
-  }
-}
-```
-
 ## Notes
 
 - All measurements should be in meters

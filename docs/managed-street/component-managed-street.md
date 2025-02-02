@@ -25,6 +25,59 @@ A custom sidebar in 3DStreet Editor allows users to edit a subset of `managed-st
 | sourceValue | string    | null    | The value corresponding to the sourceType (URL or JSON string) |
 | synchronize | boolean   | false   | When set to true, triggers a refresh from the source |
 
+### Data Source Support
+
+#### Streetmix URL
+
+Supports importing street layouts from Streetmix URLs:
+
+```html
+<a-entity managed-street="sourceType: streetmix-url; sourceValue: https://streetmix.net/..."></a-entity>
+```
+
+#### Streetplan URL
+
+Supports importing street layouts from Streetplan JSON URLs:
+
+```html
+<a-entity managed-street="sourceType: streetplan-url; sourceValue: https://..."></a-entity>
+```
+
+#### JSON Blob
+
+Supports direct JSON configuration:
+
+```html
+<a-entity managed-street="sourceType: json-blob; sourceValue: '{...}'"></a-entity>
+```
+
+### JSON Schema
+
+If `json-blob` sourceType is used, the component expects street data in Managed Street JSON format:
+
+```javascript
+{
+  name: string,           // Name of the street
+  width: number,         // Total width in meters
+  length: number,        // Length in meters
+  segments: [{           // Array of segment objects
+    type: string,        // Segment type (e.g., 'drive-lane')
+    width: number,       // Width in meters
+    name: string,        // Display name
+    level: number,       // Vertical offset (0 or 1)
+    direction: string,   // 'inbound', 'outbound', or 'none'
+    color: string,       // Hex color code
+    surface: string,     // Surface type (e.g., 'asphalt')
+    generated?: {        // Optional generated content
+      striping?: array,  // Striping configurations
+      clones?: array    // Clone configurations
+    }
+  }]
+}
+```
+
+[For additional details on Managed Street JSON, see the full documentation here.](./managed-street-json-format.md).
+
 ### Dependencies
 
 This component automatically adds the following components if they don't exist:
@@ -68,57 +121,6 @@ Reloads and parses data from the specified source.
 ```javascript
 const street = document.querySelector('[managed-street]');
 street.components['managed-street'].refreshFromSource();
-```
-
-### Data Source Support
-
-#### Streetmix URL
-
-Supports importing street layouts from Streetmix URLs:
-
-```html
-<a-entity managed-street="sourceType: streetmix-url; sourceValue: https://streetmix.net/..."></a-entity>
-```
-
-#### Streetplan URL
-
-Supports importing street layouts from Streetplan JSON URLs:
-
-```html
-<a-entity managed-street="sourceType: streetplan-url; sourceValue: https://..."></a-entity>
-```
-
-#### JSON Blob
-
-Supports direct JSON configuration:
-
-```html
-<a-entity managed-street="sourceType: json-blob; sourceValue: '{...}'"></a-entity>
-```
-
-### JSON Schema
-
-The component expects street data in the following format:
-
-```javascript
-{
-  name: string,           // Name of the street
-  width: number,         // Total width in meters
-  length: number,        // Length in meters
-  segments: [{           // Array of segment objects
-    type: string,        // Segment type (e.g., 'drive-lane')
-    width: number,       // Width in meters
-    name: string,        // Display name
-    level: number,       // Vertical offset (0 or 1)
-    direction: string,   // 'inbound', 'outbound', or 'none'
-    color: string,       // Hex color code
-    surface: string,     // Surface type (e.g., 'asphalt')
-    generated?: {        // Optional generated content
-      striping?: array,  // Striping configurations
-      clones?: array    // Clone configurations
-    }
-  }]
-}
 ```
 
 

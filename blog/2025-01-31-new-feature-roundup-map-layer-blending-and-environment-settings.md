@@ -1,6 +1,5 @@
 ---
 title: "New Feature Roundup: Map Layer Blending and Environment Settings"
-description: TBD
 authors: [kfarr]
 tags: [product, new feature, environment, geospatial, google maps]
 image: ./images/2025-01-31/blending-grid-resized.webp

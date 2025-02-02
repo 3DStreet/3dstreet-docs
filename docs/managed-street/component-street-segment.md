@@ -26,7 +26,7 @@ A custom sidebar in 3DStreet Editor allows users to edit a subset of `street-seg
 
 ## Segment Types
 
-The component includes several predefined segment types with specific configurations:
+The component includes several predefined segment types with specific configurations. These are intended to be used as a starting point for creating custom segment types.
 
 ### Drive Lane
 ```javascript
@@ -150,6 +150,5 @@ Calculates texture repeat and offset values based on segment dimensions.
 
 ## Known Limitations
 
-- Surface textures must be present via asset loader, this component does not preload textures
-- Some generated components require specific 3D models to be available
+- Surface textures and other cloned models must already be present via asset loader, this component does not preload textures or models and assumes they are already available as `mixin`s in the scene
 - Elevation levels are limited to the range of -1 to 2
