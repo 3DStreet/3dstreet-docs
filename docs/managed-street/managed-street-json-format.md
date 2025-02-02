@@ -102,10 +102,12 @@ stencil: [{
 }]
 ```
 
-Common stencil types:
-- Road markings: `"word-only, word-taxi, word-bus"`
-- Arrows: `"bike-arrow, turn-lane-left, turn-lane-right"`
-- Parking: `"parking-t"`
+Stencil Types:
+
+- Arrows: `"left, right, both, straight, left-straight, right-straight, all"`
+- Parking: `"parking-t, perpendicular-stalls, solid-stripe"`
+- Word stencils: `"word-only, word-taxi, word-bus, word-lane, word-only-small, word-yield, word-slow, word-xing, word-stop, word-loading-small"`
+- Other: `"sharrow, bike-arrow, hash-left, hash-right, hash-chevron"`
 
 ### Pedestrians
 Adds pedestrian models with specified density.
@@ -126,10 +128,16 @@ striping: [{
 }]
 ```
 
-Common stripe types:
+Striping Types:
+- `"none"`
+- `"solid-stripe"`
+- `"dashed-stripe"`
+- `"short-dashed-stripe"`
+- `"short-dashed-stripe-yellow"`
+- `"solid-doubleyellow"`
+- `"solid-dashed"`
 - `"solid-dashed-yellow"`
 - `"solid-dashed-yellow-mirror"`
-- `"none"`
 
 ## Example Segments
 
