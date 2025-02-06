@@ -2,11 +2,100 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2025-01-31T00:00:00.000Z</updated>
+    <updated>2025-02-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[From Photos to 3D: Creating Custom Models with AI for Creative Street Scenes]]></title>
+        <id>https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes</id>
+        <link href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes"/>
+        <updated>2025-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to use AI tools like TRELLIS to transform photos into 3D models for your street visualization projects.]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" alt="A split image showing a physical toy car on the left and its 3D model counterpart in a street scene on the right" src="https://3dstreet.org/assets/images/hotwheels-to-3d-f8c0eea75c0df8a198f1948bbf030fb0.webp" width="936" height="581" class="img_ev3q"></p>
+<p>Have you ever found yourself designing a street scene and wishing you had that perfect 3D model to bring your vision to life? Whether it's a unique piece of street furniture, a local landmark, or even a toy car, traditional 3D modeling can be time-consuming and requires specialized skills. But what if you could turn any object into a 3D model with just a couple of photos and some AI magic? Let's explore how to do exactly that!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-power-of-ai-generated-3d-models">The Power of AI-Generated 3D Models<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#the-power-of-ai-generated-3d-models" class="hash-link" aria-label="Direct link to The Power of AI-Generated 3D Models" title="Direct link to The Power of AI-Generated 3D Models">​</a></h2>
+<p><img loading="lazy" alt="Screenshot of the TRELLIS interface showing the upload and generation process" src="https://3dstreet.org/assets/images/trellis-ui-generated-before-extraction-77efc7a528db1463b3c9b7a8ce8236f5.jpg" width="1562" height="1210" class="img_ev3q"></p>
+<p>Until recently, creating custom 3D models required extensive knowledge of 3D modeling software and hours of work. Now, thanks to advances in AI technology, tools like Microsoft's TRELLIS can transform simple photographs into usable 3D models in minutes. This opens up exciting possibilities for urban designers, planners, and anyone interested in creating more imaginative and personalized street scenes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-guide-to-creating-your-3d-model">Step-by-Step Guide to Creating Your 3D Model<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#step-by-step-guide-to-creating-your-3d-model" class="hash-link" aria-label="Direct link to Step-by-Step Guide to Creating Your 3D Model" title="Direct link to Step-by-Step Guide to Creating Your 3D Model">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-capture-your-reference-images">1. Capture Your Reference Images<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#1-capture-your-reference-images" class="hash-link" aria-label="Direct link to 1. Capture Your Reference Images" title="Direct link to 1. Capture Your Reference Images">​</a></h3>
+<p><img loading="lazy" alt="Two sample photos of an object from different angles, showing optimal photography setup" src="https://3dstreet.org/assets/images/photo-grid-examples-1c52cf735b0bf3677de1f71467133d65.webp" width="1192" height="796" class="img_ev3q"></p>
+<p>The quality of your 3D model starts with good reference photos. Here's what you need:</p>
+<ul>
+<li>Take 1-2 clear photos of your object from different angles</li>
+<li>Ensure good lighting and contrast</li>
+<li>A neutral background works best</li>
+<li>Include both front and side views when possible</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-generate-your-3d-model-with-trellis">2. Generate Your 3D Model with TRELLIS<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#2-generate-your-3d-model-with-trellis" class="hash-link" aria-label="Direct link to 2. Generate Your 3D Model with TRELLIS" title="Direct link to 2. Generate Your 3D Model with TRELLIS">​</a></h3>
+<p>Head over to <a href="https://huggingface.co/spaces/JeffreyXiang/TRELLIS" target="_blank" rel="noopener noreferrer">TRELLIS on Hugging Face Spaces</a> to start the conversion process.</p>
+<p><img loading="lazy" alt="Example TRELLIS Hugging Face Spaces UI Steps for Conversion of Image to 3D Model" src="https://3dstreet.org/assets/images/trellis-ui-steps-with-pink-lowrider-a2116c3a773871e58d6b1627ec6dd5e7.webp" width="1377" height="977" class="img_ev3q"></p>
+<ol>
+<li>Upload your reference photos -- make sure to click on the "Multiple Images" tab if you have more than one</li>
+<li>Click "Generate" and wait for the AI to work its magic. Review the preview to ensure it captures your object well.</li>
+<li>If the preview looks good, click "Extract GLB" to generate a GLB version of the model.</li>
+<li>Click "Download GLB" to download your 3D model</li>
+</ol>
+<p>If the first attempt doesn't look quite right, consider using more than 1 picture. Try for soft lighting instead of bright specular reflections and ensure the object is in focus and entirely in frame.</p>
+<p>You can also try <a href="https://huggingface.co/spaces/tencent/Hunyuan3D-2" target="_blank" rel="noopener noreferrer">Hunyuan3D-2</a>, which allows you to generate 3D models directly from text descriptions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-validate-your-model">3. Validate Your Model<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#3-validate-your-model" class="hash-link" aria-label="Direct link to 3. Validate Your Model" title="Direct link to 3. Validate Your Model">​</a></h3>
+<p>Before proceeding, it's helpful to verify your model:</p>
+<ol>
+<li>Visit <a href="https://gltf-viewer.donmccurdy.com/" target="_blank" rel="noopener noreferrer">gltf-viewer.donmccurdy.com</a></li>
+<li>Drag and drop your GLB file into the viewer</li>
+<li>Confirm the model loads correctly and looks as expected</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-optimize-for-web-use">4. Optimize for Web Use<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#4-optimize-for-web-use" class="hash-link" aria-label="Direct link to 4. Optimize for Web Use" title="Direct link to 4. Optimize for Web Use">​</a></h3>
+<p><img loading="lazy" alt="Screenshot of OptimizeGLB.com interface showing compression settings" src="https://3dstreet.org/assets/images/optimizeglb-ui-steps-c9a31738d93ddb3ecc8fc045bcf452e9.webp" width="1203" height="1218" class="img_ev3q"></p>
+<p>Your initial model might be larger than necessary. Here's how to optimize it using <a href="https://optimizeglb.com/" target="_blank" rel="noopener noreferrer">OptimizeGLB.com</a>:</p>
+<ol>
+<li>Upload your GLB file. Enable Draco compression (but avoid mesh simplification)</li>
+<li>Click "Process All Files"</li>
+<li>Right-click the "Download" button, and</li>
+<li>Click "Copy Link Address"</li>
+</ol>
+<p>This step not only reduces file size but also gives you a hosted URL for your model.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-import-into-3dstreet">5. Import into 3DStreet<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#5-import-into-3dstreet" class="hash-link" aria-label="Direct link to 5. Import into 3DStreet" title="Direct link to 5. Import into 3DStreet">​</a></h3>
+<p><img loading="lazy" alt="Screenshot showing the 3DStreet interface with the GLB import dialog" src="https://3dstreet.org/assets/images/3dstreet-ui-add-glb-model-f395f8bafb0cb41796c3600ce4e63bcf.webp" width="1860" height="1116" class="img_ev3q"></p>
+<p>Finally, let's bring your model into 3DStreet. Open the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">3DStreet App</a>, and then:</p>
+<ol>
+<li>Click "Add Layer"</li>
+<li>Choose the "Custom Layers" tab</li>
+<li>Select "GLTF Model from URL"</li>
+<li>Paste your OptimizeGLB link URL</li>
+<li>Adjust scale, position and rotation as needed after adding to the scene</li>
+</ol>
+<p>See our <a href="https://3dstreet.org/docs/3dstreet-editor/custom-models-and-images">documentation on importing custom 3D models</a> for more details on this step. A 3DStreet Pro plan is required to use this feature.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-for-success">Tips for Success<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#tips-for-success" class="hash-link" aria-label="Direct link to Tips for Success" title="Direct link to Tips for Success">​</a></h2>
+<ul>
+<li>Start with simple objects that have clear shapes and details</li>
+<li>Take photos in good lighting conditions</li>
+<li>Use the validation step to catch any issues early</li>
+<li>Consider the final size and scale in your street scene</li>
+<li>Keep backup copies of your original files</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="share-your-creations">Share Your Creations!<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#share-your-creations" class="hash-link" aria-label="Direct link to Share Your Creations!" title="Direct link to Share Your Creations!">​</a></h2>
+<p>We'd love to see what you create with this workflow! Share your models and scenes with the 3DStreet community on our Discord channel or tag us on social media.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="looking-ahead">Looking Ahead<a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes#looking-ahead" class="hash-link" aria-label="Direct link to Looking Ahead" title="Direct link to Looking Ahead">​</a></h2>
+<p>The intersection of AI and 3D modeling is evolving rapidly. Tools like TRELLIS are just the beginning, we're also seeing huge improvements in live style transfer to convert the low poly and low fidelity 3D tiles imagery into higher fidelity and more detailed 3D scenes.</p>
+<p>Here's an example of using live image to image style transfer with KREA.ai, a user-friendly AI generative creation and manipulation service.</p>
+<p><img loading="lazy" alt="A split image showing side by side of using AI-generated 3D models from TRELLIS in a 3DStreet scene (left) with image style transfer from Krea.ai (right)" src="https://3dstreet.org/assets/images/krea-ai-vid-2-vid-6529f0ff3af22d2785235bfdf8ee2e54.webp" width="1600" height="636" class="img_ev3q"></p>
+<p>Remember, whether you're adding unique street furniture, local landmarks, or playful elements to your scenes, AI-powered 3D modeling can help bring your vision to life with unprecedented ease.</p>
+<p>Want to see this process in action? Check out our video tutorial below:</p>
+<iframe width="100%" style="aspect-ratio:16 / 9" src="https://www.youtube.com/embed/k39_3jWzX78?si=8HJBs5Jc5Ex5K0sK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>Happy modeling! 🚀</p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="3d models" term="3d models"/>
+        <category label="AI" term="AI"/>
+        <category label="TRELLIS" term="TRELLIS"/>
+        <category label="street design" term="street design"/>
+        <category label="visualization" term="visualization"/>
+        <category label="gltf" term="gltf"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Feature Roundup: Map Layer Blending and Environment Settings]]></title>
         <id>https://3dstreet.org/blog/2025/01/31/new-feature-roundup-map-layer-blending-and-environment-settings</id>

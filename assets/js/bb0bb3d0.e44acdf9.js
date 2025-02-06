@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[1173],{4050:s=>{s.exports=JSON.parse('{"label":"gltf","permalink":"/blog/tags/gltf","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

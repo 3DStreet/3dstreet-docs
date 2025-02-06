@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[4905],{2312:s=>{s.exports=JSON.parse('{"label":"3d models","permalink":"/blog/tags/3-d-models","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
