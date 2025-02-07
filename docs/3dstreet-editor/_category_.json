@@ -2,7 +2,7 @@
   "label": "3DStreet Editor",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "A collection of documentation for the 3DStreet Editor."
+    "type": "doc",
+    "id": "3dstreet-editor/overview-3dstreet-editor"
   }
 }
