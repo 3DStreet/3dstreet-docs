@@ -34,11 +34,6 @@ Here’s a quick overview of the capabilities:
 ![](./images/2024-07-17/custom-intersection.jpeg)
 <b><i>An intersection example using nearly every feature.</i></b>
 
-## Getting Started
-![](/img/docs/alpha/add-edit-intersections.jpg)
-
-We have added step-by-step instructions on how to [add and edit an intersection in our documentation](/docs/development/alpha-labs#adding-and-editing-an-intersection).
-
 ## What's next for 3DStreet Intersections?
 We call this release Early Access for a reason -- 3DStreet Intersections need more work and we need your help to prioritize what needs improvement. Do we need better geometry? Curb ramps? Better interface to edit the intersection? We'd appreciate ideas and suggestions on how to help you visualize your perfect intersections.
 
