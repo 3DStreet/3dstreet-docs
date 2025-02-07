@@ -139,8 +139,8 @@ const config = {
                 href: "https://www.linkedin.com/company/3dstreet/",
               },
               {
-                label: "Mastadon",
-                href: "https://urbanists.social/@3dstreet",
+                label: "YouTube",
+                href: "https://www.youtube.com/@3DStreetapp",
               },
             ],
           },
@@ -148,16 +148,12 @@ const config = {
             title: "GitHub Repositories",
             items: [
               {
-                label: "3DStreet Core (Parser and Viewer)",
+                label: "3DStreet Core",
                 href: "https://github.com/3dstreet/3dstreet",
               },
               {
-                label: "3DStreet Editor",
-                href: "https://github.com/3dstreet/3dstreet-editor",
-              },
-              {
                 label: "3DStreet Assets",
-                href: "https://github.com/3dstreet/3dstreet-assets-source",
+                href: "https://github.com/3dstreet/3dstreet-assets-dist",
               },
             ],
           },
