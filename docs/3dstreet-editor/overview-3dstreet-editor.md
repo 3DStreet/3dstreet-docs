@@ -2,9 +2,7 @@
 sidebar_position: 1
 ---
 
-# Overview
-
-## 3DStreet Editor
+# 3DStreet Editor
 
 ![Screenshot of the 3DStreet Editor application with user interface elements for modifying a street scene.](/img/docs/3dstreet-editor-screenshot.jpg)
 

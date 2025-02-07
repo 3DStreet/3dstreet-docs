@@ -13,8 +13,6 @@ This document describes the JSON format for defining streets in the 3DStreet sys
   name: string,           // Name of the street configuration
   width: number,          // Total width in meters
   length: number,         // Length of street in meters
-  justifyWidth: string,   // How to justify segments ("center")
-  justifyLength: string,  // How to justify street length ("start")
   segments: Segment[]     // Array of segment definitions
 }
 ```
@@ -181,6 +179,12 @@ Striping Types:
   }
 }
 ```
+
+## Managed Street JSON Examples
+
+These are the default street definitions in Managed Street JSON used in the 3DStreet Editor Add Layer Panel.
+
+* [https://github.com/3DStreet/3dstreet/blob/main/src/editor/components/components/AddLayerPanel/defaultStreets.js](https://github.com/3DStreet/3dstreet/blob/main/src/editor/components/components/AddLayerPanel/defaultStreets.js)
 
 ## Notes
 

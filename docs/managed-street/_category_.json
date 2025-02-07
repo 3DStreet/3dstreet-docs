@@ -2,7 +2,7 @@
   "label": "Managed Street (Beta)",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "A collection of documentation for Managed Street format and UI."
+    "type": "doc",
+    "id": "managed-street/overview-managed-street"
   }
 }
