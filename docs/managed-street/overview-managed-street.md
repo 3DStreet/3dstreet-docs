@@ -15,3 +15,9 @@ Users can create streets with the new Managed Street format using the 3DStreet E
 - [Managed Street Component](./component-managed-street.md)
 - [Street Segment Component](./component-street-segment.md)
 - [Managed Street JSON Format](./managed-street-json-format.md)
+
+# Further Research
+
+If you're interested in the concept representing streets with code, check out some other examples of street layout formats:
+- [Shared Right-Of-Way (ROW) Standard by David Wasserman](https://github.com/d-wasserman/shared-row) 
+- [OpenDrive Specification by ASAM](https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/00_preface/00_introduction.html)
