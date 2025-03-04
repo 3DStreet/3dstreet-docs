@@ -6,7 +6,9 @@ sidebar_position: 8
 
 * `w` - Translate
 * `e` - Rotate
-* `r` - Scale
+* `r` - Ruler
+* `h` - Hand
+* `s` - Scale
 * `d` - Duplicate selected entity
 * `f` - Focus on selected entity
 * `g` - Toggle grid visibility
