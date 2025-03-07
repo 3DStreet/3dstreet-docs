@@ -44,8 +44,9 @@ main {
 
 
 .st_header {
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 .st_header_ellipse {
@@ -69,26 +70,7 @@ main {
     display: flex;
     column-gap: 34px;
     align-items: center;
-    width: 100%;
 }
-/*
-
-.st_header_right {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.st_header_nav > ul {
-    display: flex;
-    column-gap: 32px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-} */
 
 .st_header_container .relative_wrapper {
     right: 0;

@@ -83,47 +83,26 @@ export default function Home({ recentPosts }) {
         {/* HEADER SECTION */}
         <header className="st_header_container">
 
-          
-          <div className="st_header --noTablet">
-          <div className="st_header_left">
-
-            <a href="/">
-              <img src="/img/logo.svg" alt="logo" />
-            </a>
-            <NavigationMenu />
-            </div>
-            <div className="st_header_right ">
-
-              <Button
-                variant="blue"
-                label="Launch app"
-                onClick={() => {
-                  location.href = "https://3dstreet.app";
-                }}
-              />
-                        </div>
-
-          </div>
-{/* 
-          <div className="st_header --tablet">
+          <div className="st_header">
             <div className="st_header_left">
-              <div className="st_header_logo">
-                <a href="/">
-                  <img src="/img/logo.svg" alt="logo" />
-                </a>
-              </div>
-              <Button
-                variant="blue"
-                label="Launch app"
-                onClick={() => {
-                  location.href = "https://3dstreet.app";
-                }}
-              />
-            </div>
-            <div className="st_header_right ">
+
+              <a href="/">
+                <img src="/img/logo.svg" alt="logo" />
+              </a>
               <NavigationMenu />
             </div>
-          </div> */}
+            <div className="st_header_right ">
+
+              <Button
+                variant="blue"
+                label="Launch app"
+                onClick={() => {
+                  location.href = "https://3dstreet.app";
+                }}
+              />
+            </div>
+
+          </div>
 
           <div className="relative_wrapper">
             <aside className="socials">
@@ -332,9 +311,8 @@ export default function Home({ recentPosts }) {
                                 src={authors[0].imageURL}
                                 alt="author-avatar"
                               />
-                              {`${authors[0].name} ${
-                                authors.length > 1 ? "and others" : ""
-                              }`}
+                              {`${authors[0].name} ${authors.length > 1 ? "and others" : ""
+                                }`}
                             </p>
                           </div>
                           <p className="st_blog_item_header_title">{title}</p>
