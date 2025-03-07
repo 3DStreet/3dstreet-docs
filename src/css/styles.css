@@ -38,56 +38,16 @@ main {
     width: 750px;
 }
 
-.--mobile {
-    display: none;
-}
-
-.--tablet {
-    display: none;
-}
-
-.--noMobile {
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .--mobile {
-        display: block;
-    }
-
-    .--noMobile {
-        display: none;
-    }
-
-    .--tablet {
-        display: none;
-    }
-}
-
-@media (max-width: 690px) {
-    .--noTablet {
-        display: none;
-    }
-
-    .--tablet {
-        display: block;
-    }
-}
-
 /*----------------------------------------------------------------
   Header styles
 ----------------------------------------------------------------*/
 
-.navbar__logo {
-    padding-right: 3.5rem;
-}
 
 .st_header {
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     width: 100%;
 }
-
 .st_header_ellipse {
     position: absolute;
     top: 0;
@@ -95,6 +55,7 @@ main {
     z-index: 1;
     pointer-events: none;
 }
+
 
 .st_header_container {
     display: flex;
@@ -104,13 +65,13 @@ main {
     width: 1160px;
     position: relative;
 }
-
 .st_header_left {
     display: flex;
-    column-gap: 64px;
+    column-gap: 34px;
     align-items: center;
     width: 100%;
 }
+/*
 
 .st_header_right {
     display: flex;
@@ -127,6 +88,7 @@ main {
     margin: 0;
     text-align: center;
 }
+} */
 
 .st_header_container .relative_wrapper {
     right: 0;
@@ -135,7 +97,6 @@ main {
     width: fit-content;
     height: 100vh;
 }
-
 .st_header_container .socials {
     display: flex;
     flex-direction: column;
@@ -851,7 +812,7 @@ section h2 {
     }
 
     .st_header_logo {
-        width: 100px;
+        width: 200px;
     }
 
     .st_header_right {

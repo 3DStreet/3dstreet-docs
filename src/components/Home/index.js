@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Button, Input } from "..";
+import NavigationMenu from "../NavigationMenu";
 import {
   ArrowIcon,
   DiscordIcon,
@@ -81,57 +82,29 @@ export default function Home({ recentPosts }) {
 
         {/* HEADER SECTION */}
         <header className="st_header_container">
-          <div className="st_header --noTablet">
-            <div className="st_header_left">
-              <div className="st_header_logo">
-                <a href="/">
-                  <img src="/img/logo.svg" alt="logo" />
-                </a>
-              </div>
-              <div className="st_header_right ">
-                <div className="st_header_nav ">
-                  <ul>
-                    <li>
-                      <Button
-                        variant="ghost"
-                        label="Home"
-                        isActive
-                        onClick={() => {
-                          location.href = "";
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <Button
-                        variant="ghost"
-                        label="Blog"
-                        onClick={() => {
-                          location.href = "/blog/";
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <Button
-                        variant="ghost"
-                        label="Documentation"
-                        onClick={() => {
-                          location.href = "/docs/";
-                        }}
-                      />
-                    </li>
-                  </ul>
-                </div>
-                <Button
-                  variant="blue"
-                  label="Launch app"
-                  onClick={() => {
-                    location.href = "https://3dstreet.app";
-                  }}
-                />
-              </div>
-            </div>
-          </div>
 
+          
+          <div className="st_header --noTablet">
+          <div className="st_header_left">
+
+            <a href="/">
+              <img src="/img/logo.svg" alt="logo" />
+            </a>
+            <NavigationMenu />
+            </div>
+            <div className="st_header_right ">
+
+              <Button
+                variant="blue"
+                label="Launch app"
+                onClick={() => {
+                  location.href = "https://3dstreet.app";
+                }}
+              />
+                        </div>
+
+          </div>
+{/* 
           <div className="st_header --tablet">
             <div className="st_header_left">
               <div className="st_header_logo">
@@ -148,40 +121,9 @@ export default function Home({ recentPosts }) {
               />
             </div>
             <div className="st_header_right ">
-              <div className="st_header_nav ">
-                <ul>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Home"
-                      isActive
-                      onClick={() => {
-                        location.href = "";
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Blog"
-                      onClick={() => {
-                        location.href = "/blog/";
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Documentation"
-                      onClick={() => {
-                        location.href = "/docs/";
-                      }}
-                    />
-                  </li>
-                </ul>
-              </div>
+              <NavigationMenu />
             </div>
-          </div>
+          </div> */}
 
           <div className="relative_wrapper">
             <aside className="socials">
