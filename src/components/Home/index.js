@@ -7,8 +7,6 @@ import {
   DiscordIcon2,
   GithubIcon,
   LinkedInIcon,
-  MastodonIcon,
-  PiechartIcon,
   XIcon,
   XIcon2,
 } from "../../icons";
