@@ -72,6 +72,10 @@ main {
     align-items: center;
 }
 
+.st_header_left img {
+    height: 35px;
+}
+
 .st_header_container .relative_wrapper {
     right: 0;
     top: 0;
@@ -791,10 +795,6 @@ section h2 {
 
     .st_header_container {
         padding: 10px 16px;
-    }
-
-    .st_header_logo {
-        width: 200px;
     }
 
     .st_header_right {
