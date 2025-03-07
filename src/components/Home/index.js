@@ -4,15 +4,12 @@ import { Button, Input } from "..";
 import {
   ArrowIcon,
   DiscordIcon,
-  DiscordIcon2,
-  GithubIcon,
+  InstagramIcon,
   LinkedInIcon,
-  XIcon,
-  XIcon2,
+  YouTubeIcon
 } from "../../icons";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import MuxPlayer from "@mux/mux-player-react";
-import { YouTubeIcon } from "../../icons/socials";
 
 export default function Home({ recentPosts }) {
   const {
@@ -197,8 +194,8 @@ export default function Home({ recentPosts }) {
               <a href="https://youtube.com/@3dstreetapp" target="_blank">
                 <YouTubeIcon />
               </a>
-              <a href="https://twitter.com/3dstreetapp" target="_blank">
-                <XIcon />
+              <a href="https://instagram.com/3dstreetapp" target="_blank">
+                <InstagramIcon />
               </a>
               <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
                 <DiscordIcon />
@@ -417,105 +414,6 @@ export default function Home({ recentPosts }) {
           </div>
         </section>
 
-        {/* SOCIALS SECTION */}
-        <section className="st_socials">
-          {/* bg items */}
-          <div className="st_socials_icon2" />
-          <div className="st_socials_icon3 --noMobile" />
-          <div className="st_socials_icon4 --noMobile" />
-          <div className="st_socials_icon5 --noMobile" />
-          <div className="st_socials_icon6 --noMobile" />
-          <div className="st_socials_icon7 --noMobile" />
-          <div className="st_socials_icon8 --noMobile" />
-          <div className="st_socials_icon9 --noMobile" />
-
-          <div className="st_socials_icon10" />
-          {/* bg items */}
-
-          <div className="st_socials_title">
-            <h2>How to get involved</h2>
-            <p>
-              <b>A safer greener world begins with you.</b> Join our thriving,
-              growing community to get involved. Partner with other like minded
-              individuals or blaze your own trail. The only limit is your
-              imagination.
-            </p>
-          </div>
-
-          <div className="st_socials_cards">
-            <div className="st_socials_item">
-              <div className="st_socials_inner">
-                <div className="st_socials_header">
-                  <p className="st_socials_type">COMMUNITY</p>
-                  <div className="st_socials_icon">
-                    <DiscordIcon2 />
-                  </div>
-                </div>
-                <div className="st_socials_item_footer">
-                  <div className="st_socials_item_description">
-                    <p>Connect with our community on Discord</p>
-                    <p>
-                      Be part of the community. Take a look at how we work on
-                      projects. We share ideas and would love to hear yours.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a
-                href="https://discord.com/invite/9DgKkFCetC"
-                target="_blank"
-                className="st_socials_item_link"
-              >
-                Join 3DStreet Discord
-              </a>
-            </div>
-            <div className="st_socials_item">
-              <div className="st_socials_inner">
-                <div className="st_socials_header">
-                  <p className="st_socials_type">collab</p>
-                  <div className="st_socials_icon">
-                    <GithubIcon />
-                  </div>
-                </div>
-                <div className="st_socials_item_footer">
-                  <div className="st_socials_item_description">
-                    <p>Contribute together on GitHub</p>
-                    <p>
-                      See 3DStreet Core and Editor source code and help make it
-                      better.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a href="https://github.com/3dstreet/3dstreet" target="_blank">
-                3DStreet GitHub Repo
-              </a>
-            </div>
-            <div className="st_socials_item">
-              <div className="st_socials_inner">
-                <div className="st_socials_header">
-                  <p className="st_socials_type">conversation</p>
-                  <div className="st_socials_icon">
-                    <XIcon2 />
-                  </div>
-                </div>
-                <div className="st_socials_item_footer">
-                  <div className="st_socials_item_description">
-                    <p>Follow us on X and stay up to date</p>
-                    <p>
-                      Follow us on twitter and stay in the know on all things 3D
-                      Street.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a href="https://twitter.com/3dstreetapp" target="_blank">
-                Connect on X
-              </a>
-            </div>
-          </div>
-        </section>
-
         {/* TRUSTED BY SECTION */}
         <section className="st_trusted_by">
           <h2>USED BY</h2>
@@ -569,7 +467,7 @@ export default function Home({ recentPosts }) {
 
           <p className="st_footer_copyright">
             <span />
-            ©2024 3DStreet LLC. 3DStreet is a registered trademark of 3DStreet
+            ©2025 3DStreet LLC. 3DStreet is a registered trademark of 3DStreet
             LLC.
           </p>
         </footer>

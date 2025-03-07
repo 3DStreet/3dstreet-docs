@@ -131,17 +131,17 @@ const config = {
                 href: "https://discord.gg/VN242sx9qu",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/3dstreetapp",
-              },
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/company/3dstreet/",
+                label: "Instagram",
+                href: "https://instagram.com/3dstreetapp",
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/@3DStreetapp",
               },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/company/3dstreet/",
+              }
             ],
           },
           {
