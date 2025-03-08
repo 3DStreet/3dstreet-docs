@@ -10,13 +10,13 @@ const NavigationMenu = () => {
       <NavigationMenuPrimitive.List className="NavigationMenuList">
         <NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Trigger className="NavigationMenuTrigger">
-            Learn <CaretDownIcon className="CaretDown" aria-hidden />
+            Solutions <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenuPrimitive.Trigger>
           <NavigationMenuPrimitive.Content className="NavigationMenuContent">
             <ul className="List one">
               <li style={{ gridRow: "span 3" }}>
                 <NavigationMenuPrimitive.Link asChild>
-                  <a className="Callout" href="/docs/what-is-3dstreet">
+                  <div className="Callout">
                     <svg
                       aria-hidden
                       width="38"
@@ -30,20 +30,63 @@ const NavigationMenu = () => {
                     </svg>
                     <div className="CalloutHeading">3DStreet</div>
                     <p className="CalloutText">
-                      Open-source 3D street editor for better street design.
+                      Street Design Software
                     </p>
-                  </a>
+                  </div>
                 </NavigationMenuPrimitive.Link>
               </li>
 
-              <ListItem href="/docs/getting-started" title="Getting Started">
-                Quick tutorial to get you up and running with 3DStreet.
+              <ListItem href="/docs/getting-started" title="Urban Planning">
+                For urban planners and economic development agencies.
               </ListItem>
-              <ListItem href="/docs/features" title="Features">
-                Explore the features that make 3DStreet powerful.
+              <ListItem href="/docs/features" title="Education">
+                For students and educators from Pre-K to Post-Doc.
               </ListItem>
-              <ListItem href="/docs/examples" title="Examples">
-                Real-world examples of 3DStreet in action.
+              <ListItem href="/docs/examples" title="Transportation and Land Use Advocacy">
+                For volunteers and staff from neighborhood associations to global NGOs.
+              </ListItem>
+            </ul>
+          </NavigationMenuPrimitive.Content>
+        </NavigationMenuPrimitive.Item>
+
+        <NavigationMenuPrimitive.Item>
+          <NavigationMenuPrimitive.Trigger className="NavigationMenuTrigger">
+            Product <CaretDownIcon className="CaretDown" aria-hidden />
+          </NavigationMenuPrimitive.Trigger>
+          <NavigationMenuPrimitive.Content className="NavigationMenuContent">
+            <ul className="List two">
+              <ListItem
+                title="Instant Street Design"
+                href="/docs/"
+              >
+                Comprehensive guides and reference documentation.
+              </ListItem>
+              <ListItem
+                title="One Click Import"
+                href="/blog/"
+              >
+                Latest news, updates, and insights from the 3DStreet team.
+              </ListItem>
+              <ListItem title="Combine with 3D Maps" href="/docs/community">
+                Mix with 3D maps.
+              </ListItem>
+              <ListItem
+                title="Contribute"
+                href="/docs/contribute"
+              >
+                Learn how to contribute to the 3DStreet project.
+              </ListItem>
+              <ListItem
+                title="Showcase"
+                href="/docs/showcase"
+              >
+                See how others are using 3DStreet to reimagine streets.
+              </ListItem>
+              <ListItem
+                title="FAQ"
+                href="/docs/faq"
+              >
+                Frequently asked questions about 3DStreet.
               </ListItem>
             </ul>
           </NavigationMenuPrimitive.Content>
@@ -97,7 +140,7 @@ const NavigationMenu = () => {
             className="NavigationMenuLink"
             href="https://github.com/3DStreet/3dstreet"
           >
-            GitHub
+            Pricing
           </NavigationMenuPrimitive.Link>
         </NavigationMenuPrimitive.Item>
 

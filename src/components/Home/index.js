@@ -126,7 +126,7 @@ export default function Home({ recentPosts }) {
         <main className="st_main">
           <div className="st_main_wrapper">
             <div className="st_main_container">
-              <h1 className="h1">Bring your street design ideas to life.</h1>
+              <h1 className="h1">Design the future.</h1>
               <MuxPlayer
                 streamType="on-demand"
                 playbackId="TSxTjFBKoeTnspoQo02BFBPZXel6Pqtoo"
