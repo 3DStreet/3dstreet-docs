@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 import { Button, Input } from "..";
 import NavigationMenu from "../NavigationMenu";
@@ -95,9 +96,10 @@ export default function Home({ recentPosts }) {
 
               <Button
                 variant="blue"
-                label="Launch app"
+                label="Open 3DStreet"
+                trailingIcon={<ExternalLinkIcon />}
                 onClick={() => {
-                  location.href = "https://3dstreet.app";
+                  window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
                 }}
               />
             </div>

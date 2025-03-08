@@ -6,6 +6,7 @@ const Button = ({
   variant,
   label,
   icon,
+  trailingIcon,
   isActive,
   link,
   disabled,
@@ -30,6 +31,7 @@ const Button = ({
     >
       {icon && <div className={styles.icon}>{icon}</div>}
       {label}
+      {trailingIcon && <div className={styles.trailingIcon}>{trailingIcon}</div>}
     </button>
   );
 };

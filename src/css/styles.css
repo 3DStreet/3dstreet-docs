@@ -73,7 +73,8 @@ main {
 }
 
 .st_header_left img {
-    height: 35px;
+    height: 45px;
+    translate: 0 4px;
 }
 
 .st_header_container .relative_wrapper {
