@@ -3,8 +3,6 @@ export { MailIcon } from "./mail.icon";
 export {
   DiscordIcon,
   LinkedInIcon,
-  MastodonIcon,
-  DiscordIcon2,
   GithubIcon,
   InstagramIcon,
   YouTubeIcon
