@@ -80,21 +80,12 @@ export default function Home({ recentPosts }) {
           src="/img/website/header_ellipse.png"
         />
         <div className="st_main_grid_bg" />
-
-        {/* HEADER SECTION */}
-        <header className="st_header_container">
-
-          <div className="st_header">
-            <div className="st_header_left">
-
-              <a href="/">
-                <img src="/img/logo.svg" alt="logo" />
-              </a>
-              <NavigationMenu />
-            </div>
-            <div className="st_header_right ">
-
-              <Button
+          <div className="newHeader">
+            <a href="/">
+              <img src="/img/logo.svg" alt="logo" />
+            </a>
+            <NavigationMenu />
+            <Button
                 variant="blue"
                 label="Open 3DStreet"
                 trailingIcon={<ExternalLinkIcon />}
@@ -102,9 +93,9 @@ export default function Home({ recentPosts }) {
                   window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
                 }}
               />
-            </div>
-
           </div>
+        {/* HEADER SECTION */}
+        <header className="st_header_container">
 
           <div className="relative_wrapper">
             <aside className="socials">
@@ -145,11 +136,7 @@ export default function Home({ recentPosts }) {
                 secondaryColor="#000000"
                 accentColor="#653CB0"
               />
-
               <section className="st_overview">
-                {/* <video className="st_overview_video" controls preload="metadata">
-                  <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
-                </video> */}
               </section>
               <Input />
             </div>

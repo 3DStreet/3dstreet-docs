@@ -42,13 +42,6 @@ main {
   Header styles
 ----------------------------------------------------------------*/
 
-
-.st_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
 .st_header_ellipse {
     position: absolute;
     top: 0;
@@ -57,6 +50,20 @@ main {
     pointer-events: none;
 }
 
+.newHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+
+    img {
+        min-width: 180px;
+        translate: 0 4px;
+        padding: 6px;
+    }
+    
+}
 
 .st_header_container {
     display: flex;
@@ -66,30 +73,14 @@ main {
     width: 1160px;
     position: relative;
 }
-.st_header_left {
-    display: flex;
-    column-gap: 34px;
-    align-items: center;
-}
 
-.st_header_left img {
-    height: 45px;
-    translate: 0 4px;
-}
 
-.st_header_container .relative_wrapper {
-    right: 0;
-    top: 0;
-    position: absolute;
-    width: fit-content;
-    height: 100vh;
-}
 .st_header_container .socials {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
     right: 0;
-    top: calc(50% - 82px);
+    top: 400px;
     position: absolute;
 }
 
@@ -100,8 +91,8 @@ main {
 
 .st_header_container .down_icon {
     position: absolute;
-    right: 0;
-    bottom: 40px;
+    right: -5px;
+    top: 800px;
 }
 
 .st_header_container .down_icon::after {
@@ -147,12 +138,11 @@ main {
 .st_main_grid {
     width: 100vw;
     height: 100px;
-    /* background-image: url("/img/website/st_hero_bottom_grid.png"); */
+    background-image: url("/img/website/st_hero_bottom_grid.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 40px;
-    /* clip: rect(auto, auto, 500px, auto); */
 }
 
 .st_main_container {
@@ -160,7 +150,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 56px;
+    /* margin-top: 56px; */
 }
 
 .st_main_container h1 {
@@ -641,47 +631,20 @@ section h2 {
 }
 
 /*----------------------------------------------------------------
-  TABLET & MOBILE styles
+  MOBILE styles
 ----------------------------------------------------------------*/
 
-/* TABLET */
-@media (max-width: 1200px) {
-    section,
-    main {
-        width: 750px;
-        /* padding-left: 40px !important;
-    padding-right: 40px !important; */
-    }
-
-    .st_footer {
-        width: 750px;
-    }
-
-    .st_footer_links {
-        width: 100%;
-    }
-
-    .st_header_container {
-        width: 100%;
-        padding: 26px 42px;
-    }
-
-    .relative_wrapper {
-        display: none;
-    }
-
-    .st_socials_item {
-        width: 210px;
-    }
-}
-
-/* MOBILE */
 @media (max-width: 768px) {
     section,
     main {
         width: 100%;
         padding-left: 42px;
         padding-right: 42px;
+    }
+    .NavigationMenuRoot {
+        position: absolute !important;
+        top: 100px !important;
+        left: 0px !important;
     }
 
     .st_footer {
@@ -777,33 +740,5 @@ section h2 {
 
     .st_main_grid {
         background-size: auto;
-    }
-}
-
-@media (max-width: 690px) {
-    section,
-    main {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .st_footer {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .st_header_container {
-        padding: 10px 16px;
-    }
-
-    .st_header_right {
-        margin-right: 32px;
-    }
-
-    .st_header_nav {
-        margin-left: 0px;
-        margin-top: 32px;
     }
 }
