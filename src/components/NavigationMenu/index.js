@@ -17,17 +17,7 @@ const NavigationMenu = () => {
               <li style={{ gridRow: "span 3" }}>
                 <NavigationMenuPrimitive.Link asChild>
                   <div className="Callout">
-                    <svg
-                      aria-hidden
-                      width="38"
-                      height="38"
-                      viewBox="0 0 25 25"
-                      fill="white"
-                    >
-                      <path d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"></path>
-                      <path d="M12 0H4V8H12V0Z"></path>
-                      <path d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"></path>
-                    </svg>
+                    <img src="/img/3dstreet-logo-stacked.svg" alt="logo" />
                     <div className="CalloutHeading">3DStreet</div>
                     <p className="CalloutText">
                       Street Design Software
@@ -59,34 +49,34 @@ const NavigationMenu = () => {
                 title="Instant Street Design"
                 href="/docs/"
               >
-                Comprehensive guides and reference documentation.
+                Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components.
               </ListItem>
               <ListItem
-                title="One Click Import"
+                title="One-Click Import"
                 href="/blog/"
               >
-                Latest news, updates, and insights from the 3DStreet team.
+                Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.
               </ListItem>
               <ListItem title="Combine with 3D Maps" href="/docs/community">
-                Mix with 3D maps.
+                Blend 3D street models with 3D map tiles to visualize projects in real world context.
               </ListItem>
               <ListItem
-                title="Contribute"
-                href="/docs/contribute"
-              >
-                Learn how to contribute to the 3DStreet project.
-              </ListItem>
-              <ListItem
-                title="Showcase"
+                title="Batteries Included"
                 href="/docs/showcase"
               >
-                See how others are using 3DStreet to reimagine streets.
+                Built-in library of over 200 unique and accurately scaled urban 3D models.
               </ListItem>
               <ListItem
-                title="FAQ"
+                title="Export for AR, VR and 3D post-processing"
+                href="/docs/contribute"
+              >
+                Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.
+              </ListItem>
+              <ListItem
+                title="Share and Remix"
                 href="/docs/faq"
               >
-                Frequently asked questions about 3DStreet.
+                Create with friends, share with neighbors, and remix with the community. 
               </ListItem>
             </ul>
           </NavigationMenuPrimitive.Content>
@@ -114,10 +104,10 @@ const NavigationMenu = () => {
                 Join the 3DStreet community and get involved.
               </ListItem>
               <ListItem
-                title="Contribute"
+                title="For Developers"
                 href="/docs/contribute"
               >
-                Learn how to contribute to the 3DStreet project.
+                Explore our GitHub repositories and learn how to contribute to the 3DStreet codebase.
               </ListItem>
               <ListItem
                 title="Showcase"
@@ -125,12 +115,7 @@ const NavigationMenu = () => {
               >
                 See how others are using 3DStreet to reimagine streets.
               </ListItem>
-              <ListItem
-                title="FAQ"
-                href="/docs/faq"
-              >
-                Frequently asked questions about 3DStreet.
-              </ListItem>
+
             </ul>
           </NavigationMenuPrimitive.Content>
         </NavigationMenuPrimitive.Item>

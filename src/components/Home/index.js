@@ -81,9 +81,11 @@ export default function Home({ recentPosts }) {
         />
         <div className="st_main_grid_bg" />
           <div className="newHeader">
+            <div className="logo">
             <a href="/">
-              <img src="/img/logo.svg" alt="logo" />
+              <img src="/img/3dstreet-logo.svg" alt="logo" />
             </a>
+            </div>
             <NavigationMenu />
             <Button
                 variant="blue"

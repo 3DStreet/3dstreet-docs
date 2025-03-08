@@ -56,13 +56,15 @@ main {
     align-items: center;
     width: 100%;
     padding: 30px;
+    }
+
+.newHeader .logo {
 
     img {
-        min-width: 180px;
-        translate: 0 4px;
-        padding: 6px;
+    min-width: 210px;
+    translate: 0 2px;
+    padding: 6px;
     }
-    
 }
 
 .st_header_container {
