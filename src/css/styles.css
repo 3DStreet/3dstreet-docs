@@ -288,6 +288,163 @@ section h2 {
 }
 
 /*----------------------------------------------------------------
+  Solutions(section) styles
+----------------------------------------------------------------*/
+
+.st_solutions {
+    padding: 100px 16px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #0c011e;
+    position: relative;
+}
+
+.st_solutions::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, rgba(82, 0, 217, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.st_solutions_inner {
+    width: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.st_solutions h2 {
+    text-align: center;
+    font-family: "Kanit";
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.st_solutions_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.st_solution_item {
+    background: linear-gradient(145deg, rgba(82, 0, 217, 0.2) 0%, rgba(53, 20, 188, 0.1) 100%);
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.st_solution_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.st_solution_item h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.st_solution_item p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+/*----------------------------------------------------------------
+  Product Features(section) styles
+----------------------------------------------------------------*/
+
+.st_product_features {
+    padding: 100px 16px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #110426;
+    position: relative;
+}
+
+.st_product_features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 30%, rgba(114, 13, 161, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.st_product_features_inner {
+    width: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.st_product_features h2 {
+    text-align: center;
+    font-family: "Kanit";
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.st_product_features_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.st_product_feature_item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.st_product_feature_item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.st_product_feature_item h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.st_product_feature_item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*----------------------------------------------------------------
   Features(section) styles
 ----------------------------------------------------------------*/
 

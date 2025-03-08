@@ -146,7 +146,87 @@ export default function Home({ recentPosts }) {
           <div className="st_main_grid" />
         </main>
 
-        {/* OVERVIEW SECTION */}
+        {/* SOLUTIONS SECTION */}
+        <section className="st_solutions">
+          <div className="st_solutions_inner">
+            <h2>Solutions</h2>
+            <div className="st_solutions_grid">
+              <div className="st_solution_item">
+                <h3>Urban Planning</h3>
+                <p>For urban planners and economic development agencies. Create compelling 3D visualizations of street redesigns to engage stakeholders and build consensus for transformative projects.</p>
+                <Button
+                  variant={"blue"}
+                  label={"Learn more"}
+                  onClick={() => {
+                    location.href = "/docs/getting-started";
+                  }}
+                />
+              </div>
+              <div className="st_solution_item">
+                <h3>Education</h3>
+                <p>For students and educators from Pre-K to Post-Doc. Empower learners to understand urban design principles through hands-on 3D modeling and visualization of street environments.</p>
+                <Button
+                  variant={"blue"}
+                  label={"Learn more"}
+                  onClick={() => {
+                    location.href = "/docs/features";
+                  }}
+                />
+              </div>
+              <div className="st_solution_item">
+                <h3>Transportation and Land Use Advocacy</h3>
+                <p>For volunteers and staff from neighborhood associations to global NGOs. Create powerful visual stories that communicate your vision for safer, more sustainable streets.</p>
+                <Button
+                  variant={"blue"}
+                  label={"Learn more"}
+                  onClick={() => {
+                    location.href = "/docs/examples";
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PRODUCT FEATURES SECTION */}
+        <section className="st_product_features">
+          <div className="st_product_features_inner">
+            <h2>Product Features</h2>
+            <div className="st_product_features_grid">
+              <div className="st_product_feature_item">
+                <h3>Instant Street Design</h3>
+                <p>Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>One-Click Import</h3>
+                <p>Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Combine with 3D Maps</h3>
+                <p>Blend 3D street models with 3D map tiles to visualize projects in real world context.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Batteries Included</h3>
+                <p>Built-in library of over 200 unique and accurately scaled urban 3D models.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Export for AR, VR and 3D post-processing</h3>
+                <p>Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Share and Remix</h3>
+                <p>Create with friends, share with neighbors, and remix with the community.</p>
+              </div>
+            </div>
+            <Button
+              variant={"blue"}
+              label={"Try it now"}
+              onClick={() => {
+                window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
+              }}
+            />
+          </div>
+        </section>
 
         {/* FEATURES SECTION */}
         <section className="st_features">
