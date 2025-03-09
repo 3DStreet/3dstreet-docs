@@ -86,48 +86,67 @@ export default function PlanningPage() {
                 />
               </div>
 
-              {/* Vision Section */}
-              <section className="st_vision">
-                <h2>BRIDGING THE COMMUNICATION GAP</h2>
-                <p>
-                  Urban planners and transportation professionals face a critical challenge: communicating complex design concepts to stakeholders who may lack technical expertise. 
-                </p>
-                <p>
-                  3DStreet addresses this challenge head-on by providing a simple, intuitive platform that transforms technical street designs into interactive 3D visualizations that anyone can understand.
-                </p>
-              </section>
-
               {/* Features Section within Main */}
               <section className="st_statistics">
-                <h2>KEY BENEFITS</h2>
+                <h2>KEY VALUE PROPOSITIONS</h2>
                 <div className="st_statistics_posts">
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Stakeholder Engagement" />
+                      <img src="/img/placeholder-stakeholder.jpg" alt="Rapid Visualization" />
+                    </div>
+                    <div className="st_statistics_post_description">
+                      <p>Rapid Visualization</p>
+                      <p>Create compelling street designs in minutes instead of days. What previously required expensive CAD software and specialized training can now be accomplished in a single afternoon.</p>
+                    </div>
+                  </div>
+
+                  <div className="st_statistics_item">
+                    <div className="st_statistics_icon">
+                      <img src="/img/placeholder-community.jpg" alt="Accessible Urban Design" />
+                    </div>
+                    <div className="st_statistics_post_description">
+                      <p>Accessible Urban Design</p>
+                      <p>Professional-grade street design capabilities without the steep learning curve of traditional engineering software. Enable planners, advocates, and community members to create meaningful design alternatives.</p>
+                    </div>
+                  </div>
+
+                  <div className="st_statistics_item">
+                    <div className="st_statistics_icon">
+                      <img src="/img/placeholder-iteration.jpg" alt="Stakeholder Engagement" />
                     </div>
                     <div className="st_statistics_post_description">
                       <p>Stakeholder Engagement</p>
-                      <p>Increase understanding and buy-in from community members, business owners, and elected officials with interactive 3D visualizations that clearly communicate your vision.</p>
+                      <p>Show, don't just tell. Transform abstract planning concepts into interactive 3D visuals that community members can understand and provide meaningful feedback on.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="st_statistics_item">
+                    <div className="st_statistics_icon">
+                      <img src="/img/placeholder-stakeholder.jpg" alt="Budget-Friendly Planning" />
+                    </div>
+                    <div className="st_statistics_post_description">
+                      <p>Budget-Friendly Planning</p>
+                      <p>Professional-quality visualizations without expensive in-house design resources or consultants. Democratize access to quality planning tools regardless of budget constraints.</p>
                     </div>
                   </div>
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="Community-Led Planning" />
+                      <img src="/img/placeholder-community.jpg" alt="From Concept to Engineering" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Community-Led Planning</p>
-                      <p>Empower local stakeholders to actively participate in the design process, fostering ownership and building consensus for transformative projects.</p>
+                      <p>From Concept to Engineering</p>
+                      <p>Start with quick concepts that can later be refined and exported to professional design software. Create a seamless pipeline from ideation to detailed engineering.</p>
                     </div>
                   </div>
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-iteration.jpg" alt="Rapid Iteration" />
+                      <img src="/img/placeholder-iteration.jpg" alt="Decision Acceleration" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Rapid Iteration</p>
-                      <p>Quickly create and modify multiple design scenarios to evaluate trade-offs, test alternatives, and respond to feedback in real-time during meetings and workshops.</p>
+                      <p>Decision Acceleration</p>
+                      <p>Quickly visualize and evaluate multiple design scenarios to identify the most promising alternatives. Make data-informed decisions faster and avoid costly detours.</p>
                     </div>
                   </div>
                 </div>
