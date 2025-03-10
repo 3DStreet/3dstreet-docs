@@ -78,7 +78,7 @@ export default function PlanningPage() {
                   }}
                 />
                 <Button
-                  variant="outline"
+                  variant="transparent"
                   label="Request Demo"
                   onClick={() => {
                     window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");

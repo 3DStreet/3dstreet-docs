@@ -26,7 +26,7 @@ const NavigationMenu = () => {
                 </NavigationMenuPrimitive.Link>
               </li>
 
-              <ListItem href="/docs/getting-started" title="Urban Planning">
+              <ListItem href="/planning/" title="Urban Planning">
                 For urban planners and economic development agencies.
               </ListItem>
               <ListItem href="/docs/features" title="Education">
