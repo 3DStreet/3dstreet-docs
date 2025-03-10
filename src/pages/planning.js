@@ -86,6 +86,35 @@ export default function PlanningPage() {
                 />
               </div>
 
+
+        {/* TRUSTED BY SECTION */}
+        <section className="st_trusted_by">
+          <h2>TRUSTED BY</h2>
+          <div className="st_trusted_by_companies">
+            <div className="st_trusted_by_company">
+              University of Oregon
+            </div>
+            <div className="st_trusted_by_company">
+              <img
+                src="/img/website/trusted-comp2.png"
+                alt="Town of Manchester"
+              />
+            </div>
+            <div className="st_trusted_by_company">
+              <img
+                src="/img/website/trusted-comp3.png"
+                alt="Bicycle Coalition of Greater Philadelphia"
+              />
+            </div>
+            <div className="st_trusted_by_company">
+              World Bank Group
+            </div>
+            <div className="st_trusted_by_company">
+              Delaware Valley Regional Planning Commission
+            </div>
+          </div>
+        </section>
+        
               {/* Features Section within Main */}
               <section className="st_statistics">
                 <h2>KEY VALUE PROPOSITIONS</h2>
@@ -338,33 +367,6 @@ export default function PlanningPage() {
           </div>
         </section>
 
-        {/* TRUSTED BY SECTION */}
-        <section className="st_trusted_by">
-          <h2>TRUSTED BY</h2>
-          <div className="st_trusted_by_companies">
-            <div className="st_trusted_by_company">
-              University of Oregon
-            </div>
-            <div className="st_trusted_by_company">
-              <img
-                src="/img/website/trusted-comp2.png"
-                alt="Town of Manchester"
-              />
-            </div>
-            <div className="st_trusted_by_company">
-              <img
-                src="/img/website/trusted-comp3.png"
-                alt="Bicycle Coalition of Greater Philadelphia"
-              />
-            </div>
-            <div className="st_trusted_by_company">
-              World Bank Group
-            </div>
-            <div className="st_trusted_by_company">
-              Delaware Valley Regional Planning Commission
-            </div>
-          </div>
-        </section>
 
         {/* FOOTER SECTION */}
         <footer className="st_footer">
