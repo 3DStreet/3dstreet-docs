@@ -18,11 +18,6 @@ a {
     text-decoration: none;
 }
 
-p,
-h2 {
-    margin-bottom: 0;
-}
-
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -229,10 +224,6 @@ section h2 {
     margin-top: 40px;
 }
 
-/* .st_overview_video {
-    width: 100%;
-} */
-
 /*----------------------------------------------------------------
   Vision(section) styles
 ----------------------------------------------------------------*/
@@ -278,14 +269,15 @@ section h2 {
     min-height: 195px;
 }
 
-.st_statistics_post_description p:nth-child(1) {
-    font-size: 84px;
+.st_statistics_post_description .st_statistics_post_title {
+    font-size: 64px;
     font-weight: 700;
-    line-height: 100px;
+    line-height: 70px;
     color: #e4e4e4;
+    /* margin-bottom: 16px; */
 }
 
-.st_statistics_post_description p:nth-child(2) {
+.st_statistics_post_description p:nth-child(3) {
     font-size: 16px;
     font-weight: 500;
     line-height: 130%;
@@ -299,6 +291,14 @@ section h2 {
     line-height: 160%;
     color: #5200ff;
     text-decoration: underline;
+}
+
+.st_statistics_post_description p {
+  margin-bottom: 16px !important;
+}
+
+.st_statistics_post_description p:last-child {
+  margin-bottom: 0;
 }
 
 /*----------------------------------------------------------------
@@ -724,6 +724,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+    padding: 42px 0px 0px 0px;
 }
 
 .st_trusted_by h2 {
@@ -737,7 +738,7 @@ section h2 {
 .st_trusted_by_companies {
     display: flex;
     justify-content: center;
-    column-gap: 24px;
+    column-gap: 14px;
     width: 100%;
 }
 
@@ -748,15 +749,6 @@ section h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.st_start h2 {
-    font-family: "Kanit";
-    font-weight: 700;
-    font-size: 92px;
-    line-height: 110%;
-    color: #fff;
-    text-transform: none;
 }
 
 .st_footer {
@@ -971,10 +963,6 @@ section h2 {
 
     .st_socials_item {
         padding: 24px 20px 24px 24px;
-    }
-
-    .st_socials_item a {
-        margin-top: 24px;
     }
 
     .st_blog_inner {

@@ -58,6 +58,8 @@ export default function PlanningPage() {
           />
         </div>
 
+        {/* HEADER SECTION */}
+        <header className="st_header_container"></header>
         {/* MAIN SECTION */}
         <main className="st_main">
           <div className="st_main_wrapper">
@@ -67,7 +69,7 @@ export default function PlanningPage() {
                 Create compelling 3D visualizations of street redesigns to engage stakeholders 
                 and build consensus for transformative projects.
               </p>
-              
+              <br />
               <div className="st_hero_cta">
                 <Button
                   variant="blue"
@@ -92,19 +94,13 @@ export default function PlanningPage() {
           <h2>TRUSTED BY</h2>
           <div className="st_trusted_by_companies">
             <div className="st_trusted_by_company">
-              University of Oregon
+              LA Metro
             </div>
             <div className="st_trusted_by_company">
-              <img
-                src="/img/website/trusted-comp2.png"
-                alt="Town of Manchester"
-              />
+              Town of Manchester, CT
             </div>
             <div className="st_trusted_by_company">
-              <img
-                src="/img/website/trusted-comp3.png"
-                alt="Bicycle Coalition of Greater Philadelphia"
-              />
+              City of Silverton, OR
             </div>
             <div className="st_trusted_by_company">
               World Bank Group
@@ -114,17 +110,17 @@ export default function PlanningPage() {
             </div>
           </div>
         </section>
-        
+
               {/* Features Section within Main */}
               <section className="st_statistics">
-                <h2>KEY VALUE PROPOSITIONS</h2>
                 <div className="st_statistics_posts">
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
                       <img src="/img/placeholder-stakeholder.jpg" alt="Rapid Visualization" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Rapid Visualization</p>
+                      <h3 className="st_statistics_post_title">Rapid Visualization</h3>
+                      
                       <p>Create compelling street designs in minutes instead of days. What previously required expensive CAD software and specialized training can now be accomplished in a single afternoon.</p>
                     </div>
                   </div>
@@ -134,7 +130,7 @@ export default function PlanningPage() {
                       <img src="/img/placeholder-community.jpg" alt="Accessible Urban Design" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Accessible Urban Design</p>
+                      <h3 className="st_statistics_post_title">Accessible Urban Design</h3>
                       <p>Professional-grade street design capabilities without the steep learning curve of traditional engineering software. Enable planners, advocates, and community members to create meaningful design alternatives.</p>
                     </div>
                   </div>
@@ -144,7 +140,7 @@ export default function PlanningPage() {
                       <img src="/img/placeholder-iteration.jpg" alt="Stakeholder Engagement" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Stakeholder Engagement</p>
+                      <h3 className="st_statistics_post_title">Stakeholder Engagement</h3>
                       <p>Show, don't just tell. Transform abstract planning concepts into interactive 3D visuals that community members can understand and provide meaningful feedback on.</p>
                     </div>
                   </div>
@@ -154,7 +150,7 @@ export default function PlanningPage() {
                       <img src="/img/placeholder-stakeholder.jpg" alt="Budget-Friendly Planning" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Budget-Friendly Planning</p>
+                      <h3 className="st_statistics_post_title">Budget-Friendly Planning</h3>
                       <p>Professional-quality visualizations without expensive in-house design resources or consultants. Democratize access to quality planning tools regardless of budget constraints.</p>
                     </div>
                   </div>
@@ -164,7 +160,7 @@ export default function PlanningPage() {
                       <img src="/img/placeholder-community.jpg" alt="From Concept to Engineering" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>From Concept to Engineering</p>
+                      <h3 className="st_statistics_post_title">From Concept to Engineering</h3>
                       <p>Start with quick concepts that can later be refined and exported to professional design software. Create a seamless pipeline from ideation to detailed engineering.</p>
                     </div>
                   </div>
@@ -174,7 +170,7 @@ export default function PlanningPage() {
                       <img src="/img/placeholder-iteration.jpg" alt="Decision Acceleration" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <p>Decision Acceleration</p>
+                      <h3 className="st_statistics_post_title">Decision Acceleration</h3>
                       <p>Quickly visualize and evaluate multiple design scenarios to identify the most promising alternatives. Make data-informed decisions faster and avoid costly detours.</p>
                     </div>
                   </div>
