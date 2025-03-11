@@ -56,11 +56,8 @@
   font-size: 18px;
   font-weight: 500;
   transition: ease-out 0.2s;
-
-  @media (max-width: 768px) {
-    padding: 12px 20px;
-  }
 }
+
 .icon, .trailingIcon {
   max-width: 24px;
   min-width: 24px;

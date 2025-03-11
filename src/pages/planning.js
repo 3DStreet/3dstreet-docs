@@ -164,16 +164,6 @@ export default function PlanningPage() {
                       <p>Start with quick concepts that can later be refined and exported to professional design software. Create a seamless pipeline from ideation to detailed engineering.</p>
                     </div>
                   </div>
-
-                  <div className="st_statistics_item">
-                    <div className="st_statistics_icon">
-                      <img src="/img/placeholder-iteration.jpg" alt="Decision Acceleration" />
-                    </div>
-                    <div className="st_statistics_post_description">
-                      <h3 className="st_statistics_post_title">Decision Acceleration</h3>
-                      <p>Quickly visualize and evaluate multiple design scenarios to identify the most promising alternatives. Make data-informed decisions faster and avoid costly detours.</p>
-                    </div>
-                  </div>
                 </div>
               </section>
             </div>
@@ -306,33 +296,6 @@ export default function PlanningPage() {
             </div>
           </div>
         </section>
-
-        {/* GRID SECTION for Getting Started */}
-        <section className="st_grid_3_wrapper">
-          <section className="st_mission">
-            <h2>GETTING STARTED IS EASY</h2>
-            <p>Start with a simple 2D design, transform into interactive 3D, then share and collaborate with stakeholders.</p>
-            <div className="st_steps">
-              <div className="st_step">
-                <div className="st_step_number">1</div>
-                <h3>Design Your Street</h3>
-                <p>Start with a simple 2D design using Streetmix or import your existing street plans.</p>
-              </div>
-
-              <div className="st_step">
-                <div className="st_step_number">2</div>
-                <h3>Visualize in 3D</h3>
-                <p>Transform your design into an interactive 3D model with just a few clicks. Add details with our comprehensive object library.</p>
-              </div>
-
-              <div className="st_step">
-                <div className="st_step_number">3</div>
-                <h3>Share and Collaborate</h3>
-                <p>Present your vision to stakeholders with shareable links, exports for AR, or embed in your project website.</p>
-              </div>
-            </div>
-          </section>
-        </section>
         
         {/* BLOG-STYLE CTA SECTION */}
         <section className="st_blog">
@@ -353,14 +316,15 @@ export default function PlanningPage() {
                 }}
               />
               <Button
-                variant="outline"
                 label="Schedule a Demo"
+                variant="transparent"
                 onClick={() => {
                   window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");
                 }}
               />
-            </div>
           </div>
+          </div>
+
         </section>
 
 

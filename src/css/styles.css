@@ -188,6 +188,12 @@ main {
     margin-bottom: 40px;
 }
 
+.st_cta_buttons {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start !important;
+}
+
 .st_hero_cta {
     display: flex;
     gap: 20px;
