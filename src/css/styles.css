@@ -552,11 +552,16 @@ section h2 {
     row-gap: 40px;
 }
 
-.st_feature_description_top p:nth-child(1) {
+.st_feature_description_top p:nth-child(1), .st_feature_description_top {
     font-size: 42px;
     font-weight: 600;
     line-height: 110%;
     color: #3514bc;
+
+    h1 {
+        margin: 60px 0px 0px;
+    }
+
 }
 
 .st_feature_description_top p:nth-child(2) {
