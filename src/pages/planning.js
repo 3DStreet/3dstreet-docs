@@ -170,7 +170,13 @@ export default function PlanningPage() {
           </div>
           <div className="st_main_grid" />
         </main>
-
+        <div className="st_testimonial">
+              <blockquote>
+                "3DStreet allows us to bring technical street designs to life, helping community members visualize and understand proposed changes. It's been transformative for building consensus on projects that might otherwise face resistance due to misunderstanding."
+              </blockquote>
+              <cite>- Transportation Planning Professional</cite>
+            </div>
+            <br/>
         {/* SOLUTIONS SECTION - Planning Tools */}
         <section className="st_solutions">
           <div className="st_solutions_inner">
@@ -231,15 +237,16 @@ export default function PlanningPage() {
                 <p>Enhance client presentations with interactive 3D models, differentiate proposals, facilitate more productive client feedback sessions, and export designs to AR for on-site stakeholder reviews.</p>
               </div>
             </div>
-            <div className="st_testimonial">
+
+          </div>
+        </section>
+
+        <div className="st_testimonial">
               <blockquote>
                 "3DStreet allows us to bring technical street designs to life, helping community members visualize and understand proposed changes. It's been transformative for building consensus on projects that might otherwise face resistance due to misunderstanding."
               </blockquote>
               <cite>- Transportation Planning Professional</cite>
             </div>
-          </div>
-        </section>
-
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
           <div className="st_features_inner">

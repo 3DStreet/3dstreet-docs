@@ -205,7 +205,6 @@ section h2 {
     font-weight: 700;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 6px;
     text-transform: uppercase;
 }
 
@@ -816,6 +815,53 @@ section h2 {
     font-weight: 500;
     margin: 0;
     height: 3px;
+}
+
+/*----------------------------------------------------------------
+  Temporary styles for hiding placeholder images
+----------------------------------------------------------------*/
+
+/* Add this class to any image container that needs to be hidden temporarily */
+.st_statistics_icon img {
+    display: none; /* Completely hide the images */
+}
+
+/* Maintain the spacing where the images would be */
+.st_statistics_icon {
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle placeholder background */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------------------------------------------------
+  Testimonial styles
+----------------------------------------------------------------*/
+
+.st_testimonial {
+    width: 750px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.st_testimonial blockquote {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.st_testimonial cite {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    text-align: right;
 }
 
 /*----------------------------------------------------------------
