@@ -121,7 +121,7 @@ export default function PlanningPage() {
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Rapid Visualization</h3>
                       
-                      <p>Create compelling street designs in minutes instead of days. What previously required expensive CAD software and specialized training can now be accomplished in a single afternoon.</p>
+                      <p>Create compelling street designs in minutes instead of days. What previously required expensive CAD software and specialized training can now be accomplished in a single session.</p>
                     </div>
                   </div>
 
@@ -147,12 +147,12 @@ export default function PlanningPage() {
                   
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Budget-Friendly Planning" />
+                      <img src="/img/placeholder-stakeholder.jpg" alt="Elevate Your Proposals" />
                     </div>
                     <div className="st_statistics_post_description">
-                      <h3 className="st_statistics_post_title">Budget-Friendly Planning</h3>
-                      <p>Professional-quality visualizations without expensive in-house design resources or consultants. Democratize access to quality planning tools regardless of budget constraints.</p>
-                    </div>
+                      <h3 className="st_statistics_post_title">Elevate Your Proposals</h3>
+                      <p>Elevate your project proposals with professional-quality visualizations that captivate stakeholders and decision-makers.</p>
+                      </div>
                   </div>
 
                   <div className="st_statistics_item">
@@ -172,9 +172,9 @@ export default function PlanningPage() {
         </main>
         <div className="st_testimonial">
               <blockquote>
-                "3DStreet allows us to bring technical street designs to life, helping community members visualize and understand proposed changes. It's been transformative for building consensus on projects that might otherwise face resistance due to misunderstanding."
+                "We found the ability to instantly transform cross-sections designed in Streetmix to interactive 3D visualizations with satellite map layers in 3DStreet to be transformative to understanding the true impacts and benefits of the proposed project in context with the existing environment."
               </blockquote>
-              <cite>- Transportation Planning Professional</cite>
+              <cite>- Eric Mulinge, Transportation Analyst</cite>
             </div>
             <br/>
         {/* SOLUTIONS SECTION - Planning Tools */}
@@ -256,7 +256,7 @@ export default function PlanningPage() {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Climate-Resilient Infrastructure for Kiritimati Island</p>
+                    <h1>Climate-Resilient Infrastructure for Kiritimati Island</h1>
                     <p>
                       The World Bank collaborated with 3DStreet to visualize sustainable transportation infrastructure for Kiritimati Island, the world's largest coral atoll. This project helped imagine climate-resilient solutions that could accommodate both current and future residents in the context of rising sea levels.
                     </p>
@@ -271,7 +271,7 @@ export default function PlanningPage() {
                   />
                 </div>
                 <img
-                  src="/img/placeholder-kiritimati.jpg"
+                  src="https://www.3dstreet.org/assets/images/cross-section-kiritimati-alt-2-b5ac5d507d6284e22b337fe9257fdc63.jpg"
                   alt="Visualization of infrastructure on Kiritimati Island"
                   width="386"
                 />
@@ -280,7 +280,7 @@ export default function PlanningPage() {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Trenton Bike Plan Visualization</p>
+                    <h1>Trenton Bike Plan Visualization</h1>
                     <p>
                       The Delaware Valley Regional Planning Commission utilized 3DStreet to create compelling visualizations for the "Trenton Bike Plan for All." These 3D models helped stakeholders understand proposed safety improvements and bicycle infrastructure designs.
                     </p>
@@ -290,7 +290,7 @@ export default function PlanningPage() {
                     label="View Project"
                     trailingIcon={<ExternalLinkIcon />}
                     onClick={() => {
-                      window.open("https://www.dvrpc.org/webmaps/trenton-bike-plan/", "_blank", "noopener,noreferrer");
+                      window.open("https://www.dvrpc.org/products/23141", "_blank", "noopener,noreferrer");
                     }}
                   />
                 </div>
