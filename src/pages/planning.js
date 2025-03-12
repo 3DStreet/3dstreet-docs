@@ -295,7 +295,7 @@ export default function PlanningPage() {
                   />
                 </div>
                 <img
-                  src="/img/placeholder-trenton.jpg"
+                  src="/img/pages/trenton-materials.webp"
                   alt="Trenton bike plan visualization"
                   width="386"
                 />
