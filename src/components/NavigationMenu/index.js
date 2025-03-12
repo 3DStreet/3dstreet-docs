@@ -29,11 +29,11 @@ const NavigationMenu = () => {
               <ListItem href="/planning/" title="Urban Planning">
                 For urban planners and economic development agencies.
               </ListItem>
-              <ListItem href="/docs/features" title="Education">
+              <ListItem href="/education/" title="Education">
                 For students and educators from Pre-K to Post-Doc.
               </ListItem>
-              <ListItem href="/docs/examples" title="Transportation and Land Use Advocacy">
-                For volunteers and staff from neighborhood associations to global NGOs.
+              <ListItem href="/advocacy/" title="Transportation and Land Use Advocacy">
+                For staff and volunteers from neighborhood associations to global NGOs.
               </ListItem>
             </ul>
           </NavigationMenuPrimitive.Content>
@@ -123,7 +123,7 @@ const NavigationMenu = () => {
         <NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Link
             className="NavigationMenuLink"
-            href="https://github.com/3DStreet/3dstreet"
+            href="/docs/pricing"
           >
             Pricing
           </NavigationMenuPrimitive.Link>
