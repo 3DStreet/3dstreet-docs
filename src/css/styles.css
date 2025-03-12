@@ -532,6 +532,9 @@ section h2 {
 
 .st_features_item img {
     border-radius: 0 8px 8px 0;
+    object-fit: cover;
+    height: 100%;
+    width: 386px;
 }
 
 .st_feature_description {
