@@ -3,6 +3,7 @@ import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 import { Button, Input } from "..";
 import NavigationMenu from "../NavigationMenu";
+import Footer from "../Footer";
 import {
   ArrowIcon,
   DiscordIcon,
@@ -14,13 +15,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import MuxPlayer from "@mux/mux-player-react";
 
 export default function Home({ recentPosts }) {
-  const {
-    siteConfig: {
-      themeConfig: {
-        footer: { links: footerLinks },
-      },
-    },
-  } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
   return (
     <>
@@ -438,30 +433,7 @@ export default function Home({ recentPosts }) {
         </section>
 
         {/* FOOTER SECTION */}
-        <footer className="st_footer">
-          <div className="st_footer_links">
-            {footerLinks.map(({ title, items }, idx) => (
-              <div key={idx} className="st_footer_col">
-                <p>{title}</p>
-                <ul>
-                  {items.map(({ label, to, href }, idx) => (
-                    <li key={idx}>
-                      <a href={to ?? href} target="_blank">
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <p className="st_footer_copyright">
-            <span />
-            ©2025 3DStreet LLC. 3DStreet is a registered trademark of 3DStreet
-            LLC.
-          </p>
-        </footer>
+        <Footer />
       </div>
     </>
   );

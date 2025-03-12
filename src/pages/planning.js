@@ -2,6 +2,7 @@ import React from 'react';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { Button } from '../components';
 import NavigationMenu from '../components/NavigationMenu';
+import Footer from '../components/Footer';
 
 export default function PlanningPage() {
   return (
@@ -336,45 +337,7 @@ export default function PlanningPage() {
 
 
         {/* FOOTER SECTION */}
-        <footer className="st_footer">
-          <div className="st_footer_links">
-            <div className="st_footer_col">
-              <p>Products</p>
-              <ul>
-                <li><a href="https://3dstreet.app" target="_blank">3DStreet Editor</a></li>
-                <li><a href="/planning" target="_blank">Urban Planning</a></li>
-                <li><a href="/education" target="_blank">Education</a></li>
-              </ul>
-            </div>
-            <div className="st_footer_col">
-              <p>Resources</p>
-              <ul>
-                <li><a href="/docs" target="_blank">Documentation</a></li>
-                <li><a href="/blog" target="_blank">Blog</a></li>
-                <li><a href="/about" target="_blank">About Us</a></li>
-              </ul>
-            </div>
-            <div className="st_footer_col">
-              <p>Community</p>
-              <ul>
-                <li><a href="https://discord.com/invite/9DgKkFCetC" target="_blank">Discord</a></li>
-                <li><a href="https://github.com/3DStreet" target="_blank">GitHub</a></li>
-              </ul>
-            </div>
-            <div className="st_footer_col">
-              <p>Legal</p>
-              <ul>
-                <li><a href="/privacy" target="_blank">Privacy Policy</a></li>
-                <li><a href="/terms" target="_blank">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <p className="st_footer_copyright">
-            <span />
-            ©2025 3DStreet LLC. 3DStreet is a registered trademark of 3DStreet LLC.
-          </p>
-        </footer>
+        <Footer />
       </div>
     </>
   );
