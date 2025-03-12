@@ -80,8 +80,17 @@ export default function ContactPage() {
               <div className="st_contact_item">
                 <h2>Sales Inquiries</h2>
                 <p>Interested in 3DStreet for your organization? Fill out the form below and our team will get back to you shortly.</p>
-                <div className="st_contact_form" style={{ fontFamily: 'inherit' }}>
-                  <HubSpotForm />
+                <div style={{ 
+                  width: '80%', 
+                  margin: '1.5rem auto', 
+                  backgroundColor: '#f2ebff', 
+                  borderRadius: '12px', 
+                  padding: '1.5rem', 
+                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' 
+                }}>
+                  <div className="st_contact_form">
+                    <HubSpotForm />
+                  </div>
                 </div>
               </div>
               
