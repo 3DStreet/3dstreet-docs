@@ -190,13 +190,13 @@ export default function PlanningPage() {
                   variant="blue"
                   label="Learn more"
                   onClick={() => {
-                    window.open("https://3dstreet.org/docs/geospatial-integration", "_blank", "noopener,noreferrer");
+                    window.open("/docs/key-features/geospatial", "_blank", "noopener,noreferrer");
                   }}
                 />
               </div>
               <div className="st_solution_item">
-                <h3>AR-Ready Exports</h3>
-                <p>Export your designs as AR-ready 3D models for on-site visualization with popular platforms like Adobe Aero and inCitu. Allow stakeholders to experience your designs in context, right at the project location.</p>
+                <h3>AR Ready Exports</h3>
+                <p>Export your designs as AR Ready 3D models for on-site visualization with popular platforms like Adobe Aero and inCitu. Allow stakeholders to experience your designs in context, right at the project location.</p>
                 <Button
                   variant="blue"
                   label="Learn more"
@@ -330,12 +330,9 @@ export default function PlanningPage() {
                   window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");
                 }}
               />
+            </div>
           </div>
-          </div>
-
         </section>
-
-
         {/* FOOTER SECTION */}
         <Footer />
       </div>
