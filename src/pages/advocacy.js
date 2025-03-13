@@ -184,9 +184,8 @@ export default function AdvocacyPage() {
                 <p>Ground your proposals in familiar locations with Google 3D Tiles, OpenStreetMap data, and satellite imagery. Help your community visualize changes to their own streets and neighborhoods.</p>
                 <Button
                   variant="blue"
-                  label="Learn more"
-                  href="https://3dstreet.org/docs/geospatial-integration"
-                  target="_blank"
+                  label="Learn More"
+                  href="/docs/key-features/geospatial"
                 />
               </div>
               <div className="st_solution_item">
@@ -194,9 +193,8 @@ export default function AdvocacyPage() {
                 <p>Visualize quick-build solutions like parklets, planters, bollards, and traffic diverters that can be implemented at low cost while building support for permanent changes.</p>
                 <Button
                   variant="blue"
-                  label="Learn more"
-                  href="https://3dstreet.org/docs/tactical-urbanism"
-                  target="_blank"
+                  label="Learn More"
+                  href="/docs/key-features/model-library"
                 />
               </div>
               <div className="st_solution_item">
@@ -204,9 +202,8 @@ export default function AdvocacyPage() {
                 <p>Export your designs as images, videos, or interactive AR experiences that can be shared on social media, embedded in websites, or presented at community meetings.</p>
                 <Button
                   variant="blue"
-                  label="Learn more"
-                  href="https://3dstreet.org/docs/export-options"
-                  target="_blank"
+                  label="Learn More"
+                  href="/docs/3dstreet-editor/saving-and-loading-scenes#file-export-options"
                 />
               </div>
             </div>

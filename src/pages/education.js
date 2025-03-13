@@ -184,33 +184,27 @@ export default function EducationPage() {
                 <p>Empower students of all technical abilities to create and share complex 3D environments without coding skills. Perfect for project-based learning that builds digital literacy alongside subject knowledge.</p>
                 <Button
                   variant="blue"
-                  label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/getting-started", "_blank", "noopener,noreferrer");
-                  }}
+                  label="Learn More"
+                  href="/docs/key-features/model-library"
                 />
               </div>
               <div className="st_solution_item">
                 <h3>Cross-Disciplinary Applications</h3>
                 <p>From geography and civics to mathematics and environmental science, 3DStreet provides versatile visualization tools that can be integrated into diverse subjects and aligned with curriculum standards.</p>
-                <Button
+                {/* <Button
                   variant="blue"
-                  label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/lesson-plans", "_blank", "noopener,noreferrer");
-                  }}
-                />
+                  label="Learn More"
+                  href="/docs/key-features/model-library"
+                /> */}
               </div>
               <div className="st_solution_item">
                 <h3>Easy Sharing & Collaboration</h3>
                 <p>Enable students to collaborate on projects in real-time, present their work to peers, and share interactive 3D models with the broader community—all through browser-based technology with no downloads required.</p>
-                <Button
+                {/* <Button
                   variant="blue"
-                  label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/collaboration", "_blank", "noopener,noreferrer");
-                  }}
-                />
+                  label="Learn More"
+                  href="/docs/key-features/model-library"
+                /> */}
               </div>
             </div>
           </div>

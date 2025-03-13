@@ -150,33 +150,27 @@ export default function Home({ recentPosts }) {
                 <h3>Urban Planning</h3>
                 <p>For urban planners and economic development agencies. Create compelling 3D visualizations of street redesigns to engage stakeholders and build consensus for transformative projects.</p>
                 <Button
-                  variant={"blue"}
-                  label={"Learn more"}
-                  onClick={() => {
-                    location.href = "/docs/getting-started";
-                  }}
+                  variant="blue"
+                  label="Learn More"
+                  href="/planning"
                 />
               </div>
               <div className="st_solution_item">
                 <h3>Education</h3>
                 <p>For students and educators from Pre-K to Post-Doc. Empower learners to understand urban design principles through hands-on 3D modeling and visualization of street environments.</p>
                 <Button
-                  variant={"blue"}
-                  label={"Learn more"}
-                  onClick={() => {
-                    location.href = "/docs/features";
-                  }}
+                  variant="blue"
+                  label="Learn More"
+                  href="/education"
                 />
               </div>
               <div className="st_solution_item">
                 <h3>Transportation and Land Use Advocacy</h3>
                 <p>For volunteers and staff from neighborhood associations to global NGOs. Create powerful visual stories that communicate your vision for safer, more sustainable streets.</p>
                 <Button
-                  variant={"blue"}
-                  label={"Learn more"}
-                  onClick={() => {
-                    location.href = "/docs/examples";
-                  }}
+                  variant="blue"
+                  label="Learn More"
+                  href="/advocacy"
                 />
               </div>
             </div>
