@@ -94,16 +94,16 @@ export default function EducationPage() {
               University of Oregon
             </div>
             <div className="st_trusted_by_company">
-              Portland Public Schools
+              Universidad Nacional Autónoma de México
             </div>
             <div className="st_trusted_by_company">
-              San Francisco Unified School District
+              Instituto Federal de São Paulo
             </div>
             <div className="st_trusted_by_company">
-              NY Tech Alliance
+              Universidade Federal de Mato Grosso do Sul
             </div>
             <div className="st_trusted_by_company">
-              Massachusetts Institute of Technology
+              Universidad de los Andes
             </div>
           </div>
         </section>
@@ -169,9 +169,9 @@ export default function EducationPage() {
         </main>
         <div className="st_testimonial">
               <blockquote>
-                "3DStreet has transformed how our students engage with urban design concepts. They're not just learning about sustainable transportation—they're visualizing, creating, and problem-solving in ways that weren't possible before. It's made complex spatial concepts accessible to students of all learning styles."
+                "3DStreet has transformed how our students engage with urban design concepts. They're not just learning about sustainable transportation—they're visualizing, creating, and problem-solving in ways that weren't possible before. It's made street design prototyping accessible to students of all learning styles."
               </blockquote>
-              <cite>- Dr. Sarah Chen, Professor of Urban Studies, University of Oregon</cite>
+              <cite>- Marc Schlossberg, Professor, City & Regional Planning, University of Oregon</cite>
             </div>
             <br/>
         {/* SOLUTIONS SECTION - Education Tools */}
@@ -240,9 +240,9 @@ export default function EducationPage() {
 
         <div className="st_testimonial">
               <blockquote>
-                "My middle school students were able to redesign their own school street using 3DStreet, and then present their ideas to the principal and parents. The interactive 3D models made their proposals compelling and accessible to everyone, regardless of their background in urban design."
+                "Our University partnership with 3DStreet is uniquely collaborative and more than just working with another software vendor. They are responsive to our feedback, and even work directly with advanced researchers like me through open-source collaborations to enable modification and upgrade of 3DStreet features and urban models."
               </blockquote>
-              <cite>- James Wilson, 8th Grade Science Teacher</cite>
+              <cite>- Luke Walker, Research Assistant, Oregon Reality (OR) Lab</cite>
             </div>
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">

@@ -200,12 +200,12 @@ export default function PlanningPage() {
               <div className="st_solution_item">
                 <h3>Comprehensive 3D Library</h3>
                 <p>Access a growing library of street elements including traffic safety features, street furniture, pedestrian amenities, transit infrastructure, and more. Easily customize your scenes with just a few clicks.</p>
-                <Button
+                {/* <Button
                   variant="blue"
                   label="Learn more"
                   href="https://3dstreet.org/docs/3d-library"
                   target="_blank"
-                />
+                /> */}
               </div>
             </div>
           </div>
