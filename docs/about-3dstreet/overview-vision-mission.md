@@ -5,29 +5,22 @@ description: 3DStreet's vision is to reimagine a new world through safer, greene
 
 # Why 3DStreet? Vision & Mission
 
-## Vision
-Reimagine a new world through safer, greener streets.
+**Vision**: Design the future
+<br/>
+**Mission**: Provide tools to empower anyone to rapidly prototype visions to improve our shared environment, starting with streets.
+## Founding and Evolution
+3DStreet was created by Kieran Farr in 2017 as a solution to his own challenges advocate for street safety improvements with local community organizations in San Francisco. Volunteers faced challenges collaborating with community members, elected officials, and agency staff regarding complex street change proposals which led to miscommunication and delay. [Streetmix](https://streetmix.net) was helpful for initial rapid prototyping but limited to cross-sections, while civil engineering tools like AutoCAD were too complicated for most users. 3DStreet fills this gap in-between Streetmix and AutoCAD allowing for rapid prototyping to evaluate technical feasibility, facilitate political support, and secure streetscape project funding, prior to entering a detailed engineering design stage.
 
-## Mission
-We aim to empower the world with simple tools that enable anyone to create a safer and greener future, one street at a time.
+## Key Contributors
+The majority of 3DStreet's day-to-day development and operation is led by Kieran Farr, the founder and lead developer, with significant community contributions as an open-source project.
 
-## Problem Statement
+Fernando Serrano, Kevin Ngo, and Diego Marcos have been longtime contributors to the [A-Frame Web 3D Graphics Library](https://aframe.io/) and the [A-Frame Inspector](https://github.com/aframevr/aframe-inspector), upon which 3DStreet was based.
 
-Road traffic injuries are the leading cause of death for children and young adults aged 5-29 years. [^1] In many cases, those injured are people outside of a vehicle. Collisions resulting in injury with pedestrians and active mobility users can be prevented or minimized with proven infrastructure solutions already installed in many locations across the world. [^2]
-
-However, access to software and engineering skills required to implement these proven solutions are very limited. Few people have the abilities and resources to use software that is needed to prototype, design, and engineer street infrastructure. Further, most existing street design software is closed-source, expensive, and biased toward motor vehicle throughput as a primary objective.
-
-These accessibility barriers prevent community members and advocates from fixing deadly streets in their own neighborhoods.
-
-## Solution Statement
-
-3DStreet is an attempt to provide accessible software to conceptualize and share safer street designs from multiple 3D perspectives, usually in the context of a specific geographic location. 3DStreet is a web-based, open-source[^3] application.
-
-Said another way, 3DStreet is an ever-evolving answer to the question, "what if we made street planning tools that are fun and accessible to everyone?"
+In addition to the above, the following individuals have contributed to 3DStreet-specific customizations over the years: Vincent Fretin, Alexander Goryushkin, Rahul Gupta, Sam Rothstein, Gnanasai Reddy, and more.
 
 ## Ecosystem
 
-We created 3DStreet to be part of a wider ecosystem of open-source applications making street planning and design and accessible to users of diverse abilities, empowering them to design safer streets and transportation infrastructure. These tools are (or should be) interoperable, and need not be all made by one organization. Other tools include [Streetmix](https://streetmix.net) and [A/B Street](https://a-b-street.github.io/docs/index.html).
+We created 3DStreet to be part of a wider ecosystem of applications making street planning and design and accessible to users of diverse abilities. These tools are (or should be) interoperable, and need not be all made by one organization. Other tools include [Streetmix](https://streetmix.net), [A/B Street](https://a-b-street.github.io/docs/index.html), [StreetPlan](https://streetplan.net), and [Open Street Map](https://www.openstreetmap.org/).
 
 
 ### References
