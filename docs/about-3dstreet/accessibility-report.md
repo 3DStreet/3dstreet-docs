@@ -3,7 +3,8 @@
 Last updated: October 15, 2024
 
 Please follow this link for our latest WCAG 2.1 Accessibility Report to AA Standard:
-[https://3dstreet.org/accessibility/](/accessibility/)
+
+<a href="https://3dstreet.org/accessibility/" target="_blank">https://3dstreet.org/accessibility/</a>
 
 ## AA Standards Non-Compliant Element Mitigation Plan
 
