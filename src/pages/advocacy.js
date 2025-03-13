@@ -169,9 +169,9 @@ export default function AdvocacyPage() {
         </main>
         <div className="st_testimonial">
               <blockquote>
-                "3DStreet has completely transformed how we communicate our vision to both community members and city officials. Being able to show rather than just tell has significantly increased support for our safer streets initiatives."
+                "As our neighborhood developed a vision for welcoming a new elementary school, 3DStreet has been a great gift to outreach and engagement with the community, elected officials, and agency staff. The multi-viewpoint visualization, especially the first-person animation of traffic circle usage at a child’s height and illustrating before/after conditions clearly conveys what is possible."
               </blockquote>
-              <cite>- Advocacy Director, Safe Streets Coalition</cite>
+              <cite>- Sarah Bertram, Community Advocate</cite>
             </div>
             <br/>
         {/* SOLUTIONS SECTION - Advocacy Tools */}

@@ -234,8 +234,7 @@ export default function EducationPage() {
 
         <div className="st_testimonial">
               <blockquote>
-                "Our University partnership with 3DStreet is uniquely collaborative and more than just working with another software vendor. They are responsive to our feedback, and even work directly with advanced researchers like me through open-source collaborations to enable modification and upgrade of 3DStreet features and urban models."
-              </blockquote>
+              "Our University partnership with 3DStreet is uniquely collaborative due to their willingness to go beyond other software vendors to ensure our lab has the resources to succeed. They are responsive to our feedback, and work directly with industry researchers like me through open-source collaborations to enable modification and upgrade of 3DStreet features and urban models."              </blockquote>
               <cite>- Luke Walker, Research Assistant, Oregon Reality (OR) Lab</cite>
             </div>
         {/* FEATURES SECTION - Case Studies */}
