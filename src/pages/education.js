@@ -84,7 +84,7 @@ export default function EducationPage() {
                   variant="transparent"
                   label="Request Demo"
                   onClick={() => {
-                    window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");
+                    window.open("/contact");
                   }}
                 />
               </div>
@@ -327,7 +327,7 @@ export default function EducationPage() {
                 label="Request Educational Access"
                 variant="transparent"
                 onClick={() => {
-                  window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");
+                  window.open("/contact");
                 }}
               />
           </div>

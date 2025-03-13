@@ -84,7 +84,7 @@ export default function PlanningPage() {
                   variant="transparent"
                   label="Request Demo"
                   onClick={() => {
-                    window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");
+                    window.open("/contact");
                   }}
                 />
               </div>
@@ -327,7 +327,7 @@ export default function PlanningPage() {
                 label="Schedule a Demo"
                 variant="transparent"
                 onClick={() => {
-                  window.open("https://3dstreet.org/contact", "_blank", "noopener,noreferrer");
+                  window.open("/contact");
                 }}
               />
             </div>
