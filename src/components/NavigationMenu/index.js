@@ -100,22 +100,15 @@ const NavigationMenu = () => {
               >
                 Latest news, updates, and insights from the 3DStreet team.
               </ListItem>
-              <ListItem title="Community" href="/docs/community">
-                Join the 3DStreet community and get involved.
+              <ListItem title="Community" href="https://discord.gg/VN242sx9qu" target="_blank">
+                Join the 3DStreet Discord to get involved.
               </ListItem>
               <ListItem
                 title="For Developers"
-                href="/docs/contribute"
+                href="/docs/contributing"
               >
                 Explore our GitHub repositories and learn how to contribute to the 3DStreet codebase.
               </ListItem>
-              <ListItem
-                title="Showcase"
-                href="/docs/showcase"
-              >
-                See how others are using 3DStreet to reimagine streets.
-              </ListItem>
-
             </ul>
           </NavigationMenuPrimitive.Content>
         </NavigationMenuPrimitive.Item>
