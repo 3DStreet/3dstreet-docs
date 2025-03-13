@@ -1,3 +1,9 @@
+/* Using !important to override Docusaurus theme styles */
+.wrapper[href] {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .wrapper {
   outline: none;
   border: none;

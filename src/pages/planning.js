@@ -53,9 +53,8 @@ export default function PlanningPage() {
             variant="blue"
             label="Open 3DStreet"
             trailingIcon={<ExternalLinkIcon />}
-            onClick={() => {
-              window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-            }}
+            href="https://3dstreet.app"
+            target="_blank"
           />
         </div>
 
@@ -76,16 +75,13 @@ export default function PlanningPage() {
                   variant="blue"
                   label="Try 3DStreet Today"
                   trailingIcon={<ExternalLinkIcon />}
-                  onClick={() => {
-                    window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.app"
+                  target="_blank"
                 />
                 <Button
                   variant="transparent"
                   label="Request Demo"
-                  onClick={() => {
-                    window.open("/contact");
-                  }}
+                  href="/contact"
                 />
               </div>
 
@@ -189,9 +185,7 @@ export default function PlanningPage() {
                 <Button
                   variant="blue"
                   label="Learn more"
-                  onClick={() => {
-                    window.open("/docs/key-features/geospatial", "_blank", "noopener,noreferrer");
-                  }}
+                  href="/docs/key-features/geospatial"
                 />
               </div>
               <div className="st_solution_item">
@@ -200,9 +194,7 @@ export default function PlanningPage() {
                 <Button
                   variant="blue"
                   label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/ar-exports", "_blank", "noopener,noreferrer");
-                  }}
+                  href="/docs/key-features/ar-ready-export"
                 />
               </div>
               <div className="st_solution_item">
@@ -211,9 +203,8 @@ export default function PlanningPage() {
                 <Button
                   variant="blue"
                   label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/3d-library", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.org/docs/3d-library"
+                  target="_blank"
                 />
               </div>
             </div>
@@ -266,9 +257,8 @@ export default function PlanningPage() {
                     variant="blue"
                     label="Read Case Study"
                     trailingIcon={<ExternalLinkIcon />}
-                    onClick={() => {
-                      window.open("https://www.3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets", "_blank", "noopener,noreferrer");
-                    }}
+                    href="https://www.3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets"
+                    target="_blank"
                   />
                 </div>
                 <img
@@ -290,9 +280,8 @@ export default function PlanningPage() {
                     variant="blue"
                     label="View Project"
                     trailingIcon={<ExternalLinkIcon />}
-                    onClick={() => {
-                      window.open("https://www.dvrpc.org/products/23141", "_blank", "noopener,noreferrer");
-                    }}
+                    href="https://www.dvrpc.org/products/23141"
+                    target="_blank"
                   />
                 </div>
                 <img
@@ -319,16 +308,13 @@ export default function PlanningPage() {
                 variant="blue"
                 label="Start Creating Now"
                 trailingIcon={<ExternalLinkIcon />}
-                onClick={() => {
-                  window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-                }}
+                href="https://3dstreet.app"
+                target="_blank"
               />
               <Button
                 label="Schedule a Demo"
                 variant="transparent"
-                onClick={() => {
-                  window.open("/contact");
-                }}
+                href="/contact"
               />
             </div>
           </div>

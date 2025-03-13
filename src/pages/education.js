@@ -53,9 +53,8 @@ export default function EducationPage() {
             variant="blue"
             label="Open 3DStreet"
             trailingIcon={<ExternalLinkIcon />}
-            onClick={() => {
-              window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-            }}
+            href="https://3dstreet.app"
+            target="_blank"
           />
         </div>
 
@@ -76,16 +75,13 @@ export default function EducationPage() {
                   variant="blue"
                   label="Try 3DStreet Today"
                   trailingIcon={<ExternalLinkIcon />}
-                  onClick={() => {
-                    window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.app"
+                  target="_blank"
                 />
                 <Button
                   variant="transparent"
                   label="Request Demo"
-                  onClick={() => {
-                    window.open("/contact");
-                  }}
+                  href="/contact"
                 />
               </div>
 

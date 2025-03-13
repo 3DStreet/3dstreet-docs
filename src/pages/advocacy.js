@@ -53,9 +53,8 @@ export default function AdvocacyPage() {
             variant="blue"
             label="Open 3DStreet"
             trailingIcon={<ExternalLinkIcon />}
-            onClick={() => {
-              window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-            }}
+            href="https://3dstreet.app"
+            target="_blank"
           />
         </div>
 
@@ -76,16 +75,13 @@ export default function AdvocacyPage() {
                   variant="blue"
                   label="Try 3DStreet Today"
                   trailingIcon={<ExternalLinkIcon />}
-                  onClick={() => {
-                    window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.app"
+                  target="_blank"
                 />
                 <Button
                   variant="transparent"
                   label="Request Demo"
-                  onClick={() => {
-                    window.open("/contact");
-                  }}
+                  href="/contact"
                 />
               </div>
 
@@ -189,9 +185,8 @@ export default function AdvocacyPage() {
                 <Button
                   variant="blue"
                   label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/geospatial-integration", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.org/docs/geospatial-integration"
+                  target="_blank"
                 />
               </div>
               <div className="st_solution_item">
@@ -200,9 +195,8 @@ export default function AdvocacyPage() {
                 <Button
                   variant="blue"
                   label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/tactical-urbanism", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.org/docs/tactical-urbanism"
+                  target="_blank"
                 />
               </div>
               <div className="st_solution_item">
@@ -211,9 +205,8 @@ export default function AdvocacyPage() {
                 <Button
                   variant="blue"
                   label="Learn more"
-                  onClick={() => {
-                    window.open("https://3dstreet.org/docs/export-options", "_blank", "noopener,noreferrer");
-                  }}
+                  href="https://3dstreet.org/docs/export-options"
+                  target="_blank"
                 />
               </div>
             </div>
@@ -266,9 +259,8 @@ export default function AdvocacyPage() {
                     variant="blue"
                     label="Watch Workshop Video"
                     trailingIcon={<ExternalLinkIcon />}
-                    onClick={() => {
-                      window.open("https://www.youtube.com/watch?v=m393-ZNeU68", "_blank", "noopener,noreferrer");
-                    }}
+                    href="https://www.youtube.com/watch?v=m393-ZNeU68"
+                    target="_blank"
                   />
                 </div>
                 <img
@@ -290,9 +282,8 @@ export default function AdvocacyPage() {
                     variant="blue"
                     label="Read Case Study"
                     trailingIcon={<ExternalLinkIcon />}
-                    onClick={() => {
-                      window.open("https://www.sfchronicle.com/bayarea/article/treat-avenue-green-space-19362364.php", "_blank", "noopener,noreferrer");
-                    }}
+                    href="https://www.sfchronicle.com/bayarea/article/treat-avenue-green-space-19362364.php"
+                    target="_blank"
                   />
                 </div>
                 <img
@@ -319,16 +310,13 @@ export default function AdvocacyPage() {
                 variant="blue"
                 label="Start Creating Now"
                 trailingIcon={<ExternalLinkIcon />}
-                onClick={() => {
-                  window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-                }}
+                href="https://3dstreet.app"
+                target="_blank"
               />
               <Button
                 label="Schedule a Demo"
                 variant="transparent"
-                onClick={() => {
-                  window.open("/contact");
-                }}
+                href="/contact"
               />
           </div>
           </div>
