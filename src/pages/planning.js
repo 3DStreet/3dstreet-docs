@@ -235,9 +235,9 @@ export default function PlanningPage() {
 
         <div className="st_testimonial">
               <blockquote>
-                "3DStreet allows us to bring technical street designs to life, helping community members visualize and understand proposed changes. It's been transformative for building consensus on projects that might otherwise face resistance due to misunderstanding."
+                "Absolute pleasure working with 3DStreet on visualizations of possible streetscape improvements for global street safety projects. By visualizing these improvements early, we have been able to make a compelling case for the necessary funding and support."
               </blockquote>
-              <cite>- Transportation Planning Professional</cite>
+              <cite>- Sam Johnson, Sustainable Transport Specialist</cite>
             </div>
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
