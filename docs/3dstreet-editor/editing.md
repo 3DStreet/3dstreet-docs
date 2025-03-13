@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Editing'
+sidebar_label: 'Editing Objects'
 sidebar_position: 3
 ---
 
-# Editing
+# Editing Objects
 3DStreet has powerful editing capabilities. You can move, rotate, and resize objects, as well as change their type and add advanced properties. You can also duplicate, add, and delete objects.
 
 ## Editing Object Properties
