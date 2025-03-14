@@ -246,7 +246,7 @@ export default function EducationPage() {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <h1>University of Oregon AR Street Design Course</h1>
+                    <h1>Open Sourcing 3D Traffic Safety Objects with University of Oregon I3 Program</h1>
                     <p>
                       Students in the University of Oregon's Immersive Media Communications program used 3DStreet to create augmented reality visualizations of safer street designs. This project combined digital media skills with urban planning concepts, culminating in AR experiences that could be viewed on-location with mobile devices.
                     </p>
@@ -254,39 +254,13 @@ export default function EducationPage() {
                   <Button
                     variant="blue"
                     label="Read Case Study"
-                    trailingIcon={<ExternalLinkIcon />}
-                    onClick={() => {
-                      window.open("https://www.3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero", "_blank", "noopener,noreferrer");
-                    }}
+                    href="/blog/2024/07/15/open-sourcing-3d-traffic-safety-objects-with-university-of-oregon-i3-program"
+                    target="_blank"
                   />
                 </div>
                 <img
-                  src="https://www.3dstreet.org/assets/images/2024-01-30/sZPPzIEDdoKCLolneDd8-145.05-2f85a9d46a547eee5a0af8c7dcd7b53f.png"
+                  src="/assets/images/ped-median-refuge-island-a10629e3d5e88268a7e79a3fe29d3b91.jpeg"
                   alt="Students creating AR street visualizations"
-                  width="386"
-                />
-              </div>
-
-              <div className="st_features_item">
-                <div className="st_feature_description">
-                  <div className="st_feature_description_top">
-                    <h1>San Francisco Youth Workshop Series</h1>
-                    <p>
-                      A series of workshops with San Francisco middle school students used 3DStreet to reimagine their school streets with safer infrastructure. Students learned about transportation planning, sustainability, and civic engagement while developing digital skills in 3D visualization.
-                    </p>
-                  </div>
-                  <Button
-                    variant="blue"
-                    label="View Project"
-                    trailingIcon={<ExternalLinkIcon />}
-                    onClick={() => {
-                      window.open("https://www.3dstreet.org/blog/2017/08/21/teaching-webvr-using-a-frame-and-glitch", "_blank", "noopener,noreferrer");
-                    }}
-                  />
-                </div>
-                <img
-                  src="/img/pages/youth-workshop.webp"
-                  alt="Youth workshop visualization"
                   width="386"
                 />
               </div>

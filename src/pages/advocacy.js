@@ -234,9 +234,9 @@ export default function AdvocacyPage() {
 
         <div className="st_testimonial">
               <blockquote>
-                "What used to take us weeks of work with expensive consultants can now be accomplished in a workshop with community members using 3DStreet. Our visualization capacity has increased tenfold while our costs have decreased dramatically."
+              "3DStreet allows ordinary citizens to create realistic, high quality proposals, without requiring a background in urban planning or landscape architecture. For Hayes Promenade, I created an initial 2D design in Streetmix, imported it into 3DStreet, built it out in 3D space, and finally exported that into Adobe Aero. This resulted in a complete augmented reality demo, where users can walk down our street with their phones, experiencing our proposal in first-person."
               </blockquote>
-              <cite>- Executive Director, Neighborhood Transportation Alliance</cite>
+              <cite>- Andrew Seigner, <a href="https://www.hayespromenade.org/">Hayes Promenade</a></cite>
             </div>
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
