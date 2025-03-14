@@ -177,46 +177,6 @@ export default function Home({ recentPosts }) {
           </div>
         </section>
 
-        {/* PRODUCT FEATURES SECTION */}
-        <section className="st_product_features">
-          <div className="st_product_features_inner">
-            <h2>Product Features</h2>
-            <div className="st_product_features_grid">
-              <div className="st_product_feature_item">
-                <h3>Instant Street Design</h3>
-                <p>Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components.</p>
-              </div>
-              <div className="st_product_feature_item">
-                <h3>One-Click Import</h3>
-                <p>Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.</p>
-              </div>
-              <div className="st_product_feature_item">
-                <h3>Combine with 3D Maps</h3>
-                <p>Blend 3D street models with 3D map tiles to visualize projects in real world context.</p>
-              </div>
-              <div className="st_product_feature_item">
-                <h3>Batteries Included</h3>
-                <p>Built-in library of over 200 unique and accurately scaled urban 3D models.</p>
-              </div>
-              <div className="st_product_feature_item">
-                <h3>Export for AR, VR and 3D post-processing</h3>
-                <p>Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.</p>
-              </div>
-              <div className="st_product_feature_item">
-                <h3>Share and Remix</h3>
-                <p>Create with friends, share with neighbors, and remix with the community.</p>
-              </div>
-            </div>
-            <Button
-              variant={"blue"}
-              label={"Try it now"}
-              onClick={() => {
-                window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
-              }}
-            />
-          </div>
-        </section>
-
         {/* FEATURES SECTION */}
         <section className="st_features">
           <div className="st_features_inner">
@@ -339,6 +299,46 @@ export default function Home({ recentPosts }) {
           </div>
         </section>
 
+        {/* OTHER USE CASES SECTION */}
+        <section className="st_product_features">
+          <div className="st_product_features_inner">
+            <h2>More Than Transportation</h2>
+            <div className="st_product_features_grid">
+              <div className="st_product_feature_item">
+                <h3>Construction Planning</h3>
+                <p>Create detailed construction site plans with 3D visualization of traffic flow and temporary street modifications to minimize project disruption.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Event Planning</h3>
+                <p>Visualize street closures, route diversions, and temporary installations for festivals, parades, and public gatherings with photorealistic 3D renderings.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Public Space Activation</h3>
+                <p>Transform underutilized streets into vibrant community spaces with interactive 3D mockups showing parklets, outdoor dining, public art, and recreational areas.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Competitive Proposals</h3>
+                <p>Stand out in RFPs with immersive 3D visualizations that clearly demonstrate your design's advantages over traditional 2D plans and elevations.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Property Development</h3>
+                <p>Showcase potential development projects and their integration with existing streetscapes, highlighting improved pedestrian accessibility and enhanced neighborhood connectivity.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Landscape Architecture</h3>
+                <p>Design complete streetscapes with integrated green infrastructure, showing realistic tree canopies, bioswales, and permeable surfaces to visualize both aesthetic and functional benefits.</p>
+              </div>
+            </div>
+            <Button
+              variant={"blue"}
+              label={"Try it now"}
+              onClick={() => {
+                window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
+              }}
+            />
+          </div>
+        </section>
+        
         {/* BLOG SECTION */}
         <section className="st_blog">
           <div className="st_blog_left_dot" />
