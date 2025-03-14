@@ -247,22 +247,21 @@ export default function AdvocacyPage() {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <h1>Transport Oakland Volunteer Design Workshop</h1>
+                    <h1>Community-Led Design of Safe School Streets</h1>
                     <p>
-                      Transport Oakland equipped their volunteers with 3DStreet to visualize community-driven proposals for safer streets. The organization hosted virtual workshops where participants collaboratively designed and visualized street transformations that were later presented to city officials.
+                      In San Francisco's Mission Bay neighborhood, community leaders used 3DStreet to create a 3D digital twin of proposed street safety improvements around a new elementary school. The visualization helped them effectively advocate for the project with city officials and stakeholders, transforming a vehicle-centric traffic circle into a safer space for students and families.
                     </p>
                   </div>
                   <Button
                     variant="blue"
-                    label="Watch Workshop Video"
-                    trailingIcon={<ExternalLinkIcon />}
-                    href="https://www.youtube.com/watch?v=m393-ZNeU68"
+                    label="Read Case Study"
+                    href="/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school"
                     target="_blank"
                   />
                 </div>
                 <img
-                  src="/img/pages/transport-oakland-workshop.webp"
-                  alt="Transport Oakland volunteer workshop with 3DStreet"
+                  src="/images/2024-05-24/mission-bay-traffic-circle-rev4.jpg"
+                  alt="Mission Bay Elementary School traffic circle visualization"
                   width="386"
                 />
               </div>
@@ -270,22 +269,21 @@ export default function AdvocacyPage() {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <h1>Treat Avenue Community-Led Design</h1>
+                    <h1>Community-Led Planning Trends at Caltrans</h1>
                     <p>
-                      Neighborhood advocates used 3DStreet to visualize the conversion of Treat Avenue in San Francisco into a community-focused greenway. Using AR visualization tools, residents could place street furniture, plantings, and amenities virtually to reimagine their street as a vibrant public space.
+                      At the Caltrans Equity Advisory Committee meeting, transportation professionals and community leaders discussed the global trend of community-led planning. 3DStreet's visualization tools were highlighted as a solution to bridge the gap between agencies and communities, helping residents better understand and participate in the planning process for their streets and public spaces.
                     </p>
                   </div>
                   <Button
                     variant="blue"
                     label="Read Case Study"
-                    trailingIcon={<ExternalLinkIcon />}
-                    href="https://www.sfchronicle.com/bayarea/article/treat-avenue-green-space-19362364.php"
+                    href="/blog/2024/04/22/community-led-planning-trends-at-caltrans-equity-advisory-committee"
                     target="_blank"
                   />
                 </div>
                 <img
-                  src="/img/pages/treat-street-fair.webp"
-                  alt="Treat Avenue community design visualization"
+                  src="/images/2024-03-25/treat-fair-bollard-buddy-signage-960x0.webp"
+                  alt="Community-led planning presentation slide"
                   width="386"
                 />
               </div>
