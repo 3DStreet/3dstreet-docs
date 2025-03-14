@@ -169,7 +169,7 @@ export default function EducationPage() {
         </main>
         <div className="st_testimonial">
               <blockquote>
-                "3DStreet has transformed how our students engage with urban design concepts. They're not just learning about sustainable transportation—they're visualizing, creating, and problem-solving in ways that weren't possible before. It's made street design prototyping accessible to students of all learning styles."
+              "3DStreet has empowered our students to re-think the right of way. They're not just learning about sustainable transportation, missing middle housing, and more livable place-making —they're visualizing, creating, problem-solving, and communicating their bold ideas in ways that weren't possible before. It's made street design prototyping accessible to students of all learning styles and helps develop both hard and soft skills as students are better able to communicate street redesign ideas to a broad set of public stakeholders."
               </blockquote>
               <cite>- Marc Schlossberg, Professor, City & Regional Planning, University of Oregon</cite>
             </div>

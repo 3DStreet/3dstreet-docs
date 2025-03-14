@@ -168,12 +168,12 @@ export default function AdvocacyPage() {
           <div className="st_main_grid" />
         </main>
         <div className="st_testimonial">
-              <blockquote>
-                "As our neighborhood developed a vision for welcoming a new elementary school, 3DStreet has been a great gift to outreach and engagement with the community, elected officials, and agency staff. The multi-viewpoint visualization, especially the first-person animation of traffic circle usage at a child’s height and illustrating before/after conditions clearly conveys what is possible."
-              </blockquote>
-              <cite>- Sarah Bertram, Community Advocate</cite>
-            </div>
-            <br/>
+          <blockquote>
+          "3DStreet allows ordinary citizens to create realistic, high quality proposals, without requiring a background in urban planning or landscape architecture. For Hayes Promenade, I created an initial 2D design in Streetmix, imported it into 3DStreet, built it out in 3D space, and finally exported that into Adobe Aero. This resulted in a complete augmented reality demo, where users can walk down our street with their phones, experiencing our proposal in first-person."
+          </blockquote>
+          <cite>- Andrew Seigner, <a href="https://www.hayespromenade.org/">Hayes Promenade</a></cite>
+        </div>
+        <br/>
         {/* SOLUTIONS SECTION - Advocacy Tools */}
         <section className="st_solutions">
           <div className="st_solutions_inner">
@@ -233,11 +233,11 @@ export default function AdvocacyPage() {
         </section>
 
         <div className="st_testimonial">
-              <blockquote>
-              "3DStreet allows ordinary citizens to create realistic, high quality proposals, without requiring a background in urban planning or landscape architecture. For Hayes Promenade, I created an initial 2D design in Streetmix, imported it into 3DStreet, built it out in 3D space, and finally exported that into Adobe Aero. This resulted in a complete augmented reality demo, where users can walk down our street with their phones, experiencing our proposal in first-person."
-              </blockquote>
-              <cite>- Andrew Seigner, <a href="https://www.hayespromenade.org/">Hayes Promenade</a></cite>
-            </div>
+          <blockquote>
+            "As our neighborhood developed a vision for welcoming a new elementary school, 3DStreet has been a great gift to outreach and engagement with the community, elected officials, and agency staff. The multi-viewpoint visualization, especially the first-person animation of traffic circle usage at a child’s height and illustrating before/after conditions clearly conveys what is possible."
+          </blockquote>
+          <cite>- Sarah Bertram, Community Advocate</cite>
+        </div>
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
           <div className="st_features_inner">
