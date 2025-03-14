@@ -180,20 +180,15 @@ export default function Home({ recentPosts }) {
         {/* FEATURES SECTION */}
         <section className="st_features">
           <div className="st_features_inner">
-            <h2>How are we different?</h2>
+            <h2>Product Features</h2>
 
             <div className="st_features_posts">
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>One unique simple tool</p>
+                    <p>Instant Street Design</p>
                     <p>
-                      Our powerful yet user-friendly 3DStreet Editor tool allows
-                      you to effortlessly bring your street design ideas to
-                      life. With intuitive features and a straightforward
-                      interface, you can easily create stunning and impactful
-                      street designs that contribute to a safer and greener
-                      world.
+                    Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components.
                     </p>
                   </div>
                   <Button
@@ -214,14 +209,9 @@ export default function Home({ recentPosts }) {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Infinitely collaborative software</p>
+                    <p>One-Click Import</p>
                     <p>
-                      Collaboration is at the heart of our 3DStreet tool.
-                      Connect and work with others, whether it's fellow
-                      designers, community members, or city planners. Share
-                      ideas, gather feedback, find inspiration, and collectively
-                      create street designs that truly reflect the needs and
-                      aspirations of your community.
+                    Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.
                     </p>
                   </div>
                   <Button
@@ -242,7 +232,29 @@ export default function Home({ recentPosts }) {
               <div className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Batteries included</p>
+                    <p>Combine with 3D Maps</p>
+                    <p>
+                    Blend 3D street models with 3D map tiles to visualize projects in real world context.
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-collab.jpg"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
+              <div className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Batteries Included</p>
                     <p>
                       Kickstart your original designs with 3DStreet's built-in
                       library of over 200 unique and accurately scaled urban 3D
@@ -268,6 +280,50 @@ export default function Home({ recentPosts }) {
                 />
               </div>
 
+              <div className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Export for AR, VR and 3D post-processing</p>
+                    <p>
+                      Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-model-library.jpg"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
+              <div className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Share and Remix</p>
+                    <p>
+                      Create from any desktop browser, share with colleagues, and remix with the community.
+                    </p>
+                  </div>
+                  <Button
+                    variant={"blue"}
+                    label={"Get started"}
+                    onClick={() => {
+                      location.href = "https://3dstreet.app";
+                    }}
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-collab.jpg"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
               <div className="st_features_item">
                 <div className="st_feature_description b-gap">
                   <div className="st_feature_description_top">
@@ -338,7 +394,7 @@ export default function Home({ recentPosts }) {
             />
           </div>
         </section>
-        
+
         {/* BLOG SECTION */}
         <section className="st_blog">
           <div className="st_blog_left_dot" />

@@ -76,7 +76,7 @@ const NavigationMenu = () => {
                 title="Share and Remix"
                 href="/docs/faq"
               >
-                Create with friends, share with neighbors, and remix with the community. 
+                Create from any desktop browser, share with colleagues, and remix with the community. 
               </ListItem>
             </ul>
           </NavigationMenuPrimitive.Content>
