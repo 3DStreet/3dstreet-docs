@@ -17,6 +17,20 @@
   cursor: not-allowed;
 }
 
+.icon, .trailingIcon {
+  max-width: 24px;
+  min-width: 24px;
+  max-height: 24px;
+min-height: 24px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailingIcon {
+  margin-left: 6px;
+}
+
 /* VARIANTS */
 .variant-blue {
   padding: 8px 18px;
@@ -37,7 +51,7 @@
 
 }
 .variant-blue:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid #888888;
 }
 .variant-blue.disabled {
   background: #242329;
@@ -45,6 +59,40 @@
 }
 .variant-blue.disabled:hover {
   box-shadow: none;
+}
+
+.variant-transparent-dark {
+  padding: 8px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+
+  background: rgba(0, 0, 0, 0.46);
+  backdrop-filter: blur(6px);
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: ease-out 0.2s;
+}
+
+.variant-transparent-dark .icon, .variant-transparent .trailingIcon {
+  max-width: 24px;
+  min-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+}
+
+.variant-transparent-dark .icon *, .variant-transparent .trailingIcon * {
+  fill: #fff;
+}
+.variant-transparent-dark:hover {
+  background: rgba(0, 0, 0, 0.66);
+}
+.variant-transparent-dark:focus-visible {
+  outline: 2px solid #707070;
 }
 
 .variant-transparent {
@@ -62,20 +110,6 @@
   font-size: 18px;
   font-weight: 500;
   transition: ease-out 0.2s;
-}
-
-.icon, .trailingIcon {
-  max-width: 24px;
-  min-width: 24px;
-  max-height: 24px;
-  min-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.trailingIcon {
-  margin-left: 6px;
 }
 
 .variant-transparent .icon, .variant-transparent .trailingIcon {

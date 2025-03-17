@@ -151,7 +151,7 @@ export default function Home({ recentPosts }) {
                 <p>For urban planners and economic development agencies. Create compelling 3D visualizations of street redesigns to engage stakeholders and build consensus for transformative projects.</p>
                 <Button
                   variant="blue"
-                  label="Learn More"
+                  label="Learn more"
                   href="/planning"
                 />
               </div>
@@ -160,7 +160,7 @@ export default function Home({ recentPosts }) {
                 <p>For students and educators from Pre-K to Post-Doc. Empower learners to understand urban design principles through hands-on 3D modeling and visualization of street environments.</p>
                 <Button
                   variant="blue"
-                  label="Learn More"
+                  label="Learn more"
                   href="/education"
                 />
               </div>
@@ -169,7 +169,7 @@ export default function Home({ recentPosts }) {
                 <p>For volunteers and staff from neighborhood associations to global NGOs. Create powerful visual stories that communicate your vision for safer, more sustainable streets.</p>
                 <Button
                   variant="blue"
-                  label="Learn More"
+                  label="Learn more"
                   href="/advocacy"
                 />
               </div>
@@ -200,7 +200,71 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-simple-tool.jpg"
+                  src="/img/website/feature-instant-street.webp"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
+
+              <div id="combine-with-3d-maps" className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Combine with 3D Maps</p>
+                    <p>
+                    Blend 3D street models with 3D map tiles to visualize projects in real world context.
+                    </p>
+                  </div>
+                  <div className="st_cta_buttons">
+                  <Button
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/geospatial"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="/img/website/feature-3d-maps.webp"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
+
+              <div id="batteries-included" className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Batteries Included</p>
+                    <p>
+                      Kickstart your original designs with 3DStreet's built-in
+                      library of over 200 unique and accurately scaled urban 3D
+                      models such as pedestrians, vehicles, buildings, street
+                      objects, and more. Automated smart Layers accelerate the
+                      creation of street elements by combining pre-made segments
+                      for sidewalks, parking stalls, bike lanes, railways, BRT
+                      corridors, and more.
+                    </p>
+                  </div>
+                  <div className="st_cta_buttons">
+                    <Button
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/model-library"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="/img/website/feature-model-library.jpg"
                   alt="feature-preview"
                   width="386"
                 />
@@ -223,58 +287,7 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-collab.jpg"
-                  alt="feature-preview"
-                  width="386"
-                />
-              </div>
-
-              <div id="combine-with-3d-maps" className="st_features_item">
-                <div className="st_feature_description">
-                  <div className="st_feature_description_top">
-                    <p>Combine with 3D Maps</p>
-                    <p>
-                    Blend 3D street models with 3D map tiles to visualize projects in real world context.
-                    </p>
-                  </div>
-                  <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
-                  />
-                </div>
-                <img
-                  src="/img/website/feature-collab.jpg"
-                  alt="feature-preview"
-                  width="386"
-                />
-              </div>
-              <div id="batteries-included" className="st_features_item">
-                <div className="st_feature_description">
-                  <div className="st_feature_description_top">
-                    <p>Batteries Included</p>
-                    <p>
-                      Kickstart your original designs with 3DStreet's built-in
-                      library of over 200 unique and accurately scaled urban 3D
-                      models such as pedestrians, vehicles, buildings, street
-                      objects, and more. Automated smart Layers accelerate the
-                      creation of street elements by combining pre-made segments
-                      for sidewalks, parking stalls, bike lanes, railways, BRT
-                      corridors, and more.
-                    </p>
-                  </div>
-                  <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
-                  />
-                </div>
-                <img
-                  src="/img/website/feature-model-library.jpg"
+                  src="/img/website/feature-import.webp"
                   alt="feature-preview"
                   width="386"
                 />
@@ -288,13 +301,19 @@ export default function Home({ recentPosts }) {
                       Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.
                     </p>
                   </div>
-                  <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
-                  />
+                  <div className="st_cta_buttons">
+                    <Button
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/ar-ready-export"
+                    />
+                  </div>
                 </div>
                 <img
                   src="/img/website/feature-open.jpg"
