@@ -1,3 +1,9 @@
+/* Using !important to override Docusaurus theme styles */
+.wrapper[href] {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .wrapper {
   outline: none;
   border: none;
@@ -11,28 +17,41 @@
   cursor: not-allowed;
 }
 
+.icon, .trailingIcon {
+  max-width: 24px;
+  min-width: 24px;
+  max-height: 24px;
+min-height: 24px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailingIcon {
+  margin-left: 6px;
+}
+
 /* VARIANTS */
 .variant-blue {
-  padding: 20px 28px;
-  border-radius: 50px;
-  background: #4a14bc;
+  padding: 8px 18px;
+  border-radius: 10px;
+  background: #6439ab;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 
-  font-family: "Hind Siliguri";
   font-size: 18px;
   font-weight: 500;
 
   transition: 0.2s ease-out;
-
-  @media (max-width: 768px) {
-    padding: 12px 20px;
-  }
 }
 .variant-blue:hover {
-  box-shadow: 0px 0px 26px 0px #4a14bc;
+  box-shadow: 0px 0px 26px 0px #8d56e8;
+  background: #8d56e8;
+
 }
 .variant-blue:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid #888888;
 }
 .variant-blue.disabled {
   background: #242329;
@@ -42,14 +61,48 @@
   box-shadow: none;
 }
 
-.variant-transparent {
-  padding: 16px 24px;
+.variant-transparent-dark {
+  padding: 8px 18px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 12px;
 
-  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.46);
+  backdrop-filter: blur(6px);
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: ease-out 0.2s;
+}
+
+.variant-transparent-dark .icon, .variant-transparent .trailingIcon {
+  max-width: 24px;
+  min-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+}
+
+.variant-transparent-dark .icon *, .variant-transparent .trailingIcon * {
+  fill: #fff;
+}
+.variant-transparent-dark:hover {
+  background: rgba(0, 0, 0, 0.66);
+}
+.variant-transparent-dark:focus-visible {
+  outline: 2px solid #707070;
+}
+
+.variant-transparent {
+  padding: 8px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+
   background: rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(6px);
 
@@ -57,18 +110,16 @@
   font-size: 18px;
   font-weight: 500;
   transition: ease-out 0.2s;
-
-  @media (max-width: 768px) {
-    padding: 12px 20px;
-  }
 }
-.variant-transparent .icon {
+
+.variant-transparent .icon, .variant-transparent .trailingIcon {
   max-width: 24px;
   min-width: 24px;
   max-height: 24px;
   min-height: 24px;
 }
-.variant-transparent .icon * {
+
+.variant-transparent .icon *, .variant-transparent .trailingIcon * {
   fill: #fff;
 }
 .variant-transparent:hover {

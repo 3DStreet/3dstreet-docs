@@ -118,8 +118,8 @@ const config = {
                 to: "/docs/category/about-3dstreet/",
               },
               {
-                label: "Contact Sales",
-                href: "https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&form_id=3f024b297f2177befa87b5ca5e9d45cc",
+                label: "Contact Us",
+                href: "/contact",
               },
             ],
           },
@@ -131,17 +131,17 @@ const config = {
                 href: "https://discord.gg/VN242sx9qu",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/3dstreetapp",
-              },
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/company/3dstreet/",
+                label: "Instagram",
+                href: "https://instagram.com/3dstreetapp",
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/@3DStreetapp",
               },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/company/3dstreet/",
+              }
             ],
           },
           {

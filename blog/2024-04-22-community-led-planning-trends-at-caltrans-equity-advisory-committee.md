@@ -8,6 +8,8 @@ image: ./images/2024-04-22/slide-community-led-planning.jpg
 
 At the recent Caltrans EAC meeting a host of agency professionals, community leaders and technology experts like 3DStreet’s own Kieran Farr shared expertise on the global trend of community-led planning and the current blockers preventing local stakeholders from engaging with local transportation agencies. Below is a summarization of the presentation to share our learnings from practitioners around the world experimenting with community-led design.
 
+<img src="/assets/images/treat-fair-bollard-buddy-signage-960x0-877276f37f74e65e5f7a2a898de69fee.webp" alt="Treat Fair Bollard Buddy Signage" />
+
 <!-- truncate -->
 ## Community-Led Planning as Global Trend 
 Over the past 6 months I've met hundreds of folks across the transportation and planning industry – from city planners and city and state transportation officials to local community activists, NGOs, private engineering consultants and many more.
@@ -34,7 +36,11 @@ This emerging ecosystem of no/low cost tools allow anyone to quickly prototype s
 
 * [In Manchester, CA, the city engineer used 3DStreet to clearly communicate parking tradeoffs for a Main Street redesign, a top concern for local businesses](https://www.youtube.com/watch?v=ycNIaqczyv0)
 * [NGOs like Transport Oakland are training their members to create compelling visuals for advocacy using these tools on group workshop calls](https://studio.youtube.com/video/m393-ZNeU68/edit)
-* [At a street fair in San Francisco, we enabled attendees to interactively place street furniture, plantings and amenities using just their smartphones to imagine a green "streets to parks" conversion](//blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#reaction-and-productization-1)
+* [At a street fair in San Francisco, we enabled attendees to interactively place street furniture, plantings and amenities using just their smartphones to imagine a green "streets to parks" conversion](/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#reaction-and-productization-1)
+
+![](./images/2024-04-22/slide-community-led-planning.jpg)
+
+## Accessible Tooling
 
 Historically, 3D modeling, urban planning and civil engineering required expensive proprietary software. But with the consumerization of augmented reality and open-source tools like 3DStreet combined with widely-deployed WebXR and geospatial standards, these capabilities are now accessible to all. While much work remains to make them truly user-friendly, the potential to revolutionize community engagement is tremendous.
 

@@ -1,29 +1,21 @@
 import React from "react";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 import { Button, Input } from "..";
+import NavigationMenu from "../NavigationMenu";
+import Footer from "../Footer";
 import {
   ArrowIcon,
   DiscordIcon,
-  DiscordIcon2,
-  GithubIcon,
+  InstagramIcon,
   LinkedInIcon,
-  MastodonIcon,
-  PiechartIcon,
-  XIcon,
-  XIcon2,
+  YouTubeIcon
 } from "../../icons";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import MuxPlayer from "@mux/mux-player-react";
-import { YouTubeIcon } from "../../icons/socials";
 
 export default function Home({ recentPosts }) {
-  const {
-    siteConfig: {
-      themeConfig: {
-        footer: { links: footerLinks },
-      },
-    },
-  } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
   return (
     <>
@@ -83,110 +75,24 @@ export default function Home({ recentPosts }) {
           src="/img/website/header_ellipse.png"
         />
         <div className="st_main_grid_bg" />
-
-        {/* HEADER SECTION */}
-        <header className="st_header_container">
-          <div className="st_header --noTablet">
-            <div className="st_header_left">
-              <div className="st_header_logo">
-                <a href="/">
-                  <img src="/img/logo.svg" alt="logo" />
-                </a>
-              </div>
-              <div className="st_header_right ">
-                <div className="st_header_nav ">
-                  <ul>
-                    <li>
-                      <Button
-                        variant="ghost"
-                        label="Home"
-                        isActive
-                        onClick={() => {
-                          location.href = "";
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <Button
-                        variant="ghost"
-                        label="Blog"
-                        onClick={() => {
-                          location.href = "/blog/";
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <Button
-                        variant="ghost"
-                        label="Documentation"
-                        onClick={() => {
-                          location.href = "/docs/";
-                        }}
-                      />
-                    </li>
-                  </ul>
-                </div>
-                <Button
-                  variant="blue"
-                  label="Launch app"
-                  onClick={() => {
-                    location.href = "https://3dstreet.app";
-                  }}
-                />
-              </div>
+          <div className="newHeader">
+            <div className="logo">
+            <a href="/">
+              <img src="/img/3dstreet-logo.svg" alt="logo" />
+            </a>
             </div>
-          </div>
-
-          <div className="st_header --tablet">
-            <div className="st_header_left">
-              <div className="st_header_logo">
-                <a href="/">
-                  <img src="/img/logo.svg" alt="logo" />
-                </a>
-              </div>
-              <Button
+            <NavigationMenu />
+            <Button
                 variant="blue"
-                label="Launch app"
+                label="Open 3DStreet"
+                trailingIcon={<ExternalLinkIcon />}
                 onClick={() => {
-                  location.href = "https://3dstreet.app";
+                  window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
                 }}
               />
-            </div>
-            <div className="st_header_right ">
-              <div className="st_header_nav ">
-                <ul>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Home"
-                      isActive
-                      onClick={() => {
-                        location.href = "";
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Blog"
-                      onClick={() => {
-                        location.href = "/blog/";
-                      }}
-                    />
-                  </li>
-                  <li>
-                    <Button
-                      variant="ghost"
-                      label="Documentation"
-                      onClick={() => {
-                        location.href = "/docs/";
-                      }}
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
+        {/* HEADER SECTION */}
+        <header className="st_header_container">
 
           <div className="relative_wrapper">
             <aside className="socials">
@@ -199,8 +105,8 @@ export default function Home({ recentPosts }) {
               <a href="https://youtube.com/@3dstreetapp" target="_blank">
                 <YouTubeIcon />
               </a>
-              <a href="https://twitter.com/3dstreetapp" target="_blank">
-                <XIcon />
+              <a href="https://instagram.com/3dstreetapp" target="_blank">
+                <InstagramIcon />
               </a>
               <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
                 <DiscordIcon />
@@ -217,7 +123,7 @@ export default function Home({ recentPosts }) {
         <main className="st_main">
           <div className="st_main_wrapper">
             <div className="st_main_container">
-              <h1 className="h1">Bring your street design ideas to life.</h1>
+              <h1 className="h1">Design the future.</h1>
               <MuxPlayer
                 streamType="on-demand"
                 playbackId="TSxTjFBKoeTnspoQo02BFBPZXel6Pqtoo"
@@ -227,11 +133,7 @@ export default function Home({ recentPosts }) {
                 secondaryColor="#000000"
                 accentColor="#653CB0"
               />
-
               <section className="st_overview">
-                {/* <video className="st_overview_video" controls preload="metadata">
-                  <source src="/video/3d-streets-overview.mp4" type="video/mp4" />
-                </video> */}
               </section>
               <Input />
             </div>
@@ -239,74 +141,103 @@ export default function Home({ recentPosts }) {
           <div className="st_main_grid" />
         </main>
 
-        {/* OVERVIEW SECTION */}
+        {/* SOLUTIONS SECTION */}
+        <section className="st_solutions">
+          <div className="st_solutions_inner">
+            <h2>Solutions</h2>
+            <div className="st_solutions_grid">
+              <div className="st_solution_item">
+                <h3>Urban Planning</h3>
+                <p>For urban planners and economic development agencies. Create compelling 3D visualizations of street redesigns to engage stakeholders and build consensus for transformative projects.</p>
+                <Button
+                  variant="blue"
+                  label="Learn more"
+                  href="/planning"
+                />
+              </div>
+              <div className="st_solution_item">
+                <h3>Education</h3>
+                <p>For students and educators from Pre-K to Post-Doc. Empower learners to understand urban design principles through hands-on 3D modeling and visualization of street environments.</p>
+                <Button
+                  variant="blue"
+                  label="Learn more"
+                  href="/education"
+                />
+              </div>
+              <div className="st_solution_item">
+                <h3>Transportation and Land Use Advocacy</h3>
+                <p>For volunteers and staff from neighborhood associations to global NGOs. Create powerful visual stories that communicate your vision for safer, more sustainable streets.</p>
+                <Button
+                  variant="blue"
+                  label="Learn more"
+                  href="/advocacy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* FEATURES SECTION */}
-        <section className="st_features">
+        <section id="product-features" className="st_features">
           <div className="st_features_inner">
-            <h2>How are we different?</h2>
+            <h2>Product Features</h2>
 
             <div className="st_features_posts">
-              <div className="st_features_item">
+              <div id="instant-street-design" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>One unique simple tool</p>
+                    <p>Instant Street Design</p>
                     <p>
-                      Our powerful yet user-friendly 3DStreet Editor tool allows
-                      you to effortlessly bring your street design ideas to
-                      life. With intuitive features and a straightforward
-                      interface, you can easily create stunning and impactful
-                      street designs that contribute to a safer and greener
-                      world.
+                    Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components. Start with existing templates or create your own, then modify, duplicate or delete segments. Create before and after conditions with procedurally generated elements to illustrate the impact of changes.
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
+                    variant="blue"
+                    label="Get started"
+                    href = "https://3dstreet.app"
+                    target="_blank"
                   />
                 </div>
                 <img
-                  src="/img/website/feature-simple-tool.jpg"
+                  src="/img/website/feature-instant-street.webp"
                   alt="feature-preview"
                   width="386"
                 />
               </div>
 
-              <div className="st_features_item">
+              <div id="combine-with-3d-maps" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Infinitely collaborative software</p>
+                    <p>Combine with 3D Maps</p>
                     <p>
-                      Collaboration is at the heart of our 3DStreet tool.
-                      Connect and work with others, whether it's fellow
-                      designers, community members, or city planners. Share
-                      ideas, gather feedback, find inspiration, and collectively
-                      create street designs that truly reflect the needs and
-                      aspirations of your community.
+                    Blend 3D street models with 3D map tiles to visualize projects in real world context. Choose from a variety of map styles and providers to best illustrate your project. Inform street design to match actual conditions by making realtime changes to street layout and elements with the map layer serving as a reference.
                     </p>
                   </div>
+                  <div className="st_cta_buttons">
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
-                  />
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/geospatial"
+                    />
+                  </div>
                 </div>
                 <img
-                  src="/img/website/feature-collab.jpg"
+                  src="/img/website/feature-3d-maps.webp"
                   alt="feature-preview"
                   width="386"
                 />
               </div>
 
-              <div className="st_features_item">
+              <div id="batteries-included" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Batteries included</p>
+                    <p>Batteries Included</p>
                     <p>
                       Kickstart your original designs with 3DStreet's built-in
                       library of over 200 unique and accurately scaled urban 3D
@@ -317,13 +248,19 @@ export default function Home({ recentPosts }) {
                       corridors, and more.
                     </p>
                   </div>
-                  <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
-                  />
+                  <div className="st_cta_buttons">
+                    <Button
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/model-library"
+                    />
+                  </div>
                 </div>
                 <img
                   src="/img/website/feature-model-library.jpg"
@@ -332,26 +269,50 @@ export default function Home({ recentPosts }) {
                 />
               </div>
 
-              <div className="st_features_item">
-                <div className="st_feature_description b-gap">
+              <div id="one-click-import" className="st_features_item">
+                <div className="st_feature_description">
                   <div className="st_feature_description_top">
-                    <p>Open and transparent</p>
+                    <p>One-Click Import</p>
                     <p>
-                      Unlike most geospatial and civil engineering design
-                      software, 3DStreet is open-source and user-created.
-                      Instead of locking you into proprietary formats, 3DStreet
-                      plays nicely with others to allow importing and exporting
-                      standards-compliant formats such as glTF, SVG, JSON, JPEG,
-                      PNG, Streetmix, and more.
+                    Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion. From either app you can click to Export to 3DStreet, or you can copy/paste the cross-section URL into the 3DStreet Editor. The cross-section is converted into a linear street model complete with street surfaces, relative curb elevations, and lane striping.
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
+                    variant="blue"
+                    label="Get started"
+                    href = "https://3dstreet.app"
+                    target="_blank"
                   />
+                </div>
+                <img
+                  src="/img/website/feature-import.webp"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
+
+              <div id="export-for-ar-vr" className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Export for AR, VR and 3D post-processing</p>
+                    <p>
+                      Export 3DStreet scenes to glTF, JSON, and other formats for use in Augmented Reality, advanced 3D rendering, and detailed design reference. Our "AR Ready" export option creates an optimized GLB file to ensure compatibility with popular AR platforms like Adobe Aero and InCitu. Exported models can also be used with professional rendering tools such as Blender for photorealistic 3D rendering, or CAD tools to inform detailed designs.
+                      </p>
+  
+                  </div>
+                  <div className="st_cta_buttons">
+                    <Button
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/ar-ready-export"
+                    />
+                  </div>
                 </div>
                 <img
                   src="/img/website/feature-open.jpg"
@@ -359,7 +320,68 @@ export default function Home({ recentPosts }) {
                   width="386"
                 />
               </div>
+              <div id="share-and-remix" className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>Share and Remix</p>
+                    <p>
+                      Create from any desktop browser, share with colleagues, and remix with the community. Generate images and record animations for use in social media and public materials. Share the actual 3DStreet scene link with your colleagues for them to remix and modify the scene. Browse other Community scenes for inspiration and remixing parts to include in your own projects.
+                    </p>
+                  </div>
+                  <Button
+                    variant="blue"
+                    label="Get started"
+                    href = "https://3dstreet.app"
+                    target="_blank"
+                  />
+                </div>
+                <img
+                  src="/img/website/feature-collab.jpg"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
             </div>
+          </div>
+        </section>
+
+        {/* OTHER USE CASES SECTION */}
+        <section className="st_product_features">
+          <div className="st_product_features_inner">
+            <h2>More Than Transportation</h2>
+            <div className="st_product_features_grid">
+              <div className="st_product_feature_item">
+                <h3>Construction Planning</h3>
+                <p>Create detailed construction site plans with 3D visualization of traffic flow and temporary street modifications to minimize project disruption.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Event Planning</h3>
+                <p>Visualize street closures, route diversions, and temporary installations for festivals, parades, and public gatherings with photorealistic 3D renderings.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Public Space Activation</h3>
+                <p>Transform underutilized streets into vibrant community spaces with interactive 3D mockups showing parklets, outdoor dining, public art, and recreational areas.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Competitive Proposals</h3>
+                <p>Stand out in RFPs with immersive 3D visualizations that clearly demonstrate your design's advantages over traditional 2D plans and elevations.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Property Development</h3>
+                <p>Showcase potential development projects and their integration with existing streetscapes, highlighting improved pedestrian accessibility and enhanced neighborhood connectivity.</p>
+              </div>
+              <div className="st_product_feature_item">
+                <h3>Landscape Architecture</h3>
+                <p>Design complete streetscapes with integrated green infrastructure, showing realistic tree canopies, bioswales, and permeable surfaces to visualize both aesthetic and functional benefits.</p>
+              </div>
+            </div>
+            <Button
+              variant={"blue"}
+              label={"Try it now"}
+              onClick={() => {
+                window.open("https://3dstreet.app", "_blank", "noopener,noreferrer");
+              }}
+            />
           </div>
         </section>
 
@@ -395,9 +417,8 @@ export default function Home({ recentPosts }) {
                                 src={authors[0].imageURL}
                                 alt="author-avatar"
                               />
-                              {`${authors[0].name} ${
-                                authors.length > 1 ? "and others" : ""
-                              }`}
+                              {`${authors[0].name} ${authors.length > 1 ? "and others" : ""
+                                }`}
                             </p>
                           </div>
                           <p className="st_blog_item_header_title">{title}</p>
@@ -416,105 +437,6 @@ export default function Home({ recentPosts }) {
                 location.href = "/blog/";
               }}
             />
-          </div>
-        </section>
-
-        {/* SOCIALS SECTION */}
-        <section className="st_socials">
-          {/* bg items */}
-          <div className="st_socials_icon2" />
-          <div className="st_socials_icon3 --noMobile" />
-          <div className="st_socials_icon4 --noMobile" />
-          <div className="st_socials_icon5 --noMobile" />
-          <div className="st_socials_icon6 --noMobile" />
-          <div className="st_socials_icon7 --noMobile" />
-          <div className="st_socials_icon8 --noMobile" />
-          <div className="st_socials_icon9 --noMobile" />
-
-          <div className="st_socials_icon10" />
-          {/* bg items */}
-
-          <div className="st_socials_title">
-            <h2>How to get involved</h2>
-            <p>
-              <b>A safer greener world begins with you.</b> Join our thriving,
-              growing community to get involved. Partner with other like minded
-              individuals or blaze your own trail. The only limit is your
-              imagination.
-            </p>
-          </div>
-
-          <div className="st_socials_cards">
-            <div className="st_socials_item">
-              <div className="st_socials_inner">
-                <div className="st_socials_header">
-                  <p className="st_socials_type">COMMUNITY</p>
-                  <div className="st_socials_icon">
-                    <DiscordIcon2 />
-                  </div>
-                </div>
-                <div className="st_socials_item_footer">
-                  <div className="st_socials_item_description">
-                    <p>Connect with our community on Discord</p>
-                    <p>
-                      Be part of the community. Take a look at how we work on
-                      projects. We share ideas and would love to hear yours.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a
-                href="https://discord.com/invite/9DgKkFCetC"
-                target="_blank"
-                className="st_socials_item_link"
-              >
-                Join 3DStreet Discord
-              </a>
-            </div>
-            <div className="st_socials_item">
-              <div className="st_socials_inner">
-                <div className="st_socials_header">
-                  <p className="st_socials_type">collab</p>
-                  <div className="st_socials_icon">
-                    <GithubIcon />
-                  </div>
-                </div>
-                <div className="st_socials_item_footer">
-                  <div className="st_socials_item_description">
-                    <p>Contribute together on GitHub</p>
-                    <p>
-                      See 3DStreet Core and Editor source code and help make it
-                      better.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a href="https://github.com/3dstreet/3dstreet" target="_blank">
-                3DStreet GitHub Repo
-              </a>
-            </div>
-            <div className="st_socials_item">
-              <div className="st_socials_inner">
-                <div className="st_socials_header">
-                  <p className="st_socials_type">conversation</p>
-                  <div className="st_socials_icon">
-                    <XIcon2 />
-                  </div>
-                </div>
-                <div className="st_socials_item_footer">
-                  <div className="st_socials_item_description">
-                    <p>Follow us on X and stay up to date</p>
-                    <p>
-                      Follow us on twitter and stay in the know on all things 3D
-                      Street.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a href="https://twitter.com/3dstreetapp" target="_blank">
-                Connect on X
-              </a>
-            </div>
           </div>
         </section>
 
@@ -551,30 +473,7 @@ export default function Home({ recentPosts }) {
         </section>
 
         {/* FOOTER SECTION */}
-        <footer className="st_footer">
-          <div className="st_footer_links">
-            {footerLinks.map(({ title, items }, idx) => (
-              <div key={idx} className="st_footer_col">
-                <p>{title}</p>
-                <ul>
-                  {items.map(({ label, to, href }, idx) => (
-                    <li key={idx}>
-                      <a href={to ?? href} target="_blank">
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <p className="st_footer_copyright">
-            <span />
-            ©2024 3DStreet LLC. 3DStreet is a registered trademark of 3DStreet
-            LLC.
-          </p>
-        </footer>
+        <Footer />
       </div>
     </>
   );

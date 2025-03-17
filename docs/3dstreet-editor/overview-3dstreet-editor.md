@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 3DStreet Editor
 
-![Screenshot of the 3DStreet Editor application with user interface elements for modifying a street scene.](/img/docs/3dstreet-editor-screenshot.jpg)
+![Screenshot of the 3DStreet Editor application with user interface elements for modifying a street scene.](/img/docs/3dstreet-editor-screenshot.webp)
 
 The **3DStreet Editor** is a tool that allows you to edit and modify components of a 3DStreet scene. With the Editor tool you can import designs from tools like Streetmix or create new original designs.
 
