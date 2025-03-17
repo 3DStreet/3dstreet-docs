@@ -188,15 +188,14 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>Instant Street Design</p>
                     <p>
-                    Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components.
+                    Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components. Start with existing templates or create your own, then modify, duplicate or delete segments. Create before and after conditions with procedurally generated elements to illustrate the impact of changes.
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
+                    variant="blue"
+                    label="Get started"
+                    href = "https://3dstreet.app"
+                    target="_blank"
                   />
                 </div>
                 <img
@@ -211,7 +210,7 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>Combine with 3D Maps</p>
                     <p>
-                    Blend 3D street models with 3D map tiles to visualize projects in real world context.
+                    Blend 3D street models with 3D map tiles to visualize projects in real world context. Choose from a variety of map styles and providers to best illustrate your project. Inform street design to match actual conditions by making realtime changes to street layout and elements with the map layer serving as a reference.
                     </p>
                   </div>
                   <div className="st_cta_buttons">
@@ -275,15 +274,14 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>One-Click Import</p>
                     <p>
-                    Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.
+                    Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion. From either app you can click to Export to 3DStreet, or you can copy/paste the cross-section URL into the 3DStreet Editor. The cross-section is converted into a linear street model complete with street surfaces, relative curb elevations, and lane striping.
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
+                    variant="blue"
+                    label="Get started"
+                    href = "https://3dstreet.app"
+                    target="_blank"
                   />
                 </div>
                 <img
@@ -298,8 +296,9 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>Export for AR, VR and 3D post-processing</p>
                     <p>
-                      Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.
-                    </p>
+                      Export 3DStreet scenes to glTF, JSON, and other formats for use in Augmented Reality, advanced 3D rendering, and detailed design reference. Our "AR Ready" export option creates an optimized GLB file to ensure compatibility with popular AR platforms like Adobe Aero and InCitu. Exported models can also be used with professional rendering tools such as Blender for photorealistic 3D rendering, or CAD tools to inform detailed designs.
+                      </p>
+  
                   </div>
                   <div className="st_cta_buttons">
                     <Button
@@ -326,15 +325,14 @@ export default function Home({ recentPosts }) {
                   <div className="st_feature_description_top">
                     <p>Share and Remix</p>
                     <p>
-                      Create from any desktop browser, share with colleagues, and remix with the community.
+                      Create from any desktop browser, share with colleagues, and remix with the community. Generate images and record animations for use in social media and public materials. Share the actual 3DStreet scene link with your colleagues for them to remix and modify the scene. Browse other Community scenes for inspiration and remixing parts to include in your own projects.
                     </p>
                   </div>
                   <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
+                    variant="blue"
+                    label="Get started"
+                    href = "https://3dstreet.app"
+                    target="_blank"
                   />
                 </div>
                 <img
