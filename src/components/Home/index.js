@@ -178,12 +178,12 @@ export default function Home({ recentPosts }) {
         </section>
 
         {/* FEATURES SECTION */}
-        <section className="st_features">
+        <section id="product-features" className="st_features">
           <div className="st_features_inner">
             <h2>Product Features</h2>
 
             <div className="st_features_posts">
-              <div className="st_features_item">
+              <div id="instant-street-design" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
                     <p>Instant Street Design</p>
@@ -206,7 +206,7 @@ export default function Home({ recentPosts }) {
                 />
               </div>
 
-              <div className="st_features_item">
+              <div id="one-click-import" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
                     <p>One-Click Import</p>
@@ -229,7 +229,7 @@ export default function Home({ recentPosts }) {
                 />
               </div>
 
-              <div className="st_features_item">
+              <div id="combine-with-3d-maps" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
                     <p>Combine with 3D Maps</p>
@@ -251,7 +251,7 @@ export default function Home({ recentPosts }) {
                   width="386"
                 />
               </div>
-              <div className="st_features_item">
+              <div id="batteries-included" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
                     <p>Batteries Included</p>
@@ -280,7 +280,7 @@ export default function Home({ recentPosts }) {
                 />
               </div>
 
-              <div className="st_features_item">
+              <div id="export-for-ar-vr" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
                     <p>Export for AR, VR and 3D post-processing</p>
@@ -297,12 +297,12 @@ export default function Home({ recentPosts }) {
                   />
                 </div>
                 <img
-                  src="/img/website/feature-model-library.jpg"
+                  src="/img/website/feature-open.jpg"
                   alt="feature-preview"
                   width="386"
                 />
               </div>
-              <div className="st_features_item">
+              <div id="share-and-remix" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
                     <p>Share and Remix</p>
@@ -320,33 +320,6 @@ export default function Home({ recentPosts }) {
                 </div>
                 <img
                   src="/img/website/feature-collab.jpg"
-                  alt="feature-preview"
-                  width="386"
-                />
-              </div>
-              <div className="st_features_item">
-                <div className="st_feature_description b-gap">
-                  <div className="st_feature_description_top">
-                    <p>Open and transparent</p>
-                    <p>
-                      Unlike most geospatial and civil engineering design
-                      software, 3DStreet is open-source and user-created.
-                      Instead of locking you into proprietary formats, 3DStreet
-                      plays nicely with others to allow importing and exporting
-                      standards-compliant formats such as glTF, SVG, JSON, JPEG,
-                      PNG, Streetmix, and more.
-                    </p>
-                  </div>
-                  <Button
-                    variant={"blue"}
-                    label={"Get started"}
-                    onClick={() => {
-                      location.href = "https://3dstreet.app";
-                    }}
-                  />
-                </div>
-                <img
-                  src="/img/website/feature-open.jpg"
                   alt="feature-preview"
                   width="386"
                 />
