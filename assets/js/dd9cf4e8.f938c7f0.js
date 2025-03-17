@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[8495],{5548:e=>{e.exports=JSON.parse('{"label":"new feature","permalink":"/blog/tags/new-feature","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

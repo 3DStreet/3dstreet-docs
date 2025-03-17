@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[6426],{9944:s=>{s.exports=JSON.parse('{"label":"splats","permalink":"/blog/tags/splats","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

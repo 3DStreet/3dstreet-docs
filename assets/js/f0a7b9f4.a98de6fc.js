@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_3dstreet_docs=self.webpackChunk_3dstreet_docs||[]).push([[8906],{4488:s=>{s.exports=JSON.parse('{"label":"urban transport","permalink":"/blog/tags/urban-transport","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
