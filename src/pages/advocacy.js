@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, ImageIcon, HandIcon, ChatBubbleIcon, SpeakerLoudIcon, UpdateIcon } from '@radix-ui/react-icons';
 import { Button } from '../components';
 import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
@@ -113,7 +113,7 @@ export default function AdvocacyPage() {
                 <div className="st_statistics_posts">
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Compelling Visualizations" />
+                      <ImageIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Compelling Visualizations</h3>
@@ -124,7 +124,7 @@ export default function AdvocacyPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="No Technical Skills Required" />
+                      <HandIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">No Technical Skills Required</h3>
@@ -134,7 +134,7 @@ export default function AdvocacyPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-iteration.jpg" alt="Community Engagement" />
+                      <ChatBubbleIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Community Engagement</h3>
@@ -144,7 +144,7 @@ export default function AdvocacyPage() {
                   
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Influence Decision Makers" />
+                      <SpeakerLoudIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Influence Decision Makers</h3>
@@ -154,7 +154,7 @@ export default function AdvocacyPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="Rapid Iteration" />
+                      <UpdateIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Rapid Iteration</h3>
