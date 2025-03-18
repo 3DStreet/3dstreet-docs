@@ -118,8 +118,37 @@ const config = {
                 to: "/docs/category/about-3dstreet/",
               },
               {
+                label: "Documentation",
+                href: "/docs/",
+              },
+              {
+                label: "Blog",
+                href: "/blog/",
+              },
+              {
+                label: "Pricing",
+                href: "/docs/pricing",
+              },
+              {
                 label: "Contact Us",
                 href: "/contact",
+              },
+            ],
+          },
+          {
+            title: "Solutions",
+            items: [
+              {
+                label: "Urban Planning",
+                href: "/planning/",
+              },
+              {
+                label: "Education",
+                href: "/education/",
+              },
+              {
+                label: "Transportation and Land Use Advocacy",
+                href: "/advocacy/",
               },
             ],
           },
@@ -141,19 +170,10 @@ const config = {
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/3dstreet/",
-              }
-            ],
-          },
-          {
-            title: "GitHub Repositories",
-            items: [
-              {
-                label: "3DStreet Core",
-                href: "https://github.com/3dstreet/3dstreet",
               },
               {
-                label: "3DStreet Assets",
-                href: "https://github.com/3dstreet/3dstreet-assets-dist",
+                label: "GitHub",
+                href: "https://github.com/3dstreet/3dstreet",
               },
             ],
           },

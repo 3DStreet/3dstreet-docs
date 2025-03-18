@@ -51,12 +51,6 @@ const NavigationMenu = () => {
               >
                 Drag-and-drop to place linear 3D streets and 90º intersections with modifiable components.
               </ListItem>
-              <ListItem
-                title="One-Click Import"
-                href="/#one-click-import"
-              >
-                Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.
-              </ListItem>
               <ListItem title="Combine with 3D Maps" href="/#combine-with-3d-maps">
                 Blend 3D street models with 3D map tiles to visualize projects in real world context.
               </ListItem>
@@ -65,6 +59,12 @@ const NavigationMenu = () => {
                 href="/#batteries-included"
               >
                 Built-in library of over 200 unique and accurately scaled urban 3D models.
+              </ListItem>
+              <ListItem
+                title="One-Click Import"
+                href="/#one-click-import"
+              >
+                Convert Streetmix and StreetPlan typical cross-sections from 2D to 3D with automatic procedural extrusion.
               </ListItem>
               <ListItem
                 title="Export for AR, VR and 3D post-processing"

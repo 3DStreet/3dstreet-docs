@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, CubeIcon, HandIcon, HeartFilledIcon, BookmarkIcon, LightningBoltIcon } from '@radix-ui/react-icons';
 import { Button } from '../components';
 import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
@@ -113,7 +113,7 @@ export default function EducationPage() {
                 <div className="st_statistics_posts">
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Interactive Learning" />
+                      <CubeIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Interactive Learning</h3>
@@ -124,7 +124,7 @@ export default function EducationPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="Accessible STEAM Education" />
+                      <HandIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Accessible STEAM Education</h3>
@@ -134,7 +134,7 @@ export default function EducationPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-iteration.jpg" alt="Student Engagement" />
+                      <HeartFilledIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Student Engagement</h3>
@@ -144,7 +144,7 @@ export default function EducationPage() {
                   
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Enhance Lesson Plans" />
+                      <BookmarkIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Enhance Lesson Plans</h3>
@@ -154,7 +154,7 @@ export default function EducationPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="From Concept to Creation" />
+                      <LightningBoltIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">From Concept to Creation</h3>

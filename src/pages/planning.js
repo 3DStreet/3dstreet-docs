@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, RocketIcon, HandIcon, ChatBubbleIcon, BarChartIcon, LayersIcon } from '@radix-ui/react-icons';
 import { Button } from '../components';
 import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
@@ -113,7 +113,7 @@ export default function PlanningPage() {
                 <div className="st_statistics_posts">
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Rapid Visualization" />
+                      <RocketIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Rapid Visualization</h3>
@@ -124,7 +124,7 @@ export default function PlanningPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="Accessible Urban Design" />
+                      <HandIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Accessible Urban Design</h3>
@@ -134,7 +134,7 @@ export default function PlanningPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-iteration.jpg" alt="Stakeholder Engagement" />
+                      <ChatBubbleIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Stakeholder Engagement</h3>
@@ -144,7 +144,7 @@ export default function PlanningPage() {
                   
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-stakeholder.jpg" alt="Elevate Your Proposals" />
+                      <BarChartIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">Elevate Your Proposals</h3>
@@ -154,7 +154,7 @@ export default function PlanningPage() {
 
                   <div className="st_statistics_item">
                     <div className="st_statistics_icon">
-                      <img src="/img/placeholder-community.jpg" alt="From Concept to Engineering" />
+                      <LayersIcon width={96} height={96} />
                     </div>
                     <div className="st_statistics_post_description">
                       <h3 className="st_statistics_post_title">From Concept to Engineering</h3>
@@ -232,12 +232,12 @@ export default function PlanningPage() {
           </div>
         </section>
 
-        <div className="st_testimonial">
+        {/* <div className="st_testimonial">
               <blockquote>
                 "Absolute pleasure working with 3DStreet on visualizations of possible streetscape improvements for global street safety projects. By visualizing these improvements early, we have been able to make a compelling case for the necessary funding and support."
               </blockquote>
               <cite>- Sam Johnson, Sustainable Transport Specialist</cite>
-            </div>
+            </div> */}
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
           <div className="st_features_inner">
