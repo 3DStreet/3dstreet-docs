@@ -17,13 +17,19 @@ export default function Footer() {
           <div key={idx} className="st_footer_col">
             <p>{title}</p>
             <ul>
-              {items.map(({ label, to, href }, idx) => (
-                <li key={idx}>
-                  <a href={to ?? href} target="_blank">
-                    {label}
-                  </a>
-                </li>
-              ))}
+              {items.map(({ label, to, href }, idx) => {
+                const isExternalLink = !!(href && !href.startsWith('/'));
+                return (
+                  <li key={idx}>
+                    <a 
+                      href={to ?? href} 
+                      {...(isExternalLink ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
+                      {label}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
