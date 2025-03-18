@@ -232,12 +232,12 @@ export default function PlanningPage() {
           </div>
         </section>
 
-        <div className="st_testimonial">
+        {/* <div className="st_testimonial">
               <blockquote>
                 "Absolute pleasure working with 3DStreet on visualizations of possible streetscape improvements for global street safety projects. By visualizing these improvements early, we have been able to make a compelling case for the necessary funding and support."
               </blockquote>
               <cite>- Sam Johnson, Sustainable Transport Specialist</cite>
-            </div>
+            </div> */}
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
           <div className="st_features_inner">
