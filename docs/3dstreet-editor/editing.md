@@ -12,7 +12,7 @@ There are many properties you can edit for any object in the scene. Some propert
 ### Using the Toolbar to Change Position and Rotation
 The quickest way to move and rotate objects in your scene is using the toolbar and arrow controls.
 
-#### Move Tool with Arrows (1 Axis)
+#### Move Tool with Arrows (Single Axis)
 
 To adjust the position of an object, click the **Move Tool** icon, click on an object to select it (if not already), then click and drag on the red, green or blue arrows to move it.
 
