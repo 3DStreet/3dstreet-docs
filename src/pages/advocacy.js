@@ -234,9 +234,9 @@ export default function AdvocacyPage() {
 
         <div className="st_testimonial">
           <blockquote>
-            "As our neighborhood developed a vision for welcoming a new elementary school, 3DStreet has been a great gift to outreach and engagement with the community, elected officials, and agency staff. The multi-viewpoint visualization, especially the first-person animation of traffic circle usage at a child’s height and illustrating before/after conditions clearly conveys what is possible."
+            "We use 3DStreet all the time to propose concepts to decision-makers and to help our members and advocacy partners visualize what a redesigned street could look like. With the Pro version we've been able to take that even further by importing readily available 3D models such as pedestrian bridges and placing them into the realistic world of Google Map tiles."
           </blockquote>
-          <cite>- Sarah Bertram, Community Advocate</cite>
+          <cite>- John Boyle, Research Director, The Bicycle Coalition of Greater Philadelphia</cite>
         </div>
         {/* FEATURES SECTION - Case Studies */}
         <section className="st_features">
