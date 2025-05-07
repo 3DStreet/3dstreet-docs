@@ -104,7 +104,7 @@ export default function ContactPage() {
                     label="Join Our Discord"
                     trailingIcon={<DiscordLogoIcon style={{ width: '1.33em', height: '1.33em' }} />}
                     onClick={() => {
-                      window.open("https://discord.gg/VN242sx9qu", "_blank", "noopener,noreferrer");
+                      window.open("https://discord.gg/zNFMhTwKSd", "_blank", "noopener,noreferrer");
                     }}
                   />
                 </div>
