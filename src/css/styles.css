@@ -95,9 +95,14 @@ main {
     pointer-events: none;
 }
 
-.st_header_container .socials svg:hover * {
+.st_header_container .socials a svg path {
     transition: 0.2s;
-    fill: #4a14bc;
+    fill: #AAAAAA;
+}
+
+.st_header_container .socials a:hover svg path {
+    transition: 0.2s;
+    fill: #ffffff;
 }
 
 .st_header_container .down_icon {
