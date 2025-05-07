@@ -108,14 +108,11 @@ export default function Home({ recentPosts }) {
               <a href="https://instagram.com/3dstreetapp" target="_blank">
                 <InstagramIcon />
               </a>
-              <a href="https://discord.com/invite/9DgKkFCetC" target="_blank">
+              <a href="https://discord.gg/zNFMhTwKSd" target="_blank">
                 <DiscordIcon />
               </a>
             </aside>
 
-            <div className="down_icon">
-              <ArrowIcon />
-            </div>
           </div>
         </header>
 
