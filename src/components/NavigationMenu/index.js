@@ -100,7 +100,7 @@ const NavigationMenu = () => {
               >
                 Latest news, updates, and insights from the 3DStreet team.
               </ListItem>
-              <ListItem title="Community" href="https://discord.gg/VN242sx9qu" target="_blank">
+              <ListItem title="Community" href="https://discord.gg/zNFMhTwKSd" target="_blank">
                 Join the 3DStreet Discord to get involved.
               </ListItem>
               <ListItem
