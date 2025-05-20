@@ -59,11 +59,11 @@ Building the AI Assistant has helped us improve the underlying 3DStreet codebase
 
 ## Beta Status and Availability
 
-The AI Assistant is currently in beta, which means it's still evolving and may occasionally (often?) misinterpret requests or behave unexpectedly. During this early release period, the AI Assistant is available free of charge* to all 3DStreet users.
+The AI Assistant is currently in beta, which means it's still evolving and may occasionally (often?) misinterpret requests or behave unexpectedly. During this early release period, the AI Assistant is available free of charge* to all 3DStreet users, but you must be signed in.
 
 We're actively collecting feedback to improve the experience and would love to hear about your interactions – both successful and challenging! Please share them in our Discord server or other social media (links in footer).
 
-*Fine print: We reserve the right to set daily caps for free users if usage exceeds our budget limits.
+*Fine print: We reserve the right to set daily caps for free users if usage exceeds our budget limits. Users must be signed-in to use the Assistant. We reserve the right to log chat conversations to improve the AI Assistant and our street design tools.
 
 ## What's Next?
 
@@ -91,8 +91,6 @@ We've tested a few different models and found [`gemini-2.0-flash`](https://blog.
 
 ## Try It Today
 
-The AI Assistant beta is available now in the 3DStreet app. Just look for the chat icon in the bottom-right corner of your screen to get started. We can't wait to see what you create!
+The AI Assistant beta is available now in the 3DStreet app. Just look for the "Assistant" icon in the bottom of your screen to get started. We can't wait to see what you create!
 
 <!-- ![Animated GIF showing a simple interaction with the AI Assistant](./images/2025-05-22/ai-assistant-demo.gif) -->
-
-Share your experiences and creations with us on social media using #3DStreetAI – we'd love to feature your work in future updates!
