@@ -38,11 +38,16 @@ These tools are accessible to both professionals and amateurs. Community advocat
 
 ## Real-World Case Studies
 
-### The Hayes Promenade, San Francisco
+### Valencia Street Bike Lane Reconfiguration
+A community advocate organized visualizations for the conversion of Valencia Street from center-running to curbside bike lanes. 
+<br/>
+![](./images/2025-04-01/valencia-street-flyover.jpg)
+<br/>
 
-Community advocate Andrew Seigner with <a href="https://www.hayespromenade.org/">Hayes Promenade</a> proposed converting a two-lane road with retail and parking into a single-direction lane with expanded pedestrian space. He "created an initial 2D design in Streetmix, imported it into 3DStreet, built it out in 3D space, and then use the AR Ready export option. This resulted in a complete augmented reality demo, where users can walk down our street with their phones, experiencing the proposal in first-person."
+The AR perspective the new configuration from the actual perspective of a crossing pedestrian was recorded to video to provide content for education and advocacy.
+<br/>
 
-![](./images/2025-04-01/hayes-promenade-ar-feasibility-walkthrough.jpg)
+![](./images/2025-04-01/valencia-street-ar-ped-crossing.jpg)
 
 ### Queens Boulevard Improvements
 
@@ -55,22 +60,17 @@ A pedestrian bridge connecting an underserved neighborhood to park amenities cut
 
 ![](./images/2025-04-01/ralph-wilson-park-buffalo.jpg)
 
-### Valencia Street Bike Lane Reconfiguration
-A community advocate organized visualizations for the conversion of Valencia Street from center-running to curbside bike lanes. 
-<br/>
-![](./images/2025-04-01/valencia-street-flyover.jpg)
-<br/>
-
-The AR perspective the new configuration from the actual perspective of a crossing pedestrian was recorded to video to provide content for education and advocacy.
-<br/>
-
-![](./images/2025-04-01/valencia-street-ar-ped-crossing.jpg)
-
 ### Columbus Bus Rapid Transit
 Central Ohio Transit Authority integrated AR into actual bus tours along proposed routes. The technology showed not just transit infrastructure, but walkable neighborhood development that transit investment could encourage. Officials used AR's people-occlusion feature for authentic social media content.
 <br/>
 
 ![](./images/2025-04-01/columbus-ohio-linkus-west-broad-brt.jpg)
+
+### The Hayes Promenade, San Francisco
+
+Community advocate Andrew Seigner with <a href="https://www.hayespromenade.org/">Hayes Promenade</a> proposed converting a two-lane road with retail and parking into a single-direction lane with expanded pedestrian space. He "created an initial 2D design in Streetmix, imported it into 3DStreet, built it out in 3D space, and then use the AR Ready export option. This resulted in a complete augmented reality demo, where users can walk down our street with their phones, experiencing the proposal in first-person."
+
+![](./images/2025-04-01/hayes-promenade-ar-feasibility-walkthrough.jpg)
 
 ## Best Practices for AR Community Engagement
 
