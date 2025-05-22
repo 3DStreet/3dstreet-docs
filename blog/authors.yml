@@ -1,8 +1,14 @@
+nkauf:
+  name: Nick Kaufmann
+  title: Community Manager, InCitu
+  url: https://www.linkedin.com/in/nkauf/
+  image_url: ./images/authors/nkauf.jpeg
+
 kfarr:
   name: Kieran Farr
   title: Creator of 3DStreet
   url: https://github.com/kfarr
-  image_url: https://github.com/kfarr.png
+  image_url: ./images/authors/kfarr.jpeg
 
 triedell:
   name: Tyler Riedell
