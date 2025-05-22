@@ -1,6 +1,6 @@
 # Terms and Conditions
 
-Last updated: October 2nd, 2024
+Last updated: May 22nd, 2025
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -14,17 +14,19 @@ The words of which the initial letter is capitalized have meanings defined under
 
 For the purposes of these Terms and Conditions:
 
-- __Application__ means the software program provided by the Company downloaded by You on any electronic device, named 3DStreet App
-- __Application Store__ means the digital distribution service operated and developed by Apple Inc. (Apple App Store) or Google Inc. (Google Play Store) in which the Application has been downloaded.
+- __Account__ means a unique account created for You to access our Service or parts of our Service.
 - __Affiliate__ means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
-- __Country__ refers to: California,  United States
+- __Application__ means the software program provided by the Company downloaded by You on any electronic device, named 3DStreet App.
 - __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to 3DStreet LLC, 320 Alabama St, San Francisco, CA 94110.
+- __Country__ refers to: California, United States.
 - __Device__ means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- __Feedback__ refers to any suggestions, ideas, comments, or recommendations that You provide regarding the Service.
+- __Intellectual Property Rights__ means all patent rights, copyright rights, mask work rights, moral rights, rights of publicity, trademark, trade dress and service mark rights, goodwill, trade secret rights and other intellectual property rights that may exist now or come into existence in the future, under the laws of any state, country, territory or other jurisdiction.
 - __Service__ refers to the Application or the Website or both.
-- __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the [Terms and Conditions Generator](https://www.termsfeed.com/terms-conditions-generator/).
+- __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
 - __Third-party Social Media Service__ means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 - __User Content__ refers to any content, including but not limited to text, images, designs, and other media, that is uploaded, posted, or otherwise made available by You on or through the Service.
-- __Website__ refers to 3DStreet Website and Docs, accessible from [https://www.3dstreet.org/](https://www.3dstreet.org/)
+- __Website__ refers to 3DStreet Website and Docs, accessible from [https://www.3dstreet.org/](https://www.3dstreet.org/).
 - __You__ means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ## Acknowledgment
@@ -39,6 +41,46 @@ You represent that you are over the age of 18. The Company does not permit those
 
 Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
+## Account Registration and Security
+
+### Account Creation
+
+To access certain features of the Service, You may be required to register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.
+
+### Account Security
+
+You are responsible for safeguarding the password that You use to access the Service and for any activities or actions under Your password. You agree not to disclose Your password to any third party. You must notify Us immediately upon becoming aware of any breach of security or unauthorized use of Your account.
+
+We reserve the right to disable any user account at any time if, in Our opinion, You have failed to comply with any of the provisions of these Terms and Conditions.
+
+## Intellectual Property Rights
+
+### Company's Intellectual Property
+
+The Service and its original content (excluding User Content), features, and functionality are and will remain the exclusive property of the Company and its licensors. The Service is protected by copyright, trademark, and other laws of both the Country and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of the Company.
+
+### Your Rights to Use Company Materials
+
+Subject to these Terms, the Company grants You a limited, non-exclusive, non-transferable, and revocable license to access and use the Service solely for Your personal, non-commercial purposes.
+
+### Feedback
+
+If You provide the Company with any Feedback, You hereby assign to the Company all rights in such Feedback and agree that the Company shall have the right to use and fully exploit such Feedback and related information in any manner it deems appropriate. The Company will treat any Feedback You provide to the Company as non-confidential and non-proprietary.
+
+## Prohibited Uses
+
+You agree not to use the Service:
+
+- In any way that violates any applicable federal, state, local, or international law or regulation
+- For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way
+- To transmit, or procure the sending of, any advertising or promotional material without our prior written consent
+- To impersonate or attempt to impersonate the Company, a Company employee, another user, or any other person or entity
+- In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful
+- To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm the Company or users of the Service or expose them to liability
+- To attempt to circumvent any technological measure implemented by the Company to protect the Service
+- To use any robot, spider, or other automatic device, process, or means to access the Service for any purpose, including monitoring or copying any of the material on the Service
+- To introduce any viruses, trojan horses, worms, logic bombs, or other material which is malicious or technologically harmful
+
 ## Links to Other Websites
 
 Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
@@ -49,9 +91,21 @@ We strongly advise You to read the terms and conditions and privacy policies of 
 
 ## Termination
 
-We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+### Termination by Us
 
-Upon termination, Your right to use the Service will cease immediately.
+We may terminate or suspend Your Account and/or Your access to the Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+
+### Termination by You
+
+You may terminate Your use of the Service by discontinuing use of the Service. If You have an Account, You may terminate Your Account by following the instructions on the Service or by contacting Us.
+
+### Effect of Termination
+
+Upon termination, Your right to use the Service will cease immediately. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+
+### Data After Termination
+
+We may retain certain information as required by law or as necessary for our legitimate business purposes. All provisions of the Terms which by their nature should survive termination shall survive termination.
 
 ## Limitation of Liability
 
@@ -75,6 +129,10 @@ Some Service source code is made available under the AGPLv3 license. The AGPLv3 
 
 The full license information for the primary Service repository can be found here: [LICENSE](https://github.com/3DStreet/3dstreet/blob/main/LICENSE).
 
+## Indemnification
+
+You agree to defend, indemnify, and hold harmless the Company, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to Your violation of these Terms and Conditions or Your use of the Service, including, but not limited to, Your User Content, any use of the Service's content, services, and products other than as expressly authorized in these Terms and Conditions, or Your use of any information obtained from the Service.
+
 ## User Content
 By using the Service, You may create, submit, or share content, including but not limited to text, images, designs, and other media ("User Content"). You retain ownership of any intellectual property rights that You hold in Your User Content. However, by making Your User Content available on or through the Service, You grant the Company, as well as other users of the Service, a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, modify, adapt, create derivative works from, publicly display, and perform Your User Content.
 
@@ -95,6 +153,13 @@ Any source code contribution will be governed by the license terms stated on the
 
 > Isn't this just how it works already? Yep. This is widely accepted as the norm in the open-source community; it's commonly referred to by the shorthand "inbound=outbound". We're just making it explicit.
 
+### Monitoring and Enforcement
+We have the right, but not the obligation, to:
+- Remove or refuse to post any User Content for any or no reason at our sole discretion
+- Take any action with respect to any User Content that we deem necessary or appropriate in our sole discretion
+- Disclose your identity or other information about you to any third party who claims that material posted by you violates their rights
+- Take appropriate legal action, including without limitation, referral to law enforcement, for any illegal or unauthorized use of the Service
+
 
 
 
@@ -104,6 +169,12 @@ The laws of the great State of California and the United States, as applicable, 
 ## Disputes Resolution
 
 If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+
+## Data Backup
+
+The Company does not guarantee the continuous, uninterrupted or secure access to the Service. The functionality of the Service may be affected by factors beyond our control.
+
+You are responsible for maintaining Your own backup of Your User Content. The Company is not responsible for the loss of any User Content that You provide through the Service. We recommend that You regularly backup any content that You create or upload to the Service.
 
 ## For European Union (EU) Users
 
@@ -127,6 +198,18 @@ Except as provided herein, the failure to exercise a right or to require perform
 
 These Terms and Conditions may have been translated if We have made them available to You on our Service.
 You agree that the original English text shall prevail in the case of a dispute.
+
+## Force Majeure
+
+The Company shall not be liable for any failure to perform its obligations under these Terms where such failure results from any cause beyond our reasonable control, including, but not limited to, mechanical, electronic, or communications failure or degradation, acts of God, terrorist attacks, pandemics, or government regulations or restrictions.
+
+## Assignment
+
+These Terms and Conditions, and any rights and licenses granted hereunder, may not be transferred or assigned by You, but may be assigned by the Company without restriction. Any attempted transfer or assignment in violation hereof shall be null and void.
+
+## Entire Agreement
+
+These Terms and all policies or operating rules posted by us on the Service constitute the entire agreement and understanding between You and the Company and govern Your use of the Service, superseding any prior or contemporaneous agreements, communications, and proposals, whether oral or written, between You and us.
 
 ## Changes to These Terms and Conditions
 
