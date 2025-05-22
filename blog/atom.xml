@@ -2,11 +2,105 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2025-04-01T00:00:00.000Z</updated>
+    <updated>2025-05-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introducing AI Assistant Beta: Your Creative Partner for Street Design]]></title>
+        <id>https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design</id>
+        <link href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design"/>
+        <updated>2025-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Experience the power of natural language commands to create, modify, and automate street designs in 3DStreet with our new AI Assistant.]]></summary>
+        <content type="html"><![CDATA[<p>Today we're excited to announce the beta release of the 3DStreet AI Assistant, a new way to create and modify street designs using simple natural language. Just describe the street scene you want to create, and watch as your vision comes to life – no complex 3D editing required.<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#the-fine-print-beta-status-and-availability">*</a></p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" alt="Screenshot showing the 3DStreet AI Assistant interface with an example conversation" src="https://3dstreet.org/assets/images/ai-assistant-example-prompt-create-a-street-c39cce6c1aebbaf248c03c9232224e9f.jpg" width="1475" height="1094" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="empowering-everyone-to-design-better-streets">Empowering Everyone to Design Better Streets<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#empowering-everyone-to-design-better-streets" class="hash-link" aria-label="Direct link to Empowering Everyone to Design Better Streets" title="Direct link to Empowering Everyone to Design Better Streets">​</a></h2>
+<p>At 3DStreet, our mission has always been to provide tools that empower anyone to rapidly prototype visions for improving our shared environment, starting with streets. The introduction of our AI Assistant marks a significant step toward making street design more accessible to everyone – from urban planning professionals to community advocates who may not be familiar with traditional 3D editing tools.</p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/ai-assistant-first-message-panel-b6a59e43a3312e6cc1c56bc868b110db.png" width="1490" height="445" class="img_ev3q"></p>
+<br>
+<br>
+<p>With the new AI Assistant, you can:</p>
+<ul>
+<li><strong>Create complete street scenes</strong> from scratch using natural language descriptions</li>
+<li><strong>Modify existing designs</strong> by simply explaining what you want to change</li>
+<li><strong>Automate repetitive tasks</strong> that would normally require multiple manual steps</li>
+<li><strong>Explore design alternatives</strong> quickly without needing to master complex editing tools</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h2>
+<p>Using the AI Assistant is simple. Just click on the new "Assistant" icon at the bottom of the 3DStreet interface and start describing what you'd like to create or modify.</p>
+<p>For example:</p>
+<ul>
+<li>"Create a two-way street with protected bike lanes and mature trees on both sides"</li>
+<li>"Add a mid-block crosswalk with a pedestrian refuge island"</li>
+<li>"Change the bike lanes to be at sidewalk level with planters as separation"</li>
+<li>"Add outdoor seating areas in front of the cafes on the north side"</li>
+</ul>
+<p>The AI Assistant interprets your requests and performs the necessary operations to bring your descriptions to life, handling all the technical details behind the scenes.</p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/ai-assistant-clone-example-d7007653cbc57e8915a2f26225b51af8.jpeg" width="1396" height="736" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-we-built-this">Why We Built This<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#why-we-built-this" class="hash-link" aria-label="Direct link to Why We Built This" title="Direct link to Why We Built This">​</a></h2>
+<p>We've heard from many users – especially those new to 3D design tools – that while they have clear visions for better streets, translating those ideas into 3D visualizations can be challenging. Creating even simple scenes often requires learning multiple interface elements and performing several discrete actions.</p>
+<p>When we analyzed user behavior, we found it difficult to understand user intent through traditional analytics. Is someone moving around the scene because they're confused, happy with what they made, or looking for something specific? It's hard to tell.</p>
+<p>By providing a natural language interface, we can:</p>
+<ol>
+<li><strong>Break down barriers</strong> to entry for non-technical users</li>
+<li><strong>Better understand user needs</strong> through their natural language requests</li>
+<li><strong>Provide an alternative UI</strong> for operations that can be challenging or repetitive when using the existing interface</li>
+</ol>
+<p>Perhaps most importantly, it allows people to focus on the "what" of their street design rather than the "how" of the software.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="under-the-hood">Under the Hood<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#under-the-hood" class="hash-link" aria-label="Direct link to Under the Hood" title="Direct link to Under the Hood">​</a></h2>
+<p>The 3DStreet AI Assistant is powered by Google's Gemini LLM via its Vertex AI API and our custom React-based chat interface. The most useful part of the Assistant is its ability to call tools that perform actions in the 3DStreet Editor. These tools include entity placement, entity updates, street segment creation and modification, camera control, geospatial location updates and project information memory. When a tool is called, the interface will display a yellow notification while pending and resolve into a green or red notification depending on the result of the function call. You can click the function call notification to see the details of the function call.</p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/ai-assistant-function-call-response-details-c633a5bf79f4dc5460bd410b25d67776.png" width="880" height="833" class="img_ev3q"></p>
+<br>
+<br>
+<p>Building the AI Assistant has helped us improve the underlying 3DStreet codebase. By creating clear function calls for the AI to use, we've had to improve our code structure and interfaces for a number of underlying features, especially street editing through our new <a href="https://3dstreet.org/docs/managed-street/overview-managed-street">Managed Street Format</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-fine-print-beta-status-and-availability">The Fine Print: Beta Status and Availability<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#the-fine-print-beta-status-and-availability" class="hash-link" aria-label="Direct link to The Fine Print: Beta Status and Availability" title="Direct link to The Fine Print: Beta Status and Availability">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="beta-status">Beta Status<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#beta-status" class="hash-link" aria-label="Direct link to Beta Status" title="Direct link to Beta Status">​</a></h3>
+<p>The AI Assistant is currently in beta testing, which means it's still evolving and may occasionally (often?) misinterpret requests or behave unexpectedly. During this early release period, the AI Assistant is available free of charge to all 3DStreet users with some caveats below.</p>
+<p>We're actively collecting feedback to improve the experience and would love to hear about your interactions – both successful and challenging! Please share them in our Discord server or other social media (links at the bottom of this page).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="availability">Availability<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#availability" class="hash-link" aria-label="Direct link to Availability" title="Direct link to Availability">​</a></h3>
+<p>During this early release period, the AI Assistant is available free of charge to all 3DStreet users, but you must have an account and be signed in. We reserve the right to set daily caps for free users if usage exceeds our budget limits. We reserve the right to log chat conversations to improve the AI Assistant and our street design tools. Access to this feature is subject to the terms of our <a href="https://3dstreet.org/docs/about-3dstreet/terms-and-conditions">Terms of Service</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next?<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
+<p>We're just getting started with AI integration in 3DStreet. Tell us what you'd like to see as we continue to develop this feature! Some ideas we've had so far include:</p>
+<ul>
+<li>Better guidance for users wishing to create scenes from scratch, such as a Q&amp;A flow for street geometry</li>
+<li>Support for more specialized street design elements</li>
+<li>Better leveraging of existing street data from geospatial sources to assist LLM with street geometry and placement of street elements</li>
+<li>Integration with local LLM APIs for users who prefer to run AI locally</li>
+<li>Expanded automation capabilities for professional workflows</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="faqs">FAQs<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#faqs" class="hash-link" aria-label="Direct link to FAQs" title="Direct link to FAQs">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="q-is-this-a-distraction-from-fixing-other-features">Q: Is this a distraction from fixing other features?<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#q-is-this-a-distraction-from-fixing-other-features" class="hash-link" aria-label="Direct link to Q: Is this a distraction from fixing other features?" title="Direct link to Q: Is this a distraction from fixing other features?">​</a></h4>
+<p>A: Improved street geometry editing – especially better intersections support – continues to rank highly on our roadmap. Some users also share frustrations with elements of the 3DStreet user interface, especially new users. Providing simple interfaces for navigating and editing detailed scenes over a large 3D space is challenging. We hope the AI Assistant complements ongoing feature development by making existing features more accessible while we continue to develop more advanced capabilities. And sometimes developing UI for a new spatial feature is harder than developing the underlying code, making the AI Assistant a great option to introduce more experimental features.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="q-is-this-replacing-the-current-editing-interface">Q: Is this replacing the current editing interface?<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#q-is-this-replacing-the-current-editing-interface" class="hash-link" aria-label="Direct link to Q: Is this replacing the current editing interface?" title="Direct link to Q: Is this replacing the current editing interface?">​</a></h4>
+<p>A: Not at all! The AI Assistant is an additional option that works alongside our traditional editing tools. Power users can continue using the full interface for precise control, while switching to the AI Assistant when it's more convenient.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="q-what-if-the-ai-assistant-doesnt-understand-what-i-want">Q: What if the AI Assistant doesn't understand what I want?<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#q-what-if-the-ai-assistant-doesnt-understand-what-i-want" class="hash-link" aria-label="Direct link to Q: What if the AI Assistant doesn't understand what I want?" title="Direct link to Q: What if the AI Assistant doesn't understand what I want?">​</a></h4>
+<p>A: The technology is still evolving, and some requests may require clarification. You can always switch back to manual editing if needed. Your feedback helps us improve the system's comprehension over time.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="q-why-did-you-choose-the-gemini-llm-model">Q: Why did you choose the Gemini LLM model?<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#q-why-did-you-choose-the-gemini-llm-model" class="hash-link" aria-label="Direct link to Q: Why did you choose the Gemini LLM model?" title="Direct link to Q: Why did you choose the Gemini LLM model?">​</a></h4>
+<p>A: We've tested a few different models and found <a href="https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/" target="_blank" rel="noopener noreferrer"><code>gemini-2.0-flash</code></a> to be the most effective for this use-case. We found that Claude 3.7 Sonnet performs similarly, but Gemini has slightly faster response time and access is built-in to our existing GCP / Firebase environment using the Vertex AI in Firebase API. Gemini has also performed very well on large context tasks, and our system prompt combined with scene graph and other user generated elements can drive up context length quickly.</p>
+<br>
+<br>
+<p>Between Gemini models, we found that Gemini 1.5 is not "smart enough" so to speak, and Gemini 2.5 is -- too smart? Gemini 2.5 overthinks problems, takes a long time for response, and often returned a worse response than Gemini 2.0. We'll continue to experiment with model changes but have found diminishing returns fiddling with model types as compared to prompt engineering and improving tools invoked via function calling.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-today">Try It Today<a href="https://3dstreet.org/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design#try-it-today" class="hash-link" aria-label="Direct link to Try It Today" title="Direct link to Try It Today">​</a></h2>
+<p>The AI Assistant beta is <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">available now in the 3DStreet app</a>. Just look for the "Assistant" icon in the bottom of your screen to get started. We can't wait to see what you create!</p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="AI" term="AI"/>
+        <category label="street design" term="street design"/>
+        <category label="new features" term="new features"/>
+        <category label="beta" term="beta"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Transforming Street Design with Augmented Reality: Lessons from the Front Lines]]></title>
         <id>https://3dstreet.org/blog/2025/04/01/joint-webinar-street-design-and-immersive-advocacy</id>
@@ -265,11 +359,11 @@
 <p><a href="https://projects.worldbank.org/en/projects-operations/project-detail/P176623" target="_blank" rel="noopener noreferrer">Read more information about the project on the World Bank website</a></p>
 <p><em>Disclaimer: The views expressed in this blog post do not necessarily reflect the views of the World Bank Group.</em></p>]]></content>
         <author>
-            <name>Eric Mulinge</name>
-            <uri>https://www.linkedin.com/in/eric-mulinge-83b8a3250/</uri>
+            <name>Agatha Haule</name>
         </author>
         <author>
-            <name>Agatha Haule</name>
+            <name>Eric Mulinge</name>
+            <uri>https://www.linkedin.com/in/eric-mulinge-83b8a3250/</uri>
         </author>
         <category label="urban planning" term="urban planning"/>
         <category label="complete streets" term="complete streets"/>
