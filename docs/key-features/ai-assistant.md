@@ -260,4 +260,4 @@ await AIChatTools.executeFunction('managedStreetUpdate', {
 ## Further Research
 
 If you're interested in learning more about the 3DStreet AI Assistant:
-- [AI Asssistant Release Blog Post](/blog/2025-05-22-introducing-ai-assistant-beta-your-creative-partner-for-street-design)
+- [AI Asssistant Release Blog Post](/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design)
