@@ -45,13 +45,13 @@ Here are some examples of what you can ask the AI Assistant:
 - *"Generate a report about this street design"*
 
 
-# AI Assistant Tools
+# Developer Documentation
 
-The AI Assistant Chat Tools module provides a collection of functions that the AI assistant can use to interact with and modify the 3D scene. These tools allow the AI to perform actions like creating entities, updating properties, managing streets, and taking snapshots.
+Behind the scenes, the 3DStreet AI Assistant is powered by Google Gemini. We've tested a few different models and found [`gemini-2.5-flash`](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/) to be the most effective for this use-case. Gemini appears to perform well with large context tasks, and our system prompt combined with a user's scene graph and other scene data elements can drive up context length quickly.
 
-## Available Tools
+## AI Assistant Tools
 
-The AI Assistant integrates with the following tools:
+The AI Assistant performs actions from user requests using tools (sometimes called function calls). These tools are a collection of functions that the AI assistant can use to interact with and modify the 3D scene. These tools perform actions like creating entities, updating properties, managing streets, and taking snapshots.
 
 ### Entity Management Tools
 
@@ -227,14 +227,6 @@ The `takeSnapshot` function supports different view types:
 - **straightOn**: Front view of the scene
 - **closeup**: Close-up view of the scene
 
-## Safety Guidelines
-
-The AI Chat Tools implement safety guidelines, particularly for street designs:
-
-1. Never place bollards or protective elements directly ON bike lanes or pedestrian paths
-2. Always place protective elements in divider segments BETWEEN bike lanes and drive lanes
-3. Use appropriate widths for different segment types
-
 ## Usage Example
 
 Here's an example of how the AI might create a protected bike lane:
@@ -267,6 +259,5 @@ await AIChatTools.executeFunction('managedStreetUpdate', {
 
 ## Further Research
 
-If you're interested in learning more about AI assistants for 3D design:
-- [Gemini AI Documentation](https://ai.google.dev/docs)
-- [Function Calling in LLMs](https://ai.google.dev/docs/function_calling)
+If you're interested in learning more about the 3DStreet AI Assistant:
+- [AI Asssistant Release Blog Post](/blog/2025-05-22-introducing-ai-assistant-beta-your-creative-partner-for-street-design)
