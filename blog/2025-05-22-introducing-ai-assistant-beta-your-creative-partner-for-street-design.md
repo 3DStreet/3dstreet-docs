@@ -105,13 +105,7 @@ A: Not at all! The AI Assistant is an additional option that works alongside our
 A: The technology is still evolving, and some requests may require clarification. You can always switch back to manual editing if needed. Your feedback helps us improve the system's comprehension over time.
 
 #### Q: Why did you choose the Gemini LLM model?  
-A: We've tested a few different models and found [`gemini-2.0-flash`](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/) to be the most effective for this use-case. We found that Claude 3.7 Sonnet performs similarly, but Gemini has slightly faster response time and access is built-in to our existing GCP / Firebase environment using the Vertex AI in Firebase API. Gemini has also performed very well on large context tasks, and our system prompt combined with scene graph and other user generated elements can drive up context length quickly.
-
-<br/>
-
-<br/>
-
-Between Gemini models, we found that Gemini 1.5 is not "smart enough" so to speak, and Gemini 2.5 is -- too smart? Gemini 2.5 overthinks problems, takes a long time for response, and often returned a worse response than Gemini 2.0. We'll continue to experiment with model changes but have found diminishing returns fiddling with model types as compared to prompt engineering and improving tools invoked via function calling.
+A: We've tested a few different models and found [`gemini-2.5-flash`](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/) to be the most effective for this use-case. Gemini appears to perform well with large context tasks, and our system prompt combined with a user's scene graph and other scene data elements can drive up context length quickly.
 
 ## Try It Today
 
