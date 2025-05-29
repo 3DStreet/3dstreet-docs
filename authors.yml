@@ -1,9 +1,3 @@
-nkauf:
-  name: Nick Kaufmann
-  title: Community Manager, InCitu
-  url: https://www.linkedin.com/in/nkauf/
-  image_url: ./images/authors/nkauf.jpeg
-
 kfarr:
   name: Kieran Farr
   title: Creator of 3DStreet
@@ -56,3 +50,15 @@ emulinge:
   title: 2024 Transport Analyst Intern, World Bank
   url: https://www.linkedin.com/in/eric-mulinge-83b8a3250/
   image_url: ./images/authors/emulinge.jpeg
+
+nkauf:
+  name: Nick Kaufmann
+  title: Community Manager, InCitu
+  url: https://www.linkedin.com/in/nkauf/
+  image_url: ./images/authors/nkauf.jpeg
+
+jacobw:
+  name: Jacob Weiner
+  title: Product Manager, 3DStreet
+  url: https://www.linkedin.com/in/jacobrweiner/
+  image_url: ./images/authors/jacobw.jpeg
