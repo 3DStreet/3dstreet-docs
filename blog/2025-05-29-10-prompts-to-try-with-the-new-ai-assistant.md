@@ -3,10 +3,10 @@ title: "10 Prompts to Supercharge Your Workflow with the New AI Assistant"
 description: "Maximize your productivity with these 10 powerful prompts for the 3DStreet AI Assistant. From basic street creation to advanced material changes, we've got you covered."
 authors: [jacobw]
 tags: [AI Assistant, workflow, productivity, street design, prompts]
-image: ./images/2025-05-22/ai-assistant-example-prompt-create-a-street.jpg
+image: ./images/2025-05-29/top-10-prompts.jpg
 ---
 
-![Screenshot showing the 3DStreet AI Assistant interface with a sample prompt](./images/2025-05-22/ai-assistant-example-prompt-create-a-street.jpg)
+![Screenshot showing the 3DStreet AI Assistant interface with a sample prompt](./images/2025-05-29/top-10-prompts.jpg)
 
 The new AI Assistant is here, and it's transforming how we create and modify street designs in 3DStreet! To help you hit the ground running with this powerful new feature, we've compiled a list of 10 essential prompts that showcase its capabilities and will help you optimize your design workflow right away.
 
@@ -14,15 +14,13 @@ The new AI Assistant is here, and it's transforming how we create and modify str
 
 ## Getting Started with AI Assistant Prompts
 
-Following our [recent announcement](/blog/2025-05-22-introducing-ai-assistant-beta-your-creative-partner-for-street-design) of the AI Assistant beta, we've already seen users discovering creative ways to leverage this tool. These prompts range from simple shortcuts to complex design tasks – all made accessible through natural language commands.
+Following our [recent announcement](/blog/2025/05/22/introducing-ai-assistant-beta-your-creative-partner-for-street-design) of the AI Assistant beta, we've already seen users discovering creative ways to leverage this tool. These prompts range from simple shortcuts to complex design tasks – all made accessible through natural language commands.
 
 Let's dive into the top 10 prompts you should try today:
 
 ## 1. Make a Street
 
-![AI Assistant creating a basic street layout](./images/2025-05-22/ai-assistant-function-call-response-details.png)
-
-The most fundamental prompt is also one of the most powerful. Simply click the "Create Street" button shortcut or type:
+The most fundamental prompt is also one of the most powerful. Simply click the "Create Street" button shortcut or type something like:
 
 ```
 Create a street with two drive lanes, two sidewalks, and two bike lanes
@@ -46,21 +44,21 @@ Need to communicate the impact and purpose of your design? The "Generate Report"
 - Problem statements
 - Proposed solutions
 
-The AI Assistant then creates a comprehensive report with snapshots highlighting how your design addresses the specified challenges – perfect for stakeholder presentations or community engagement.
+The AI Assistant then creates a report and generates snapshots highlighting how your design addresses the specified challenges -– useful for stakeholder presentations or community engagement.
 
 ## 4. Insert Objects
 
 Populating your scene is simple with commands like:
 
 ```
-Insert a tree on the northeast corner of the intersection
-```
-
-```
 Add three benches along the north sidewalk
 ```
 
-The AI understands spatial relationships and object types, making scene population intuitive and fast.
+```
+Place more trucks on the street
+```
+
+The AI understands these requests but sometimes still requires manual placement adjustments. We're still learning how to improve its spatial understanding, so please use the thumbs up or down button on the response depending on how accurate the AI is.
 
 ## 5. Rotate Elements
 
@@ -74,11 +72,9 @@ Rotate the food truck 45 degrees clockwise
 Turn the bicycle rack to face the street
 ```
 
-This eliminates the need to manually adjust rotation values, especially when you're aiming for specific orientations.
+This is an alternative to manually adjusting rotation values in degrees.
 
 ## 6. Generate Ideas
-
-![AI Assistant suggesting urban design improvements](./images/2025-05-22/ai-assistant-example-prompt-create-a-street.jpg)
 
 The AI Assistant isn't just for execution – it's an ideation partner too. Try prompts like:
 
@@ -125,7 +121,7 @@ This tool is particularly useful when adjusting street dimensions to meet specif
 Transform the look and feel of your scene instantly:
 
 ```
-Change the road surface to cobblestone
+Change the road surface to concrete
 ```
 
 ```
@@ -154,9 +150,19 @@ These prompts are just the beginning of what's possible with the AI Assistant. A
 
 The beauty of the AI Assistant is its ability to understand natural language, so don't be afraid to experiment with different phrasings and commands. The system is designed to interpret your intent, even if you don't use the exact wording shown in our examples.
 
-## Share Your Discoveries
+## Provide Feedback
 
-Have you found an innovative way to use the AI Assistant? We'd love to hear about it! Join our [Discord community](https://discord.gg/3dstreet) (link also in the footer) and share your favorite prompts and workflows. Your insights could help fellow designers unlock even more potential from this powerful tool.
+### New Built-in Feedback Mechanism
+
+Since the release of this feature we've added a feedback mechanism to the AI Assistant. After a text and/or function call response, you can click the thumbs up or down button to rate the response.
+
+![Screenshot showing the 3DStreet AI Assistant interface with a sample prompt](./images/2025-05-29/ai-response-feedback-buttons.jpg)
+
+Pressing either thumbs up or down will rate your conversation for review and will help us improve the AI Assistant over time.
+
+### Share your Discoveries
+
+Have you found an innovative way to use the AI Assistant? We'd love to hear about it! Join our Discord community (link in the footer) and share your favorite prompts and workflows. Your insights could help fellow designers unlock even more potential from this powerful tool.
 
 For more information on the AI Assistant, check out our [documentation](/docs/key-features/ai-assistant) and stay tuned for future updates as we continue to enhance this feature based on your feedback.
 
