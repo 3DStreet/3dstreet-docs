@@ -269,7 +269,7 @@ export default function EducationPage() {
         </section>
         
         {/* VIDEO DEMO SECTION */}
-        <section className="st_video_demo" style={{ padding: '60px 0', textAlign: 'center' }}>
+        <section id="see-3dstreet-in-action" className="st_video_demo" style={{ padding: '60px 0', textAlign: 'center' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 20px' }}>
             <h2 style={{ marginBottom: '40px' }}>See 3DStreet in Action</h2>
             <div style={{padding:'65.53% 0 0 0',position:'relative'}}>
