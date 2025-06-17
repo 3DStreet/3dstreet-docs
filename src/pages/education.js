@@ -268,6 +268,23 @@ export default function EducationPage() {
           </div>
         </section>
         
+        {/* VIDEO DEMO SECTION */}
+        <section className="st_video_demo" style={{ padding: '60px 0', textAlign: 'center' }}>
+          <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 20px' }}>
+            <h2 style={{ marginBottom: '40px' }}>See 3DStreet in Action</h2>
+            <div style={{padding:'65.53% 0 0 0',position:'relative'}}>
+              <iframe 
+                src="https://player.vimeo.com/video/1093919012?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} 
+                title="3DStreet Demo for Education with Streetmix Flow">
+              </iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </section>
+        
         {/* BLOG-STYLE CTA SECTION */}
         <section className="st_blog">
           <div className="st_blog_left_dot" />
