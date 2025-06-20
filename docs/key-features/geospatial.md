@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Geospatial Features in 3DStreet
+# Geospatial (3D Maps)
 
 3DStreet's geospatial capabilities allow you to ground your street designs in real-world context, providing accurate geographical reference for your projects. These features are primarily available through 3DStreet Pro, offering advanced mapping and location-based functionality.
 
@@ -31,7 +31,7 @@ The Google 3D Tiles integration provides high-resolution, photorealistic 3D mode
   * Accurate representation of existing infrastructure
   * Detailed context for urban environments
   * Adjustable opacity and blending modes
-  * Optional clipping to focus on specific areas
+  * Optional flattening to focus on specific areas
 
 * **Best For**:
   * Urban areas with complex built environments
@@ -72,14 +72,18 @@ The OpenStreetMap integration provides 2D political map tiles and 2.5D building 
 
 ### Map Customization
 
-* **Opacity and Blending Controls**:
+When using Google 3D Tiles, you can further customize the appearance of the map tiles by adjusting the opacity and blending modes.
+
+* **Opacity and Blending**:
   * Adjust the opacity of 3D tiles (30% or 60%)
   * Choose blending modes (Normal, Darker, Lighter)
   * Control how your design integrates with the underlying map
 
-* **Clipping Controls**:
-  * Enable clipping to focus on specific areas
-  * Remove unnecessary map elements that might distract from your design
+* **Terrain Flattening**:
+  * Enable terrain flattening to focus on specific areas
+  * Remove map elements that distract from your design 
+  * Trees, cars, utility poles, and other objects can be flattened to provide space for your design
+  * Design subterranean treatments using a Terrain Flattening Shape positioned below ground level
 
 ### Elevation Data
 
@@ -91,7 +95,7 @@ The OpenStreetMap integration provides 2D political map tiles and 2.5D building 
 
 ### Augmented Reality Integration
 
-Geospatial data (long/lat/elevation/orientation) is exported in AR Ready glb exports as additional metadata. Third-party AR applications can utilize this metadata to display the scene in a specific location.
+Geospatial data (long/lat/elevation/orientation) is exported in AR Ready glTF (.glb) exports as additional metadata. Third-party AR applications can utilize this metadata to display the scene in a specific location.
 
 ## Working with Geospatial Features
 
@@ -104,13 +108,13 @@ Geospatial data (long/lat/elevation/orientation) is exported in AR Ready glb exp
 * **Performance Optimization**:
   * Choose the appropriate map source based on your needs
   * Use OSM for better performance in areas with limited connectivity
-  * Consider using 2D satellite imagery for initial design phases
 
 * **Design Integration**:
   * Align street designs with real-world geometry
   * Use the toolbar's Hand mode to navigate without accidentally moving objects
-  * Leverage the Add Entity panel to place objects in geographically accurate positions
+  * Use the Ruler tool to measure distances
+  * Leverage the Add Layer panel to place objects in geographically accurate positions
 
 ## Availability
 
-Most geospatial features are available as part of the 3DStreet Pro subscription plan.
+Most geospatial features are only available as part of the 3DStreet Pro subscription plan.
