@@ -1,56 +1,54 @@
 ---
 sidebar_position: 10
-title: Classroom Sponsorship Program
+title: K-12 Classroom Sponsorship
 ---
 
-# K-12 Sponsorship Program  
+# K-12 Classroom Sponsorship Program  
 
-Classroom Sponsorship Program: 3DStreet Subscriptions Support Free K–12 Access.
+Empower the next generation of street designers. When you upgrade to a 3DStreet Pro plan, you unlock free access for a K-12 classroom to explore 3DStreet for one full year. Every five <b>Pro</b> plan upgrades sponsors one classroom — your commitment to better streets helps young minds reimagine their communities. Each <b>Super</b> plan upgrade unlocks an entire classroom.
 
-## Classroom Sponsorship Program
-Starting today, for every five individuals who upgrade to a premium 3DStreet plan will unlock free access for a K–12 classroom to use 3DStreet for one full year.
-Whether you’re a professional planner, urbanist, student, or creative thinker, your upgrade helps bring design tools and civic imagination to young people across the country.
+## Why We Focus on Classrooms
 
-## Why Classrooms?
-3DStreet has proven to be a powerful classroom tool, helping to teach urban design in a foundational and accessible format.
-But too many classrooms lack the resources—or the right digital tools—to bring those ideas to life. By pairing every premium sign-up with a sponsored school license, we’re helping close that gap.
+Streets shape how we live, move, and connect. Teaching students to visualize and design better streets creates tomorrow's advocates for safer, greener communities. 3DStreet makes urban design concepts accessible to young learners, but many schools lack the resources to access these tools. Our sponsorship program bridges that gap, ensuring that creativity and civic imagination aren't limited by budget constraints.
 
 ## How It Works
-When you upgrade to a premium account, 3DStreet will automatically donate a K–12 license to a school on our waiting list.
 
-## How to Know if Your School Qualifies 
-The School must be a K-12 primary or secondary school, universities are not eligible for this program. Public or private schools are welcomed to apply as long as you provide proper credentials. 
+Simple: upgrade to a 3DStreet Pro or Super plan, and we'll automatically provide a classroom license to a school from our waiting list. Want to make it personal? You can nominate a specific school — maybe your local school, your child's classroom, or a community you want to support. (5 Pro accounts support one classroom, and one Super account supports an entire classroom.)
 
-## Want to make it personal? You can nominate a specific school during checkout.
+## What Schools Receive
 
+**Full 3DStreet Pro access for up to 30 students**, including:
+- Complete access to 3DStreet design tools and 3D model library
+- Use unlimited 3D Maps with Pro geospatial tools
+- Augmented Reality (AR) scene sharing with Pro support for iOS and Android devices
+- Artificial Intelligence (AI) assistant to empower students to create by describing their intent using words
+- All editing and visualization tools including import/export from Streetmix, Blender, and other creative tools.
+- Teacher onboarding support and curriculum resources
+- The opportunity to showcase student designs on our public gallery
+- Opportunity to share your 3DStreet Pro experience with the community
+- Up to 6 months access
 
-Each sponsored classroom receives:
+## School Eligibility
 
+We support any accredited K-12 primary and secondary school in the US or Canada, both public and private. Colleges and universities are not eligible for this program, but we have [affordable partnership options for higher education institutions](/contact). Schools need to provide credentials and have an educator willing to participate in brief onboarding and feedback sessions. We prioritize K-12 schools but summer programs or STEM camps serving similar age students are welcome to apply.
 
-Full access to the 3DStreet platform for up to 20 students
+## Technical Requirements
 
+3DStreet is a web app, there is no software to install. Students will need access to:
+- Computer or tablet with internet connection
+- Modern web browser (Chrome, Safari, Firefox, Edge)
+- Email address for account creation and Pro feature access (personal or school-provided)
+- For AR features: mobile device with camera and sufficient storage
 
-Teacher onboarding materials and curriculum ideas
+## From Your Upgrade to Their Future
 
+Your Pro upgrade does more than unlock advanced features — it gives students tools to envision their neighborhoods differently. When they design protected bike lanes, add street trees, or create safer crosswalks in 3DStreet, they're not just learning software. They're developing the vision to advocate for real change in their communities.
 
-The opportunity to feature student designs on the public 3DStreet map
+## Join the Movement
 
-## For Educators
-Educators must be willing to participate in an onboarding call, as well as feedback calls. Be open to sharing your experience with 3DStreet and provide materials of how your students used the application in the classroom. 
+Ready to sponsor a classroom? Upgrade to 3DStreet Pro and help us design the future, one student at a time.
 
-## System Requirements
-Each student will need acess to a computer or tablet with internet access and an updated internet browser such Safari or Chrome. For access to Augmented Reality features there must be access to a cellphone with data storage. Additionally, each account is required to log in with an email address so students must have a personal or school provided address. 
+[Get Pro – Sponsor a Classroom](https://3dstreet.com/docs/pricing)
 
-## Small Action, Big Ripple
-Your upgrade doesn’t just unlock advanced features for you—it empowers dozens of young people to start imagining and shaping their world.
-When one designer steps forward, a whole classroom steps in.
-
-## Meet the Future of Urban Design
-This is about more than access. It’s about equity. It’s about nurturing a generation of diverse, curious thinkers who see their communities not just as they are, but as they could be.
-
-## Ready to Make an Impact?
-Upgrade today, and we’ll take care of the rest.
-Get Premium – Sponsor a Classroom »
-Together, let’s design forward.
-
-## Want to recommend a school? Or are you a teacher interested in joining the program? Get in touch here »https://docs.google.com/forms/d/e/1FAIpQLScFYviAyAXSlM5TcbvtxsLTm9iU90T7sgQ0SvW1ocGsMGa2Bw/viewform?usp=dialog 
+### Want to recommend a school or join as an educator?
+[Educators apply for classroom access here](https://docs.google.com/forms/d/e/1FAIpQLScFYviAyAXSlM5TcbvtxsLTm9iU90T7sgQ0SvW1ocGsMGa2Bw/viewform?usp=dialog)
