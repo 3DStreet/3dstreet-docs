@@ -30,7 +30,7 @@ Simple: upgrade to a 3DStreet Pro or Super plan, and we'll automatically provide
 
 ## School Eligibility
 
-We support any accredited K-12 primary and secondary school in the US or Canada, both public and private. Colleges and universities are not eligible for this program, but we have [affordable partnership options for higher education institutions](/contact). Schools need to provide credentials and have an educator willing to participate in brief onboarding and feedback sessions. We prioritize K-12 schools but summer programs or STEM camps serving similar age students are welcome to apply.
+We support any accredited K-12 primary and secondary school, public or private. Colleges and universities are not eligible for this program, but we have [affordable partnership options for higher education institutions](/contact). Schools need to provide credentials and have an educator willing to participate in brief onboarding and feedback sessions. We prioritize K-12 schools but summer programs or STEM camps serving similar age students are welcome to apply and we can include you when there is room.
 
 ## Technical Requirements
 
