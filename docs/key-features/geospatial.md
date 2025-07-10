@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Geospatial (3D Maps)
+# Geospatial Maps
 
 3DStreet's geospatial capabilities allow you to ground your street designs in real-world context, providing accurate geographical reference for your projects. These features are primarily available through 3DStreet Pro, offering advanced mapping and location-based functionality.
 
