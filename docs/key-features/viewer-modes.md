@@ -4,41 +4,45 @@ sidebar_position: 3
 
 # Viewer Modes
 
-3DStreet offers three different ways to experience and navigate your 3D street scenes. Each viewer mode provides a unique perspective and interaction style to help you showcase your designs effectively.
+3DStreet now offers three different ways to experience and navigate your 3D street scenes. Each viewer mode provides a unique perspective and interaction style, allowing you to showcase your designs effectively and easily export custom videos to your desktop.
 
 ## Camera Path Mode
 
-**Default viewing mode** that automatically moves the camera along predefined paths, perfect for presentations and consistent scene viewing.
+**Default viewing mode** that automatically moves the camera along predefined paths, perfect for presentations and consistent scene viewing. 
 
 ### Available Path Types
 
 #### Circle Path
-Provides a smooth orbital view around your scene, ideal for showcasing the overall design and getting a comprehensive overview of your street layout.
+Provides a smooth orbital view around your scenes origin point, ideal for showcasing the overall design and getting a comprehensive overview of your street layout.
+<br/>
+<img src="/img/docs/viewer-modes/camera-path-circle.png" alt="Camera Path Circle Sidebar" style={{ width: '50%' }} />
+
 
 #### Forward Path
-Simulates walking or driving down the street, giving viewers a realistic first-person perspective of what it would be like to travel along your designed street.
-
+Simulates walking or driving down the street, providing a realistic first-person view of what it’s like to travel through your designed street. This mode is ideal for showcasing a more intimate, ground-level perspective of your design.
 #### Strafe Path
-Moves the camera side-to-side across the street, perfect for demonstrating the width of your design and showing cross-sectional views of different street elements.
+Moves the camera side-to-side across the street, perfect for quickly demonstrating the width of your design and showing cross-sectional views of different street elements.
 
 #### Custom Path
-Allows you to define your own camera movement by drawing measure lines in your scene. The camera will follow these lines, giving you complete control over the viewing experience.
+Allows you to define custom camera movement using the measure line feature in your scene. The camera follows the path you draw, giving you full control over the viewing experience.
+<br/>
+<img src="/img/docs/viewer-modes/custom-path-image.png" alt="Custom Path Sidebar" style={{ width: '50%' }} />
 
 ### How to Use Camera Path Mode
 
 1. Camera Path mode is enabled by default when you view a scene
-2. To switch between path types, use the viewer controls in the 3DStreet interface
-3. For custom paths, first create a measure line in your scene, then select it as your camera path
+2. To switch between path types, use the viewer controls in the 3DStreet interface, which can be located by clicking on the viewer tab in the layers menu located on the left side of your screen. 
+3. For custom paths, first create a measure line in your scene, then select it as your camera path. A measure line can be created using the ruler icon on the top of your screen. 
 
 ## Locomotion Mode
 
-**Interactive navigation** that puts you in control of the camera, allowing you to explore your street design at your own pace.
+**Interactive navigation** that puts you in control of the camera, allowing you to explore your street design at your own pace. Ideal for live walkthroughs or demos of your scene. 
 
 ### Controls
 
 #### On Desktop
 - **WASD Keys** or **Arrow Keys**: Move forward, backward, left, and right
-- **Mouse**: Look around and change your viewing direction
+- **Mouse**: Click and drag to look around and change your viewing direction
 - **Click**: Teleport to specific locations in your scene
 
 #### In VR
@@ -52,18 +56,23 @@ Allows you to define your own camera movement by drawing measure lines in your s
 - Interactive presentations where you want to control the viewing experience
 - VR experiences where physical movement enhances immersion
 - When you need to examine your design from multiple custom angles
+<br/>
+<img src="/img/docs/viewer-modes/locomotion-mode.png" alt="Locomotion Mode Sidebar" style={{ width: '50%' }} />
+
 
 ## AR Mode
 
-**Augmented Reality** brings your street design into the real world, allowing you to see how it would look in actual physical spaces.
+**Augmented Reality** brings your street design into the real world, allowing you to see how it would look in actual physical spaces. Can be paired with Geospatial features to directly redesign a real world location. 
 
 ### Getting Started with AR
 
-1. **Access AR Mode**: Click the AR play button in the viewer
+1. **Access AR Mode**: Click the AR play button in the viewer mode settings.
 2. **Grant Permissions**: Allow camera access when prompted
-3. **Find a Surface**: Point your device at a flat surface like a floor or table
+3. **Find a Surface**: Point your device at a flat surface like a floor or table 
 4. **Place Your Scene**: Tap to place your 3D street scene in the real world
 5. **Explore**: Walk around to see your design from different angles in AR
+<br/>
+<img src="/img/docs/viewer-modes/ar-mode.png" alt="AR Mode Sidebar" style={{ width: '50%' }} />
 
 ### Device Compatibility
 
@@ -85,6 +94,7 @@ AR Mode includes additional features for Pro subscribers:
 - Enhanced iOS compatibility
 - Recording capabilities for AR sessions
 - Advanced sharing options
+
 
 ## Switching Between Modes
 
