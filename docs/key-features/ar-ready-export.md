@@ -45,7 +45,7 @@ Adobe Aero is a powerful AR creation and viewing platform that allows you to pla
 
 ### inCitu
 
-inCitu is an AR platform specifically designed for urban planning and community engagement.
+inCitu is an AR platform specifically designed for urban planning and community engagement. Visit their website at [InCitu.us](https://www.incitu.us/) to learn more about their features and capabilities.
 
 * **Features**:
   * Geospatial positioning of 3D models in real-world locations
