@@ -4,10 +4,98 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Thu, 29 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Creating Photorealistic Pictures and Animations with 3DStreet and AI Rendering Tools]]></title>
+            <link>https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai</link>
+            <guid>https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai</guid>
+            <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Transform your 3DStreet scenes into stunning photorealistic images and animations using AI tools like Black Forest Labs and Google's Veo.]]></description>
+            <content:encoded><![CDATA[<p>Did you know that you can realistic rendering and animations of your street scenes using free or low cost AI tools? Transform your basic 3D street designs into stunning photorealistic images and dynamic animations that will captivate stakeholders and bring your vision to life with this step-by-step guide.</p>
+<br>
+<br>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
+<br>
+<p>In this guide, we'll walk through the complete workflow to take a 3DStreet scene from simple 3D rendering to more realistic images and animations using Black Forest Labs (BFL) and Google's Veo3 Models.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-create-your-3d-street-scene">Step 1: Create Your 3D Street Scene<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#step-1-create-your-3d-street-scene" class="hash-link" aria-label="Direct link to Step 1: Create Your 3D Street Scene" title="Direct link to Step 1: Create Your 3D Street Scene">​</a></h2>
+<p>First, let's create a 3D street scene like normal in 3DStreet. Whether you're starting from scratch or using a user-generated scene, make sure your layout captures the key elements of your street design vision.</p>
+<p><img decoding="async" loading="lazy" alt="Creating and editing a 3DStreet scene" src="https://3dstreet.org/assets/images/step1-e4513ad7f645d38630ee90eb8771a3fc.jpg" width="800" height="450" class="img_ev3q"></p>
+<p>Once you're satisfied with your scene composition, it's time to export it for AI enhancement.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-export-a-clean-jpeg">Step 2: Export a Clean JPEG<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#step-2-export-a-clean-jpeg" class="hash-link" aria-label="Direct link to Step 2: Export a Clean JPEG" title="Direct link to Step 2: Export a Clean JPEG">​</a></h2>
+<p>Download a clean, high-resolution JPEG from your 3DStreet scene using the <strong>share button</strong>. This will serve as the foundation for our AI enhancement process.</p>
+<br>
+<p><img decoding="async" loading="lazy" alt="Exporting JPEG from 3DStreet" src="https://3dstreet.org/assets/images/step2-a789dff7a9a435d80766becbb51f2b61.jpg" width="800" height="450" class="img_ev3q"></p>
+<br>
+<p>Capture the scene from an angle that best showcases your street design, as this will be the basis for all subsequent enhancements. Make sure to turn off the 3DStreet Logo and the Scene Title (this is a Pro feature) to create a clean export.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-import-to-black-forest-labs-for-photorealistic-enhancement">Step 3: Import to Black Forest Labs for Photorealistic Enhancement<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#step-3-import-to-black-forest-labs-for-photorealistic-enhancement" class="hash-link" aria-label="Direct link to Step 3: Import to Black Forest Labs for Photorealistic Enhancement" title="Direct link to Step 3: Import to Black Forest Labs for Photorealistic Enhancement">​</a></h2>
+<p>Next, we'll import your screenshot into the <a href="https://playground.bfl.ai/" target="_blank" rel="noopener noreferrer">Black Forest Labs Playground</a> to add photorealistic shading and lighting. This AI-powered tool will transform your basic 3D render into a more realistically shaded image.</p>
+<p><img decoding="async" loading="lazy" alt="Screenshot placeholder: Black Forest Labs interface - video timecode ~00:00:26" src="https://3dstreet.org/assets/images/step3-cee9bc8f3ffc8cb20aae9ae20b658976.jpg" width="1706" height="664" class="img_ev3q"></p>
+<p>Upload your JPEG and for the Flux Kontext [pro] Model to work its magic. You can use a basic prompt like "add photorealistic shading and lighting" or add more details for specific styling changes if desired.</p>
+<p>You'll get a couple different example outputs to choose from, each with its own interpretation of how to make your scene more photorealistic.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="output-before--after-comparison">Output Before &amp; After Comparison<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#output-before--after-comparison" class="hash-link" aria-label="Direct link to Output Before &amp; After Comparison" title="Direct link to Output Before &amp; After Comparison">​</a></h3>
+<img-comparison-slider><img slot="first" width="100%" src="https://3dstreet.org/images/2025-07-10/suburban-before.jpg" alt="3DStreet scene before AI enhancement"><img slot="second" width="100%" src="https://3dstreet.org/images/2025-07-10/suburban-after.jpg" alt="3DStreet scene after AI enhancement"></img-comparison-slider>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-use-the-fill-tool-for-structural-changes">Step 4: Use the Fill Tool for Structural Changes<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#step-4-use-the-fill-tool-for-structural-changes" class="hash-link" aria-label="Direct link to Step 4: Use the Fill Tool for Structural Changes" title="Direct link to Step 4: Use the Fill Tool for Structural Changes">​</a></h2>
+<p>Another powerful feature from Black Forest Labs is the <strong>Fill tool</strong>, which allows you to modify specific parts of your scene. For example, you can change the structure of buildings to have something more realistic looking for suburban single-family homes.</p>
+<p>Once you have a source image loaded from a previous enhancement, or directly from 3DStreet, and you're viewing it in full screen from the BFL Playground, click the three-dots in the lower-right-hand corner and then click "Fill".
+<img decoding="async" loading="lazy" alt="Click the Fill tool" src="https://3dstreet.org/assets/images/step4a-a659355d819c5b36392b20be57722728.jpg" width="329" height="293" class="img_ev3q"></p>
+<br>
+<br>
+<p>In Fill mode, click and drag to create a mask (or outlined area) to indicate the area in which you'd like to replace with new imagery.</p>
+<br>
+<p><img decoding="async" loading="lazy" alt="Using Fill tool to modify buildings" src="https://3dstreet.org/assets/images/step4b-a4873f53c304040895335a33794936d1.jpg" width="1280" height="720" class="img_ev3q"></p>
+<br>
+<p>Then, enter a prompt to automatically fill the area with whatever you desire, such as:</p>
+<ul>
+<li>Replacing generic buildings with more realistic architectural styles</li>
+<li>Add detailed facades and realistic building materials</li>
+<li>Modify landscaping and environmental elements</li>
+<li>Enhance street infrastructure with realistic details</li>
+</ul>
+<p>In this example we used the prompt, "replace with suburban single family homes":</p>
+<p><img decoding="async" loading="lazy" alt="Replacing default buildings with generates homes" src="https://3dstreet.org/assets/images/step4c-e9f7bf373b1eaec031681fc3ac5055bb.jpg" width="1024" height="553" class="img_ev3q"></p>
+<br>
+<p>Now we've created a customized, high quality rendering ready for sharing with stakeholders.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-create-animation-with-googles-veo">Step 5: Create Animation with Google's Veo<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#step-5-create-animation-with-googles-veo" class="hash-link" aria-label="Direct link to Step 5: Create Animation with Google's Veo" title="Direct link to Step 5: Create Animation with Google's Veo">​</a></h2>
+<p>We can take it one step further, by turning this enhanced static image into a dynamic animation! Take your photorealistic screenshot, right-click to download it, and load it into Google's Veo through <a href="https://labs.google/fx/tools/flow/" target="_blank" rel="noopener noreferrer">Google Labs Flow</a>.</p>
+<p>Open up the Flow tool, choose "Frames to Video", then upload your enhanced image, then choose that image as the first frame, then enter a prompt such as "Animate this suburban street scene."</p>
+<br>
+<p><img decoding="async" loading="lazy" alt="Google Veo interface" src="https://3dstreet.org/assets/images/step5-8270e7e645732d470095dbb71f90f912.jpg" width="1280" height="720" class="img_ev3q"></p>
+<br>
+<p>The system will take about a minute to generate your animation options.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-choose-your-animation-style">Step 6: Choose Your Animation Style<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#step-6-choose-your-animation-style" class="hash-link" aria-label="Direct link to Step 6: Choose Your Animation Style" title="Direct link to Step 6: Choose Your Animation Style">​</a></h2>
+<p>After processing, Google's Veo will show you a couple different animation options. Each will have its own interpretation of how to bring your street scene to life with:</p>
+<ul>
+<li>Subtle camera movements</li>
+<li>Environmental animations (trees swaying, etc.)</li>
+<li>Lighting changes</li>
+<li>Atmospheric effects</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Google Veo interface" src="https://3dstreet.org/assets/images/step5b-a1b9989b6bfc76914755fccadc77b9b3.jpg" width="1280" height="720" class="img_ev3q"></p>
+<p>You can choose which ones you like best, or sometimes you'll need to adjust your prompt slightly to get an output that perfectly matches your vision.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-for-success">Tips for Success<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#tips-for-success" class="hash-link" aria-label="Direct link to Tips for Success" title="Direct link to Tips for Success">​</a></h2>
+<ul>
+<li><strong>Start with a clear, well-composed 3DStreet scene</strong> - The quality of your final animation depends heavily on your initial composition</li>
+<li><strong>Experiment with different prompts</strong> - Small changes in your description can yield dramatically different results</li>
+<li><strong>Be patient with processing times</strong> - AI rendering can take a few minutes, but the results are worth the wait</li>
+<li><strong>Save multiple versions</strong> - Keep copies of your work at each stage in case you want to try different approaches</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-results">The Results<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#the-results" class="hash-link" aria-label="Direct link to The Results" title="Direct link to The Results">​</a></h2>
+<p>And there you go! You've successfully transformed a basic 3DStreet scene into a photorealistic, animated visualization that can effectively communicate your street design vision to stakeholders, community members, or anyone who needs to understand your proposed improvements.</p>
+<p>This workflow opens up exciting possibilities for urban designers, planners, and advocates who want to create compelling visualizations without needing advanced 3D animation skills.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video-tutorial">Video Tutorial<a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai#video-tutorial" class="hash-link" aria-label="Direct link to Video Tutorial" title="Direct link to Video Tutorial">​</a></h3>
+<p>Here's a video version of this tutorial:</p>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/7P1Oq7a0tDM?si=wGMOYa8_W6f_uzv9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content:encoded>
+            <category>AI</category>
+            <category>animations</category>
+            <category>photorealistic</category>
+            <category>street design</category>
+            <category>video</category>
+            <category>Black Forest Labs</category>
+            <category>Google Veo</category>
+        </item>
         <item>
             <title><![CDATA[10 Prompts to Supercharge Your Workflow with the New AI Assistant]]></title>
             <link>https://3dstreet.org/blog/2025/05/29/10-prompts-to-try-with-the-new-ai-assistant</link>
@@ -1012,48 +1100,6 @@ While there's no such thing as a free lunch in contract development, Zade extend
             <category>devshop</category>
             <category>web</category>
             <category>developer</category>
-        </item>
-        <item>
-            <title><![CDATA[Impact on WebXR Application Design from New Mixed Reality Headsets]]></title>
-            <link>https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr</link>
-            <guid>https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr</guid>
-            <pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[What changes should WebXR developers consider to their application given new devices coming to market?]]></description>
-            <content:encoded><![CDATA[<p>A few weeks ago I attended a "developer day" at a local electronics company down the road featuring their new mixed reality VR headset. I spent the entire day testing many different WebXR applications with a heavy focus on evaluating which user interaction elements will be relevant for developers.</p>
-<p>Below are some notes intended for other 3DStreet code contributors to reference as we work on supporting new WebXR compatible devices.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="gaze-works-very-well-as-a-primary-user-input-mechanism">Gaze works very well as a primary user input mechanism<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#gaze-works-very-well-as-a-primary-user-input-mechanism" class="hash-link" aria-label="Direct link to Gaze works very well as a primary user input mechanism" title="Direct link to Gaze works very well as a primary user input mechanism">​</a></h2>
-<p>Gaze interaction <em>"just works"</em> for native applications in this headset, however it's a privacy nightmare as gaze movement can be use to fingerprint (identify) individuals for tracking purposes, so that information isn't even given to native application.</p>
-<p>To enable gaze user interface while not exposing gaze to the application, apps need to provide "hot spots" or hints as to areas that can be hovered. <a href="https://developer.apple.com/videos/play/wwdc2023/10279/" target="_blank" rel="noopener noreferrer">There is a great video guide on how to adapt 2D DOM CSS website for gaze highlight interaction</a>, but there's no clear equivalent to this CSS hinting that can be done in the WebXR "3D DOM" or 3D space. The need has been recognized however, <a href="https://github.com/immersive-web/proposals/issues/86" target="_blank" rel="noopener noreferrer">there is a new ticket opened in the WebXR <code>immersive-web</code> GitHub repository that I recently added to.</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hand-tracking-is-the-most-accessible-input-not-controllers">Hand tracking is the most accessible input, not controllers<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#hand-tracking-is-the-most-accessible-input-not-controllers" class="hash-link" aria-label="Direct link to Hand tracking is the most accessible input, not controllers" title="Direct link to Hand tracking is the most accessible input, not controllers">​</a></h2>
-<p>Imagine a world where WebXR experiences are 100% hands-free, where a simple ray from the wrist and a pitch of the hand can activate functions. This is not just a possibility but now a necessity -- going forward, all WebXR experiences must be accessible via hands first.</p>
-<p>We should now regard hand tracking as the "lowest common denominator" of user input for headset experiences. Controllers will still offer higher precision, off-camera movement tracking, more button trigger inputs, etc. but they are no longer the most accessible "default" option.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="launching-webxr-applications">Launching WebXR applications<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#launching-webxr-applications" class="hash-link" aria-label="Direct link to Launching WebXR applications" title="Direct link to Launching WebXR applications">​</a></h2>
-<p>Getting WebXR working on this device is cumbersome. WebXR must be activated by searching through multiple Safari flags (System Settings &gt; Apps &gt; Safari &gt; Blah blah blah). Then, on the web page itself a user must accept 2 separate approval popups when entering WebXR mode -- one for enabling immersive mode, the other for enabling hand tracking.</p>
-<p>It may be possible to "pull" some advanced users into using WebXR on these devices with instruction on feature flag setting, but it will be impossible to use WebXR on this platform to "push" more people to your WebXR experience in its present form.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="space-immersion-and-passthrough-with-webxr">Space, Immersion and Passthrough with WebXR<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#space-immersion-and-passthrough-with-webxr" class="hash-link" aria-label="Direct link to Space, Immersion and Passthrough with WebXR" title="Direct link to Space, Immersion and Passthrough with WebXR">​</a></h2>
-<p>In WebXR mode on the device, a scene is rendered in <em>Full Space</em> meaning no other application windows are present, unlike native apps that can choose to run in <em>Shared Space</em> amongst other applications. An additional limitation is that the device does not currently support WebXR with <em>Passthrough</em> mode, therefore you cannot run WebAR apps that make use of external cameras.</p>
-<p><em>Therefore only your WebXR scene will appear in <em>Full Space</em> immersion mode with no <em>Passthrough</em>.</em> This may be desirable for traditional VR applications but not as useful for next generation mixed reality applications.</p>
-<p>An additional limitation is that WebXR Immersive mode is limited to a 1.5m radius from the user-specified origin, usually where the user was located when entering XR mode. Beyond this radius the immersive scene <em>Full Space</em> begins fading into <em>Passthrough</em> without the scene persisting. If a user continues moving away from the origin the will see a round Safari icon at the origin point, presumably indicating that the user has an open WebXR Safari session with an origin at that point.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="diorama-vs-full-room-scale">Diorama vs. Full Room Scale<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#diorama-vs-full-room-scale" class="hash-link" aria-label="Direct link to Diorama vs. Full Room Scale" title="Direct link to Diorama vs. Full Room Scale">​</a></h2>
-<p>The <a href="https://developer.apple.com/documentation/visionos/" target="_blank" rel="noopener noreferrer">visionOS developer documentation</a> is excellent and signals clear directions for the market.</p>
-<p>The Diorama appears to be major application interface concept, <a href="https://developer.apple.com/documentation/visionos/diorama" target="_blank" rel="noopener noreferrer">featured as a sample application</a> and a prime example of output from the new Reality Composer Pro authoring tool.</p>
-<p>This is a useful concept to adopt with 3DStreet. With 3DStreet there are cases for both Diorama and Full Scale modes: some users may wish to view a scene in Full Scale life-size to get an accurate viewpoint of dimension, while other users may wish to shrink a scene down to a Diorama view to easily manipulate a large scene from a smaller workspace.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="combining-webxr-with-native-applications">Combining WebXR with native applications<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#combining-webxr-with-native-applications" class="hash-link" aria-label="Direct link to Combining WebXR with native applications" title="Direct link to Combining WebXR with native applications">​</a></h2>
-<ul>
-<li>Native applications can ask for rights such as <em>Passthrough</em> or <em>Shared Space</em> that are not currently accessible via Safari WebXR. It is definitely worth exploring the use of an embedded webkit-based webview in a visionOS application which may expand the ability for WebXR application to offer augmented reality experiences with a native-like experience.</li>
-<li>Reality Composer Pro looks like a powerful tool for non-developers. It is worth exploring a pipeline of 3DStreet &gt; Reality Composer Pro &gt; App Publishing. Therefore it is likely worth exploring tools to convert glTF exporting to USDZ format, or directly exporting the three.js / A-Frame scene into USDZ format.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://3dstreet.org/blog/2023/12/29/new-mixed-reality-devices-impact-on-webxr#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
-<ul>
-<li>WebXR appears to be purposefully limited on this device with a degraded user experience. Consider webview or another mechanism to adapt WebXR application into a native app.</li>
-<li>Hand tracking is now a minimum requirement for WebXR apps, controllers are optional.</li>
-<li>Gaze interface is very effective but needs standardization work to enable in WebXR mode.</li>
-</ul>]]></content:encoded>
-            <category>webxr</category>
-            <category>headset</category>
-            <category>mixed-reality</category>
-            <category>ar</category>
-            <category>vr</category>
         </item>
     </channel>
 </rss>
