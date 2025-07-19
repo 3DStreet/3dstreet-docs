@@ -18,7 +18,7 @@ sidebar_position: 8
 * `2` - Left view
 * `3` - Right view
 * `4` - Top view
-* `5` - Bottom view
+* `5` or `F5` - Start Viewer Mode
 * `6` - Back view
 * `7` - Front view
 * `ctrl` | `cmd` + `c` - Copy selected entity
