@@ -9,6 +9,10 @@ sidebar_position: 3
 ## Available Viewer Modes
 
 Choose from three distinct viewing experiences:
+<br/>
+
+<img src="/img/docs/viewer-modes/viewer-mode-icons.png" alt="Viewer Mode Icons" style={{ width: '50%' }} />
+<br/>
 
 - **[Camera Path Mode](#camera-path-mode)** - Automated camera movement along predefined paths (circle, forward, strafe, or custom) for presentations and consistent scene viewing
 - **[Locomotion Mode](#locomotion-mode)** - Interactive navigation with full control using WASD keys, mouse, or VR controllers for detailed exploration 
