@@ -3,14 +3,13 @@ title: "Creating AR Scenes with Historic Imagery and 3DStreet's New Viewer Mode"
 description: "Learn how to transform historic photos into immersive AR experiences using World Labs, 3DStreet's AR viewer mode, and geospatial positioning for community engagement."
 authors: [kfarr]
 tags: [AR, augmented reality, historic preservation, community engagement, World Labs, geospatial, viewer mode]
-image: ./images/2025-08-13/cesar-chavez-ar-scene.jpg
 ---
 
 # Creating AR Scenes with Historic Imagery and 3DStreet's New Viewer Mode
 
 Ever wondered what your neighborhood looked like 100 years ago? With 3DStreet's enhanced AR capabilities and AI tools like World Labs, you can now create immersive augmented reality experiences that let people walk through history. I recently used this workflow to create AR scenes of historic San Francisco for a Green Density housing tour, allowing participants to toggle between past and present views of the same location.
 
-![AR scene showing Cesar Chavez in 1912 vs 2025](./images/2025-08-13/cesar-chavez-ar-scene.jpg)
+<!-- [IMAGE PLACEHOLDER: AR scene showing Cesar Chavez in 1912 vs 2025] -->
 
 <!-- truncate -->
 
@@ -28,7 +27,7 @@ By the end of this tutorial, you'll have:
 
 Start by finding a historic photograph of your location. Early photos from the 1800s and early 1900s work best, though the image quality may need enhancement.
 
-![Historic photo of Cesar Chavez street from 1931](./images/2025-08-13/historic-cesar-chavez-1931.jpg)
+<!-- [IMAGE PLACEHOLDER: Historic photo of Cesar Chavez street from 1931] -->
 
 ### Enhancing Image Quality (Optional)
 
@@ -55,7 +54,7 @@ Once you have your enhanced historic photo, it's time to create a full panoramic
 2. **Generate 3D Scene**: The AI will expand your 2D image into a full 360° environment
 3. **Export Panoramic Image**: Download the resulting equirectangular (panoramic) image
 
-![World Labs interface showing 360° generation process](./images/2025-08-13/world-labs-interface.jpg)
+<!-- [IMAGE PLACEHOLDER: World Labs interface showing 360° generation process] -->
 
 ## Step 3: Host Your Panoramic Image
 
@@ -76,7 +75,7 @@ Now comes the exciting part - building your AR scene in 3DStreet.
    - Click the location icon and enter the real-world coordinates
    - This anchors your AR experience to the physical location
 
-![Setting geospatial location in 3DStreet](./images/2025-08-13/set-location.jpg)
+<!-- [IMAGE PLACEHOLDER: Setting geospatial location in 3DStreet] -->
 
 ### Adding the Panoramic Skybox
 
@@ -89,7 +88,7 @@ Now comes the exciting part - building your AR scene in 3DStreet.
    - Click the image icon next to material settings
    - Choose "Add new material" and paste your panoramic image URL
 
-![Adding panoramic material to sphere](./images/2025-08-13/add-panoramic-material.jpg)
+<!-- [IMAGE PLACEHOLDER: Adding panoramic material to sphere] -->
 
 3. **Adjust Orientation**:
    - Fine-tune the Y rotation to align the view correctly
@@ -104,7 +103,7 @@ This is where 3DStreet's new viewer mode capabilities shine:
 3. **iOS Support**: Enable iOS support (requires Pro plan)
 4. **Generate QR Code**: Click to generate and download the QR code
 
-![Viewer mode settings showing AR configuration](./images/2025-08-13/ar-viewer-settings.jpg)
+<!-- [IMAGE PLACEHOLDER: Viewer mode settings showing AR configuration] -->
 
 ## Step 5: Test Your AR Experience
 
@@ -118,7 +117,7 @@ Before sharing with others, thoroughly test your AR scene:
 6. **Activate Scene**: Click the play button to begin the AR experience
 7. **Toggle Visibility**: Use the eye icon to fade the historic scene in and out
 
-![Testing the AR experience on location](./images/2025-08-13/testing-ar-onsite.jpg)
+<!-- [IMAGE PLACEHOLDER: Testing the AR experience on location] -->
 
 ## Step 6: Prepare for Community Engagement
 
