@@ -1,0 +1,225 @@
+---
+title: "Creating AR Scenes with Historic Imagery and 3DStreet's Viewer Mode"
+description: "Learn how to transform historic photos into immersive AR experiences using World Labs, 3DStreet's AR viewer mode, and geospatial positioning for community engagement."
+authors: [kfarr]
+tags: [AR, augmented reality, historic preservation, community engagement, World Labs, geospatial, viewer mode]
+---
+import MuxPlayer from '@mux/mux-player-react';
+
+# Creating AR Scenes with Historic Imagery and 3DStreet's Viewer Mode
+
+<div style={{float: 'right', width: '50%', maxWidth: '300px', marginLeft: '20px', marginBottom: '20px'}}>
+  <MuxPlayer
+      streamType="on-demand"
+      playbackId="jiulbtKqqlIrMi01tfTTxmULjZDX59dcW"
+      primaryColor="#FFFFFF"
+      secondaryColor="#000000"
+      accentColor="#653CB0"
+      autoPlay
+      loop
+      muted
+  />
+</div>
+
+Ever wondered what your neighborhood looked like 100 years ago? With 3DStreet's enhanced AR capabilities and AI tools like World Labs, you can now create immersive augmented reality experiences that let people walk through history. I recently used this workflow to create AR scenes of historic San Francisco for a [Green Density walking tour](https://actionnetwork.org/events/concrete-jungle-or-urban-paradise-the-green-density-walking-tour), allowing participants to toggle between past and present views of the same location.
+
+## What You'll Create
+
+This tutorial will walk you through the complete process I used to create AR experiences for my Green Density walking tour, where participants could scan QR codes and see how San Francisco's landscape has evolved over time.
+<br/>
+<br/>
+By the end of this tutorial, you'll have:
+- Transformed historic photos into 360° panoramic scenes using World Labs
+- Created geospatially-positioned AR scenes in 3DStreet
+- Generated QR codes for easy sharing with tour participants
+- Built an engaging community experience that brings history to life
+
+<!-- truncate -->
+
+## Step 1: Find and Prepare Your Historic Photo
+
+Start by finding a historic photograph of your location. In this case I used a photo from early 1900s that I found on a [local San Francisco history website](https://www.foundsf.org/A_Brief_History_of_Cesar_Chavez/Army_Street).
+<br/>
+<br/>
+  <img
+    width="50%"
+    src="/images/2025-08-13/Armyatharrison-19311.jpg"
+  />
+<br/>
+<i>This is a 1931 photo from San Francisco's Mission district looking west at a newly constructed street with streetcar rails and a new below ground combined sewer system.</i>
+
+
+Sometimes, your historic photo may need improvement. Here's another photo of the same area 50 years earlier in 1882. The visual quality is much poorer and we'll need to do some work to improve it.
+
+<br/>
+<br/>
+  <img
+    width="50%"
+    src="/images/2025-08-13/opensfhistory_wnp33.04069.jpg"
+  />
+<br/>
+<i>This is an 1882 photo looking south toward Bernal Heights with a footbridge over Pecita Creek visible on the lower right.</i>
+
+### Enhancing Source Image Quality (Optional)
+
+These days there's more than just Photoshop with new AI-powered options to restore source images.
+
+#### **Option 1: Flux Kontext Pro**
+As [covered in a recent blog post tutorial](/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai), I strongly recommend the Black Forest Labs Flux Kontext Pro model for AI powered image editing that retains original geometric dimensions. This is perfect for a case like this where we want to retain topography and structure geometry but reshade nearly everything.
+
+#### **Option 2: Flux Inpainting (Fill)**
+- Use tools like the Fill or Inpainting function in [Black Forest Labs playground](https://playground.bfl.ai/) to edit specific areas
+- Great for replacing empty areas with historically accurate details
+- I used this to better illustrate the historic Precita Creek area
+
+#### **Option 3: OpenAI GPT Image Model**
+ChatGPT has image-to-image editing features that create high quality outputs, but the model does not retain accurate geometric information from the source image. This is fine for artistic interpretation -- while it has high quality output, it comes at the expense of frequent hallucination
+
+#### **My Enhanced Precita Creek (Flat) Image**
+  <img
+    width="50%"
+    src="/images/2025-08-13/bernal-edited2.jpg"
+  />
+<br/>
+<i>This is the enhanced version of the 1882 photo that has deeper topography shading and a fill-generated creek featuring reflective water along the original gulch path from the source image.</i>
+
+## Step 2: Create a 360° Scene with World Labs
+
+Once you have your enhanced historic photo, it's time to create a full panoramic environment.
+
+1. **Import to World Labs**: Upload your modified photo to [World Labs](https://www.worldlabs.ai/) (early access required)
+2. **Generate 3D Scene**: The AI will expand your 2D image into a full 360° environment
+3. **Export Panoramic Image**: Download the resulting equirectangular (panoramic) image
+
+![](https://kfarr.github.io/ar-tour-assets/panoramic/v1-flux-world-inpaint-export_1754604606182.jpg)
+<i>This is the output after importing the 2D image and generating the 3D scene using World Labs, then exported as a panoramic 360º equirectangular projected image.</i>
+
+### Panoramic Image Enhancement for Topography Matching
+
+The newly generated panoramic image won't be perfect -- the AI will not be able to match actual topography for the outpainted areas. Luckily, World Labs has a tool for panoramic inpainting that makes it much easier to target specific areas of the horizon to modify the topography to match the actual land area in the location of your historic photo.
+
+![](https://kfarr.github.io/ar-tour-assets/panoramic/v2-flux-world-inpaint-export_1754605882755.jpg)
+<i>This panoramic image has been modified with World Labs inpainting to add hills in the rough location of Twin Peaks as well as the distant bay and a small island representing Yerba Buena.</i>
+
+## Step 3: Host Your Panoramic Image
+
+You'll need your panoramic image(s) to be publicly accessible via URL:
+
+1. **Upload to GitHub Pages**: Create a new repository and upload your image
+2. **Alternative Hosting**: Use any publicly accessible web hosting service
+3. **Get Direct URL**: Copy the direct link to your image file
+
+I created a [GitHub repository for these AR source and output materials](https://github.com/kfarr/ar-tour-assets). 
+
+## Step 4: Create Your 3DStreet AR Scene
+
+Now comes the exciting part - building your AR scene in 3DStreet.
+
+You can also Clone an existing 3DStreet scene that already has the below configuration and simply replace the location and image Src values. [Here is a known-working panoramic AR 3DStreet project that you can Save as... to modify for your own project.](https://3dstreet.app/#/scenes/def34103-d69c-49f9-94b4-2f8c657f8af6)
+
+### Setting Up the Basic Scene
+
+1. **Create New Scene**: Start a new project in 3DStreet
+2. **Set Geospatial Location**: 
+   - Click the location icon and enter the real-world coordinates
+   - This anchors your AR experience to the physical location
+
+### Adding the Panoramic Skybox
+
+1. **Add Custom Geometry**:
+   - Start by adding a circle geometry
+   - Click "Advanced" and change geometry type to "sphere"
+   - Change the Radius value to `150`
+
+2. **Apply Your Historic Image**:
+   - With this custom geometry selected, in "Advanced" section
+   - Open the Materials tab
+   - Select the `Src` value and replace with the URL of your panoramic image
+   - Press enter
+   - Change `Shader` to `flat`
+   - Change `Side` to `back`
+   - Scroll back up to the common controls and change `Scale` `x` value to -1
+
+3. **Adjust Orientation**:
+   - Fine-tune the Y rotation to align the view correctly
+   - Use the red axis of orientation indicator in the center of your scene to identify North
+
+### Configure AR Viewer Mode
+
+1. **Select Viewer Mode**: Click `Viewer` layer and fine `Mode` in the right sidepanel
+2. **Enable WebXR-AR**: Set the viewer `Mode` to `webxr-ar`
+3. **iOS Support**: Enable iOS support (requires 3DStreet Pro plan)
+4. **Generate QR Code**: Click to generate and download the QR code (You must save or Save as... your scene to generate a QR code)
+
+## Step 5: Test Your AR Experience
+
+Before sharing with others, thoroughly test your AR scene:
+
+1. **Visit the Location**: Go to the physical location where your scene is anchored
+2. **Start Recording**: Use your device's built-in screen recording
+3. **Scan QR Code**: Use your phone's camera to scan the code
+4. **Launch AR**: Follow the prompts to open the AR experience
+5. **Orient Yourself**: Face the correct direction (typically west for my examples)
+6. **Activate Scene**: Click the play button to begin the AR experience
+7. **Toggle Visibility**: Use the eye icon to fade the historic scene in and out
+
+## Step 6: Prepare for Community Engagement
+
+### Print Materials
+
+- **QR Codes**: Print multiple copies of your QR codes
+- **Map Integration**: Include codes on tour maps or information sheets
+- **Instructions**: Provide simple step-by-step instructions for participants
+
+### Day-of-Event Tips
+
+- **Multiple Copies**: Bring plenty of printed QR codes
+- **Backup Device**: Have a dedicated device ready to demonstrate
+- **Quick Demo**: Practice a 20-second demo for hesitant participants
+- **Troubleshooting**: Be prepared to help with QR code scanning issues
+
+## Real-World Results
+
+During my Green Density walking tour, I tested three historic locations:
+
+1. **Cesar Chavez (1931)** Showing early rails and paved surfaces over buried Precita Creek
+2. **26th and Folsom (late 1800s)**: Revealing the original Precita Creek before it was buried
+3. **Dolores Park**: Displaying the original marshland and watershed view toward the East Bay
+
+The experience was powerful - participants could literally see how San Francisco's landscape and housing density have evolved over time. Most people needed less than 20 seconds to see the full experience, making it perfect to illustrate a stop on a walking tour.
+
+### Try it For Yourself
+
+Here is a copy of the map that we used that included QR code mapped to the specific locations of the source images.
+<br/><br/>
+Click the map to enlarge. You can print it out and go to the physical locations if you're in San Francisco, or just scan the QR codes to see what the views look like. After scanning the QR and loading the page, when you press the play button the default orientation is assumed to be facing West.
+
+<a href="https://kfarr.github.io/ar-tour-assets/source/QR Overlay - US Coast Survey 1859.jpg">
+  <img
+    src="/images/2025-08-13/Downsized-QR Overlay - US Coast Survey 1859.jpeg
+"
+  />
+</a>
+
+## Device Compatibility
+
+- **Android**: Works with modern devices using Chrome or Edge browsers that support WebXR
+- **iOS**: Available through enhanced compatibility features for Pro subscribers, using [Variant Launch as a polyfill for iOS](https://launch.variant3d.com/).
+
+## Tips for Success
+
+- **Start Simple**: Begin with one location before scaling to multiple sites
+- **Test Early**: Visit the location and test the AR experience before your event
+- **Backup Plans**: Have printed photos as fallbacks if technology fails
+- **Engage Participants**: Encourage people to share their reactions and discoveries
+
+## Wrapping Up
+
+Creating AR experiences with historic imagery opens up incredible opportunities for community engagement and education. By combining AI-enhanced historic photos, World Labs' 360° generation, and 3DStreet's AR viewer mode, you can create experiences that truly bring the past to life.
+<br/>
+<br/>
+This workflow bridges the gap between historical preservation and modern technology, creating memorable experiences that help people understand how their neighborhoods have changed over time. Whether you're planning a community walking tour, creating educational content, or simply exploring local history, these tools make it easier than ever to share the stories embedded in our urban landscapes.
+<br/>
+<br/>
+Ready to create your own historic AR experience? Start by finding a compelling photo from your area's past, and let technology help you bring that history into the present.
+

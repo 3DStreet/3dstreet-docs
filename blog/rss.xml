@@ -4,10 +4,196 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Tue, 15 Jul 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Aug 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Creating AR Scenes with Historic Imagery and 3DStreet's Viewer Mode]]></title>
+            <link>https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode</link>
+            <guid>https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode</guid>
+            <pubDate>Wed, 13 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn how to transform historic photos into immersive AR experiences using World Labs, 3DStreet's AR viewer mode, and geospatial positioning for community engagement.]]></description>
+            <content:encoded><![CDATA[<div style="float:right;width:50%;max-width:300px;margin-left:20px;margin-bottom:20px"><mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="" loop="" muted=""></mux-player></div>
+<p>Ever wondered what your neighborhood looked like 100 years ago? With 3DStreet's enhanced AR capabilities and AI tools like World Labs, you can now create immersive augmented reality experiences that let people walk through history. I recently used this workflow to create AR scenes of historic San Francisco for a <a href="https://actionnetwork.org/events/concrete-jungle-or-urban-paradise-the-green-density-walking-tour" target="_blank" rel="noopener noreferrer">Green Density walking tour</a>, allowing participants to toggle between past and present views of the same location.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-youll-create">What You'll Create<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#what-youll-create" class="hash-link" aria-label="Direct link to What You'll Create" title="Direct link to What You'll Create">​</a></h2>
+<p>This tutorial will walk you through the complete process I used to create AR experiences for my Green Density walking tour, where participants could scan QR codes and see how San Francisco's landscape has evolved over time.</p>
+<br>
+<br>
+<p>By the end of this tutorial, you'll have:</p>
+<ul>
+<li>Transformed historic photos into 360° panoramic scenes using World Labs</li>
+<li>Created geospatially-positioned AR scenes in 3DStreet</li>
+<li>Generated QR codes for easy sharing with tour participants</li>
+<li>Built an engaging community experience that brings history to life</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-find-and-prepare-your-historic-photo">Step 1: Find and Prepare Your Historic Photo<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-1-find-and-prepare-your-historic-photo" class="hash-link" aria-label="Direct link to Step 1: Find and Prepare Your Historic Photo" title="Direct link to Step 1: Find and Prepare Your Historic Photo">​</a></h2>
+<p>Start by finding a historic photograph of your location. In this case I used a photo from early 1900s that I found on a <a href="https://www.foundsf.org/A_Brief_History_of_Cesar_Chavez/Army_Street" target="_blank" rel="noopener noreferrer">local San Francisco history website</a>.</p>
+<br>
+<br>
+<img width="50%" src="https://3dstreet.org/images/2025-08-13/Armyatharrison-19311.jpg">
+<br>
+<i>This is a 1931 photo from San Francisco's Mission district looking west at a newly constructed street with streetcar rails and a new below ground combined sewer system.</i>
+<p>Sometimes, your historic photo may need improvement. Here's another photo of the same area 50 years earlier in 1882. The visual quality is much poorer and we'll need to do some work to improve it.</p>
+<br>
+<br>
+<img width="50%" src="https://3dstreet.org/images/2025-08-13/opensfhistory_wnp33.04069.jpg">
+<br>
+<i>This is an 1882 photo looking south toward Bernal Heights with a footbridge over Pecita Creek visible on the lower right.</i>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enhancing-source-image-quality-optional">Enhancing Source Image Quality (Optional)<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#enhancing-source-image-quality-optional" class="hash-link" aria-label="Direct link to Enhancing Source Image Quality (Optional)" title="Direct link to Enhancing Source Image Quality (Optional)">​</a></h3>
+<p>These days there's more than just Photoshop with new AI-powered options to restore source images.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="option-1-flux-kontext-pro"><strong>Option 1: Flux Kontext Pro</strong><a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#option-1-flux-kontext-pro" class="hash-link" aria-label="Direct link to option-1-flux-kontext-pro" title="Direct link to option-1-flux-kontext-pro">​</a></h4>
+<p>As <a href="https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai">covered in a recent blog post tutorial</a>, I strongly recommend the Black Forest Labs Flux Kontext Pro model for AI powered image editing that retains original geometric dimensions. This is perfect for a case like this where we want to retain topography and structure geometry but reshade nearly everything.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="option-2-flux-inpainting-fill"><strong>Option 2: Flux Inpainting (Fill)</strong><a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#option-2-flux-inpainting-fill" class="hash-link" aria-label="Direct link to option-2-flux-inpainting-fill" title="Direct link to option-2-flux-inpainting-fill">​</a></h4>
+<ul>
+<li>Use tools like the Fill or Inpainting function in <a href="https://playground.bfl.ai/" target="_blank" rel="noopener noreferrer">Black Forest Labs playground</a> to edit specific areas</li>
+<li>Great for replacing empty areas with historically accurate details</li>
+<li>I used this to better illustrate the historic Precita Creek area</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="option-3-openai-gpt-image-model"><strong>Option 3: OpenAI GPT Image Model</strong><a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#option-3-openai-gpt-image-model" class="hash-link" aria-label="Direct link to option-3-openai-gpt-image-model" title="Direct link to option-3-openai-gpt-image-model">​</a></h4>
+<p>ChatGPT has image-to-image editing features that create high quality outputs, but the model does not retain accurate geometric information from the source image. This is fine for artistic interpretation -- while it has high quality output, it comes at the expense of frequent hallucination</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="my-enhanced-precita-creek-flat-image"><strong>My Enhanced Precita Creek (Flat) Image</strong><a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#my-enhanced-precita-creek-flat-image" class="hash-link" aria-label="Direct link to my-enhanced-precita-creek-flat-image" title="Direct link to my-enhanced-precita-creek-flat-image">​</a></h4>
+<img width="50%" src="https://3dstreet.org/images/2025-08-13/bernal-edited2.jpg">
+<br>
+<i>This is the enhanced version of the 1882 photo that has deeper topography shading and a fill-generated creek featuring reflective water along the original gulch path from the source image.</i>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-create-a-360-scene-with-world-labs">Step 2: Create a 360° Scene with World Labs<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-2-create-a-360-scene-with-world-labs" class="hash-link" aria-label="Direct link to Step 2: Create a 360° Scene with World Labs" title="Direct link to Step 2: Create a 360° Scene with World Labs">​</a></h2>
+<p>Once you have your enhanced historic photo, it's time to create a full panoramic environment.</p>
+<ol>
+<li><strong>Import to World Labs</strong>: Upload your modified photo to <a href="https://www.worldlabs.ai/" target="_blank" rel="noopener noreferrer">World Labs</a> (early access required)</li>
+<li><strong>Generate 3D Scene</strong>: The AI will expand your 2D image into a full 360° environment</li>
+<li><strong>Export Panoramic Image</strong>: Download the resulting equirectangular (panoramic) image</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="https://kfarr.github.io/ar-tour-assets/panoramic/v1-flux-world-inpaint-export_1754604606182.jpg" alt="" class="img_ev3q">
+<i>This is the output after importing the 2D image and generating the 3D scene using World Labs, then exported as a panoramic 360º equirectangular projected image.</i></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="panoramic-image-enhancement-for-topography-matching">Panoramic Image Enhancement for Topography Matching<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#panoramic-image-enhancement-for-topography-matching" class="hash-link" aria-label="Direct link to Panoramic Image Enhancement for Topography Matching" title="Direct link to Panoramic Image Enhancement for Topography Matching">​</a></h3>
+<p>The newly generated panoramic image won't be perfect -- the AI will not be able to match actual topography for the outpainted areas. Luckily, World Labs has a tool for panoramic inpainting that makes it much easier to target specific areas of the horizon to modify the topography to match the actual land area in the location of your historic photo.</p>
+<p><img decoding="async" loading="lazy" src="https://kfarr.github.io/ar-tour-assets/panoramic/v2-flux-world-inpaint-export_1754605882755.jpg" alt="" class="img_ev3q">
+<i>This panoramic image has been modified with World Labs inpainting to add hills in the rough location of Twin Peaks as well as the distant bay and a small island representing Yerba Buena.</i></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-host-your-panoramic-image">Step 3: Host Your Panoramic Image<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-3-host-your-panoramic-image" class="hash-link" aria-label="Direct link to Step 3: Host Your Panoramic Image" title="Direct link to Step 3: Host Your Panoramic Image">​</a></h2>
+<p>You'll need your panoramic image(s) to be publicly accessible via URL:</p>
+<ol>
+<li><strong>Upload to GitHub Pages</strong>: Create a new repository and upload your image</li>
+<li><strong>Alternative Hosting</strong>: Use any publicly accessible web hosting service</li>
+<li><strong>Get Direct URL</strong>: Copy the direct link to your image file</li>
+</ol>
+<p>I created a <a href="https://github.com/kfarr/ar-tour-assets" target="_blank" rel="noopener noreferrer">GitHub repository for these AR source and output materials</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-create-your-3dstreet-ar-scene">Step 4: Create Your 3DStreet AR Scene<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-4-create-your-3dstreet-ar-scene" class="hash-link" aria-label="Direct link to Step 4: Create Your 3DStreet AR Scene" title="Direct link to Step 4: Create Your 3DStreet AR Scene">​</a></h2>
+<p>Now comes the exciting part - building your AR scene in 3DStreet.</p>
+<p>You can also Clone an existing 3DStreet scene that already has the below configuration and simply replace the location and image Src values. <a href="https://3dstreet.app/#/scenes/def34103-d69c-49f9-94b4-2f8c657f8af6" target="_blank" rel="noopener noreferrer">Here is a known-working panoramic AR 3DStreet project that you can Save as... to modify for your own project.</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="setting-up-the-basic-scene">Setting Up the Basic Scene<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#setting-up-the-basic-scene" class="hash-link" aria-label="Direct link to Setting Up the Basic Scene" title="Direct link to Setting Up the Basic Scene">​</a></h3>
+<ol>
+<li><strong>Create New Scene</strong>: Start a new project in 3DStreet</li>
+<li><strong>Set Geospatial Location</strong>:<!-- -->
+<ul>
+<li>Click the location icon and enter the real-world coordinates</li>
+<li>This anchors your AR experience to the physical location</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-the-panoramic-skybox">Adding the Panoramic Skybox<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#adding-the-panoramic-skybox" class="hash-link" aria-label="Direct link to Adding the Panoramic Skybox" title="Direct link to Adding the Panoramic Skybox">​</a></h3>
+<ol>
+<li>
+<p><strong>Add Custom Geometry</strong>:</p>
+<ul>
+<li>Start by adding a circle geometry</li>
+<li>Click "Advanced" and change geometry type to "sphere"</li>
+<li>Change the Radius value to <code>150</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Apply Your Historic Image</strong>:</p>
+<ul>
+<li>With this custom geometry selected, in "Advanced" section</li>
+<li>Open the Materials tab</li>
+<li>Select the <code>Src</code> value and replace with the URL of your panoramic image</li>
+<li>Press enter</li>
+<li>Change <code>Shader</code> to <code>flat</code></li>
+<li>Change <code>Side</code> to <code>back</code></li>
+<li>Scroll back up to the common controls and change <code>Scale</code> <code>x</code> value to -1</li>
+</ul>
+</li>
+<li>
+<p><strong>Adjust Orientation</strong>:</p>
+<ul>
+<li>Fine-tune the Y rotation to align the view correctly</li>
+<li>Use the red axis of orientation indicator in the center of your scene to identify North</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-ar-viewer-mode">Configure AR Viewer Mode<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#configure-ar-viewer-mode" class="hash-link" aria-label="Direct link to Configure AR Viewer Mode" title="Direct link to Configure AR Viewer Mode">​</a></h3>
+<ol>
+<li><strong>Select Viewer Mode</strong>: Click <code>Viewer</code> layer and fine <code>Mode</code> in the right sidepanel</li>
+<li><strong>Enable WebXR-AR</strong>: Set the viewer <code>Mode</code> to <code>webxr-ar</code></li>
+<li><strong>iOS Support</strong>: Enable iOS support (requires 3DStreet Pro plan)</li>
+<li><strong>Generate QR Code</strong>: Click to generate and download the QR code (You must save or Save as... your scene to generate a QR code)</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-test-your-ar-experience">Step 5: Test Your AR Experience<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-5-test-your-ar-experience" class="hash-link" aria-label="Direct link to Step 5: Test Your AR Experience" title="Direct link to Step 5: Test Your AR Experience">​</a></h2>
+<p>Before sharing with others, thoroughly test your AR scene:</p>
+<ol>
+<li><strong>Visit the Location</strong>: Go to the physical location where your scene is anchored</li>
+<li><strong>Start Recording</strong>: Use your device's built-in screen recording</li>
+<li><strong>Scan QR Code</strong>: Use your phone's camera to scan the code</li>
+<li><strong>Launch AR</strong>: Follow the prompts to open the AR experience</li>
+<li><strong>Orient Yourself</strong>: Face the correct direction (typically west for my examples)</li>
+<li><strong>Activate Scene</strong>: Click the play button to begin the AR experience</li>
+<li><strong>Toggle Visibility</strong>: Use the eye icon to fade the historic scene in and out</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-prepare-for-community-engagement">Step 6: Prepare for Community Engagement<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-6-prepare-for-community-engagement" class="hash-link" aria-label="Direct link to Step 6: Prepare for Community Engagement" title="Direct link to Step 6: Prepare for Community Engagement">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="print-materials">Print Materials<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#print-materials" class="hash-link" aria-label="Direct link to Print Materials" title="Direct link to Print Materials">​</a></h3>
+<ul>
+<li><strong>QR Codes</strong>: Print multiple copies of your QR codes</li>
+<li><strong>Map Integration</strong>: Include codes on tour maps or information sheets</li>
+<li><strong>Instructions</strong>: Provide simple step-by-step instructions for participants</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="day-of-event-tips">Day-of-Event Tips<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#day-of-event-tips" class="hash-link" aria-label="Direct link to Day-of-Event Tips" title="Direct link to Day-of-Event Tips">​</a></h3>
+<ul>
+<li><strong>Multiple Copies</strong>: Bring plenty of printed QR codes</li>
+<li><strong>Backup Device</strong>: Have a dedicated device ready to demonstrate</li>
+<li><strong>Quick Demo</strong>: Practice a 20-second demo for hesitant participants</li>
+<li><strong>Troubleshooting</strong>: Be prepared to help with QR code scanning issues</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-world-results">Real-World Results<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#real-world-results" class="hash-link" aria-label="Direct link to Real-World Results" title="Direct link to Real-World Results">​</a></h2>
+<p>During my Green Density walking tour, I tested three historic locations:</p>
+<ol>
+<li><strong>Cesar Chavez (1931)</strong> Showing early rails and paved surfaces over buried Precita Creek</li>
+<li><strong>26th and Folsom (late 1800s)</strong>: Revealing the original Precita Creek before it was buried</li>
+<li><strong>Dolores Park</strong>: Displaying the original marshland and watershed view toward the East Bay</li>
+</ol>
+<p>The experience was powerful - participants could literally see how San Francisco's landscape and housing density have evolved over time. Most people needed less than 20 seconds to see the full experience, making it perfect to illustrate a stop on a walking tour.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-for-yourself">Try it For Yourself<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#try-it-for-yourself" class="hash-link" aria-label="Direct link to Try it For Yourself" title="Direct link to Try it For Yourself">​</a></h3>
+<p>Here is a copy of the map that we used that included QR code mapped to the specific locations of the source images.</p>
+<br>
+<br>
+<p>Click the map to enlarge. You can print it out and go to the physical locations if you're in San Francisco, or just scan the QR codes to see what the views look like. After scanning the QR and loading the page, when you press the play button the default orientation is assumed to be facing West.</p>
+<a href="https://kfarr.github.io/ar-tour-assets/source/QR%20Overlay%20-%20US%20Coast%20Survey%201859.jpg"><img src="https://3dstreet.org/images/2025-08-13/Downsized-QR%20Overlay%20-%20US%20Coast%20Survey%201859.jpeg"></a>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="device-compatibility">Device Compatibility<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#device-compatibility" class="hash-link" aria-label="Direct link to Device Compatibility" title="Direct link to Device Compatibility">​</a></h2>
+<ul>
+<li><strong>Android</strong>: Works with modern devices using Chrome or Edge browsers that support WebXR</li>
+<li><strong>iOS</strong>: Available through enhanced compatibility features for Pro subscribers, using <a href="https://launch.variant3d.com/" target="_blank" rel="noopener noreferrer">Variant Launch as a polyfill for iOS</a>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-for-success">Tips for Success<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#tips-for-success" class="hash-link" aria-label="Direct link to Tips for Success" title="Direct link to Tips for Success">​</a></h2>
+<ul>
+<li><strong>Start Simple</strong>: Begin with one location before scaling to multiple sites</li>
+<li><strong>Test Early</strong>: Visit the location and test the AR experience before your event</li>
+<li><strong>Backup Plans</strong>: Have printed photos as fallbacks if technology fails</li>
+<li><strong>Engage Participants</strong>: Encourage people to share their reactions and discoveries</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="wrapping-up">Wrapping Up<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#wrapping-up" class="hash-link" aria-label="Direct link to Wrapping Up" title="Direct link to Wrapping Up">​</a></h2>
+<p>Creating AR experiences with historic imagery opens up incredible opportunities for community engagement and education. By combining AI-enhanced historic photos, World Labs' 360° generation, and 3DStreet's AR viewer mode, you can create experiences that truly bring the past to life.</p>
+<br>
+<br>
+<p>This workflow bridges the gap between historical preservation and modern technology, creating memorable experiences that help people understand how their neighborhoods have changed over time. Whether you're planning a community walking tour, creating educational content, or simply exploring local history, these tools make it easier than ever to share the stories embedded in our urban landscapes.</p>
+<br>
+<br>
+<p>Ready to create your own historic AR experience? Start by finding a compelling photo from your area's past, and let technology help you bring that history into the present.</p>]]></content:encoded>
+            <category>AR</category>
+            <category>augmented reality</category>
+            <category>historic preservation</category>
+            <category>community engagement</category>
+            <category>World Labs</category>
+            <category>geospatial</category>
+            <category>viewer mode</category>
+        </item>
         <item>
             <title><![CDATA[Creating Photorealistic Pictures and Animations with 3DStreet and AI Rendering Tools]]></title>
             <link>https://3dstreet.org/blog/2025/07/15/creating-photorealistic-pictures-and-animations-with-3dstreet-ai</link>
@@ -1064,42 +1250,6 @@ A hand-drawn sketch by Nik Kaestner to illustrate core concepts of a proposed pr
             <category>ar</category>
             <category>vps</category>
             <category>localization</category>
-        </item>
-        <item>
-            <title><![CDATA[Partner Spotlight: Zade's Contributions to 3DStreet in 2023]]></title>
-            <link>https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade</link>
-            <guid>https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade</guid>
-            <pubDate>Mon, 29 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[A spotlight on the contributions to 3DStreet from the software development team at Zade.]]></description>
-            <content:encoded><![CDATA[<p>2023 marks a significant year for 3DStreet, made possible through our <a href="https://github.com/3DStreet/3dstreet/graphs/contributors" target="_blank" rel="noopener noreferrer">talented community of contributors</a> both volunteer and paid. <a href="https://zade.agency/" target="_blank" rel="noopener noreferrer">Zade Agency</a> fits in the latter category as a software development team for-hire based in Ukraine. Over the past year Zade emerged as a major boost to our development productivity and I wanted to share how their contributions have helped 3DStreet in a critical time for the organization.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-challenge-for-3dstreet">The Challenge for 3DStreet<a href="https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade#the-challenge-for-3dstreet" class="hash-link" aria-label="Direct link to The Challenge for 3DStreet" title="Direct link to The Challenge for 3DStreet">​</a></h3>
-<p>To meet our timeline for a <a href="https://www.youtube.com/watch?v=WnjtUW4J8uc" target="_blank" rel="noopener noreferrer">public beta launch of 3DStreet Editor in 2023</a>, we faced several challenges. A primary concern was the gap in React expertise among our existing development team. While we are skilled in various aspects, existing React knowledge was crucial for implementing deep and rapid modifications to <a href="https://github.com/3DStreet/3dstreet-editor" target="_blank" rel="noopener noreferrer">3DStreet Editor</a> which is a heavily modified version of the <a href="https://github.com/aframevr/aframe-inspector" target="_blank" rel="noopener noreferrer">A-Frame inspector</a>.</p>
-<p>Additionally, as a <a href="https://www.3dstreet.org/docs/about-3dstreet/3dstreet-llc-entity" target="_blank" rel="noopener noreferrer">self-funded project</a> we have very real budgetary constraints making it imperative to optimize every resource.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="zades-solution-to-boost-react-development">Zade's Solution to Boost React Development<a href="https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade#zades-solution-to-boost-react-development" class="hash-link" aria-label="Direct link to Zade's Solution to Boost React Development" title="Direct link to Zade's Solution to Boost React Development">​</a></h3>
-<p>We found Zade through a direct personal referral via our designer <a href="https://www.linkedin.com/in/daria-dombrovska-933902207/" target="_blank" rel="noopener noreferrer">Daria Dombrovska</a>. Zade immediately brought a wealth of React knowledge through their team of both senior and junior engineers, filling the crucial skill gap in our team.</p>
-<p>As a self-trained software developer myself, I worked directly with a senior engineer at the beginning to confirm our architectural approaches and details of our tech stack. I also worked with our account manager to agree on the use of <a href="https://github.com/orgs/3DStreet/projects/5" target="_blank" rel="noopener noreferrer">GitHub Projects, issues, and PRs</a> to manage our working relationship.</p>
-<p>For day-to-day tasks I create <a href="https://github.com/3DStreet/3dstreet-editor/issues/" target="_blank" rel="noopener noreferrer">GitHub issues</a> that are prioritized in <a href="https://github.com/orgs/3DStreet/projects/5" target="_blank" rel="noopener noreferrer">Projects</a> and tackled via a junior engineer who is mentored by the experienced staff. Even as a junior engineer, they have way more experience in React fundamentals than I do given my <a href="https://twitter.com/search?q=%22aframevr%22%20(from%3Akfarr)&amp;f=live" target="_blank" rel="noopener noreferrer">rather myopic focus on A-Frame and three.js development</a> over the past decade.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2023-highlight-launching-3dstreet-cloud">2023 Highlight: Launching 3DStreet Cloud<a href="https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade#2023-highlight-launching-3dstreet-cloud" class="hash-link" aria-label="Direct link to 2023 Highlight: Launching 3DStreet Cloud" title="Direct link to 2023 Highlight: Launching 3DStreet Cloud">​</a></h3>
-<p>One of the most notable achievements in 2023 was the <a href="https://www.youtube.com/watch?v=WnjtUW4J8uc" target="_blank" rel="noopener noreferrer">launch of 3DStreet Cloud</a>, a React application using <a href="https://firebase.google.com/docs/firestore" target="_blank" rel="noopener noreferrer">Firebase Firestore</a> on <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer">Google Cloud Platform</a>.</p>
-<p>3DStreet Cloud is the foundation of the growth engine of the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">3DStreet Editor product</a> -- it is the system that allows our users to collaborate on safe street designs and fulfill our core mission.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="zade-empowering-startups-with-react-expertise">Zade: Empowering Startups with React Expertise<a href="https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade#zade-empowering-startups-with-react-expertise" class="hash-link" aria-label="Direct link to Zade: Empowering Startups with React Expertise" title="Direct link to Zade: Empowering Startups with React Expertise">​</a></h3>
-<p>Now it's time for the pitch, because the Zade team deserves it!</p>
-<p>Are you an early-stage startup founder needing flexible React development solutions? Zade specializes in helping launch new startups and accelerating growth for existing ones. Their unique ecosystem is tailor-made for product development in the startup world.</p>
-<p><strong>Zade's Offerings:</strong></p>
-<ul>
-<li><a href="https://zade.agency/launchkit/" target="_blank" rel="noopener noreferrer"><strong>LaunchKit:</strong></a> A program designed to bring your vision to life within a month.</li>
-<li><strong>Integrated Team:</strong> Seamlessly scale your startup with Zade's integrated design and development team.</li>
-</ul>
-<p><strong>Special Offer for 3DStreet Community:</strong>
-While there's no such thing as a free lunch in contract development, Zade extends a special offer to the 3DStreet community. Mention 3DStreet to receive a 15% discount on your first month with Zade – a deal that might just be more valuable than a few gourmet lunches, depending on your project's scale.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="connect-with-zade">Connect with Zade<a href="https://3dstreet.org/blog/2024/01/29/partner-spotlight-zade#connect-with-zade" class="hash-link" aria-label="Direct link to Connect with Zade" title="Direct link to Connect with Zade">​</a></h3>
-<p>Interested in learning more? Reach out to Zade at <a href="mailto:ivan@zade.agency" target="_blank" rel="noopener noreferrer">ivan@zade.agency</a>, or contact me directly for an introduction. Let's embark on a journey of innovation and growth together with Zade's expert team!</p>]]></content:encoded>
-            <category>react</category>
-            <category>development</category>
-            <category>partner</category>
-            <category>devshop</category>
-            <category>web</category>
-            <category>developer</category>
         </item>
     </channel>
 </rss>
