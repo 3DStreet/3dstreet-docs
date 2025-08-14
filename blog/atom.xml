@@ -127,6 +127,7 @@
 <li><strong>Generate QR Code</strong>: Click to generate and download the QR code (You must save or Save as... your scene to generate a QR code)</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-test-your-ar-experience">Step 5: Test Your AR Experience<a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode#step-5-test-your-ar-experience" class="hash-link" aria-label="Direct link to Step 5: Test Your AR Experience" title="Direct link to Step 5: Test Your AR Experience">​</a></h2>
+<div style="float:right;width:50%;max-width:300px;margin-left:20px;margin-bottom:20px"><mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="" loop="" muted=""></mux-player></div>
 <p>Before sharing with others, thoroughly test your AR scene:</p>
 <ol>
 <li><strong>Visit the Location</strong>: Go to the physical location where your scene is anchored</li>
