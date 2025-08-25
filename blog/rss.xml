@@ -4,10 +4,49 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Wed, 13 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Aug 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[More for Free: Expanded Access to Geospatial and Intersection Features]]></title>
+            <link>https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features</link>
+            <guid>https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features</guid>
+            <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[We're expanding free access to 3DStreet with 3 free location lookups, free intersections, and removing the 30-day trial requirement.]]></description>
+            <content:encoded><![CDATA[<p>We're excited to announce significant improvements to our free tier! Starting today, all 3DStreet users get more access to powerful features that were previously Pro-only, making it easier than ever to create compelling street visualizations.</p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" alt="More free features in 3DStreet" src="https://3dstreet.org/assets/images/free-geospatial-tokens-hero-2a158321779163f05aaacc9cdd478d3d.webp" width="774" height="449" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-free-location-lookups-for-everyone">3 Free Location Lookups for Everyone<a href="https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features#3-free-location-lookups-for-everyone" class="hash-link" aria-label="Direct link to 3 Free Location Lookups for Everyone" title="Direct link to 3 Free Location Lookups for Everyone">​</a></h2>
+<p>Every 3DStreet user now starts with 3 free location lookups that unlock geospatial capabilities including:</p>
+<ul>
+<li><strong>Location lookups</strong> - Get street addresses, locality, state, and country information</li>
+<li><strong>Elevation data</strong> - Access terrain height information for your scenes</li>
+<li><strong>Location description</strong> - Create automatic location descriptions including nearby intersections to automatically identify locations of your street projects</li>
+</ul>
+<p>These free lookups give you the power to create location-accurate scenes and experiment with geospatial features before deciding if you need the unlimited access that comes with our Pro plan.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="free-intersection-creation">Free Intersection Creation<a href="https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features#free-intersection-creation" class="hash-link" aria-label="Direct link to Free Intersection Creation" title="Direct link to Free Intersection Creation">​</a></h2>
+<p>One of our most requested features - street intersections - is now available for all users! Previously limited to Pro subscribers, you can now:</p>
+<ul>
+<li>Create 4-way 90° intersections with custom sizing for each direction</li>
+<li>Add crosswalks, sidewalks, and traffic control devices</li>
+<li>Build T-intersections and dead-ends</li>
+<li>Experiment with intersection design without any payment requirements</li>
+</ul>
+<p>While this current implementation focuses on 90-degree intersections, it provides a solid foundation for exploring intersection design. As one of our most requested features, we've made it free to give everyone access to experiment with these critical street components while we continue developing more advanced intersection capabilities.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="simplified-access---no-more-30-day-trial">Simplified Access - No More 30-Day Trial<a href="https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features#simplified-access---no-more-30-day-trial" class="hash-link" aria-label="Direct link to Simplified Access - No More 30-Day Trial" title="Direct link to Simplified Access - No More 30-Day Trial">​</a></h2>
+<p>We've also streamlined our onboarding by removing the 30-day trial requirement. With these new free features available upfront, you only need to provide payment information when you're ready to unlock unlimited geospatial access and advanced Pro features.</p>
+<p>This change reflects our commitment to making 3DStreet accessible while giving you the freedom to explore what's possible before making any commitment.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="try-it-out">Try It Out!<a href="https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features#try-it-out" class="hash-link" aria-label="Direct link to Try It Out!" title="Direct link to Try It Out!">​</a></h2>
+<p>Ready to explore these new free features? <a href="https://3dstreet.app/">Click here or the "Launch App" button</a> in the upper-right hand corner of this blog to start creating with your 3 free location lookups and intersection capabilities, or join our Discord community to share what you build and provide feedback on what you'd like to see next.</p>
+<p>These updates are part of our ongoing mission to democratize street design tools and empower more people to reimagine their neighborhoods. We can't wait to see what you create!</p>]]></content:encoded>
+            <category>product update</category>
+            <category>free features</category>
+            <category>geospatial</category>
+            <category>intersections</category>
+            <category>pricing</category>
+        </item>
         <item>
             <title><![CDATA[Creating AR Scenes with Historic Imagery and 3DStreet's Viewer Mode]]></title>
             <link>https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode</link>
@@ -1198,59 +1237,6 @@ A hand-drawn sketch by Nik Kaestner to illustrate core concepts of a proposed pr
             <category>google maps</category>
             <category>geospatial</category>
             <category>ar</category>
-        </item>
-        <item>
-            <title><![CDATA[Creating Augmented Reality Street Scenes with Streetmix, 3DStreet and Adobe Aero]]></title>
-            <link>https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero</link>
-            <guid>https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero</guid>
-            <pubDate>Tue, 30 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[End-to-end street design to augmented reality (AR) visualization workflow.]]></description>
-            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/sZPPzIEDdoKCLolneDd8-145.05-2b18a10c24f8055f5cf44db93afee86e.png" width="640" height="360" class="img_ev3q"></p>
-<p>Greetings! I'm Marc Schlossberg, and I've been working alongside <a href="https://journalism.uoregon.edu/directory/faculty-and-staff/all/pimend" target="_blank" rel="noopener noreferrer">Danny Pimentel</a> and graduate student <a href="https://www.linkedin.com/in/luke-walker-439b78119/" target="_blank" rel="noopener noreferrer">Luke Walker</a> at the University of Oregon on an exciting project: crafting augmented reality (AR) landscapes for our streets. What I have here is a practical, step-by-step guide designed to walk you through how to bring this innovative vision to your own neighborhood. So, let's roll up our sleeves and get our hands digitally dirty!</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-measuring-and-designing">Getting Started: Measuring and Designing<a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero#getting-started-measuring-and-designing" class="hash-link" aria-label="Direct link to Getting Started: Measuring and Designing" title="Direct link to Getting Started: Measuring and Designing">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/lVthCNUM7YLUyBGXixqk-10.87-80c85fce3c339171a8196f2efa2d7431.png" width="640" height="360" class="img_ev3q"><strong>First things first—measure up!</strong></p>
-<p>To kick things off, you need to know how wide your street is. This is more straightforward than it sounds: just pop over to Google Street View or use an aerial photo, and get an approximate measurement. It's okay if it's not pinpoint accurate — we just need a ballpark figure.</p>
-<p><strong>Crafting Your Street: Easy as Pie with Streetmix</strong></p>
-<p>Once you've got your measurements, it's time to jump onto Streetmix—a free, user-friendly online tool that lets you reimagine that street space to your heart's content. Want to add bike lanes, benches, or green spaces? Simply drag and drop the elements you want to include, adjusting the widths to fit your street’s dimensions. Here’s where your creativity shines!</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/J7eHGPI8MA57Pyzgsd8i-41.61-d8f2c4d7d54a990318659f4ac3f4bdbc.png" width="640" height="360" class="img_ev3q">For my project, I took a standard residential street and turned it into a car-free park, a delightful haven for community gatherings. Imagine that — but on your block! Feel free to start with the street I made - Demo St.: <a href="https://streetmix.net/schlossb/20/demo-st" target="_blank" rel="noopener noreferrer">https://streetmix.net/schlossb/20/demo-st</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="viewing-your-creation-3dstreets-magic">Viewing Your Creation: 3DStreet's Magic<a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero#viewing-your-creation-3dstreets-magic" class="hash-link" aria-label="Direct link to Viewing Your Creation: 3DStreet's Magic" title="Direct link to Viewing Your Creation: 3DStreet's Magic">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/29P0QTWEp8JbvCQ8PeH3-63.32-928dbe2dd89a827b1be96ce08a2405c4.png" width="640" height="360" class="img_ev3q"></p>
-<p>With your design all set in Streetmix, it's time to give it a touch of 3D flair. 3DStreet is a fantastic plugin that lets you visualize your newly designed street in all its three-dimensional glory. Explore your virtual environment, tweak and tune each element until you’re satisfied. It's a mini-adventure in urban planning from the comfort of your screen! You can go straight to my Demo St. in 3DStreet as well: <a href="https://3dstreet.app/#https://streetmix.net/schlossb/20/demo-st" target="_blank" rel="noopener noreferrer">https://3dstreet.app/#https://streetmix.net/schlossb/20/demo-st</a></p>
-<p><strong>Trimming the Excess for AR</strong></p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/IkXMBseXhrpqImEJSANN-73.23-6ef8699ad042fd310f99859136492bb0.png" width="640" height="360" class="img_ev3q"></p>
-<p>To prep for AR, you'll want to peel away the layers that aren’t needed—like buildings, to keep things neat. After simplifying, you can then export your model directly into a format that's ready for the world of augmented reality.</p>
-<p>To delete a layer, select the layer in the left-hand panel -- such as "Buildings &amp; Blocks Container" in the screenshot above -- then press the <code>delete</code> key and click <code>ok</code>. This will remove buildings and grounds from lots that are not needed for our AR project.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="optional-tweaks-a-blender-bonus">Optional Tweaks: A Blender Bonus<a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero#optional-tweaks-a-blender-bonus" class="hash-link" aria-label="Direct link to Optional Tweaks: A Blender Bonus" title="Direct link to Optional Tweaks: A Blender Bonus">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/kmXnEg7FMoHUxW0GgLiu-95.91-578b25b18098f554dd052bb2c580bdaa.png" width="640" height="360" class="img_ev3q">For the enthusiasts out there who relish fine-tuning, the free software Blender is your playground. Here, you can manipulate your 3D model to perfection. However, remember this is purely optional—the process is meant to be quick and streamlined.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bringing-it-to-life-augmented-reality-integration">Bringing It to Life: Augmented Reality Integration<a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero#bringing-it-to-life-augmented-reality-integration" class="hash-link" aria-label="Direct link to Bringing It to Life: Augmented Reality Integration" title="Direct link to Bringing It to Life: Augmented Reality Integration">​</a></h2>
-<p>Alright, now to the magical part—transferring your 3D model to an augmented reality software. I personally use <a href="https://www.adobe.com/products/aero.html" target="_blank" rel="noopener noreferrer">Adobe Aero</a>, thanks to the site license at the university, but there are other AR apps you can explore. This step allows you to add animations and make your scene come alive, although again, this step is not necessary for the "quick and dirty" path.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/tSVcvVL1kH92J4F4ALF8-112.94-b8f411524c96f6c05320da8bb061eba1.png" width="640" height="360" class="img_ev3q"></p>
-<p>AR software opens with an empty workspace and, at least in Aero, you can simply drag and drop your 3D file onto the workspace and the whole thing magically appears. In many ways it will look exactly like it did in 3DStreet.</p>
-<p><strong>Geolocation: Pinning It to the Real World</strong></p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/M5vycvy2ClFbSLnLm6FY-133.23-1df718f2655ad0733ab2392a4b55bf57.png" width="640" height="360" class="img_ev3q">What’s truly remarkable with software like Adobe Aero is the ability to anchor your AR scene to a precise location on Earth. While this grounds your creation to a specific spot, it's not mandatory; you can always opt to apply your scene freely to any street you wish.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/sZPPzIEDdoKCLolneDd8-145.05-2b18a10c24f8055f5cf44db93afee86e.png" width="640" height="360" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sharing-your-vision-universal-access">Sharing Your Vision: Universal Access<a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero#sharing-your-vision-universal-access" class="hash-link" aria-label="Direct link to Sharing Your Vision: Universal Access" title="Direct link to Sharing Your Vision: Universal Access">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/KffxVJZ1prku9AeBBemu-158.27-35b296c693dca9c18355a51cd4cec663.png" width="640" height="360" class="img_ev3q"></p>
-<p>Once your AR scene is polished and ready, you create a shareable link through Adobe Aero. Anyone with this link can open it on their mobile device, head to the designated street, and behold—your digital transformation materializes before their eyes.</p>
-<blockquote>
-<p>"Your street is transformed into your scene that you can actually walk through and see what it would look like on your street, and you can go forward, backward, see all the different things that you've done, and really start to reimagine, well, what would this street look like if it wasn't a street as has been, but is actually a park, a place for people in this particular example?"</p>
-</blockquote>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/XP1Nfq1sugGz8zrILMJb-179.54-ef26283fc536ad6544d4f738185a220f.png" width="164" height="360" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/0ek0kL6ZzdbicjxigM67-181.43-22c585226e335ee1b14b58e95f808d17.png" width="167" height="360" class="img_ev3q"></p>
-<p>To illustrate, envision wandering through the park that was once just a plain street—all through the magic of AR. Moving forward or backward, the entire scene is interactive and truly a game-changer for community engagement and urban design.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="wrapping-it-up">Wrapping It Up<a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero#wrapping-it-up" class="hash-link" aria-label="Direct link to Wrapping It Up" title="Direct link to Wrapping It Up">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/SjGd11l5Keu216ORRZav-189.75-a07c9c70fba466aa3c58909d4c55a87b.png" width="165" height="360" class="img_ev3q"></p>
-<p>And there you have it—a dynamic overview of transforming streets with AR using some clever tools and a pinch of imagination. Not so intimidating now, right? With mostly free resources and a little bit of time, you can be on your way to designing, exploring, and sharing augmented realities that could pave the way for how we perceive and utilize our shared spaces.</p>
-<p>Until next time, happy designing and thanks for joining me on this digital adventure. Bye for now!</p>
-<h1>Video version of this post</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AP1CwWuD7uA?si=y2_qAYNtR9HpATAl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content:encoded>
-            <category>webxr</category>
-            <category>gltf</category>
-            <category>adobe aero</category>
-            <category>streetmix</category>
-            <category>ar</category>
-            <category>vps</category>
-            <category>localization</category>
         </item>
     </channel>
 </rss>
