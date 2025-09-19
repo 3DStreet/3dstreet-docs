@@ -116,7 +116,7 @@ const NavigationMenu = () => {
         <NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Link
             className="NavigationMenuLink"
-            href="/docs/pricing"
+            href="/pricing"
           >
             Pricing
           </NavigationMenuPrimitive.Link>
