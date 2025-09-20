@@ -11,15 +11,16 @@ export default function PricingPage() {
       price: 'Free',
       description: 'Perfect for personal projects and exploration',
       features: [
-        'Store unlimited custom street scenes on 3DStreet Cloud',
+        'Store unlimited scenes',
         'Prototype street configurations',
         'Access hundreds of 3D models',
-        'Import from Streetmix.net and other sources',
-        'Render JPEG and PNG image outputs'
+        'Import from Streetmix and StreetPlan',
+        'Render JPEG and PNG image outputs',
+        'Community support via Discord'
       ],
-      buttonLabel: 'Get Started',
+      buttonLabel: 'Start Now',
       buttonHref: 'https://3dstreet.app',
-      buttonVariant: 'transparent'
+      buttonVariant: 'blue'
     },
     {
       name: 'Pro',
@@ -28,16 +29,15 @@ export default function PricingPage() {
       description: 'For professionals creating street designs',
       features: [
         'Everything in Free, plus:',
-        'Community support via Discord',
-        'Geospatial 3D Maps',
+        'Unlimited Geospatial 3D Maps',
+        'Import custom 3D models',
         'Reference custom SVG and glTF files',
         'Export "AR Ready" glTF for Augmented Reality apps',
         'Multiple street section support'
       ],
-      buttonLabel: 'Start Pro Trial',
+      buttonLabel: 'Activate Pro Edition',
       buttonHref: 'https://3dstreet.app',
-      buttonVariant: 'blue',
-      recommended: true
+      buttonVariant: 'blue'
     },
     {
       name: 'Pro Annual',
@@ -47,12 +47,9 @@ export default function PricingPage() {
       description: 'Best value for professionals',
       features: [
         'Everything in Pro, plus:',
-        'Save 30% with annual billing',
-        'Priority community support',
-        'Early access to new features',
-        'Annual billing convenience'
+        'Save 30% with annual billing'
       ],
-      buttonLabel: 'Get Pro Annual',
+      buttonLabel: 'Save with Pro Annual',
       buttonHref: 'https://3dstreet.app',
       buttonVariant: 'blue'
     },
@@ -155,9 +152,6 @@ export default function PricingPage() {
           />
         </div>
 
-        {/* HEADER SECTION */}
-        <header className="st_header_container"></header>
-        
         {/* MAIN SECTION */}
         <main className="st_main">
           <div className="st_main_wrapper">
@@ -171,8 +165,9 @@ export default function PricingPage() {
               <div className="st_pricing_cards">
                 {plans.slice(0, 3).map((plan, index) => (
                   <div key={index} className={`st_pricing_card ${plan.recommended ? 'recommended' : ''}`}>
-                    {plan.recommended && (
-                      <div className="st_recommended_badge">Most Popular</div>
+                    {/* Hiding badge for now */
+                      false && plan.recommended && (
+                      <div className="st_recommended_badge">Best Value</div>
                     )}
                     <h3 className="st_plan_name">{plan.name}</h3>
                     <div className="st_plan_price">
@@ -187,12 +182,11 @@ export default function PricingPage() {
                       label={plan.buttonLabel}
                       href={plan.buttonHref}
                       target={plan.buttonHref.startsWith('http') ? '_blank' : undefined}
-                      trailingIcon={plan.buttonHref.startsWith('http') ? <ExternalLinkIcon /> : null}
                     />
                     <ul className="st_plan_features">
                       {plan.features.map((feature, idx) => (
-                        <li key={idx}>
-                          <CheckIcon className="st_check_icon" />
+                        <li key={idx} className={feature.startsWith('Everything in') ? 'no-check' : ''}>
+                          {!feature.startsWith('Everything in') && <CheckIcon className="st_check_icon" />}
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -202,60 +196,46 @@ export default function PricingPage() {
               </div>
 
               {/* Pro Team Plan Card */}
-              <div className="st_custom_plan_wrapper">
-                <div className="st_pricing_card st_custom_card">
-                  <h3 className="st_plan_name">{plans[3].name}</h3>
-                  <div className="st_plan_price">
-                    <span className="st_price_amount">{plans[3].price}</span>
-                    <span className="st_price_period">{plans[3].subtitle}</span>
+              <div className="st_team_plan_wrapper">
+                <div className="st_pricing_card st_team_card">
+                  <div className="st_team_card_content">
+                    <div className="st_team_info">
+                      <h3 className="st_plan_name">{plans[3].name}</h3>
+                      <div className="st_plan_price">
+                        <span className="st_price_amount">{plans[3].price}</span>
+                        <span className="st_price_period">{plans[3].subtitle}</span>
+                      </div>
+                      <p className="st_plan_description">{plans[3].description}</p>
+                    </div>
+                    <ul className="st_plan_features st_team_features">
+                      {plans[3].features.map((feature, idx) => (
+                        <li key={idx}>
+                          <CheckIcon className="st_check_icon" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="st_team_buttons">
+                      <Button
+                        variant={plans[3].buttonVariant}
+                        label={plans[3].buttonLabel}
+                        href={plans[3].buttonHref}
+                        target={plans[3].buttonHref.startsWith('http') ? '_blank' : undefined}
+                      />
+                      <Button
+                        variant="transparent"
+                        label="Schedule a Demo"
+                        href="/contact"
+                        className="purple-outline-button"
+                      />
+                    </div>
                   </div>
-                  <p className="st_plan_description">{plans[3].description}</p>
-                  <Button
-                    variant={plans[3].buttonVariant}
-                    label={plans[3].buttonLabel}
-                    href={plans[3].buttonHref}
-                    target={plans[3].buttonHref.startsWith('http') ? '_blank' : undefined}
-                    trailingIcon={plans[3].buttonHref.startsWith('http') ? <ExternalLinkIcon /> : null}
-                  />
-                  <ul className="st_plan_features">
-                    {plans[3].features.map((feature, idx) => (
-                      <li key={idx}>
-                        <CheckIcon className="st_check_icon" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
 
-              {/* Terms Section */}
-              <section className="st_terms_section">
-                <h2 style={{color: '#1a1a1a'}}>Terms of Use</h2>
-                <ul className="st_terms_list">
-                  <li>
-                    The source code for 3DStreet is made available on the{' '}
-                    <a href="https://github.com/3DStreet/3dstreet/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                      AGPL 3.0 license which also limits our liability
-                    </a>
-                  </li>
-                  <li>
-                    Original 3D models and other assets from 3DStreet are made available on a{' '}
-                    <a href="https://github.com/3DStreet/3dstreet-assets-source/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                      Creative Commons Attribution Non-Commercial Share Alike license
-                    </a>
-                  </li>
-                  <li>
-                    Some 3DStreet models are provided by third-parties with{' '}
-                    <a href="https://github.com/3DStreet/3dstreet#list-of-supported-segment-types" target="_blank" rel="noopener noreferrer">
-                      varying licenses
-                    </a>
-                  </li>
-                </ul>
-              </section>
-
               {/* FAQ Section */}
               <section className="st_faq_section">
-                <h2 style={{color: '#1a1a1a'}}>Frequently Asked Questions</h2>
+                <h2>Frequently Asked Questions</h2>
                 <div className="st_faq_grid">
                   {faqs.map((faq, index) => (
                     <div key={index} className="st_faq_item">
@@ -301,7 +281,7 @@ export default function PricingPage() {
           width: 100%;
           max-width: 1200px;
           margin: 0 auto;
-          padding: 3rem 1rem;
+          padding: 1.5rem 1rem;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -328,9 +308,9 @@ export default function PricingPage() {
         .st_pricing_cards {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
+          gap: 1.5rem;
           width: 100%;
-          max-width: 1100px;
+          max-width: 1000px;
           margin: 2rem auto;
         }
 
@@ -342,27 +322,104 @@ export default function PricingPage() {
           width: 100%;
         }
 
+        .st_team_plan_wrapper {
+          display: flex;
+          justify-content: center;
+          margin: 3rem auto 4rem;
+          max-width: 1000px;
+          width: 100%;
+        }
+
         .st_pricing_card {
           position: relative;
-          padding: 2.5rem 2rem;
-          background: white;
+          padding: 1.75rem 1.5rem;
+          background: #f8f8f8;
           border: 2px solid #e5e5e5;
           border-radius: 12px;
           display: flex;
           flex-direction: column;
-          min-height: 600px;
+          min-height: 480px;
         }
 
         .st_custom_card {
-          max-width: 460px;
+          max-width: 420px;
           width: 100%;
         }
 
+        .st_team_card {
+          width: 100%;
+          min-height: auto;
+          padding: 2rem;
+        }
+
+        .st_team_card_content {
+          display: grid;
+          grid-template-columns: 1fr 2fr 1fr;
+          gap: 2rem;
+          align-items: center;
+        }
+
+        .st_team_info {
+          text-align: left;
+        }
+
+        .st_team_features {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .st_team_buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .st_team_buttons button {
+          margin: 0;
+        }
+
+        /* Force purple text color for Schedule a Demo button */
+        .purple-outline-button {
+          background: transparent !important;
+          border: 2px solid #764ba2 !important;
+          color: #764ba2 !important;
+        }
+
+        /* Target the anchor tag and all nested elements more specifically */
+        a.purple-outline-button,
+        a.purple-outline-button:link,
+        a.purple-outline-button:visited,
+        .purple-outline-button[href] {
+          color: #764ba2 !important;
+        }
+
+        .purple-outline-button *,
+        .purple-outline-button span {
+          color: inherit !important;
+        }
+
+        .purple-outline-button:hover {
+          background: #764ba2 !important;
+        }
+
+        /* Override the button module's .wrapper[href] color on hover */
+        a.purple-outline-button:hover,
+        .purple-outline-button[href]:hover,
+        .purple-outline-button:hover[href] {
+          color: white !important;
+        }
+
+        .purple-outline-button:hover *,
+        .purple-outline-button:hover span {
+          color: white !important;
+        }
+
+        /* Disable highlighting and scaling for recommended card */
         .st_pricing_card.recommended {
-          border-color: var(--primary-color, #0066ff);
-          transform: scale(1.05);
-          transform-origin: center center;
-          box-shadow: 0 10px 40px rgba(0, 102, 255, 0.15);
+          border-color: #e5e5e5;
+          transform: none;
+          box-shadow: none;
         }
 
         .st_recommended_badge {
@@ -380,7 +437,7 @@ export default function PricingPage() {
         }
 
         .st_plan_name {
-          font-size: 2.5rem;
+          font-size: 2rem;
           margin-bottom: 0.35rem;
           text-align: center;
           color: #1a1a1a;
@@ -393,7 +450,7 @@ export default function PricingPage() {
         }
 
         .st_price_amount {
-          font-size: 2rem;
+          font-size: 1.75rem;
           font-weight: bold;
           color: #1a1a1a;
         }
@@ -420,13 +477,22 @@ export default function PricingPage() {
 
         .st_pricing_card button {
           width: 100%;
-          margin-bottom: 1rem;
+          margin: 0 auto 1rem auto;
+          display: block;
+        }
+
+        .st_pricing_card a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
         }
 
         .st_plan_features {
           list-style: none;
           padding: 0;
           margin: 0;
+          padding-top: 1rem;
           flex-grow: 1;
         }
 
@@ -439,38 +505,18 @@ export default function PricingPage() {
           color: #2a2a2a;
         }
 
+        .st_plan_features li.no-check {
+          padding-left: 0;
+          font-style: italic;
+          color: #4a4a4a;
+        }
+
         .st_check_icon {
           color: #10b981;
           flex-shrink: 0;
           margin-top: 0.125rem;
           width: 16px;
           height: 16px;
-        }
-
-        .st_terms_section {
-          margin: 5rem 0;
-          padding: 3rem;
-          background: #f7f7f7;
-          border-radius: 12px;
-        }
-
-        .st_terms_section h2 {
-          margin-bottom: 1.5rem;
-        }
-
-        .st_terms_list {
-          list-style-position: inside;
-          color: #3a3a3a;
-        }
-
-        .st_terms_list li {
-          margin-bottom: 1rem;
-          line-height: 1.6;
-        }
-
-        .st_terms_list a {
-          color: var(--primary-color, #0066ff);
-          text-decoration: underline;
         }
 
         .st_faq_section {
@@ -480,7 +526,11 @@ export default function PricingPage() {
         .st_faq_section h2 {
           text-align: center;
           margin-bottom: 3rem;
-          font-size: 2rem;
+          font-size: 3rem;
+          color: #fff;
+          font-family: "Kanit";
+          font-weight: normal;
+          text-transform: none;
         }
 
         .st_faq_grid {
@@ -491,7 +541,7 @@ export default function PricingPage() {
 
         .st_faq_item {
           padding: 1.5rem;
-          background: white;
+          background: #f8f8f8;
           border: 1px solid #e5e5e5;
           border-radius: 8px;
         }
@@ -556,6 +606,20 @@ export default function PricingPage() {
           .st_custom_card {
             max-width: 500px;
           }
+
+          .st_team_card_content {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
+
+          .st_team_info {
+            text-align: center;
+          }
+
+          .st_team_buttons {
+            flex-direction: row;
+            justify-content: center;
+          }
         }
 
         @media (max-width: 768px) {
@@ -576,6 +640,7 @@ export default function PricingPage() {
             align-items: center;
           }
         }
+
       `}</style>
     </>
   );
