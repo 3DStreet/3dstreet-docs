@@ -583,7 +583,6 @@ export default function PricingPage() {
 
         .st_cta_section p {
           font-size: 1.25rem;
-          margin-bottom: 3.5rem;
         }
 
         .st_cta_buttons {
@@ -591,6 +590,7 @@ export default function PricingPage() {
           gap: 1rem;
           justify-content: center;
           flex-wrap: wrap;
+          margin-top: 1.5rem;
         }
 
         @media (max-width: 992px) {
