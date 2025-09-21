@@ -39,7 +39,7 @@ export default function PricingPage() {
         'Multiple street section support'
       ],
       buttonLabel: 'Activate Pro Edition',
-      buttonHref: 'https://3dstreet.app',
+      buttonHref: 'https://3dstreet.app/#payment-model',
       buttonVariant: 'blue'
     },
     {
@@ -54,7 +54,7 @@ export default function PricingPage() {
         'Save 30% with annual billing'
       ],
       buttonLabel: 'Save with Pro Annual',
-      buttonHref: 'https://3dstreet.app',
+      buttonHref: 'https://3dstreet.app/#payment-model-annual',
       buttonVariant: 'blue'
     },
     {
