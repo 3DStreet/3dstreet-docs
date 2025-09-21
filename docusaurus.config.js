@@ -74,6 +74,17 @@ const config = {
         path: "./blog",
       },
     ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/docs/pricing",
+            to: "/pricing",
+          },
+        ],
+      },
+    ],
   ],
 
   themeConfig:
@@ -127,7 +138,7 @@ const config = {
               },
               {
                 label: "Pricing",
-                href: "/docs/pricing",
+                href: "/pricing",
               },
               {
                 label: "Contact Us",
