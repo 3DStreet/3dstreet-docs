@@ -15,7 +15,8 @@ export default function PricingPage() {
         'Prototype street configurations',
         'Access hundreds of 3D models',
         'Import from Streetmix and StreetPlan',
-        'Render JPEG and PNG image outputs',
+        'Download unlimited JPEG snapshots (with watermark)',
+        '🪙 Trial geospatial tokens',
         'Community support via Discord'
       ],
       buttonLabel: 'Start Now',
@@ -29,7 +30,9 @@ export default function PricingPage() {
       description: 'For professionals creating street designs',
       features: [
         'Everything in Free, plus:',
+        'Download JPEG snapshots without watermark',
         'Unlimited Geospatial 3D Maps',
+        '🪙 100 AI generation tokens per month',
         'Import custom 3D models',
         'Reference custom SVG and glTF files',
         'Export "AR Ready" glTF for Augmented Reality apps',
@@ -47,6 +50,7 @@ export default function PricingPage() {
       description: 'Best value for professionals',
       features: [
         'Everything in Pro, plus:',
+        '🪙 840 bonus AI generation tokens on first purchase',
         'Save 30% with annual billing'
       ],
       buttonLabel: 'Save with Pro Annual',
@@ -74,28 +78,32 @@ export default function PricingPage() {
 
   const faqs = [
     {
-      question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards (Visa, Mastercard, American Express) and PayPal. All payments are processed securely through our payment provider.'
+      question: 'Can I change plans at any time?',
+      answer: 'Yes! You can upgrade or downgrade your plan at any time.'
     },
     {
-      question: 'Can I change plans at any time?',
-      answer: 'Yes! You can upgrade or downgrade your plan at any time. When upgrading, you\'ll be charged a prorated amount for the remainder of your billing period. When downgrading, credits will be applied to future billing.'
+      question: 'What payment methods do you accept?',
+      answer: 'We accept all major credit cards (Visa, Mastercard, American Express). Invoice or custom payment options are available for Pro Team plans.'
     },
     {
       question: 'Do you offer educational discounts?',
-      answer: 'Yes, we offer special pricing for educational institutions and students. Please contact us for more information about our education program.'
+      answer: <>Yes, for qualifying K-12 institutions. <a href="/docs/classroom-sponsorship#school-eligibility" style={{color: 'var(--primary-color, #0066ff)', textDecoration: 'underline'}}>Learn more about our school program</a>.</>
     },
     {
       question: 'What happens to my data if I cancel?',
-      answer: 'Your scenes and data remain accessible in read-only mode if you downgrade to the Free plan. You can export your data at any time before cancellation.'
+      answer: 'Your scenes and data remain accessible. You can export your data at any time. When you cancel a Pro plan you may not be able to perform certain actions in the platform such as setting new geolocations for scenes, but your scenes and data will remain.'
     },
     {
       question: 'Is there a limit on Premium 3D Map Tiles?',
-      answer: 'Paid plans include up to 10,000 Premium 3D Map Tiles sessions per month. Most users will not hit these limits unless projects are featured in widespread social media.'
+      answer: 'Paid plans include up to 10,000 Premium 3D Map Tiles sessions per month. Most users will not hit these limits.'
     },
     {
       question: 'Can I use 3DStreet for commercial projects?',
       answer: '3DStreet is free for personal and non-commercial use. If you\'re using 3DStreet for professional work, please support us with a Pro plan or higher.'
+    },
+    {
+      question: 'Can I download 3D assets generated in 3DStreet and use them in other applications?',
+      answer: 'Yes, Pro plans can export and download glTF versions of assets, and you can also access our entire asset repository on GitHub. If you use downloaded assets from 3DStreet for commercial projects, please maintain a paid Pro plan for the duration of the product, project, or service that makes use of these assets.'
     }
   ];
 
@@ -225,7 +233,8 @@ export default function PricingPage() {
                       <Button
                         variant="transparent"
                         label="Schedule a Demo"
-                        href="/contact"
+                        href="https://calendar.app.google/ohjYMBPuLjGupHov5"
+                        target="_blank"
                         className="purple-outline-button"
                       />
                     </div>
@@ -248,13 +257,12 @@ export default function PricingPage() {
 
               {/* CTA Section */}
               <section className="st_cta_section">
-                <h2>Ready to transform your street designs?</h2>
+                <h2 className="st_cta_heading">Ready to transform your street designs?</h2>
                 <p>Start with our free plan and upgrade anytime.</p>
                 <div className="st_cta_buttons">
                   <Button
                     variant="blue"
                     label="Start Free"
-                    trailingIcon={<ExternalLinkIcon />}
                     href="https://3dstreet.app"
                     target="_blank"
                   />
@@ -264,9 +272,6 @@ export default function PricingPage() {
                     href="/contact"
                   />
                 </div>
-                <p style={{marginTop: '2rem', fontSize: '0.95rem', opacity: 0.9}}>
-                  Need more than 50 users or custom features? <a href="/contact" style={{color: 'white', textDecoration: 'underline'}}>Contact us for enterprise solutions</a>
-                </p>
               </section>
             </div>
           </div>
@@ -567,14 +572,18 @@ export default function PricingPage() {
           color: white;
         }
 
-        .st_cta_section h2 {
-          font-size: 2rem;
+        .st_cta_heading {
+          font-size: 3rem !important;
           margin-bottom: 1rem;
+          color: #fff;
+          font-family: "Kanit";
+          font-weight: normal;
+          text-transform: none;
         }
 
         .st_cta_section p {
-          font-size: 1.125rem;
-          margin-bottom: 2rem;
+          font-size: 1.25rem;
+          margin-bottom: 3.5rem;
         }
 
         .st_cta_buttons {
