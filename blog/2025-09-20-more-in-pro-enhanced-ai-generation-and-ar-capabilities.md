@@ -9,7 +9,9 @@ image: ./images/2025-09-20/pro-features-hero.jpeg
 
 # More in Pro: AI Generation, Custom Prompts, and Enhanced AR Capabilities
 
-Announcing new additions to 3DStreet Pro that expand capabilities for professional street designers, urban planners, and creative professionals. Pro users now have new cutting edge features at no additional cost.
+I created 3DStreet with a vision to make street design tools accessible to a wide range of folks who may not have had access to professional design software. If I could wave a magic wand, I'd offer all of our features for free, but I can't. So, the next best thing is to make these tools affordable while covering our costs.
+
+To that end, I'm happy to announce that as of September 1, 2025 we're now offering more in our 3DStreet Pro plan, adding new cloud AI image rendering which incorporates 4 frontier image generation models and AR viewing for Android and iOS devices. Pro users now have these new cutting edge features at no additional cost.
 
 <br/>
 <br/>
@@ -19,7 +21,7 @@ Announcing new additions to 3DStreet Pro that expand capabilities for profession
 
 ## 100 AI Generation Tokens Every Month
 
-Every Pro subscriber now receives 100 AI generation tokens monthly to create stunning, photorealistic renderings of their street designs. These tokens unlock our powerful AI rendering pipeline that transforms your 3D scenes into compelling visualizations.
+Every Pro subscriber now receives 100 AI generation tokens monthly to create photorealistic renderings of their street designs. These tokens unlock our powerful AI rendering pipeline that transforms your 3D scenes into compelling visualizations.
 
 With AI generation, you can:
 * Create photorealistic images for presentations and stakeholder meetings
@@ -27,18 +29,24 @@ With AI generation, you can:
 * Produce images that better convey the feeling and atmosphere of your proposed designs
 * Export high-resolution images without watermarks
 
-Pro Annual subscribers get an extra bonus: **840 AI generation tokens** on first purchase – that's 7 months worth of tokens upfront to jumpstart your creative projects.
+Choose from 4 leading image-to-image generation models:
+* Flux Kontext Pro by [Black Forest Labs](https://bfl.ai)
+* Seedream 4.0 by [ByteDance](https://seed.bytedance.com/en/seedream4_0)
+* Nano Banana by [Google Gemini 2.5 Flash Image](https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/)
+* Real Earth Kontext Pro LoRA Model by [Ismail Seleit](https://www.linkedin.com/in/ismailseleit/)
 
-<a href="https://3dstreet.app/#payment-model-annual" target="_blank">Start Creating with AI Generation</a>
+<a href="https://3dstreet.app/#payment-model-annual" target="_blank">Pro Annual</a> subscribers get an extra bonus: **840 AI generation tokens** on first purchase – that's 7 months worth of tokens upfront to jumpstart your creative projects.
 
 ## Custom Prompts for AI Rendering
 
-Pro users can now customize AI generation prompts, giving you precise control over the style and mood of your rendered scenes. Want a sunny morning atmosphere? A rainy evening scene? Specific architectural styles? Simply describe your vision in the prompt field.
-
+Pro users can now customize AI generation prompts, giving you precise control over the style and mood of your rendered scenes. Want a sunny morning atmosphere? A rainy evening scene? Dinosaurs and robots with lasers roaming the streets? Simply describe your vision in the prompt field.
+<br/>
+<br/>
+![Pro features overview](./images/2025-09-20/tmpxf1xg9bd.jpeg)
 
 ## Import and Export GLB and Image Files
 
-Professional workflows demand flexibility, and Pro users can now import and export GLB files – the industry standard for 3D content. This opens up powerful new workflows:
+Professional workflows demand flexibility, and Pro users can now import and export GLB files -- the industry standard for 3D content -- and import images to create truly custom simulation environments. This opens up powerful new workflows:
 
 ### Import Custom 3D Models
 * Bring in custom-designed street furniture from Blender or other 3D tools
@@ -56,34 +64,31 @@ Pro users can now work with various image formats to enhance their street design
 * Integrate with professional visualization pipelines
 * Export "AR Ready" formats with simplified geometry made specifically for [third-party Augmented Reality apps](https://www.3dstreet.com/docs/key-features/ar-ready-export/)
 
-
 ## Enhanced AR Support for iOS Devices
 
 Pro users can now share AR experiences on both iOS and Android devices, dramatically expanding your ability to showcase designs in real-world contexts.
 
-### iOS AR Mode Features:
-* Native iOS AR Quick Look support
+### iOS AR Mode (Pro Feature):
+* iOS AR support via [Variant Launch](https://launch.variant3d.com/)
 * No app installation required – works directly in Safari
 * Share AR scenes via QR codes or direct links
 
-### WebXR AR Mode (Already Available):
+### WebXR AR Mode (free feature):
 * Works on Android devices and AR headsets
 * More interactive features and controls
 * Real-time scene adjustments in AR
 
 ## Unlimited Geospatial Tokens
 
-While free users get trial geospatial tokens, Pro users enjoy **unlimited access** to all geospatial features:
+While free users get limited trial geospatial tokens, Pro users enjoy **unlimited access** to all geospatial features:
 
 * Set scene locations anywhere in the world
-* Access elevation data for accurate terrain modeling
-* Generate automatic location descriptions
 * Integration with Google 3D Tiles and satellite imagery
-* OpenStreetMap data import for real-world context
+* Generate automatic location descriptions
 
 ## Clean, Professional Exports
 
-Pro users can now download JPEG snapshots without watermarks, perfect for:
+Pro allows users to download JPEG snapshots without the "Free Community Edition" watermarks, perfect for:
 * Professional presentations and reports
 * Grant applications and funding proposals
 * Community engagement materials
