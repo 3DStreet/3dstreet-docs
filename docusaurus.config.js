@@ -72,6 +72,7 @@ const config = {
         id: "blog",
         routeBasePath: "blog",
         path: "./blog",
+                  blogSidebarCount: 20,
       },
     ],
     [
