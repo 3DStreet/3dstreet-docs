@@ -4,10 +4,116 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Mon, 25 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Sep 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[More in Pro: AI Generation, Custom Prompts, and Enhanced AR Capabilities]]></title>
+            <link>https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities</link>
+            <guid>https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities</guid>
+            <pubDate>Sat, 20 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[We're expanding Pro features with AI generation tokens, custom prompts, GLB export, iOS AR support, and more powerful creative tools for professional street design.]]></description>
+            <content:encoded><![CDATA[<p>I created 3DStreet with a vision to make street design tools accessible to a wide range of folks who may not have had access to professional design software. If I could wave a magic wand, I'd offer all of our features for free, but I can't. So, the next best thing is to make these tools affordable while covering our costs.</p>
+<p>To that end, I'm happy to announce that as of September 1, 2025 we're now offering more in our 3DStreet Pro plan, adding new cloud AI image rendering which incorporates 4 frontier image generation models and AR viewing for Android and iOS devices. Pro users now have these new cutting edge features at no additional cost.</p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" alt="Pro features overview" src="https://3dstreet.org/assets/images/pro-features-hero-f4c6176d19667e677b967fbdf3e1ec94.jpeg" width="1200" height="722" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="100-ai-generation-tokens-every-month">100 AI Generation Tokens Every Month<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#100-ai-generation-tokens-every-month" class="hash-link" aria-label="Direct link to 100 AI Generation Tokens Every Month" title="Direct link to 100 AI Generation Tokens Every Month">​</a></h2>
+<p>Every Pro subscriber now receives 100 AI generation tokens monthly to create photorealistic renderings of their street designs. These tokens unlock our powerful AI rendering pipeline that transforms your 3D scenes into compelling visualizations.</p>
+<p>With AI generation, you can:</p>
+<ul>
+<li>Create photorealistic images for presentations and stakeholder meetings</li>
+<li>Generate multiple style variations of the same scene</li>
+<li>Produce images that better convey the feeling and atmosphere of your proposed designs</li>
+<li>Export high-resolution images without watermarks</li>
+</ul>
+<p>Choose from 4 leading image-to-image generation models:</p>
+<ul>
+<li>Flux Kontext Pro by <a href="https://bfl.ai/" target="_blank" rel="noopener noreferrer">Black Forest Labs</a></li>
+<li>Seedream 4.0 by <a href="https://seed.bytedance.com/en/seedream4_0" target="_blank" rel="noopener noreferrer">ByteDance</a></li>
+<li>Nano Banana by <a href="https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/" target="_blank" rel="noopener noreferrer">Google Gemini 2.5 Flash Image</a></li>
+<li>Real Earth Kontext Pro LoRA Model by <a href="https://www.linkedin.com/in/ismailseleit/" target="_blank" rel="noopener noreferrer">Ismail Seleit</a></li>
+</ul>
+<p><a href="https://3dstreet.app/#payment-model-annual" target="_blank">Pro Annual</a> subscribers get an extra bonus: <strong>840 AI generation tokens</strong> on first purchase – that's 7 months worth of tokens upfront to jumpstart your creative projects.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom-prompts-for-ai-rendering">Custom Prompts for AI Rendering<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#custom-prompts-for-ai-rendering" class="hash-link" aria-label="Direct link to Custom Prompts for AI Rendering" title="Direct link to Custom Prompts for AI Rendering">​</a></h2>
+<p>Pro users can now customize AI generation prompts, giving you precise control over the style and mood of your rendered scenes. Want a sunny morning atmosphere? A rainy evening scene? Dinosaurs and robots with lasers roaming the streets? Simply describe your vision in the prompt field.</p>
+<br>
+<br>
+<p><img decoding="async" loading="lazy" alt="Pro features overview" src="https://3dstreet.org/assets/images/tmpxf1xg9bd-570eeff42e3987fc647082ed3a81abfb.jpeg" width="1344" height="768" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="import-and-export-glb-and-image-files">Import and Export GLB and Image Files<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#import-and-export-glb-and-image-files" class="hash-link" aria-label="Direct link to Import and Export GLB and Image Files" title="Direct link to Import and Export GLB and Image Files">​</a></h2>
+<p>Professional workflows demand flexibility, and Pro users can now import and export GLB files -- the industry standard for 3D content -- and import images to create truly custom simulation environments. This opens up powerful new workflows:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-custom-3d-models">Import Custom 3D Models<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#import-custom-3d-models" class="hash-link" aria-label="Direct link to Import Custom 3D Models" title="Direct link to Import Custom 3D Models">​</a></h3>
+<ul>
+<li>Bring in custom-designed street furniture from Blender or other 3D tools</li>
+<li>Add unique local elements that make your designs more authentic</li>
+<li><a href="https://3dstreet.org/blog/2025/02/06/creating-custom-models-with-ai-for-creative-street-scenes">Import AI-generated 3D models</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="import-image-models">Import Image Models<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#import-image-models" class="hash-link" aria-label="Direct link to Import Image Models" title="Direct link to Import Image Models">​</a></h3>
+<p>Pro users can now work with various image formats to enhance their street designs:</p>
+<ul>
+<li>Example of local style signs for speed limits and town welcome signs for <a href="https://3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets">Kiritimati Island</a></li>
+<li>Import equirectangular 360 images for use in <a href="https://3dstreet.org/blog/2025/08/13/creating-ar-scenes-with-historic-imagery-and-viewer-mode">geolocated AR visualization</a></li>
+<li>Use an existing design or plan drawing as an image to use as a reference for designing in 3DStreet</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="export-for-professional-applications">Export for Professional Applications<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#export-for-professional-applications" class="hash-link" aria-label="Direct link to Export for Professional Applications" title="Direct link to Export for Professional Applications">​</a></h3>
+<ul>
+<li>Export your complete scenes as GLB for use in presentations</li>
+<li>Integrate with professional visualization pipelines</li>
+<li>Export "AR Ready" formats with simplified geometry made specifically for <a href="https://www.3dstreet.com/docs/key-features/ar-ready-export/" target="_blank" rel="noopener noreferrer">third-party Augmented Reality apps</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-ar-support-for-ios-devices">Enhanced AR Support for iOS Devices<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#enhanced-ar-support-for-ios-devices" class="hash-link" aria-label="Direct link to Enhanced AR Support for iOS Devices" title="Direct link to Enhanced AR Support for iOS Devices">​</a></h2>
+<p>Pro users can now share AR experiences on both iOS and Android devices, dramatically expanding your ability to showcase designs in real-world contexts.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ios-ar-mode-pro-feature">iOS AR Mode (Pro Feature):<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#ios-ar-mode-pro-feature" class="hash-link" aria-label="Direct link to iOS AR Mode (Pro Feature):" title="Direct link to iOS AR Mode (Pro Feature):">​</a></h3>
+<ul>
+<li>iOS AR support via <a href="https://launch.variant3d.com/" target="_blank" rel="noopener noreferrer">Variant Launch</a></li>
+<li>No app installation required – works directly in Safari</li>
+<li>Share AR scenes via QR codes or direct links</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="webxr-ar-mode-free-feature">WebXR AR Mode (free feature):<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#webxr-ar-mode-free-feature" class="hash-link" aria-label="Direct link to WebXR AR Mode (free feature):" title="Direct link to WebXR AR Mode (free feature):">​</a></h3>
+<ul>
+<li>Works on Android devices and AR headsets</li>
+<li>More interactive features and controls</li>
+<li>Real-time scene adjustments in AR</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="unlimited-geospatial-tokens">Unlimited Geospatial Tokens<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#unlimited-geospatial-tokens" class="hash-link" aria-label="Direct link to Unlimited Geospatial Tokens" title="Direct link to Unlimited Geospatial Tokens">​</a></h2>
+<p>While free users get limited trial geospatial tokens, Pro users enjoy <strong>unlimited access</strong> to all geospatial features:</p>
+<ul>
+<li>Set scene locations anywhere in the world</li>
+<li>Integration with Google 3D Tiles and satellite imagery</li>
+<li>Generate automatic location descriptions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="clean-professional-exports">Clean, Professional Exports<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#clean-professional-exports" class="hash-link" aria-label="Direct link to Clean, Professional Exports" title="Direct link to Clean, Professional Exports">​</a></h2>
+<p>Pro allows users to download JPEG snapshots without the "Free Community Edition" watermarks, perfect for:</p>
+<ul>
+<li>Professional presentations and reports</li>
+<li>Grant applications and funding proposals</li>
+<li>Community engagement materials</li>
+<li>Social media and marketing content</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pro-annual-best-value-for-professionals">Pro Annual: Best Value for Professionals<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#pro-annual-best-value-for-professionals" class="hash-link" aria-label="Direct link to Pro Annual: Best Value for Professionals" title="Direct link to Pro Annual: Best Value for Professionals">​</a></h2>
+<p>For professionals committed to transforming street design, Pro Annual offers the best value:</p>
+<ul>
+<li><strong>Save 30%</strong> compared to monthly billing</li>
+<li><strong>840 bonus AI generation tokens</strong> on first purchase</li>
+<li>All Pro features for a full year</li>
+<li>
+<a href="https://3dstreet.app/#payment-modal-annual">Save with Pro Annual</a>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ready-to-go-pro">Ready to Go Pro?<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#ready-to-go-pro" class="hash-link" aria-label="Direct link to Ready to Go Pro?" title="Direct link to Ready to Go Pro?">​</a></h2>
+<p>Whether you're creating compelling visualizations for community meetings, designing safer streets, or exploring creative possibilities, 3DStreet Pro gives you the tools to bring your vision to life.</p>
+<a href="https://3dstreet.org/pricing" target="_blank">Upgrade to Pro Today</a>
+<p>Join our growing community of Pro users who are reimagining streets around the world. Have questions or need help getting started? Visit our <a href="https://discord.gg/zNFMhTwKSd" target="_blank" rel="noopener noreferrer">Discord community</a> where Pro users share tips, showcase their work, and help each other create amazing street designs.</p>
+<hr>
+<p><em>Already a Pro user? Make sure you're taking full advantage of these features in the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer">3DStreet app</a>.</em></p>]]></content:encoded>
+            <category>product update</category>
+            <category>pro features</category>
+            <category>AI generation</category>
+            <category>AR</category>
+            <category>GLB export</category>
+            <category>iOS</category>
+        </item>
         <item>
             <title><![CDATA[More for Free: Expanded Access to Geospatial and Intersection Features]]></title>
             <link>https://3dstreet.org/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features</link>
@@ -1179,66 +1285,6 @@ A hand-drawn sketch by Nik Kaestner to illustrate core concepts of a proposed pr
             <category>urban planning</category>
             <category>community-led planning</category>
             <category>community</category>
-        </item>
-        <item>
-            <title><![CDATA[Exploring New Geospatial and Augmented Reality Features for 3DStreet]]></title>
-            <link>https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research</link>
-            <guid>https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research</guid>
-            <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[A developer update blog post on R&D during the first few months of 2024.]]></description>
-            <content:encoded><![CDATA[<p>"Geospatial" is the uniting theme for the many feature requests we get from 3DStreet's growing user base. Users&nbsp;can already place custom street scenes, so it's natural to understand why geospatial features like 3D Google Map Tiles or Augmented Reality visualization keep coming up in conversations with users when we <a href="https://3dstreet.org/blog/2024/01/30/creating-augmented-reality-ar-scenes-with-streetmix-3dstreet-adobe-aero">explore common repeatable workflows for visualizing safer infrastructure</a>.</p>
-<p>To kick off 2024 we've been doing some experiments to see how these technologies could be applied to public streets and spatial design.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/3d-tiles-3dstreet-aa3921b202e721e8fb32544a6f6f4f6d.jpeg" width="1024" height="886" class="img_ev3q">
-<strong>Proof of concept 3D Tiles and 3DStreet scene combined.</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="google-maps-3d-tiles">Google Maps 3D Tiles<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#google-maps-3d-tiles" class="hash-link" aria-label="Direct link to Google Maps 3D Tiles" title="Direct link to Google Maps 3D Tiles">​</a></h2>
-<p>We updated the New York Times R&amp;D team's <a href="https://github.com/nytimes/aframe-loader-3dtiles-component?tab=readme-ov-file#using-google-3d-tiles-api" target="_blank" rel="noopener noreferrer">GitHub repository for the OGC 3D Tiles A-Frame VR Component</a> to support loading 3D maps from Google Maps 3D Tiles. (Thanks Avner for doing the hard three.js work to make this happen.)</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-is-this-important">Why is this important?<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#why-is-this-important" class="hash-link" aria-label="Direct link to Why is this important?" title="Direct link to Why is this important?">​</a></h3>
-<p>When presenting street improvements projects, leveraging the existing environment provides instantaneous context and understanding for stakeholders of all ages and abilities. Even low fidelity representations of the surrounding environment helps viewers recognize a project's location and orientation.</p>
-<p>This experiment is a first step to adding 3D maps as a new feature to 3DStreet Editor.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video-demo">Video Demo<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#video-demo" class="hash-link" aria-label="Direct link to Video Demo" title="Direct link to Video Demo">​</a></h3>
-<p>This video is a demo of what it could look like to localize your 3DStreet scene with 3D map tiles near Market and Van Ness Streets in San Francisco.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JRWd8P4QwTs?si=lAx7vGRB_rrVIqf6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reaction-and-productization">Reaction and productization<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#reaction-and-productization" class="hash-link" aria-label="Direct link to Reaction and productization" title="Direct link to Reaction and productization">​</a></h3>
-<p>This demo resonated well with users -- <a href="https://twitter.com/3dstreetapp/status/1768310079307272423" target="_blank" rel="noopener noreferrer">our first tweet sharing the concept</a> was retweeted 11 times and liked more than 50 times on Twitter and <a href="https://www.linkedin.com/posts/3dstreet_threejs-activity-7174079008819560449-kzqw" target="_blank" rel="noopener noreferrer">attracted engaging comments on LinkedIn</a>.</p>
-<p>Users would like 3D Map Tiles productized as a built-in feature of 3DStreet, but unfortunately the Google 3D Tiles API is significantly more expensive than traditional 2D map tiles starting at <a href="https://github.com/nytimes/aframe-loader-3dtiles-component?tab=readme-ov-file#using-google-3d-tiles-api" target="_blank" rel="noopener noreferrer">$6 per 1000 unique user sessions</a>. In order to offer this feature we will need to come up with a paid subscription plan option to cover the costs of Google Maps 3D Tiles access.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bollard-buddy-ar---mobile-app-for-manual-geolocation-and-object-placement">Bollard Buddy AR - mobile app for manual geolocation and object placement<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#bollard-buddy-ar---mobile-app-for-manual-geolocation-and-object-placement" class="hash-link" aria-label="Direct link to Bollard Buddy AR - mobile app for manual geolocation and object placement" title="Direct link to Bollard Buddy AR - mobile app for manual geolocation and object placement">​</a></h2>
-<p>The recent <a href="https://dreamxr.co/" target="_blank" rel="noopener noreferrer">DreamXR hackathon</a> in San Francisco was the perfect environment to work alongside other XR developers for inspiration to finish a new app in 48 hours. We created BOLLARD BUDDY AR -- an app that lets you place traffic control devices anywhere using augmented reality!</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video-demo-1">Video Demo<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#video-demo-1" class="hash-link" aria-label="Direct link to Video Demo" title="Direct link to Video Demo">​</a></h3>
-<p>It's easiest to show with a video:</p>
-<iframe width="315" height="560" src="https://www.youtube.com/embed/mP32oAlz8iI" title="Bollard Buddy AR - 2024 DreamXR Hackathon Demo" frameborder="0" allow="autoplay; encrypted-media;picture-in-picture; web-share"></iframe>
-<p>The app is simple:</p>
-<ul>
-<li>Press PLAY to start the AR view after scanning a QR code*</li>
-<li>Then tap to place cones or other objects at the yellow cursor.</li>
-<li>Choose between a few different traffic safety device models from the 3DStreet model library</li>
-</ul>
-<p>While cool, it is technically "table stakes" within the scope of AR app demos. But what's next makes it more useful.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="geospatial-qr-hack-for-fake-vps">Geospatial QR hack for fake VPS<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#geospatial-qr-hack-for-fake-vps" class="hash-link" aria-label="Direct link to Geospatial QR hack for fake VPS" title="Direct link to Geospatial QR hack for fake VPS">​</a></h3>
-<p>What makes BOLLARD BUDDY AR app unique compared to other AR "tap to place" demos is the connection to a specific location -- a longitude and latitude is embedded in the app QR code so that any objects placed in the scene can be localized relative to that longitude and latitude origin point.</p>
-<p>This is extremely effective as a cheap and easy way to have a perfect "virtual positioning system" (or VPS) as long as the person posting the sign is capable of posting the sign at the very specific longitude and latitude (and orientation) associated with the QR code. This is easier than it sounds -- by simply dropping a pin on Apple or Google Maps at a clearly identifiable landmark such as a parking meter or telephone pole at a sufficient zoom level you can get a very precise longitude and latitude.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="create-and-share-from-mobile----serverless-with-no-auth">Create and share from mobile -- serverless with no auth<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#create-and-share-from-mobile----serverless-with-no-auth" class="hash-link" aria-label="Direct link to Create and share from mobile -- serverless with no auth" title="Direct link to Create and share from mobile -- serverless with no auth">​</a></h3>
-<p>The other unique BOLLARD BUDDY AR feature is sharing your newly created augmented reality street scene with other users (and even yourself) to refer to in the future.</p>
-<p>Outside in the bright sun on the hot tarmac we don't want to challenge users with authentication or collecting data that requires keyboard input. How can we allow people to share a complicated geospatial scene without a server or authentication?</p>
-<p>Our trick was to stuff the newly created scene data in the URL as url-encoded data. More specifically, a JSON representation of the array of 3D A-Frame entities and for each their mixin, position, rotation properties are all <a href="https://github.com/KilledByAPixel/JSONCrush" target="_blank" rel="noopener noreferrer">crushed</a> and placed as a querystring value in a new "Share URL".</p>
-<p>Then we use the native OS share dialog to allow the user to choose how they want to share this, from copy/paste to sending message, email, AirDrop (my favorite) or more.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="challenges-with-web-based-augmented-reality">Challenges with web-based Augmented Reality<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#challenges-with-web-based-augmented-reality" class="hash-link" aria-label="Direct link to Challenges with web-based Augmented Reality" title="Direct link to Challenges with web-based Augmented Reality">​</a></h3>
-<p>I've always been excited about the fun factor of AR and VR headsets, but recent technology advances in everyday smart phones means that the same tech is possible without a headset leveraging built-in AR libraries such as ARKit and ARCore on Apple and Android devices respectively.</p>
-<p>The magic of these AR libraries is precision -- they have extremely accurate <a href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping" target="_blank" rel="noopener noreferrer">simultaneous localization and mapping (SLAM)</a> available out-of-the-box for native apps usable on almost any device you may have in your pocket.</p>
-<p>Until now these libraries have only been available for native applications, but recently web JavaScript-based access was made available on Android through WebXR AR Mode bindings. iOS devices using Safari have not yet supported WebXR AR Mode, however recently there have been a few "polyfill" workarounds. We are using <a href="https://launch.variant3d.com/" target="_blank" rel="noopener noreferrer">Variant Launch</a> which provides a (nearly) seamless experience for iOS users to instantly launch web-based AR apps. Behind the scenes, Variant Launch uses Apple's iOS "App Clips" feature to the underlying ARKit library through the WebXR JavaScript standard without needing to download an app first.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reaction-and-productization-1">Reaction and productization<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#reaction-and-productization-1" class="hash-link" aria-label="Direct link to Reaction and productization" title="Direct link to Reaction and productization">​</a></h3>
-<p>People often show surprise when using the app for the first time -- perhaps from the fun of reconfiguring public space for the first time, or the magic of discovering a super power they didn't realize their smart phone supported.</p>
-<p>Some users see past the initial "Wow Moment" to practical use cases, especially for professional field measurement and planning for traffic control device placement or other civil engineering-related purpose. In fact, once users start placing basic cones provided in the default application it's not long before they start thinking of other objects they'd like to place and additional use cases.</p>
-<p>We've continued development of this app concept, most recently adding new objects and improving usability and trying it out with real users at a street fair in San Francisco Saturday March 23.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/treat-fair-bollard-buddy-signage-960x0-877276f37f74e65e5f7a2a898de69fee.webp" width="960" height="640" class="img_ev3q">
-<strong>Picture of a street fair with QR code on signage to collect feedback from community members using a modified version of BOLLARD BUDDY AR with plants, flowers and other street greening objects. <a href="https://www.sfchronicle.com/bayarea/article/treat-avenue-green-space-19362364.php" target="_blank" rel="noopener noreferrer">Credit Benjamin Fanjoy/The Chronicle</a></strong></p>
-<p>Similar to other geospatial features, there are fees incurred to make AR placement apps available across all devices (especially including iOS).</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="feedback-and-next-steps">Feedback and next steps<a href="https://3dstreet.org/blog/2024/03/25/dev-blog-geospatial-and-augmented-reality-feature-research#feedback-and-next-steps" class="hash-link" aria-label="Direct link to Feedback and next steps" title="Direct link to Feedback and next steps">​</a></h2>
-<p>I'd love to hear your feedback on this work at <a href="mailto:kieran@3dstreet.org" target="_blank" rel="noopener noreferrer">kieran@3dstreet.org</a>. Would you like these features? What is a price that you would pay for a subscription plan that includes these features?</p>]]></content:encoded>
-            <category>webxr</category>
-            <category>3dtiles</category>
-            <category>google maps</category>
-            <category>geospatial</category>
-            <category>ar</category>
         </item>
     </channel>
 </rss>
