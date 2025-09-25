@@ -40,10 +40,6 @@ We support any accredited K-12 primary and secondary school, public or private. 
 - Email address for account creation and Pro feature access (personal or school-provided)
 - For AR features: mobile device with camera and sufficient storage
 
-## From Your Upgrade to Their Future
-
-Your Pro upgrade does more than unlock advanced features — it gives students tools to envision their neighborhoods differently. When they design protected bike lanes, add street trees, or create safer crosswalks in 3DStreet, they're not just learning software. They're developing the vision to advocate for real change in their communities.
-
 ## Join the Movement
 
 Ready to sponsor a classroom? Upgrade to 3DStreet Pro and help us design the future, one student at a time.

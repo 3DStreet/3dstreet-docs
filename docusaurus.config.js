@@ -72,6 +72,18 @@ const config = {
         id: "blog",
         routeBasePath: "blog",
         path: "./blog",
+                  blogSidebarCount: 20,
+      },
+    ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/docs/pricing",
+            to: "/pricing",
+          },
+        ],
       },
     ],
   ],
@@ -127,7 +139,7 @@ const config = {
               },
               {
                 label: "Pricing",
-                href: "/docs/pricing",
+                href: "/pricing",
               },
               {
                 label: "Contact Us",
