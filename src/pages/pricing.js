@@ -652,6 +652,24 @@ export default function PricingPage() {
           .st_cta_buttons {
             flex-direction: column;
             align-items: center;
+            padding: 0 1rem;
+            width: 100%;
+          }
+
+          /* Force center alignment for CTA buttons on mobile */
+          .st_cta_section .st_cta_buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          }
+
+          .st_cta_buttons a {
+            display: flex !important;
+            justify-content: center !important;
+            margin: 0 auto !important;
+            width: auto !important;
           }
         }
 
