@@ -16,7 +16,8 @@ export default function PricingPage() {
         'Access hundreds of 3D models',
         'Import from Streetmix and StreetPlan',
         'Download unlimited JPEG snapshots (with watermark)',
-        '🪙 Trial geospatial tokens',
+        <><img src="/img/token-geo.png" alt="Geo Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>3x</strong> Geospatial tokens</>,
+        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>5x</strong> AI generation tokens</>,
         'Community support via Discord'
       ],
       buttonLabel: 'Start Now',
@@ -32,7 +33,7 @@ export default function PricingPage() {
         'Everything in Free, plus:',
         'Download JPEG snapshots without watermark',
         'Unlimited Geospatial 3D Maps',
-        '🪙 100 AI generation tokens per month',
+        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>100</strong> AI generation tokens per month</>,
         'Import custom 3D models',
         'Reference custom SVG and glTF files',
         'Export "AR Ready" glTF for Augmented Reality apps',
@@ -50,7 +51,7 @@ export default function PricingPage() {
       description: 'Best value for professionals',
       features: [
         'Everything in Pro, plus:',
-        '🪙 840 bonus AI generation tokens on first purchase',
+        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>840</strong> bonus AI generation tokens on first purchase</>,
         'Save 30% with annual billing'
       ],
       buttonLabel: 'Save with Pro Annual',
@@ -192,12 +193,16 @@ export default function PricingPage() {
                       target={plan.buttonHref.startsWith('http') ? '_blank' : undefined}
                     />
                     <ul className="st_plan_features">
-                      {plan.features.map((feature, idx) => (
-                        <li key={idx} className={feature.startsWith('Everything in') ? 'no-check' : ''}>
-                          {!feature.startsWith('Everything in') && <CheckIcon className="st_check_icon" />}
-                          <span>{feature}</span>
-                        </li>
-                      ))}
+                      {plan.features.map((feature, idx) => {
+                        const isString = typeof feature === 'string';
+                        const isEverythingIn = isString && feature.startsWith('Everything in');
+                        return (
+                          <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
+                            {!isEverythingIn && <CheckIcon className="st_check_icon" />}
+                            <span>{feature}</span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 ))}
