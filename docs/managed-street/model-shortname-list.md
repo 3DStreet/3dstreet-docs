@@ -20,7 +20,11 @@ The following list of model short-names (`mixin` values) are available for use i
 
 - Dividers & Street Elements: `"dividers-flowers, dividers-planting-strip, dividers-planter-box, dividers-bush, dividers-dome, safehit, bollard, temporary-barricade, temporary-traffic-cone, temporary-jersey-barrier-plastic, temporary-jersey-barrier-concrete, street-element-crosswalk-raised, street-element-traffic-island-end-rounded, street-element-sign-warning-ped-rrfb, street-element-traffic-post-k71, street-element-traffic-island, street-element-speed-hump, crosswalk-zebra-box, traffic-calming-bumps, corner-island"`
 
-- Buildings: `"SM3D_Bld_Mixed_Corner_4fl, SM3D_Bld_Mixed_Double_5fl, SM3D_Bld_Mixed_4fl_2, SM3D_Bld_Mixed_5fl, SM3D_Bld_Mixed_4fl, SM_Bld_House_Preset_03_1800, SM_Bld_House_Preset_09_1845, SM_Bld_House_Preset_08_1809, arched-building-01, arched-building-02, arched-building-03, arched-building-04"`
+- Buildings - Mixed Use & Commercial: `"SM3D_Bld_Mixed_Corner_4fl, SM3D_Bld_Mixed_Double_5fl, SM3D_Bld_Mixed_4fl_2, SM3D_Bld_Mixed_5fl, SM3D_Bld_Mixed_4fl, arched-building-01, arched-building-02, arched-building-03, arched-building-04, sp-prop-mixeduse-2L-29ft, sp-prop-mixeduse-2L-30ft, sp-prop-mixeduse-3L-18ft, sp-prop-mixeduse-3L-22ft, sp-prop-mixeduse-3L-23ft-corner, sp-prop-mixeduse-3L-42ft, sp-prop-mixeduse-3L-78ft-corner"`
+
+- Buildings - Residential: `"SM_Bld_House_Preset_03_1800, SM_Bld_House_Preset_09_1845, SM_Bld_House_Preset_08_1809, sp-prop-sf-1L-41ft, sp-prop-sf-1L-62ft, sp-prop-sf-2L-62ft, sp-prop-sf-2L-64ft, sp-prop-townhouse-3L-20ft, sp-prop-townhouse-3L-23ft"`
+
+- Buildings - Other Types: `"sp-prop-bigbox-1L-220ft, sp-prop-bigbox-1L-291ft, sp-prop-gov-3L-61ft, sp-prop-parking-3L-155ft, sp-prop-parking-3L-97ft-centered"`
 
 Not recommended to use these short-names in the `street-generated-clones` component:
 
