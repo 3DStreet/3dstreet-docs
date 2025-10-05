@@ -30,6 +30,8 @@ Each segment represents a distinct part of the street and is defined as follows:
   level: number,         // Vertical offset (-1, 0, 1, 2)
   width: number,         // Width in meters
   direction: Direction,  // Traffic direction
+  variant?: string,      // Optional preset variant (for building segments)
+  side?: "left" | "right", // Optional side orientation (for building segments)
   generated: Generated   // Optional generated content
 }
 ```
@@ -43,6 +45,7 @@ Each segment represents a distinct part of the street and is defined as follows:
 - `divider`: Street divider/median
 - `grass`: Grass area
 - `rail`: Railway track
+- `building`: Building segment with configurable variants
 
 ### Surface Types
 - `asphalt`: Standard road surface
@@ -51,6 +54,9 @@ Each segment represents a distinct part of the street and is defined as follows:
 - `sidewalk`: Sidewalk texture
 - `gravel`: Gravel surface
 - `sand`: Sandy surface
+- `cracked-asphalt`: Weathered asphalt surface
+- `parking-lot`: Parking lot surface
+- `water`: Animated water surface with normals
 - `hatched`: Hatched pattern
 - `planting-strip`: Planted area
 - `none`: No surface
@@ -70,21 +76,31 @@ Generates repeated 3D models along the segment.
 
 ```javascript
 clones: [{
-  mode: "random" | "fixed" | "single",
+  mode: "random" | "fixed" | "single" | "fit",
   modelsArray: string,     // Comma-separated list of model names
   spacing: number,         // Distance between models in meters
   count?: number,          // Number of models (for random mode)
   facing?: number,         // Rotation in degrees
   randomFacing?: boolean,  // Random rotation
-  cycleOffset?: number,    // Offset in the repeating pattern (0-1)
+  cycleOffset?: number,    // Offset in the repeating pattern (0-1, for fixed mode)
+  justifyWidth?: "left" | "center" | "right", // Horizontal alignment (for fit mode)
+  positionX?: number,      // X-axis offset
+  positionY?: number,      // Y-axis offset
 }]
 ```
+
+#### Clone Modes
+- **`random`**: Randomly places `count` models with minimum `spacing` between them
+- **`fixed`**: Places models at regular `spacing` intervals with optional `cycleOffset`
+- **`single`**: Places a single model (use `justify` property for position)
+- **`fit`**: Intelligently places models based on their actual dimensions, fitting them end-to-end along the segment. Ideal for buildings.
 
 Common model arrays:
 - Vehicles: `"sedan-rig, box-truck-rig, self-driving-waymo-car, suv-rig, motorbike"`
 - Buses: `"bus"`
 - Cyclists: `"cyclist-cargo, cyclist1, cyclist2, cyclist3, cyclist-dutch, cyclist-kid, ElectricScooter_1"`
 - Static: `"tree3, lamp-modern, flowers1"`
+- Buildings: `"SM3D_Bld_Mixed_4fl, SM3D_Bld_Mixed_5fl"` (use with fit mode)
 
 ### Stencils
 Adds road markings and symbols.
@@ -179,6 +195,43 @@ Striping Types:
   }
 }
 ```
+
+### Building Segment with Variant
+```javascript
+{
+  name: "Mixed-Use Buildings",
+  type: "building",
+  surface: "sidewalk",
+  color: "#ffffff",
+  level: 1,
+  width: 10,
+  variant: "sp-mixeduse",
+  side: "right",
+  generated: {
+    clones: [{
+      mode: "fit",
+      modelsArray: "sp-prop-mixeduse-2L-29ft, sp-prop-mixeduse-3L-22ft",
+      spacing: 0,
+      justifyWidth: "left",
+      facing: 270
+    }]
+  }
+}
+```
+
+### Building Variants
+When using `type: "building"`, the `variant` property provides preset configurations:
+
+- `brownstone`: Urban mixed-use buildings (4-5 floors)
+- `suburban`: Single-family houses on grass
+- `arcade`: Commercial arcade-style buildings
+- `water`: Seawall with animated water surface
+- `grass`: Fence boundary with grass
+- `parking`: Fence boundary with parking lot
+- `sp-mixeduse`: StreetPlan mixed-use buildings (2-3 floors)
+- `sp-residential`: StreetPlan single-family homes and townhouses
+- `sp-big-box`: Big box stores, parking structures, government buildings
+- `custom`: User-defined (preserves custom modifications)
 
 ## Managed Street JSON Examples
 
