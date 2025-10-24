@@ -5,7 +5,7 @@ title: K-12 Classroom Sponsorship
 
 # K-12 Classroom Sponsorship Program  
 
-Empower the next generation of street designers. When you upgrade to a 3DStreet Pro plan, you unlock free access for a K-12 classroom to explore 3DStreet for one full year. Every five <b>Pro</b> plan upgrades sponsors one classroom — your commitment to better streets helps young minds reimagine their communities. Each <b>Super</b> plan upgrade unlocks an entire classroom.
+Empower the next generation of street designers. When you upgrade to a 3DStreet Pro plan, you unlock free access for a K-12 classroom to explore 3DStreet for one full year. Every five <b>Pro</b> plan upgrades sponsors one classroom — your commitment to better streets helps young minds reimagine their communities. Each <b>Pro Annual</b> plan upgrade unlocks an entire K-12 classroom.
 
 ## Why We Focus on Classrooms
 
@@ -13,7 +13,7 @@ Streets shape how we live, move, and connect. Teaching students to visualize and
 
 ## How It Works
 
-Simple: upgrade to a 3DStreet Pro or Super plan, and we'll automatically provide a classroom license to a school from our waiting list. Want to make it personal? You can nominate a specific school — maybe your local school, your child's classroom, or a community you want to support. (5 Pro accounts support one classroom, and one Super account supports an entire classroom.)
+Simple: upgrade to a 3DStreet Pro or Pro Annual plan, and we'll automatically provide a classroom license to a school from our waiting list. Want to make it personal? You can nominate a specific school — maybe your local school, your child's classroom, or a community you want to support. (Approximately 5 Pro accounts support one classroom, and one Pro account supports an entire classroom.)
 
 ## What Schools Receive
 

@@ -242,13 +242,19 @@ export default function PricingPage() {
                         target="_blank"
                         className="purple-outline-button"
                       />
+                      <a
+                        href="/blog/2025/10/24/introducing-pro-team-plan-for-organizations-and-universities"
+                        className="st_team_learn_more"
+                      >
+                        Learn more about Pro Team →
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* FAQ Section */}
-              <section className="st_faq_section">
+              <section id="faq" className="st_faq_section">
                 <h2>Frequently Asked Questions</h2>
                 <div className="st_faq_grid">
                   {faqs.map((faq, index) => (
@@ -387,6 +393,21 @@ export default function PricingPage() {
 
         .st_team_buttons button {
           margin: 0;
+        }
+
+        .st_team_learn_more {
+          text-align: center;
+          color: #764ba2;
+          text-decoration: none;
+          font-size: 0.95rem;
+          font-weight: 500;
+          margin-top: 0.5rem;
+          transition: color 0.2s ease;
+        }
+
+        .st_team_learn_more:hover {
+          color: #5a3780;
+          text-decoration: underline;
         }
 
         /* Force purple text color for Schedule a Demo button */

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 import { Button, Input } from "..";
@@ -16,6 +16,33 @@ import MuxPlayer from "@mux/mux-player-react";
 
 export default function Home({ recentPosts }) {
   const { siteConfig } = useDocusaurusContext();
+
+  // Random announcement pill - picks one randomly on page load
+  const announcements = [
+    {
+      icon: "📰",
+      boldText: "Introducing Pro Team",
+      lightText: "Built for organizations and universities",
+      url: "/blog/2025/10/24/introducing-pro-team-plan-for-organizations-and-universities"
+    },
+    {
+      icon: "✨",
+      boldText: "More in Pro",
+      lightText: "Enhanced AI generation and AR capabilities",
+      url: "/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities"
+    },
+    {
+      icon: "🎉",
+      boldText: "More for Free",
+      lightText: "Expanded geospatial and intersection features",
+      url: "/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features"
+    }
+  ];
+
+  // Pick random announcement once on mount
+  const [currentAnnouncement] = useState(() =>
+    announcements[Math.floor(Math.random() * announcements.length)]
+  );
 
   return (
     <>
@@ -91,6 +118,43 @@ export default function Home({ recentPosts }) {
                 }}
               />
           </div>
+
+        {/* Rotating Announcement Pill - Centered Container */}
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '12px', marginBottom: '12px' }}>
+          <div
+            className="pro-team-pill"
+            onClick={() => window.open(currentAnnouncement.url, '_self')}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '12px',
+              padding: '12px 24px',
+              background: 'linear-gradient(135deg, rgba(123, 70, 246, 0.2), rgba(123, 70, 246, 0.1))',
+              border: '1px solid rgba(123, 70, 246, 0.5)',
+              borderRadius: '100px',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              backdropFilter: 'blur(10px)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, rgba(123, 70, 246, 0.3), rgba(123, 70, 246, 0.15))';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(123, 70, 246, 0.25)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'linear-gradient(135deg, rgba(123, 70, 246, 0.2), rgba(123, 70, 246, 0.1))';
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+          >
+            <span style={{ fontSize: '20px' }}>{currentAnnouncement.icon}</span>
+            <span style={{ fontSize: '15px', fontWeight: 500, color: '#fff', letterSpacing: '0.2px' }}>
+              <strong style={{ fontWeight: 700 }}>{currentAnnouncement.boldText}</strong> — {currentAnnouncement.lightText}
+            </span>
+            <span style={{ fontSize: '18px', color: '#9b87f5', marginLeft: '4px' }}>→</span>
+          </div>
+        </div>
+
         {/* HEADER SECTION */}
         <header className="st_header_container">
 
