@@ -248,7 +248,7 @@ export default function PricingPage() {
               </div>
 
               {/* FAQ Section */}
-              <section className="st_faq_section">
+              <section id="faq" className="st_faq_section">
                 <h2>Frequently Asked Questions</h2>
                 <div className="st_faq_grid">
                   {faqs.map((faq, index) => (
