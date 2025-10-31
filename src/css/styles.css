@@ -890,6 +890,21 @@ section h2 {
 }
 
 /*----------------------------------------------------------------
+  Blog post content styles
+----------------------------------------------------------------*/
+
+/* Override NavigationMenu's global p { all: unset } for blog content only */
+/* Only restore the essential paragraph properties, not all properties */
+#__blog-post-container.markdown p,
+#__blog-post-container p {
+    display: block !important;
+    margin-bottom: 1.5em !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/*----------------------------------------------------------------
   MOBILE styles
 ----------------------------------------------------------------*/
 
