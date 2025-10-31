@@ -23,9 +23,9 @@ After testing at Cincinnati's Short Vine and University Avenue intersection, bot
 
 ## Technical Breakthrough: The Right Stack
 
-The team evaluated Adobe Aero, InCitu, WebAR by 3DStreet, and 8th Wall. **8th Wall won** for three reasons:
+The team evaluated Adobe Aero, InCitu, WebAR via Onyx, WebXR via 3DStreet, and 8th Wall. **8th Wall won** for three reasons:
 
-- **No app required**: Works entirely in mobile browsers
+- **No app required**: Works entirely in mobile browsers of all types via software without need for built-in OS / Browser WebXR native support
 - **Visual Positioning System (VPS)**: More reliable than GPS-only anchoring
 - **Multi-location layering**: Display different content at each intersection corner, enabling progressive storytelling
 
@@ -33,7 +33,7 @@ The scanning process revealed critical lessons: texture-rich surfaces (brick, de
 
 ## Storytelling Innovation: Personas Over Data
 
-Instead of floating statistics, the team created diverse character avatars—local business owners, elderly residents, families—each explaining how changes affect their lives. Speech bubbles combined personal stories with real data: "These streetscape improvements didn't just look better—crime dropped 40%."
+Instead of floating statistics, the team created diverse character avatars—local business owners, elderly residents, families—each explaining how changes affect their lives. Speech bubbles combined personal stories with real data: "These streetscape improvements didn't just look better—crime dropped 40%." (This is an example for experimentation of display and communications, not actual data from any specific site.)
 
 As Luis Alonso from MIT noted, personas could show current problems, then reappear in the redesigned street celebrating improvements—creating emotional narrative arcs that abstract data cannot.
 
