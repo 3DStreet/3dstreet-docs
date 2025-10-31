@@ -2,11 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2025-10-24T00:00:00.000Z</updated>
+    <updated>2025-10-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[AR Street Planning Meets Real Communities in Cincinnati]]></title>
+        <id>https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot</id>
+        <link href="https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot"/>
+        <updated>2025-10-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[University of Cincinnati, MIT City Science, and 3DStreet tested whether augmented reality could transform community engagement with street design—proving both technical feasibility and a scalable framework for cities worldwide.]]></summary>
+        <content type="html"><![CDATA[<p>Can augmented reality transform how communities engage with street redesigns? A research collaboration between University of Cincinnati's Future Mobility DesignLab, MIT City Science Lab, and 3DStreet just proved the answer is yes—and created a replicable blueprint for cities worldwide.</p>
+<p><img decoding="async" loading="lazy" alt="AR Street Planning in Cincinnati" src="https://3dstreet.org/assets/images/uc-ar-pilot-header-b8a43f3b1131118a49c841062c8b6e5e.jpg" width="1400" height="837" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-challenge">The Challenge<a href="https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot#the-challenge" class="hash-link" aria-label="Direct link to The Challenge" title="Direct link to The Challenge">​</a></h2>
+<p>Communities struggle to imagine proposed street changes, leading to project delays, pushback, and eroded trust between residents and agencies. The UC team, led by Alejandro Lozano Robledo with researchers Mythili Emani, Domagoj Bui, and Andrea Maravic, asked two questions:</p>
+<ol>
+<li><strong>Is accessible AR technically feasible?</strong> Can we deliver on-site experiences using just smartphones, no apps required?</li>
+<li><strong>Does it actually improve engagement?</strong> What happens when communities can walk through future streets before they're built?</li>
+</ol>
+<p>After testing at Cincinnati's Short Vine and University Avenue intersection, both answers came back strongly positive.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="technical-breakthrough-the-right-stack">Technical Breakthrough: The Right Stack<a href="https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot#technical-breakthrough-the-right-stack" class="hash-link" aria-label="Direct link to Technical Breakthrough: The Right Stack" title="Direct link to Technical Breakthrough: The Right Stack">​</a></h2>
+<p>The team evaluated Adobe Aero, InCitu, WebAR via Onyx, WebXR via 3DStreet, and 8th Wall. <strong>8th Wall won</strong> for three reasons:</p>
+<ul>
+<li><strong>No app required</strong>: Works entirely in mobile browsers of all types via software without need for built-in OS / Browser WebXR native support</li>
+<li><strong>Visual Positioning System (VPS)</strong>: More reliable than GPS-only anchoring</li>
+<li><strong>Multi-location layering</strong>: Display different content at each intersection corner, enabling progressive storytelling</li>
+</ul>
+<p>The scanning process revealed critical lessons: texture-rich surfaces (brick, detailed corners) anchor AR content reliably, while plain concrete fails. Lighting consistency matters—scan at times matching when people will view it. Weather affects both scanning and viewing.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="storytelling-innovation-personas-over-data">Storytelling Innovation: Personas Over Data<a href="https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot#storytelling-innovation-personas-over-data" class="hash-link" aria-label="Direct link to Storytelling Innovation: Personas Over Data" title="Direct link to Storytelling Innovation: Personas Over Data">​</a></h2>
+<p>Instead of floating statistics, the team created diverse character avatars—local business owners, elderly residents, families—each explaining how changes affect their lives. Speech bubbles combined personal stories with real data: "These streetscape improvements didn't just look better—crime dropped 40%." (This is an example for experimentation of display and communications, not actual data from any specific site.)</p>
+<p>As Luis Alonso from MIT noted, personas could show current problems, then reappear in the redesigned street celebrating improvements—creating emotional narrative arcs that abstract data cannot.</p>
+<p>"When I see the person and their speech bubble, I can't stop myself from reading," said Kieran Farr. "Unlike floating data visualizations, which I ignore."</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-user-experience">The User Experience<a href="https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot#the-user-experience" class="hash-link" aria-label="Direct link to The User Experience" title="Direct link to The User Experience">​</a></h2>
+<p>Participants scan a QR code (paper prototype, eventually stickers or spray-painted markers), explore the AR scene for 2-3 minutes, walk to different corners to reveal layered information, then complete a survey. Directional markers guide users to optimal viewing positions.</p>
+<p>The team documented everything with 360° cameras—while they don't capture AR content, they create immersive training materials for future facilitators.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-it-matters">Why It Matters<a href="https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot#why-it-matters" class="hash-link" aria-label="Direct link to Why It Matters" title="Direct link to Why It Matters">​</a></h2>
+<p>This validates that accessible AR can meaningfully improve transportation planning engagement—without expensive equipment, proprietary software, or specialized expertise. The framework shifts conversations from loss aversion ("you're taking my parking!") to collaborative opportunity ("what should we gain here?").</p>
+<p>For 3DStreet users, the workflow is proven: Create scenes in 3DStreet, export as "AR Ready," deploy through 8th Wall or InCitu, then iterate based on community feedback.</p>
+<p>As cities face mounting challenges around climate, housing, and equity, democratizing urban design isn't optional—it's essential.</p>
+<hr>
+<p><em>Based on research by University of Cincinnati (Alejandro Lozano Robledo, Mythili Emani, Domagoj Bui, Andrea Maravic), MIT City Science Lab (Luis Alonso), and 3DStreet (Kieran Farr). Read more at <a href="https://ucdigitalfutures.com/blueprint-for-civic-co-creation/" target="_blank" rel="noopener noreferrer">UC Digital Futures</a> and <a href="https://www.media.mit.edu/projects/a-window-into-our-future-community-an-augmented-on-site-experience/" target="_blank" rel="noopener noreferrer">MIT Media Lab</a>.</em></p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="AR" term="AR"/>
+        <category label="community-led planning" term="community-led planning"/>
+        <category label="case study" term="case study"/>
+        <category label="urban planning" term="urban planning"/>
+        <category label="research" term="research"/>
+        <category label="university partnership" term="university partnership"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introducing Pro Team: Simple, Affordable Site Licenses for Organizations and Universities]]></title>
         <id>https://3dstreet.org/blog/2025/10/24/introducing-pro-team-plan-for-organizations-and-universities</id>
@@ -1347,69 +1394,5 @@ Join our Geospatial Pro Early Access program now to help guide our next prioriti
         <category label="geospatial" term="geospatial"/>
         <category label="ar" term="ar"/>
         <category label="mapbox" term="mapbox"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Community-Led Design of Safe “School Streets” for Mission Bay Elementary School]]></title>
-        <id>https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school</id>
-        <link href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school"/>
-        <updated>2024-05-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In San Francisco's Mission Bay neighborhood, community leaders used 3DStreet's rapid prototyping service to create a 3D digital twin of proposed street safety improvements around a new elementary school, helping them effectively advocate for the project with city officials and stakeholders.]]></summary>
-        <content type="html"><![CDATA[<p>In San Francisco's Mission Bay neighborhood, community leaders used 3DStreet's rapid prototyping service to create a 3D digital twin of proposed street safety improvements around a new elementary school, helping them effectively advocate for the project with city officials and stakeholders.</p>
-<img-comparison-slider><img slot="first" width="100%" src="https://cdn.glitch.global/185d7b67-1046-4065-8ddc-d1850cd3d096/mission-bay-1.jpg?v=1711755971050"><img slot="second" width="100%" src="https://cdn.glitch.global/185d7b67-1046-4065-8ddc-d1850cd3d096/mission-bay-2.jpg?v=1711755969977"></img-comparison-slider>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-neighborhood-no-school">New Neighborhood, No School<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#new-neighborhood-no-school" class="hash-link" aria-label="Direct link to New Neighborhood, No School" title="Direct link to New Neighborhood, No School">​</a></h2>
-<p>San Francisco’s Mission Bay neighborhood is one of the fastest growing areas in the City. From 2010-2020, it doubled its population by hosting many of SF’s new residential building projects. [1] [2] Mission Bay is also host to well-known firms like OpenAI, Uber, and UCSF, not to mention world-class entertainment facilities like the newly built Chase Center, home of the Golden State Warriors.</p>
-<p>But there’s one glaring omission in Mission Bay – there are no schools. “There currently are no elementary, middle, or high schools, public or private, in the Mission Bay area,” said Matt Haney in 2017, then President of the Board for SF public schools. “This is unacceptable. This is a community that urgently deserves and needs a school.” [3]</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/mission-bay-es-empty-site-03bc0f97c4b0e92642f35bcb6a03dc23.jpg" width="1268" height="667" class="img_ev3q"><br><i>
-The future site for an elementary school building in Mission Bay, San Francisco is currently a parking lot sitting on top of rocky fill covering what was once part of an actual bay and tidal wetlands. [4]</i></p>
-<p>25 years after being proposed in a 1998 Mission Bay redevelopment plan, construction on a school in the neighborhood has finally begun! The $90 million Mission Bay Elementary School project is expected to be completed in time to open for the school year starting August 2025. [5]</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-neighborhood-old-school-transportation">New Neighborhood, Old School Transportation<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#new-neighborhood-old-school-transportation" class="hash-link" aria-label="Direct link to New Neighborhood, Old School Transportation" title="Direct link to New Neighborhood, Old School Transportation">​</a></h2>
-<p>Despite its recent development, Mission Bay was designed with no protected active transportation facilities aside from bayside trails. Many of its streets consist of 3 lanes dedicated to motor vehicles in each direction (2 travel, 1 parking) with no separated bike lanes, few painted ones, and copious sharrows. While effective in accommodating egress vehicle traffic after Warriors and Giants games, existing street space does not promote active mobility for neighborhood residents and school children.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/mission-bay-es-nearby-intersection-large-roads-4b445b9094703687b9354970549c72ce.jpg" width="1260" height="677" class="img_ev3q"><br>
-<i>Owens Street meets Nelson Rising Lanes in Mission Bay, San Francisco. The parcel northeast of the intersection (currently occupied by a parking lot) is the future site of the proposed SFUSD Mission Bay Elementary School.</i></p>
-<p>Local community members are excited about the prospect of improving street conditions to encourage active walking, biking and mobility for students living in the neighborhood.</p>
-<p>“Mission Bay is a densely populated, flat neighborhood, so it just makes sense to provide active mobility options for students going to school. But we are faced with a built environment that prioritizes the car and makes walking and cycling a scary proposition for parents,” said Peter Belden, a community activist and San Francisco’s 2024 Bike Champion of the Year.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community-groups-envision-a-better-future-change">Community Groups Envision a Better Future Change<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#community-groups-envision-a-better-future-change" class="hash-link" aria-label="Direct link to Community Groups Envision a Better Future Change" title="Direct link to Community Groups Envision a Better Future Change">​</a></h2>
-<p>However, community leaders were disappointed with the limited resources dedicated to improving street safety ahead of construction of the new school. While the City committed to fund a study [6] to identify problem areas and suggest possible designs for a few trouble spots, it fell short of community expectations by not delivering a comprehensive, neighborhood-wide plan for safe walking and biking access to the school.</p>
-<p>The community took it upon themselves to create their own designs. “We started by rethinking the traffic circle neighboring the new school and originally designed to accommodate peak vehicle flows after ball games. With a school going in next door, we wanted to re-imagine it as best-in-class infrastructure that separates modes, providing a safety buffer for vulnerable road users while allowing residents to access nature and planned affordable housing without the need for a car,” explained Nik Kaestner, the former Director of Sustainability at SFUSD.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/mission-bay-es-traffic-circle-hand-drawings-1fcdf5d5c87d8d28c324de1b1e8944a6.jpeg" width="1024" height="799" class="img_ev3q"><br>
-A hand-drawn sketch by Nik Kaestner to illustrate core concepts of a proposed project to add separated cycling facilities to an existing traffic circle at the intersection of Mission Bay Drive and Owens St.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="from-idea-to-prototype-with-3dstreet-rapid-prototyping-service">From Idea to Prototype with 3DStreet Rapid Prototyping Service<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#from-idea-to-prototype-with-3dstreet-rapid-prototyping-service" class="hash-link" aria-label="Direct link to From Idea to Prototype with 3DStreet Rapid Prototyping Service" title="Direct link to From Idea to Prototype with 3DStreet Rapid Prototyping Service">​</a></h2>
-<p>“We were inspired by ‘Dutch-style’ roundabouts [7] with full separation continuing through the intersection, not only along approaching streets,” continued Kaestner. “But we were limited in our ability to convert our vision from hand-drawn sketches into a practical prototype that would excite fellow advocates and be taken seriously by City staff.”</p>
-<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
-<br>
-<i>Animation generated by 3DStreet showing the evolution from existing conditions of a mixed-mode traffic circle to a mode-separated traffic circle.</i>
-<p>Community leaders turned to 3DStreet for help in converting the sketch into a 3D prototype that can be used  in advocacy and planning conversations with City staff and elected officials.</p>
-<p>This simplified “digital twin” encompasses a virtual representation of both the existing conditions and proposed future changes. Hosting on 3DStreet Cloud allowed the team to create visuals for specific use-cases on demand and share these with others to further remix.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-context-with-real-world-elements">Adding Context with Real World Elements<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#adding-context-with-real-world-elements" class="hash-link" aria-label="Direct link to Adding Context with Real World Elements" title="Direct link to Adding Context with Real World Elements">​</a></h2>
-<p>To provide visual context for stakeholders reviewing proposed changes, community leaders added real-world surface scan maps and a 3D model of the proposed elementary school using 3DStreet’s Geospatial Pro features.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/mission-bay-traffic-circle-rev4-298a0ace3bdfeb768fe7c0d4535b4a0e.jpg" width="1080" height="611" class="img_ev3q"><br>
-<i>Adding the Mapbox satellite map ground layer along with a low fidelity 3D model of the school building helped ground the visualization in the present-day context.</i></p>
-<p>Leveraging multiple camera perspectives, especially simulating a first-person view, was especially helpful to share critical design attributes with stakeholders.</p>
-<p>“As our neighborhood develops a vision for how we will welcome the Mission Bay school, this tool is a great gift to outreach and engagement with both elected officials and agency staff. The multi-viewpoint visualization, especially the first-person animation of traffic circle usage at a child’s height and the before/after slider bar feature clearly convey what is possible.” said Sarah Bertram, a local community member advocating on behalf of neighboring residents.</p>
-<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop=""></mux-player>
-<br>
-<i>Animation generated by 3DStreet showing the first-person animation of traffic circle usage at a child's height.</i>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="is-it-feasible-from-3d-prototypes-to-civil-drawings">Is it Feasible? From 3D Prototypes to Civil Drawings<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#is-it-feasible-from-3d-prototypes-to-civil-drawings" class="hash-link" aria-label="Direct link to Is it Feasible? From 3D Prototypes to Civil Drawings" title="Direct link to Is it Feasible? From 3D Prototypes to Civil Drawings">​</a></h2>
-<p>This project is just starting. The school has broken ground with more than a year of construction remaining. While the prototypes of safer school streets are winning people’s hearts, the constraints of budget and technical feasibility are the next issues to tackle for community and City stakeholders.</p>
-<p>Fortunately, 3DStreet gives stakeholders a head start as they consider more detailed civil plans. “3DStreet’s ability to export to other popular file formats allowed us to jumpstart the manual process of preparing baseline conditions so that our valuable engineer time can be better spent on project-specific requirements,” said Jorge Romero-Lozano, a civil engineer and executive director of GreeningProjects.org, who also consulted on the project.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="make-your-next-community-led-project-a-success">Make Your Next Community-Led Project a Success<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#make-your-next-community-led-project-a-success" class="hash-link" aria-label="Direct link to Make Your Next Community-Led Project a Success" title="Direct link to Make Your Next Community-Led Project a Success">​</a></h2>
-<p>Let us help you with your next community-led improvement project. Our team is available to provide assistance as you navigate the community-led development process, from ideation to prototyping, stakeholder communication, and community outreach empowered by next generation technology. <a href="https://3dstreet.org/docs/services/">Learn more about our Rapid Prototype Service to quickly move your project to the next stage.</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="https://3dstreet.org/blog/2024/05/24/community-led-design-of-safe-school-streets-for-mission-bay-elementary-school#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h3>
-<p>[1] <a href="https://www.potreroview.net/mission-bays-population-almost-doubled-in-last-decade/" target="_blank" rel="noopener noreferrer">https://www.potreroview.net/mission-bays-population-almost-doubled-in-last-decade/</a></p>
-<p>[2] <a href="https://www.sf.gov/news/city-celebrates-opening-and-dedication-affordable-housing-mission-bay" target="_blank" rel="noopener noreferrer">https://www.sf.gov/news/city-celebrates-opening-and-dedication-affordable-housing-mission-bay</a></p>
-<p>[3] <a href="https://www.potreroview.net/new-mission-bay-public-school-to-be-launched-within-five-years/" target="_blank" rel="noopener noreferrer">https://www.potreroview.net/new-mission-bay-public-school-to-be-launched-within-five-years/</a></p>
-<p>[4] <a href="https://www.foundsf.org/index.php?title=Filling_The_Bay_Along_San_Francisco%E2%80%99s_Southern_Waterfront" target="_blank" rel="noopener noreferrer">https://www.foundsf.org/index.php?title=Filling_The_Bay_Along_San_Francisco%E2%80%99s_Southern_Waterfront</a></p>
-<p>[4] <a href="https://www.sfusd.edu/about-sfusd/sfusd-news/press-releases/2022-10-27-construction-set-begin-new-sfusd-school-mission-bay" target="_blank" rel="noopener noreferrer">https://www.sfusd.edu/about-sfusd/sfusd-news/press-releases/2022-10-27-construction-set-begin-new-sfusd-school-mission-bay</a></p>
-<p>[5] <a href="https://sfyimby.com/2023/02/sitework-underway-for-mission-bay-school-in-san-francisco.html" target="_blank" rel="noopener noreferrer">https://sfyimby.com/2023/02/sitework-underway-for-mission-bay-school-in-san-francisco.html</a></p>
-<p>[6] <a href="https://www.sfcta.org/mission-bay-school" target="_blank" rel="noopener noreferrer">https://www.sfcta.org/mission-bay-school</a> Plan provided by the SFCTA, a SF County agency which is separate from the SF Municipal Transportation Agency. <a href="https://en.wikipedia.org/wiki/San_Francisco_County_Transportation_Authority" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/San_Francisco_County_Transportation_Authority</a></p>
-<p>[7] <a href="https://bicycledutch.wordpress.com/2015/10/13/explaining-the-dutch-roundabout-abroad/" target="_blank" rel="noopener noreferrer">https://bicycledutch.wordpress.com/2015/10/13/explaining-the-dutch-roundabout-abroad/</a></p>]]></content>
-        <author>
-            <name>Kieran Farr</name>
-            <uri>https://github.com/kfarr</uri>
-        </author>
-        <category label="safe streets" term="safe streets"/>
-        <category label="school streets" term="school streets"/>
-        <category label="intersection" term="intersection"/>
-        <category label="community-led planning" term="community-led planning"/>
     </entry>
 </feed>
