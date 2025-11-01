@@ -2,7 +2,7 @@
 title: Creating Augmented Reality Street Scenes with Streetmix, 3DStreet and Adobe Aero
 description: End-to-end street design to augmented reality (AR) visualization workflow.
 authors: mschlossberg
-tags: [webxr, gltf, adobe aero, streetmix, ar, vps, localization]
+tags: [webxr, gltf, adobe aero, streetmix, ar, vps, localization, university partnership]
 image: ./images/2024-01-30/sZPPzIEDdoKCLolneDd8-145.05.png
 hide_table_of_contents: false
 ---

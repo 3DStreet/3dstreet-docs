@@ -2,7 +2,7 @@
 title: New placemaking and street safety 3D models
 description: Open-source 3D traffic safety device models as a result of a collaboration with the University of Oregon
 authors: [triedell]
-tags: [product update, pedestrian, traffic calming, open source, 3d models]
+tags: [product update, pedestrian, traffic calming, open source, 3d models, university partnership]
 image: ./images/2024-10-04/corner-island.jpg
 ---
 
