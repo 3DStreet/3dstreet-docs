@@ -114,18 +114,31 @@ p {
 	transform-origin: top center;
 	margin-top: 10px;
 	width: 100%;
-	background-color: white;
 	border-radius: 6px;
-	overflow: hidden;
-	box-shadow:
-		hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-		hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+	overflow: visible;
 	height: var(--radix-navigation-menu-viewport-height);
 	transition:
 		width,
 		height,
 		300ms ease;
 	pointer-events: none;
+}
+
+.NavigationMenuViewport::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow:
+		hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+		hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+	pointer-events: none;
+	z-index: -1;
+	overflow: hidden;
 }
 .NavigationMenuViewport[data-state="open"] {
 	animation: scaleIn 200ms ease;
@@ -145,7 +158,6 @@ p {
 	margin: 0;
 	column-gap: 10px;
 	list-style: none;
-	pointer-events: auto;
 }
 @media only screen and (min-width: 600px) {
 	.List.one {
@@ -168,7 +180,6 @@ p {
 	border-radius: 6px;
 	font-size: 15px;
 	line-height: 1;
-	pointer-events: auto;
 }
 .ListItemLink:focus {
 	box-shadow: 0 0 0 2px var(--violet-7);
@@ -182,14 +193,12 @@ p {
 	line-height: 1.2;
 	margin-bottom: 5px;
 	color: var(--violet-12);
-	pointer-events: none;
 }
 
 .ListItemText {
 	color: var(--mauve-11);
 	line-height: 1.4;
 	font-weight: initial;
-	pointer-events: none;
 }
 
 .Callout {
@@ -204,9 +213,6 @@ p {
 	text-decoration: none;
 	outline: none;
 	user-select: none;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
 }
 
 .Callout img {
@@ -240,7 +246,6 @@ p {
 	top: 100%;
 	left: 0;
 	perspective: 2000px;
-	pointer-events: none;
 }
 
 .CaretDown {
