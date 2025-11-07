@@ -70,6 +70,7 @@ p {
 	width: 100%;
 	animation-duration: 250ms;
 	animation-timing-function: ease;
+	pointer-events: auto;
 }
 .NavigationMenuContent[data-motion="from-start"] {
 	animation-name: enterFromLeft;
@@ -113,17 +114,31 @@ p {
 	transform-origin: top center;
 	margin-top: 10px;
 	width: 100%;
-	background-color: white;
 	border-radius: 6px;
-	overflow: hidden;
-	box-shadow:
-		hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-		hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+	overflow: visible;
 	height: var(--radix-navigation-menu-viewport-height);
 	transition:
 		width,
 		height,
 		300ms ease;
+	pointer-events: none;
+}
+
+.NavigationMenuViewport::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow:
+		hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+		hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+	pointer-events: none;
+	z-index: -1;
+	overflow: hidden;
 }
 .NavigationMenuViewport[data-state="open"] {
 	animation: scaleIn 200ms ease;
