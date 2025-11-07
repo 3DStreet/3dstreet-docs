@@ -4,25 +4,48 @@ id: index
 title: Overview
 ---
 
-# 3DStreet Overview 
+# 3DStreet Overview
 
 Welcome to the 3DStreet documentation.
 
-**3DStreet is an open-source web-based 3D platform to create and share highly detailed street scenes.** 
-<br/>
-<br/>
-**You can explore new scenes with 3DStreet Viewer or design new scenes with 3DStreet Editor.** A quick way to get started is to import a street from Streetmix and instantly generate a 3DStreet scene that you can modify and build from. [This step-by-step tutorial guides you through this process in 15 minutes or less.](/docs/getting-started)
-<br/>
-<br/>
+**3DStreet is an open-source web-based platform for street design and visualization.** We provide two powerful applications to help you create, design, and visualize street scenes:
+
+## Our Applications
+
+### Editor App
+
+**Create and customize detailed 3D street scenes.** The Editor is a web-based 3D platform for designing highly detailed street configurations.
+
+- **Import and modify** streets from Streetmix
+- **Customize scenes** with extensive object libraries
+- **Export and share** your creations
+- **View in AR** on mobile devices
+
+[Get started with the Editor →](./editor-app/overview-3dstreet-editor)
+
+### Generator App
+
+**AI-powered image generation and editing for street design.** The Generator uses state-of-the-art AI models to create and enhance street visualizations.
+
+- **Text-to-image** - Generate street scenes from descriptions
+- **Inpainting** - Edit specific areas of images
+- **Outpainting** - Expand images beyond their boundaries
+- **Multiple AI models** - Choose the right tool for your needs
+
+[Get started with the Generator →](./generator-app/getting-started)
+
+## Quick Start
+
+New to 3DStreet? Check out our [Getting Started guide](/docs/getting-started) to learn the basics of both applications.
 
 ![Screenshot of 3 different camera perspectives from 3DStreet Editor.](/img/docs/3dstreet-editor-camera-combo-views.jpg)
-<br/>
-<br/>
 
-**You can customize your street scene to match any configuration.** Use **3DStreet Editor** tools to modify, add, or clone objects to match an exisiting or future street configuration. [Check out the introductory Editor docs to learn the basic capabilities.](./3dstreet-editor/overview-3dstreet-editor)
-<br/>
-<br/>
+## What You Can Do
 
-**You can share your creation with others, or spice it up by importing into other apps.** 
-<br/>
-Take instant snapshots to share on social media, or export your entire detailed scene to use in other 3D rendering apps.
+**Design street configurations** - Use the Editor to modify, add, or clone objects to match existing or future street layouts.
+
+**Generate visualizations** - Use the Generator to create street scene images from text descriptions or enhance existing designs.
+
+**Share your work** - Take snapshots, export 3D scenes, or download AI-generated images to share on social media or import into other applications.
+
+**Explore in AR** - View Editor scenes in augmented reality on mobile devices.

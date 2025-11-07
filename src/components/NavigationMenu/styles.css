@@ -70,6 +70,7 @@ p {
 	width: 100%;
 	animation-duration: 250ms;
 	animation-timing-function: ease;
+	pointer-events: auto;
 }
 .NavigationMenuContent[data-motion="from-start"] {
 	animation-name: enterFromLeft;
@@ -124,6 +125,7 @@ p {
 		width,
 		height,
 		300ms ease;
+	pointer-events: none;
 }
 .NavigationMenuViewport[data-state="open"] {
 	animation: scaleIn 200ms ease;
@@ -143,6 +145,7 @@ p {
 	margin: 0;
 	column-gap: 10px;
 	list-style: none;
+	pointer-events: auto;
 }
 @media only screen and (min-width: 600px) {
 	.List.one {
@@ -165,6 +168,7 @@ p {
 	border-radius: 6px;
 	font-size: 15px;
 	line-height: 1;
+	pointer-events: auto;
 }
 .ListItemLink:focus {
 	box-shadow: 0 0 0 2px var(--violet-7);
@@ -178,12 +182,14 @@ p {
 	line-height: 1.2;
 	margin-bottom: 5px;
 	color: var(--violet-12);
+	pointer-events: none;
 }
 
 .ListItemText {
 	color: var(--mauve-11);
 	line-height: 1.4;
 	font-weight: initial;
+	pointer-events: none;
 }
 
 .Callout {
@@ -198,6 +204,9 @@ p {
 	text-decoration: none;
 	outline: none;
 	user-select: none;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 }
 
 .Callout img {
@@ -231,6 +240,7 @@ p {
 	top: 100%;
 	left: 0;
 	perspective: 2000px;
+	pointer-events: none;
 }
 
 .CaretDown {
