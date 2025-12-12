@@ -10,6 +10,7 @@ export default function PricingPage() {
       name: 'Community Edition',
       price: 'Free',
       description: 'Perfect for personal projects and exploration',
+      privacy: 'public',
       features: [
         'Store unlimited scenes',
         'Prototype street configurations',
@@ -28,7 +29,8 @@ export default function PricingPage() {
       name: 'Pro',
       price: '$10',
       subtitle: 'per month',
-      description: 'For professionals creating street designs',
+      description: 'For individual professionals creating street designs',
+      privacy: 'public',
       features: [
         'Everything in Free, plus:',
         'Download JPEG snapshots without watermark',
@@ -48,7 +50,8 @@ export default function PricingPage() {
       price: '$84',
       subtitle: 'per year',
       savings: '(save 30%)',
-      description: 'Best value for professionals',
+      description: 'Best value for individual professionals',
+      privacy: 'public',
       features: [
         'Everything in Pro, plus:',
         <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>840</strong> bonus AI generation tokens on first purchase</>,
@@ -63,6 +66,7 @@ export default function PricingPage() {
       price: '$5,000',
       subtitle: 'per year for up to 50 users',
       description: 'Perfect for organizations and universities',
+      privacy: 'public',
       features: [
         'Everything in Pro, for teams up to 50 users',
         'Domain-based access (organization/university email)',
@@ -73,6 +77,24 @@ export default function PricingPage() {
       ],
       buttonLabel: 'Purchase Pro Team',
       buttonHref: 'https://buy.stripe.com/4gM9AS6QJeqa5p3dwK1oI02',
+      buttonVariant: 'blue'
+    },
+    {
+      name: 'Pro Agency',
+      price: 'Contact Us',
+      subtitle: 'custom pricing',
+      description: 'For government and organizations requiring private data',
+      privacy: 'private',
+      features: [
+        'Everything in Pro Team, plus:',
+        'Private scenes and assets (not publicly visible)',
+        'Custom user limits',
+        'Priority support',
+        'Custom onboarding and training',
+        'Dedicated account management'
+      ],
+      buttonLabel: 'Contact Sales',
+      buttonHref: '/contact',
       buttonVariant: 'blue'
     }
   ];
@@ -186,6 +208,14 @@ export default function PricingPage() {
 
                     </div>
                     <p className="st_plan_description">{plan.description}</p>
+                    {plan.privacy && (
+                      <span
+                        className={`st_privacy_badge st_privacy_${plan.privacy}`}
+                        title={plan.privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+                      >
+                        {plan.privacy.toUpperCase()}
+                      </span>
+                    )}
                     <Button
                       variant={plan.buttonVariant}
                       label={plan.buttonLabel}
@@ -208,33 +238,45 @@ export default function PricingPage() {
                 ))}
               </div>
 
-              {/* Pro Team Plan Card */}
-              <div className="st_team_plan_wrapper">
-                <div className="st_pricing_card st_team_card">
-                  <div className="st_team_card_content">
-                    <div className="st_team_info">
-                      <h3 className="st_plan_name">{plans[3].name}</h3>
-                      <div className="st_plan_price">
-                        <span className="st_price_amount">{plans[3].price}</span>
-                        <span className="st_price_period">{plans[3].subtitle}</span>
-                      </div>
-                      <p className="st_plan_description">{plans[3].description}</p>
+              {/* Organizations Section - Pro Team and Pro Agency */}
+              <div className="st_org_section">
+                <h2 className="st_org_heading">For Organizations</h2>
+                <div className="st_org_cards">
+                  {/* Pro Team Card */}
+                  <div className="st_pricing_card st_org_card">
+                    <h3 className="st_plan_name">{plans[3].name}</h3>
+                    <div className="st_plan_price">
+                      <span className="st_price_amount">{plans[3].price}</span>
+                      <span className="st_price_period">{plans[3].subtitle}</span>
                     </div>
-                    <ul className="st_plan_features st_team_features">
-                      {plans[3].features.map((feature, idx) => (
-                        <li key={idx}>
-                          <CheckIcon className="st_check_icon" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
+                    <p className="st_plan_description">{plans[3].description}</p>
+                    {plans[3].privacy && (
+                      <span
+                        className={`st_privacy_badge st_privacy_${plans[3].privacy}`}
+                        title={plans[3].privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+                      >
+                        {plans[3].privacy.toUpperCase()}
+                      </span>
+                    )}
+                    <Button
+                      variant={plans[3].buttonVariant}
+                      label={plans[3].buttonLabel}
+                      href={plans[3].buttonHref}
+                      target={plans[3].buttonHref.startsWith('http') ? '_blank' : undefined}
+                    />
+                    <ul className="st_plan_features">
+                      {plans[3].features.map((feature, idx) => {
+                        const isString = typeof feature === 'string';
+                        const isEverythingIn = isString && feature.startsWith('Everything in');
+                        return (
+                          <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
+                            {!isEverythingIn && <CheckIcon className="st_check_icon" />}
+                            <span>{feature}</span>
+                          </li>
+                        );
+                      })}
                     </ul>
-                    <div className="st_team_buttons">
-                      <Button
-                        variant={plans[3].buttonVariant}
-                        label={plans[3].buttonLabel}
-                        href={plans[3].buttonHref}
-                        target={plans[3].buttonHref.startsWith('http') ? '_blank' : undefined}
-                      />
+                    <div className="st_org_card_footer">
                       <Button
                         variant="transparent"
                         label="Schedule a Demo"
@@ -248,6 +290,50 @@ export default function PricingPage() {
                       >
                         Learn more about Pro Team →
                       </a>
+                    </div>
+                  </div>
+
+                  {/* Pro Agency Card */}
+                  <div className="st_pricing_card st_org_card st_agency_card">
+                    <h3 className="st_plan_name">{plans[4].name}</h3>
+                    <div className="st_plan_price">
+                      <span className="st_price_amount">{plans[4].price}</span>
+                      <span className="st_price_period">{plans[4].subtitle}</span>
+                    </div>
+                    <p className="st_plan_description">{plans[4].description}</p>
+                    {plans[4].privacy && (
+                      <span
+                        className={`st_privacy_badge st_privacy_${plans[4].privacy}`}
+                        title={plans[4].privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+                      >
+                        {plans[4].privacy.toUpperCase()}
+                      </span>
+                    )}
+                    <Button
+                      variant={plans[4].buttonVariant}
+                      label={plans[4].buttonLabel}
+                      href={plans[4].buttonHref}
+                    />
+                    <ul className="st_plan_features">
+                      {plans[4].features.map((feature, idx) => {
+                        const isString = typeof feature === 'string';
+                        const isEverythingIn = isString && feature.startsWith('Everything in');
+                        return (
+                          <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
+                            {!isEverythingIn && <CheckIcon className="st_check_icon" />}
+                            <span>{feature}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <div className="st_org_card_footer">
+                      <Button
+                        variant="transparent"
+                        label="Schedule a Demo"
+                        href="https://calendar.app.google/ohjYMBPuLjGupHov5"
+                        target="_blank"
+                        className="purple-outline-button"
+                      />
                     </div>
                   </div>
                 </div>
@@ -475,6 +561,76 @@ export default function PricingPage() {
           font-weight: 400;
         }
 
+        /* Privacy Badge Styles */
+        .st_privacy_badge {
+          display: inline-block;
+          font-size: 0.65rem;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+          padding: 0.2rem 0.6rem;
+          border-radius: 12px;
+          margin: 0 auto 0.75rem;
+          text-transform: uppercase;
+          cursor: help;
+        }
+
+        .st_privacy_public {
+          color: #6b7280;
+          border: 1.5px solid #d1d5db;
+          background: transparent;
+        }
+
+        .st_privacy_private {
+          color: #059669;
+          border: 1.5px solid #10b981;
+          background: rgba(16, 185, 129, 0.1);
+        }
+
+        /* Organizations Section */
+        .st_org_section {
+          width: 100%;
+          max-width: 1000px;
+          margin: 3rem auto 4rem;
+        }
+
+        .st_org_heading {
+          text-align: center;
+          font-size: 2rem;
+          color: #fff;
+          font-family: "Kanit";
+          font-weight: normal;
+          margin-bottom: 2rem;
+        }
+
+        .st_org_cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+        }
+
+        .st_org_card {
+          min-height: auto;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .st_org_card .st_plan_features {
+          flex-grow: 1;
+        }
+
+        .st_org_card_footer {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          margin-top: 1rem;
+          padding-top: 1rem;
+          border-top: 1px solid #e5e5e5;
+        }
+
+        .st_agency_card {
+          border-color: #10b981;
+        }
+
         .st_plan_price {
           margin-bottom: 1rem;
           text-align: center;
@@ -500,7 +656,7 @@ export default function PricingPage() {
 
         .st_plan_description {
           color: #4a4a4a;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.5rem;
           text-align: center;
           min-height: 48px;
           font-size: 0.95rem;
@@ -642,18 +798,14 @@ export default function PricingPage() {
             max-width: 500px;
           }
 
-          .st_team_card_content {
+          .st_org_cards {
             grid-template-columns: 1fr;
-            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
           }
 
-          .st_team_info {
-            text-align: center;
-          }
-
-          .st_team_buttons {
-            flex-direction: row;
-            justify-content: center;
+          .st_org_section {
+            padding: 0 1rem;
           }
         }
 
