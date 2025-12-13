@@ -36,6 +36,12 @@ const config = {
   markdown: {
     mermaid: true,
   },
+  scripts: [
+    {
+      src: "https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js",
+      type: "module",
+    },
+  ],
   presets: [
     [
       "classic",

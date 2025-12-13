@@ -1,0 +1,8 @@
+{
+  "label": "3D Models",
+  "position": 10,
+  "link": {
+    "type": "doc",
+    "id": "models/index"
+  }
+}
