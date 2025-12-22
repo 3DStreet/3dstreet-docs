@@ -1,9 +1,8 @@
 import React from 'react';
-import { ExternalLinkIcon, DiscordLogoIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, DiscordLogoIcon, CalendarIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { Button } from '../components';
 import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
-import HubSpotForm from '../components/HubSpotForm';
 
 export default function ContactPage() {
   return (
@@ -76,21 +75,34 @@ export default function ContactPage() {
         <section className="st_contact_section">
           <div className="st_contact_inner">
             <div className="st_contact_grid">
-              {/* Sales Contact Form */}
+              {/* Sales Contact */}
               <div className="st_contact_item">
                 <h2>Sales Inquiries</h2>
-                <p>Interested in 3DStreet for your organization? Fill out the form below and our team will get back to you shortly.</p>
-                <div style={{ 
-                  width: '80%', 
-                  margin: '1.5rem auto', 
-                  backgroundColor: '#f2ebff', 
-                  borderRadius: '12px', 
-                  padding: '1.5rem', 
-                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' 
+                <p>Interested in 3DStreet for your organization? Schedule a demo or reach out directly.</p>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1rem',
+                  marginTop: '1.5rem',
+                  alignItems: 'center'
                 }}>
-                  <div className="st_contact_form">
-                    <HubSpotForm />
-                  </div>
+                  <Button
+                    variant="blue"
+                    label="Schedule a Demo"
+                    trailingIcon={<CalendarIcon style={{ width: '1.33em', height: '1.33em' }} />}
+                    onClick={() => {
+                      window.open("https://calendar.app.google/ohjYMBPuLjGupHov5", "_blank", "noopener,noreferrer");
+                    }}
+                  />
+                  <p style={{ margin: '0.5rem 0', color: 'rgba(255, 255, 255, 0.7)' }}>or</p>
+                  <Button
+                    variant="transparent"
+                    label="Email team@3dstreet.com"
+                    trailingIcon={<EnvelopeClosedIcon style={{ width: '1.33em', height: '1.33em' }} />}
+                    onClick={() => {
+                      window.location.href = "mailto:team@3dstreet.com";
+                    }}
+                  />
                 </div>
               </div>
               
