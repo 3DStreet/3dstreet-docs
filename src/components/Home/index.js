@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 import { Button, Input } from "..";
@@ -17,32 +17,12 @@ import MuxPlayer from "@mux/mux-player-react";
 export default function Home({ recentPosts }) {
   const { siteConfig } = useDocusaurusContext();
 
-  // Random announcement pill - picks one randomly on page load
-  const announcements = [
-    {
-      icon: "📰",
-      boldText: "Introducing Pro Team",
-      lightText: "Built for organizations and universities",
-      url: "/blog/2025/10/24/introducing-pro-team-plan-for-organizations-and-universities"
-    },
-    {
-      icon: "✨",
-      boldText: "More in Pro",
-      lightText: "Enhanced AI generation and AR capabilities",
-      url: "/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities"
-    },
-    {
-      icon: "🎉",
-      boldText: "More for Free",
-      lightText: "Expanded geospatial and intersection features",
-      url: "/blog/2025/08/25/more-for-free-expanded-access-to-geospatial-and-intersection-features"
-    }
-  ];
-
-  // Pick random announcement once on mount
-  const [currentAnnouncement] = useState(() =>
-    announcements[Math.floor(Math.random() * announcements.length)]
-  );
+  const currentAnnouncement = {
+    icon: "📣",
+    boldText: "Free Webinar Feb 26",
+    lightText: "Creating street visuals to sway stakeholders with John Boyle from Greater Philadelphia Bicycle Coalition",
+    url: "https://riverside.com/webinar/registration/eyJzbHVnIjoia2llcmFuLWZhcnJzLXN0dWRpbyIsImV2ZW50SWQiOiI2OTgzZGYyZjJjNWMwOTYwYzAxNzdmNmQiLCJwcm9qZWN0SWQiOiI2OTgzZGYyZmM0NmQ4MDE1MTRjNTYxZTMifQ=="
+  };
 
   return (
     <>
@@ -123,7 +103,7 @@ export default function Home({ recentPosts }) {
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '12px', marginBottom: '12px' }}>
           <div
             className="pro-team-pill"
-            onClick={() => window.open(currentAnnouncement.url, '_self')}
+            onClick={() => window.open(currentAnnouncement.url, '_blank', 'noopener,noreferrer')}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
