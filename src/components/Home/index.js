@@ -12,7 +12,7 @@ import {
   YouTubeIcon
 } from "../../icons";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import MuxPlayer from "@mux/mux-player-react";
+
 
 export default function Home({ recentPosts }) {
   const { siteConfig } = useDocusaurusContext();
@@ -165,15 +165,16 @@ export default function Home({ recentPosts }) {
           <div className="st_main_wrapper">
             <div className="st_main_container">
               <h1 className="h1">Design the future.</h1>
-              <MuxPlayer
-                streamType="on-demand"
-                playbackId="TSxTjFBKoeTnspoQo02BFBPZXel6Pqtoo"
-                metadataVideoTitle="Placeholder (optional)"
-                metadataViewerUserId="Placeholder (optional)"
-                primaryColor="#FFFFFF"
-                secondaryColor="#000000"
-                accentColor="#653CB0"
-              />
+              <div style={{ padding: '56.25% 0 0 0', position: 'relative', width: '100%' }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1165500149?h=cfdbdf4076&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                  title="3DStreet Demo Scenes"
+                />
+              </div>
               <section className="st_overview">
               </section>
               <Input />
