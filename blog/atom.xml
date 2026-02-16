@@ -2,11 +2,113 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2025-10-30T00:00:00.000Z</updated>
+    <updated>2026-02-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Product Update: AI Image and Video Generator, Cloud Gallery, and More]]></title>
+        <id>https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more</id>
+        <link href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more"/>
+        <updated>2026-02-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A roundup of major 3DStreet updates since September 2025 including AI Image and Video Generator, cloud-synced gallery, Bollard Buddy for web and iOS, Apple Sign-In, expanded StreetPlan integration, new 3D assets, and more.]]></summary>
+        <content type="html"><![CDATA[<p>It's been a busy few months at 3DStreet! Since our last product update in September 2025, we've shipped a wave of new features focused on expanding our AI creative tools, improving how you manage and share your work, and making it easier to import designs from other platforms. Here's what's new.</p>
+<p><img decoding="async" loading="lazy" alt="Product update hero" src="https://3dstreet.org/assets/images/gallery-image-nano-banana-rendering-926554109ee12734ddf40c5ba26d24f9.webp" width="1169" height="792" class="img_ev3q"></p>
+<h1>AI Generator</h1>
+<p>The new <a href="https://3dstreet.app/generator">AI Generator app</a> is a "generative studio" style interface to access our growing set of AI image and video rendering tools in one streamlined app specialized for urban planning and spatial design. Access AI Generator from the new App Switcher menu by clicking the 3DStreet logo in the upper-left hand corner.</p>
+<p><img decoding="async" loading="lazy" alt="AI Generator App Logo and Header Menu" src="https://3dstreet.org/assets/images/ai-generator-app-header-1a62fccdb24c0136bb74da406e0f29e3.webp" width="806" height="162" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-generator-for-video">AI Generator for Video<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#ai-generator-for-video" class="hash-link" aria-label="Direct link to AI Generator for Video" title="Direct link to AI Generator for Video">​</a></h2>
+<p>You can now generate short AI-rendered videos of your street designs in the <a href="https://3dstreet.app/generator/#video" target="_blank" rel="noopener noreferrer">Video tab of the AI Generator app</a>. This brings your scenes to life in a way that static images can't -- imagine showing a stakeholder a flythrough of a proposed protected bike lane or a reimagined neighborhood main street in motion.</p>
+<p>Video generation requires a source image to use as the first frame. Upload your own image or open an existing image from your gallery and click "Create Video" to use as an input source. Rendering AI Video assets uses your monthly AI generation tokens, just like image rendering. Quality, rendering time and token usage varies by chosen AI model.</p>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/LE59IH1Qk-A?si=CuenTTjDmscc9E61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-generator-for-images-modify-create-inpaint-and-outpaint">AI Generator for Images: Modify, Create, Inpaint, and Outpaint<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#ai-generator-for-images-modify-create-inpaint-and-outpaint" class="hash-link" aria-label="Direct link to AI Generator for Images: Modify, Create, Inpaint, and Outpaint" title="Direct link to AI Generator for Images: Modify, Create, Inpaint, and Outpaint">​</a></h2>
+<p>In addition to video, access all our image editing tools in one place with the new <a href="https://3dstreet.app/generator">3DStreet AI Generator app</a>. You can now:</p>
+<ul>
+<li><a href="https://3dstreet.app/generator/#modify" target="_blank" rel="noopener noreferrer"><strong>Modify from Input Image</strong></a> -- Upload your own image or select an image from your gallery as an input, then re-render the image while applying stylistic, editorial, geometrical, rendering, or other modifications using state of the art frontier image models from Google and other major providers.</li>
+<li><a href="https://3dstreet.app/generator/#create" target="_blank" rel="noopener noreferrer"><strong>Create from Prompt</strong></a> -- Generate a new image from a text prompt without a source image.</li>
+<li><a href="https://3dstreet.app/generator/#inpaint" target="_blank" rel="noopener noreferrer"><strong>Inpaint</strong></a> -- Select a region of an input image from your gallery or uploaded and re-render just that area with a new prompt. Perfect for swapping out details or fixing specific parts of a rendering.</li>
+<li><a href="https://3dstreet.app/generator/#outpaint" target="_blank" rel="noopener noreferrer"><strong>Outpaint</strong></a> -- Extend the boundaries of a generated image beyond the original frame, creating wider panoramic views of your street designs.</li>
+<li><strong>Edit and iterate</strong> -- Use the gallery to experiment with different styles and prompts on the same scene or input file to learn how they affect the final output</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-gallery-with-cross-device-sync">Cloud Gallery with Cross-Device Sync<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#cloud-gallery-with-cross-device-sync" class="hash-link" aria-label="Direct link to Cloud Gallery with Cross-Device Sync" title="Direct link to Cloud Gallery with Cross-Device Sync">​</a></h2>
+<p>All of your rendered images and videos are now stored in your 3DStreet Cloud account, replacing the previous browser-only storage. This means:</p>
+<ul>
+<li><strong>Cross-device access</strong> - View your gallery from any device where you're signed in including desktop, laptop, and mobile devices</li>
+<li><strong>Generation metadata</strong> - Each gallery item includes generation details such as model and text prompt used to quickly replicate and modify proven workflows</li>
+<li><strong>Scene links</strong> - Gallery items generated from 3DStreet Editor now link back to the 3DStreet scene it was generated from for rapid editing</li>
+</ul>
+<p>This was a major behind-the-scenes refactor, and it makes the gallery a much more reliable and useful part of the workflow.</p>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/Zr_vuhFl13c?si=lpPh48MzFQrqTre1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="building-variants-on-managed-streets">Building Variants on Managed Streets<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#building-variants-on-managed-streets" class="hash-link" aria-label="Direct link to Building Variants on Managed Streets" title="Direct link to Building Variants on Managed Streets">​</a></h2>
+<p>The street segment sidebar now includes selectable <strong>building variants</strong>, giving you more control over the look and feel of the buildings along your street. Buildings now use a "fit" placement mode instead of random, so the results are more predictable and intentional. Combined with new building assets added to the model catalog, you have a wider palette for creating realistic streetscapes.</p>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/ev5MzdFDCZ4?si=VubxbIMPAZ5Cf13x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>New building assets created with support from <a href="https://streetplan.net/" target="_blank" rel="noopener noreferrer">StreetPlan</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-3d-assets-plants-and-cars">New 3D Assets: Plants and Cars<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#new-3d-assets-plants-and-cars" class="hash-link" aria-label="Direct link to New 3D Assets: Plants and Cars" title="Direct link to New 3D Assets: Plants and Cars">​</a></h2>
+<p>We've added a collection of new models to the asset library:</p>
+<ul>
+<li>New tree and median planter models</li>
+<li>New car models</li>
+<li>New <strong>Plants</strong> and <strong>Fixtures</strong> categories in the asset panel for easier browsing</li>
+</ul>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/KUGcMAux5to?si=yWOxwI13JZW9hhVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>Also new, now you can see 3D model metadata in 3DStreet for some assets: click to select a built-in 3D model placed in your scene, then use the right-hand properties panel to scroll down Model Info. Assets in 3DStreet have varying origins including original commissioned art, existing assets from sources like Sketchfab, and partnerships.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-streetplan-integration">Expanded StreetPlan Integration<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#expanded-streetplan-integration" class="hash-link" aria-label="Direct link to Expanded StreetPlan Integration" title="Direct link to Expanded StreetPlan Integration">​</a></h2>
+<p>If you use <a href="https://streetplan.net/" target="_blank" rel="noopener noreferrer">StreetPlan.net</a> for 2D design and want to visualize your work in 3D, we've made significant improvements to how 3DStreet imports and renders  designs:</p>
+<ul>
+<li><strong>Expanded object mapping</strong> -- Many more StreetPlan object types now map correctly to 3DStreet equivalents</li>
+<li><strong>Fixed orientation/side-flipping</strong> -- Elements now render on the correct side of the street</li>
+<li><strong>Improved lane type support</strong> -- Better handling of different lane types during import</li>
+<li><strong>Improved vehicle placement</strong> -- Vehicles are now positioned more accurately on street segments</li>
+<li><strong>Improved building support</strong> -- StreetPlan import now supports more building variants to better match intended styles</li>
+</ul>
+<p>Thanks to Mike and the StreetPlan team for their support and help to better connect these systems.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="drag-and-drop-3d-models">Drag and Drop 3D Models<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#drag-and-drop-3d-models" class="hash-link" aria-label="Direct link to Drag and Drop 3D Models" title="Direct link to Drag and Drop 3D Models">​</a></h2>
+<p>You can now drag and drop glTF/GLB files directly into the 3DStreet viewport to import custom 3D models. No need to go through menus -- just drop your file and place it in the scene. This can be handy for quick visualizations, however drag-and-drop models are only available during the initial session and will not be saved when you reload the scene. If you'd like your GLB image to be able to be reloaded in future sessions you'll need to use a third-party storage service. <a href="https://www.youtube.com/watch?v=c9itxUUtQGE" target="_blank" rel="noopener noreferrer">Here's a quick video showing what you can make with this feature</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="streetmix-schema-33-with-elevation">Streetmix Schema 33 with Elevation<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#streetmix-schema-33-with-elevation" class="hash-link" aria-label="Direct link to Streetmix Schema 33 with Elevation" title="Direct link to Streetmix Schema 33 with Elevation">​</a></h2>
+<p>If you use <a href="https://streetmix.net/" target="_blank" rel="noopener noreferrer">Streetmix.net</a> for your street cross-section design, 3DStreet now supports import <strong>Streetmix schema version 33</strong> with elevation values in meters which are then converted into a fixed set of curb height levels for 3DStreet.</p>
+<p>In the future we should consider using segment height in meters instead of arbitrary curb height levels, but for now Managed Street segments have user-definable curb height levels at increments of 0.15m (approx 6 inches).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bollard-buddy-ar-street-safety-on-web-and-ios">Bollard Buddy: AR Street Safety on Web and iOS<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#bollard-buddy-ar-street-safety-on-web-and-ios" class="hash-link" aria-label="Direct link to Bollard Buddy: AR Street Safety on Web and iOS" title="Direct link to Bollard Buddy: AR Street Safety on Web and iOS">​</a></h2>
+<p>We've launched <strong>Bollard Buddy</strong>, a new AR app for placing street safety objects -- bollards, traffic cones, planters, and more -- on real-world surfaces using your device's camera. It's available in two forms:</p>
+<ul>
+<li><a href="https://3dstreet.app/bollardbuddy/" target="_blank" rel="noopener noreferrer"><strong>Bollard Buddy Web</strong></a> -- Built into the 3DStreet platform as part of our app suite. Access it from the app switcher in the upper-left hand corner to quickly place safety objects in AR and capture photos. This is a demo app with limited functionality using the legacy 8th Wall WebAR SLAM engine.</li>
+<li><strong>Bollard Buddy iOS</strong> -- A native iOS app built with SwiftUI and RealityKit for a smooth, device-optimized AR experience. Features include tap-to-place objects, drag and rotate gestures, a measurement line tool, and photo capture that saves to your cloud gallery for further image processing and scene editing. (TestFlight beta available for 3DStreet Pro customers.)</li>
+</ul>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/uvPY3V4XTMg?si=lpPh48MzFQrqTre1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>Both versions share the same 3DStreet Cloud gallery, so photos you capture in the iOS app show up when you sign in on the web, and vice versa. Bollard Buddy is a fast, focused way to visualize street safety improvements in context -- snap a photo of an unprotected bike lane, drop in some bollards, and share the before-and-after.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="apple-sign-in">Apple Sign-In<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#apple-sign-in" class="hash-link" aria-label="Direct link to Apple Sign-In" title="Direct link to Apple Sign-In">​</a></h2>
+<p>You can now sign in to 3DStreet with your Apple ID, joining our existing Google and Microsoft sign-in options. If you use multiple providers, your profile will show all of your connected accounts. This is part of our work on the new Bollard Buddy iOS App.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="terrain-flattening-for-geospatial-scenes">Terrain Flattening for Geospatial Scenes<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#terrain-flattening-for-geospatial-scenes" class="hash-link" aria-label="Direct link to Terrain Flattening for Geospatial Scenes" title="Direct link to Terrain Flattening for Geospatial Scenes">​</a></h2>
+<p>When working with Google 3D Tiles in a geolocated scene, existing real-world elements like trees, utility poles, and parked cars can get in the way of your design. The new <strong>Terrain Flattening</strong> feature lets you flatten a rectangular area of the 3D map tiles, clearing space so your street design takes center stage.</p>
+<ul>
+<li>Enable flattening from the Geospatial Layers panel and adjust the flattening shape to cover your project area</li>
+<li>Remove distracting map elements like trees, cars, and utility poles that overlap with your design</li>
+<li>Position the flattening shape below ground level to design subterranean treatments like underpasses or sunken plazas</li>
+</ul>
+<p>This is especially useful for presentations where you want the focus on your proposed design rather than the existing conditions.</p>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/jRxwbcI5R9U?si=lpPh48MzFQrqTre1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="geojson-import-for-building-envelopes">GeoJSON Import for Building Envelopes<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#geojson-import-for-building-envelopes" class="hash-link" aria-label="Direct link to GeoJSON Import for Building Envelopes" title="Direct link to GeoJSON Import for Building Envelopes">​</a></h2>
+<p>3DStreet already supports 2.5D building geometry from OpenStreetMap, rendering extruded building footprints based on OSM data for any geolocated scene. We've now expanded this with a <strong>general-purpose GeoJSON loader</strong> that can render building envelopes from any GeoJSON source, not just OSM.</p>
+<p>This opens up new workflows for importing building envelopes from tools like <a href="https://github.com/emunsing/cityscaper" target="_blank" rel="noopener noreferrer">Cityscaper</a>, a Python-based cityscape forecasting tool that simulates future building development based on zoning scenarios. We recently contributed to Cityscaper to <a href="https://github.com/emunsing/cityscaper/commit/6dad4c96733c27883da4b7353e6ee30d98a46d09" target="_blank" rel="noopener noreferrer">add GeoJSON export with direct 3DStreet integration</a>. Now you can run a zoning simulation, generate a GeoJSON file, and open it directly in 3DStreet from the command line.</p>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/ngqPCyUCxxQ?si=lpPh48MzFQrqTre1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="gaussian-splat-rendering-with-spark">Gaussian Splat Rendering with Spark<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#gaussian-splat-rendering-with-spark" class="hash-link" aria-label="Direct link to Gaussian Splat Rendering with Spark" title="Direct link to Gaussian Splat Rendering with Spark">​</a></h2>
+<p>We've updated out Gaussian splat visualization library to use the new <a href="https://github.com/sparkjsdev/spark" target="_blank" rel="noopener noreferrer"><strong>Spark</strong> 3D Gaussian Splatting renderer for THREE.js</a> improving our support for 3D-scanned environments. If you're working with photogrammetry or 3D capture data, splats now render more efficiently in your scenes.</p>
+<iframe style="aspect-ratio:16/9;width:100%" src="https://www.youtube.com/embed/4DPrFog2uqc?si=lpPh48MzFQrqTre1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
+<p>That's a lot of feature talk. To put it all in perspective, we're excited to host a webinar with power user John Boyle from the Greater Philadelphia Bicycle Coalition Thursday February 26 at 1pm Eastern / 10am Pacific.</p>
+<p>John will share how he leverages realistic street improvement visualizations to drive change in local communities. <a href="https://riverside.com/webinar/registration/eyJzbHVnIjoia2llcmFuLWZhcnJzLXN0dWRpbyIsImV2ZW50SWQiOiI2OTgzZGYyZjJjNWMwOTYwYzAxNzdmNmQiLCJwcm9qZWN0SWQiOiI2OTgzZGYyZmM0NmQ4MDE1MTRjNTYxZTMifQ==" target="_blank" rel="noopener noreferrer">Click here for the registration link</a>.</p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="AI generation" term="AI generation"/>
+        <category label="video" term="video"/>
+        <category label="gallery" term="gallery"/>
+        <category label="Bollard Buddy" term="Bollard Buddy"/>
+        <category label="StreetPlan" term="StreetPlan"/>
+        <category label="new features" term="new features"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AR Street Planning Meets Real Communities in University of Cincinnati Pilot]]></title>
         <id>https://3dstreet.org/blog/2025/10/30/bringing-ar-street-planning-to-communities-university-of-cincinnati-pilot</id>
@@ -1355,55 +1457,5 @@ Join our Geospatial Pro Early Access program now to help guide our next prioriti
         <category label="toolbar" term="toolbar"/>
         <category label="user funded features" term="user funded features"/>
         <category label="controls" term="controls"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Announcing 3DStreet Geospatial Pro Early Access]]></title>
-        <id>https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro</id>
-        <link href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro"/>
-        <updated>2024-06-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We’re thrilled to introduce 3DStreet Geospatial Pro, our latest product update that brings you revolutionary 3D map integrations, drag-and-drop 3D model placement, augmented reality features, and much more!]]></summary>
-        <content type="html"><![CDATA[<p>We’re thrilled to announce the early access launch of 3DStreet Geospatial Pro introducing groundbreaking 3D map integrations, drag-and-drop 3D model placement, augmented reality features, and more.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/geospatial-pro-64e43a4a7664bb184920de93ba52436f.jpg" width="1259" height="1274" class="img_ev3q"><br><i>
-<strong>Community advocate Andrew Seigner used 3DStreet Geospatial Pro to propose a few alternative treatments for a Hayes Street Promenade in San Francisco.</strong></i></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-3dstreet-geospatial-pro">Why 3DStreet Geospatial Pro?<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#why-3dstreet-geospatial-pro" class="hash-link" aria-label="Direct link to Why 3DStreet Geospatial Pro?" title="Direct link to Why 3DStreet Geospatial Pro?">​</a></h2>
-<p>Since launching 3DStreet in 2017, our mission has been to empower everyone to reimagine public spaces. After the successful release of 3DStreet Cloud, we've listened to feedback from a diverse community of users—ranging from transportation engineers to community advocates. The common request? Tools to provide geographical context for street designs.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="design-scenes-with-integrated-2d--3d-maps">Design Scenes with Integrated 2D &amp; 3D Maps<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#design-scenes-with-integrated-2d--3d-maps" class="hash-link" aria-label="Direct link to Design Scenes with Integrated 2D &amp; 3D Maps" title="Direct link to Design Scenes with Integrated 2D &amp; 3D Maps">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/mapbox-sketchfab-gltf-placement-da1f5b42123d21ba14f72a8a8dd10b72.jpg" width="1280" height="962" class="img_ev3q"><br><i>
-<strong>A proposed street plaza design from landscape architecture firm Terrain Studio aligned with real-world geometry using 3DStreet Geospatial Pro.</strong></i></p>
-<p>3DStreet Geospatial Pro makes it easy to integrate detailed 2D and 3D maps from various providers. Use Mapbox's 2D Satellite layer for fine detail and Google’s 3D Map layer for lifelike context. Each scene can now be linked to specific geographical coordinates, unlocking advanced geospatial features like QR-code based Augmented Reality.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/scenelocation-settings-1ff7ecdeafeff878878da7ce86f148b5.jpg" width="753" height="663" class="img_ev3q"><br><i>
-<strong>Setting a Scene Location is a simple as searching for a place with Google Maps.</strong></i></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-objects-and-layers-easily">Add Objects and Layers Easily<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#add-objects-and-layers-easily" class="hash-link" aria-label="Direct link to Add Objects and Layers Easily" title="Direct link to Add Objects and Layers Easily">​</a></h2>
-<p>Our rich library of custom-designed 3D objects is now more accessible with a new Add Entity panel. Browse and add everything from pedestrians and vehicles to buildings and street props to your scene with just a few clicks.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/add-new-entity-panel-880a80409af05cd57c411c7cb9985f1f.jpg" width="632" height="386" class="img_ev3q"><br><i>
-<strong>Adding new layers and 3D models to your scene is as easy as scrolling and clicking.</strong></i></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="combine-advanced-street-geometry-from-multiple-providers">Combine Advanced Street Geometry from Multiple Providers<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#combine-advanced-street-geometry-from-multiple-providers" class="hash-link" aria-label="Direct link to Combine Advanced Street Geometry from Multiple Providers" title="Direct link to Combine Advanced Street Geometry from Multiple Providers">​</a></h2>
-<p>We now support Street Layers from multiple street design platforms including Streetmix, StreetPlan, and a new intersection component. Create your own custom paths by importing svg files from vector graphic editing software such as Figma. Coming soon, import custom 3D scans in Gaussian splat format created with applications such as LumaAI and Polycam.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/mission-bay-traffic-circle-rev4-298a0ace3bdfeb768fe7c0d4535b4a0e.jpg" width="1080" height="611" class="img_ev3q"><br><i>
-<strong>Using a custom SVG paths created in Figma and imported into 3DStreet is a quick way to prototype a mode-separated traffic circle.</strong></i></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="optimized-gltf-export-for-augmented-reality">Optimized glTF Export for Augmented Reality<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#optimized-gltf-export-for-augmented-reality" class="hash-link" aria-label="Direct link to Optimized glTF Export for Augmented Reality" title="Direct link to Optimized glTF Export for Augmented Reality">​</a></h2>
-<p>We're simplifying AR visualization with an “Optimized for AR” export option. This feature automatically prepares your 3DStreet scenes for use in AR apps like <a href="https://www.adobe.com/products/aero.html" target="_blank" rel="noopener noreferrer">Adobe Aero</a> and <a href="https://incitu.us/" target="_blank" rel="noopener noreferrer">inCitu</a>, eliminating the need for additional 3D model editing.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SszAFmtmVC4?si=anecoEum53Y9C4sF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<br>
-<i><strong>A first-person recording of street design changes created in 3DStreet composited with real-world imagery using Adobe Aero.</strong></i>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="upcoming-ar-features">Upcoming AR Features<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#upcoming-ar-features" class="hash-link" aria-label="Direct link to Upcoming AR Features" title="Direct link to Upcoming AR Features">​</a></h2>
-<p>We are also developing a 3DStreet mobile WebAR app providing Augmented Reality experiences using QR codes for localization.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/ar-screencaps-e46383f26b19e9bc1813fe038e6409a6.jpg" width="1142" height="1024" class="img_ev3q"><br><i>
-<strong>Augmented Reality visualization allows realtime compositing of your proposed design placed in the real-world.</strong></i></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pricing-and-availability">Pricing and Availability<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#pricing-and-availability" class="hash-link" aria-label="Direct link to Pricing and Availability" title="Direct link to Pricing and Availability">​</a></h2>
-<p>3DStreet Geospatial Pro is available as a subscription for $49/month, with discounts for annual payments. While most existing free features will remain available, advanced features like geospatial tools, smart layers, and AR export will only be available as part of the Pro plan.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="early-access">Early Access<a href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro#early-access" class="hash-link" aria-label="Direct link to Early Access" title="Direct link to Early Access">​</a></h2>
-<p>Ready to transform your projects with cutting-edge geospatial features?</p>
-<p><a href="https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&amp;form_id=3f024b297f2177befa87b5ca5e9d45cc" target="_blank" rel="noopener noreferrer">Contact us to get Early Access to 3DStreet Geospatial Pro</a></p>]]></content>
-        <author>
-            <name>Kieran Farr</name>
-            <uri>https://github.com/kfarr</uri>
-        </author>
-        <category label="product update" term="product update"/>
-        <category label="3dtiles" term="3dtiles"/>
-        <category label="google maps" term="google maps"/>
-        <category label="geospatial" term="geospatial"/>
-        <category label="ar" term="ar"/>
-        <category label="mapbox" term="mapbox"/>
     </entry>
 </feed>
