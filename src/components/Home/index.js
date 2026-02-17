@@ -427,6 +427,98 @@ export default function Home({ recentPosts }) {
           </div>
         </section>
 
+        {/* EVENTS SECTION */}
+        <section id="events" className="st_events">
+          <div className="st_events_inner">
+            <h2>Upcoming Events</h2>
+            <p className="st_events_description">
+              Meet us in person or online. Book a meeting to chat about your project, or attend an event to see 3DStreet in action.
+            </p>
+            <div className="st_events_grid">
+              <a
+                href="https://riverside.com/webinar/registration/eyJzbHVnIjoia2llcmFuLWZhcnJzLXN0dWRpbyIsImV2ZW50SWQiOiI2OTgzZGYyZjJjNWMwOTYwYzAxNzdmNmQiLCJwcm9qZWN0SWQiOiI2OTgzZGYyZmM0NmQ4MDE1MTRjNTYxZTMifQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="st_event_card"
+              >
+                <div className="st_event_date">
+                  <span className="st_event_month">Feb</span>
+                  <span className="st_event_day">26</span>
+                </div>
+                <div className="st_event_details">
+                  <h3>Free Webinar: Creating Street Visuals to Sway Stakeholders</h3>
+                  <div className="st_event_meta">Online</div>
+                  <div className="st_event_info">With John Boyle from Greater Philadelphia Bicycle Coalition. 1pm ET / 10am PT.</div>
+                </div>
+              </a>
+              <a
+                href="https://njbwc.org/summit-2026/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="st_event_card"
+              >
+                <div className="st_event_date">
+                  <span className="st_event_month">Mar</span>
+                  <span className="st_event_day">7</span>
+                </div>
+                <div className="st_event_details">
+                  <h3>New Jersey Bike & Walk Summit</h3>
+                  <div className="st_event_meta">Princeton, NJ</div>
+                  <div className="st_event_info">Join us at the annual summit bringing together advocates, planners, and policymakers.</div>
+                </div>
+              </a>
+              <a
+                href="https://www.transformingtransportation.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="st_event_card"
+              >
+                <div className="st_event_date">
+                  <span className="st_event_month">Mar</span>
+                  <span className="st_event_day">9-12</span>
+                </div>
+                <div className="st_event_details">
+                  <h3>Transforming Transportation</h3>
+                  <div className="st_event_meta">Washington, DC</div>
+                  <div className="st_event_info">Global conference on sustainable transport and urban mobility.</div>
+                </div>
+              </a>
+              <a
+                href="https://www.itespringconference.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="st_event_card"
+              >
+                <div className="st_event_date">
+                  <span className="st_event_month">Mar</span>
+                  <span className="st_event_day">17-18</span>
+                </div>
+                <div className="st_event_details">
+                  <h3>ITE Virtual Conference</h3>
+                  <div className="st_event_meta">Online</div>
+                  <div className="st_event_info">Institute of Transportation Engineers virtual conference on transportation planning and engineering.</div>
+                </div>
+              </a>
+            </div>
+            <div className="st_cta_buttons">
+              <Button
+                variant="blue"
+                label="Meet Up at an Event"
+                onClick={() => {
+                  window.location.href = "mailto:kieran@3dstreet.com?subject=Meeting%20up%20at%20an%20event&body=Hey%20Kieran%2C%20can%20we%20meetup%20and%20chat%20more%20about%20urban%20geospatial%20visualizations%20over%20coffee%20%2F%20beer%20%2F%20lunch%20%2F%20etc";
+                }}
+              />
+              <Button
+                variant="transparent-dark"
+                label="Book Video Call"
+                onClick={() => {
+                  window.open("https://calendar.app.google/ohjYMBPuLjGupHov5", "_blank", "noopener,noreferrer");
+                }}
+              />
+            </div>
+          </div>
+        </section>
+
         {/* BLOG SECTION */}
         <section className="st_blog">
           <div className="st_blog_left_dot" />
