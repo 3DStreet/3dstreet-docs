@@ -14,6 +14,7 @@ Users can create streets with the new Managed Street format using the 3DStreet E
 
 - [Managed Street Component](./component-managed-street.md)
 - [Street Segment Component](./component-street-segment.md)
+- [Clone Mode Reference](./clone-modes.md)
 - [Managed Street JSON Format](./managed-street-json-format.md)
 
 # Further Research
