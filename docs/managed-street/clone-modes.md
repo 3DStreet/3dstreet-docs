@@ -6,11 +6,13 @@ sidebar_position: 3.5
 
 The `street-generated-clones` component places 3D models along the Z-axis (length) of a street segment. The segment extends from `+length/2` to `-length/2`. Four placement modes are available, each designed for different use cases.
 
-## `mode: "fixed"` — Equal-Spaced Slots
+## `mode: "fixed"` — Fill Every Grid Slot
 
-Places clones at regular intervals along the segment. The number of clones is determined automatically: `numClones = floor(length / spacing)`. The `cycleOffset` property (0–1, default 0.5) shifts the starting position as a fraction of `spacing`.
+Places a clone at every slot in an evenly-spaced grid along the segment. The number of clones is determined automatically: `numClones = floor(length / spacing)`. The `cycleOffset` property (0–1, default 0.5) shifts the starting position as a fraction of `spacing`.
 
-Models are placed at their centerpoint regardless of model dimensions — a 5m-wide building and a 20m-wide building both get the same slot size.
+Models are placed at their centerpoint regardless of model dimensions. When `modelsArray` contains multiple entries, each clone gets a **randomly selected** model (using seeded RNG) — so despite the name "fixed," only the *positions* are fixed. Model selection is random, the same as `random` mode.
+
+> **`fixed` vs `random`:** These two modes share the same underlying grid. `fixed` fills *every* grid slot. `random` fills only a *subset* — it shuffles the same grid and takes the first `count` positions. Both randomly select which model to place from `modelsArray`. See [How `fixed` and `random` relate](#how-fixed-and-random-relate) for details.
 
 ```
 spacing = 15m, cycleOffset = 0.5
@@ -60,14 +62,13 @@ Regularly spaced objects like street trees, lamp posts, bollards — objects whe
 
 ---
 
-## `mode: "random"` — Random Subset of Fixed Grid Positions
+## `mode: "random"` — Fill Some Grid Slots
 
-Creates a grid of evenly-spaced candidate positions (same grid as `fixed` mode), then **shuffles** the grid using a seeded Fisher-Yates shuffle and takes the first `count` positions. This means:
+Creates the same evenly-spaced grid as `fixed` mode, then **shuffles** the grid using a seeded Fisher-Yates shuffle and takes the first `count` positions. The result is a sparse, irregular distribution with a guaranteed minimum separation between clones.
 
-- The minimum distance between any two clones is guaranteed to be `>= spacing` (since they come from a grid)
-- Positions are randomly distributed but constrained to grid points
-- **Model dimensions are NOT considered** — placement is by centerpoint only
-- Multiple `modelsArray` entries are selected randomly per clone (seeded RNG)
+- Positions are randomly selected from the grid, so minimum distance is always `>= spacing`
+- Model dimensions are not considered — placement is by centerpoint only
+- Model selection from `modelsArray` is random per clone (same as `fixed` mode)
 
 ```
 spacing = 10m, count = 3, length = 60m
@@ -82,14 +83,6 @@ After shuffle, pick first 3:
 |         X                 X          X     |  X = placed clone
 +--------------------------------------------+
         -15                 5         25
-
-Models placed at centerpoints — no awareness of model width:
-+--------------------------------------------+
-|     [========]      [==]     [==========]  |
-|         X            X           X         |
-+--------------------------------------------+
-     Buildings may overhang or have gaps because
-     placement is by centerpoint, not by edges.
 ```
 
 ### Properties
@@ -102,7 +95,7 @@ Models placed at centerpoints — no awareness of model width:
 
 ### Use case
 
-Scattered objects like parked cars, pedestrians, random vegetation — things that should appear irregularly distributed with guaranteed minimum separation. **NOT suitable for buildings** that need edge-to-edge alignment (use `fit` mode instead).
+Scattered objects like parked cars, pedestrians, random vegetation — things that should appear irregularly distributed with guaranteed minimum separation.
 
 ### Example
 
@@ -164,18 +157,20 @@ Placing a single landmark, sign, or feature element on a segment.
 
 ## `mode: "fit"` — Dimension-Aware Tiling
 
-The only mode that uses model dimensions. Uses a hardcoded lookup table of `buildingWidths` (Z-axis extent) and `buildingDepths` (X-axis extent) for each supported model ID. Models are tiled **end-to-end** along the segment:
+The only mode that uses model dimensions. Uses a lookup table of known widths (Z-axis extent) and depths (X-axis extent) for supported model IDs. Models are tiled **end-to-end** along the segment with no overlaps or irregular gaps:
 
 1. Start at `+length/2`
 2. Look up the next model's width from the table (default 10m if unknown)
 3. Check if it fits in the remaining space
 4. Place it so its edge (not center) aligns with the previous model's edge + `spacing` gap
-5. Advance by `buildingWidth + spacing`
+5. Advance by `modelWidth + spacing`
 6. Cycle through `modelsArray` sequentially (index % length)
 
-The `justifyWidth` property aligns buildings along the X-axis (cross-street direction) using their depth:
-- `left`: building's right edge aligns with segment's left edge
-- `right`: building's left edge aligns with segment's right edge
+Unlike `fixed` and `random`, model selection is **sequential** — models cycle through `modelsArray` in order rather than being randomly picked.
+
+The `justifyWidth` property aligns models along the X-axis (cross-street direction) using their depth:
+- `left`: model's right edge aligns with segment's left edge
+- `right`: model's left edge aligns with segment's right edge
 - `center`: uses `positionX` as-is
 
 ```
@@ -187,15 +182,15 @@ modelsArray = [A (8m wide), B (12m wide), C (6m wide)], spacing = 1m
  ← 8m →1← 12m    →1←6m→1← 8m →1← 12m    →1←6m→
          ↑ spacing gaps
 
-Edge-to-edge tiling: each building's edges touch the gap,
+Edge-to-edge tiling: each model's edges touch the gap,
 not centered on uniform grid points. No overlap, no uneven gaps.
 
 justifyWidth effect (cross-section, X-axis):
                Segment Width
          ←─────────────────────→
-left:    |[Building]            |  building hugs left edge
-center:  |     [Building]      |  building centered
-right:   |            [Building]|  building hugs right edge
+left:    |[Model]               |  model hugs left edge
+center:  |      [Model]        |  model centered
+right:   |               [Model]|  model hugs right edge
 ```
 
 ### Properties
@@ -208,17 +203,25 @@ right:   |            [Building]|  building hugs right edge
 
 ### Use case
 
-Buildings, walls, fences — anything that should tile seamlessly along a street edge with no overlaps or irregular gaps.
+Buildings, walls, fences, seawalls — anything that should tile seamlessly along a street edge with no overlaps or irregular gaps.
 
-### Example
+### Examples
 
 ```javascript
+// Buildings tiled along a street edge
 {
   mode: "fit",
   modelsArray: "SM3D_Bld_Mixed_4fl, SM3D_Bld_Mixed_5fl, SM3D_Bld_Mixed_4fl_2",
   spacing: 0,
   justifyWidth: "left",
   facing: 270
+}
+
+// Fence sections tiled end-to-end
+{
+  mode: "fit",
+  modelsArray: "fence",
+  spacing: 0
 }
 ```
 
@@ -248,13 +251,28 @@ These properties are available across all clone modes:
 | positionX | number | 0 | X-axis offset from segment center |
 | positionY | number | 0 | Y-axis (vertical) offset |
 
+## How `fixed` and `random` Relate
+
+These two modes are closely related — they share the same underlying grid mechanism:
+
+| | `fixed` | `random` |
+|---|---|---|
+| **Slots filled** | All of them | A subset (`count` out of total) |
+| **Position order** | Sequential (slot 0, 1, 2...) | Shuffled (random grid positions) |
+| **Starting offset** | Controlled by `cycleOffset` | Starts at `-length/2 + spacing/2` (no `cycleOffset`) |
+| **Model selection** | Random from `modelsArray` | Random from `modelsArray` |
+
+If you set `count` equal to the total number of grid slots, `random` would place the same number of clones as `fixed` — just in shuffled positions and without `cycleOffset` support.
+
+A simple way to think about it:
+- **`fixed`** = fill every grid slot
+- **`random`** = fill some grid slots (randomly chosen)
+
+Both modes randomly select *which model* goes in each slot from `modelsArray`. Neither mode is aware of model dimensions.
+
 ## Choosing the Right Mode
 
 - **Street trees, lamp posts, bollards** at regular intervals: use `fixed`
 - **Vehicles, pedestrians, scattered objects** with irregular placement: use `random`
 - **A single sign, landmark, or bus stop**: use `single`
-- **Buildings, walls, fences** that need to tile without gaps: use `fit`
-
-:::caution
-`random` mode does not consider model dimensions. If you use it with buildings, models will be placed by centerpoint and may overlap or leave irregular gaps. Use `fit` mode for buildings.
-:::
+- **Buildings, walls, fences, seawalls** that need to tile without gaps: use `fit`
