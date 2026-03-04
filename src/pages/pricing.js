@@ -5,62 +5,91 @@ import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
 
 export default function PricingPage() {
-  const plans = [
-    {
-      name: 'Community Edition',
-      price: 'Free',
-      description: 'Perfect for personal projects and exploration',
-      privacy: 'public',
-      features: [
-        'Store unlimited scenes',
-        'Prototype street configurations',
-        'Access hundreds of 3D models',
-        'Import from Streetmix and StreetPlan',
-        'Download unlimited JPEG snapshots (with watermark)',
-        <><img src="/img/token-geo.png" alt="Geo Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>3x</strong> Geospatial tokens</>,
-        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>5x</strong> AI generation tokens</>,
-        'Community support via Discord'
-      ],
-      buttonLabel: 'Start Now',
-      buttonHref: 'https://3dstreet.app',
-      buttonVariant: 'blue'
-    },
-    {
-      name: 'Pro',
-      price: '$10',
+  const [billingPeriod, setBillingPeriod] = useState('monthly'); // 'monthly' | 'annual'
+
+  const freePlan = {
+    name: 'Free',
+    price: 'Free',
+    description: 'Perfect for personal projects and exploration',
+    privacy: 'public',
+    features: [
+      'Store unlimited scenes',
+      'Prototype street configurations',
+      'Access hundreds of 3D models',
+      'Import from Streetmix and StreetPlan',
+      'Download JPEG snapshots (with watermark)',
+      <><img src="/img/token-geo.png" alt="Geo Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>3x</strong> Geospatial tokens</>,
+      <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>5x</strong> AI generation tokens</>,
+      'Community support via Discord'
+    ],
+    buttonLabel: 'Start Now',
+    buttonHref: 'https://3dstreet.app',
+    buttonVariant: 'blue'
+  };
+
+  const proPlan = {
+    name: 'Pro',
+    description: 'For individual professionals creating street designs',
+    privacy: 'public',
+    monthly: {
+      price: '$14',
       subtitle: 'per month',
-      description: 'For individual professionals creating street designs',
-      privacy: 'public',
-      features: [
-        'Everything in Free, plus:',
-        'Download JPEG snapshots without watermark',
-        'Unlimited Geospatial 3D Maps',
-        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>100</strong> AI generation tokens per month</>,
-        'Import custom 3D models',
-        'Reference custom SVG and glTF files',
-        'Export "AR Ready" glTF for Augmented Reality apps',
-        'Multiple street section support'
-      ],
-      buttonLabel: 'Activate Pro Edition',
-      buttonHref: 'https://3dstreet.app/#payment-model',
-      buttonVariant: 'blue'
+      tokens: '140',
+      tokenLabel: 'tokens/mo',
     },
-    {
-      name: 'Pro Annual',
-      price: '$84',
-      subtitle: 'per year',
-      savings: '(save 30%)',
-      description: 'Best value for individual professionals',
-      privacy: 'public',
-      features: [
-        'Everything in Pro, plus:',
-        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>840</strong> bonus AI generation tokens on first purchase</>,
-        'Save 30% with annual billing'
-      ],
-      buttonLabel: 'Save with Pro Annual',
-      buttonHref: 'https://3dstreet.app/#payment-model-annual',
-      buttonVariant: 'blue'
+    annual: {
+      price: '$11.67',
+      subtitle: 'per month',
+      totalPrice: '$140/yr',
+      tokens: '1,400',
+      tokenLabel: 'tokens upfront',
+      topUp: '+140',
+      topUpLabel: 'tokens/mo top-up',
     },
+    features: [
+      'Everything in Free, plus:',
+      'Snapshots without watermark',
+      'Unlimited Geospatial 3D Maps',
+      <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>{billingPeriod === 'monthly' ? '140' : '1,400'}</strong> AI generation tokens {billingPeriod === 'monthly' ? 'per month' : 'upfront'}</>,
+      'Import custom 3D models',
+      'AI image generation',
+      'Export "AR Ready" glTF for Augmented Reality apps',
+    ],
+    buttonLabel: 'Activate Pro',
+    buttonHref: billingPeriod === 'monthly' ? 'https://3dstreet.app/#payment-modal' : 'https://3dstreet.app/#payment-modal-annual',
+    buttonVariant: 'blue'
+  };
+
+  const maxPlan = {
+    name: 'Max',
+    description: 'For power users who need more AI generation',
+    privacy: 'public',
+    monthly: {
+      price: '$50',
+      subtitle: 'per month',
+      tokens: '500',
+      tokenLabel: 'tokens/mo',
+    },
+    annual: {
+      price: '$41.67',
+      subtitle: 'per month',
+      totalPrice: '$500/yr',
+      tokens: '5,000',
+      tokenLabel: 'tokens upfront',
+      topUp: '+500',
+      topUpLabel: 'tokens/mo top-up',
+    },
+    features: [
+      'Everything in Pro, plus:',
+      <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>{billingPeriod === 'monthly' ? '500' : '5,000'}</strong> AI generation tokens {billingPeriod === 'monthly' ? 'per month' : 'upfront'}</>,
+      '3.5x more AI generation tokens vs Pro',
+    ],
+    buttonLabel: 'Activate Max',
+    buttonHref: billingPeriod === 'monthly' ? 'https://3dstreet.app/#payment-modal' : 'https://3dstreet.app/#payment-modal-annual',
+    buttonVariant: 'blue'
+  };
+
+  const orgPlans = [
     {
       name: 'Pro Team',
       price: '$5,000',
@@ -130,6 +159,63 @@ export default function PricingPage() {
     }
   ];
 
+  const renderPaidCard = (plan) => {
+    const billing = plan[billingPeriod];
+    return (
+      <div className="st_pricing_card">
+        <h3 className="st_plan_name">{plan.name}</h3>
+        <div className="st_plan_price">
+          <span className="st_price_amount">{billing.price}</span>
+          <span className="st_price_period">
+            {billing.subtitle}
+            {billingPeriod === 'annual' && (
+              <span className="st_price_total"> ({billing.totalPrice})</span>
+            )}
+          </span>
+        </div>
+        <div className="st_token_badge">
+          <img src="/img/token-image.png" alt="Token" style={{width: '16px', height: '16px'}} />
+          <span className="st_token_amount">{billing.tokens}</span>
+          <span className="st_token_label">{billing.tokenLabel}</span>
+        </div>
+        {billingPeriod === 'annual' && billing.topUp && (
+          <div className="st_token_badge st_token_topup">
+            <img src="/img/token-image.png" alt="Token" style={{width: '14px', height: '14px'}} />
+            <span className="st_topup_amount">{billing.topUp}</span>
+            <span className="st_token_label">{billing.topUpLabel}</span>
+          </div>
+        )}
+        <p className="st_plan_description">{plan.description}</p>
+        {plan.privacy && (
+          <span
+            className={`st_privacy_badge st_privacy_${plan.privacy}`}
+            title={plan.privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+          >
+            {plan.privacy.toUpperCase()}
+          </span>
+        )}
+        <Button
+          variant={plan.buttonVariant}
+          label={plan.buttonLabel}
+          href={plan.buttonHref}
+          target={plan.buttonHref.startsWith('http') ? '_blank' : undefined}
+        />
+        <ul className="st_plan_features">
+          {plan.features.map((feature, idx) => {
+            const isString = typeof feature === 'string';
+            const isEverythingIn = isString && feature.startsWith('Everything in');
+            return (
+              <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
+                {!isEverythingIn && <CheckIcon className="st_check_icon" />}
+                <span>{feature}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+  };
+
   return (
     <>
       <meta charSet="UTF-8" />
@@ -150,7 +236,7 @@ export default function PricingPage() {
         content="Choose the perfect 3DStreet plan for your street design needs. From free personal use to custom enterprise solutions."
       />
       <meta property="og:image" content="/img/website/social-website-preview.jpg" />
-      
+
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="3dstreet.org" />
       <meta property="twitter:url" content="https://3dstreet.org/pricing" />
@@ -192,50 +278,61 @@ export default function PricingPage() {
                 Start free and scale as you grow. All plans include core 3D street design features.
               </p>
 
+              {/* Billing Toggle */}
+              <div className="st_billing_toggle">
+                <button
+                  className={`st_toggle_btn ${billingPeriod === 'monthly' ? 'active' : ''}`}
+                  onClick={() => setBillingPeriod('monthly')}
+                >
+                  Monthly
+                </button>
+                <button
+                  className={`st_toggle_btn ${billingPeriod === 'annual' ? 'active' : ''}`}
+                  onClick={() => setBillingPeriod('annual')}
+                >
+                  Annual
+                  <span className="st_save_badge">Save 17%</span>
+                </button>
+              </div>
+
               {/* Pricing Cards */}
               <div className="st_pricing_cards">
-                {plans.slice(0, 3).map((plan, index) => (
-                  <div key={index} className={`st_pricing_card ${plan.recommended ? 'recommended' : ''}`}>
-                    {/* Hiding badge for now */
-                      false && plan.recommended && (
-                      <div className="st_recommended_badge">Best Value</div>
-                    )}
-                    <h3 className="st_plan_name">{plan.name}</h3>
-                    <div className="st_plan_price">
-                      <span className="st_price_amount">{plan.price}</span>
-                      <span className="st_price_period">{plan.subtitle} <span className="st_price_savings">{plan.savings}</span></span>
-                      
-
-                    </div>
-                    <p className="st_plan_description">{plan.description}</p>
-                    {plan.privacy && (
-                      <span
-                        className={`st_privacy_badge st_privacy_${plan.privacy}`}
-                        title={plan.privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
-                      >
-                        {plan.privacy.toUpperCase()}
-                      </span>
-                    )}
-                    <Button
-                      variant={plan.buttonVariant}
-                      label={plan.buttonLabel}
-                      href={plan.buttonHref}
-                      target={plan.buttonHref.startsWith('http') ? '_blank' : undefined}
-                    />
-                    <ul className="st_plan_features">
-                      {plan.features.map((feature, idx) => {
-                        const isString = typeof feature === 'string';
-                        const isEverythingIn = isString && feature.startsWith('Everything in');
-                        return (
-                          <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
-                            {!isEverythingIn && <CheckIcon className="st_check_icon" />}
-                            <span>{feature}</span>
-                          </li>
-                        );
-                      })}
-                    </ul>
+                {/* Free Card */}
+                <div className="st_pricing_card">
+                  <h3 className="st_plan_name">{freePlan.name}</h3>
+                  <div className="st_plan_price">
+                    <span className="st_price_amount">{freePlan.price}</span>
                   </div>
-                ))}
+                  <p className="st_plan_description">{freePlan.description}</p>
+                  {freePlan.privacy && (
+                    <span
+                      className={`st_privacy_badge st_privacy_${freePlan.privacy}`}
+                      title="All user generated scenes are public and remixable."
+                    >
+                      {freePlan.privacy.toUpperCase()}
+                    </span>
+                  )}
+                  <Button
+                    variant={freePlan.buttonVariant}
+                    label={freePlan.buttonLabel}
+                    href={freePlan.buttonHref}
+                    target="_blank"
+                  />
+                  <ul className="st_plan_features">
+                    {freePlan.features.map((feature, idx) => (
+                      <li key={idx}>
+                        <CheckIcon className="st_check_icon" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Pro Card */}
+                {renderPaidCard(proPlan)}
+
+                {/* Max Card */}
+                {renderPaidCard(maxPlan)}
               </div>
 
               {/* Organizations Section - Pro Team and Pro Agency */}
@@ -244,28 +341,28 @@ export default function PricingPage() {
                 <div className="st_org_cards">
                   {/* Pro Team Card */}
                   <div className="st_pricing_card st_org_card">
-                    <h3 className="st_plan_name">{plans[3].name}</h3>
+                    <h3 className="st_plan_name">{orgPlans[0].name}</h3>
                     <div className="st_plan_price">
-                      <span className="st_price_amount">{plans[3].price}</span>
-                      <span className="st_price_period">{plans[3].subtitle}</span>
+                      <span className="st_price_amount">{orgPlans[0].price}</span>
+                      <span className="st_price_period">{orgPlans[0].subtitle}</span>
                     </div>
-                    <p className="st_plan_description">{plans[3].description}</p>
-                    {plans[3].privacy && (
+                    <p className="st_plan_description">{orgPlans[0].description}</p>
+                    {orgPlans[0].privacy && (
                       <span
-                        className={`st_privacy_badge st_privacy_${plans[3].privacy}`}
-                        title={plans[3].privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+                        className={`st_privacy_badge st_privacy_${orgPlans[0].privacy}`}
+                        title={orgPlans[0].privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
                       >
-                        {plans[3].privacy.toUpperCase()}
+                        {orgPlans[0].privacy.toUpperCase()}
                       </span>
                     )}
                     <Button
-                      variant={plans[3].buttonVariant}
-                      label={plans[3].buttonLabel}
-                      href={plans[3].buttonHref}
-                      target={plans[3].buttonHref.startsWith('http') ? '_blank' : undefined}
+                      variant={orgPlans[0].buttonVariant}
+                      label={orgPlans[0].buttonLabel}
+                      href={orgPlans[0].buttonHref}
+                      target={orgPlans[0].buttonHref.startsWith('http') ? '_blank' : undefined}
                     />
                     <ul className="st_plan_features">
-                      {plans[3].features.map((feature, idx) => {
+                      {orgPlans[0].features.map((feature, idx) => {
                         const isString = typeof feature === 'string';
                         const isEverythingIn = isString && feature.startsWith('Everything in');
                         return (
@@ -295,27 +392,27 @@ export default function PricingPage() {
 
                   {/* Pro Agency Card */}
                   <div className="st_pricing_card st_org_card st_agency_card">
-                    <h3 className="st_plan_name">{plans[4].name}</h3>
+                    <h3 className="st_plan_name">{orgPlans[1].name}</h3>
                     <div className="st_plan_price">
-                      <span className="st_price_amount">{plans[4].price}</span>
-                      <span className="st_price_period">{plans[4].subtitle}</span>
+                      <span className="st_price_amount">{orgPlans[1].price}</span>
+                      <span className="st_price_period">{orgPlans[1].subtitle}</span>
                     </div>
-                    <p className="st_plan_description">{plans[4].description}</p>
-                    {plans[4].privacy && (
+                    <p className="st_plan_description">{orgPlans[1].description}</p>
+                    {orgPlans[1].privacy && (
                       <span
-                        className={`st_privacy_badge st_privacy_${plans[4].privacy}`}
-                        title={plans[4].privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+                        className={`st_privacy_badge st_privacy_${orgPlans[1].privacy}`}
+                        title={orgPlans[1].privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
                       >
-                        {plans[4].privacy.toUpperCase()}
+                        {orgPlans[1].privacy.toUpperCase()}
                       </span>
                     )}
                     <Button
-                      variant={plans[4].buttonVariant}
-                      label={plans[4].buttonLabel}
-                      href={plans[4].buttonHref}
+                      variant={orgPlans[1].buttonVariant}
+                      label={orgPlans[1].buttonLabel}
+                      href={orgPlans[1].buttonHref}
                     />
                     <ul className="st_plan_features">
-                      {plans[4].features.map((feature, idx) => {
+                      {orgPlans[1].features.map((feature, idx) => {
                         const isString = typeof feature === 'string';
                         const isEverythingIn = isString && feature.startsWith('Everything in');
                         return (
@@ -401,10 +498,50 @@ export default function PricingPage() {
         .st_pricing_page .st_hero_paragraph {
           text-align: center;
           font-size: 1.25rem;
-          margin-bottom: 3rem;
+          margin-bottom: 2rem;
           color: rgba(255, 255, 255, 0.9);
           width: 100%;
           max-width: 800px;
+        }
+
+        /* Billing Toggle */
+        .st_billing_toggle {
+          display: inline-flex;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 8px;
+          padding: 4px;
+          margin-bottom: 2.5rem;
+        }
+
+        .st_toggle_btn {
+          padding: 8px 24px;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 0.95rem;
+          background: transparent;
+          color: rgba(255, 255, 255, 0.6);
+          transition: all 0.2s ease;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .st_toggle_btn.active {
+          background: #fff;
+          color: #1a1a1a;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .st_save_badge {
+          font-size: 0.75rem;
+          color: #0eaf00;
+          font-weight: 600;
+        }
+
+        .st_toggle_btn.active .st_save_badge {
+          color: #0eaf00;
         }
 
         .st_pricing_cards {
@@ -413,23 +550,7 @@ export default function PricingPage() {
           gap: 1.5rem;
           width: 100%;
           max-width: 1000px;
-          margin: 2rem auto;
-        }
-
-        .st_custom_plan_wrapper {
-          display: flex;
-          justify-content: center;
-          margin: 0 auto 4rem;
-          max-width: 1200px;
-          width: 100%;
-        }
-
-        .st_team_plan_wrapper {
-          display: flex;
-          justify-content: center;
-          margin: 3rem auto 4rem;
-          max-width: 1000px;
-          width: 100%;
+          margin: 0 auto 2rem;
         }
 
         .st_pricing_card {
@@ -443,122 +564,44 @@ export default function PricingPage() {
           min-height: 480px;
         }
 
-        .st_custom_card {
-          max-width: 420px;
-          width: 100%;
-        }
-
-        .st_team_card {
-          width: 100%;
-          min-height: auto;
-          padding: 2rem;
-        }
-
-        .st_team_card_content {
-          display: grid;
-          grid-template-columns: 1fr 2fr 1fr;
-          gap: 2rem;
-          align-items: center;
-        }
-
-        .st_team_info {
-          text-align: left;
-        }
-
-        .st_team_features {
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-
-        .st_team_buttons {
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-        }
-
-        .st_team_buttons button {
-          margin: 0;
-        }
-
-        .st_team_learn_more {
-          text-align: center;
-          color: #764ba2;
-          text-decoration: none;
-          font-size: 0.95rem;
-          font-weight: 500;
-          margin-top: 0.5rem;
-          transition: color 0.2s ease;
-        }
-
-        .st_team_learn_more:hover {
-          color: #5a3780;
-          text-decoration: underline;
-        }
-
-        /* Force purple text color for Schedule a Demo button */
-        .purple-outline-button {
-          background: transparent !important;
-          border: 2px solid #764ba2 !important;
-          color: #764ba2 !important;
-        }
-
-        /* Target the anchor tag and all nested elements more specifically */
-        a.purple-outline-button,
-        a.purple-outline-button:link,
-        a.purple-outline-button:visited,
-        .purple-outline-button[href] {
-          color: #764ba2 !important;
-        }
-
-        .purple-outline-button *,
-        .purple-outline-button span {
-          color: inherit !important;
-        }
-
-        .purple-outline-button:hover {
-          background: #764ba2 !important;
-        }
-
-        /* Override the button module's .wrapper[href] color on hover */
-        a.purple-outline-button:hover,
-        .purple-outline-button[href]:hover,
-        .purple-outline-button:hover[href] {
-          color: white !important;
-        }
-
-        .purple-outline-button:hover *,
-        .purple-outline-button:hover span {
-          color: white !important;
-        }
-
-        /* Disable highlighting and scaling for recommended card */
-        .st_pricing_card.recommended {
-          border-color: #e5e5e5;
-          transform: none;
-          box-shadow: none;
-        }
-
-        .st_recommended_badge {
-          position: absolute;
-          top: -12px;
-          left: 50%;
-          transform: translateX(-50%);
-          background: var(--primary-color, #0066ff);
-          color: white;
-          padding: 0.25rem 1rem;
-          border-radius: 20px;
-          font-size: 0.875rem;
-          font-weight: 600;
-          white-space: nowrap;
-        }
-
         .st_plan_name {
           font-size: 2rem;
           margin-bottom: 0.35rem;
           text-align: center;
           color: #1a1a1a;
           font-weight: 400;
+        }
+
+        /* Token Badge */
+        .st_token_badge {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 8px 12px;
+          background: #1a1a1a;
+          border-radius: 6px;
+          margin-bottom: 8px;
+        }
+
+        .st_token_amount {
+          font-weight: 600;
+          color: #fff;
+          font-size: 0.95rem;
+        }
+
+        .st_token_label {
+          color: #9ca3af;
+          font-size: 0.8rem;
+        }
+
+        .st_token_topup {
+          padding: 6px 12px;
+        }
+
+        .st_topup_amount {
+          font-weight: 600;
+          color: #0eaf00;
+          font-size: 0.85rem;
         }
 
         /* Privacy Badge Styles */
@@ -586,51 +629,6 @@ export default function PricingPage() {
           background: rgba(16, 185, 129, 0.1);
         }
 
-        /* Organizations Section */
-        .st_org_section {
-          width: 100%;
-          max-width: 1000px;
-          margin: 3rem auto 4rem;
-        }
-
-        .st_org_heading {
-          text-align: center;
-          font-size: 2rem;
-          color: #fff;
-          font-family: "Kanit";
-          font-weight: normal;
-          margin-bottom: 2rem;
-        }
-
-        .st_org_cards {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1.5rem;
-        }
-
-        .st_org_card {
-          min-height: auto;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .st_org_card .st_plan_features {
-          flex-grow: 1;
-        }
-
-        .st_org_card_footer {
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-          margin-top: 1rem;
-          padding-top: 1rem;
-          border-top: 1px solid #e5e5e5;
-        }
-
-        .st_agency_card {
-          border-color: #10b981;
-        }
-
         .st_plan_price {
           margin-bottom: 1rem;
           text-align: center;
@@ -649,9 +647,9 @@ export default function PricingPage() {
           margin-top: -0.5rem;
         }
 
-        .st_price_savings {
-          font-size: 0.875rem;
-          color: #10b981;
+        .st_price_total {
+          color: #6b7280;
+          font-size: 0.8rem;
         }
 
         .st_plan_description {
@@ -706,6 +704,101 @@ export default function PricingPage() {
           height: 16px;
         }
 
+        /* Organizations Section */
+        .st_org_section {
+          width: 100%;
+          max-width: 1000px;
+          margin: 3rem auto 4rem;
+        }
+
+        .st_org_heading {
+          text-align: center;
+          font-size: 2rem;
+          color: #fff;
+          font-family: "Kanit";
+          font-weight: normal;
+          margin-bottom: 2rem;
+        }
+
+        .st_org_cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+        }
+
+        .st_org_card {
+          min-height: auto;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .st_org_card .st_plan_features {
+          flex-grow: 1;
+        }
+
+        .st_org_card_footer {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          margin-top: 1rem;
+          padding-top: 1rem;
+          border-top: 1px solid #e5e5e5;
+        }
+
+        .st_agency_card {
+          border-color: #10b981;
+        }
+
+        .st_team_learn_more {
+          text-align: center;
+          color: #764ba2;
+          text-decoration: none;
+          font-size: 0.95rem;
+          font-weight: 500;
+          margin-top: 0.5rem;
+          transition: color 0.2s ease;
+        }
+
+        .st_team_learn_more:hover {
+          color: #5a3780;
+          text-decoration: underline;
+        }
+
+        /* Force purple text color for Schedule a Demo button */
+        .purple-outline-button {
+          background: transparent !important;
+          border: 2px solid #764ba2 !important;
+          color: #764ba2 !important;
+        }
+
+        a.purple-outline-button,
+        a.purple-outline-button:link,
+        a.purple-outline-button:visited,
+        .purple-outline-button[href] {
+          color: #764ba2 !important;
+        }
+
+        .purple-outline-button *,
+        .purple-outline-button span {
+          color: inherit !important;
+        }
+
+        .purple-outline-button:hover {
+          background: #764ba2 !important;
+        }
+
+        a.purple-outline-button:hover,
+        .purple-outline-button[href]:hover,
+        .purple-outline-button:hover[href] {
+          color: white !important;
+        }
+
+        .purple-outline-button:hover *,
+        .purple-outline-button:hover span {
+          color: white !important;
+        }
+
+        /* FAQ Section */
         .st_faq_section {
           margin: 5rem 0;
         }
@@ -745,6 +838,7 @@ export default function PricingPage() {
           line-height: 1.6;
         }
 
+        /* CTA Section */
         .st_cta_section {
           text-align: center;
           padding: 4rem 0;
@@ -787,15 +881,7 @@ export default function PricingPage() {
           .st_pricing_cards {
             grid-template-columns: 1fr;
             max-width: 400px;
-            margin: 2rem auto;
-          }
-
-          .st_custom_plan_wrapper {
-            padding: 0 1rem;
-          }
-
-          .st_custom_card {
-            max-width: 500px;
+            margin: 0 auto 2rem;
           }
 
           .st_org_cards {
@@ -810,10 +896,6 @@ export default function PricingPage() {
         }
 
         @media (max-width: 768px) {
-          .st_pricing_card.recommended {
-            transform: none;
-          }
-
           .st_pricing_card {
             min-height: auto;
           }
@@ -829,7 +911,6 @@ export default function PricingPage() {
             width: 100%;
           }
 
-          /* Force center alignment for CTA buttons on mobile */
           .st_cta_section .st_cta_buttons {
             display: flex;
             flex-direction: column;
