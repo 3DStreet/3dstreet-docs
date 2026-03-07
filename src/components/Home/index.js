@@ -99,7 +99,7 @@ export default function Home({ recentPosts }) {
               />
           </div>
 
-        {/* Rotating Announcement Pill - Centered Container */}
+        {/* Rotating Announcement Pill - Centered Container
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '12px', marginBottom: '12px' }}>
           <div
             className="pro-team-pill"
@@ -134,6 +134,7 @@ export default function Home({ recentPosts }) {
             <span style={{ fontSize: '18px', color: '#9b87f5', marginLeft: '4px' }}>→</span>
           </div>
         </div>
+        */}
 
         {/* HEADER SECTION */}
         <header className="st_header_container">
@@ -435,38 +436,6 @@ export default function Home({ recentPosts }) {
               Meet us in person or online. Book a meeting to chat about your project, or attend an event to see 3DStreet in action.
             </p>
             <div className="st_events_grid">
-              <a
-                href="https://riverside.com/webinar/registration/eyJzbHVnIjoia2llcmFuLWZhcnJzLXN0dWRpbyIsImV2ZW50SWQiOiI2OTgzZGYyZjJjNWMwOTYwYzAxNzdmNmQiLCJwcm9qZWN0SWQiOiI2OTgzZGYyZmM0NmQ4MDE1MTRjNTYxZTMifQ=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="st_event_card"
-              >
-                <div className="st_event_date">
-                  <span className="st_event_month">Feb</span>
-                  <span className="st_event_day">26</span>
-                </div>
-                <div className="st_event_details">
-                  <h3>Free Webinar: Creating Street Visuals to Sway Stakeholders</h3>
-                  <div className="st_event_meta">Online</div>
-                  <div className="st_event_info">With John Boyle from Greater Philadelphia Bicycle Coalition. 1pm ET / 10am PT.</div>
-                </div>
-              </a>
-              <a
-                href="https://njbwc.org/summit-2026/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="st_event_card"
-              >
-                <div className="st_event_date">
-                  <span className="st_event_month">Mar</span>
-                  <span className="st_event_day">7</span>
-                </div>
-                <div className="st_event_details">
-                  <h3>New Jersey Bike & Walk Summit</h3>
-                  <div className="st_event_meta">Princeton, NJ</div>
-                  <div className="st_event_info">Join us at the annual summit bringing together advocates, planners, and policymakers.</div>
-                </div>
-              </a>
               <a
                 href="https://www.transformingtransportation.org/"
                 target="_blank"
