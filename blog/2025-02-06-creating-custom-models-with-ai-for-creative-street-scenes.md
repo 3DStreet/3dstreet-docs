@@ -77,7 +77,7 @@ Finally, let's bring your model into 3DStreet. Open the [3DStreet App](https://3
 4. Paste your OptimizeGLB link URL
 5. Adjust scale, position and rotation as needed after adding to the scene
 
-See our [documentation on importing custom 3D models](/docs/3dstreet-editor/custom-models-and-images) for more details on this step. A 3DStreet Pro plan is required to use this feature.
+See our [documentation on importing custom 3D models](/docs/editor-app/custom-models-and-images) for more details on this step. A 3DStreet Pro plan is required to use this feature.
 
 ## Tips for Success
 
