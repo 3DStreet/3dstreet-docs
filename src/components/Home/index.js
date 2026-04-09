@@ -437,35 +437,19 @@ export default function Home({ recentPosts }) {
             </p>
             <div className="st_events_grid">
               <a
-                href="https://www.transformingtransportation.org/"
+                href="https://oats2026.sched.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="st_event_card"
               >
                 <div className="st_event_date">
-                  <span className="st_event_month">Mar</span>
-                  <span className="st_event_day">9-12</span>
+                  <span className="st_event_month">Apr</span>
+                  <span className="st_event_day">22-24</span>
                 </div>
                 <div className="st_event_details">
-                  <h3>Transforming Transportation</h3>
-                  <div className="st_event_meta">Washington, DC</div>
-                  <div className="st_event_info">Global conference on sustainable transport and urban mobility.</div>
-                </div>
-              </a>
-              <a
-                href="https://www.itespringconference.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="st_event_card"
-              >
-                <div className="st_event_date">
-                  <span className="st_event_month">Mar</span>
-                  <span className="st_event_day">17-18</span>
-                </div>
-                <div className="st_event_details">
-                  <h3>ITE Virtual Conference</h3>
-                  <div className="st_event_meta">Online</div>
-                  <div className="st_event_info">Institute of Transportation Engineers virtual conference on transportation planning and engineering.</div>
+                  <h3>Oregon Active Transportation Summit</h3>
+                  <div className="st_event_meta">Portland, OR</div>
+                  <div className="st_event_info">Annual summit bringing together practitioners, advocates, and leaders to advance active transportation and public transit in Oregon.</div>
                 </div>
               </a>
             </div>
