@@ -4,10 +4,90 @@
         <title>3DStreet Blog</title>
         <link>https://3dstreet.org/blog</link>
         <description>3DStreet Blog</description>
-        <lastBuildDate>Sat, 14 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Product Update: Layer Reordering, AI Model Upgrades, and Faster Loading]]></title>
+            <link>https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading</link>
+            <guid>https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading</guid>
+            <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A roundup of 3DStreet updates since February 2026 including layer reordering in the scene graph, next-generation AI models for image and video, faster app loading, autosave on share, expanded StreetPlan integration, and more.]]></description>
+            <content:encoded><![CDATA[<p>Since our last product update in February, we've been focused on one of the most-requested editor features, a major round of AI model upgrades, and a set of performance improvements that make the app noticeably faster to use. Here's what's new.</p>
+<p><img decoding="async" loading="lazy" alt="Product update hero" src="https://3dstreet.org/assets/images/product-update-hero-ec93b1e7614c76627c65964209f55f1b.webp" width="768" height="432" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="layer-reordering-in-the-scene-graph">Layer Reordering in the Scene Graph<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#layer-reordering-in-the-scene-graph" class="hash-link" aria-label="Direct link to Layer Reordering in the Scene Graph" title="Direct link to Layer Reordering in the Scene Graph" translate="no">​</a></h2>
+<p>This has been one of our most-requested features: you can now <strong>drag and drop layers above and below managed streets</strong> in the scene graph panel. Previously, layers were locked in their creation order, which made it difficult to organize complex scenes. Now you can reorder elements freely to match your intended layout, making it much easier to manage scenes with multiple streets, intersections, and standalone objects.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-generation-ai-models">Next-Generation AI Models<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#next-generation-ai-models" class="hash-link" aria-label="Direct link to Next-Generation AI Models" title="Direct link to Next-Generation AI Models" translate="no">​</a></h2>
+<p>We've upgraded nearly every AI model powering the <a href="https://3dstreet.app/generator" target="_blank" rel="noopener noreferrer" class="">3DStreet image and video generators</a>. If you haven't tried AI rendering in a while, now is a great time -- quality is noticeably better and video generation is dramatically faster.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="image-models">Image Models<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#image-models" class="hash-link" aria-label="Direct link to Image Models" title="Direct link to Image Models" translate="no">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="updated image models" src="https://3dstreet.org/assets/images/ai-rendering-updated-models-69c67290915013710c832c0d6d9bc84d.webp" width="768" height="432" class="img_ev3q"></p>
+<ul>
+<li class=""><strong>Nano Banana Pro</strong> from Google is now the default image model</li>
+<li class=""><strong>Seedream</strong> from ByteDance upgraded to 4.5</li>
+<li class="">Added new <strong>Flux 2 Max</strong> model from Black Forest Labs</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="video-models">Video Models<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#video-models" class="hash-link" aria-label="Direct link to Video Models" title="Direct link to Video Models" translate="no">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="updated video models" src="https://3dstreet.org/assets/images/ai-rendering-updated-video-models-3f2486d881dd37f06115eca5e8c765c5.webp" width="768" height="432" class="img_ev3q"></p>
+<ul>
+<li class=""><strong>Veo 3.1 Fast</strong> is now the default video model, generating results in roughly 90 seconds instead of the previous 5+ minutes which caused timeouts for some users</li>
+<li class=""><strong>Kling 3 Pro</strong> replaces Kling 2.5 for video generation</li>
+<li class=""><strong>LTX-2 Fast</strong> continues to be a favorite budget option for users</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="variable-pricing-and-progress-indicators">Variable Pricing and Progress Indicators<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#variable-pricing-and-progress-indicators" class="hash-link" aria-label="Direct link to Variable Pricing and Progress Indicators" title="Direct link to Variable Pricing and Progress Indicators" translate="no">​</a></h3>
+<p>We've introduced variable per-model token pricing for image and video rendering. Now you can see exactly what each image and video generation costs before you run it, allowing you to optimize quality, budget or speed.</p>
+<p>Estimated progress indicators are now calibrated from three months of real-world API data across nearly 900 predictions, so they are more representative of average wait times, but not an absolute progress indicator.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="faster-app-loading">Faster App Loading<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#faster-app-loading" class="hash-link" aria-label="Direct link to Faster App Loading" title="Direct link to Faster App Loading" translate="no">​</a></h2>
+<p>We've made a significant improvement to how quickly the editor becomes usable after signing in. Previously, the app waited for multiple cloud calls to complete before showing anything. This could take 2-5 seconds or more on slower connections.</p>
+<p>Now the editor uses a cached auth state to immediately load while validating and fetching token count in the background. The result is that the editor feels nearly instant on repeat visits.</p>
+<p>We've also added a scene loading indicator so you get visual feedback when loading scenes from the cloud, instead of staring at an empty viewport wondering if anything is happening.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="autosave-on-snapshot-and-share">Autosave on Snapshot and Share<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#autosave-on-snapshot-and-share" class="hash-link" aria-label="Direct link to Autosave on Snapshot and Share" title="Direct link to Autosave on Snapshot and Share" translate="no">​</a></h2>
+<p>Your scene and camera position are now automatically saved when you take a screenshot or share a link. This means the person on the other end always sees your latest changes from the exact camera angle you intended -- no more forgetting to save before sharing.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="expanded-streetplan-integration">Expanded StreetPlan Integration<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#expanded-streetplan-integration" class="hash-link" aria-label="Direct link to Expanded StreetPlan Integration" title="Direct link to Expanded StreetPlan Integration" translate="no">​</a></h2>
+<p>Thanks An and Mike for contributing more integration upgrades to view <a href="https://streetplan.net/" target="_blank" rel="noopener noreferrer" class="">StreetPlan</a> streets in 3DStreet:</p>
+<ul>
+<li class=""><strong>Parking vehicles</strong> now render correctly in 3D, including angle parking configurations</li>
+<li class=""><strong>Gutter segments</strong> have been added to the asset catalog for more accurate curb-to-road transitions</li>
+<li class=""><strong>Improved street labels and segment names</strong> for better visual mapping between StreetPlan designs and 3DStreet scenes</li>
+<li class=""><strong>New asset mappings</strong> for multi-story buildings, bikes, rail transit vehicles, and pickup trucks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="streetmix-elevation-upgrades-and-error-fixes-in-managed-street-beta">Streetmix Elevation Upgrades and Error Fixes in Managed Street (beta)<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#streetmix-elevation-upgrades-and-error-fixes-in-managed-street-beta" class="hash-link" aria-label="Direct link to Streetmix Elevation Upgrades and Error Fixes in Managed Street (beta)" title="Direct link to Streetmix Elevation Upgrades and Error Fixes in Managed Street (beta)" translate="no">​</a></h2>
+<p><a href="https://streetmix.net/" target="_blank" rel="noopener noreferrer" class="">Streetmix</a> recently changed their handling of segment elevation data, switching from integer levels to metric elevation values. This prompted us to clean up elevation across our Managed Street (beta) street segments. 3DStreet Managed Street (beta) uses an integer "level" system (where each level represents 0.15 meters, roughly 6 inches — essentially the height of a standard curb) rather than a specific height value. We've added conversion logic to maintain compatibility with Streetmix's new schema, and this opens the door to more precise segment heights in 3DStreet in the future. We also fixed some elevation calculation bugs that could cause visual artifacts on segment ground surfaces — thank you to users who reported this, it makes our hearts warm to receive bug reports that prove people use this product.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="improved-3d-gaussian-splat-support">Improved 3D Gaussian splat Support<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#improved-3d-gaussian-splat-support" class="hash-link" aria-label="Direct link to Improved 3D Gaussian splat Support" title="Direct link to Improved 3D Gaussian splat Support" translate="no">​</a></h2>
+<p>For those working with 3D-scanned environments, we've upgraded our Gaussian splat support:</p>
+<ul>
+<li class="">Upgraded to the official <strong>Spark v2.0.0 preview</strong> library, which enables...</li>
+<li class=""><strong>Streaming .rad file support</strong> -- splat files can now be loaded via URL parameter, enabling faster loading of large scanned environments</li>
+</ul>
+<p>Gaussian splat support is still highly experimental, use with caution or contact us for support.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quality-of-life">Quality of Life<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#quality-of-life" class="hash-link" aria-label="Direct link to Quality of Life" title="Direct link to Quality of Life" translate="no">​</a></h2>
+<p>A handful of smaller improvements:</p>
+<ul>
+<li class=""><strong>Exported <code>.3dstreet.json</code> files</strong> now use your scene title as the filename</li>
+<li class=""><strong>4x AI render</strong> now shows more statuses including an initial "sending" status while the API call is in progress, so you know it's working when using slower connections or high CPU load</li>
+<li class=""><strong>Menu fade delay removed</strong> for snappier UI interactions</li>
+<li class="">AI function call tracking for better feedback analysis when you rate AI responses. Many of you are rating the LLM responses, thank you.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's Next<a href="https://3dstreet.org/blog/2026/04/06/product-update-layer-reordering-ai-models-and-faster-loading#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next" translate="no">​</a></h2>
+<p>We are working on the following milestones in Q2 and Q3, roughly in this order.</p>
+<ol>
+<li class="">Custom Assets (gltf / glb upload)</li>
+<li class="">Camera Controls + Zoom Fixes</li>
+<li class="">Managed Street Parity w/Legacy Streetmix / Retire Legacy Importer</li>
+<li class="">Tutorial</li>
+<li class="">Panel Design Fixes</li>
+<li class="">Map Controls Design Fix</li>
+<li class="">Grouping</li>
+<li class="">Draw on Street</li>
+</ol>
+<p>Join our Discord (link below) to share your feedback.</p>]]></content:encoded>
+            <category>product update</category>
+            <category>layer reordering</category>
+            <category>AI generation</category>
+            <category>StreetPlan</category>
+            <category>performance</category>
+            <category>new features</category>
+        </item>
         <item>
             <title><![CDATA[Product Update: AI Image and Video Generator, Cloud Gallery, and More]]></title>
             <link>https://3dstreet.org/blog/2026/02/14/product-update-ai-video-gallery-and-more</link>
@@ -1327,46 +1407,6 @@ role with NASA as a post-graduate intern at NASA’s <a href="https://www.nasa.g
             <category>open source</category>
             <category>3d models</category>
             <category>university partnership</category>
-        </item>
-        <item>
-            <title><![CDATA[New 3DStreet features funded by Early Access customers]]></title>
-            <link>https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access</link>
-            <guid>https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access</guid>
-            <pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[We're excited to share new 3DStreet features funded by our first cohort of paid users.]]></description>
-            <content:encoded><![CDATA[<p>A heartfelt thanks to our intrepid group of first customers of 3DStreet Geospatial Pro since our <a class="" href="https://3dstreet.org/blog/2024/06/14/announcing-3dstreet-geospatial-pro">launch 11 days ago</a>. We’re honored by your support of a product still in the making, and to give thanks back we’d like to share these newly released features that you have directly funded and requested.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/visitacion-3dtiles-street-slope-36ddd159bf45f0e357bef2781c549065.jpg" width="1470" height="1041" class="img_ev3q"></p>
-<p>A shared theme of your feedback is that 3DStreet has been a big help for your projects – from feasibility to visualization for stakeholders and creating new designs – however we need to improve its usability, especially for new users.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="new-baby-toolbar">New Baby Toolbar<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#new-baby-toolbar" class="hash-link" aria-label="Direct link to New Baby Toolbar" title="Direct link to New Baby Toolbar" translate="no">​</a></h2>
-<p>We’re proud to share our new baby toolbar: clocking in at 3 options, it’s a small but mighty one that we expect to grow quickly with your feedback and support. The toolbar is intended to help prevent “accidental selection and moves” where – during an attempt to move the camera view – a user unintentionally selects and moves an object. With no undo, this is a pain.</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/baby-toolbar-d3c0fa0bb845e640ee1e51a15704be20.jpg" width="363" height="195" class="img_ev3q"></p>
-<p>There are 3 toolbar options:</p>
-<ul>
-<li class="">Pointer - click to select and move an object</li>
-<li class="">Hand - a mode that prevents selection or moving objects, you can only click to move the view (press <code>shift</code> while clicking to rotate the view)</li>
-<li class="">New Object - clicking + will show the Add New Entity panel to add objects, smart layers, and more</li>
-</ul>
-<p>While we work on undo, using the Hand mode is the safest way to browse a scene without making unintended changes.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="many-more-improvements-based-on-your-project-requirements-and-direct-feedback">Many more improvements based on your project requirements and direct feedback:<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#many-more-improvements-based-on-your-project-requirements-and-direct-feedback" class="hash-link" aria-label="Direct link to Many more improvements based on your project requirements and direct feedback:" title="Direct link to Many more improvements based on your project requirements and direct feedback:" translate="no">​</a></h2>
-<ul>
-<li class="">No more remix - the concept of remix was confusing so we have removed it. Now you can simply “Save” or “Save as…”</li>
-<li class="">Bigger scenes – we now support scene sizes up to about 3 miles / 5km. (Previously the skybox was too small, so we made it bigger.)</li>
-<li class="">Fixing bugs – sometimes 3d tiles wouldn’t load so we fixed one of those cases, and sometimes the red and blue bounding box of your selected object was too large and didn't take into account rotation, so we fixed that too.</li>
-<li class="">New scene – Pro users now have “New Scene” which allows you to start from scratch and create a new geolocated scene</li>
-<li class="">Simplification of rotation controls – when placing streets and objects most users appear to be rotating around the vertical ‘y’ axis. Therefore we updated the default rotation transform controls (accessed by pressing ‘e’ keyboard shortcut) to only allow rotation on that axis:
-<img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/rotation-y-widget-trash-truck-81f6ac8a4629394528da041fffe5efca.jpg" width="502" height="346" class="img_ev3q"></li>
-<li class="">If you get really excited about product release notes you can check out the full release notes here: <a href="https://github.com/3dstreet/3dstreet/releases/tag/0.5.1" target="_blank" rel="noopener noreferrer" class="">https://github.com/3dstreet/3dstreet/releases/tag/0.5.1</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="new-objects">New objects<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#new-objects" class="hash-link" aria-label="Direct link to New objects" title="Direct link to New objects" translate="no">​</a></h2>
-<p>You’ve also suggested new 3D models as options to include in your projects. Stay tuned to see what new models we’re launching thanks to the support of our Pro users! (That beautiful side-loading garbage truck is a good preview!)</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="make-it-happen">Make it happen<a href="https://3dstreet.org/blog/2024/06/25/geospatial-pro-launch-feature-early-access#make-it-happen" class="hash-link" aria-label="Direct link to Make it happen" title="Direct link to Make it happen" translate="no">​</a></h2>
-<p>If you're not one of our Early Access users, become one.
-Join our Geospatial Pro Early Access program now to help guide our next priorities to shape the future of our streets.</p>
-<p><a href="https://us6.list-manage.com/contact-form?u=01ce9902276fa6ad96be57ac6&amp;form_id=3f024b297f2177befa87b5ca5e9d45cc" target="_blank" rel="noopener noreferrer" class="">Contact us to get Early Access to 3DStreet Geospatial Pro</a></p>]]></content:encoded>
-            <category>product update</category>
-            <category>toolbar</category>
-            <category>user funded features</category>
-            <category>controls</category>
         </item>
     </channel>
 </rss>
