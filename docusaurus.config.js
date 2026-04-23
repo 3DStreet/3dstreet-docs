@@ -63,6 +63,9 @@ const config = {
         gtag: {
           trackingID: 'G-T65XPDLZ3F',
         },
+        sitemap: {
+          ignorePatterns: ['/loop'],
+        },
       }),
     ],
   ],
