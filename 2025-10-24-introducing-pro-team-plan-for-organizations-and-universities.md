@@ -89,4 +89,4 @@ Whether you're a university wanting to bring cutting-edge visualization tools in
 
 ## Questions?
 
-Visit our [pricing page FAQ](/pricing#faq) or join our [Discord community](https://discord.gg/zNFMhTwKSd) where we're happy to answer questions about Pro Team and help you determine if it's the right fit for your organization.
+Visit our [pricing page](/pricing) or join our [Discord community](https://discord.gg/zNFMhTwKSd) where we're happy to answer questions about Pro Team and help you determine if it's the right fit for your organization.
