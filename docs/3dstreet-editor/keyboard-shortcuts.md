@@ -13,12 +13,11 @@ sidebar_position: 8
 * `f` - Focus on selected entity
 * `g` - Toggle grid visibility
 * `del` | `backspace` - Delete selected entity
-* `0` - Toggle panels
+* `` ` `` - Toggle panels
 * `1` - Perspective view
 * `2` - Left view
 * `3` - Right view
 * `4` - Top view
-* `5` or `F5` - Start Viewer Mode
 * `6` - Back view
 * `7` - Front view
 * `ctrl` | `cmd` + `c` - Copy selected entity
