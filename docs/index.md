@@ -26,3 +26,7 @@ Welcome to the 3DStreet documentation.
 **You can share your creation with others, or spice it up by importing into other apps.** 
 <br/>
 Take instant snapshots to share on social media, or export your entire detailed scene to use in other 3D rendering apps.
+<br/>
+<br/>
+
+**You can transform your 3D scenes into photorealistic images and short videos with [AI Rendering](./key-features/ai-rendering).** Pro subscribers get monthly AI generation tokens to render snapshots directly from the Editor or use the dedicated [AI Generator app](https://3dstreet.app/generator) for image modify, create, and video generation — all powered by frontier models from Google, Black Forest Labs, ByteDance, and others.

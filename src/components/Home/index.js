@@ -277,6 +277,35 @@ export default function Home({ recentPosts }) {
                 />
               </div>
 
+              <div id="ai-rendering" className="st_features_item">
+                <div className="st_feature_description">
+                  <div className="st_feature_description_top">
+                    <p>AI Rendering</p>
+                    <p>
+                      Transform your 3D scenes into photorealistic images and short videos with frontier AI models from Google, Black Forest Labs, ByteDance, and more. Render directly from the Editor's snapshot button or use the dedicated AI Generator app to modify images, create from prompts, and animate. Pro subscribers get monthly AI generation tokens, with all renders synced to a Cloud Gallery accessible across devices.
+                    </p>
+                  </div>
+                  <div className="st_cta_buttons">
+                    <Button
+                      variant="blue"
+                      label="Get started"
+                      href="https://3dstreet.app/generator"
+                      target="_blank"
+                    />
+                    <Button
+                      variant="transparent-dark"
+                      label="Learn more"
+                      href="/docs/key-features/ai-rendering"
+                    />
+                  </div>
+                </div>
+                <img
+                  src="/img/website/feature-ai-rendering.webp"
+                  alt="feature-preview"
+                  width="386"
+                />
+              </div>
+
               <div id="batteries-included" className="st_features_item">
                 <div className="st_feature_description">
                   <div className="st_feature_description_top">
@@ -429,6 +458,7 @@ export default function Home({ recentPosts }) {
         </section>
 
         {/* EVENTS SECTION */}
+        {/*
         <section id="events" className="st_events">
           <div className="st_events_inner">
             <h2>Upcoming Events</h2>
@@ -471,6 +501,7 @@ export default function Home({ recentPosts }) {
             </div>
           </div>
         </section>
+        */}
 
         {/* BLOG SECTION */}
         <section className="st_blog">

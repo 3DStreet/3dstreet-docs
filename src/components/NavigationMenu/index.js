@@ -55,6 +55,12 @@ const NavigationMenu = () => {
                 Blend 3D street models with 3D map tiles to visualize projects in real world context.
               </ListItem>
               <ListItem
+                title="AI Rendering"
+                href="/#ai-rendering"
+              >
+                Transform 3D scenes into photorealistic images and short videos with frontier AI models.
+              </ListItem>
+              <ListItem
                 title="Batteries Included"
                 href="/#batteries-included"
               >
@@ -71,12 +77,6 @@ const NavigationMenu = () => {
                 href="/#export-for-ar-vr"
               >
                 Export to glTF, JSON, and other formats for use in XR and advanced 3D rendering.
-              </ListItem>
-              <ListItem
-                title="Share and Remix"
-                href="/#share-and-remix"
-              >
-                Create from any desktop browser, share with colleagues, and remix with the community. 
               </ListItem>
             </ul>
           </NavigationMenuPrimitive.Content>
