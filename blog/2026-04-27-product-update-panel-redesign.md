@@ -36,7 +36,7 @@ App switcher, scene title, and save status sit at the top. Collapsing the panel 
 We used the same design styling to renovate our right-hand side-panel with:
 
 * **Properties** — the component inspector for whatever you've selected.
-* **Assistant** — the AI assistant, migrated into a sidebar tab instead of a floating window.
+* **Console** — the natural-language assistant (formerly "AI Assistant"), migrated into a sidebar tab instead of a floating window. The Console now also streams a live history of every editor command as pills you can rewind or replay — see the [Console documentation](/docs/key-features/console).
 
 Share, auth, and your plan badge sit at the top.
 

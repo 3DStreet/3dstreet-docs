@@ -18,6 +18,14 @@ a {
     text-decoration: none;
 }
 
+/* Restore link underlines inside Docusaurus admonitions (info/warning/etc.)
+   so :::info banners read as standard prose. The global a{} rule above
+   strips them everywhere by default. */
+.theme-admonition a,
+.alert a {
+    text-decoration: underline;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
