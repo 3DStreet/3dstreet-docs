@@ -6,6 +6,9 @@ tags: [product update, AI, street design, new features, beta]
 image: ./images/2025-05-22/ai-assistant-example-prompt-create-a-street.jpg
 ---
 
+:::info Features have changed since this post
+The AI Assistant has been renamed to **Console** and now lives as a tab in the right-hand side panel, not a floating button at the bottom. The Report Generator described in earlier posts has been removed, and the Console now streams a live history of every editor command as pills you can rewind or replay. See the current [Console documentation](/docs/key-features/console) for up-to-date behavior. We're keeping this post for historical context.
+:::
 
 Today we're excited to announce the beta release of the 3DStreet AI Assistant, a new way to create and modify street designs using simple natural language. Just describe the street scene you want to create, and watch as your vision comes to life – no complex 3D editing required.<a href="#the-fine-print-beta-status-and-availability">*</a>
 <br/>

@@ -6,6 +6,10 @@ tags: [AI Assistant, workflow, productivity, street design, prompts]
 image: ./images/2025-05-29/top-10-prompts.jpg
 ---
 
+:::info Features have changed since this post
+The AI Assistant has been renamed to **Console** and now lives as a tab in the right-hand side panel. The dedicated **Create Street**, **Take Snapshots**, and **Generate Report** button shortcuts referenced below no longer exist — the natural-language prompts still work (except the Report Generator, which has been removed). Type `/help` in the Console to see current example prompts. See the [Console documentation](/docs/key-features/console) for up-to-date behavior. We're keeping this post for historical context.
+:::
+
 ![Screenshot showing the 3DStreet AI Assistant interface with a sample prompt](./images/2025-05-29/top-10-prompts.jpg)
 
 The new AI Assistant is here, and it's transforming how we create and modify street designs in 3DStreet! To help you hit the ground running with this powerful new feature, we've compiled a list of 10 essential prompts that showcase its capabilities and will help you optimize your design workflow right away.
@@ -164,6 +168,6 @@ Pressing either thumbs up or down will rate your conversation for review and wil
 
 Have you found an innovative way to use the AI Assistant? We'd love to hear about it! Join our Discord community (link in the footer) and share your favorite prompts and workflows. Your insights could help fellow designers unlock even more potential from this powerful tool.
 
-For more information on the AI Assistant, check out our [documentation](/docs/key-features/ai-assistant) and stay tuned for future updates as we continue to enhance this feature based on your feedback.
+For more information on the Console, check out our [documentation](/docs/key-features/console) and stay tuned for future updates as we continue to enhance this feature based on your feedback.
 
 Happy designing!

@@ -88,6 +88,10 @@ const config = {
             from: "/docs/pricing",
             to: "/pricing",
           },
+          {
+            from: "/docs/key-features/ai-assistant",
+            to: "/docs/key-features/console",
+          },
         ],
       },
     ],
