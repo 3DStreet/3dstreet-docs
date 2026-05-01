@@ -1,6 +1,6 @@
 ---
 title: "Product Update: Editor Panel Redesign"
-description: A redesigned editor layout informed by user research with the University of Cincinnati and design work from Daria, plus what we removed and why.
+description: A redesigned editor layout informed by user research led by Andrea Maravić with the University of Cincinnati team and design work from Daria, plus what we removed and why.
 authors: [kfarr]
 tags: [product update, ui redesign, panels, editor, user research]
 image: ./images/2026-04-27/3dstreet-update-sidepanel-design-2026.webp
@@ -9,7 +9,7 @@ image: ./images/2026-04-27/3dstreet-update-sidepanel-design-2026.webp
 
 # Product Update: Editor Panel Redesign
 
-We just released one of our biggest changes to 3DStreet's user interface design in a long time -- the 3DStreet editor has a majorly refreshed side-panel layout. This redesign was driven by user research conducted with students from the **University of Cincinnati** and design work from our designer **Daria Dombrovska**. We're lucky to have a community of users generous enough to tell us what's working and what isn't, and we want to keep building 3DStreet around what we hear.
+We just released one of our biggest changes to 3DStreet's user interface design in a long time -- the 3DStreet editor has a majorly refreshed side-panel layout. This redesign was driven by user research led by **Andrea Maravić** as UX research lead, alongside the broader **University of Cincinnati** team, and design work from product designer **Daria Dombrovska**. We're lucky to have a community of users generous enough to tell us what's working and what isn't, and we want to keep building 3DStreet around what we hear.
 
 ![New 3DStreet sidepanel design](./images/2026-04-27/3dstreet-update-sidepanel-design-2026.webp)
 
@@ -57,4 +57,4 @@ To ship this cleanly we pulled three things that caused confusion and / or were 
 
 The roadmap from the April update hasn't shifted — the panel redesign was item 5 on that list, and we're now turning to the items the research pushed to the top: **camera controls** (with Viewer Mode and saved camera views returning here), **multi-select**, and **grouping / nested layers**. Custom asset upload, a tutorial flow, and managed-street parity with the legacy Streetmix importer are also in the queue.
 
-Thanks again to the University of Cincinnati team and to Daria — and to everyone who's shared feedback on [Discord](https://discord.gg/VeBPPmFmBP). Keep it coming.
+Thanks again to Andrea Maravić and the University of Cincinnati team, and to Daria — and to everyone who's shared feedback on [Discord](https://discord.gg/VeBPPmFmBP). Keep it coming.
