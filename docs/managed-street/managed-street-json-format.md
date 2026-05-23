@@ -90,10 +90,13 @@ clones: [{
 ```
 
 #### Clone Modes
-- **`random`**: Randomly places `count` models with minimum `spacing` between them
-- **`fixed`**: Places models at regular `spacing` intervals with optional `cycleOffset`
-- **`single`**: Places a single model (use `justify` property for position)
-- **`fit`**: Intelligently places models based on their actual dimensions, fitting them end-to-end along the segment. Ideal for buildings.
+
+See the [Clone Mode Reference](./clone-modes.md) for detailed documentation with diagrams.
+
+- **`fixed`**: Places models at regular `spacing` intervals with optional `cycleOffset`. Spacing is between centerpoints.
+- **`random`**: Randomly places `count` models from a grid with minimum `spacing` between centerpoints.
+- **`single`**: Places a single model (use `justify` property for position).
+- **`fit`**: Dimension-aware mode that tiles models end-to-end based on their actual widths. Ideal for buildings, walls, and fences.
 
 Common model arrays:
 - Vehicles: `"sedan-rig, box-truck-rig, self-driving-waymo-car, suv-rig, motorbike"`
