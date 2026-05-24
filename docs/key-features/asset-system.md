@@ -8,6 +8,9 @@ The 3DStreet Asset System is the home for everything you've added to your accoun
 
 ## One panel for all your assets
 
+<img src="/img/docs/asset-system/asset-system-gallery-view.webp" alt="Assets panel gallery view" style={{height: '500px'}} />
+<br /><br />
+
 The **Assets panel** on the left side of the editor (and generator) gives you a single, browseable view of every asset in your account. From the panel you can:
 
 - **Filter by type** (show only meshes (`.glb` models), images, or videos to quickly narrow the list)
@@ -30,6 +33,8 @@ The file is uploaded to your account in the background. You'll see a progress in
 ### Asset details
 
 Click any custom asset's thumbnail in the Assets panel to open its **details modal**. From there you can rename the asset, preview it in an embedded viewer, see its file size and attribution metadata, download the original file, or delete it from your account.
+
+![Asset details modal](/img/docs/asset-system/asset-system-model-details.webp)
 
 ## Storage and quotas
 
