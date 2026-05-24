@@ -29,14 +29,12 @@ Video generation requires a source image to use as the first frame. Upload your 
 
 <iframe style={{aspectRatio: "16/9", width: "100%"}} src="https://www.youtube.com/embed/LE59IH1Qk-A?si=CuenTTjDmscc9E61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## AI Generator for Images: Modify, Create, Inpaint, and Outpaint
+## AI Generator for Images: Modify and Create
 
 In addition to video, access all our image editing tools in one place with the new <a href="https://3dstreet.app/generator">3DStreet AI Generator app</a>. You can now:
 
 * [**Modify from Input Image**](https://3dstreet.app/generator/#modify) -- Upload your own image or select an image from your gallery as an input, then re-render the image while applying stylistic, editorial, geometrical, rendering, or other modifications using state of the art frontier image models from Google and other major providers. 
 * [**Create from Prompt**](https://3dstreet.app/generator/#create) -- Generate a new image from a text prompt without a source image.
-* [**Inpaint**](https://3dstreet.app/generator/#inpaint) -- Select a region of an input image from your gallery or uploaded and re-render just that area with a new prompt. Perfect for swapping out details or fixing specific parts of a rendering.
-* [**Outpaint**](https://3dstreet.app/generator/#outpaint) -- Extend the boundaries of a generated image beyond the original frame, creating wider panoramic views of your street designs.
 * **Edit and iterate** -- Use the gallery to experiment with different styles and prompts on the same scene or input file to learn how they affect the final output
 
 ## Cloud Gallery with Cross-Device Sync
@@ -84,7 +82,7 @@ Thanks to Mike and the StreetPlan team for their support and help to better conn
 
 ## Drag and Drop 3D Models
 
-You can now drag and drop glTF/GLB files directly into the 3DStreet viewport to import custom 3D models. No need to go through menus -- just drop your file and place it in the scene. This can be handy for quick visualizations, however drag-and-drop models are only available during the initial session and will not be saved when you reload the scene. If you'd like your GLB image to be able to be reloaded in future sessions you'll need to use a third-party storage service. [Here's a quick video showing what you can make with this feature](https://www.youtube.com/watch?v=c9itxUUtQGE).
+You can now drag and drop glTF/GLB files directly into the 3DStreet viewport to import custom 3D models. No need to go through menus -- just drop your file and place it in the scene. [Here's a quick video showing what you can make with this feature](https://www.youtube.com/watch?v=c9itxUUtQGE).
 
 ## Streetmix Schema 33 with Elevation
 
