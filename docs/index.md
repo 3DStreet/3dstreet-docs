@@ -15,10 +15,6 @@ Welcome to the 3DStreet documentation.
 <br/>
 <br/>
 
-![Screenshot of 3 different camera perspectives from 3DStreet Editor.](/img/docs/3dstreet-editor-camera-combo-views.jpg)
-<br/>
-<br/>
-
 **You can customize your street scene to match any configuration.** Use **3DStreet Editor** tools to modify, add, or clone objects to match an exisiting or future street configuration. [Check out the introductory Editor docs to learn the basic capabilities.](./3dstreet-editor/overview-3dstreet-editor)
 <br/>
 <br/>
