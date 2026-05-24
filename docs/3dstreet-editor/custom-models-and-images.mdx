@@ -3,91 +3,34 @@ sidebar_position: 6
 ---
 import MuxPlayer from '@mux/mux-player-react';
 
-# Adding Custom Models and Images to 3DStreet Scenes
+# Adding Custom Models and Images to a Scene
 
-## Importing 3D Models
+Need a model or image that isn't in the built-in library? Maybe you have a specific local landmark, a custom sign, a photo or map of existing conditions, or need a one-off prop? Drag the file from your computer straight into 3DStreet and it shows up in your scene.
 
-3DStreet supports importing custom 3D models in glTF / GLB format to enhance your street scenes with unique objects and elements.
+## Drag-and-drop into the editor
 
-<MuxPlayer
-    streamType="on-demand"
-    playbackId="xf7ytm7VAP9QTLtyLL3Cs01Jul7rHHM26"
-    primaryColor="#FFFFFF"
-    secondaryColor="#000000"
-    accentColor="#653CB0"
-/>
+1. Open a scene in the [3DStreet Editor](https://3dstreet.app/).
+2. Drag a file from your computer onto the viewport — drop it where you want it placed. Supported formats: `.glb` for 3D models, `.jpg` / `.png` / `.webp` for images.
+3. The file is uploaded to your account and dropped into the scene at the cursor.
+4. Use the right-hand Properties panel to fine-tune scale, position, and rotation.
 
-### Prerequisites
-* GLB format 3D model files
-* Public URL access to your hosted models, usually via web hosting service (e.g., Glitch.com)
+## Reusing your assets
 
-### Validation and Hosting
+Every file you upload lands in the **Assets panel** on the left side of the editor, alongside the built-in library. From there you can drag the same asset into any scene as many times as you want, or into other scenes in your account — no need to re-upload.
 
-Before importing, double check that your file is compatible with three.js by validating your GLB file at [gltf-viewer.donmccurdy.com](https://gltf-viewer.donmccurdy.com/). If your model is not compatible, you may need to convert it to a compatible format.
+The Assets panel is part of a larger system that handles storage, optimization, attribution, and asset management across your account. **[Learn more about the Asset System](/docs/key-features/asset-system)**.
 
-To host your file you will need a public URL to access it. You can use a web hosting service like Glitch.com to host your files:
+## Alternative: adding by URL
 
-* Create a [Glitch.com](https://glitch.com/) account
-* Create a new project
-* Upload your GLB file to the Assets section
-* Copy the public URL for your model
+If your model or image is already hosted on a publicly accessible URL, you can reference it directly without uploading:
 
-### Adding Models to Your Scene
+1. Click **Add Layer** → **Custom Layers** tab.
+2. Choose **GLTF Model from URL** or **Place New Image Entity**.
+3. Paste the public URL and click OK.
 
-* In 3DStreet Editor, open or create a scene
-* Click "Custom Layers"
-* Select "GLTF model from URL"
-* Paste your model's public URL
-* Click OK to add the model
+URL-referenced assets do not appear in your Assets panel, don't count against your quota, and don't go through 3DStreet's optimization pipeline. For most users, drag-and-drop upload is the better option.
 
-### Adjusting Your Model
+## Tips
 
-Use the Properties panel to modify:
-* Scale (adjust size on different axes)
-* Position (move model within the scene)
-* Rotation (orient model as needed)
-
-
-## Importing Images
-
-3DStreet allows you to import custom images to add signage, existing conditions photos, maps, and other visual elements to your scenes.
-
-<MuxPlayer
-    streamType="on-demand"
-    playbackId="7eUdcuA6vIAJmdooxO02va1lzdd52HqES"
-    primaryColor="#FFFFFF"
-    secondaryColor="#000000"
-    accentColor="#653CB0"
-/>
-
-### Prerequisites
-* Image files in JPG, PNG, or WEBP format
-* Public URL for your images, usually via a web hosting service (e.g., Glitch.com)
-
-
-### Adding Images
-Host your image:
-
-* Upload to [Glitch.com](https://glitch.com) Assets
-* Copy the public URL
-
-In 3DStreet Editor:
-
-* Click "Custom Layers"
-* Select "Place New Image Entity"
-* Paste your image URL
-* Click OK
-
-### Positioning and Adjusting
-
-* Use Transform Controls for position
-* Rotate images to face desired direction
-* Adjust scale in Properties panel
-* Consider mounting images on existing scene elements
-
-### Best Practices
-
-* Validate file formats before importing
-* Scale elements appropriately for scene realism
-* Position near relevant street features
-* Use double-click to zoom for precise placement
+* If a model isn't rendering as you expect, drop the `.glb` into [gltf-viewer.donmccurdy.com](https://gltf-viewer.donmccurdy.com/) — it uses the same three.js loader 3DStreet does, so what shows up there is what you'll see in your scene.
+* Use the duplicate shortcut (`d`) to repeat the same asset in multiple places without re-dragging.

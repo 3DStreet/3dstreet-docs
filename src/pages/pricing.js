@@ -13,6 +13,7 @@ export default function PricingPage() {
       privacy: 'public',
       features: [
         'Store unlimited scenes',
+        '100 MB custom asset storage',
         'Prototype street configurations',
         'Access hundreds of 3D models',
         'Import from Streetmix and StreetPlan',
@@ -33,11 +34,11 @@ export default function PricingPage() {
       privacy: 'public',
       features: [
         'Everything in Free, plus:',
-        'Download JPEG snapshots without watermark',
+        'Download image snapshots without watermark',
         'Unlimited Geospatial 3D Maps',
+        '5 GB custom asset storage',
         <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>100</strong> AI generation tokens per month</>,
-        'Import custom 3D models',
-        'Reference custom SVG and glTF files',
+        'Reference custom SVG path files',
         'Export "AR Ready" glTF for Augmented Reality apps',
         'Multiple street section support'
       ],
