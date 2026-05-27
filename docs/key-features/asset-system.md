@@ -50,11 +50,13 @@ If you reach your quota, new uploads run in local-only mode until you free up sp
 
 - **Texture compression**: textures are re-encoded to WebP at quality 0.85 and resized down to a maximum of 2048×2048
 - **Mesh deduplication and pruning**: unused data, duplicate vertices, and orphaned nodes are removed
+- **Scene flattening and mesh joining**: the node hierarchy is flattened and compatible meshes are joined to reduce draw calls
+- **Material palette atlasing**: small solid-color materials are merged into a palette texture to further cut draw calls
 - **Draco mesh compression**: geometry is compressed with Draco for dramatically smaller files and faster loading
 - **Bail-if-bigger**: if the optimized output is larger than the original (common when the file is already well-optimized), 3DStreet keeps the original instead
 - **Already-optimized detection**: files that already use Draco + WebP skip the pipeline entirely
 
-Both the **original** and the **optimized** versions are stored. Scenes load the optimized version by default, and the original is kept so you can re-download it, share it, or re-process it later. Only the original file counts against your storage quota, the optimized derivative is on us.
+Both the **original** and the **optimized** versions are stored. Scenes load the optimized version by default to increase scene download speeds and improve render performance. The original is kept so you can re-download it, share it, or re-process it later. Only the original file counts against your storage quota, the optimized derivative is on us.
 
 ## Attribution
 

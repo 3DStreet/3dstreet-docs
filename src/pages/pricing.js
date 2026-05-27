@@ -5,6 +5,39 @@ import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
 
 export default function PricingPage() {
+  const [billingCycle, setBillingCycle] = useState('yearly');
+
+  const cyclePricing = {
+    pro: {
+      monthly: {
+        price: '$10',
+        subtitle: 'per month',
+        cycleDetail: 'billed monthly',
+        buttonHref: 'https://3dstreet.app/#payment-model'
+      },
+      yearly: {
+        price: '$7',
+        subtitle: 'per month',
+        cycleDetail: 'billed yearly, $84/year',
+        buttonHref: 'https://3dstreet.app/#payment-model-annual'
+      }
+    },
+    max: {
+      monthly: {
+        price: '$50',
+        subtitle: 'per month',
+        cycleDetail: 'billed monthly',
+        buttonHref: '/contact'
+      },
+      yearly: {
+        price: '$35',
+        subtitle: 'per month',
+        cycleDetail: 'billed yearly, $420/year',
+        buttonHref: '/contact'
+      }
+    }
+  };
+
   const plans = [
     {
       name: 'Community Edition',
@@ -28,38 +61,36 @@ export default function PricingPage() {
     },
     {
       name: 'Pro',
-      price: '$10',
-      subtitle: 'per month',
+      cycleKey: 'pro',
       description: 'For individual professionals creating street designs',
       privacy: 'public',
       features: [
         'Everything in Free, plus:',
         'Download image snapshots without watermark',
-        'Unlimited Geospatial 3D Maps',
+        'Unlimited geospatial maps & location changes',
+        'HD renders, AR-ready glTF & video export',
+        'Import custom 3D models & SVG / glTF files',
         '5 GB custom asset storage',
-        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>100</strong> AI generation tokens per month</>,
-        'Reference custom SVG path files',
-        'Export "AR Ready" glTF for Augmented Reality apps',
-        'Multiple street section support'
+        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>100</strong> AI generation tokens / month</>
       ],
-      buttonLabel: 'Activate Pro Edition',
-      buttonHref: 'https://3dstreet.app/#payment-model',
+      buttonLabel: 'Go Pro',
       buttonVariant: 'blue'
     },
     {
-      name: 'Pro Annual',
-      price: '$84',
-      subtitle: 'per year',
-      savings: '(save 30%)',
-      description: 'Best value for individual professionals',
+      name: 'Max',
+      cycleKey: 'max',
+      description: 'For power users and small teams with heavy AI workloads',
       privacy: 'public',
       features: [
         'Everything in Pro, plus:',
-        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>840</strong> bonus AI generation tokens on first purchase</>,
-        'Save 30% with annual billing'
+        <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>500</strong> AI generation tokens / month</>,
+        'Unlimited geospatial tokens',
+        '50 GB custom asset storage',
+        'Priority support',
+        'Early access to new features'
       ],
-      buttonLabel: 'Save with Pro Annual',
-      buttonHref: 'https://3dstreet.app/#payment-model-annual',
+      buttonLabel: 'Contact Us to Activate',
+      buttonHref: '/contact',
       buttonVariant: 'blue'
     },
     {
@@ -193,50 +224,77 @@ export default function PricingPage() {
                 Start free and scale as you grow. All plans include core 3D street design features.
               </p>
 
+              {/* Billing cycle toggle (applies to Pro + Max) */}
+              <div className="st_billing_toggle_wrapper">
+                <div className="st_billing_toggle" role="tablist">
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={billingCycle === 'monthly'}
+                    className={`st_toggle_button ${billingCycle === 'monthly' ? 'active' : ''}`}
+                    onClick={() => setBillingCycle('monthly')}
+                  >
+                    Monthly
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected={billingCycle === 'yearly'}
+                    className={`st_toggle_button ${billingCycle === 'yearly' ? 'active' : ''}`}
+                    onClick={() => setBillingCycle('yearly')}
+                  >
+                    Yearly <span className="st_save_pill">Save 30%</span>
+                  </button>
+                </div>
+              </div>
+
               {/* Pricing Cards */}
               <div className="st_pricing_cards">
-                {plans.slice(0, 3).map((plan, index) => (
-                  <div key={index} className={`st_pricing_card ${plan.recommended ? 'recommended' : ''}`}>
-                    {/* Hiding badge for now */
-                      false && plan.recommended && (
-                      <div className="st_recommended_badge">Best Value</div>
-                    )}
-                    <h3 className="st_plan_name">{plan.name}</h3>
-                    <div className="st_plan_price">
-                      <span className="st_price_amount">{plan.price}</span>
-                      <span className="st_price_period">{plan.subtitle} <span className="st_price_savings">{plan.savings}</span></span>
-                      
-
+                {plans.slice(0, 3).map((plan, index) => {
+                  const cycle = plan.cycleKey ? cyclePricing[plan.cycleKey][billingCycle] : null;
+                  const displayPrice = cycle ? cycle.price : plan.price;
+                  const displaySubtitle = cycle ? cycle.subtitle : plan.subtitle;
+                  const buttonHref = cycle ? cycle.buttonHref : plan.buttonHref;
+                  return (
+                    <div key={index} className={`st_pricing_card ${plan.recommended ? 'recommended' : ''}`}>
+                      <h3 className="st_plan_name">{plan.name}</h3>
+                      <div className="st_plan_price">
+                        <span className="st_price_amount">{displayPrice}</span>
+                        <span className="st_price_period">{displaySubtitle}</span>
+                        {cycle && (
+                          <span className="st_price_cycle_detail">{cycle.cycleDetail}</span>
+                        )}
+                      </div>
+                      <p className="st_plan_description">{plan.description}</p>
+                      {plan.privacy && (
+                        <span
+                          className={`st_privacy_badge st_privacy_${plan.privacy}`}
+                          title={plan.privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
+                        >
+                          {plan.privacy.toUpperCase()}
+                        </span>
+                      )}
+                      <Button
+                        variant={plan.buttonVariant}
+                        label={plan.buttonLabel}
+                        href={buttonHref}
+                        target={buttonHref.startsWith('http') ? '_blank' : undefined}
+                      />
+                      <ul className="st_plan_features">
+                        {plan.features.map((feature, idx) => {
+                          const isString = typeof feature === 'string';
+                          const isEverythingIn = isString && feature.startsWith('Everything in');
+                          return (
+                            <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
+                              {!isEverythingIn && <CheckIcon className="st_check_icon" />}
+                              <span>{feature}</span>
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </div>
-                    <p className="st_plan_description">{plan.description}</p>
-                    {plan.privacy && (
-                      <span
-                        className={`st_privacy_badge st_privacy_${plan.privacy}`}
-                        title={plan.privacy === 'public' ? 'All user generated scenes are public and remixable.' : 'Scenes and assets are private to your organization.'}
-                      >
-                        {plan.privacy.toUpperCase()}
-                      </span>
-                    )}
-                    <Button
-                      variant={plan.buttonVariant}
-                      label={plan.buttonLabel}
-                      href={plan.buttonHref}
-                      target={plan.buttonHref.startsWith('http') ? '_blank' : undefined}
-                    />
-                    <ul className="st_plan_features">
-                      {plan.features.map((feature, idx) => {
-                        const isString = typeof feature === 'string';
-                        const isEverythingIn = isString && feature.startsWith('Everything in');
-                        return (
-                          <li key={idx} className={isEverythingIn ? 'no-check' : ''}>
-                            {!isEverythingIn && <CheckIcon className="st_check_icon" />}
-                            <span>{feature}</span>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* Organizations Section - Pro Team and Pro Agency */}
@@ -653,6 +711,57 @@ export default function PricingPage() {
         .st_price_savings {
           font-size: 0.875rem;
           color: #10b981;
+        }
+
+        .st_price_cycle_detail {
+          display: block;
+          font-size: 0.8rem;
+          color: #6b7280;
+          margin-top: 0.25rem;
+        }
+
+        .st_billing_toggle_wrapper {
+          display: flex;
+          justify-content: center;
+          margin: 0 0 1.5rem;
+        }
+
+        .st_billing_toggle {
+          display: inline-flex;
+          background: #e5e7eb;
+          border-radius: 999px;
+          padding: 4px;
+          gap: 4px;
+        }
+
+        .st_toggle_button {
+          border: none;
+          background: transparent;
+          color: #4a4a4a;
+          font-size: 0.85rem;
+          font-weight: 500;
+          padding: 0.4rem 0.9rem;
+          border-radius: 999px;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          transition: background 0.15s ease, color 0.15s ease;
+        }
+
+        .st_toggle_button.active {
+          background: #fff;
+          color: #1a1a1a;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+        }
+
+        .st_save_pill {
+          background: #10b981;
+          color: white;
+          font-size: 0.7rem;
+          font-weight: 600;
+          padding: 0.1rem 0.45rem;
+          border-radius: 999px;
         }
 
         .st_plan_description {
