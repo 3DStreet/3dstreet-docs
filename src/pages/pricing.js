@@ -79,7 +79,7 @@ export default function PricingPage() {
     {
       name: 'Max',
       cycleKey: 'max',
-      description: 'For power users and small teams with heavy AI workloads',
+      description: 'For power users and small teams with heavy workloads',
       privacy: 'public',
       features: [
         'Everything in Pro, plus:',
