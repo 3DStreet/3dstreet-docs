@@ -12,7 +12,7 @@
 
 <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="3DStreet RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="3DStreet Atom Feed"><link rel="stylesheet" href="/assets/css/styles.334c3d4d.css">
-<script src="/assets/js/runtime~main.07907157.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.2d39d66d.js" defer="defer"></script>
 <script src="/assets/js/main.be801a33.js" defer="defer"></script>
 </head>
 <body>
@@ -48,11 +48,13 @@
 <ul>
 <li class=""><strong>Texture compression</strong>: textures are re-encoded to WebP at quality 0.85 and resized down to a maximum of 2048×2048</li>
 <li class=""><strong>Mesh deduplication and pruning</strong>: unused data, duplicate vertices, and orphaned nodes are removed</li>
+<li class=""><strong>Scene flattening and mesh joining</strong>: the node hierarchy is flattened and compatible meshes are joined to reduce draw calls</li>
+<li class=""><strong>Material palette atlasing</strong>: small solid-color materials are merged into a palette texture to further cut draw calls</li>
 <li class=""><strong>Draco mesh compression</strong>: geometry is compressed with Draco for dramatically smaller files and faster loading</li>
 <li class=""><strong>Bail-if-bigger</strong>: if the optimized output is larger than the original (common when the file is already well-optimized), 3DStreet keeps the original instead</li>
 <li class=""><strong>Already-optimized detection</strong>: files that already use Draco + WebP skip the pipeline entirely</li>
 </ul>
-<p>Both the <strong>original</strong> and the <strong>optimized</strong> versions are stored. Scenes load the optimized version by default, and the original is kept so you can re-download it, share it, or re-process it later. Only the original file counts against your storage quota, the optimized derivative is on us.</p>
+<p>Both the <strong>original</strong> and the <strong>optimized</strong> versions are stored. Scenes load the optimized version by default to increase scene download speeds and improve render performance. The original is kept so you can re-download it, share it, or re-process it later. Only the original file counts against your storage quota, the optimized derivative is on us.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="attribution">Attribution<a href="#attribution" class="hash-link" aria-label="Direct link to Attribution" title="Direct link to Attribution" translate="no">​</a></h2>
 <p>When you upload a <code>.glb</code>, 3DStreet automatically extracts attribution metadata from the file (title, author, source, and license, if present). This metadata is visible in the asset details modal and is preserved with the asset, so credits travel with the model even as you reuse it across scenes.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="related">Related<a href="#related" class="hash-link" aria-label="Direct link to Related" title="Direct link to Related" translate="no">​</a></h2>
