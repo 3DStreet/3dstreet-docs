@@ -4,6 +4,10 @@
   Base styles
 ----------------------------------------------------------------*/
 
+:root {
+    --ifm-font-family-base: "Hind Siliguri", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
 *,
 *::before,
 *::after {

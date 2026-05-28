@@ -4,9 +4,9 @@
 @import "@radix-ui/colors/purple.css";
 @import "@radix-ui/colors/violet.css";
 
-/* reset */
-button,
-p {
+/* reset — do NOT add `p` here: a global `p { all: unset }` resets display
+   to inline and collapses every paragraph on the site (docs + blog + pages). */
+button {
 	all: unset;
 }
 

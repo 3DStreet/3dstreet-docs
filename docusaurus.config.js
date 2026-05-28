@@ -38,6 +38,28 @@ const config = {
       onBrokenMarkdownLinks: "warn",
     },
   },
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "/fonts/hind-siliguri/HindSiliguri-Regular.ttf",
+        as: "font",
+        type: "font/ttf",
+        crossorigin: "anonymous",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "/fonts/hind-siliguri/HindSiliguri-Medium.ttf",
+        as: "font",
+        type: "font/ttf",
+        crossorigin: "anonymous",
+      },
+    },
+  ],
   presets: [
     [
       "classic",
