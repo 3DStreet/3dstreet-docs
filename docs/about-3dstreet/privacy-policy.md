@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: August 23, 2024
+Last updated: May 27, 2026
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
@@ -19,7 +19,7 @@ For the purposes of this Privacy Policy:
 - __Account__ means a unique account created for You to access our Service or parts of our Service.
 - __Affiliate__ means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
-- __Application__ refers to 3DStreet App, the software program provided by the Company.
+- __Application__ refers to the software programs provided by the Company, including the 3DStreet App and Bollard Buddy.
 
 
 
@@ -64,13 +64,18 @@ While using Our Service, We may ask You to provide Us with certain personally id
 
 - Email address
 - First name and last name
-
-
-
-
 - Usage Data
+- If You use our mobile Application, We may also process additional data, see "Camera, Photos, and Location Data" below.
 
+#### Camera, Photos, and Location Data (Mobile Application)
 
+When You use the augmented reality and capture features of our mobile applications (such as Bollard Buddy), We may process the following with Your permission:
+
+- __Camera:__ The Application uses Your device camera to render augmented reality experiences. Camera input is processed on Your device to display virtual objects in your real-world surroundings. We do not store a live camera feed; only images You choose to capture are saved.
+- __Photos and Images:__ When You capture a photo or save a design within the Application, that image may be stored locally on Your device and, if You are signed in, uploaded to and stored in Your private cloud gallery so it is available across Your devices and the 3DStreet web service.
+- __Location:__ With Your permission, the Application may access Your device location to support location-aware augmented reality and to associate captured designs with a place. You can disable location access at any time in Your device settings.
+
+You may grant or revoke camera, photo library, and location permissions at any time through Your device's operating system settings. Revoking a permission may limit the functionality of the Application.
 
 #### Usage Data
 
@@ -143,7 +148,9 @@ The Company may use Personal Data for the following purposes:
 
 We may share Your personal information in the following situations:
 
-- __With Service Providers:__ We may share Your personal information with Service Providers to monitor and analyze the use of our Service,  to contact You.
+- __With Service Providers:__ We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to authenticate You, to store Your data, and to contact You. Our Service Providers include:
+	- __Google / Firebase__ (Google LLC) — provides authentication, database (Firestore), and file storage (Cloud Storage) services. Your account information and saved designs are stored using Firebase. See [Google's Privacy Policy](https://policies.google.com/privacy).
+	- __Apple__ (Apple Inc.) — when You sign in with Apple or use the Application on an Apple device, Apple processes authentication and platform data in accordance with [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
 - __For business transfers:__ We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
 - __With Affiliates:__ We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
 - __With business partners:__ We may share Your information with Our business partners to offer You certain products, services or promotions.
