@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: May 27, 2026
+Last updated: May 29, 2026
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
@@ -149,8 +149,9 @@ The Company may use Personal Data for the following purposes:
 We may share Your personal information in the following situations:
 
 - __With Service Providers:__ We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to authenticate You, to store Your data, and to contact You. Our Service Providers include:
-	- __Google / Firebase__ (Google LLC) — provides authentication, database (Firestore), and file storage (Cloud Storage) services. Your account information and saved designs are stored using Firebase. See [Google's Privacy Policy](https://policies.google.com/privacy).
+	- __Google / Firebase__ (Google LLC) — provides authentication, database (Firestore), file storage (Cloud Storage), and crash reporting (Firebase Crashlytics) services. Your account information and saved designs are stored using Firebase. In our mobile applications, Firebase Crashlytics collects crash diagnostics (such as the type of crash, device model, and operating system version) to help Us identify and fix stability problems. See [Google's Privacy Policy](https://policies.google.com/privacy).
 	- __Apple__ (Apple Inc.) — when You sign in with Apple or use the Application on an Apple device, Apple processes authentication and platform data in accordance with [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
+	- __PostHog__ (PostHog, Inc.) — provides product analytics. We use PostHog to understand which features of the Service are used and how, so We can improve it. PostHog processes Usage Data associated with Your account identifier. We do not use it for advertising and do not enable any cross-app or cross-site tracking identifier. See [PostHog's Privacy Policy](https://posthog.com/privacy).
 - __For business transfers:__ We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
 - __With Affiliates:__ We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
 - __With business partners:__ We may share Your information with Our business partners to offer You certain products, services or promotions.
