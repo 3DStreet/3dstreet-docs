@@ -4,7 +4,7 @@ import { Button } from '../components';
 import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
 
-const TESTFLIGHT_URL = 'https://testflight.apple.com/join/7bjRttZh';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/bollard-buddy/id6756771127';
 
 export default function BollardBuddyPage() {
   return (
@@ -53,9 +53,9 @@ export default function BollardBuddyPage() {
           <NavigationMenu />
           <Button
             variant="blue"
-            label="Join the TestFlight Beta"
+            label="Open in App Store"
             trailingIcon={<ExternalLinkIcon />}
-            href={TESTFLIGHT_URL}
+            href={APP_STORE_URL}
             target="_blank"
           />
         </div>
@@ -65,31 +65,24 @@ export default function BollardBuddyPage() {
         {/* MAIN SECTION */}
         <main className="st_main">
           <div className="st_main_wrapper">
-            <div className="st_main_container">
-              <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-                <div style={{ flex: '2 1 340px', minWidth: 0 }}>
+            <div className="st_main_container" style={{ maxWidth: '1160px' }}>
+              <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap', width: '100%' }}>
+                <div style={{ flex: '2 1 480px', minWidth: 0 }}>
                   <h1>Bollard Buddy for iOS</h1>
                   <p style={{ fontSize: '1.5rem', fontWeight: 600, opacity: 0.85, margin: '0 0 1.25rem' }}>
                     Place Bollards in AR
                   </p>
-                  <p className="st_hero_paragraph">
+                  <p className="st_hero_paragraph" style={{ maxWidth: '100%' }}>
                     Visualize safer streets in augmented reality. Point your iPhone at a sidewalk, curb, or
                     any space, and place virtual bollards, traffic cones, planters, benches, and more on
-                    real surfaces. Capture photos of your designs and share them with neighbors, city
-                    officials, or community groups working toward safer streets.
+                    real surfaces.
                   </p>
-                  <p className="st_hero_paragraph">
-                    Take your field captures into the 3DStreet Editor, where you can refine the design,
-                    check measurements, and build presentation-ready visualizations that win over
-                    decision makers.
-                  </p>
-                  <br />
-                  <div className="st_hero_cta">
+                  <div className="st_hero_cta" style={{ marginBottom: '40px' }}>
                     <Button
                       variant="blue"
-                      label="Join the TestFlight Beta"
+                      label="Download on the App Store"
                       trailingIcon={<ExternalLinkIcon />}
-                      href={TESTFLIGHT_URL}
+                      href={APP_STORE_URL}
                       target="_blank"
                     />
                     <Button
@@ -99,14 +92,20 @@ export default function BollardBuddyPage() {
                       target="_blank"
                     />
                   </div>
+                  <p className="st_hero_paragraph" style={{ maxWidth: '100%', marginBottom: 0 }}>
+                    Capture photos of your designs and share them with neighbors, city officials, or
+                    community groups working toward safer streets. Then take your field captures into the
+                    3DStreet Editor, where you can refine the design, check measurements, and build
+                    presentation-ready visualizations that win over decision makers.
+                  </p>
                 </div>
-                <div style={{ flex: '1 1 220px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ flex: '1 1 260px', display: 'flex', justifyContent: 'center' }}>
                   <img
                     src="/img/bollardbuddy/screenshot-1.webp"
                     alt="Placing a bollard in AR on a real street with Bollard Buddy"
                     style={{
                       width: '100%',
-                      maxWidth: '300px',
+                      maxWidth: '320px',
                       borderRadius: '24px',
                       boxShadow: '0 20px 60px rgba(0, 0, 0, 0.35)',
                     }}
@@ -199,9 +198,9 @@ export default function BollardBuddyPage() {
             <div className="st_cta_buttons">
               <Button
                 variant="blue"
-                label="Join the TestFlight Beta"
+                label="Download on the App Store"
                 trailingIcon={<ExternalLinkIcon />}
-                href={TESTFLIGHT_URL}
+                href={APP_STORE_URL}
                 target="_blank"
               />
             </div>
