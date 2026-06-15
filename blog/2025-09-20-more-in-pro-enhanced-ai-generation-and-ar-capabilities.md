@@ -35,7 +35,7 @@ Choose from 4 leading image-to-image generation models:
 * Nano Banana by [Google Gemini 2.5 Flash Image](https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/)
 * Real Earth Kontext Pro LoRA Model by [Ismail Seleit](https://www.linkedin.com/in/ismailseleit/)
 
-<a href="https://3dstreet.app/#payment-model-annual" target="_blank">Pro Annual</a> subscribers get an extra bonus: **840 AI generation tokens** on first purchase – that's 7 months worth of tokens upfront to jumpstart your creative projects.
+Prefer annual billing? <a href="https://3dstreet.app/#payment-model-annual" target="_blank">Pro Annual</a> gets you the same 100 tokens every month and **saves 30%** compared to monthly.
 
 ## Custom Prompts for AI Rendering
 
@@ -99,7 +99,7 @@ Pro allows users to download JPEG snapshots without the "Free Community Edition"
 For professionals committed to transforming street design, Pro Annual offers the best value:
 
 * **Save 30%** compared to monthly billing
-* **840 bonus AI generation tokens** on first purchase
+* **100 AI generation tokens every month**, same as monthly
 * All Pro features for a full year
 * <a href="https://3dstreet.app/#payment-modal-annual">Save with Pro Annual</a>
 

@@ -85,7 +85,7 @@ export default function PricingPage() {
         'Everything in Pro, plus:',
         <><img src="/img/token-image.png" alt="AI Token" style={{width: '16px', height: '16px', display: 'inline-block', verticalAlign: 'middle', marginRight: '4px'}} /><strong>500</strong> AI generation tokens / month</>,
         'Unlimited geospatial tokens',
-        '50 GB custom asset storage',
+        '25 GB custom asset storage',
         'Priority support',
         'Early access to new features'
       ],

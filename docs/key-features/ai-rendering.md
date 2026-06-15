@@ -90,8 +90,10 @@ Models are upgraded regularly as new frontier models become available. Token cos
 
 AI rendering uses **AI generation tokens** from your 3DStreet Pro subscription. Token cost varies per model and per operation (image vs. 5-second video vs. 10-second video) and is shown in the UI before you commit to a render.
 
-- **Pro Monthly** — 100 AI generation tokens included each month.
-- **Pro Annual** — 100 tokens per month, plus a one-time bonus of 840 tokens (7 months' worth) on first purchase.
+- **Pro** — 100 AI generation tokens each month, on monthly or annual billing.
+- **Max** — 500 AI generation tokens each month, on monthly or annual billing.
+
+Tokens refresh to your plan's monthly amount at the start of each month and do not roll over. Annual billing saves ~30% versus monthly; the token amount is the same on either cycle.
 
 Token costs at a glance:
 
