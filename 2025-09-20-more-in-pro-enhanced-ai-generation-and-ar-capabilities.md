@@ -13,8 +13,6 @@ I created 3DStreet with a vision to make street design tools accessible to a wid
 
 To that end, I'm happy to announce that as of September 1, 2025 we're now offering more in our 3DStreet Pro plan, adding new cloud AI image rendering which incorporates 4 frontier image generation models and AR viewing for Android and iOS devices. Pro users now have these new cutting edge features at no additional cost.
 
-<br/>
-<br/>
 ![Pro features overview](./images/2025-09-20/pro-features-hero.jpeg)
 
 <!-- truncate -->
@@ -40,8 +38,7 @@ Prefer annual billing? <a href="https://3dstreet.app/#payment-model-annual" targ
 ## Custom Prompts for AI Rendering
 
 Pro users can now customize AI generation prompts, giving you precise control over the style and mood of your rendered scenes. Want a sunny morning atmosphere? A rainy evening scene? Dinosaurs and robots with lasers roaming the streets? Simply describe your vision in the prompt field.
-<br/>
-<br/>
+
 ![Pro features overview](./images/2025-09-20/tmpxf1xg9bd.jpeg)
 
 ## Import and Export GLB and Image Files

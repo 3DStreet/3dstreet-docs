@@ -11,8 +11,7 @@ The AI Assistant has been renamed to **Console** and now lives as a tab in the r
 :::
 
 Today we're excited to announce the beta release of the 3DStreet AI Assistant, a new way to create and modify street designs using simple natural language. Just describe the street scene you want to create, and watch as your vision comes to life – no complex 3D editing required.<a href="#the-fine-print-beta-status-and-availability">*</a>
-<br/>
-<br/>
+
 ![Screenshot showing the 3DStreet AI Assistant interface with an example conversation](./images/2025-05-22/ai-assistant-example-prompt-create-a-street.jpg)
 
 <!-- truncate -->
@@ -20,12 +19,10 @@ Today we're excited to announce the beta release of the 3DStreet AI Assistant, a
 ## Empowering Everyone to Design Better Streets
 
 At 3DStreet, our mission has always been to provide tools that empower anyone to rapidly prototype visions for improving our shared environment, starting with streets. The introduction of our AI Assistant marks a significant step toward making street design more accessible to everyone – from urban planning professionals to community advocates who may not be familiar with traditional 3D editing tools.
-<br/> 
-<br/>
+
 ![](./images/2025-05-22/ai-assistant-first-message-panel.png
 )
-<br/>
-<br/>
+
 With the new AI Assistant, you can:
 
 - **Create complete street scenes** from scratch using natural language descriptions
@@ -45,10 +42,8 @@ For example:
 - "Add outdoor seating areas in front of the cafes on the north side"
 
 The AI Assistant interprets your requests and performs the necessary operations to bring your descriptions to life, handling all the technical details behind the scenes.
-<br/>
-<br/>
-![](./images/2025-05-22/ai-assistant-clone-example.jpeg)
 
+![](./images/2025-05-22/ai-assistant-clone-example.jpeg)
 
 ## Why We Built This
 
@@ -67,12 +62,8 @@ Perhaps most importantly, it allows people to focus on the "what" of their stree
 ## Under the Hood
 
 The 3DStreet AI Assistant is powered by Google's Gemini LLM via its Vertex AI API and our custom React-based chat interface. The most useful part of the Assistant is its ability to call tools that perform actions in the 3DStreet Editor. These tools include entity placement, entity updates, street segment creation and modification, camera control, geospatial location updates and project information memory. When a tool is called, the interface will display a yellow notification while pending and resolve into a green or red notification depending on the result of the function call. You can click the function call notification to see the details of the function call.
-<br/>
-<br/>
 
 ![](./images/2025-05-22/ai-assistant-function-call-response-details.png)
-<br/>
-<br/>
 
 Building the AI Assistant has helped us improve the underlying 3DStreet codebase. By creating clear function calls for the AI to use, we've had to improve our code structure and interfaces for a number of underlying features, especially street editing through our new [Managed Street Format](/docs/managed-street/overview-managed-street).
 

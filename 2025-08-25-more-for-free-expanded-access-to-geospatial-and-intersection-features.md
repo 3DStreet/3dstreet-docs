@@ -10,8 +10,7 @@ image: ./images/2025-08-25/free-geospatial-tokens-hero.webp
 # More for Free: Expanded Access to Geospatial and Intersection Features
 
 We're excited to announce significant improvements to our free tier! Starting today, all 3DStreet users get more access to powerful features that were previously Pro-only, making it easier than ever to create compelling street visualizations.
-<br/>
-<br/>
+
 ![More free features in 3DStreet](./images/2025-08-25/free-geospatial-tokens-hero.webp)
 
 <!-- truncate -->

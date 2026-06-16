@@ -15,8 +15,7 @@ image: ./images/2025-04-01/webinar-banner-street-design-and-immersive-advocacy.j
 The future of urban planning is happening right on our streets. In a recent webinar featuring 3DStreet founder Kieran Farr and InCitu's Nick, we explored how augmented reality (AR) is transforming community engagement with street design proposals.
 
 <!-- truncate -->
-<br/>
-<br/>
+
 Read our written adapation or skip to the [original webinar recording](#webinar-recording) to learn more.
 
 ## The Challenge: Bridging the Communication Gap
@@ -42,10 +41,8 @@ These tools are accessible to both professionals and amateurs. Community advocat
 A community advocate organized visualizations for the conversion of Valencia Street from center-running to curbside bike lanes. 
 <br/>
 ![](./images/2025-04-01/valencia-street-flyover.jpg)
-<br/>
 
 The AR perspective the new configuration from the actual perspective of a crossing pedestrian was recorded to video to provide content for education and advocacy.
-<br/>
 
 ![](./images/2025-04-01/valencia-street-ar-ped-crossing.jpg)
 
@@ -62,7 +59,6 @@ A pedestrian bridge connecting an underserved neighborhood to park amenities cut
 
 ### Columbus Bus Rapid Transit
 Central Ohio Transit Authority integrated AR into actual bus tours along proposed routes. The technology showed not just transit infrastructure, but walkable neighborhood development that transit investment could encourage. Officials used AR's people-occlusion feature for authentic social media content.
-<br/>
 
 ![](./images/2025-04-01/columbus-ohio-linkus-west-broad-brt.jpg)
 
@@ -107,7 +103,6 @@ As cities face mounting challenges around housing, climate change, and equity, t
 
 ## Webinar Recording
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2-fBPCSc3s0?si=nzjVg2YkGL9dIqsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ---
 
