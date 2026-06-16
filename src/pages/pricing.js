@@ -13,13 +13,13 @@ export default function PricingPage() {
         price: '$10',
         subtitle: 'per month',
         cycleDetail: 'billed monthly',
-        buttonHref: 'https://3dstreet.app/#payment-model'
+        buttonHref: 'https://3dstreet.app/#payment-pro'
       },
       yearly: {
         price: '$7',
         subtitle: 'per month',
         cycleDetail: 'billed yearly, $84/year',
-        buttonHref: 'https://3dstreet.app/#payment-model-annual'
+        buttonHref: 'https://3dstreet.app/#payment-pro-annual'
       }
     },
     max: {
@@ -27,13 +27,13 @@ export default function PricingPage() {
         price: '$50',
         subtitle: 'per month',
         cycleDetail: 'billed monthly',
-        buttonHref: '/contact'
+        buttonHref: 'https://3dstreet.app/#payment-max'
       },
       yearly: {
         price: '$35',
         subtitle: 'per month',
         cycleDetail: 'billed yearly, $420/year',
-        buttonHref: '/contact'
+        buttonHref: 'https://3dstreet.app/#payment-max-annual'
       }
     }
   };
@@ -89,7 +89,7 @@ export default function PricingPage() {
         'Priority support',
         'Early access to new features'
       ],
-      buttonLabel: 'Contact Us to Activate',
+      buttonLabel: 'Go Max',
       buttonHref: '/contact',
       buttonVariant: 'blue'
     },
