@@ -128,7 +128,6 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: "Home",
         logo: {
           alt: "3DStreet Logo",
           src: "img/logo-black.svg",
@@ -145,8 +144,9 @@ const config = {
           },
           {
             href: "https://3dstreet.app",
-            label: "Launch App",
+            label: "Open 3DStreet",
             position: "right",
+            className: "navbar-launch-cta",
           },
         ],
       },

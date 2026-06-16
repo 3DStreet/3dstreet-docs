@@ -13,8 +13,6 @@ I'm excited to announce that our Pro Team plan is now available for organization
 
 Today we made it happen -- for just $5,000 per year, your organization gets Pro access for up to 50 users with a straightforward activation process.
 
-<br/>
-<br/>
 ![Pro Team plan for organizations](./images/2025-10-24/3dstreet-pro-team-logo.webp)
 
 <!-- truncate -->

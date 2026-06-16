@@ -15,10 +15,8 @@ Some Viewer Mode features are temporarily disabled in the Editor during a UI tra
 ## Available Viewer Modes
 
 Choose from three distinct viewing experiences:
-<br/>
 
 <img src="/img/docs/viewer-modes/viewer-mode-icons.png" alt="Viewer Mode Icons" style={{ width: '50%' }} />
-<br/>
 
 - **[Camera Path Mode](#camera-path-mode)** - Automated camera movement along predefined paths (circle, forward, strafe, or custom) for presentations and consistent scene viewing
 - **[Locomotion Mode](#locomotion-mode)** - Interactive navigation with full control using WASD keys, mouse, or VR controllers for detailed exploration 
@@ -70,12 +68,10 @@ Allows you to define custom camera movement using the measure line feature in yo
 <br/>
 <img src="/img/docs/viewer-modes/locomotion-mode.png" alt="Locomotion Mode Sidebar" style={{ width: '50%' }} />
 
-
 ## AR Mode
 
 **Augmented Reality** brings your street design into the real world, allowing viewers to see how it looks in actual, physical spaces. Can be paired with Geospatial features to directly redesign a real world location.
 
-<br/>
 <img src="/img/docs/viewer-modes/ar-mode.png" alt="AR Mode Sidebar" style={{ width: '50%' }} />
 
 ### Device Compatibility

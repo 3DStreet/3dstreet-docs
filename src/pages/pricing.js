@@ -5,7 +5,7 @@ import NavigationMenu from '../components/NavigationMenu';
 import Footer from '../components/Footer';
 
 export default function PricingPage() {
-  const [billingCycle, setBillingCycle] = useState('yearly');
+  const [billingCycle, setBillingCycle] = useState('monthly');
 
   const cyclePricing = {
     pro: {

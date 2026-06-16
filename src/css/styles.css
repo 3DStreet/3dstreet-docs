@@ -6,6 +6,81 @@
 
 :root {
     --ifm-font-family-base: "Hind Siliguri", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+    /* Brand violet — matches the app's active-tool color and the site's
+       "Open 3DStreet" CTA, replacing Infima's default blue. */
+    --ifm-color-primary: #5200d9;
+    --ifm-color-primary-dark: #4a00c3;
+    --ifm-color-primary-darker: #4500b8;
+    --ifm-color-primary-darkest: #390098;
+    --ifm-color-primary-light: #5e0fef;
+    --ifm-color-primary-lighter: #6824f0;
+    --ifm-color-primary-lightest: #8146f3;
+}
+
+/* Tighten the heading scale for article content only. Scoped to .markdown
+   (the docs/blog body) so it doesn't leak into custom pages like /pricing,
+   where component headings set their own spacing. Infima's default h1 (~3rem)
+   wraps long titles into two cramped lines; smaller sizes + a bit more
+   line-height restore the h1 > h2 > body step-down and vertical rhythm. */
+.markdown {
+    --ifm-h1-font-size: 2.4rem;
+    --ifm-h2-font-size: 1.65rem;
+    --ifm-heading-line-height: 1.2;
+    --ifm-heading-margin-top: 2rem;
+    --ifm-heading-margin-bottom: 0.8rem;
+}
+
+/* On the dark theme, lift links to a brighter violet so they stay legible
+   against the dark background, and tint the page background toward the deep
+   purple-black used by the site (#0c011e) and app. Scoped to
+   html[data-theme='dark'] to outrank Infima's own dark-theme defaults. */
+html[data-theme='dark'] {
+    --ifm-color-primary: #8146f3;
+    --ifm-color-primary-dark: #7126f1;
+    --ifm-color-primary-darker: #6a1bf0;
+    --ifm-color-primary-darkest: #5410d0;
+    --ifm-color-primary-light: #9166f5;
+    --ifm-color-primary-lighter: #9876f6;
+    --ifm-color-primary-lightest: #b29af9;
+
+    --ifm-background-color: #0c011e;
+    --ifm-background-surface-color: #140530;
+}
+
+/* The doc page title. Docusaurus pins this to 3rem here specifically, so the
+   :root --ifm-h1-font-size above can't reach it — override directly. Smaller
+   size + a touch more line-height keeps long titles from wrapping into two
+   cramped lines, and it sits closer to the content below. */
+.markdown h1:first-child {
+    --ifm-h1-font-size: 2.5rem;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+/* The current-page breadcrumb renders as a filled pill directly above an
+   identical h1 — redundant weight. Flatten it to plain text. */
+.breadcrumbs__item--active .breadcrumbs__link {
+    background: transparent;
+    color: var(--ifm-color-primary);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Promote "Launch App" from a plain text link to the brand CTA button,
+   mirroring the site's "Open 3DStreet" pill. */
+.navbar-launch-cta {
+    color: #fff !important;
+    background-color: var(--ifm-color-primary);
+    border-radius: 8px;
+    padding: 6px 16px;
+    margin-left: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-launch-cta:hover {
+    background-color: var(--ifm-color-primary-dark);
+    color: #fff !important;
 }
 
 *,
