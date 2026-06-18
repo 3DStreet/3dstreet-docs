@@ -15,7 +15,7 @@
 
 <link rel="preload" href="/fonts/hind-siliguri/HindSiliguri-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/fonts/hind-siliguri/HindSiliguri-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.d1b69b96.css">
-<script src="/assets/js/runtime~main.8d80ba8f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.bb7682d8.js" defer="defer"></script>
 <script src="/assets/js/main.163025cd.js" defer="defer"></script>
 </head>
 <body>
@@ -59,10 +59,11 @@
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="direction-options">Direction Options<a href="#direction-options" class="hash-link" aria-label="Direct link to Direction Options" title="Direct link to Direction Options" translate="no">​</a></h3>
 <ul>
-<li class=""><code>none</code>: No direction (for sidewalks, dividers)</li>
-<li class=""><code>inbound</code>: Traffic flowing inward</li>
-<li class=""><code>outbound</code>: Traffic flowing outward</li>
+<li class=""><code>none</code> (default): No travel direction. Generated content is absolutely oriented via its own <code>facing</code> value (e.g. side-oriented lamps, benches, bike racks, and sideways/angled parked cars). Used for sidewalks and dividers.</li>
+<li class=""><code>inbound</code>: Traffic flowing inward. Direction-following content (drive-lane vehicles, parallel-parked cars, lane stencils) orients to this direction.</li>
+<li class=""><code>outbound</code>: Traffic flowing outward.</li>
 </ul>
+<p>When omitted, <code>direction</code> resolves to <code>none</code>. Only segments whose content should follow traffic flow need to set <code>inbound</code> or <code>outbound</code>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="generated-content">Generated Content<a href="#generated-content" class="hash-link" aria-label="Direct link to Generated Content" title="Direct link to Generated Content" translate="no">​</a></h2>
 <p>The <code>generated</code> object can contain multiple types of generated content:</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="clones">Clones<a href="#clones" class="hash-link" aria-label="Direct link to Clones" title="Direct link to Clones" translate="no">​</a></h3>
