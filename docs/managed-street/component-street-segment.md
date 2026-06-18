@@ -20,7 +20,7 @@ A custom sidebar in 3DStreet Editor allows users to edit a subset of `street-seg
 | width      | number | -        | Width of the segment in meters |
 | length     | number | -        | Length of the segment in meters |
 | level      | int    | 0        | Vertical level of the segment (-1 to 2) |
-| direction  | string | -        | Direction of traffic flow: 'none', 'inbound', or 'outbound' |
+| direction  | string | 'none'   | Direction of traffic flow: 'none', 'inbound', or 'outbound'. Defaults to 'none' (no travel direction); generated content follows the segment direction only when set to 'inbound' or 'outbound' |
 | surface    | string | 'asphalt'| Surface material type. One of: 'asphalt', 'concrete', 'grass', 'sidewalk', 'gravel', 'sand', 'cracked-asphalt', 'parking-lot', 'water', 'none', 'solid' |
 | color      | color  | -        | Color of the segment surface |
 | variant    | string | 'custom' | Preset configuration for building segments. One of: 'brownstone', 'suburban', 'arcade', 'water', 'grass', 'parking', 'sp-mixeduse', 'sp-residential', 'sp-big-box', 'custom' |

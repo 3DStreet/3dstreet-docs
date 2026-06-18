@@ -63,9 +63,11 @@ Each segment represents a distinct part of the street and is defined as follows:
 - `solid`: Solid color surface
 
 ### Direction Options
-- `none`: No direction (for sidewalks, dividers)
-- `inbound`: Traffic flowing inward
-- `outbound`: Traffic flowing outward
+- `none` (default): No travel direction. Generated content is absolutely oriented via its own `facing` value (e.g. side-oriented lamps, benches, bike racks, and sideways/angled parked cars). Used for sidewalks and dividers.
+- `inbound`: Traffic flowing inward. Direction-following content (drive-lane vehicles, parallel-parked cars, lane stencils) orients to this direction.
+- `outbound`: Traffic flowing outward.
+
+When omitted, `direction` resolves to `none`. Only segments whose content should follow traffic flow need to set `inbound` or `outbound`.
 
 ## Generated Content
 
