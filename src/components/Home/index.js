@@ -4,6 +4,7 @@ import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { Button, Input } from "..";
 import NavigationMenu from "../NavigationMenu";
 import Footer from "../Footer";
+import MuxPlayer from "@mux/mux-player-react";
 import {
   ArrowIcon,
   DiscordIcon,
@@ -167,13 +168,38 @@ export default function Home({ recentPosts }) {
             <div className="st_main_container">
               <h1 className="h1">Design the future.</h1>
               <div style={{ padding: '56.25% 0 0 0', position: 'relative', width: '100%' }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1165500149?h=cfdbdf4076&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                <MuxPlayer
+                  streamType="on-demand"
+                  playbackId="TOQUA94XaNzXknwQMxqHQ6mlFyavfbmE"
                   title="3DStreet Demo Scenes"
+                  autoPlay
+                  muted
+                  loop
+                  primaryColor="#FFFFFF"
+                  secondaryColor="#000000"
+                  accentColor="#653CB0"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    // Minimal UI: keep play/pause, hide the rest of the control bar
+                    '--seek-backward-button': 'none',
+                    '--seek-forward-button': 'none',
+                    '--mute-button': 'none',
+                    '--volume-range': 'none',
+                    '--time-range': 'none',
+                    '--time-display': 'none',
+                    '--duration-display': 'none',
+                    '--playback-rate-button': 'none',
+                    '--captions-button': 'none',
+                    '--airplay-button': 'none',
+                    '--cast-button': 'none',
+                    '--pip-button': 'none',
+                    '--rendition-menu-button': 'none',
+                    '--fullscreen-button': 'none',
+                  }}
                 />
               </div>
               <section className="st_overview">
