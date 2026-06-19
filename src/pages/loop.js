@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import MuxPlayer from "@mux/mux-player-react";
 
 export default function LoopPage() {
   const containerRef = useRef(null);
@@ -157,19 +158,24 @@ export default function LoopPage() {
               position: "relative",
             }}
           >
-            <iframe
-              src="https://player.vimeo.com/video/1165500149?h=cfdbdf4076&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
+            <MuxPlayer
+              streamType="on-demand"
+              playbackId="TOQUA94XaNzXknwQMxqHQ6mlFyavfbmE"
+              title="3DStreet Demo Scenes"
+              autoPlay
+              muted
+              loop
+              nohotkeys
               style={{
                 position: "absolute",
                 top: 0,
                 left: 0,
                 width: "100%",
                 height: "100%",
+                // Chromeless background loop — hide all controls
+                "--controls": "none",
+                "--media-object-fit": "cover",
               }}
-              title="3DStreet Demo Scenes"
             />
           </div>
         </div>
