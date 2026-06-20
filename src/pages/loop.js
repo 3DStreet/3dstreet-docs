@@ -162,6 +162,7 @@ export default function LoopPage() {
               streamType="on-demand"
               playbackId="TOQUA94XaNzXknwQMxqHQ6mlFyavfbmE"
               title="3DStreet Demo Scenes"
+              poster=""
               autoPlay
               muted
               loop
