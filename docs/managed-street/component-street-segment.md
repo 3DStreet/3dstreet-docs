@@ -128,17 +128,20 @@ The building segment supports multiple preset variants via the `variant` propert
 
 #### Fit Mode for Clones
 
-Building segments use a special `fit` mode for the `street-generated-clones` component that intelligently places models based on their actual dimensions:
+Building segments use `fit` mode for the `street-generated-clones` component — the only mode that is aware of model dimensions. It tiles models edge-to-edge using a lookup table of known building widths and depths.
 
-**Properties:**
+For full documentation of all clone modes (`fixed`, `random`, `single`, `fit`) including diagrams and property tables, see the [Clone Mode Reference](./clone-modes.md).
+
+**Key `fit` mode properties:**
 - `mode: 'fit'` - Places models continuously along the segment
-- `spacing` - Gap between models in meters (can be negative for overlapping)
-- `justifyWidth` - Horizontal alignment: 'left', 'center', or 'right'
+- `spacing` - Gap between model edges in meters (not centerpoint distance; can be 0 for seamless tiling)
+- `justifyWidth` - Cross-street alignment: `left`, `center`, or `right`
 
 The component automatically:
 - Uses building width and depth from a lookup table
 - Calculates positions to fit models end-to-end
 - Adjusts horizontal position based on `justifyWidth` and segment `side`
+- Cycles through `modelsArray` sequentially
 - Stops when remaining space is insufficient
 
 **Supported building dimensions** are defined for all StreetPlan models, brownstone buildings, suburban houses, and arcade buildings. See the source code for the complete list.
