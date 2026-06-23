@@ -1,12 +1,12 @@
 ---
-sidebar_position: 7
+sidebar_position: 99
 ---
 
 # Viewer Modes
 
-:::note
+:::warning Deprecated
 
-Some Viewer Mode features are temporarily disabled in the Editor during a UI transition driven by recent user feedback. Viewer Mode (including in-app AR) will return as part of an upcoming **camera controls** milestone alongside saved camera views, WASD, and zoom improvements. See the [April 27, 2026 panel redesign update](/blog/2026/04/27/product-update-panel-redesign) for context. In the meantime, for AR workflows please use the **[GLB AR Ready Export](/docs/key-features/ar-ready-export)** to view your scene in third-party AR apps such as 8th Wall or inCitu. If you have specific AR requirements that aren't met by the AR Ready Export, please [contact support](/docs/services).
+**Viewer Mode is currently disabled in the Editor.** It was removed during a UI transition driven by recent user feedback, and this page is kept for reference. Viewer Mode (including in-app AR) will return as part of an upcoming **camera controls** milestone alongside saved camera views, WASD, and zoom improvements. See the [April 27, 2026 panel redesign update](/blog/2026/04/27/product-update-panel-redesign) for context. In the meantime, for AR workflows please use the **[GLB AR Ready Export](/docs/key-features/ar-ready-export)** to view your scene in third-party AR apps such as 8th Wall or inCitu. If you have specific AR requirements that aren't met by the AR Ready Export, please [contact support](/docs/services).
 
 :::
 

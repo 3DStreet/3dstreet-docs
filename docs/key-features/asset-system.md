@@ -27,14 +27,21 @@ Drag any supported file from your computer onto the editor viewport or onto the 
 |--|--|
 | 3D models | `.glb` |
 | Images | `.jpg`, `.png`, `.webp` |
+| Gaussian splats | `.ply`, `.splat`, `.spz` |
 
 The file is uploaded to your account in the background. You'll see a progress indicator in the Assets panel sidebar while the upload runs; the asset becomes draggable as soon as it's ready. For step-by-step instructions on the editor flow, see [Adding Custom Models and Images to a Scene](/docs/3dstreet-editor/custom-models-and-images).
+
+Gaussian splat files are treated as first-class assets: they upload, preview, and drag into a scene just like a 3D model. You can also generate a splat from your own photo or video in the AI Generator. See [3D Gaussian Splats](/docs/key-features/gaussian-splats) for details.
 
 ### Asset details
 
 Click any custom asset's thumbnail in the Assets panel to open its **details modal**. From there you can rename the asset, preview it in an embedded viewer, see its file size and attribution metadata, download the original file, or delete it from your account.
 
 ![Asset details modal](/img/docs/asset-system/asset-system-model-details.webp)
+
+### Visibility
+
+Each asset has a visibility setting that controls who can see it. New uploads default to **public**. You can change an asset between **public** and **private** from its details modal at any time.
 
 ## Storage and quotas
 
@@ -44,7 +51,7 @@ Per-file size limit is **50 MB** for `.glb` uploads. Files larger than that can 
 
 If you reach your quota, new uploads run in local-only mode until you free up space (by deleting old assets) or upgrade your plan.
 
-## Bleeding-edge GLB optimization, automatic
+## Automatic GLB optimization
 
 3D model optimization is normally a tedious, expert-only step that sits between "I have a model" and "it loads fast in a browser." The 3DStreet Asset System gives every user push-button access to the same leading-edge compression techniques used by professional 3D pipelines, and runs them automatically on every upload:
 
@@ -66,3 +73,4 @@ When you upload a `.glb`, 3DStreet automatically extracts attribution metadata f
 
 - [Adding Custom Models and Images to a Scene](/docs/3dstreet-editor/custom-models-and-images): the editor-side how-to
 - [3D Model Library](/docs/key-features/model-library): the built-in library catalog
+- [3D Gaussian Splats](/docs/key-features/gaussian-splats): generating and using splats
