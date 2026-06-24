@@ -2,11 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://3dstreet.org/blog</id>
     <title>3DStreet Blog</title>
-    <updated>2026-04-27T00:00:00.000Z</updated>
+    <updated>2026-06-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://3dstreet.org/blog"/>
     <subtitle>3DStreet Blog</subtitle>
     <icon>https://3dstreet.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Product Update: Custom Asset Uploads, Video-to-Splat, and Bollard Buddy for iOS]]></title>
+        <id>https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios</id>
+        <link href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios"/>
+        <updated>2026-06-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A roundup of 3DStreet updates since our April panel redesign, including custom 3D model uploads, image and video to 3D Gaussian splat, the Bollard Buddy iOS app, a major managed-street reliability push ahead of leaving beta, the new Max plan, and AI agent control via MCP.]]></summary>
+        <content type="html"><![CDATA[<p>Since a major <a class="" href="https://3dstreet.org/blog/2026/04/27/product-update-panel-redesign">editor panel interface redesign</a> in late April, we've been busy working on a big batch of features focused on getting your own content into 3DStreet: your own 3D models, your own photos and videos turned into 3D, and scenes you capture in AR on your phone. We've also been putting a lot of work into reliability, especially for Managed Streets (procedural street generation), which we're planning to bring out of beta later this summer. Here's what's new.</p>
+<p><img decoding="async" loading="lazy" alt="A 3D Gaussian splat of a Bernal Heights parklet placed in a 3DStreet scene alongside a procedurally generated managed street, sidewalk, pedestrians, and planters" src="https://3dstreet.org/assets/images/splat-scene-mixture-6982fd1fb1de56558f1e25748212d393.webp" width="1565" height="911" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="custom-3d-asset-uploads">Custom 3D Asset Uploads<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#custom-3d-asset-uploads" class="hash-link" aria-label="Direct link to Custom 3D Asset Uploads" title="Direct link to Custom 3D Asset Uploads" translate="no">​</a></h2>
+<p>One of our most-requested features is here: you can now upload your own 3D models. Drag and drop a <code>glTF</code>/<code>GLB</code> file straight into the viewport and place it in your scene, with no separate conversion step. The <a class="" href="https://3dstreet.org/docs/3dstreet-editor/custom-models-and-images">Adding Custom Models and Images</a> guide walks through the editor flow.</p>
+<p>We built the whole pipeline around making this feel effortless:</p>
+<ul>
+<li class=""><strong>Automatic optimization</strong> - Uploads are <a class="" href="https://3dstreet.org/docs/key-features/asset-system#automatic-glb-optimization">compressed and optimized</a> on the way in, so large models don't slow down your scene.</li>
+<li class=""><strong>Your assets in one place</strong> - Uploaded models live in your <a class="" href="https://3dstreet.org/docs/key-features/asset-system">Asset System</a> library across the editor and the other 3DStreet apps, with controls over whether each asset is public or private.</li>
+<li class=""><strong>Automatic attribution</strong> - When you drop in a model, 3DStreet reads its embedded metadata and pulls out the title, author, license, and source automatically. It recognizes the standard glTF copyright fields as well as the formats used by popular 3D model libraries like <a href="https://sketchfab.com/" target="_blank" rel="noopener noreferrer" class="">Sketchfab</a> and <a href="https://poly.pizza/" target="_blank" rel="noopener noreferrer" class="">Poly Pizza</a>, so the credit travels with the model.</li>
+</ul>
+<p>This is the foundation for a lot of what follows, including bringing 3D Gaussian splats into your scenes as ordinary, draggable assets.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="image-and-video-to-3d-gaussian-splat">Image and Video to 3D Gaussian Splat<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#image-and-video-to-3d-gaussian-splat" class="hash-link" aria-label="Direct link to Image and Video to 3D Gaussian Splat" title="Direct link to Image and Video to 3D Gaussian Splat" translate="no">​</a></h2>
+<p>The <a href="https://3dstreet.app/generator/#splat" target="_blank" rel="noopener noreferrer" class="">AI Generator</a> has a new <strong>Splat</strong> tab that turns real-world captures into <strong>3D Gaussian splats</strong> you can drop right into a scene. There are two ways in:</p>
+<img src="https://3dstreet.org/img/docs/splats/splat-tab-ai-generator.webp" alt="The Splat tab in the 3DStreet AI Generator, showing the Image-to-Splat and Video-to-Splat modes with Basic, High, and Max quality tiers" style="width:346px;max-width:100%">
+<ul>
+<li class=""><strong>Image to Splat.</strong> A single photo becomes a 3D splat in a few minutes.</li>
+<li class=""><strong>Video to Splat (vid2scene).</strong> Record a slow, steady orbit around a subject with your phone and get a full 3D Gaussian splat back. It's built on the open-source <a href="https://github.com/samuelm2/vid2scene" target="_blank" rel="noopener noreferrer" class="">vid2scene</a> pipeline, with Basic, High, and Max quality tiers depending on how much detail you want.</li>
+</ul>
+<p>Once generated, splats are first-class assets. They save to your gallery, preview in a live 3D viewer, and drag into your scene exactly like any other model. Under the hood we also built a durable generation queue so these longer renders finish reliably even if you close the tab. Your result lands in your gallery when it's ready, and you're only charged once a render succeeds.</p>
+<mux-player player-software-name="mux-player-react" player-software-version="2.5.0" stream-type="on-demand" primary-color="#FFFFFF" secondary-color="#000000" accent-color="#653CB0" autoplay="muted" loop="" muted="" style="aspect-ratio:4 / 3;max-width:520px;width:100%;margin:0 auto"></mux-player>
+<p><em>An Image-to-Splat result rotating in the viewer — a single photo reconstructed as a fully three-dimensional Gaussian splat.</em></p>
+<p>Splat generation is an early research preview. Results vary with your capture, so steady lighting and a smooth orbit go a long way. We'd love to see what you make.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bollard-buddy-for-ios">Bollard Buddy for iOS<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#bollard-buddy-for-ios" class="hash-link" aria-label="Direct link to Bollard Buddy for iOS" title="Direct link to Bollard Buddy for iOS" translate="no">​</a></h2>
+<p><a href="https://www.3dstreet.com/bollardbuddy/" target="_blank" rel="noopener noreferrer" class=""><strong>Bollard Buddy</strong></a>, our app for placing street-safety objects in augmented reality, is now available as a native iOS app after its official approval and <a href="https://apps.apple.com/us/app/bollard-buddy/id6756771127" target="_blank" rel="noopener noreferrer" class="">release of v1 in the Apple App Store</a>! Snap a photo of an unprotected bike lane or a wide crossing, drop in bollards, planters, cones, and other calming elements right on the real-world surface in front of you, and capture a before-and-after on the spot.</p>
+<p>The iOS app is fully connected to the rest of 3DStreet:</p>
+<ul>
+<li class=""><strong>Scenes you capture in AR now open on the web.</strong> We registered the app's full set of placeable street props as 3DStreet catalog entries, so a scene you save on your phone resolves to the correct 3D geometry when you open it on the web, with no missing objects.</li>
+<li class=""><strong>Shared cloud gallery.</strong> Photos and scenes captured on iOS show up when you sign in on the web, and the reverse works too.</li>
+<li class=""><strong>Smarter geolocation for AR scenes.</strong> When a scene captured in AR is missing precise elevation data, and viewing in the 3DStreet Editor, your design sits correctly on 3D map tiles to geolocate the scene contents and generate further imagery.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="major-reliability-push-and-managed-street-leaving-beta">Major Reliability Push (and Managed Street Leaving Beta)<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#major-reliability-push-and-managed-street-leaving-beta" class="hash-link" aria-label="Direct link to Major Reliability Push (and Managed Street Leaving Beta)" title="Direct link to Major Reliability Push (and Managed Street Leaving Beta)" translate="no">​</a></h2>
+<p>We closed <strong>40+ tracked issues</strong> this cycle, with a heavy focus on <a class="" href="https://3dstreet.org/docs/managed-street/overview-managed-street">Managed Street</a>, our next generation procedural street generation system, as we prepare to graduate this feature out of beta later this summer.</p>
+<p>To get there, we built a strict import comparison tool that puts a legacy-imported street side by side with the same street built as a Managed Street, so we can catch every visual difference and fix it. That work resolved a long list of issues, including:</p>
+<ul>
+<li class="">Plastic jersey barriers that weren't appearing on managed streets</li>
+<li class="">Perpendicular and angled parking that was too narrow, causing cars to overlap</li>
+<li class="">Reversed left/right street lamp orientation</li>
+<li class="">Parking stencils landing in the wrong part of the lane</li>
+<li class="">Striping incorrectly drawn across grass medians</li>
+<li class="">A parklet floor sitting too low to be visible</li>
+<li class="">Overly uniform default spacing that gave lamps and trees an artificial look</li>
+<li class="">And so much more OMG this is a lot of work!</li>
+</ul>
+<p>Beyond managed streets, we also fixed a long-standing and super frustrating bug where a click meant to orbit the camera could accidentally grab a selected object, sometimes a whole street, and fling it tens of meters away, with undo failing to bring it back. That's now resolved, and undo restores the exact original position every time.</p>
+<p>A big thank-you to <a href="https://github.com/vincentfretin" target="_blank" rel="noopener noreferrer" class="">Vincent Fretin</a> for a steady stream of managed-street and editor fixes throughout this period, and to everyone who took the time to file a bug report. It genuinely makes our day when you share with us how to help you make safer streets with 3DStreet. My favorite user feedback recently was <code>"[3DStreet is] buggy as heck and really hard to use."</code> Points noted, and we're working on it! Keep the feedback coming!</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-new-max-plan">The New Max Plan<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#the-new-max-plan" class="hash-link" aria-label="Direct link to The New Max Plan" title="Direct link to The New Max Plan" translate="no">​</a></h2>
+<p>We added a new <strong>Max plan</strong> for power users who are pushing 3DStreet hardest. It's a superset of Pro with <strong>25 GB of storage</strong> (up to 5 GB per file) and <strong>500 AI generation tokens per month</strong>.</p>
+<p>The reason it exists is everything above: custom model uploads and video-to-splat generation are heavier on storage and compute than a typical AI image render, and the largest splat workflows need more headroom than Pro provides. If you're mostly making AI images and street scenes, <strong>Pro still has everything you need</strong>. Max is there for the folks living in the splat and custom-asset workflows.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bonus-drive-3dstreet-with-ai-agents-mcp">Bonus: Drive 3DStreet with AI Agents (MCP)<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#bonus-drive-3dstreet-with-ai-agents-mcp" class="hash-link" aria-label="Direct link to Bonus: Drive 3DStreet with AI Agents (MCP)" title="Direct link to Bonus: Drive 3DStreet with AI Agents (MCP)" translate="no">​</a></h2>
+<p>For the AI fanatics: 3DStreet now speaks <strong>MCP</strong> (the <a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer" class="">Model Context Protocol</a>), which lets an AI agent like <strong>Claude</strong> drive a scene running live in your own browser tab. It can create objects, edit managed streets, move the camera, and take snapshots while you watch. The most exciting new feature is the ability for the AI agent to now be able to "see" the snapshot to create a visual feedback loop when generating scenes.</p>
+<p>It's opt-in and stays completely out of the way unless you want it. Install the <a href="https://www.npmjs.com/package/3dstreet-mcp" target="_blank" rel="noopener noreferrer" class=""><code>3dstreet-mcp</code></a> helper, open the pairing link it gives you, and your agent connects to the editor through the <a class="" href="https://3dstreet.org/docs/key-features/console">Console</a> panel. From there you can describe what you want in plain language and watch it build. This is an early, experimental feature aimed at automating repetitive or complex design work, and we're excited to see where the community takes it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's Next<a href="https://3dstreet.org/blog/2026/06/22/product-update-asset-uploads-video-to-splat-and-bollard-buddy-ios#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next" translate="no">​</a></h2>
+<p>We're working down the roadmap, and custom asset uploads and splats were a big one to land. Next up:</p>
+<ul>
+<li class="">Managed Street at parity to replace legacy Streetmix import</li>
+<li class="">Camera controls improvement at parity</li>
+<li class="">Draw on street (Editor)</li>
+<li class="">Spraypaint on street (Bollard Buddy)</li>
+</ul>
+<p>As always, the best way to shape what we build is to tell us what's working and what isn't. Come join us on <a href="https://discord.com/invite/JntJcZKPYc" target="_blank" rel="noopener noreferrer" class="">Discord</a> and keep those bug reports coming.</p>]]></content>
+        <author>
+            <name>Kieran Farr</name>
+            <uri>https://github.com/kfarr</uri>
+        </author>
+        <category label="product update" term="product update"/>
+        <category label="asset upload" term="asset upload"/>
+        <category label="gaussian splat" term="gaussian splat"/>
+        <category label="bollard buddy" term="bollard buddy"/>
+        <category label="managed street" term="managed street"/>
+        <category label="max plan" term="max plan"/>
+        <category label="new features" term="new features"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Product Update: Editor Panel Redesign]]></title>
         <id>https://3dstreet.org/blog/2026/04/27/product-update-panel-redesign</id>
@@ -47,7 +125,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's next<a href="https://3dstreet.org/blog/2026/04/27/product-update-panel-redesign#whats-next" class="hash-link" aria-label="Direct link to What's next" title="Direct link to What's next" translate="no">​</a></h2>
 <p>The roadmap from the April update hasn't shifted — the panel redesign was item 5 on that list, and we're now turning to the items the research pushed to the top: <strong>camera controls</strong> (with Viewer Mode and saved camera views returning here), <strong>multi-select</strong>, and <strong>grouping / nested layers</strong>. Custom asset upload, a tutorial flow, and managed-street parity with the legacy Streetmix importer are also in the queue.</p>
-<p>Thanks again to Andrea Maravić and the University of Cincinnati team, and to Daria — and to everyone who's shared feedback on <a href="https://discord.gg/VeBPPmFmBP" target="_blank" rel="noopener noreferrer" class="">Discord</a>. Keep it coming.</p>]]></content>
+<p>Thanks again to Andrea Maravić and the University of Cincinnati team, and to Daria — and to everyone who's shared feedback on <a href="https://discord.com/invite/JntJcZKPYc" target="_blank" rel="noopener noreferrer" class="">Discord</a>. Keep it coming.</p>]]></content>
         <author>
             <name>Kieran Farr</name>
             <uri>https://github.com/kfarr</uri>
@@ -363,7 +441,7 @@
 <p><strong><a href="https://calendar.app.google/ohjYMBPuLjGupHov5" target="_blank" rel="noopener noreferrer" class="">Schedule a Demo Call</a></strong> (for invoice payment or questions)</p>
 <p><strong><a class="" href="https://3dstreet.org/pricing">View All Pricing Options</a></strong> (compare with individual Pro plans)</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions">Questions?<a href="https://3dstreet.org/blog/2025/10/24/introducing-pro-team-plan-for-organizations-and-universities#questions" class="hash-link" aria-label="Direct link to Questions?" title="Direct link to Questions?" translate="no">​</a></h2>
-<p>Visit our <a class="" href="https://3dstreet.org/pricing">pricing page</a> or join our <a href="https://discord.gg/zNFMhTwKSd" target="_blank" rel="noopener noreferrer" class="">Discord community</a> where we're happy to answer questions about Pro Team and help you determine if it's the right fit for your organization.</p>]]></content>
+<p>Visit our <a class="" href="https://3dstreet.org/pricing">pricing page</a> or join our <a href="https://discord.com/invite/JntJcZKPYc" target="_blank" rel="noopener noreferrer" class="">Discord community</a> where we're happy to answer questions about Pro Team and help you determine if it's the right fit for your organization.</p>]]></content>
         <author>
             <name>Kieran Farr</name>
             <uri>https://github.com/kfarr</uri>
@@ -467,7 +545,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ready-to-go-pro">Ready to Go Pro?<a href="https://3dstreet.org/blog/2025/09/20/more-in-pro-enhanced-ai-generation-and-ar-capabilities#ready-to-go-pro" class="hash-link" aria-label="Direct link to Ready to Go Pro?" title="Direct link to Ready to Go Pro?" translate="no">​</a></h2>
 <p>Whether you're creating compelling visualizations for community meetings, designing safer streets, or exploring creative possibilities, 3DStreet Pro gives you the tools to bring your vision to life.</p>
 <a href="https://3dstreet.org/pricing" target="_blank">Upgrade to Pro Today</a>
-<p>Join our growing community of Pro users who are reimagining streets around the world. Have questions or need help getting started? Visit our <a href="https://discord.gg/zNFMhTwKSd" target="_blank" rel="noopener noreferrer" class="">Discord community</a> where Pro users share tips, showcase their work, and help each other create amazing street designs.</p>
+<p>Join our growing community of Pro users who are reimagining streets around the world. Have questions or need help getting started? Visit our <a href="https://discord.com/invite/JntJcZKPYc" target="_blank" rel="noopener noreferrer" class="">Discord community</a> where Pro users share tips, showcase their work, and help each other create amazing street designs.</p>
 <hr>
 <p><em>Already a Pro user? Make sure you're taking full advantage of these features in the <a href="https://3dstreet.app/" target="_blank" rel="noopener noreferrer" class="">3DStreet app</a>.</em></p>]]></content>
         <author>
@@ -1416,44 +1494,5 @@ Picnic table, USPS Mailbox, Bin, Residential Mailbox: Variations of these object
         <category label="authentication" term="authentication"/>
         <category label="microsoft" term="microsoft"/>
         <category label="admin" term="admin"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[3DStreet Intersections Early Access]]></title>
-        <id>https://3dstreet.org/blog/2024/07/17/street-intersections-early-access</id>
-        <link href="https://3dstreet.org/blog/2024/07/17/street-intersections-early-access"/>
-        <updated>2024-07-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Sam shares his involvement with 3DStreet, the new features of the Intersection component, and what's coming next!]]></summary>
-        <content type="html"><![CDATA[<p>My name is Sam Rothstein and I’m happy to share my work on a new street intersection component for 3DStreet. This is a first version of a highly requested feature and I'm looking forward to seeing what the 3DStreet community can create.</p>
-<p>In this post I'll share how I got involved in 3DStreet, the features of the Intersection component, and what's coming next!</p>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/default-intersection-efd2ce7f27beeb8c1e901ea447d804ab.jpeg" width="1161" height="730" class="img_ev3q"></p>
-<p>I started my career working for <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener noreferrer" class="">Cesium on CesiumJS</a>, helping hundreds of developers build bespoke applications around global-scale geospatial data. It was through this open-source 3D work that I met Kieran from 3DStreet and shared his vision of a world where everyone was empowered to reimagine their neighborhood.</p>
-<p>I was inspired to help contribute as an open-source developer and use my background in web-based 3D rendering and full stack engineering to bring the project forward.</p>
-<p>Many 3DStreet users have been asking for support for visualizing intersections in their neighborhoods. It turns out, <a href="https://a-b-street.github.io/docs/tech/map/geometry/index.html" target="_blank" rel="noopener noreferrer" class="">intersections are hard</a>! So we decided to start with something simple: the goal for this initial component was to create a simple yet versatile interface for connecting multiple streets. The component includes options for adding curbs, sidewalks, crosswalks, stop signs, and traffic signals. We made this available in the 3DStreet API for other developers in June 2022, but it wasn’t until now – 2 years later – that the user interface and editor capabilities of 3DStreet have finally caught up to make this available for people to use without writing code.</p>
-<p>Here’s a quick overview of the capabilities:</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-4-way-90º-intersections-with-custom-sizing-for-each-direction">Create 4-way 90º intersections with custom sizing for each direction<a href="https://3dstreet.org/blog/2024/07/17/street-intersections-early-access#create-4-way-90%C2%BA-intersections-with-custom-sizing-for-each-direction" class="hash-link" aria-label="Direct link to Create 4-way 90º intersections with custom sizing for each direction" title="Direct link to Create 4-way 90º intersections with custom sizing for each direction" translate="no">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/lopsided-intersection-710c68095130b88ea1edad278cc562e1.jpg" width="2860" height="1122" class="img_ev3q">
-<b><i>A custom intersection example with painted crosswalks along two sides of the long crossing distance, such as a mid-block crosswalk across an arterial where it meets an alleyway.</i></b></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="customization-features">Customization Features<a href="https://3dstreet.org/blog/2024/07/17/street-intersections-early-access#customization-features" class="hash-link" aria-label="Direct link to Customization Features" title="Direct link to Customization Features" translate="no">​</a></h2>
-<ul>
-<li class="">Supports optional dead-ends and t-intersections</li>
-<li class="">Supports optional traffic control devices: traffic signals, stop signs, or none</li>
-<li class="">Supports optional pedestrian features: crosswalks, sidewalks (for t/dead-end), or none</li>
-</ul>
-<p><img decoding="async" loading="lazy" src="https://3dstreet.org/assets/images/custom-intersection-bb3163b0d2a8a1c435cc6631aa6cea8a.jpeg" width="2854" height="1471" class="img_ev3q">
-<b><i>An intersection example using nearly every feature.</i></b></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next-for-3dstreet-intersections">What's next for 3DStreet Intersections?<a href="https://3dstreet.org/blog/2024/07/17/street-intersections-early-access#whats-next-for-3dstreet-intersections" class="hash-link" aria-label="Direct link to What's next for 3DStreet Intersections?" title="Direct link to What's next for 3DStreet Intersections?" translate="no">​</a></h2>
-<p>We call this release Early Access for a reason -- 3DStreet Intersections need more work and we need your help to prioritize what needs improvement. Do we need better geometry? Curb ramps? Better interface to edit the intersection? We'd appreciate ideas and suggestions on how to help you visualize your perfect intersections.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next-for-sam">What’s next for Sam?<a href="https://3dstreet.org/blog/2024/07/17/street-intersections-early-access#whats-next-for-sam" class="hash-link" aria-label="Direct link to What’s next for Sam?" title="Direct link to What’s next for Sam?" translate="no">​</a></h2>
-<p>I’m honored to be a contributor to the first iteration of a critical component of 3DStreet. Since my 3DStreet contribution, my career has propelled me to new roles including autonomous vehicle data visualization and a new announcement coming soon -- <a href="https://www.linkedin.com/in/srothst1/" target="_blank" rel="noopener noreferrer" class="">follow me on LinkedIn for the latest!</a> I’m excited to see how people use this component to change the world!</p>
-<i>Editors note: Intersections are now available with the 3DStreet Geospatial Pro Plan. Your support will help us continue to improve this component.</i>]]></content>
-        <author>
-            <name>Sam Rothstein</name>
-            <uri>https://www.linkedin.com/in/srothst1/</uri>
-        </author>
-        <category label="product update" term="product update"/>
-        <category label="intersection" term="intersection"/>
-        <category label="street" term="street"/>
-        <category label="geometry" term="geometry"/>
-        <category label="user-funded features" term="user-funded features"/>
     </entry>
 </feed>

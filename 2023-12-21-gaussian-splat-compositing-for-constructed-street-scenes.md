@@ -106,7 +106,7 @@ This is still a research technology. Even just in the past week there was a [who
 
 We'll keep iterating on the applications of this technology for street safety and more general urban design use cases. If this resonates with users we can explore how to make this accessible so that all users can create custom splat scenes with models they scan from their own streets.
 
-[Join our community to continue the conversation!](https://discord.gg/VN242sx9qu)
+[Join our community to continue the conversation!](https://discord.com/invite/JntJcZKPYc)
 
 # Video version of this post
 <iframe width="580" height="420" src="https://www.youtube.com/embed/Fy8PefDy5VY?si=pJ7F6j_mmmA2yo31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
