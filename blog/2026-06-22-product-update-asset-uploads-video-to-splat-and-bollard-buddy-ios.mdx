@@ -3,19 +3,17 @@ title: "Product Update: Custom Asset Uploads, Video-to-Splat, and Bollard Buddy 
 description: A roundup of 3DStreet updates since our April panel redesign, including custom 3D model uploads, image and video to 3D Gaussian splat, the Bollard Buddy iOS app, a major managed-street reliability push ahead of leaving beta, the new Max plan, and AI agent control via MCP.
 authors: [kfarr]
 tags: [product update, asset upload, gaussian splat, bollard buddy, managed street, max plan, new features]
-# image: ./images/2026-06-22/product-update-hero.webp
+image: /img/docs/splats/splat-scene-mixture.webp
 
 ---
+
+import MuxPlayer from '@mux/mux-player-react';
 
 # Product Update: Custom Asset Uploads, Video-to-Splat, and Bollard Buddy for iOS
 
 Since a major [editor panel interface redesign](/blog/2026/04/27/product-update-panel-redesign) in late April, we've been busy working on a big batch of features focused on getting your own content into 3DStreet: your own 3D models, your own photos and videos turned into 3D, and scenes you capture in AR on your phone. We've also been putting a lot of work into reliability, especially for Managed Streets (procedural street generation), which we're planning to bring out of beta later this summer. Here's what's new.
 
-<!-- TODO: add hero image at ./images/2026-06-22/product-update-hero.webp and uncomment the `image:` line in frontmatter 
-
-This could be a scene that has 3DScan and local images -- like the bernal heights parklet scan
-
--->
+![A 3D Gaussian splat of a Bernal Heights parklet placed in a 3DStreet scene alongside a procedurally generated managed street, sidewalk, pedestrians, and planters](/img/docs/splats/splat-scene-mixture.webp)
 
 <!-- truncate -->
 
@@ -33,7 +31,7 @@ We built the whole pipeline around making this feel effortless:
 
 * **Automatic optimization** - Uploads are [compressed and optimized](/docs/key-features/asset-system#automatic-glb-optimization) on the way in, so large models don't slow down your scene.
 * **Your assets in one place** - Uploaded models live in your [Asset System](/docs/key-features/asset-system) library across the editor and the other 3DStreet apps, with controls over whether each asset is public or private.
-* **Automatic attribution.** When you drop in a model, 3DStreet reads its embedded metadata and pulls out the title, author, license, and source automatically. It recognizes the standard glTF copyright fields as well as the formats used by popular 3D model libraries like [Sketchfab](https://sketchfab.com) and [Poly Pizza](https://poly.pizza), so the credit travels with the model. You can edit any of it later from the model's properties panel.
+* **Automatic attribution** - When you drop in a model, 3DStreet reads its embedded metadata and pulls out the title, author, license, and source automatically. It recognizes the standard glTF copyright fields as well as the formats used by popular 3D model libraries like [Sketchfab](https://sketchfab.com) and [Poly Pizza](https://poly.pizza), so the credit travels with the model.
 
 This is the foundation for a lot of what follows, including bringing 3D Gaussian splats into your scenes as ordinary, draggable assets.
 
@@ -41,12 +39,26 @@ This is the foundation for a lot of what follows, including bringing 3D Gaussian
 
 The [AI Generator](https://3dstreet.app/generator/#splat) has a new **Splat** tab that turns real-world captures into **3D Gaussian splats** you can drop right into a scene. There are two ways in:
 
-<!-- TODO: image of the Splat tab with a generated splat in the live viewer -->
+<img src="/img/docs/splats/splat-tab-ai-generator.webp" alt="The Splat tab in the 3DStreet AI Generator, showing the Image-to-Splat and Video-to-Splat modes with Basic, High, and Max quality tiers" style={{ width: '346px', maxWidth: '100%' }} />
 
 * **Image to Splat.** A single photo becomes a 3D splat in a few minutes.
 * **Video to Splat (vid2scene).** Record a slow, steady orbit around a subject with your phone and get a full 3D Gaussian splat back. It's built on the open-source [vid2scene](https://github.com/samuelm2/vid2scene) pipeline, with Basic, High, and Max quality tiers depending on how much detail you want.
 
 Once generated, splats are first-class assets. They save to your gallery, preview in a live 3D viewer, and drag into your scene exactly like any other model. Under the hood we also built a durable generation queue so these longer renders finish reliably even if you close the tab. Your result lands in your gallery when it's ready, and you're only charged once a render succeeds.
+
+<MuxPlayer
+    streamType="on-demand"
+    playbackId="eMYAaZ1SLET9100Y6tSmRkh4oyNLVifQv"
+    primaryColor="#FFFFFF"
+    secondaryColor="#000000"
+    accentColor="#653CB0"
+    autoplay="muted"
+    loop
+    muted
+    style={{ aspectRatio: '4 / 3', maxWidth: '520px', width: '100%', margin: '0 auto' }}
+/>
+
+*An Image-to-Splat result rotating in the viewer — a single photo reconstructed as a fully three-dimensional Gaussian splat.*
 
 Splat generation is an early research preview. Results vary with your capture, so steady lighting and a smooth orbit go a long way. We'd love to see what you make.
 
@@ -60,7 +72,7 @@ The iOS app is fully connected to the rest of 3DStreet:
 
 * **Scenes you capture in AR now open on the web.** We registered the app's full set of placeable street props as 3DStreet catalog entries, so a scene you save on your phone resolves to the correct 3D geometry when you open it on the web, with no missing objects.
 * **Shared cloud gallery.** Photos and scenes captured on iOS show up when you sign in on the web, and the reverse works too.
-* **Smarter geolocation for AR scenes.** When a scene captured in AR is missing precise elevation data, 3DStreet now prompts you to set a location and recalculates the ground height so your design sits correctly instead of floating in the air.
+* **Smarter geolocation for AR scenes.** When a scene captured in AR is missing precise elevation data, and viewing in the 3DStreet Editor, your design sits correctly on 3D map tiles to geolocate the scene contents and generate further imagery.
 
 ## Major Reliability Push (and Managed Street Leaving Beta)
 
@@ -89,7 +101,7 @@ The reason it exists is everything above: custom model uploads and video-to-spla
 
 ## Bonus: Drive 3DStreet with AI Agents (MCP)
 
-For the tinkerers: 3DStreet now speaks **MCP** (the [Model Context Protocol](https://modelcontextprotocol.io/)), which lets an AI agent like **Claude** drive a scene running live in your own browser tab. It can create objects, edit managed streets, move the camera, and take snapshots while you watch. The most exciting new feature is the ability for the AI agent to now be able to "see" the snapshot to create a visual feedback loop when generating scenes. 
+For the AI fanatics: 3DStreet now speaks **MCP** (the [Model Context Protocol](https://modelcontextprotocol.io/)), which lets an AI agent like **Claude** drive a scene running live in your own browser tab. It can create objects, edit managed streets, move the camera, and take snapshots while you watch. The most exciting new feature is the ability for the AI agent to now be able to "see" the snapshot to create a visual feedback loop when generating scenes. 
 
 <!-- TODO: image/gif of an agent building a scene via the Console -->
 
@@ -97,11 +109,9 @@ It's opt-in and stays completely out of the way unless you want it. Install the 
 
 ## What's Next
 
-We're working down the roadmap, and custom asset uploads were a big one to land. Next up:
+We're working down the roadmap, and custom asset uploads and splats were a big one to land. Next up:
+* Managed Street at parity to replace legacy Streetmix import
+* Camera controls improvement at parity
+* Draw on street
 
-1. **Camera Controls and Zoom**, including the return of Viewer Mode and saved camera views, a top request from our University of Cincinnati research
-2. **Managed Street out of beta**, finishing parity and retiring the legacy Streetmix importer
-3. **Multi-select** and **grouping / nested layers**
-4. A guided **tutorial** for new users
-
-As always, the best way to shape what we build is to tell us what's working and what isn't. Come join us on [Discord](https://discord.gg/VeBPPmFmBP), and keep those bug reports coming.
+As always, the best way to shape what we build is to tell us what's working and what isn't. Come join us on [Discord](https://discord.com/invite/JntJcZKPYc) and keep those bug reports coming.

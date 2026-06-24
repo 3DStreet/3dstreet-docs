@@ -9,7 +9,7 @@ sidebar_position: 9
 This is an early, experimental feature aimed at automating repetitive or complex design work. It is entirely opt-in and stays out of the way unless you turn it on.
 
 :::note Experimental
-MCP support is new and evolving. Tool names and behavior may change. Share feedback in [Discord](https://discord.gg/VeBPPmFmBP).
+MCP support is new and evolving. Tool names and behavior may change. Share feedback in [Discord](https://discord.com/invite/JntJcZKPYc).
 :::
 
 ## How it works

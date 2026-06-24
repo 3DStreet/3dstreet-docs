@@ -12,7 +12,7 @@ A **3D Gaussian splat** is a way of representing a real-world object or scene ca
 - **Upload** an existing splat file (`.ply`, `.splat`, or `.spz`) as a custom asset and drag it into a scene.
 
 :::note Research preview
-Splat support is experimental and offered as a research preview. Results vary with the quality of your capture, and the feature set is evolving. We'd love your feedback in [Discord](https://discord.gg/VeBPPmFmBP).
+Splat support is experimental and offered as a research preview. Results vary with the quality of your capture, and the feature set is evolving. We'd love your feedback in [Discord](https://discord.com/invite/JntJcZKPYc).
 :::
 
 ## Generating a splat (Splat tab)
