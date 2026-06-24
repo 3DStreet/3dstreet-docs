@@ -19,7 +19,7 @@ Since a major [editor panel interface redesign](/blog/2026/04/27/product-update-
 
 ## Custom 3D Asset Uploads
 
-One of our most-requested features is here: you can now upload your own 3D models. Drag and drop a `glTF`/`GLB` file straight into the viewport and place it in your scene, with no separate conversion step. The [Adding Custom Models and Images](/docs/3dstreet-editor/custom-models-and-images) guide walks through the editor flow.
+One of our most-requested features is here: you can now upload your own 3D models. Drag and drop a `glTF`/`GLB` file straight into the viewport and place it in your scene, with no separate conversion step or need to host the file elsewhere anymore. The [Adding Custom Models and Images](/docs/3dstreet-editor/custom-models-and-images) guide walks through the editor flow.
 
 <!-- TODO: image/gif of drag-and-drop GLB upload 
 
@@ -30,7 +30,7 @@ Ugh yes this needs a screenshot
 We built the whole pipeline around making this feel effortless:
 
 * **Automatic optimization** - Uploads are [compressed and optimized](/docs/key-features/asset-system#automatic-glb-optimization) on the way in, so large models don't slow down your scene.
-* **Your assets in one place** - Uploaded models live in your [Asset System](/docs/key-features/asset-system) library across the editor and the other 3DStreet apps, with controls over whether each asset is public or private.
+* **Your assets in one place** - Uploaded models live in your [Asset System](/docs/key-features/asset-system) library across the editor and the other 3DStreet apps, without the need for a separate file or web host.
 * **Automatic attribution** - When you drop in a model, 3DStreet reads its embedded metadata and pulls out the title, author, license, and source automatically. It recognizes the standard glTF copyright fields as well as the formats used by popular 3D model libraries like [Sketchfab](https://sketchfab.com) and [Poly Pizza](https://poly.pizza), so the credit travels with the model.
 
 This is the foundation for a lot of what follows, including bringing 3D Gaussian splats into your scenes as ordinary, draggable assets.

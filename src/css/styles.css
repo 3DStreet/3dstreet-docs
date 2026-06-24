@@ -16,6 +16,19 @@
     --ifm-color-primary-light: #5e0fef;
     --ifm-color-primary-lighter: #6824f0;
     --ifm-color-primary-lightest: #8146f3;
+
+    /* Body links get their own (lighter) violet instead of inheriting the
+       darker --ifm-color-primary, which reads near-black on dim/low-quality
+       displays. Uses the existing "lighter" palette tone (~54% lightness) so
+       links stay legible while CTAs/buttons keep the darker brand violet.
+       Resolves per-theme, so dark mode picks up its own lighter tone. */
+    --ifm-link-color: var(--ifm-color-primary-lighter);
+    --ifm-link-hover-color: var(--ifm-color-primary);
+
+    /* Match active-state UI to the (lighter) link color so the selected
+       sidebar tab, current breadcrumb, and active header section all read as
+       the same violet as body links instead of the darker brand primary. */
+    --ifm-menu-color-active: var(--ifm-link-color);
 }
 
 /* Tighten the heading scale for article content only. Scoped to .markdown
@@ -62,9 +75,17 @@ html[data-theme='dark'] {
    identical h1 — redundant weight. Flatten it to plain text. */
 .breadcrumbs__item--active .breadcrumbs__link {
     background: transparent;
-    color: var(--ifm-color-primary);
+    color: var(--ifm-link-color);
     padding-left: 0;
     padding-right: 0;
+}
+
+/* The active header section (Blog / Documentation) and navbar hover both use
+   --ifm-navbar-link-hover-color, which .navbar--dark pins to the darker brand
+   primary. Repoint it to the link color so the active section matches links
+   and the other active-state UI. Scoped to .navbar to outrank .navbar--dark. */
+.navbar {
+    --ifm-navbar-link-hover-color: var(--ifm-link-color);
 }
 
 /* Promote "Launch App" from a plain text link to the brand CTA button,
