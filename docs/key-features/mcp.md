@@ -31,6 +31,8 @@ Your AI client sends a tool call to the relay, the relay forwards it to your pai
 
 You can also pair manually by typing `/mcp` in the [Console](/docs/key-features/console) and clicking **Reconnect**.
 
+![The MCP status bar showing a connected relay](/img/docs/splats/mcp-connected.webp)
+
 ## What an agent can do
 
 Once paired, the agent has access to a set of tools covering reads, mutations, and meta actions, including:
@@ -57,6 +59,10 @@ This closes a feedback loop that pure data tools can't: the agent makes a change
 - **Caption** — optional text to label the snapshot in the chat.
 
 Pair it with **`focusCamera`** to frame a specific entity first, then snapshot, for a deliberate look-and-refine workflow.
+
+The actions taken by the AI agent through MCP are displayed in the Console. You can expand any completed action by clicking on it, revealing the contents of the tool call and response.
+
+![An agent action shown as a command pill in the Console tab](/img/docs/splats/mcp-action-taken-tab-only.webp)
 
 ## Privacy and security
 

@@ -19,6 +19,8 @@ Splat support is experimental and offered as a research preview. Results vary wi
 
 Open the [AI Generator](https://3dstreet.app/generator), sign in, and select the **Splat** tab. There are two ways to generate a splat, each charged in [AI generation tokens](/docs/key-features/ai-rendering):
 
+![The Splat tab in the AI Generator](/img/docs/splats/splat-tab-ai-generator.webp)
+
 ### Image to Splat
 
 Turn a single photo into a splat using Apple's **SHARP** model.
@@ -29,6 +31,8 @@ Turn a single photo into a splat using Apple's **SHARP** model.
 - **Output:** a `.ply` splat saved to your gallery
 
 This is the fastest way to try splats and works well for a single object photographed against a clean background.
+
+![A single image turned into a splat in one shot with the AI Generator](/img/docs/splats/ai-generator-image-to-splat-one-shot.webp)
 
 ### Video to Splat (vid2scene)
 
@@ -59,6 +63,8 @@ Generated and uploaded splats are treated as ordinary [assets](/docs/key-feature
 - Drag a splat from the panel into the viewport to place it, exactly like a 3D model.
 - Preview a splat in the live viewer from its asset details before placing it.
 
+![Previewing a splat in the asset details modal](/img/docs/splats/splat-in-asset-preview-modal.webp)
+
 Splats render through the [Spark](https://github.com/sparkjsdev/spark) Gaussian splatting renderer for three.js.
 
 ## Automatic streaming optimization
@@ -87,6 +93,8 @@ See the [Asset System](/docs/key-features/asset-system) for storage, quotas, and
 ## What makes 3DStreet splats different
 
 Plenty of tools can display a Gaussian splat. What's distinctive about 3DStreet is that splats are a native part of a street-design environment, not an isolated viewer:
+
+![A scene mixing a Gaussian splat with designed 3DStreet elements](/img/docs/splats/splat-scene-mixture.webp)
 
 - **Generate from your own capture, in-app.** Turn a phone photo or a short orbit video into a splat with no external photogrammetry pipeline to set up.
 - **Compose with everything else.** Drop a splat into the same scene as procedural [managed streets](/docs/managed-street/overview-managed-street), the built-in [3D model library](/docs/key-features/model-library), and [geospatial context](/docs/key-features/geospatial) such as Google 3D Tiles and OpenStreetMap. Real captured conditions and proposed designs live side by side.
