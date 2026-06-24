@@ -46,6 +46,10 @@ The Generator is organized into tabs:
 
 [Generate Video](https://3dstreet.app/generator/#video) — turn a still image into a short AI-rendered video, bringing your scenes to life with subtle camera movement, environmental motion, and atmospheric effects. Video generation requires a source image as the first frame; upload one or pick from your gallery.
 
+### Splat
+
+Turn a photo or a short orbit video into a **3D Gaussian splat** you can drop into a scene. See [3D Gaussian Splats](/docs/key-features/gaussian-splats) for the full guide, including capture tips and quality tiers.
+
 ## Available AI Models
 
 Models are upgraded regularly as new frontier models become available. Token costs and rendering times vary per model — the Generator and snapshot dialog show both before you run a render.

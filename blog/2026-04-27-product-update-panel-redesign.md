@@ -57,4 +57,4 @@ To ship this cleanly we pulled three things that caused confusion and / or were 
 
 The roadmap from the April update hasn't shifted — the panel redesign was item 5 on that list, and we're now turning to the items the research pushed to the top: **camera controls** (with Viewer Mode and saved camera views returning here), **multi-select**, and **grouping / nested layers**. Custom asset upload, a tutorial flow, and managed-street parity with the legacy Streetmix importer are also in the queue.
 
-Thanks again to Andrea Maravić and the University of Cincinnati team, and to Daria — and to everyone who's shared feedback on [Discord](https://discord.gg/VeBPPmFmBP). Keep it coming.
+Thanks again to Andrea Maravić and the University of Cincinnati team, and to Daria — and to everyone who's shared feedback on [Discord](https://discord.com/invite/JntJcZKPYc). Keep it coming.

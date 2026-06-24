@@ -154,7 +154,7 @@ export default function Home({ recentPosts }) {
               <a href="https://instagram.com/3dstreetapp" target="_blank">
                 <InstagramIcon />
               </a>
-              <a href="https://discord.gg/zNFMhTwKSd" target="_blank">
+              <a href="https://discord.com/invite/JntJcZKPYc" target="_blank">
                 <DiscordIcon />
               </a>
             </aside>

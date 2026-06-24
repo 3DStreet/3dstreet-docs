@@ -200,7 +200,7 @@ const config = {
             items: [
               {
                 label: "Discord",
-                href: "https://discord.gg/zNFMhTwKSd",
+                href: "https://discord.com/invite/JntJcZKPYc",
               },
               {
                 label: "Instagram",

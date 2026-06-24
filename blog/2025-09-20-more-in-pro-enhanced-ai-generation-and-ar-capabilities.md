@@ -106,7 +106,7 @@ Whether you're creating compelling visualizations for community meetings, design
 
 <a href="/pricing" target="_blank">Upgrade to Pro Today</a>
 
-Join our growing community of Pro users who are reimagining streets around the world. Have questions or need help getting started? Visit our [Discord community](https://discord.gg/zNFMhTwKSd) where Pro users share tips, showcase their work, and help each other create amazing street designs.
+Join our growing community of Pro users who are reimagining streets around the world. Have questions or need help getting started? Visit our [Discord community](https://discord.com/invite/JntJcZKPYc) where Pro users share tips, showcase their work, and help each other create amazing street designs.
 
 ---
 
