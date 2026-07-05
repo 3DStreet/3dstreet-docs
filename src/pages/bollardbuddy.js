@@ -92,6 +92,37 @@ export default function BollardBuddyPage() {
                       target="_blank"
                     />
                   </div>
+                  <a
+                    href={APP_STORE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '1rem',
+                      marginBottom: '40px',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    <img
+                      src="/img/bollardbuddy/app-store-qr.svg"
+                      alt="Scan to download Bollard Buddy on the App Store"
+                      width={120}
+                      height={120}
+                      style={{
+                        width: '120px',
+                        height: '120px',
+                        borderRadius: '12px',
+                        background: '#fff',
+                        padding: '8px',
+                      }}
+                    />
+                    <span style={{ fontWeight: 600, opacity: 0.85 }}>
+                      Scan to download
+                      <br />
+                      on your iPhone
+                    </span>
+                  </a>
                   <p className="st_hero_paragraph" style={{ maxWidth: '100%', marginBottom: 0 }}>
                     Capture photos of your designs and share them with neighbors, city officials, or
                     community groups working toward safer streets. Then take your field captures into the
