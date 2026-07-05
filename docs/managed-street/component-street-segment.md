@@ -16,15 +16,19 @@ A custom sidebar in 3DStreet Editor allows users to edit a subset of `street-seg
 
 | Property   | Type   | Default  | Description |
 |------------|--------|----------|-------------|
-| type       | string | -        | Type of street segment. Must be one of: 'drive-lane', 'bus-lane', 'bike-lane', 'sidewalk', 'parking-lane', 'divider', 'grass', 'rail', 'building' |
+| type       | string | -        | Type of street segment. Must be one of: 'drive-lane', 'bus-lane', 'bike-lane', 'sidewalk', 'parking-lane', 'divider', 'grass', 'rail', 'boundary' |
 | width      | number | -        | Width of the segment in meters |
 | length     | number | -        | Length of the segment in meters |
-| level      | int    | 0        | Vertical level of the segment (-1 to 2) |
+| elevation  | number | 0        | Vertical offset of the segment surface in meters (0 = road level, 0.15 = curb/sidewalk height). Minimum 0; negative elevations are unsupported. Shown as "Elevation (m)" in the editor sidebar. Replaces the deprecated integer `level` property (migrated at load time, 1 level == 0.15 m) |
+| floors     | int    | 0        | Boundary building height in floors, carried over from the imported source (Streetmix boundary object). Metadata only for now; it does not yet drive generated building model height. 0 = unspecified |
+| slope      | boolean| false    | Tilt the segment surface between two elevations across its width (Coastmix schema v34). When true, the surface interpolates from `slopeStart` to `slopeEnd` and `elevation` is ignored |
+| slopeStart | number | 0        | Elevation in meters at the segment's start edge (local -x, toward the previous segment) when slope is on. Minimum 0 |
+| slopeEnd   | number | 0        | Elevation in meters at the segment's end edge (local +x) when slope is on. Minimum 0 |
 | direction  | string | 'none'   | Direction of traffic flow: 'none', 'inbound', or 'outbound'. Defaults to 'none' (no travel direction); generated content follows the segment direction only when set to 'inbound' or 'outbound' |
 | surface    | string | 'asphalt'| Surface material type. One of: 'asphalt', 'concrete', 'grass', 'sidewalk', 'gravel', 'sand', 'cracked-asphalt', 'parking-lot', 'water', 'none', 'solid' |
 | color      | color  | -        | Color of the segment surface |
-| variant    | string | 'custom' | Preset configuration for building segments. One of: 'brownstone', 'suburban', 'arcade', 'water', 'grass', 'parking', 'sp-mixeduse', 'sp-residential', 'sp-big-box', 'custom' |
-| side       | string | 'right'  | Which side of the street buildings face ('left' or 'right'). Used with building segments |
+| variant    | string | 'custom' | Preset configuration for boundary segments ("Boundary Variant" in the editor sidebar). One of: 'brownstone', 'suburban', 'arcade', 'water', 'grass', 'parking', 'sp-mixeduse', 'sp-residential', 'sp-big-box', 'custom' |
+| side       | string | 'right'  | Which side of the street the boundary flanks ('left' or 'right'). Used with boundary segments |
 
 ## Segment Types
 
@@ -36,7 +40,7 @@ The component includes several predefined segment types with specific configurat
   type: 'drive-lane',
   color: white,
   surface: 'asphalt',
-  level: 0,
+  elevation: 0,
   generated: {
     clones: [{
       mode: 'random',
@@ -54,7 +58,7 @@ The component includes several predefined segment types with specific configurat
   type: 'bus-lane',
   surface: 'asphalt',
   color: red,
-  level: 0,
+  elevation: 0,
   generated: {
     clones: [{ mode: 'random', modelsArray: 'bus', spacing: 15, count: 1 }],
     stencil: [{ modelsArray: 'word-only, word-taxi, word-bus', spacing: 40, padding: 10 }]
@@ -68,7 +72,7 @@ The component includes several predefined segment types with specific configurat
   type: 'bike-lane',
   color: green,
   surface: 'asphalt',
-  level: 0,
+  elevation: 0,
   generated: {
     stencil: [{ modelsArray: 'bike-arrow', cycleOffset: 0.3, spacing: 20 }],
     clones: [{
@@ -81,14 +85,20 @@ The component includes several predefined segment types with specific configurat
 }
 ```
 
-### Building
-The `building` segment type uses the `fit` clone mode to place buildings continuously along the segment. Buildings automatically align based on the `side` property.
+### Boundary
+The `boundary` segment type represents adjacent land use flanking the street: buildings, waterfront, fences, or parking lots. Building variants use the `fit` clone mode to place buildings continuously along the segment, aligned based on the `side` property.
+
+Boundary segments never affect street layout: the travelled way (all non-boundary segments) is the only input to centering, ground, and labels. Boundaries render just outside the travelled way's edges by their `side`, regardless of their position in the scene graph.
+
+:::note
+This type was previously named `building`. The old value is deprecated but still accepted; it is renamed to `boundary` when loading older scenes and JSON blobs.
+:::
 
 ```javascript
 {
-  type: 'building',
+  type: 'boundary',
   surface: 'cracked-asphalt',
-  level: 1,
+  elevation: 0.15,
   generated: {
     clones: [{
       mode: 'fit',
@@ -98,9 +108,9 @@ The `building` segment type uses the `fit` clone mode to place buildings continu
 }
 ```
 
-#### Building Variants
+#### Boundary Variants
 
-The building segment supports multiple preset variants via the `variant` property. Each variant defines a specific collection of building models and surface type:
+The boundary segment supports multiple preset variants via the `variant` property ("Boundary Variant" in the editor sidebar). Each variant defines a specific collection of building models and surface type:
 
 | Variant | Buildings | Surface | Description |
 |---------|-----------|---------|-------------|
@@ -118,7 +128,7 @@ The building segment supports multiple preset variants via the `variant` propert
 **Example with variant:**
 ```html
 <a-entity street-segment="
-  type: building;
+  type: boundary;
   variant: brownstone;
   side: right;
   width: 10;
@@ -128,7 +138,7 @@ The building segment supports multiple preset variants via the `variant` propert
 
 #### Fit Mode for Clones
 
-Building segments use a special `fit` mode for the `street-generated-clones` component that intelligently places models based on their actual dimensions:
+Boundary segments use a special `fit` mode for the `street-generated-clones` component that intelligently places models based on their actual dimensions:
 
 **Properties:**
 - `mode: 'fit'` - Places models continuously along the segment
@@ -201,8 +211,8 @@ The component manages several key operations during its lifecycle:
 
 ## Methods
 
-### calculateHeight(elevationLevel)
-Converts elevation levels (-1 to 2) to Three.js meter units.
+### calculateHeight(elevation)
+Converts a metric elevation to the segment surface box height (base surface depth + elevation, clamped so the surface never sits below road level).
 
 ### generateMesh(data)
 Creates the segment's 3D geometry and materials.
@@ -212,7 +222,7 @@ Calculates texture repeat and offset values based on segment dimensions.
 
 ## Notes
 
-- The component automatically handles elevation changes based on the level property
+- The component automatically handles elevation changes based on the `elevation` property (meters)
 - Texture repeats are calculated automatically based on segment dimensions
 - Generated components (vehicles, pedestrians, etc.) are managed automatically based on segment type
 - The component uses a custom 'below-box' geometry for proper ground alignment
@@ -220,4 +230,5 @@ Calculates texture repeat and offset values based on segment dimensions.
 ## Known Limitations
 
 - Surface textures and other cloned models must already be present via asset loader, this component does not preload textures or models and assumes they are already available as `mixin`s in the scene
-- Elevation levels are limited to the range of -1 to 2
+- Negative elevations (below road level) are unsupported: `elevation`, `slopeStart`, and `slopeEnd` have a minimum of 0
+- Slopes can be imported (Coastmix schema v34) and round-trip through save/load, but there is no editor UI for authoring them yet

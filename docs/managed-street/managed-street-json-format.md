@@ -27,11 +27,15 @@ Each segment represents a distinct part of the street and is defined as follows:
   type: SegmentType,     // Type of segment
   surface: SurfaceType,  // Surface material
   color: string,         // Hex color code
-  level: number,         // Vertical offset (-1, 0, 1, 2)
+  elevation: number,     // Vertical offset in meters (0 = road level, 0.15 = curb height)
   width: number,         // Width in meters
   direction: Direction,  // Traffic direction
-  variant?: string,      // Optional preset variant (for building segments)
-  side?: "left" | "right", // Optional side orientation (for building segments)
+  variant?: string,      // Optional preset variant (for boundary segments)
+  side?: "left" | "right", // Optional side orientation (for boundary segments)
+  floors?: number,       // Optional building height in floors (boundary metadata)
+  slope?: boolean,       // Optional tilted surface (see Slope below)
+  slopeStart?: number,   // Elevation in meters at the segment's start (-x) edge
+  slopeEnd?: number,     // Elevation in meters at the segment's end (+x) edge
   generated: Generated   // Optional generated content
 }
 ```
@@ -45,7 +49,34 @@ Each segment represents a distinct part of the street and is defined as follows:
 - `divider`: Street divider/median
 - `grass`: Grass area
 - `rail`: Railway track
-- `building`: Building segment with configurable variants
+- `boundary`: Adjacent land use flanking the street (buildings, waterfront, fences, parking lots) with configurable variants
+
+### Elevation
+
+`elevation` is the vertical offset of the segment surface in **meters**, matching Streetmix schema v33+ units:
+
+- `0`: road level (default)
+- `0.15`: standard curb / sidewalk height
+
+Negative elevations (below road level) are intentionally unsupported: values are clamped to `0` at render time.
+
+:::note Deprecated: `level`
+Older street JSON used an integer `level` field (-1 to 2) representing curb-height steps. This field is **deprecated but still accepted**: when a segment has `level` and no `elevation`, it is converted at load time using `1 level == 0.15 m` (e.g. `level: 1` → `elevation: 0.15`). New definitions should use `elevation`.
+:::
+
+### Slope
+
+Segments imported from Streetmix/Coastmix (schema v34) may carry a tilted surface, e.g. a beach or embankment sloping down toward water:
+
+```javascript
+{
+  slope: true,
+  slopeStart: 0.45,  // meters, at the segment's start (-x) edge
+  slopeEnd: 0        // meters, at the segment's end (+x) edge
+}
+```
+
+When `slope` is `true`, the segment surface interpolates from `slopeStart` to `slopeEnd` across its width and the flat `elevation` value is ignored. Generated content (clones, pedestrians, etc.) currently sits at the mean of the two elevations. There is no editor UI for authoring slopes yet; the fields round-trip through import and save.
 
 ### Surface Types
 - `asphalt`: Standard road surface
@@ -68,6 +99,38 @@ Each segment represents a distinct part of the street and is defined as follows:
 - `outbound`: Traffic flowing outward.
 
 When omitted, `direction` resolves to `none`. Only segments whose content should follow traffic flow need to set `inbound` or `outbound`.
+
+## Boundary Segments
+
+A `boundary` segment represents the land use adjacent to the street: buildings, a waterfront edge, fences, or parking lots. Boundaries use `side: "left" | "right"` to indicate which edge of the street they flank, and a `variant` to pick a preset appearance.
+
+:::note Deprecated: `type: "building"`
+`boundary` was previously named `building`. The old type value is **deprecated but still accepted**; it is renamed to `boundary` at load time. New definitions should use `boundary`.
+:::
+
+### Boundary Variants
+When using `type: "boundary"`, the `variant` property provides preset configurations:
+
+- `brownstone`: Urban mixed-use buildings (4-5 floors)
+- `suburban`: Single-family houses on grass
+- `arcade`: Commercial arcade-style buildings
+- `water`: Seawall with animated water surface
+- `grass`: Fence boundary with grass
+- `parking`: Fence boundary with parking lot
+- `sp-mixeduse`: StreetPlan mixed-use buildings (2-3 floors)
+- `sp-residential`: StreetPlan single-family homes and townhouses
+- `sp-big-box`: Big box stores, parking structures, government buildings
+- `custom`: User-defined (preserves custom modifications)
+
+### Floors
+
+Boundary segments may carry a `floors` integer, the building height in floors from the imported source (e.g. the Streetmix boundary object). This is currently metadata only: it is preserved on import and save but does not yet drive the height of the generated building models. `0` (or omitted) means unspecified.
+
+### Boundaries and street layout
+
+The **travelled way** (all non-boundary segments) is the only input to street layout. Centering, the ground plane, and segment labels ignore boundary segments entirely. Boundaries render just outside the travelled way's edges according to their `side`, regardless of their position in the `segments` array or their visibility. Toggling boundary visibility (via the `managed-street` component's `showBoundaries` property) never moves the street.
+
+By convention, keep boundary segments at the ends of the `segments` array (left boundary first, right boundary last) for a tidy scene graph, but their array position does not affect rendering.
 
 ## Generated Content
 
@@ -164,7 +227,7 @@ Striping Types:
   type: "drive-lane",
   surface: "asphalt",
   color: "#ffffff",
-  level: 0,
+  elevation: 0,
   width: 3.048,
   direction: "inbound",
   generated: {
@@ -185,7 +248,7 @@ Striping Types:
   type: "sidewalk",
   surface: "sidewalk",
   color: "#ffffff",
-  level: 1,
+  elevation: 0.15,
   width: 0.914,
   direction: "none",
   generated: {
@@ -198,17 +261,18 @@ Striping Types:
 }
 ```
 
-### Building Segment with Variant
+### Boundary Segment with Variant
 ```javascript
 {
   name: "Mixed-Use Buildings",
-  type: "building",
+  type: "boundary",
   surface: "sidewalk",
   color: "#ffffff",
-  level: 1,
+  elevation: 0.15,
   width: 10,
   variant: "sp-mixeduse",
   side: "right",
+  floors: 3,
   generated: {
     clones: [{
       mode: "fit",
@@ -221,20 +285,6 @@ Striping Types:
 }
 ```
 
-### Building Variants
-When using `type: "building"`, the `variant` property provides preset configurations:
-
-- `brownstone`: Urban mixed-use buildings (4-5 floors)
-- `suburban`: Single-family houses on grass
-- `arcade`: Commercial arcade-style buildings
-- `water`: Seawall with animated water surface
-- `grass`: Fence boundary with grass
-- `parking`: Fence boundary with parking lot
-- `sp-mixeduse`: StreetPlan mixed-use buildings (2-3 floors)
-- `sp-residential`: StreetPlan single-family homes and townhouses
-- `sp-big-box`: Big box stores, parking structures, government buildings
-- `custom`: User-defined (preserves custom modifications)
-
 ## Managed Street JSON Examples
 
 These are the default street definitions in Managed Street JSON used in the 3DStreet Editor Add Layer Panel.
@@ -243,9 +293,9 @@ These are the default street definitions in Managed Street JSON used in the 3DSt
 
 ## Notes
 
-- All measurements should be in meters
+- All measurements are in meters, including `elevation` (0 = road level, 0.15 = curb/sidewalk height)
 - Colors should be in hex format (e.g., "#ffffff")
-- Level values represent curb heights: -1 (below grade), 0 (at grade), 1 (curb height), 2 (elevated)
+- Deprecated fields `level` (integer curb steps) and `type: "building"` are still accepted and migrated at load time; new definitions should use `elevation` and `type: "boundary"`
 - When using random mode for clones, both spacing and count should be specified
 - For fixed mode clones, only spacing is required
 - Cyclic offsets should be between 0 and 1, representing percentage of pattern offset
