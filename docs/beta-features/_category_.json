@@ -1,0 +1,9 @@
+{
+  "label": "Beta Features",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Newer 3DStreet capabilities that are available to try while we refine them. Beta features work end to end, but their UI and options are still evolving and may change between releases."
+  },
+  "collapsed": false
+}
