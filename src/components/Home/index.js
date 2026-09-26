@@ -20,10 +20,15 @@ export default function Home({ recentPosts }) {
 
   const currentAnnouncement = {
     icon: "📣",
-    boldText: "Free Webinar Feb 26",
-    lightText: "Creating street visuals to sway stakeholders with John Boyle from Greater Philadelphia Bicycle Coalition",
-    url: "https://riverside.com/webinar/registration/eyJzbHVnIjoia2llcmFuLWZhcnJzLXN0dWRpbyIsImV2ZW50SWQiOiI2OTgzZGYyZjJjNWMwOTYwYzAxNzdmNmQiLCJwcm9qZWN0SWQiOiI2OTgzZGYyZmM0NmQ4MDE1MTRjNTYxZTMifQ=="
+    boldText: "Free Webinar Oct 7, 10am PT",
+    lightText: "Visualizing Urban Development with 3DStreet, with Denisse De La Torre of Southwest BID (Washington, DC)",
+    url: "https://us06web.zoom.us/webinar/register/3517903911425/WN_M4G3CSJ0SbegIvUWZ_ks7Q",
+    // Pill is hidden once this date passes (ISO string; time is in Pacific)
+    expiresAt: "2026-10-08T00:00:00-07:00"
   };
+  const showAnnouncement =
+    !currentAnnouncement.expiresAt ||
+    new Date() < new Date(currentAnnouncement.expiresAt);
 
   return (
     <>
@@ -37,7 +42,7 @@ export default function Home({ recentPosts }) {
         content="Effortlessly bring your street design ideas to life. With intuitive features and a straightforward interface, you can easily create stunning and impactful street designs that contribute to a safer and greener world."
       />
 
-      <meta property="og:url" content="https://3dstreet.org" />
+      <meta property="og:url" content="https://www.3dstreet.com" />
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
@@ -53,8 +58,8 @@ export default function Home({ recentPosts }) {
       />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="3dstreet.org" />
-      <meta property="twitter:url" content="https://3dstreet.org" />
+      <meta property="twitter:domain" content="www.3dstreet.com" />
+      <meta property="twitter:url" content="https://www.3dstreet.com" />
       <meta
         name="twitter:title"
         content="3DStreet - Open-source 3D street editor"
@@ -100,7 +105,8 @@ export default function Home({ recentPosts }) {
               />
           </div>
 
-        {/* Rotating Announcement Pill - Centered Container
+        {/* Rotating Announcement Pill - Centered Container */}
+        {showAnnouncement && (
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '12px', marginBottom: '12px' }}>
           <div
             className="pro-team-pill"
@@ -135,7 +141,7 @@ export default function Home({ recentPosts }) {
             <span style={{ fontSize: '18px', color: '#9b87f5', marginLeft: '4px' }}>→</span>
           </div>
         </div>
-        */}
+        )}
 
         {/* HEADER SECTION */}
         <header className="st_header_container">

@@ -112,7 +112,7 @@ Geospatial data (long/lat/elevation/orientation) is exported in AR Ready glTF (.
 * **Design Integration**:
   * Align street designs with real-world geometry
   * Use the toolbar's Hand mode to navigate without accidentally moving objects
-  * Use the Ruler tool to measure distances
+  * Use the Shape tool to measure distances, and to draw paths that streets can follow
   * Leverage the Add Layer panel to place objects in geographically accurate positions
 
 ## Availability

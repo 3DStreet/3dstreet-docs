@@ -12,7 +12,7 @@ const config = {
   title: "3DStreet",
   staticDirectories: ["static", "blog"],
   tagline: "Safer street visualization tools",
-  url: "https://3dstreet.org",
+  url: "https://www.3dstreet.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
