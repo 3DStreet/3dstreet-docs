@@ -17,7 +17,7 @@ export default function PlanningPage() {
       />
 
       {/* Open Graph and Twitter Meta Tags */}
-      <meta property="og:url" content="https://3dstreet.org/planning" />
+      <meta property="og:url" content="https://www.3dstreet.com/planning" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Urban Planning - 3DStreet" />
       <meta
@@ -27,8 +27,8 @@ export default function PlanningPage() {
       <meta property="og:image" content="/img/website/social-website-preview.jpg" />
       
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="3dstreet.org" />
-      <meta property="twitter:url" content="https://3dstreet.org/planning" />
+      <meta property="twitter:domain" content="www.3dstreet.com" />
+      <meta property="twitter:url" content="https://www.3dstreet.com/planning" />
       <meta name="twitter:title" content="Urban Planning - 3DStreet" />
       <meta
         name="twitter:description"
@@ -256,12 +256,12 @@ export default function PlanningPage() {
                     variant="blue"
                     label="Read Case Study"
                     trailingIcon={<ExternalLinkIcon />}
-                    href="https://www.3dstreet.org/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets"
+                    href="https://www.3dstreet.com/blog/2024/12/15/visualizing-climate-resilient-infrastructure-kiritimati-sustainable-streets"
                     target="_blank"
                   />
                 </div>
                 <img
-                  src="https://www.3dstreet.org/assets/images/cross-section-kiritimati-alt-2-b5ac5d507d6284e22b337fe9257fdc63.jpg"
+                  src="https://www.3dstreet.com/assets/images/cross-section-kiritimati-alt-2-b5ac5d507d6284e22b337fe9257fdc63.jpg"
                   alt="Visualization of infrastructure on Kiritimati Island"
                   width="386"
                 />

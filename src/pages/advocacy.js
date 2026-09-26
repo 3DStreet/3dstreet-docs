@@ -17,7 +17,7 @@ export default function AdvocacyPage() {
       />
 
       {/* Open Graph and Twitter Meta Tags */}
-      <meta property="og:url" content="https://3dstreet.org/advocacy" />
+      <meta property="og:url" content="https://www.3dstreet.com/advocacy" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Transportation and Land Use Advocacy - 3DStreet" />
       <meta
@@ -27,8 +27,8 @@ export default function AdvocacyPage() {
       <meta property="og:image" content="/img/website/social-website-preview.jpg" />
       
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="3dstreet.org" />
-      <meta property="twitter:url" content="https://3dstreet.org/advocacy" />
+      <meta property="twitter:domain" content="www.3dstreet.com" />
+      <meta property="twitter:url" content="https://www.3dstreet.com/advocacy" />
       <meta name="twitter:title" content="Transportation and Land Use Advocacy - 3DStreet" />
       <meta
         name="twitter:description"
