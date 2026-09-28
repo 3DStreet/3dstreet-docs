@@ -1,7 +1,7 @@
 import React from "react";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
-import { Button, Input } from "..";
+import { Button } from "..";
 import NavigationMenu from "../NavigationMenu";
 import Footer from "../Footer";
 import MuxPlayer from "@mux/mux-player-react";
@@ -209,9 +209,15 @@ export default function Home({ recentPosts }) {
                   }}
                 />
               </div>
-              <section className="st_overview">
-              </section>
-              <Input />
+              <div className="st_hero_cta" style={{ marginTop: '40px', marginBottom: 0 }}>
+                <Button
+                  variant="blue"
+                  label="Get started free"
+                  trailingIcon={<ExternalLinkIcon />}
+                  href="https://3dstreet.app"
+                  target="_blank"
+                />
+              </div>
             </div>
           </div>
           <div className="st_main_grid" />

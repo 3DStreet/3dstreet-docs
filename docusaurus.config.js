@@ -29,9 +29,6 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  customFields: {
-    mailchimpUrl: process.env.MAILCHIMP_URL,
-  },
   markdown: {
     mermaid: true,
     hooks: {
