@@ -1,7 +1,7 @@
 import React from "react";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
-import { Button, Input } from "..";
+import { Button } from "..";
 import NavigationMenu from "../NavigationMenu";
 import Footer from "../Footer";
 import MuxPlayer from "@mux/mux-player-react";
@@ -170,8 +170,8 @@ export default function Home({ recentPosts }) {
 
         {/* MAIN SECTION */}
         <main className="st_main">
-          <div className="st_main_wrapper">
-            <div className="st_main_container">
+          <div className="st_main_wrapper st_home_hero_wrapper">
+            <div className="st_main_container st_home_hero">
               <h1 className="h1">Design the future.</h1>
               <div style={{ padding: '56.25% 0 0 0', position: 'relative', width: '100%' }}>
                 <MuxPlayer
@@ -209,9 +209,15 @@ export default function Home({ recentPosts }) {
                   }}
                 />
               </div>
-              <section className="st_overview">
-              </section>
-              <Input />
+              <div className="st_hero_cta">
+                <Button
+                  variant="blue"
+                  label="Get started free"
+                  trailingIcon={<ExternalLinkIcon />}
+                  href="https://3dstreet.app"
+                  target="_blank"
+                />
+              </div>
             </div>
           </div>
           <div className="st_main_grid" />
