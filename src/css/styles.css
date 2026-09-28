@@ -327,6 +327,26 @@ main {
     align-items: flex-start;
 }
 
+/* Home page hero: the wrapper has no intrinsic width, so without this it
+   shrinks to its widest child and the video collapses. */
+.st_home_hero_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Doubled selector so the minifier can't merge this into an earlier
+   align-items rule and lose to .st_main_container's flex-start. */
+.st_main_container.st_home_hero {
+    align-items: center;
+}
+
+.st_home_hero .st_hero_cta {
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
 section h2 {
     font-weight: 700;
     font-size: 20px;

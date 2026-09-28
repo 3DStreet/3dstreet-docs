@@ -170,8 +170,8 @@ export default function Home({ recentPosts }) {
 
         {/* MAIN SECTION */}
         <main className="st_main">
-          <div className="st_main_wrapper">
-            <div className="st_main_container">
+          <div className="st_main_wrapper st_home_hero_wrapper">
+            <div className="st_main_container st_home_hero">
               <h1 className="h1">Design the future.</h1>
               <div style={{ padding: '56.25% 0 0 0', position: 'relative', width: '100%' }}>
                 <MuxPlayer
@@ -209,7 +209,7 @@ export default function Home({ recentPosts }) {
                   }}
                 />
               </div>
-              <div className="st_hero_cta" style={{ marginTop: '40px', marginBottom: 0 }}>
+              <div className="st_hero_cta">
                 <Button
                   variant="blue"
                   label="Get started free"
