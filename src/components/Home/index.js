@@ -20,11 +20,12 @@ export default function Home({ recentPosts }) {
 
   const currentAnnouncement = {
     icon: "📣",
-    boldText: "Free Webinar Oct 7, 10am PT",
-    lightText: "Visualizing Urban Development with 3DStreet, with Denisse De La Torre of Southwest BID (Washington, DC)",
-    url: "https://us06web.zoom.us/webinar/register/3517903911425/WN_M4G3CSJ0SbegIvUWZ_ks7Q",
+    boldText: "Webinar gratis en español · 12 nov, 10:00 CDMX / 8:00 PT",
+    lightText: "Visualización del desarrollo urbano con 3DStreet, con Carlos F. Pardo (PNUMA) y Denisse De La Torre (Southwest BID)",
+    url: "https://us06web.zoom.us/webinar/register/2417935897107/WN_jYEJpHgiR9qF-cux2WwIaQ",
+    lang: "es",
     // Pill is hidden once this date passes (ISO string; time is in Pacific)
-    expiresAt: "2026-10-08T00:00:00-07:00"
+    expiresAt: "2026-11-13T00:00:00-08:00"
   };
   const showAnnouncement =
     !currentAnnouncement.expiresAt ||
@@ -135,7 +136,7 @@ export default function Home({ recentPosts }) {
             }}
           >
             <span style={{ fontSize: '20px' }}>{currentAnnouncement.icon}</span>
-            <span style={{ fontSize: '15px', fontWeight: 500, color: '#fff', letterSpacing: '0.2px' }}>
+            <span lang={currentAnnouncement.lang} style={{ fontSize: '15px', fontWeight: 500, color: '#fff', letterSpacing: '0.2px' }}>
               <strong style={{ fontWeight: 700 }}>{currentAnnouncement.boldText}</strong> — {currentAnnouncement.lightText}
             </span>
             <span style={{ fontSize: '18px', color: '#9b87f5', marginLeft: '4px' }}>→</span>
