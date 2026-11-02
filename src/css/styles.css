@@ -162,6 +162,14 @@ main {
     padding: 30px;
     }
 
+/* Home announcement pill */
+.announcement-pill-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 12px 0;
+}
+
 .newHeader .logo img {
     min-width: 210px;
     translate: 0 2px;
@@ -1214,6 +1222,12 @@ section h2 {
         position: absolute !important;
         top: 100px !important;
         left: 0px !important;
+    }
+
+    /* The nav drops to an absolutely positioned 2nd row here (top: 100px),
+       so push the announcement pill below it. */
+    .announcement-pill-wrap {
+        margin-top: 52px;
     }
 
     .st_footer {

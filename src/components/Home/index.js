@@ -108,7 +108,7 @@ export default function Home({ recentPosts }) {
 
         {/* Rotating Announcement Pill - Centered Container */}
         {showAnnouncement && (
-        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: '12px', marginBottom: '12px' }}>
+        <div className="announcement-pill-wrap">
           <div
             className="pro-team-pill"
             onClick={() => window.open(currentAnnouncement.url, '_blank', 'noopener,noreferrer')}
