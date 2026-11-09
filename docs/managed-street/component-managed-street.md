@@ -152,4 +152,3 @@ street.components['managed-street'].refreshFromSource();
 
 - Source URLs must be accessible and return valid JSON
 - Some segment types may have limited support for certain features
-- The component is currently in beta and APIs may change
