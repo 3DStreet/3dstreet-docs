@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState('monthly');
 
+  // Max is monthly only: it keeps its monthly price when Yearly is selected.
   const cyclePricing = {
     pro: {
       monthly: {
@@ -28,12 +29,6 @@ export default function PricingPage() {
         subtitle: 'per month',
         cycleDetail: 'billed monthly',
         buttonHref: 'https://3dstreet.app/#payment-max'
-      },
-      yearly: {
-        price: '$35',
-        subtitle: 'per month',
-        cycleDetail: 'billed yearly, $420/year',
-        buttonHref: 'https://3dstreet.app/#payment-max-annual'
       }
     }
   };
@@ -224,7 +219,7 @@ export default function PricingPage() {
                 Start free and scale as you grow. All plans include core 3D street design features.
               </p>
 
-              {/* Billing cycle toggle (applies to Pro + Max) */}
+              {/* Billing cycle toggle (yearly applies to Pro only) */}
               <div className="st_billing_toggle_wrapper">
                 <div className="st_billing_toggle" role="tablist">
                   <button
@@ -243,7 +238,7 @@ export default function PricingPage() {
                     className={`st_toggle_button ${billingCycle === 'yearly' ? 'active' : ''}`}
                     onClick={() => setBillingCycle('yearly')}
                   >
-                    Yearly <span className="st_save_pill">Save 30%</span>
+                    Yearly <span className="st_save_pill">Save 30% on Pro</span>
                   </button>
                 </div>
               </div>
@@ -251,7 +246,7 @@ export default function PricingPage() {
               {/* Pricing Cards */}
               <div className="st_pricing_cards">
                 {plans.slice(0, 3).map((plan, index) => {
-                  const cycle = plan.cycleKey ? cyclePricing[plan.cycleKey][billingCycle] : null;
+                  const cycle = plan.cycleKey ? (cyclePricing[plan.cycleKey][billingCycle] || cyclePricing[plan.cycleKey].monthly) : null;
                   const displayPrice = cycle ? cycle.price : plan.price;
                   const displaySubtitle = cycle ? cycle.subtitle : plan.subtitle;
                   const buttonHref = cycle ? cycle.buttonHref : plan.buttonHref;
